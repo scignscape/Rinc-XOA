@@ -1,0 +1,26 @@
+- 
+
+.
+%test: This test should result in the XPDF viewer being  
+  opened to the page on which the currenly expanded 
+  sample and/or sample group is typeset, if applicable.
+.
+%origin: @scripts/rz-kph
+.
+;sigma:1
+.
+;lambda:2
+.
+@ScignStage_Ling_Dialog*::1
+.
+@str::2
+.
+#1
+.
+&:open_pdf
+.
+1 :: 1 :: 1 :::#*ScignStage_Ling_Dialog*
+.
+2 :: 1 :: 2 :::@/data/dataset/ctg/main.pdf
+.
+-
