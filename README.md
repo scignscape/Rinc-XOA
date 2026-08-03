@@ -1,15 +1,9 @@
 ## ChasmVM Demo Code
 
-The code included within this branch of the current repository is intended 
-to provide a basic overview of my ideas concerning "channel" based VMs and 
-the Chasm (channel/syntagm) VM in particular.  Other branches here will 
-include more substantial implementations of a compiler and runtime stack.
+This branch serves as demo code in conjunction with the paper 
+[Merging Full-Text Query with Data Sets: A perspective from compiler theory](https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.pdf) presented at JATS-Con 2026.  That link is a version of the official National Institutes of Health article [here](https://www.ncbi.nlm.nih.gov/books/NBK620696/) with minor corrections.   Slides from that presentation are [here](https://scignscape.github.io/PNP/documents/Nathaniel_Christen_JATS-Con-2026-slides.pdf).
 
-For a summary of channels and channel packages, please look at the paper 
-on compiler theory linked at the top of the main branch readme.  I can also 
-share PDFs of chapters in books addressing these topics on request.
-
-The basic theme of the code presented here is building channel packages 
+The basic theme of the code presented here is building "channel packages" 
 and then evaluating them.  The first of these steps can proceed 
 in several ways.  First, the channels can be built step-by-step via 
 C++ code (this is illustrated with the `chasm-lib-console` project).  Second, 
@@ -90,7 +84,7 @@ these are at `SK/chasm/chasm-lib/chasm-lib-uni/chasm-lib-uni.pro`,
 ### OTQR
 
 In the future I hope to complete a genuine full-text query language, which I am naming 
-as "`OTQR`", or "Object-Text Query for Research Objects".  I envision this language 
+as "`OTQR`", or "Object-Text Query Runtime".  I envision this language 
 having some similarities to XQFT (XQUERY Full Text), DSL (Dimensions Search Language), 
 and OpenSearch Query DSL (Domain-Specific Language).  However, the use cases 
 would be somewhat different.  While potentially having some 
