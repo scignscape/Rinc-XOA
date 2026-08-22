@@ -9,15 +9,36 @@ First, a disclaimer: the code linked from this branch originated with my own per
 
 So, RedPatch is the *early stages* of a Research Platform for Community Health.  It is part of a larger project that involves code supporting Diamond Open Access publishing in general, particularly Executable Research Objects that cross-reference documents with open-access data sets (integrated into a single package and, indeed, once compiled, into a single Research Application).
 
-The underlying technology I have called "DogLeash" (Diamond Object Grid - Language Server and Script Host) which developed Executable Research Objects as collections of semi-autonomous modules.  RedPatch is one instantiation of this idea, combining several modules related to Community Health.  These modules are split between the DogLeash repository itself (for more general-purpose code) and this current branch.  There are five modules addressing these areas:
+---
+
+## Overview
+
+The underlying technology I have called "DogLeash" (Diamond Object Grid - Language Server and Script Host) which developed Executable Research Objects as collections of semi-autonomous modules.  RedPatch is one instantiation of this idea, combining several modules related to Community Health.  These modules are split between the DogLeash repository itself (for more general-purpose code) and this current branch.  RedPatch is comprised of six modules:
 
 
 - Academic Publishing: document preparation and data integration
+
 - Electronic Health Records -- including special-purpose records/forms that might be specifically used by Community Health researchers 
+
 - Medical Imaging, to support researchers studying community-health providers in areas of medicine where imaging is important for diagnosis and treatment, such as Oncology, musculoskeletal interventions, and prenatal care
-- Digital Maps to build, export, and visualize GIS data sets addressing community-health concerns such as disease outbreaks, epidemiology, Social Determinants of Health (SDoH), locations of health-care providers, and so forth,
+
+- Digital Maps to build, export, and visualize GIS data sets addressing community-health concerns such as disease outbreaks, epidemiology, Social Determinants of Health (SDoH), and locations of health-care providers (permanent or temporary/emergency)
+
 - Environmental Factors: tools to study public-health implications of pollution, ecological degradation, contaminated water supplies, and similar civil-infrastructure concerns
- To be more specific, the modules include code that may be narrow in scope but could be adapted for other contexts.  For example, the EHR module is focused on AMPATH (Academic Model Providing Access To Healthcare) Forms but the implemented "native rendering techniques" could be used with other EHR systems.  Here is some concrete functionality representative of each of the aforementioned modules:
-- 
-- Electronic Health Records:   
-  
+
+- Compiler Infrastructure: Supporting programming tasks such as implementing new EHR forms for individual research projects
+
+---
+
+To be more specific, the modules include code that may be narrow in scope but could be adapted for other contexts.  For example, the EHR module is focused on AMPATH (Academic Model Providing Access To Healthcare) Forms but the implemented "native rendering techniques" could be used with other EHR systems.  Here is some concrete functionality representative of each of the aforementioned modules:
+
+- Electronic Health Records: At present, this module is focused on a "Native Rendering Engine" for AMPATH forms.  In OpenMRS (Open Medical Record System) -- developed by AMPATH and used by Doctors Without Borders, Partners in Health, Care 2 Communities, and other NGOs/nonprofits -- AMPATH forms are internally stored as JSON configuration files that get converted to web pages via ReactJS.  This module provides an alternative rendering engine that, instead, maps the configurations to C++ classes to provide self-contained GUI components.  These classes could be run as isolated executable, or grouped into form libraries that collectively form customized EHR software, or embedded in host applications.  But in each case the form is a single desktop application window: there's no need for client/server separation, server processes, HTTP requests, or running the User Interface through a web browser.
+
+AMPATH forms are granularly annotated, particularly via Open Concept Library (OCL) concepts (which often cross-reference with other terminology standards, such as CIEL (Columbia International eHealth Laboratory), SNOMED, and ICD (International Classification of Diseases)).  Form fields and (for enumerative values)asasigned their possible values are assigned unique OCL identifiers, as are forms as a whole and their component sections.  These annotations are presevered via the Native Rendering Engine as C++ source annotations and GUI metadata.
+
+For reference and demonstration purposes, this module includes generated code for the 77 AMPATH Forms developed by Doctors Without Borders; other forms may be customized via the OpenMRS form builder.  The module's utilities can generate a C++ class from a JSON configuration file, and demo code shows how to perform these steps for each of the Doctors Without Borders form files.
+
+- Medical Imaging: 
+
+
+
