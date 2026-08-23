@@ -1,16 +1,13 @@
 
 # Rinc-XOA : Research in nonprofit contexts - Executable Open Access
 
----
-
 For a description of several projects that employed some of the code published here, 
-including a list of open-access articles and book chapters scroll down or ([skip ahead](#sample-documents-raised)).
+including a list of open-access articles and book chapters scroll down or [skip ahead](#sample-documents-raised).
 
 If you are interested particularly in the `RedPatch` Community Health research platform, 
-that's detailed in this repository's `RedPatch` branch or click 
-([here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch)).
+that's detailed in this repository's `RedPatch` branch or [skip ahead](#red-patch).
 
-
+---
 
 ### Overview
 
@@ -23,11 +20,15 @@ For the current repository and siblings, Executable Open Access (`XOA`) designat
 `Rinc-XOA` (this repository) has a sibling repo called `DogLeash` (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash/](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  `DogLeash` provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A `Rinc-XOA` project can include any modules relevant to its topic.
 
 
+<a id="red-patch"></a>
+
 ### Community Health Research Platform
 
 As a concrete example, I have grouped most of the `DogLeash` modules into a research "platform" called `RedPatch` (Research Objects - Diamond Open Access Targeting Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object "microcomponents".  More specifically, at least for `DogLeash` an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, `CSV`/`XML`/`JSON` file, etc.).  A good example of microcomponents would be displays showing a specific type of `EHR` form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In `DogLeash`, for each microcomponent there is typically a single `C++` class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
 
 Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete `DogLeash` components.  This does not mean that Executable Research Objects mimic on-site `EHR` forms used by health-care providers for their day-to-day operations; but special-purpose "research" forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
+
+For more details, navigate to the `RedPatch` branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
 
 ### Publishing for Nonprofits
 
