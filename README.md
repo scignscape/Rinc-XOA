@@ -1,7 +1,10 @@
 
 # RedPatch : Research Objects - Diamond Open Access Targeting Community Health
 
-`RedPatch` is Community Health-oriented research platform with `C++` sublibraries related to Electronic Health Records, Medical Imaging, Geographic Information Systems, and Academic Publishing.
+`RedPatch` is a Community Health-oriented research platform with `C++` sublibraries related to Electronic Health Records, Medical Imaging, Geographic Information Systems, and Academic Publishing.
+
+If you are interested in other subject areas instead, please browse to the 
+main branch of this current repository or click [here](https://github.com/scignscape/Rinc-XOA/).
 
 ---
 
