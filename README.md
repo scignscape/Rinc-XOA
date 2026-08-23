@@ -28,9 +28,9 @@ Insofar as publications are deployed with the same licences as code and data, th
 
 **_The "Diamond" Publishing Model_**
 
-In contemporary academic publishing, the basic unit for sharing experience and ideas often is not a single manuscript, but rather a collection of files packaging variegated content-types, including PDF files for viewing documents, but also machine-readable text encoding, computer code, raw data, and statistical/graphics summaries.  These packages typically adhere to collaborative standards such as Research Object Bundles, Executable Research Objects, `FAIR`-sharing (Findable, Accessible, Interoperable, Reusable), and research-grid specifications for packages deposited on decentralized but searchable community networks.
+In contemporary academic publishing, the basic unit for sharing experience and ideas often is not a single manuscript, but rather a collection of files packaging variegated content-types, including `PDF` files for viewing documents, but also machine-readable text encoding, computer code, raw data, and statistical/graphics summaries.  These packages typically adhere to collaborative standards such as Research Object Bundles, Executable Research Objects, `FAIR`-sharing, and research-grid specifications for packages deposited on decentralized but searchable community networks.
 
-In the genre of open-access publishing, the "diamond" model indicates documents that 
+In the genre of open-access publishing, the "diamond" model implies resources that 
 are free for both readers and authors.  This paradigm is usually contrasted with a 
 "gold" model where documents are free for readers but require authors to pay 
 Article Processing Charges".  The diamond model is also sometimes contrasted with a "green" 
@@ -47,10 +47,15 @@ cannot be distributed alongside their complementary assets.  This means that
 cross-references between publications and other materials, such as data sets and 
 computer code, cannot be rigorously defined.  Also, publications cannot benefit 
 from technological integration with associated resources, via techniques 
-such as customized PDF viewers specifically designed for a shared data package.
+such as customized `PDF` viewers specifically designed for a shared data package.
 
 In brief, the diamond model is not only more ethical; it also permits technological 
 enhancements that are impossible otherwise.
+
+
+### Compiler Extensions
+
+
 
 
 ---
