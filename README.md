@@ -5,7 +5,7 @@ If you are interested particularly in the `RedPatch` Community Health research p
 that's detailed in this repository's `RedPatch` branch or [skip ahead](#red-patch).
 
 For a description of several projects that employed some of the code published here, 
-including a list of open-access articles and book chapters scroll down or [skip ahead](#sample-documents-raised).
+including a list of open-access articles and book chapters, scroll down or [skip ahead](#sample-documents-raised).
 
 
 ---
@@ -100,7 +100,7 @@ variables that get passed on the stack (or alter the stack some other way -- `An
 employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
 types ahead of time.  There is a workaround, however -- even without heave introspection and 
 dependencies such as `LLVM` -- which can be illustrated with code adopted from 
-`rpclib` [github.com/rpclib/rpclib](https://github.com/rpclib/rpclib):
+`rpclib` ([github.com/rpclib/rpclib](https://github.com/rpclib/rpclib)):
 
 
 ```
