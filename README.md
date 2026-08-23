@@ -1,11 +1,12 @@
 
 # Rinc-XOA : Research in nonprofit contexts - Executable Open Access
 
+If you are interested particularly in the `RedPatch` Community Health research platform, 
+that's detailed in this repository's `RedPatch` branch or [skip ahead](#red-patch).
+
 For a description of several projects that employed some of the code published here, 
 including a list of open-access articles and book chapters scroll down or [skip ahead](#sample-documents-raised).
 
-If you are interested particularly in the `RedPatch` Community Health research platform, 
-that's detailed in this repository's `RedPatch` branch or [skip ahead](#red-patch).
 
 ---
 
