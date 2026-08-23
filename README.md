@@ -17,7 +17,7 @@ Meanwhile, Executable Research Objects (`ERO`s) are one form of Research Object/
 
 For the current repository and siblings, Executable Open Access (`XOA`) designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework (`OSF`) or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth): there is no such thing as a "dataset processing charge".  Nonetheless, `ERO`s are most productive when they include complete version of associated research articles -- both in human-readable (e.g., `PDF`) and machine-readable (e.g., `JATS` `XML`) formats, which requires that the entire package be governed by a `DiamondOA` licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by `DiamondOA` funds or similar initiatives.  In short, the `ERO` and `DiamondOA` paradigms are sufficiently interrelated/overlapping that each may help promote the other.
 
-`Rinc-XOA` (this repository) has a sibling repo called `DogLeash` (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash/](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  `DogLeash` provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A `Rinc-XOA` project can include any modules relevant to its topic.
+`Rinc-XOA` (this repository) has a sibling repo called `DogLeash` (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  `DogLeash` provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A `Rinc-XOA` project can include any modules relevant to its topic.
 
 ---
 
@@ -99,7 +99,7 @@ variables that get passed on the stack (or alter the stack some other way -- `An
 employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
 types ahead of time.  There is a workaround, however -- even without heave introspection and 
 dependencies such as `LLVM` -- which can be illustrated with code adopted from 
-`rpclib` (github.com/rpclib/rpclib)[https://github.com/rpclib/rpclib]:
+`rpclib` [github.com/rpclib/rpclib](https://github.com/rpclib/rpclib):
 
 
 ```
