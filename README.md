@@ -1,19 +1,19 @@
 
 # RedPatch : Research Objects - Diamond Open Access Targeting Community Health
 
-RedPatch is Community Health-oriented research platform with C++ sublibraries related to Electronic Health Records, Medical Imaging, Geographic Information Systems, and Academic Publishing.
+`RedPatch` is Community Health-oriented research platform with `C++` sublibraries related to Electronic Health Records, Medical Imaging, Geographic Information Systems, and Academic Publishing.
 
 ---
 
-First, a disclaimer: the code linked from this branch originated with my own personal research project or ones I joined as a programmer and/or (data and text) editor.  There is no funding nor development team.  As such, this work is less polished than I would like, and all code should be considered prototype/experimental.  I appreciate anyone who actually browses this code, but in practice I may need to personally help interested users (on a volunteer bases) to adapt this code for their own projects, at least during this early stage (at least I HOPE this is just an early stage!).  This is true of RedPatch itself and the more general libraries it references (grouped into the `DogLeash` repository which is sibling to the current "`Rinc-XOA`" -- "Research in nonprofit contexts -- Executable Open Acccess" repo).
+First, a disclaimer: the code linked from this branch originated with my own personal research project or ones I joined as a programmer and/or (data and text) editor.  There is no funding nor development team.  As such, this work is less polished than I would like, and all code should be considered prototype/experimental.  I appreciate anyone who actually browses this code, but in practice I may need to personally help interested users (on a volunteer bases) to adapt this code for their own projects, at least during this early stage (at least I HOPE this is just an early stage!).  This is true of `RedPatch` itself and the more general libraries it references (grouped into the `DogLeash` repository which is sibling to the current "`Rinc-XOA`" -- "Research in nonprofit contexts -- Executable Open Acccess" repo).
 
-So, RedPatch is the *early stages* of a Research Platform for Community Health.  It is part of a larger project that involves code supporting Diamond Open Access publishing in general -- i.e., neither Article Processing Charges (APCs) for authors nor paywalls for users, releasing scientific research via licences typically associated with Free and Open-Source (FOSS) software -- particularly *Executable Research Objects* that cross-reference documents with open-access data sets (integrated into a single package and, indeed, once compiled, into a single Research Application).
+So, `RedPatch` is the *early stages* of a Research Platform for Community Health.  It is part of a larger project that involves code supporting Diamond Open Access publishing in general -- i.e., neither Article Processing Charges (`APC`s) for authors nor paywalls for users, releasing scientific research via licences typically associated with Free and Open-Source (`FOSS`) software -- particularly *Executable Research Objects* that cross-reference documents with open-access data sets (integrated into a single package and, indeed, once compiled, into a single Research Application).
 
 ---
 
 ## Overview
 
-The underlying technology I have called "DogLeash" (Diamond Object Grid - Language Server and Script Host) which develops Executable Research Objects as collections of semi-autonomous modules.  RedPatch is one instantiation of this idea, combining several modules related to Community Health.  These modules are split between the DogLeash repository itself (for more general-purpose code) and this current branch.  More precisely, RedPatch is comprised of six modules:
+The underlying technology I have called "`DogLeash`" (Diamond Object Grid - Language Server and Script Host) which develops Executable Research Objects as collections of semi-autonomous modules.  `RedPatch` is one instantiation of this idea, combining several modules related to Community Health.  These modules are split between the `DogLeash` repository itself (for more general-purpose code) and this current branch.  More precisely, `RedPatch` is comprised of six modules, addressing the following subject areas:
 
 
 - Academic Publishing: document preparation and data integration
