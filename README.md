@@ -19,6 +19,7 @@ For the current repository and siblings, Executable Open Access (`XOA`) designat
 
 `Rinc-XOA` (this repository) has a sibling repo called `DogLeash` (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash/](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  `DogLeash` provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A `Rinc-XOA` project can include any modules relevant to its topic.
 
+---
 
 <a id="red-patch"></a>
 
@@ -29,6 +30,8 @@ As a concrete example, I have grouped most of the `DogLeash` modules into a rese
 Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete `DogLeash` components.  This does not mean that Executable Research Objects mimic on-site `EHR` forms used by health-care providers for their day-to-day operations; but special-purpose "research" forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
 
 For more details, navigate to the `RedPatch` branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
+
+---
 
 ### Publishing for Nonprofits
 
@@ -64,6 +67,7 @@ enhancements that are impossible otherwise.  In particular, it becomes possible
 to implement a rigorous interop and query infrastructure that emcompasses both text manuscripts 
 and dataset file
 
+---
 
 ### Compiler Extensions
 
@@ -94,8 +98,9 @@ arguments are (at first) encoded in generic containers such as `QVariant` or `QS
 variables that get passed on the stack (or alter the stack some other way -- `AngelScript` actually 
 employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
 types ahead of time.  There is a workaround, however -- even without heave introspection and 
-dependencies such as `LLVM` -- which can be illustrated with code adopted from `rpclib` 
-(github.com/rpclib/rpclib)[https://github.com/rpclib/rpclib]
+dependencies such as `LLVM` -- which can be illustrated with code adopted from 
+`rpclib` (github.com/rpclib/rpclib)[https://github.com/rpclib/rpclib]:
+
 
 ```
 typedef std::function<void (QStringList)> ftype; // copy-on-write, so we don't need to pass by & const
