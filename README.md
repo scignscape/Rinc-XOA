@@ -25,7 +25,7 @@ The underlying technology I have called "`DogLeash`" (Diamond Object Grid - Lang
 
 - Medical Imaging, to support researchers studying community-health providers in areas of medicine where imaging is important for diagnosis and treatment, such as Oncology, musculoskeletal interventions, and prenatal care
 
-- Digital Maps to build, export, and visualize GIS data sets addressing community-health concerns such as disease outbreaks, epidemiology, Social Determinants of Health (SDoH), and locations of health-care providers (permanent or temporary/emergency)
+- Digital Maps to build, export, and visualize GIS data sets addressing community-health concerns such as disease outbreaks, epidemiology, Social Determinants of Health (`SDoH`), and locations of health-care providers (permanent or temporary/emergency)
 
 - Environmental Factors: tools to study public-health implications of pollution, ecological degradation, contaminated water supplies, and similar civil-infrastructure concerns
 
@@ -35,7 +35,7 @@ The underlying technology I have called "`DogLeash`" (Diamond Object Grid - Lang
 
 To be more specific, the modules include code that may be narrow in scope but could be adapted for other contexts.  For example, the `EHR` module is focused on `AMPATH` (Academic Model Providing Access To Healthcare) Forms but the implemented "native rendering" techniques could be used with other `EHR` systems.  Here is concrete functionality representative of the aforementioned modules:
 
-- Academic Publishing:  RedPatch incorporates the `DogLeash` `GTagML` module, which can be used to generate documents in a variety of formats, including `PDF`, `LaTeX`, and `JATS-XML`.  `GTagML` is optimized for creating publications that are cross-referenced with data sets in Executable Research Objects.  See the GTagML branch of DogLeash at [https://github.com/scignscape/DogLeash/tree/GTagML](https://github.com/ScignScape/DogLeash/tree/GTagML).
+- Academic Publishing:  RedPatch incorporates the `DogLeash` `GTagML` module, which can be used to generate documents in a variety of formats, including `PDF`, `LaTeX`, and `JATS-XML`.  `GTagML` is optimized for creating publications that are cross-referenced with data sets in Executable Research Objects.  See the `GTagML` branch of `DogLeash` at [https://github.com/scignscape/DogLeash/tree/GTagML](https://github.com/ScignScape/DogLeash/tree/GTagML).
 
 - Electronic Health Records: At present, this module (`RedPatch-EHR`) is focused on a "Native Rendering Engine" for `AMPATH` forms.  In `OpenMRS` (Open Medical Record System) -- developed by `AMPATH` and used by Doctors Without Borders, Partners in Health, Care 2 Communities, and other `NGO`s/nonprofits -- `AMPATH` forms are internally stored as `JSON` configuration files that get converted to web pages via `ReactJS`.  This module provides an alternative rendering engine that, instead, maps the configurations to C++ classes to provide self-contained `GUI` components.  These classes could be run as isolated executables, or grouped into form libraries that collectively form customized `EHR` software, or embedded in host applications.  But in each case the form is a single desktop application window: there's no need for client/server separation, server processes, `HTTP` requests, or running the User Interface through a web browser.
 
