@@ -50,31 +50,58 @@ from technological integration with associated resources, via techniques
 such as customized `PDF` viewers specifically designed for a shared data package.
 
 In brief, the diamond model is not only more ethical; it also permits technological 
-enhancements that are impossible otherwise.
+enhancements that are impossible otherwise.  In particular, it becomes possible 
+to implement a rigorous interop and query infrastructure that emcompasses both text manuscripts 
+and dataset file
 
 
 ### Compiler Extensions
 
+`DogLeash` Research Objects are assumed to be `C++` code libraries that compile to a single recognized 
+Research Application (other utilities may be created as well, but someone using the data set should 
+launch a single executable to access most or all available information and functionality).  In general, 
+an Executable Research Object will include dataset-specific code for data deserialization, 
+processing, analysis, visualization, and search capabilities.  Important procedures within this code 
+should, as a rule, be exposed or wrapped in a remote-callable manner.
+
+Assuming a Research Application is primarily implemented in `C++`, users should have the option of 
+extending or fine-tuning this code without writing their own `C++` files that would need a separate 
+compile/build step.  In short, Research Applications should have scripting capabilities.  Many 
+scripting languages are possible, of course, but ideally the scripting framework should 
+be compiled directly inside Research Object, rather than relying on an external 
+interpreter.  Languages such as `LUA`, `AngelScript`, and `ECL` (Embeddable Common Lisp) are examples 
+of scripting platforms that may be distributed in source-code fashion alongside host applications.
+
+If a more minimal scripting environment is sufficient, `DogLeash` allows programmers to build a 
+scripting framework that is tightly integrated with other components in an 
+Executable Research Object.  Here is a summary of some features and techniques.
+
+**_C++ Interop_**
+
+The first issue is exposing `C++` procedures/methods to the script runtime.  The point here is that 
+arguments are (at first) encoded in generic containers such as `QVariant` or `QStringList` 
+(assuming we are working in a `Qt` environment).  We need to convert these to local 
+variables that get passed on the stack (or alter the stack some other way -- `AngelScript` actually 
+employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
+types ahead of time.  There is a workaround, however -- even without heave introspection and 
+dependencies such as `LLVM` -- which can be illustrated with code adopted from the `RPC` library.
+
+```
+
+template<typename ...>
 
 
 
----
 
 
-One hindrance to widespread adoption of both paradigms is that their documentations tend to gravitate toward general statements of principle or summarial specifications (such as Research Object Bundles or the RO-Crate framework) rather than substantial tools that help authors, scientists, and/or programmers actually implement Executable Open Access applications.  The sibling project ScignScape/DogLeash (Diamond Object Grid -- Language Server and Script Host) addresses this limitation by publishing compiler and IDE (Integrated Development) Extensions that can form the basis of XOA projects.  Technical discussion of these code libraries is provided through the DogLeash repository.
+```
 
-The DogLeash components are not specifically tied to a non-profit environment, except insofar a DiamondOA resources tend to be developed by nonprofits to begin with (either academic institutions or noncommercial projects specifically oriented to the Diamond ecosystem).  As a result, the current repository (Rinc-XOA) is set aside for tools or extensions to ScignScape/DogLeash that are specific to the nonprofit context.  This can include links to ScignScape applications as well as code components that could be useful for populating open-access data sets with information derived from nonprofit settings, which may utilize schema such as the Common Data Model for Nonprofits and/or require extra processing steps (e.g., depersonalization and other techniques to preserve personal privacy).
 
-"ScignScape" -- Science Grid Nodes/Semantic Application Engine -- is also a neologism, describing a generic model wherein executable applications function as citeable resources alongside (and associated with) research publications.  In general, "semantic" applications in this sense will employ both dataset and code annotations and will declare explicit, granular cross-references to research publications.  Full-text searches against scientific/academic manuscripts may then be extended to XOA packages and vice-versa.  Code elements such as data types, record fields, units of measurement, coordinate systems, procedures' pre/post-condition contracts, and specific functions or algorithms (e.g., coordinate-transforms or deserialization grammars) are good candidates for semantic indexing.  So too are many GUI components, including individual controls (buttons, forms, display containers) as well as context menus, user-visible actions, and MVC (Model/View/Controller) style mappings between data types and GUI classes.  For robust desktop-style engineering, much of this information should be curated anyhow for documentation that helps users discover, for example, how to perform a specific action against a data set (e.g., calculate a statistical analysis or launch a simulation).  The idea behind ScignScape is that annotations and metadata may also be used to compile infosets that support full-text searches against application code following query protocols similar to those for text-document repositories.
 
-To be more specific, the DogLeash repository includes a specification that enumerates multiple query protocols that compliant applications will support, both with respect to code, data, and text manuscripts.  Whether or not users choose to adopt this particular specification, hopefully it serves as an example of how code, text, and data can be unified into a single searchable compilation.  DogLeash provides the basic infrastructure for a query/scripting language, OTQR (Object/Text Query Runtime) that can implement the ScignScape protocol as customized for individual XOA applications.
 
-Parts of the ScignScape protocol are directly adopted from the Language Server Protocol (LSP), which governs interop between IDEs and code libraries written in specific programming languages (i.e., there are LSP servers for many programming languages, such as Clangd or ccls for C++, and Palantir or Pyright for Python).  In general, ScignScape does not explicit address queries related to live code editing, but extends LSP with static code data directly relevant to source files implementing Executable Research Objects.  Again, please visit the ScignScape/DogLeash repository for more information.
 
-At the same time, the ScignScape protocol also covers code-introspection capabilities utilizable for "semantic" applications as runtime script hosts.  In the ERO context, scripting can be used to fine-tune deserialization, GUIs, data analysis, and in general to expose project-specific data and functionality for researchers who want to reuse or reexamine published findings.  There are many similarities between a Language Server and a Script Host -- such as indexing function-signatures so that procedures may be identified by name -- but they serve somewhat different purposes.  Nonetheless, DogLeash introduces the concept of a "Language Server Infoset" that is compiled from code libraries and aggregates static metadata relevant for both Language Server and Script Host implementations.   
 
-The design of Rinc-XOA and DogLeash assumes that most users will clone a specific branch of DogLeash, and Rinc-XOA is set aside for informative documents and "nonpublic" assets.  It is recommended that users do not clone the full DogLeash repository, which contains experimental and work-in-process code, but rather choose a single branch to use as a starting point for developing XOA software.  The branches include tools for working with image series, digital maps, PDF, JATS, and other multimedia resources that may be useful for XOA applications as well as compiler, parsing, and VM code.  
-On *this* repository (Rinc-XOA), the "JATS-Con-demo" branch hosts demo code for my presentation at the JATS conference 2026).  The "CTG" branch ("Cognitive Transform Grammar") is essentially a repository version of the Research Object hosted on Open Science Framework at 
-In conclusion, the following is a list of publications created with some version of DogLeash code.  Those that are *starred* are (at least in my opinion) technically relevant to DogLeash itself insofar as they address topics in compiler theory, type theory, or Software Language Engineering that motivate the DogLeash parsing, native-interop, and Virtual Machine strategies.  
+
+
 
 
