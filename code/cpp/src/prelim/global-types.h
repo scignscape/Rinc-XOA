@@ -23,6 +23,8 @@
 #include "global-macros.h"
 #include "enum-macros.h"
 
+#include <limits>
+
 
 #define _auto_new(obj) \
   new std::remove_pointer<decltype(obj)>::type
@@ -183,7 +185,12 @@ inline bool _cut(const QString pre_cut, const QString to_cut, QString& original)
  if(index == -1)
    return 0;
 
+#ifdef USING_QT_6
+// //  or a QStringView ...
+ if(original.mid(index).startsWith(to_cut))
+#else
  if(original.midRef(index).startsWith(to_cut))
+#endif
  {
   original = original.mid(index + to_cut.size());
   return to_cut.size();
