@@ -128,26 +128,41 @@ u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, QString* skipped)
 
 u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, QStringList* skipped)
 {
-
+    QString sk;
+u2 result = _advance_past(basis, &sk);
+    *skipped = sk.simplified().split(" ");
+return result;
 }
 
 u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, quint64* skipped)
 {
-
+    QString sk;
+    u2 result = _advance_past(basis, &sk);
+    *skipped = sk.toULongLong();
+    return result;
 }
 
 u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, qint64* skipped)
 {
-
+    QString sk;
+    u2 result = _advance_past(basis, &sk);
+    *skipped = sk.toLongLong();
+    return result;
 }
 
 u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, qreal* skipped)
 {
-
+    QString sk;
+    u2 result = _advance_past(basis, &sk);
+    *skipped = sk.toDouble();
+    return result;
 }
 
 u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, float* skipped)
 {
-
+    QString sk;
+    u2 result = _advance_past(basis, &sk);
+    *skipped = sk.toFloat();
+    return result;
 }
 
