@@ -1,0 +1,10824 @@
+--- Global/start
+
+
+
+--- Abstract/start
+
+
+--- Sentence/start
+id: 0
+
+--- Sentence//end
+id: 0
+r#  154  8  22
+p: .
+t. 
+|  This paper examines methodological foundations for
+|  linguistics in terms of phenomenology and the
+.  philosophy of science
+
+
+--- Sentence/switch
+id: 1
+r#  155  8  23
+
+
+--- Sentence//end
+id: 1
+r#  315  11  36
+p: .
+t. 
+|   I argue for explanatory
+|  paradigms that model the interdependence of
+|  linguistic and extra-linguistic knowledge/faculties
+.  for understanding typical sentences
+
+
+--- Sentence/switch
+id: 2
+r#  316  11  37
+
+
+--- Sentence//end
+id: 2
+r#  595  17  14
+p: .
+t. 
+|   In lieu
+|  of set theory or predicate logic formalization, I
+|  point out some similarities between natural and computer
+|  languages, so that formal structures related to
+|  compilers and programming-language implementation
+|  may offer useful simplified models for human
+.  communication
+
+
+--- Sentence/switch
+id: 3
+r#  596  17  15
+
+
+--- Sentence//end
+id: 3
+r#  867  22  45
+p: .
+t. 
+|   In particular, I emphasize how
+|  surface discourse may be transformed to sequences
+|  of operations toward conceptual aggregation/synthesis,
+|  while maintaining that most details concerning how
+|  concepts are pairwise combined
+.  depend on extralinguistic cognitive activity
+
+--- Sentence/end 
+id: 3
+r#  868  22  46
+
+--- Paragraph/end 
+id: 0
+y: Abstract
+
+
+--- Section/start
+-l  1
+-i  1
+-t  Introduction
+
+
+--- Paragraph/start
+id: 1
+r#  891  27  1
+
+
+--- Sentence/start
+id: 4
+r#  891  27  1
+
+--- Sentence//end
+id: 4
+r#  1076  29  10
+p: .
+t. 
+|  It is clearly true that an important part of human language is governed by rules or
+|  structures, ones that can be (at least to a useful extent) formalized and computationally
+.  simulated
+
+
+--- Sentence/switch
+id: 5
+r#  1077  29  11
+
+
+--- Sentence//end
+id: 5
+r#  1381  32  73
+p: .
+t. 
+|   And yet, language was not designed by committee: claiming that a
+|  particular semantic or syntactic pattern has become entrenched is not a
+|  complete argument, as if language were intrinsically a collection of formal rules, and we
+.  need merely infer them (like reverse-engineering compiled computer code)
+
+
+--- Sentence/switch
+id: 6
+r#  1382  32  74
+
+
+--- Sentence//end
+id: 6
+r#  1447  33  59
+p: .
+t. 
+|   The
+.  question is why patterns become entrenched and stay so
+
+--- Sentence/end 
+id: 6
+r#  1448  33  60
+
+--- Paragraph/end 
+id: 1
+y: N/A
+
+
+--- Paragraph/start
+id: 2
+r#  1452  35  1
+
+
+--- Sentence/start
+id: 7
+r#  1452  35  1
+
+--- Sentence//end
+id: 7
+r#  1501  36  29
+p: .
+t. 
+|  Plus, we should not
+.  overestimate rules' rigidity
+
+
+--- Sentence/switch
+id: 8
+r#  1502  36  30
+
+
+--- Sentence//end
+id: 8
+r#  1715  43  1
+p: 
+t. 
+|   That a bachelor is an unmarried man, for example,
+|  is a canonical example of logic underlying semantics; but sentences like
+|  these are quite meaningful:\ifnum\presetStretch=2\vspace*{9pt}\else\fi
+.  
+
+
+--- Sentence/switch
+id: 9
+r#  1718  43  4
+
+
+--- Sentence//end
+id: 9
+r#  1800  43  86
+p: .
+t. 
+.   My brother has been married for 10 years, but in many ways he's still a bachelor
+
+
+--- Sentence/switch
+id: 10
+r#  1801  43  87
+
+
+--- Sentence//end
+id: 10
+r#  1802  44  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 11
+r#  1805  44  4
+
+
+--- Sentence//end
+id: 11
+r#  1861  44  60
+p: .
+t. 
+.   All of the eligible bachelors in this town are married
+
+
+--- Sentence/switch
+id: 12
+r#  1862  44  61
+
+
+--- Sentence//end
+id: 12
+r#  2126  50  26
+p: .
+t. 
+|  
+|  Moral of the story: just as, in a fair legal system, it should be assumed that
+|  almost all laws have instances where reasonable people would break them, so
+|  in language, for every set of rules there are contexts where competent
+.  speakers will ignore them
+
+--- Sentence/end 
+id: 12
+r#  2127  50  27
+
+--- Paragraph/end 
+id: 2
+y: N/A
+
+
+--- Paragraph/start
+id: 3
+r#  2131  52  1
+
+
+--- Sentence/start
+id: 13
+r#  2131  52  1
+
+--- Sentence//end
+id: 13
+r#  2252  56  1
+p: 
+t. 
+|  To motivate further discussion about the limits of linguistic
+.  formalization, consider these pairs of sentences:
+
+
+--- Sentence/switch
+id: 14
+r#  2255  56  4
+
+
+--- Sentence//end
+id: 14
+r#  2291  56  40
+p: .
+t. 
+.   Everyone sang along to three songs
+
+
+--- Sentence/switch
+id: 15
+r#  2292  56  41
+
+
+--- Sentence//end
+id: 15
+r#  2293  57  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 16
+r#  2296  57  4
+
+
+--- Sentence//end
+id: 16
+r#  2346  57  54
+p: .
+t. 
+.   All appeals are heard by a panel of three judges
+
+
+--- Sentence//end
+id: 16
+r#  2349  59  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 17
+r#  2352  59  4
+
+
+--- Sentence//end
+id: 17
+r#  2398  59  50
+p: .
+t. 
+.   All New Yorkers live in one of five boroughs
+
+
+--- Sentence/switch
+id: 18
+r#  2399  59  51
+
+
+--- Sentence//end
+id: 18
+r#  2400  60  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 19
+r#  2403  60  4
+
+
+--- Sentence//end
+id: 19
+r#  2481  60  82
+p: .
+t. 
+.   All New Yorkers complain about how long it takes to commute to New York City
+
+
+--- Sentence//end
+id: 19
+r#  2484  62  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 20
+r#  2487  62  4
+
+
+--- Sentence//end
+id: 20
+r#  2535  62  52
+p: .
+t. 
+.   In Ariel's picture of Beatrice, she looks sick
+
+
+--- Sentence/switch
+id: 21
+r#  2536  62  53
+
+
+--- Sentence//end
+id: 21
+r#  2537  63  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 22
+r#  2540  63  4
+
+
+--- Sentence//end
+id: 22
+r#  2681  66  1
+p: 
+t. 
+|   In Ariel's picture of Beatrice, she snapped the lens just
+.  as two cardinals flew by.\vspace*{4.5pt}
+
+
+--- Sentence/switch
+id: 23
+r#  2684  66  4
+
+
+--- Sentence//end
+id: 23
+r#  2711  66  31
+p: .
+t. 
+.   We operated near the bank
+
+
+--- Sentence/switch
+id: 24
+r#  2712  66  32
+
+
+--- Sentence//end
+id: 24
+r#  2713  67  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 25
+r#  2717  67  5
+
+
+--- Sentence//end
+id: 25
+r#  2749  67  37
+p: .
+t. 
+.   On the mantle was a wooden bat
+
+
+--- Sentence/switch
+id: 26
+r#  2750  67  38
+
+
+--- Sentence//end
+id: 26
+r#  2838  71  10
+p: .
+t. 
+|  
+|  Each \clrmrAlt{1}{3}pair shows interpretive reliance on extra-linguistic
+.  reasoning
+
+
+--- Sentence/switch
+id: 27
+r#  2839  71  11
+
+
+--- Sentence//end
+id: 27
+r#  3053  73  39
+p: .
+t. 
+|   The situation in  and  is quantifier scope: assuming  discusses some
+|  musical performance, it would be abnormal for everyone in the audience to individually choose
+.  exactly three songs to sing along with
+
+
+--- Sentence/switch
+id: 28
+r#  3054  73  40
+
+
+--- Sentence//end
+id: 28
+r#  3203  75  10
+p: .
+t. 
+|   Hence, we can assume that, among all songs
+|  played that evening, there were specifically three with the property that (all) the audience
+.  joined in
+
+
+--- Sentence/switch
+id: 29
+r#  3204  75  11
+
+
+--- Sentence//end
+id: 29
+r#  3280  75  87
+p: .
+t. 
+.   The numeral-quantifier three is thus outside the scope of everyone
+
+
+--- Sentence/switch
+id: 30
+r#  3281  75  88
+
+
+--- Sentence//end
+id: 30
+r#  3473  78  47
+p: .
+t. 
+|  By contrast, one is free to hear  as nesting the scope of three inside all
+|  (by protocol three judges hear an appeal, but the set of
+.  individuals can vary from one case to another)
+
+--- Sentence/end 
+id: 30
+r#  3474  78  48
+
+--- Paragraph/end 
+id: 3
+y: N/A
+
+
+--- Paragraph/start
+id: 4
+r#  3478  80  1
+
+
+--- Sentence/start
+id: 31
+r#  3478  80  1
+
+--- Sentence//end
+id: 31
+r#  3568  80  91
+p: .
+t. 
+.  In  and , reading a quantifier's intent requires distinguishing levels of exactitude
+
+
+--- Sentence/switch
+id: 32
+r#  3569  80  92
+
+
+--- Sentence//end
+id: 32
+r#  3623  81  38
+p: .
+t. 
+|   Rhetorically,
+.  all often actually means most
+
+
+--- Sentence/switch
+id: 33
+r#  3624  81  39
+
+
+--- Sentence//end
+id: 33
+r#  3789  83  41
+p: .
+t. 
+|   The  speaker is not heard to
+|  report on 10+ million residents as if they were personally interviewed (nor would  be
+.  falsified by scattered counter-examples)
+
+
+--- Sentence/switch
+id: 34
+r#  3790  83  42
+
+
+--- Sentence//end
+id: 34
+r#  3988  85  57
+p: .
+t. 
+|   On the other hand, geopolitically New York is indeed
+|  divided into five boroughs, so  is literally correct  -  but only via a rigid
+.  reading of the referential intent behind New Yorker
+
+
+--- Sentence/switch
+id: 35
+r#  3989  85  58
+
+
+--- Sentence//end
+id: 35
+r#  4073  86  43
+p: .
+t. 
+|   In numerous contexts this term extends
+.  to many inhabitants beyond the city proper
+
+--- Sentence/end 
+id: 35
+r#  4074  86  44
+
+--- Paragraph/end 
+id: 4
+y: N/A
+
+
+--- Paragraph/start
+id: 5
+r#  4076  88  1
+
+
+--- Sentence/start
+id: 36
+r#  4076  88  1
+
+--- Sentence//end
+id: 36
+r#  4178  88  103
+p: .
+t. 
+.  Uncertainties in  and  are of a different sort: anaphora resolution rather than quantifier scope
+
+
+--- Sentence/switch
+id: 37
+r#  4179  88  104
+
+
+--- Sentence//end
+id: 37
+r#  4286  89  105
+p: .
+t. 
+.  These also have two competing interpretations, depending on whether she is read as Ariel or Beatrice
+
+
+--- Sentence/switch
+id: 38
+r#  4287  89  106
+
+
+--- Sentence//end
+id: 38
+r#  4410  91  15
+p: .
+t. 
+|   The
+|  former option is more likely in  because one can tell from a photograph what the depicted subject
+.  looks like
+
+
+--- Sentence/switch
+id: 39
+r#  4411  91  16
+
+
+--- Sentence//end
+id: 39
+r#  4527  92  44
+p: .
+t. 
+|   But we can't a priori exclude a continuation like I'm worried,
+.  it seems as if Ariel's hands were shaking
+
+
+--- Sentence/switch
+id: 40
+r#  4528  92  45
+
+
+--- Sentence//end
+id: 40
+r#  4649  94  38
+p: .
+t. 
+|  Nor can we entirely disregard a scenario for  where Ariel takes a picture of
+.  Beatrice photographing colorful birds
+
+--- Sentence/end 
+id: 40
+r#  4650  94  39
+
+--- Paragraph/end 
+id: 5
+y: N/A
+
+
+--- Paragraph/start
+id: 6
+r#  4652  96  1
+
+
+--- Sentence/start
+id: 41
+r#  4652  96  1
+
+--- Sentence//end
+id: 41
+r#  4864  98  8
+p: .
+t. 
+|  The issue in  and , by contrast, is ordinary polysemy:  might reflect an
+|  accountant with offices facing a financial institution, or otherwise a field clinic established \clrmAlt{2}{6}near
+.  a river
+
+
+--- Sentence/switch
+id: 42
+r#  4865  98  9
+
+
+--- Sentence//end
+id: 42
+r#  4936  98  80
+p: .
+t. 
+.   And  could describe a baseball collectible or an animal sculpture
+
+
+--- Sentence/switch
+id: 43
+r#  4937  98  81
+
+
+--- Sentence//end
+id: 43
+r#  4978  99  40
+p: .
+t. 
+.  I include these for point of comparison
+
+
+--- Sentence/switch
+id: 44
+r#  4979  99  41
+
+
+--- Sentence//end
+id: 44
+r#  5331  103  63
+p: .
+t. 
+|   The ambiguity in the former three pairs,
+|  I believe, is holistic and compositional whereas the latter's underdeterminism
+|  is more localized (even though selecting one or another reading of bank, and
+|  bat, frames lexical choices for the overall sentence; my point is that
+.  the locus of sense-divergence can be reduced to a single word)
+
+--- Sentence/end 
+id: 44
+r#  5332  103  64
+
+--- Paragraph/end 
+id: 6
+y: N/A
+
+
+--- Paragraph/start
+id: 7
+r#  5336  105  1
+
+
+--- Sentence/start
+id: 45
+r#  5336  105  1
+
+--- Sentence//end
+id: 45
+r#  5490  107  31
+p: .
+t. 
+|  I chose the first three sentence-pairs because the variable factor in each
+|  case flip-flops from first to second, at least
+.  in the most likely reading
+
+
+--- Sentence/switch
+id: 46
+r#  5491  107  32
+
+
+--- Sentence//end
+id: 46
+r#  5588  111  1
+p: 
+t. 
+|   But subtle variation can point to the opposite, as in these alternatives
+.  for :
+
+
+--- Sentence/switch
+id: 47
+r#  5592  111  5
+
+
+--- Sentence//end
+id: 47
+r#  5626  111  39
+p: .
+t. 
+.   Every band performed three songs
+
+
+--- Sentence/switch
+id: 48
+r#  5627  111  40
+
+
+--- Sentence//end
+id: 48
+r#  5628  112  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 49
+r#  5632  112  5
+
+
+--- Sentence//end
+id: 49
+r#  5676  112  49
+p: .
+t. 
+.   Everyone sang along to one song or another
+
+
+--- Sentence/switch
+id: 50
+r#  5677  112  50
+
+
+--- Sentence//end
+id: 50
+r#  5862  116  76
+p: .
+t. 
+|  
+|  Changing the context to a band playing, versus an audience member, imposes a different interpretive
+.  framework: usually bands perform a set with their own material/ covers
+
+
+--- Sentence/switch
+id: 51
+r#  5863  116  77
+
+
+--- Sentence//end
+id: 51
+r#  6056  118  63
+p: .
+t. 
+|   Meanwhile, switching
+|  from the exact three to the more flexible one [song] or another gives enough construal slack that
+.  putting the later scope in the former makes interpretive sense
+
+
+--- Sentence/switch
+id: 52
+r#  6057  118  64
+
+--- Paragraph/end 
+id: 7
+y: N/A
+
+
+--- Paragraph/start
+id: 8
+r#  6115  121  1
+
+
+--- Sentence/start
+id: 53
+r#  6115  121  1
+
+--- Sentence//end
+id: 53
+r#  6247  122  50
+p: .
+t. 
+|  \ifnum\presetStretch=2{}\else{\thispagestyle{two}}\fiDespite the competing readings, each option for each sentence I have discussed so
+.  far, I believe, has a fairly obvious logical form
+
+
+--- Sentence/switch
+id: 54
+r#  6248  122  51
+
+
+--- Sentence//end
+id: 54
+r#  6371  123  76
+p: .
+t. 
+|   But there are other examples where a logical
+.  gloss would not fully capture the communicated content of a given statement
+
+
+--- Sentence/switch
+id: 55
+r#  6372  123  77
+
+
+--- Sentence//end
+id: 55
+r#  6393  126  1
+p: 
+t. 
+.   Consider:
+
+
+--- Sentence/switch
+id: 56
+r#  6397  126  5
+
+
+--- Sentence//end
+id: 56
+r#  6448  126  56
+p: .
+t. 
+.   This election is slipping away from the Democrats
+
+
+--- Sentence/switch
+id: 57
+r#  6449  126  57
+
+
+--- Sentence//end
+id: 57
+r#  6450  127  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 58
+r#  6454  127  5
+
+
+--- Sentence//end
+id: 58
+r#  6527  127  78
+p: .
+t. 
+.   Student after student came by to complain about the reading assignments
+
+
+--- Sentence/switch
+id: 59
+r#  6528  127  79
+
+
+--- Sentence//end
+id: 59
+r#  6611  130  79
+p: .
+t. 
+|  
+.  Notice how  and  subtlely explicate warrants as well as assert beliefs
+
+
+--- Sentence/switch
+id: 60
+r#  6612  130  80
+
+
+--- Sentence//end
+id: 60
+r#  6739  132  78
+p: .
+t. 
+|  The metaphor of slipping away connotes a
+.  gradual process that the speaker has observed over an extended period of time
+
+
+--- Sentence/switch
+id: 61
+r#  6740  132  79
+
+
+--- Sentence//end
+id: 61
+r#  6905  135  17
+p: .
+t. 
+|   Similarly,
+|   suggests multiple similar episodes that collectively motivate the enunciated,
+|  presented in phrasing that intimates an extended,
+.  enduring process
+
+
+--- Sentence/switch
+id: 62
+r#  6906  135  18
+
+
+--- Sentence//end
+id: 62
+r#  7001  136  10
+p: .
+t. 
+|   These examples reveal a kind of narrative account of the speaker's evidential
+.  rationale
+
+
+--- Sentence/switch
+id: 63
+r#  7002  136  11
+
+
+--- Sentence//end
+id: 63
+r#  7115  137  33
+p: .
+t. 
+|   The details in  are different than if all objections were made during one
+.  single heated class session, say
+
+--- Sentence/end 
+id: 63
+r#  7116  137  34
+
+--- Paragraph/end 
+id: 8
+y: N/A
+
+
+--- Paragraph/start
+id: 9
+r#  7120  139  1
+
+
+--- Sentence/start
+id: 64
+r#  7120  139  1
+
+--- Sentence//end
+id: 64
+r#  7228  140  63
+p: .
+t. 
+|  With no further qualification, of course, we
+.  hear an implicit I believe that attached to any utterance
+
+
+--- Sentence/switch
+id: 65
+r#  7229  140  64
+
+
+--- Sentence//end
+id: 65
+r#  7374  142  61
+p: .
+t. 
+|   Since a
+|  claim of  is almost always a claim of I believe  this kind of
+.  meta-discursive attitude can be subsumed into ordinary logic
+
+
+--- Sentence/switch
+id: 66
+r#  7375  142  62
+
+
+--- Sentence//end
+id: 66
+r#  7517  144  69
+p: .
+t. 
+|  Often, it should be obvious, we present one claim to justify another
+.  (imagine a variant of  that explicitly mentions polling numbers)
+
+
+--- Sentence/switch
+id: 67
+r#  7518  144  70
+
+
+--- Sentence//end
+id: 67
+r#  7707  147  61
+p: .
+t. 
+|  So the pattern of propositions justifying other propositions
+|  does not in itself challenge the validity of semantic theories
+.  premised on treating sentences as encodings for propositions
+
+--- Sentence/end 
+id: 67
+r#  7708  147  62
+
+--- Paragraph/end 
+id: 9
+y: N/A
+
+
+--- Paragraph/start
+id: 10
+r#  7710  149  1
+
+
+--- Sentence/start
+id: 68
+r#  7710  149  1
+
+--- Sentence//end
+id: 68
+r#  8026  153  22
+p: .
+t. 
+|  However, the resources a speaker has for expressing the backstory of their
+|  propositional attitudes span a wide spectrum of connotations and experiences,
+|  and I'd argue that there is no logical system that could precisely model
+|  all ways that language-users characterize how one belief compels
+.  or reinforces another
+
+
+--- Sentence/switch
+id: 69
+r#  8027  153  23
+
+
+--- Sentence//end
+id: 69
+r#  8297  157  34
+p: .
+t. 
+|   \clrmr{2}{10}Most usage embeds propositions not in
+|  chains of deductive reasoning but rather in narrative presentations
+|  that reflect perspectives, the interlocking of situations, and
+|  in general the somewhat informal manner by which
+.  we formulate beliefs and opinions
+
+
+--- Sentence/switch
+id: 70
+r#  8298  157  35
+
+
+--- Sentence//end
+id: 70
+r#  8549  160  81
+p: .
+t. 
+|   To the degree that one
+|  expresses beliefs via narrativizing constructions or metaphors like
+|  slipping away and student after student  -  or so I claim  -  this
+.   cannot be adequately captured via formulaic logic
+
+--- Sentence/end 
+id: 70
+r#  8550  160  82
+
+--- Paragraph/end 
+id: 10
+y: N/A
+
+
+--- Paragraph/start
+id: 11
+r#  8553  163  1
+
+
+--- Sentence/start
+id: 71
+r#  8553  163  1
+
+--- Sentence//end
+id: 71
+r#  8687  167  3
+p: .
+t. 
+|  Cumulatively, then, I believe that sentences  offer examples
+.  of two issues for formal semantics: 1
+
+
+--- Sentence/switch
+id: 72
+r#  8688  167  4
+
+
+--- Sentence//end
+id: 72
+r#  8945  170  68
+p: .
+t. 
+|   While assertion (or implicature) of some proposition 
+|  features in most sentences, there may be details contained in
+|  the meaning of the sentence that are not contained in  itself
+.  (or in logically related propositions, such as belief that )
+
+
+--- Sentence/switch
+id: 73
+r#  8948  172  1
+
+
+--- Sentence//end
+id: 73
+r#  8950  172  3
+p: .
+t. 
+.  2
+
+
+--- Sentence/switch
+id: 74
+r#  8951  172  4
+
+
+--- Sentence//end
+id: 74
+r#  9112  174  8
+p: .
+t. 
+|   Even if the meaning of sentence  is indeed to a large extent included in some
+|  , background knowledge may be needed to infer  as the intended
+.  meaning
+
+
+--- Sentence/switch
+id: 75
+r#  9113  174  9
+
+
+--- Sentence//end
+id: 75
+r#  9229  175  54
+p: .
+t. 
+|   There might be no deterministic process to extract  from
+.   via syntactic, semantic, or pragmatic rules alone
+
+
+--- Sentence/switch
+id: 76
+r#  9230  175  55
+
+
+--- Sentence//end
+id: 76
+r#  9399  179  81
+p: .
+t. 
+|  
+|  If these points are valid, then the project of formulating semantics as the search
+.  for rules governing how sentences  encode propositions  is notably limited
+
+--- Sentence/end 
+id: 76
+r#  9400  179  82
+
+--- Paragraph/end 
+id: 11
+y: N/A
+
+
+--- Paragraph/start
+id: 12
+r#  9404  181  1
+
+
+--- Sentence/start
+id: 77
+r#  9404  181  1
+
+--- Sentence//end
+id: 77
+r#  9467  181  64
+p: .
+t. 
+.  I don't want to make too much out of ambiguity in and of itself
+
+
+--- Sentence/switch
+id: 78
+r#  9468  181  65
+
+
+--- Sentence//end
+id: 78
+r#  9540  182  70
+p: .
+t. 
+.  A dresser can be someone donning clothes or a piece of furniture
+
+
+--- Sentence/switch
+id: 79
+r#  9541  182  71
+
+
+--- Sentence//end
+id: 79
+r#  9637  183  94
+p: .
+t. 
+.  So people must discern which word-sense applies, usually with the aid of background knowledge
+
+
+--- Sentence/switch
+id: 80
+r#  9638  183  95
+
+
+--- Sentence//end
+id: 80
+r#  9769  185  50
+p: .
+t. 
+|  Anyone who believes that such facts problematize a particular semantic theory
+.  need not progress to sentence-level ambiguity
+
+--- Sentence/end 
+id: 80
+r#  9770  185  51
+
+--- Paragraph/end 
+id: 12
+y: N/A
+
+
+--- Paragraph/start
+id: 13
+r#  9772  187  1
+
+
+--- Sentence/start
+id: 81
+r#  9772  187  1
+
+--- Sentence//end
+id: 81
+r#  9939  189  27
+p: .
+t. 
+|  However, the lexical underdeterminacy of dresser or bat
+|  is a purely local phenomenon that can't be equated with more holistic
+.  examples such as 
+
+
+--- Sentence/switch
+id: 82
+r#  9940  189  28
+
+
+--- Sentence//end
+id: 82
+r#  10173  193  48
+p: .
+t. 
+|   To put it differently,
+|  it's credible to imagine homonyms like dresser
+|  as surface-level accidents, artifacts of random drift in usage, borrowings, or
+|  accent, masking a lexical
+.  deep structure by analogy to the syntactic
+
+
+--- Sentence/switch
+id: 83
+r#  10174  193  49
+
+
+--- Sentence//end
+id: 83
+r#  10336  196  16
+p: .
+t. 
+|  Perhaps lurking behind English lies an idealized language where senses
+|  could be marked, so person and furniture dresser become just
+.  different words
+
+
+--- Sentence/switch
+id: 84
+r#  10337  196  17
+
+
+--- Sentence//end
+id: 84
+r#  10688  200  81
+p: .
+t. 
+|   The problem on a larger scale is that sentences are supposed to
+|  function via composition: as words signify concepts, so sentences
+|  convey propositional content because they merge concepts according
+|  to specific recipes (syntax matters because multi-concept complexes
+.  are not just unstructured bags: the king loves the queen versus vice-versa)
+
+
+--- Sentence/switch
+id: 85
+r#  10689  200  82
+
+
+--- Sentence//end
+id: 85
+r#  10829  202  70
+p: .
+t. 
+|  I argue from cases like  that even after fully digesting
+.  compositional intent, predicate signification remains underdetermined
+
+--- Sentence/end 
+id: 85
+r#  10830  202  71
+
+--- Paragraph/end 
+id: 13
+y: N/A
+
+
+--- Paragraph/start
+id: 14
+r#  10832  204  1
+
+
+--- Sentence/start
+id: 86
+r#  10832  204  1
+
+--- Sentence//end
+id: 86
+r#  11372  211  30
+p: .
+t. 
+|  To borrow the apologia from the lexical realm, we'd have to argue that
+|  lurking behind any spoken dialect is an idealized language
+|  which \clrmAlt{3}{14}marks all logically salient elements  -  quantifiers, anaphora, deictics
+|  (imagine differentiating a proximate versus distal there, or abstract versus concrete
+|  here),
+|  conjunctions (cf. and as temporal as in John quit his job and moved out of town,
+|  wherein we hear and then)  -  with enough granularity to forestall
+.  all compositional ambiguities
+
+
+--- Sentence/switch
+id: 87
+r#  11373  211  31
+
+
+--- Sentence//end
+id: 87
+r#  11619  214  62
+p: .
+t. 
+|   Imagine inflectional variations
+|  on words like all to distinguish crisp from fuzzy domains, or nested from
+|  independent quantification; or morphological features on pronouns to
+.  distinguish verb subjects from objects in anaphoric reference
+
+--- Sentence/end 
+id: 87
+r#  11620  214  63
+
+--- Paragraph/end 
+id: 14
+y: N/A
+
+
+--- Paragraph/start
+id: 15
+r#  11624  216  1
+
+
+--- Sentence/start
+id: 88
+r#  11624  216  1
+
+--- Sentence//end
+id: 88
+r#  11763  219  3
+p: .
+t. 
+.  Imagine, that is  -  or so we might be tempted  -  a formal semantics whose basic premises are roughly these: 1
+
+
+--- Sentence/switch
+id: 89
+r#  11764  219  4
+
+
+--- Sentence//end
+id: 89
+r#  11854  219  94
+p: .
+t. 
+.   Canonically, sentences signify propositions  -  by analogy to how words signify concepts
+
+
+--- Sentence/switch
+id: 90
+r#  11855  219  95
+
+
+--- Sentence//end
+id: 90
+r#  11858  220  3
+p: .
+t. 
+.   2
+
+
+--- Sentence/switch
+id: 91
+r#  11859  220  4
+
+
+--- Sentence//end
+id: 91
+r#  12149  223  57
+p: .
+t. 
+|   Behind any actual language is an idealized language wherein sentences denote
+|  structured propositions via compositional maxims, themselves encoded through
+|  syntactic conventions and the semantic properties of specific word-classes
+.  (quantifiers, pronouns, case-markers, determiners, etc.)
+
+
+--- Sentence/switch
+id: 92
+r#  12150  223  58
+
+
+--- Sentence//end
+id: 92
+r#  12301  228  40
+p: .
+t. 
+|  
+|  Occasions where speakers employ extralinguistic reasoning
+|  would then be treated as mentally refining the
+.  actual lexicon to an approximated ideal
+
+
+--- Sentence/switch
+id: 93
+r#  12302  228  41
+
+
+--- Sentence//end
+id: 93
+r#  12558  232  46
+p: .
+t. 
+|  It is true, say, that Trump should be interpreted differently
+|  when playing bridge versus talking politics, but this just means that
+|  ambient situations nudge speakers contextually when projecting
+.  their actual language to its systematic ideal
+
+
+--- Sentence/switch
+id: 94
+r#  12559  232  47
+
+
+--- Sentence//end
+id: 94
+r#  12635  234  5
+p: .
+t. 
+|   Context
+|  disposes us to label Trump as either person or card
+.  suit
+
+
+--- Sentence/switch
+id: 95
+r#  12636  234  6
+
+
+--- Sentence//end
+id: 95
+r#  12783  235  75
+p: .
+t. 
+|   But such concerns are antecedent to semantics proper: for theoretical
+.  purposes we can take the lexicon as enriched with such labels a priori
+
+
+--- Sentence/switch
+id: 96
+r#  12784  235  76
+
+
+--- Sentence//end
+id: 96
+r#  12943  238  54
+p: .
+t. 
+|  From this perspective, the cognitive gap between
+|  actual and ideal dialects is orthogonal to linguists'
+.  project, which is to describe the rules of the latter
+
+--- Sentence/end 
+id: 96
+r#  12944  238  55
+
+--- Paragraph/end 
+id: 15
+y: N/A
+
+
+--- Paragraph/start
+id: 16
+r#  12950  240  1
+
+
+--- Sentence/start
+id: 97
+r#  12950  240  1
+
+--- Sentence//end
+id: 97
+r#  13136  243  21
+p: .
+t. 
+|  I contend that paradigms authorizing linguists and philosophers to
+|  imagine such ideal languages lead us
+|  to underestimate the theoretical dependence of linguistics
+.  on other disciplines
+
+
+--- Sentence/switch
+id: 98
+r#  13137  243  22
+
+
+--- Sentence//end
+id: 98
+r#  13309  246  10
+p: .
+t. 
+|   By way of example, sentences  imply
+|  that the specific  derived from an 
+|  depends (in part) on addressees' rational acts that aren't linguistic
+.  in nature
+
+
+--- Sentence/switch
+id: 99
+r#  13310  246  11
+
+
+--- Sentence//end
+id: 99
+r#  13544  249  18
+p: .
+t. 
+|   The reason why quantifier scope is nested in  but not  is that
+|  the predicates signified by that reading make more sense than their
+|  alternatives, but such judgment relies on knowledge of socio-cultural, not
+.  linguistic, facts
+
+
+--- Sentence/switch
+id: 100
+r#  13545  249  19
+
+
+--- Sentence//end
+id: 100
+r#  13769  252  30
+p: .
+t. 
+|   In short, whatever a sentence means, it does so
+|   -  in the general case  -  not via linguistic structures alone, but
+|  instead via the interplay of such structures with more general cognitive
+.  and social-semiotic processes
+
+
+--- Sentence/switch
+id: 101
+r#  13770  252  31
+
+
+--- Sentence//end
+id: 101
+r#  13829  253  32
+p: .
+t. 
+|   Consequently, linguistic
+.  explanation alone is incomplete
+
+--- Sentence/end 
+id: 101
+r#  13830  253  33
+
+--- Paragraph/end 
+id: 16
+y: N/A
+
+
+--- Paragraph/start
+id: 17
+r#  13834  255  1
+
+
+--- Sentence/start
+id: 102
+r#  13834  255  1
+
+--- Sentence//end
+id: 102
+r#  14120  259  41
+p: .
+t. 
+|  Moreover, these issues are sufficiently
+|  holistic and entrenched that we cannot dismiss them as cognition
+|  merely bridging a gap between real and ideal language, by analogy to
+|  real and ideal dictionaries (where each distinct word-sense might
+.  be marked in some disambiguating manner)
+
+
+--- Sentence/switch
+id: 103
+r#  14121  259  42
+
+
+--- Sentence//end
+id: 103
+r#  14217  261  11
+p: .
+t. 
+|   This isn't only an
+|  issue of pragmatic context guiding inference of one word-sense
+.  or another
+
+
+--- Sentence/switch
+id: 104
+r#  14218  261  12
+
+
+--- Sentence//end
+id: 104
+r#  14411  263  72
+p: .
+t. 
+|   \clrmr{3}{17}Cognition plays a more holistic role, such that
+|  any compositional determination depends, in general,
+.  on a case-by-case admixture of linguistic and extralinguistic reasoning
+
+
+--- Sentence/switch
+id: 105
+r#  14412  263  73
+
+
+--- Sentence//end
+id: 105
+r#  14579  267  24
+p: .
+t. 
+|  Even when the meaning of a
+|  proposition is given by its truth
+|  conditions we thus have to ask why sentences encode propositions (or
+.  are optimized to do so)
+
+
+--- Sentence/switch
+id: 106
+r#  14580  267  25
+
+
+--- Sentence//end
+id: 106
+r#  14710  269  9
+p: .
+t. 
+|   People don't talk out of abstract desires
+|  to assert fragments of symbolic logic, but rather to coordinate their joint
+.  activity
+
+
+--- Sentence/switch
+id: 107
+r#  14711  269  10
+
+
+--- Sentence//end
+id: 107
+r#  14875  271  58
+p: .
+t. 
+|   Logically transparent statements are certainly an
+|  important part of that, but still, conveying beliefs
+.  is an emergent property of human verbal communication
+
+
+--- Sentence/switch
+id: 108
+r#  14876  271  59
+
+
+--- Sentence//end
+id: 108
+r#  15033  273  75
+p: .
+t. 
+|  The existence of (relatively) deterministic  mappings is not an axiom to
+.  deploy in linguistic explanations, but a cognitive faculty to be explained
+
+--- Sentence/end 
+id: 108
+r#  15034  273  76
+
+--- Paragraph/end 
+id: 17
+y: N/A
+
+
+--- Paragraph/start
+id: 18
+r#  15036  275  1
+
+
+--- Sentence/start
+id: 109
+r#  15036  275  1
+
+--- Sentence//end
+id: 109
+r#  15208  277  39
+p: .
+t. 
+|  A plausible rejoinder is that language has a cognitively-important
+|  truth-conditional essence that can be analyzed in isolation from
+.  pragmatic and contextual complexifiers
+
+
+--- Sentence/switch
+id: 110
+r#  15209  277  40
+
+
+--- Sentence//end
+id: 110
+r#  15377  279  78
+p: .
+t. 
+|   The problem then is that
+|  extremely simplified languages, such as those for programming
+.  computers, should thereby be much closer to a sort of truth-conditional ideal
+
+
+--- Sentence/switch
+id: 111
+r#  15378  279  79
+
+
+--- Sentence//end
+id: 111
+r#  15522  281  69
+p: .
+t. 
+|  But the machinery of how programming languages are implemented does not
+.  really befit or accommodate a logico-mathematical description either
+
+
+--- Sentence/switch
+id: 112
+r#  15523  281  70
+
+
+--- Sentence//end
+id: 112
+r#  15685  284  17
+p: .
+t. 
+|   The germinal
+|  structures of computer code are calls to system functions and
+|  the use of local symbols, bound to memory addresses, to store
+.  temporary values
+
+
+--- Sentence/switch
+id: 113
+r#  15686  284  18
+
+
+--- Sentence//end
+id: 113
+r#  15899  287  48
+p: .
+t. 
+|   If we take compilers and runtimes as
+|  primitive models for human discourse processing, the analogy
+|  matches a notion of extralinguistic cognitive kernels more
+.  than a closed world formal-system semantics
+
+--- Sentence/end 
+id: 113
+r#  15900  287  49
+
+--- Paragraph/end 
+id: 18
+y: N/A
+
+
+--- Paragraph/start
+id: 19
+r#  15904  289  1
+
+
+--- Sentence/start
+id: 114
+r#  15904  289  1
+
+--- Sentence//end
+id: 114
+r#  15983  290  13
+p: .
+t. 
+|  To be clear, I do believe the value of signifying propositions is
+.  self-evident
+
+
+--- Sentence/switch
+id: 115
+r#  15984  290  14
+
+
+--- Sentence//end
+id: 115
+r#  16144  292  46
+p: .
+t. 
+|   My point is that any instance of  conveying 
+|  is not just a linguistic phenomenon, but rather a detail of
+.  two (or more) persons' lifeworld interactions
+
+
+--- Sentence/switch
+id: 116
+r#  16145  292  47
+
+
+--- Sentence//end
+id: 116
+r#  16301  295  38
+p: .
+t. 
+|  If I slip, fall, clutch my ankle, and grimace, you may
+|  conclude that I am injured; but groaning ouch does not
+.  express this through linguistic means
+
+
+--- Sentence/switch
+id: 117
+r#  16302  295  39
+
+
+--- Sentence//end
+id: 117
+r#  16479  298  15
+p: .
+t. 
+|   Similarly, if I see a
+|  car veering dangerously close to my friend John from behind him, shouting
+|  John to get his attention does not make that word signify
+.  watch out!
+
+
+--- Sentence/switch
+id: 118
+r#  16480  298  16
+
+
+--- Sentence//end
+id: 118
+r#  16795  303  48
+p: .
+t. 
+|   In most communication, true, linguistic structure
+|  plays a more prominent role  -  only rarely do we share ideas through crude vocalization
+|  alone  - 
+|  yet just because propositions get conveyed
+|  in a linguistic context does not ensure that why or how this
+.  happens is fully explicable in linguistic terms
+
+--- Sentence/end 
+id: 118
+r#  16796  303  49
+
+--- Paragraph/end 
+id: 19
+y: N/A
+
+
+--- Paragraph/start
+id: 20
+r#  16798  305  1
+
+
+--- Sentence/start
+id: 119
+r#  16798  305  1
+
+--- Sentence//end
+id: 119
+r#  16949  307  46
+p: .
+t. 
+|  Lexical plurality is one domain where
+|  linguistics is obviously incomplete, because background knowledge
+.  is needed to adjudicate competing word-senses
+
+
+--- Sentence/switch
+id: 120
+r#  16950  307  47
+
+
+--- Sentence//end
+id: 120
+r#  17155  311  22
+p: .
+t. 
+|   But I believe
+|  the compositional indeterminacy of whole sentences
+|  is qualitatively different, and reveals a more substantial
+|  surface area where linguistic and extralinguistic
+.  phenomena intermingle
+
+
+--- Sentence/switch
+id: 121
+r#  17156  311  23
+
+--- Paragraph/end 
+id: 20
+y: N/A
+
+
+--- Paragraph/start
+id: 21
+r#  17379  317  1
+
+
+--- Sentence/start
+id: 122
+r#  17379  317  1
+
+--- Sentence//end
+id: 122
+r#  17540  319  34
+p: .
+t. 
+|   Hence, linguistics
+|  must actively connect its paradigms and presuppositions
+|  to a larger intellectual environment, one where
+|  overarching theories of cognition and communication
+|  are formulated and disputed. For these reasons, I believe cognitive phenomenology is
+|  relevant to linguistics because it potentially provides this
+.  overarching theoretical framework
+
+
+--- Sentence/switch
+id: 123
+r#  17541  319  35
+
+
+--- Sentence//end
+id: 123
+r#  17722  323  10
+p: .
+t. 
+|   Here, I will outline
+|  why I think Husserlian phenomenology and its modern
+|  refinements can play this role,
+|  and then what implications for syntactic theory might follow
+.  therefrom
+
+--- Sentence/end 
+id: 123
+r#  17723  323  11
+
+--- Paragraph/end 
+id: 21
+y: N/A
+
+
+--- Section/start
+-l  1
+-i  2
+-t  Phenomenology and the Philosophy of Science
+
+
+--- Paragraph/start
+id: 22
+r#  17777  328  1
+
+
+--- Sentence/start
+id: 124
+r#  17777  328  1
+
+--- Sentence//end
+id: 124
+r#  17929  331  12
+p: .
+t. 
+|  I argue in this section that (Husserlian) phenomenology and the
+|  philosophy of science jointly offer a
+|  framework for justifying linguistic
+.  methodology
+
+
+--- Sentence/switch
+id: 125
+r#  17930  331  13
+
+
+--- Sentence//end
+id: 125
+r#  18038  332  54
+p: .
+t. 
+|   On (overly superficial, I believe) interpretations,
+.  phenomenology is often seen as hostile toward science
+
+
+--- Sentence/switch
+id: 126
+r#  18039  332  55
+
+
+--- Sentence//end
+id: 126
+r#  18237  335  41
+p: .
+t. 
+|   I propose, however,
+|  that phenomenology's analytic role relative to other humanistic
+|  disciplines can be usefully discussed in terms of the mutual support
+.  between interrelated scientific theories
+
+--- Sentence/end 
+id: 126
+r#  18238  335  42
+
+--- Paragraph/end 
+id: 22
+y: N/A
+
+
+--- Paragraph/start
+id: 23
+r#  18240  337  1
+
+
+--- Sentence/start
+id: 127
+r#  18240  337  1
+
+--- Sentence//end
+id: 127
+r#  18359  338  52
+p: .
+t. 
+|  An intrinsic aspect of any science is establishing a collection of
+.  entities (or kinds thereof) that comprise its focus
+
+
+--- Sentence/switch
+id: 128
+r#  18360  338  53
+
+
+--- Sentence//end
+id: 128
+r#  18475  340  37
+p: .
+t. 
+|   Apart from
+|  elementary particle physics (perhaps) such entities will almost
+.  always be reducible to smaller parts
+
+
+--- Sentence/switch
+id: 129
+r#  18476  340  38
+
+
+--- Sentence//end
+id: 129
+r#  18556  341  57
+p: .
+t. 
+|   Hydrology depends on
+.  properties of water molecules, and botany on plant cells
+
+
+--- Sentence/switch
+id: 130
+r#  18557  341  58
+
+
+--- Sentence//end
+id: 130
+r#  18671  343  49
+p: .
+t. 
+|  However, the discourse of the higher-scale disciplines should
+.  not parrot that of chemistry or cellular biology
+
+
+--- Sentence/switch
+id: 131
+r#  18672  343  50
+
+
+--- Sentence//end
+id: 131
+r#  18845  346  45
+p: .
+t. 
+|   It is the
+|  responsibility of each higher-scale theory to develop a
+|  vocabulary and classification that describes dispositions
+.  and attributes of their higher-scale objects
+
+
+--- Sentence/switch
+id: 132
+r#  18846  346  46
+
+
+--- Sentence//end
+id: 132
+r#  18947  348  28
+p: .
+t. 
+|   Explanations can
+|  then address why posited dispositions and attributes
+.  generate observed behaviors
+
+--- Sentence/end 
+id: 132
+r#  18948  348  29
+
+--- Paragraph/end 
+id: 23
+y: N/A
+
+
+--- Paragraph/start
+id: 24
+r#  18950  350  1
+
+
+--- Sentence/start
+id: 133
+r#  18950  350  1
+
+--- Sentence//end
+id: 133
+r#  19145  352  67
+p: .
+t. 
+|  By analogy, there is a distinct set of terms relevant to
+|  high-level computer source code (procedures, contracts, side-effects,
+.  lexical variables, lifetimes, types, pointers, execution branches)
+
+
+--- Sentence/switch
+id: 134
+r#  19146  352  68
+
+
+--- Sentence//end
+id: 134
+r#  19274  354  50
+p: .
+t. 
+|  Separately, there are terms related to machine code (registers,  prefixes,
+.  opcodes/operands, instruction sets, memory pages)
+
+
+--- Sentence/switch
+id: 135
+r#  19275  354  51
+
+
+--- Sentence//end
+id: 135
+r#  19446  357  9
+p: .
+t. 
+|   Although source files compile
+|  to machine code, analyses of programming languages' rules and
+|  implementations cannot in general quantify over machine-level
+.  concepts
+
+
+--- Sentence/switch
+id: 136
+r#  19447  357  10
+
+
+--- Sentence//end
+id: 136
+r#  19628  359  57
+p: .
+t. 
+|   Moreover, it would be impossible to explain the rational
+|  structure behind machine-code sequences without employing terms
+.  or concepts derived from the original high-level sources
+
+
+--- Sentence/switch
+id: 137
+r#  19629  359  58
+
+
+--- Sentence//end
+id: 137
+r#  19821  362  60
+p: .
+t. 
+|   While
+|  engineered rather than natural phenomena, compiler pipelines are
+|  a good case-study in downward-reductive causation versus
+.  emergent/token-supervening describability [/AndrewRBailey/]
+
+--- Sentence/end 
+id: 137
+r#  19822  362  61
+
+--- Paragraph/end 
+id: 24
+y: N/A
+
+
+--- Paragraph/start
+id: 25
+r#  19827  364  1
+
+
+--- Sentence/start
+id: 138
+r#  19827  364  1
+
+--- Sentence//end
+id: 138
+r#  20275  370  48
+p: .
+t. 
+|  More generally, examining progressively smaller
+|  physical scales may suffice for purely mechanical explanations of
+|  physical processes, but remains explanatorily incomplete insofar
+|  as macro-scale phenomena structure and mold the micro-scale
+|  aggregates.\footnote{For instance, a purely molecular account of the dynamics of a spinning
+|  baseball does not take into consideration the thought processes
+.  of the pitcher who decided to throw a curveball
+
+
+--- Sentence/switch
+id: 139
+r#  20276  370  49
+
+
+--- Sentence//end
+id: 139
+r#  20827  378  67
+p: .
+t. 
+|   A complete
+|  account of the universe in that moment needs to recognize such
+|  work of mind as part of the causal background for the ball's
+|  trajectory.}  Complex systems may not introduce new forms of matter or energy
+|  (existents with spacetime extension and causative influence),
+|  or new forces beyond those physicists \clrmr{4}{25}recognize
+|   -  e.g.,  Philosophy of Mind, first-person consciousness
+|  is not a redoubt of dualism or magic  -  but they
+.  still deserve specialized descriptive and theory-semantic regimens
+
+--- Sentence/end 
+id: 139
+r#  20828  378  68
+
+--- Paragraph/end 
+id: 25
+y: N/A
+
+
+--- Paragraph/start
+id: 26
+r#  20830  380  1
+
+
+--- Sentence/start
+id: 140
+r#  20830  380  1
+
+--- Sentence//end
+id: 140
+r#  21199  385  54
+p: .
+t. 
+|  In short, causative explanation is incomplete on any one scale in
+|  particular; it is only by bridging multiple theories that one can
+|  simultaneously analyze both purely physical properties (dependent
+|  on micro-scale realities) and aggregate, complex behavior
+|  (caused by interactions between higher-scale objects)
+.  [/LiefkeHartmann/], [/RonMcClamrock/], [/JohnSymons/]
+
+
+--- Sentence/switch
+id: 141
+r#  21200  385  55
+
+
+--- Sentence//end
+id: 141
+r#  21548  391  20
+p: .
+t. 
+|   Individual
+|  theories contribute to cross-scale explanations by formalizing
+|  their own terminological and epistemological frameworks, ones
+|  that focus on some class of entities but also explicate how
+|  peer theories (e.g., those of smaller constituents) describe
+|  causal grounds for the object-propensities/qualities studied by
+.  the original theory
+
+
+--- Sentence/switch
+id: 142
+r#  21549  391  21
+
+
+--- Sentence//end
+id: 142
+r#  21999  397  34
+p: .
+t. 
+|   This is intrinsic to any science: hydrology
+|  and botany (reusing those examples) exist as such because it
+|  is possible to negotiate discursive practices and investigatory paradigms
+|  for macro-scale complexes of water (rivers, oceans, lakes, dams)
+|  and Plantae organisms (tree growth, forests, foliage ecosystems, etc.) respectively, all the
+|  while connecting such paradigms to theories of smaller constituents
+.  (water molecules and plant cells)
+
+--- Sentence/end 
+id: 142
+r#  22000  397  35
+
+--- Paragraph/end 
+id: 26
+y: N/A
+
+
+--- Paragraph/start
+id: 27
+r#  22002  399  1
+
+
+--- Sentence/start
+id: 143
+r#  22002  399  1
+
+--- Sentence//end
+id: 143
+r#  22073  399  72
+p: .
+t. 
+.  The situation is similar with respect to humanities and social sciences
+
+
+--- Sentence/switch
+id: 144
+r#  22074  399  73
+
+
+--- Sentence//end
+id: 144
+r#  22221  401  67
+p: .
+t. 
+|  A political theorist might note the waxing and waning of parties' popularity,
+.  but such phenomena ultimately rest on individual voters' decisions
+
+
+--- Sentence/switch
+id: 145
+r#  22222  401  68
+
+
+--- Sentence//end
+id: 145
+r#  22350  403  55
+p: .
+t. 
+|  The mindset of a single person acts as a societal reductive base
+.  (likewise for economics: individual workers/consumers)
+
+
+--- Sentence/switch
+id: 146
+r#  22351  403  56
+
+--- Paragraph/end 
+id: 27
+y: N/A
+
+
+--- Paragraph/start
+id: 28
+r#  22604  408  1
+
+
+--- Sentence/start
+id: 147
+r#  22604  408  1
+
+--- Sentence//end
+id: 147
+r#  22696  409  9
+p: .
+t. 
+|   Such brings
+|  one naturally to cognition, which is an inevitable explanatory
+|  setting for any talk of decision-making, social \makebox{commons, selfhood, identity, or ideology
+|  [/RyanMcVeigh/]; [/SchottenForkel:\hspaceback{2pt}3/].}Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level
+.  analyses
+
+
+--- Sentence/switch
+id: 148
+r#  22697  409  10
+
+
+--- Sentence//end
+id: 148
+r#  22811  410  83
+p: .
+t. 
+|   Source files, for example,
+.  become transformed to several intermediate representations during a compiler build
+
+
+--- Sentence/switch
+id: 149
+r#  22812  410  84
+
+
+--- Sentence//end
+id: 149
+r#  23123  415  27
+p: .
+t. 
+|    the
+|  human mind, neurologists have studied how clusters of neurons
+|  form nuclei, ganglia, or modules with distinct functional roles; and,
+|  on a higher scale, brain scientists identify many distinct
+|  (and functionally unique) anatomic regions [/UziBenZvi/],
+.  [/AnilSeth/], [/Sethetal/]
+
+
+--- Sentence/switch
+id: 150
+r#  23124  415  28
+
+
+--- Sentence//end
+id: 150
+r#  23282  418  31
+p: .
+t. 
+|   Working from
+|  the ground up, however, one is still far from connecting
+|  neurophysical substrata to vivid Lebenswelt
+.  consciousness (and vice-versa)
+
+
+--- Sentence/switch
+id: 151
+r#  23283  418  32
+
+
+--- Sentence//end
+id: 151
+r#  23585  423  59
+p: .
+t. 
+|   Telically,
+|  theories' connecting arrows will more deftly point both up and
+|  down the ranks of physical constituency.\footnote{Science is guided by a more
+|  top-down metaphysic: lifeworld
+|  experience seeds our
+.  recognition of phenomena needing microphysical explanation
+
+
+--- Sentence/switch
+id: 152
+r#  23586  423  60
+
+--- Paragraph/end 
+id: 28
+y: N/A
+
+
+--- Paragraph/start
+id: 29
+r#  23744  427  1
+
+
+--- Sentence/start
+id: 153
+r#  23744  427  1
+
+--- Sentence//end
+id: 153
+r#  24054  431  35
+p: .
+t. 
+|   But we might still take it on faith that
+|  no aspect of reality is fundamentally incommensurate
+|  with basic scientific methods.}There is an almost universally recognized explanatory gap with respect
+|  to consciousness itself: we still have little understanding of
+|  how purely biological phenomena can give rise to subjective
+|  first-personal states and awareness [/JiriBenovsky/], [/DavidJChalmers/],
+.  [/FranciscoVarela/], [/DanZahavi/]
+
+
+--- Sentence/switch
+id: 154
+r#  24055  431  36
+
+
+--- Sentence//end
+id: 154
+r#  24299  435  18
+p: .
+t. 
+|   Some philosophers
+|  apparently minimize this gap by construing consciousness as epiphenomenal,
+|  ontologically \clrmAlt{5}{29}separated from the primary functional structures
+|  of cognition [/JKim:7/], [/MarekPokropski/],
+.  [/RobertDRupert/]
+
+
+--- Sentence/switch
+id: 155
+r#  24300  435  19
+
+
+--- Sentence//end
+id: 155
+r#  24424  437  65
+p: .
+t. 
+|   However, the
+|  nature of consciousness per se clearly
+.  plays a critical role in the mental careers of conscious animals
+
+
+--- Sentence/switch
+id: 156
+r#  24425  437  66
+
+
+--- Sentence//end
+id: 156
+r#  24532  439  33
+p: .
+t. 
+|  Consciousness evolved at some point in natural history, and presumably
+.  it conferred adaptative benefits
+
+
+--- Sentence/switch
+id: 157
+r#  24533  439  34
+
+
+--- Sentence//end
+id: 157
+r#  24842  445  11
+p: .
+t. 
+|   Instead of reacting to stimuli
+|  merely via instinct, forming conscious mental representations
+|   -  with a certain distance between observer and
+|  observed\footnote{Apart from rare occasions for
+|  fight or flight reflexes, anyhow.}  - 
+|  evidently permits a wider and more malleable response
+.  repertoire
+
+
+--- Sentence/switch
+id: 158
+r#  24843  445  12
+
+
+--- Sentence//end
+id: 158
+r#  25076  449  17
+p: .
+t. 
+|   Animal behavior and intelligence
+|  has evolved in consort with consciousness: we exist in a world
+|  of conscious representations that allow us to observe
+|  surrounding environments without immediately committing to a
+.  course of action
+
+
+--- Sentence/switch
+id: 159
+r#  25077  449  18
+
+--- Paragraph/end 
+id: 29
+y: N/A
+
+
+--- Paragraph/start
+id: 30
+r#  25476  458  1
+
+
+--- Sentence/start
+id: 160
+r#  25476  458  1
+
+--- Sentence//end
+id: 160
+r#  25538  458  63
+p: .
+t. 
+|   We benefit
+|  from opportunities to formulate reactions thoughtfully, informed
+|  by values, personal identity, and past experience.\footnote{We benefit
+|  both from such
+|  distancing  -  bracketing consciousness's affective
+|  dimensions  -  and yet also from the greater detail in
+|  representations carved via sense-data affectively
+.  impinging on awareness.}Suppose I stand by a platform waiting for the subway to arrive
+
+
+--- Sentence/switch
+id: 161
+r#  25539  458  64
+
+
+--- Sentence//end
+id: 161
+r#  25574  459  17
+p: .
+t. 
+|   I need to board
+.  my correct train
+
+
+--- Sentence/switch
+id: 162
+r#  25575  459  18
+
+
+--- Sentence//end
+id: 162
+r#  25793  462  28
+p: .
+t. 
+|   To do so, I may well follow a well-rehearsed
+|  protocol: hearing the train cues me to look down the platform; upon seeing
+|  its outline I then focus attention on the letter- and color-coded
+.  symbol painted on the front
+
+
+--- Sentence/switch
+id: 163
+r#  25794  462  29
+
+
+--- Sentence//end
+id: 163
+r#  25877  463  45
+p: .
+t. 
+|   If it indicates my preferred train,
+.  I pace back as passengers start to disembark
+
+
+--- Sentence/switch
+id: 164
+r#  25878  463  46
+
+
+--- Sentence//end
+id: 164
+r#  25945  463  113
+p: .
+t. 
+.   Now, notice how each step in this process is consciously mediated
+
+
+--- Sentence/switch
+id: 165
+r#  25946  463  114
+
+
+--- Sentence//end
+id: 165
+r#  26075  466  8
+p: .
+t. 
+|  I deliberately shift perceptual orientation multiple
+|  times, and could break off the protocol given some external
+.  stimuli
+
+
+--- Sentence/switch
+id: 166
+r#  26076  466  9
+
+
+--- Sentence//end
+id: 166
+r#  26114  466  47
+p: .
+t. 
+.   Perhaps I hear my cell phone pinging
+
+
+--- Sentence/switch
+id: 167
+r#  26115  466  48
+
+
+--- Sentence//end
+id: 167
+r#  26197  467  63
+p: .
+t. 
+|   Or announcements
+.  that the current train is out of service, so it's a moot point
+
+
+--- Sentence/switch
+id: 168
+r#  26198  467  64
+
+
+--- Sentence//end
+id: 168
+r#  26285  469  27
+p: .
+t. 
+|   The key
+|  detail is that such protocols don't just occur by
+.  \textcolor{white}{instinct
+
+
+--- Sentence/switch
+id: 169
+r#  26286  469  28
+
+--- Paragraph/end 
+id: 30
+y: N/A
+
+
+--- Sentence//end
+id: 169
+r#  26429  474  28
+p: .
+t. 
+|   They continue,
+|  or not, because of subjectively controllable choices of cognitive orientation.}
+.  force of instinct
+
+
+--- Sentence/switch
+id: 170
+r#  26430  474  29
+
+
+--- Sentence//end
+id: 170
+r#  26526  475  56
+p: .
+t. 
+|   They continue, or not, because of sub-
+.  jectively controllable choices of cognitive orientation
+
+--- Sentence/end 
+id: 170
+r#  26527  475  57
+
+--- Paragraph/end 
+id: 30
+y: N/A
+
+
+--- Paragraph/start
+id: 31
+r#  26529  477  1
+
+
+--- Sentence/start
+id: 171
+r#  26529  477  1
+
+--- Sentence//end
+id: 171
+r#  26596  478  10
+p: .
+t. 
+|  Not that we have first-person awareness of all cognitive
+.  processes
+
+
+--- Sentence/switch
+id: 172
+r#  26597  478  11
+
+
+--- Sentence//end
+id: 172
+r#  26742  480  33
+p: .
+t. 
+|   Conscious reality has many constituents
+|  that we experience as perceptual givens despite being the product of
+.  complex (subconscious) reasoning
+
+
+--- Sentence/switch
+id: 173
+r#  26743  480  34
+
+
+--- Sentence//end
+id: 173
+r#  26846  481  65
+p: .
+t. 
+|   We see a world of discrete objects,
+.  whose contours and boundaries are inferred via visual processing
+
+
+--- Sentence/switch
+id: 174
+r#  26847  481  66
+
+
+--- Sentence//end
+id: 174
+r#  26968  483  56
+p: .
+t. 
+|  Sight employs color variation to partition visual scenes, but
+.  it is not as simple as isolating distinct color patches
+
+
+--- Sentence/switch
+id: 175
+r#  26969  483  57
+
+
+--- Sentence//end
+id: 175
+r#  27094  485  51
+p: .
+t. 
+|   Given a
+|  red rose in a blue vase, we cannot segment the image merely by
+.  treating red as the flower and blue as the ceramic
+
+
+--- Sentence/switch
+id: 176
+r#  27095  485  52
+
+
+--- Sentence//end
+id: 176
+r#  27889  498  61
+p: .
+t. 
+|  Color-perception has added complexity first because some chromatic
+|  variation is expected in an extended region resulting from texture
+|  and lighting; and second because visible substances have
+|  optical qualities beyond just red/green/blue quantities
+|   -  albedo, specularity, glossiness, metallicity, opaqueness,
+|  etc.\footnote{For instance, [/DavitGigilashvili/], [/XiaoyingGuo/],
+|  [/HarveySmithson/], [/Mallickelal/], [/MirjaliliHardeberg/],
+|  [/ShinyaNishida/], [/Osadchyetal/], [/WendtFaul/], [/JanaZujovic/].}
+|  Object boundaries (and meaningful detected edges) are
+|  suggested by discontinuities in visual properties of
+|  varying kinds, not just pure color; moreover, segmentation
+|  algorithms must be wary of spurious boundaries
+.  due to light/shadow effects and the vagaries of pigmentation
+
+--- Sentence/end 
+id: 176
+r#  27890  498  62
+
+--- Paragraph/end 
+id: 31
+y: N/A
+
+
+--- Paragraph/start
+id: 32
+r#  27893  500  1
+
+
+--- Sentence/start
+id: 177
+r#  27893  500  1
+
+--- Sentence//end
+id: 177
+r#  28419  507  90
+p: .
+t. 
+|  Humans subconsciously perform complex image-analysis tasks, many
+|  of which can be simulated by computer-vision algorithms [/Galunetal/],
+|  [/KrahenbuhlKoltun/],
+|  [/TodorovicAhuja/], [/TakeshiUejima/], [/Wolfetal/]:
+|  texture segmentation, line/pattern detection, 3D reconstruction, occlusion compensation/interpolation
+|  (e.g., perceiving the shape of a vase's back side by projecting
+|  around from its visible rim-circle), classifying
+.  subregions (in computational parlance, object proposals [/Gavvesetal;for instance/])
+
+
+--- Sentence/switch
+id: 178
+r#  28420  507  91
+
+
+--- Sentence//end
+id: 178
+r#  28681  511  63
+p: .
+t. 
+|  Via color alone we infer textural and optical details, yielding a significantly
+|  enlarged color space, and thereby perceive objects' external
+|  geometry (e.g., their gradient vectors at each point
+.   -  the degree to which their shape departs from a flat plane)
+
+
+--- Sentence/switch
+id: 179
+r#  28682  511  64
+
+
+--- Sentence//end
+id: 179
+r#  28801  513  51
+p: .
+t. 
+|  We do not consciously direct these processes, by contrast to
+.  my example of ascertaining which train is arriving
+
+
+--- Sentence/switch
+id: 180
+r#  28802  513  52
+
+
+--- Sentence//end
+id: 180
+r#  29074  518  30
+p: .
+t. 
+|   Nevertheless,
+|  conscious experience is intrinsically structured by
+|  faculties of visual (and, to some extent, haptic/tactile)
+|  perception so that we can trust our senses as a usually
+|  reliable source of information about objects' movement,
+.  position, shape, and contours
+
+
+--- Sentence/switch
+id: 181
+r#  29075  518  31
+
+
+--- Sentence//end
+id: 181
+r#  29194  520  30
+p: .
+t. 
+|   We do exercise deliberate
+|  control over such data by conscious choices of where to
+.  direct attention [/Smithies/]
+
+--- Sentence/end 
+id: 181
+r#  29195  520  31
+
+--- Paragraph/end 
+id: 32
+y: N/A
+
+
+--- Paragraph/start
+id: 33
+r#  29197  522  1
+
+
+--- Sentence/start
+id: 182
+r#  29197  522  1
+
+--- Sentence//end
+id: 182
+r#  29342  524  30
+p: .
+t. 
+|  Presumably this balance between conscious and subconscious
+|  cognition is a fine equipoise, evolved to optimize the
+.  efficacy of conscious control
+
+
+--- Sentence/switch
+id: 183
+r#  29343  524  31
+
+
+--- Sentence//end
+id: 183
+r#  29591  529  14
+p: .
+t. 
+|   But even if perceptual
+|  processes such as textural segmentation, occlusion compensation,
+|  and gradient recognition are not guided by conscious
+|  intervention, it is only through consciousness
+|  that these factor into larger-scale
+.  human actions
+
+
+--- Sentence/switch
+id: 184
+r#  29592  529  15
+
+
+--- Sentence//end
+id: 184
+r#  29957  536  29
+p: .
+t. 
+|   Our minds work in such a manner
+|  that pre-conscious operations become consequential
+|  as they are woven into conscious experience,
+|  against which we orient as perceiver to perceived,
+|  whilst also superimposing planning and executive
+|  control, situational awareness, personal identity,
+|  and our overall commitment to engage the world
+.  in rational, purposeful ways
+
+
+--- Sentence/switch
+id: 185
+r#  29958  536  30
+
+
+--- Sentence//end
+id: 185
+r#  30169  540  59
+p: .
+t. 
+|   Consciousness
+|  is a medium through which the
+|  outputs of cognitive processes acquire the status
+|  of perceptual givens, that we deem to disclose
+.  states of affairs, relative to which we coordinate actions
+
+--- Sentence/end 
+id: 185
+r#  30170  540  60
+
+--- Paragraph/end 
+id: 33
+y: N/A
+
+
+--- Paragraph/start
+id: 34
+r#  30172  542  1
+
+
+--- Sentence/start
+id: 186
+r#  30172  542  1
+
+--- Sentence//end
+id: 186
+r#  30430  546  22
+p: .
+t. 
+|  Any comprehensive theory of human cognition, then, is necessarily a
+|  theory of how subjective experience serves as a unifying
+|  field for preconscious faculties, connecting momentary
+|  perceptions to larger-scale goal-directed action and
+.  situational reasoning
+
+
+--- Sentence/switch
+id: 187
+r#  30431  546  23
+
+
+--- Sentence//end
+id: 187
+r#  30747  552  14
+p: .
+t. 
+|   Consequently, investigations
+|  that abstract away an encompassing first-personal context
+|  are only provisional  -  the causal efficacy of a single
+|  nerve cell, neuronal cluster, brain region, or
+|  functional algorithm replicated via AI, depends on
+|  how such entities or processes become manifest in
+.  consciousness
+
+
+--- Sentence/switch
+id: 188
+r#  30748  552  15
+
+
+--- Sentence//end
+id: 188
+r#  30937  555  49
+p: .
+t. 
+|   Biologists notice a similar contrast
+|  between in vitro and in vivo: molecular
+|  interactions in a test tube or device bench versus
+.  in living organisms (e.g., [/NancyJNersessian/])
+
+
+--- Sentence/switch
+id: 189
+r#  30938  555  50
+
+
+--- Sentence//end
+id: 189
+r#  30985  556  29
+p: .
+t. 
+|   Lab experiments
+.  are simplifying abstractions
+
+
+--- Sentence/switch
+id: 190
+r#  30986  556  30
+
+
+--- Sentence//end
+id: 190
+r#  31247  561  27
+p: .
+t. 
+|   I propose
+|  the analogy: consciousness is human reality's in vivo,
+|  in that any biological or sociological/economic
+|  principles invoked to explain human actions are not explanatorily
+|  complete until we consider their presence in
+.  first-person consciousness
+
+--- Sentence/end 
+id: 190
+r#  31248  561  28
+
+--- Paragraph/end 
+id: 34
+y: N/A
+
+
+--- Paragraph/start
+id: 35
+r#  31250  563  1
+
+
+--- Sentence/start
+id: 191
+r#  31250  563  1
+
+--- Sentence//end
+id: 191
+r#  31428  566  20
+p: .
+t. 
+|  Subjective awareness affords a geometric model
+|  of surroundings more granular than facts or concepts
+|  alone; we can spotlight its functional benefit
+.  to living organisms
+
+
+--- Sentence/switch
+id: 192
+r#  31429  566  21
+
+
+--- Sentence//end
+id: 192
+r#  31605  569  29
+p: .
+t. 
+|   Still, the in vivo raises
+|  metascientific questions: we cannot dissect, nor neuroimage, animals in
+|  nature (the in vitro is artificially
+.  staged for data acquisition)
+
+
+--- Sentence/switch
+id: 193
+r#  31606  569  30
+
+
+--- Sentence//end
+id: 193
+r#  31734  571  59
+p: .
+t. 
+|   For
+|  consciousness as the humanities' in vivo, analogously one
+.  cannot observe another's mental states as objective givens
+
+
+--- Sentence/switch
+id: 194
+r#  31735  571  60
+
+
+--- Sentence//end
+id: 194
+r#  31784  572  47
+p: .
+t. 
+.  This is a well-known philosophical controversy
+
+
+--- Sentence/switch
+id: 195
+r#  31785  572  48
+
+
+--- Sentence//end
+id: 195
+r#  31950  575  31
+p: .
+t. 
+|   Phenomenology
+|  offers techniques to adjudicate claims about cognition
+|  in consciousness, compensating for the private existence
+.  of any one person's experience
+
+
+--- Sentence/switch
+id: 196
+r#  31951  575  32
+
+
+--- Sentence//end
+id: 196
+r#  32156  578  45
+p: .
+t. 
+|   In particular, while introspective
+|  consideration of mental states as they occur is imperfect
+|  (analysis alters the analyzed), we do have capabilities to
+.  reflect on subjective episodes retroactively
+
+
+--- Sentence/switch
+id: 197
+r#  32157  578  46
+
+
+--- Sentence//end
+id: 197
+r#  32259  580  15
+p: .
+t. 
+|   Our minds are primed to learn
+|  from experience, and to make inferences about others'
+.  mental reality
+
+
+--- Sentence/switch
+id: 198
+r#  32260  580  16
+
+
+--- Sentence//end
+id: 198
+r#  32459  584  27
+p: .
+t. 
+|   Usually this would occur
+|  without explicit systematization, perhaps to some
+|  extent subconsciously, but it is not a great leap
+|  to reflect on past experience with a more
+.  analytic/expository intent
+
+--- Sentence/end 
+id: 198
+r#  32460  584  28
+
+--- Paragraph/end 
+id: 35
+y: N/A
+
+
+--- Paragraph/start
+id: 36
+r#  32462  586  1
+
+
+--- Sentence/start
+id: 199
+r#  32462  586  1
+
+--- Sentence//end
+id: 199
+r#  32508  586  47
+p: .
+t. 
+.  Suppose I examine a colorful glass paperweight
+
+
+--- Sentence/switch
+id: 200
+r#  32509  586  48
+
+
+--- Sentence//end
+id: 200
+r#  32671  589  5
+p: .
+t. 
+|   I will most likely shift my
+|  visual focus from place to place once or twice, even when holding the
+|  weight still, to discern the coloration on its visible
+.  side
+
+
+--- Sentence/switch
+id: 201
+r#  32672  589  6
+
+
+--- Sentence//end
+id: 201
+r#  32699  589  33
+p: .
+t. 
+.   Then I might turn it over
+
+
+--- Sentence/switch
+id: 202
+r#  32700  589  34
+
+
+--- Sentence//end
+id: 202
+r#  32839  591  35
+p: .
+t. 
+|   Perhaps, from touch, I infer that
+|  the bottom side has a flattened base, which I now confirm visually
+.  while rotating the object manually
+
+
+--- Sentence/switch
+id: 203
+r#  32840  591  36
+
+
+--- Sentence//end
+id: 203
+r#  32980  593  37
+p: .
+t. 
+|   As I just begin that action I
+|  have some anticipation of the obverse side's appearance, which (let's
+.  say) is borne out by what I see next
+
+
+--- Sentence/switch
+id: 204
+r#  32981  593  38
+
+
+--- Sentence//end
+id: 204
+r#  33141  595  64
+p: .
+t. 
+|   So a proto-image of that
+|  hidden side is protained while the top is visible, and when the
+.  bottom is seen instead my perception of the top is retained
+
+
+--- Sentence/switch
+id: 205
+r#  33142  595  65
+
+
+--- Sentence//end
+id: 205
+r#  33217  597  21
+p: .
+t. 
+|  The interplay of protention and retention creates a
+.  perceptual synthesis
+
+
+--- Sentence/switch
+id: 206
+r#  33218  597  22
+
+
+--- Sentence//end
+id: 206
+r#  33464  601  27
+p: .
+t. 
+|   Validation of protentive expectations
+|  plays a logical role in such syntheses, as would sense-data
+|  that instead deviate from anticipated  -  say, the paperweight
+|  had a plastic or cloth covering on its base, while I
+.  presumed it were all glass
+
+
+--- Sentence/switch
+id: 207
+r#  33465  601  28
+
+
+--- Sentence//end
+id: 207
+r#  33640  604  27
+p: .
+t. 
+|   Our ability to both formulate
+|  perceptual expectations and adjust to subsequent sense-data
+|  gives a rational structure to the minimal exploratory
+.  course of sense-perception
+
+--- Sentence/end 
+id: 207
+r#  33641  604  28
+
+--- Paragraph/end 
+id: 36
+y: N/A
+
+
+--- Paragraph/start
+id: 37
+r#  33643  606  1
+
+
+--- Sentence/start
+id: 208
+r#  33643  606  1
+
+--- Sentence//end
+id: 208
+r#  33765  608  10
+p: .
+t. 
+|  Via discussions like these we can collectively analyze
+|  phenomena such as retention, protention, and perceptual
+.  synthesis
+
+
+--- Sentence/switch
+id: 209
+r#  33766  608  11
+
+
+--- Sentence//end
+id: 209
+r#  33855  610  9
+p: .
+t. 
+|   Empirical actuality
+|  is not required, nor even particularly relevant, for the
+.  analysis
+
+
+--- Sentence/switch
+id: 210
+r#  33856  610  10
+
+
+--- Sentence//end
+id: 210
+r#  34000  612  41
+p: .
+t. 
+|   I am not literally holding a paperweight while
+|  writing these paragraphs, and a paperweight does not
+.  ship with this paper for experimentation
+
+
+--- Sentence/switch
+id: 211
+r#  34001  612  42
+
+
+--- Sentence//end
+id: 211
+r#  34216  616  33
+p: .
+t. 
+|   I assume that
+|  both myself and any reader can engage in such hypothetical
+|  considerations, and two people may either agree or question
+|  each other's use of terms and concepts like
+.  protention and retention
+
+
+--- Sentence/switch
+id: 212
+r#  34217  616  34
+
+
+--- Sentence//end
+id: 212
+r#  34324  618  31
+p: .
+t. 
+|   This gives the analysis
+|  a public-discursive face, even without empirical
+.  science as normally understood
+
+
+--- Sentence/switch
+id: 213
+r#  34325  618  32
+
+
+--- Sentence//end
+id: 213
+r#  34432  620  45
+p: .
+t. 
+|   We aren't using
+|  EKG machines to measure neuron activity
+.  whilst a test-subject looks at a paperweight
+
+
+--- Sentence/switch
+id: 214
+r#  34433  620  46
+
+
+--- Sentence//end
+id: 214
+r#  34559  622  52
+p: .
+t. 
+|   There may or
+|  may not be identifiable neurobiological correlates to the
+.  concepts of (e.g.) protention and retention
+
+
+--- Sentence/switch
+id: 215
+r#  34560  622  53
+
+
+--- Sentence//end
+id: 215
+r#  34704  625  22
+p: .
+t. 
+|  Searching for such correlates would be a valid investigation
+|  bridging the (metaphorical) in vivo and in vitro
+.  facets of human minds
+
+
+--- Sentence/switch
+id: 216
+r#  34705  625  23
+
+
+--- Sentence//end
+id: 216
+r#  35052  631  21
+p: .
+t. 
+|   \clrmr{6}{37}But as a high-level science,
+|  cognitive phenomenology does not need to develop a
+|  complete theory about how the parameters in its
+|  explanatory arsenal emerge from and/or supervene upon physical substrata
+|  (the mind/matter gap is a profound limit to our
+|  understanding of the universe, but no more consequential
+.  here than elsewhere)
+
+
+--- Sentence/switch
+id: 217
+r#  35053  631  22
+
+
+--- Sentence//end
+id: 217
+r#  35291  636  22
+p: .
+t. 
+|  Its goal, rather, should be to work toward
+|  consensus about which theoretical ideas and
+|  posits have analytic value and, thereupon, strive for consistency
+|  in theory-semantics and in how structural parameters are
+.  employed for analysis
+
+--- Sentence/end 
+id: 217
+r#  35292  636  23
+
+--- Paragraph/end 
+id: 37
+y: N/A
+
+
+--- Paragraph/start
+id: 38
+r#  35303  638  1
+
+
+--- Sentence/start
+id: 218
+r#  35303  638  1
+
+--- Sentence//end
+id: 218
+r#  35423  640  17
+p: .
+t. 
+|  Phenomenologists from Husserl onward have built a
+|  literature of analyses and nomenclature toward such
+.  theoretical ends
+
+
+--- Sentence/switch
+id: 219
+r#  35424  640  18
+
+
+--- Sentence//end
+id: 219
+r#  35534  642  9
+p: .
+t. 
+|   Phenomenology explores how minimal sensate
+|  givens are contextualized in situations and subjective
+.  tableaux
+
+
+--- Sentence/switch
+id: 220
+r#  35535  642  10
+
+
+--- Sentence//end
+id: 220
+r#  35749  646  20
+p: .
+t. 
+|   Apperceptive synthesis
+|  occurs on multiple time scales, with any momentary perception
+|  connected to immediate past and future instants via
+|  retention and protention [/GallagherZahavi/], plus
+.  memory and planning
+
+
+--- Sentence/switch
+id: 221
+r#  35750  646  21
+
+
+--- Sentence//end
+id: 221
+r#  35939  650  24
+p: .
+t. 
+|   We cannot posit
+|  consciousness within single instants  -  the
+|  minimal atoms of experience, evidently, are brief
+|  but extended perceptual episodes (one or several
+.  seconds' duration, say)
+
+
+--- Sentence/switch
+id: 222
+r#  35940  650  25
+
+
+--- Sentence//end
+id: 222
+r#  36198  654  52
+p: .
+t. 
+|   Such episodes then aggregate into
+|  larger units whose inner boundaries, we might propose,
+|  are defined by deliberate acts of perceptual reorientation
+|  (as in the example of switching from watching for an
+.  arriving train to focusing toward its window decal)
+
+
+--- Sentence/switch
+id: 223
+r#  36199  654  53
+
+
+--- Sentence//end
+id: 223
+r#  36348  657  35
+p: .
+t. 
+|   And
+|  compound episodes chain together into purposeful, situational
+|  action, together with the observations and
+.  conceptualizations that sustain it
+
+--- Sentence/end 
+id: 223
+r#  36349  657  36
+
+--- Paragraph/end 
+id: 38
+y: N/A
+
+
+--- Paragraph/start
+id: 39
+r#  36351  659  1
+
+
+--- Sentence/start
+id: 224
+r#  36351  659  1
+
+--- Sentence//end
+id: 224
+r#  36632  664  14
+p: .
+t. 
+|  We therefore have a provisional network of theoretical
+|  concepts  -  qualia, proprioception, protention, retention, synthesis,
+|  patent/latent, horizon,
+|  episodicity, situationality, purposefulness, intentionality
+|   -  to help organize exchanges about conscious states
+.  and attitudes
+
+
+--- Sentence/switch
+id: 225
+r#  36633  664  15
+
+
+--- Sentence//end
+id: 225
+r#  36955  670  17
+p: .
+t. 
+|   Phenomenology
+|  does not restrict itself to sensory introspections [/DanZahaviChapter;pp. 5, 9, 22/]
+|  like this shade of red looks identical to that one;
+|  instead, we can reflect on our own experiences to
+|  consider how concepts such as intentionality and
+|  episodicity form building blocks of rigorous
+.  cognitive models
+
+--- Sentence/end 
+id: 225
+r#  36956  670  18
+
+--- Paragraph/end 
+id: 39
+y: N/A
+
+
+--- Paragraph/start
+id: 40
+r#  36960  672  1
+
+
+--- Sentence/start
+id: 226
+r#  36960  672  1
+
+--- Sentence//end
+id: 226
+r#  37295  679  13
+p: .
+t. 
+|  By systematizing a process
+|  for analyzing cognition in-consciousness
+|   -  by analogy to in vivo versus in vitro
+|   -  phenomenology establishes methodological
+|  prototypes for humanistic and social sciences in
+|  general, at least for that part of their
+|  domains where issues of human thought and decision-making
+.  are relevant
+
+
+--- Sentence/switch
+id: 227
+r#  37296  679  14
+
+
+--- Sentence//end
+id: 227
+r#  37486  683  9
+p: .
+t. 
+|   Phenomenological terminology is
+|  central to such goals; its mode of analysis is not
+|  open-ended, but grounded on the deployment of
+|  specific ideas with relatively fixed technical
+.  meanings
+
+
+--- Sentence/switch
+id: 228
+r#  37487  683  10
+
+
+--- Sentence//end
+id: 228
+r#  37607  685  26
+p: .
+t. 
+|   Via this sense of discursive praxis I
+|  will argue for connections between phenomenology
+.  and cognitive linguistics
+
+--- Sentence/end 
+id: 228
+r#  37608  685  27
+
+--- Paragraph/end 
+id: 40
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  1
+-t  
+
+
+--- Paragraph/start
+id: 41
+r#  37618  690  1
+
+
+--- Sentence/start
+id: 229
+r#  37618  690  1
+
+--- Sentence//end
+id: 229
+r#  37920  694  67
+p: .
+t. 
+|  Similar to the controversial status of first-person reports
+|   theoretical confirmability/falsifiability, the
+|  linguistics community \clrmAlt{7}{41}is divided over the value of
+|  analyses based on subjective assessments of
+.  acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/]
+
+
+--- Sentence/switch
+id: 230
+r#  37921  694  68
+
+
+--- Sentence//end
+id: 230
+r#  38063  697  22
+p: .
+t. 
+|  It is, of course, common for linguists of multiple persuasions
+|  to construct ad-hoc sentences/utterances in service
+.  of theoretical claims
+
+
+--- Sentence/switch
+id: 231
+r#  38064  697  23
+
+
+--- Sentence//end
+id: 231
+r#  38355  702  51
+p: .
+t. 
+|   Such methods
+|  raise two questions: whether samples not taken from
+|  real-life corpora are empirically valid, and whether
+|  language-users  -  in testing that sentences are meaningful, or grammatical
+|   -  can rely on just their own judgment
+.  (rather than conducting some survey) as conclusive
+
+--- Sentence/end 
+id: 231
+r#  38356  702  52
+
+--- Paragraph/end 
+id: 41
+y: N/A
+
+
+--- Paragraph/start
+id: 42
+r#  38360  704  1
+
+
+--- Sentence/start
+id: 232
+r#  38360  704  1
+
+--- Sentence//end
+id: 232
+r#  38484  706  21
+p: .
+t. 
+|  There are interesting analogies between the epistemic
+|  relevance of subjective accounts in linguistics
+.  and in phenomenology
+
+
+--- Sentence/switch
+id: 233
+r#  38485  706  22
+
+
+--- Sentence//end
+id: 233
+r#  38628  709  15
+p: .
+t. 
+|   Both disciplines
+|  have well-rehearsed protocols even while normal
+|  empirical disputation relative to publicly-accessible data
+.  does not apply
+
+
+--- Sentence/switch
+id: 234
+r#  38629  709  16
+
+
+--- Sentence//end
+id: 234
+r#  38876  713  54
+p: .
+t. 
+|   The possibility of one writer assenting
+|  or objecting to another's formulation implies that
+|  claims largely endorsed by a research community
+|  serves witness to their theoretical value  -  no
+.  less than claims warranted by more empirical measures
+
+--- Sentence/end 
+id: 234
+r#  38877  713  55
+
+--- Paragraph/end 
+id: 42
+y: N/A
+
+
+--- Paragraph/start
+id: 43
+r#  38879  715  1
+
+
+--- Sentence/start
+id: 235
+r#  38879  715  1
+
+--- Sentence//end
+id: 235
+r#  39268  722  55
+p: .
+t. 
+|  In one discussion that elucidates metascientific
+|  background for syntactic theory, Hubert Kowalewski
+|  presents the work of Ronald Langacker, and by extension
+|  Cognitive Grammar overall, in terms of Structural Empiricism: Viewed through the lens of structural empiricism, Cognitive Grammar
+.  is therefore a family of models of a linguistic system
+
+
+--- Sentence/switch
+id: 236
+r#  39269  722  56
+
+
+--- Sentence//end
+id: 236
+r#  39739  730  79
+p: .
+t. 
+|   Like any other scientific theory,
+|  it features theoretical entities and processes (cognitive domains,
+|  constructional schemas, compositional paths, subjectification, etc.)
+|  and empirical substructures isomorphic (in a weaker version: similar) to appearances
+|  of observable phenomena. [/kow:18/]
+|  
+|  He immediately avows It is somewhat unclear what should count as observable phenomena in
+.  linguistics, but situates such uncertainty in a larger philosophical context
+
+
+--- Sentence/switch
+id: 237
+r#  39740  730  80
+
+
+--- Sentence//end
+id: 237
+r#  39981  733  76
+p: .
+t. 
+|  In particular, most scientific theories entertain taxonomies and analyses of
+|  a domain of entities encompassing both public observables and hypothesized
+.  posits that  -  for one of several possible reasons  -  cannot be seen
+
+
+--- Sentence/switch
+id: 238
+r#  39982  733  77
+
+
+--- Sentence//end
+id: 238
+r#  40232  737  39
+p: .
+t. 
+|  Empiricism is structural insofar as such unobservables are
+|  taken seriously because they contribute to persuasive explanations
+|  of observables* behavior, with structured models unifying the seen
+.  and the hidden into a rational package
+
+
+--- Sentence/switch
+id: 239
+r#  40233  737  40
+
+
+--- Sentence//end
+id: 239
+r#  40390  739  55
+p: .
+t. 
+|   Sometimes unseen posits are
+|  deemed just as real as everything else, merely beyond our capabilities
+.  of (instrument-enhanced) observation, at least for now
+
+
+--- Sentence/switch
+id: 240
+r#  40391  739  56
+
+
+--- Sentence//end
+id: 240
+r#  40672  743  43
+p: .
+t. 
+|   Other phenomena
+|  (like dark energy) are left more open-ended, possibly subsumed under
+|  such ontological realism or possibly artifacts of some more complex process
+|  (like phonons, which behave like particles of sound, but
+.  that's largely a metaphor [/KamranMajid/])
+
+
+--- Sentence/switch
+id: 241
+r#  40673  743  44
+
+
+--- Sentence//end
+id: 241
+r#  40797  745  10
+p: .
+t. 
+|   Natural selection or design
+|  is not an object, but rather an encompassing system wherein adaptation drives
+.  evolution
+
+
+--- Sentence/switch
+id: 242
+r#  40798  745  11
+
+
+--- Sentence//end
+id: 242
+r#  40997  747  68
+p: .
+t. 
+|   Potentially dark matter and energy will ultimately
+|  be given a similarly indirect and holistic cosmological interpretation,
+.  rather than deemed to refer to a specific kind of field or particle
+
+--- Sentence/end 
+id: 242
+r#  40998  747  69
+
+--- Paragraph/end 
+id: 43
+y: N/A
+
+
+--- Paragraph/start
+id: 44
+r#  41002  749  1
+
+
+--- Sentence/start
+id: 243
+r#  41002  749  1
+
+--- Sentence//end
+id: 243
+r#  41275  752  38
+p: .
+t. 
+|  The status of mental attitudes and subjectivity  physics and material
+|  science is more circuitous than these other more-physical unobservables,
+|  but Kowalewski implies that we should treat the cognitive as adjunct to the
+.  physical in a similar structural vein
+
+
+--- Sentence/switch
+id: 244
+r#  41276  752  39
+
+
+--- Sentence//end
+id: 244
+r#  41539  756  10
+p: .
+t. 
+|   If explanations quantifying
+|  over subjective states provide convincing accounts of observed
+|  behavior (in this case, linguistic performance), then the first-personal
+|  realm should be judged scientifically legitimate as a kind of hidden variables
+.  dimension
+
+
+--- Sentence/switch
+id: 245
+r#  41540  756  11
+
+
+--- Sentence//end
+id: 245
+r#  41767  761  40
+p: .
+t. 
+|   Specifically in regard to ad-hoc sentence
+|  examples, he argues as follows: The linguistic material analyzed in many ...\ texts [is] constructed
+.  ...\ to illustrate points under analysis
+
+
+--- Sentence/switch
+id: 246
+r#  41768  761  41
+
+
+--- Sentence//end
+id: 246
+r#  42240  768  23
+p: .
+t. 
+|  For this reason, the analyses can be easily attacked on the grounds that
+|  they are somehow unreliable due to the inauthenticity of data. ...\
+|  Many linguists seem to embrace the conviction that linguistics should
+|  study only actual, real-life events of language use, which do not belong anywhere on the above
+|  counterfactuality scale [viz., logical impossibility is much stronger
+|  than the contingent fact of something not having yet occurred, with
+.  various intermediates]
+
+
+--- Sentence/switch
+id: 247
+r#  42241  768  24
+
+
+--- Sentence//end
+id: 247
+r#  42578  777  20
+p: .
+t. 
+|   However, this conviction overlooks the fact
+|  that many useful scientific models involve clearly counterfactual scenarios
+|  [whose] role is not merely heuristic or pedagogical. [/kow:32/]
+|  
+|  He then analyzes how fictional models in natural sciences can be accounted for in
+.  philosophical terms
+
+
+--- Sentence/switch
+id: 248
+r#  42579  777  21
+
+
+--- Sentence//end
+id: 248
+r#  42897  781  31
+p: .
+t. 
+|   In  ...\ structural empiricism, isolated
+|  systems, frictionless pendulums, and perfect liquids are treated just like
+|  any other theoretical objects, except their theoreticity does not follow from
+|  unobservability, as is the case with electrons and electromagnetic fields, but
+.  from their fictional character
+
+
+--- Sentence/switch
+id: 249
+r#  42898  781  32
+
+
+--- Sentence//end
+id: 249
+r#  43115  784  25
+p: .
+t. 
+|   [A] structural empiricist is not
+|  committed to believing in the actual existence of real-world objects corresponding
+|  to theoretical concepts, but only to the empirical adequacy of the theory
+.  featuring these concepts
+
+
+--- Sentence/switch
+id: 250
+r#  43116  784  26
+
+
+--- Sentence//end
+id: 250
+r#  43369  790  13
+p: .
+t. 
+|   [/kow:33/]
+|  
+|  A reasonable paraphrase  constructed sentences is that, for purposes
+|  of expositing semantic or syntactic claims, the universe of linguistic
+|  objects is broader than merely the totality of sentences humans have in
+.  fact created
+
+
+--- Sentence/switch
+id: 251
+r#  43370  790  14
+
+
+--- Sentence//end
+id: 251
+r#  43472  791  59
+p: .
+t. 
+|   Ad-hoc hypotheticals also belong to that
+.  domain if they serve and fit within model-building regimes
+
+--- Sentence/end 
+id: 251
+r#  43473  791  60
+
+--- Paragraph/end 
+id: 44
+y: N/A
+
+
+--- Paragraph/start
+id: 45
+r#  43475  793  1
+
+
+--- Sentence/start
+id: 252
+r#  43475  793  1
+
+--- Sentence//end
+id: 252
+r#  43799  798  14
+p: .
+t. 
+|  I would put it thus: what makes a sentence an object in the
+|  domain of entities spotlighted by linguistics is not the
+|  fact of its being empirically an example of real language-use, but
+|  rather how upon that sentence we can apply observations, analyses,
+|  annotations, etc., whose ordinary ground is real-world
+.  speech-events
+
+
+--- Sentence/switch
+id: 253
+r#  43800  798  15
+
+
+--- Sentence//end
+id: 253
+r#  43931  799  55
+p: .
+t. 
+|   We can, for instance, note syntactic, morphological, or lexical patterns,
+.  and point out where pragmatic interpretation is needed
+
+
+--- Sentence/switch
+id: 254
+r#  43932  799  56
+
+
+--- Sentence//end
+id: 254
+r#  44063  802  11
+p: .
+t. 
+|   Constructed
+|  sentences may or may not conform to English grammar,
+|  but at least the question of whether they do so is
+.  well-posed
+
+
+--- Sentence/switch
+id: 255
+r#  44064  802  12
+
+
+--- Sentence//end
+id: 255
+r#  44135  803  44
+p: .
+t. 
+|   Even imagined speech
+.  \clrmAlt{8}{45}is grammatical (or not)
+
+
+--- Sentence/switch
+id: 256
+r#  44136  803  45
+
+
+--- Sentence//end
+id: 256
+r#  44415  808  41
+p: .
+t. 
+|  We can label syntactic categories; track
+|  pronoun-antecedent pairings and singular or plural alignment; observe
+|  how inflections indicate verb-tense; and etc.: minimal operations in the
+|  syntactic and semantic realms that apply equally
+.  whether samples are real or hypothetical
+
+--- Sentence/end 
+id: 256
+r#  44416  808  42
+
+--- Paragraph/end 
+id: 45
+y: N/A
+
+
+--- Paragraph/start
+id: 46
+r#  44418  810  1
+
+
+--- Sentence/start
+id: 257
+r#  44418  810  1
+
+--- Sentence//end
+id: 257
+r#  44504  811  14
+p: .
+t. 
+|  My earlier subway-platform speculation was similarly about hypothetical
+.  circumstances
+
+
+--- Sentence/switch
+id: 258
+r#  44505  811  15
+
+
+--- Sentence//end
+id: 258
+r#  44756  814  70
+p: .
+t. 
+|   I have caught New York subways in real life,
+|  but that's beside the point: we are primed to learn from experience,
+|  but in a manner that abstracts nonsalient details; it is not a
+.  great stretch to substitute hypotheticals for memories, in this sense
+
+
+--- Sentence/switch
+id: 259
+r#  44757  814  71
+
+
+--- Sentence//end
+id: 259
+r#  45012  818  27
+p: .
+t. 
+|  Husserl and his commentators, too, build many analyses around constructed situations,
+|  like seeing a mannequin in a shop window, hitting a tennis ball,
+|  or admiring a sculpture [/ChristopherGutland:2/], [/KennethWilliford:6/],
+.  [/DavidWoodruffSmith:208/]
+
+
+--- Sentence/switch
+id: 260
+r#  45013  818  28
+
+
+--- Sentence//end
+id: 260
+r#  45237  821  74
+p: .
+t. 
+|   Following such examples, my presentation
+|  was not free-associative: via posits
+|  like attention, episodicity, and situationality, I bore a matrix of
+.  concepts via which to, in effect, annotate elements of consciousness
+
+
+--- Sentence/switch
+id: 261
+r#  45238  821  75
+
+
+--- Sentence//end
+id: 261
+r#  45456  825  18
+p: .
+t. 
+|  Instead of focusing on the contrast between real and hypothetical
+|  experiences, methodology should consider whether some target of
+|  analysis is amenable to the notions and structures comprising an
+.  analytic protocol
+
+
+--- Sentence/switch
+id: 262
+r#  45457  825  19
+
+
+--- Sentence//end
+id: 262
+r#  45782  829  85
+p: .
+t. 
+|   Similarly, Cognitive Grammar advances a series of interrelated
+|  analytic notions (landmark, projector, profiling, domain of instantiation,
+|  attentional system, grounding predication,
+|  subjectification, subjective and objective construal)
+.  whose theoretical merits may be tested against constructed (and also real) sentences
+
+--- Sentence/end 
+id: 262
+r#  45783  829  86
+
+--- Paragraph/end 
+id: 46
+y: N/A
+
+
+--- Paragraph/start
+id: 47
+r#  45786  831  1
+
+
+--- Sentence/start
+id: 263
+r#  45786  831  1
+
+--- Sentence//end
+id: 263
+r#  45984  833  47
+p: .
+t. 
+|  Methodologically speaking, reasonably, a hypothetical object, space, or situation becomes
+|  an instance of a theoretical model via the applicability of
+.  that model's simulative and descriptive maxims
+
+
+--- Sentence/switch
+id: 264
+r#  45985  833  48
+
+
+--- Sentence//end
+id: 264
+r#  46188  836  57
+p: .
+t. 
+|   The proper explanatory
+|  domain of a theory is any structure that can be analyzed
+|  according to the terms of that theory  -  including artifacts
+.  conjured ad-hoc precisely to test, clarify, or refine it
+
+
+--- Sentence/switch
+id: 265
+r#  46189  836  58
+
+
+--- Sentence//end
+id: 265
+r#  46534  842  52
+p: .
+t. 
+|  By analogy, complex numbers (and other dreamed-up number systems:
+|  hyperreals, quaternions, affine arithmetic), despite
+|  lacking physical interpretations (such as spatial distance)
+|  are objects of mathematical reasoning because they are
+|  amenable to many quantitative methods (add/multiply,
+.  path-integration, infinite summation, and so forth)
+
+--- Sentence/end 
+id: 265
+r#  46535  842  53
+
+--- Paragraph/end 
+id: 47
+y: N/A
+
+
+--- Paragraph/start
+id: 48
+r#  46537  844  1
+
+
+--- Sentence/start
+id: 266
+r#  46537  844  1
+
+--- Sentence//end
+id: 266
+r#  46610  845  18
+p: .
+t. 
+|  Constructed examples are prominent in both linguistics
+.  and phenomenology
+
+
+--- Sentence/switch
+id: 267
+r#  46611  845  19
+
+
+--- Sentence//end
+id: 267
+r#  46751  847  37
+p: .
+t. 
+|   Relatedly, the demarcation problem
+|   -  defending them as legitimate inquiry, not pseudoscience
+.   -  plays similarly in both contexts
+
+
+--- Sentence/switch
+id: 268
+r#  46752  847  38
+
+
+--- Sentence//end
+id: 268
+r#  46816  851  1
+p: 
+t. 
+|   Suppose I examine a
+.  pair of hypothetical utterances:
+
+
+--- Sentence/switch
+id: 269
+r#  46819  851  4
+
+
+--- Sentence//end
+id: 269
+r#  46853  851  38
+p: .
+t. 
+.   John poured water onto the stove
+
+
+--- Sentence/switch
+id: 270
+r#  46854  851  39
+
+
+--- Sentence//end
+id: 270
+r#  46855  852  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 271
+r#  46858  852  4
+
+
+--- Sentence//end
+id: 271
+r#  46893  852  39
+p: .
+t. 
+.   John spilled water onto the stove
+
+
+--- Sentence/switch
+id: 272
+r#  46894  852  40
+
+
+--- Sentence//end
+id: 272
+r#  47028  856  52
+p: .
+t. 
+|  
+|  The most obvious point would be how poured versus spilled frames the
+.  action in different ways (deliberate or accidental)
+
+
+--- Sentence/switch
+id: 273
+r#  47029  856  53
+
+
+--- Sentence//end
+id: 273
+r#  47207  859  22
+p: .
+t. 
+|   By selecting
+|  one or the other, the speaker implicitly expresses beliefs about
+|  John's mental state; such choice-effects are cued by the lexical contrast
+.  between the two verbs
+
+
+--- Sentence/switch
+id: 274
+r#  47208  859  23
+
+
+--- Sentence//end
+id: 274
+r#  47370  861  25
+p: .
+t. 
+|   The
+|  sentence is not merely notating observable details: choice of words can encode \clrmrAlt{8}{48}{a}information about the speaker's
+.  epistemic starting-point
+
+
+--- Sentence/switch
+id: 275
+r#  47371  861  26
+
+
+--- Sentence//end
+id: 275
+r#  47446  862  57
+p: .
+t. 
+|   This phenomenon
+.  is nicely illustrated in  and , constructed or not
+
+--- Sentence/end 
+id: 275
+r#  47447  862  58
+
+--- Paragraph/end 
+id: 48
+y: N/A
+
+
+--- Paragraph/start
+id: 49
+r#  47451  864  1
+
+
+--- Sentence/start
+id: 276
+r#  47451  864  1
+
+--- Sentence//end
+id: 276
+r#  47470  864  20
+p: .
+t. 
+.  But let's step back
+
+
+--- Sentence/switch
+id: 277
+r#  47471  864  21
+
+
+--- Sentence//end
+id: 277
+r#  47644  866  50
+p: .
+t. 
+|   For sake of discussion, I will assume  and 
+|  occur in contexts where listeners know the speaker saw John firsthand
+.  (the evidence is direct observation, not hearsay)
+
+
+--- Sentence/switch
+id: 278
+r#  47645  866  51
+
+
+--- Sentence//end
+id: 278
+r#  47775  868  57
+p: .
+t. 
+|   Implicit
+|  in a communicative claim to describe something witnessed
+.  is having been in a perceptual orientation to see it
+
+
+--- Sentence/switch
+id: 279
+r#  47776  868  58
+
+
+--- Sentence//end
+id: 279
+r#  48027  873  11
+p: .
+t. 
+|   The
+|  sentences then encode salient features of this orientation:
+|  presumably the speaker was standing/sitting in a position
+|  where both John and the stove were in their visual frame,
+|  and they could focus attention on one or the other as
+.  called for
+
+
+--- Sentence/switch
+id: 280
+r#  48028  873  12
+
+
+--- Sentence//end
+id: 280
+r#  48176  875  41
+p: .
+t. 
+|   Likewise, probably they were talking to
+|  John or in some other way clued in to the ambient situation, so
+.  as to rationally infer John's intentions
+
+
+--- Sentence/switch
+id: 281
+r#  48177  875  42
+
+
+--- Sentence//end
+id: 281
+r#  48746  885  24
+p: .
+t. 
+|   Much of the
+|  configuration of this cognitive-perceptual orientation,
+|  thereby summarized, reflects my sketched structural model
+|  for phenomenological description  -  the intentional relations toward
+|  objects insofar as we deliberately orient toward them
+|  as a focus of attention; the coexistence of multiple
+|  attentional sites (e.g., John and the stove) with focus
+|  shifting back and forth in larger synthesizing episodes;
+|  the role of larger-scale situational awareness guiding
+|  our granular decisions to direct attention hither and
+.  thither [/HanneJacobs/]
+
+--- Sentence/end 
+id: 281
+r#  48747  885  25
+
+--- Paragraph/end 
+id: 49
+y: N/A
+
+
+--- Paragraph/start
+id: 50
+r#  48749  887  1
+
+
+--- Sentence/start
+id: 282
+r#  48749  887  1
+
+--- Sentence//end
+id: 282
+r#  48823  888  20
+p: .
+t. 
+|  And yet, such configurations are also implicit in the
+.  sentences' meanings
+
+
+--- Sentence/switch
+id: 283
+r#  48824  888  21
+
+
+--- Sentence//end
+id: 283
+r#  48932  890  14
+p: .
+t. 
+|   Foci of attention tend to become
+|  signified as nouns; so in both cases we have John and
+.  the stove
+
+
+--- Sentence/switch
+id: 284
+r#  48933  890  15
+
+
+--- Sentence//end
+id: 284
+r#  49070  892  36
+p: .
+t. 
+|   It is John who initiates the action that
+|  affects the stove's state, so the former becomes encoded
+.  as subject and the latter as object
+
+
+--- Sentence/switch
+id: 285
+r#  49071  892  37
+
+
+--- Sentence//end
+id: 285
+r#  49316  897  16
+p: .
+t. 
+|   Since speakers
+|  implicitly expresses the evidence for propositions
+|  stated (or implied) in their discourse, understanding a
+|  sentence is partly a matter of inferring mental states,
+|  which includes perceptual comportment toward
+.  its noun-topics
+
+
+--- Sentence/switch
+id: 286
+r#  49317  897  17
+
+
+--- Sentence//end
+id: 286
+r#  49509  900  55
+p: .
+t. 
+|   Anyone hearing  and  will,
+|  at least in some schematic manner, reconstruct a
+|  configuration of attentional focus and situational
+.  construal that I tried to explicate phenomenologically
+
+
+--- Sentence/switch
+id: 287
+r#  49510  900  56
+
+
+--- Sentence//end
+id: 287
+r#  49622  902  65
+p: .
+t. 
+|  Syntactic categories like nouns and verbs are
+.  rooted in listeners' need to infer speaker's cognitive attitudes
+
+--- Sentence/end 
+id: 287
+r#  49623  902  66
+
+--- Paragraph/end 
+id: 50
+y: N/A
+
+
+--- Paragraph/start
+id: 51
+r#  49625  904  1
+
+
+--- Sentence/start
+id: 288
+r#  49625  904  1
+
+--- Sentence//end
+id: 288
+r#  49835  908  47
+p: .
+t. 
+|  As a feature of our
+|  reason and lifeworld, mental states exist
+|  in a vivid way in our own momentary consciousness,
+|  but they also exist in an approximative manner
+.   people (and often animals) around us
+
+
+--- Sentence/switch
+id: 289
+r#  49836  908  48
+
+
+--- Sentence//end
+id: 289
+r#  50019  912  41
+p: .
+t. 
+|  Others' cognitions being, modulo such imprecision,
+|  a natural feature of our own rationality undergirds
+|  (I claim) the feasibility of both
+.  phenomenological and linguistic analysis
+
+
+--- Sentence/switch
+id: 290
+r#  50020  912  42
+
+
+--- Sentence//end
+id: 290
+r#  50317  919  52
+p: .
+t. 
+|  We have a
+|  structural model for how people comport themselves
+|  to situations so as to observe and act rationally;
+|  therewith we seamlessly transition
+|  from nonverbal orientation toward surrounding
+|  environments to framings of states of affairs
+.  in communicable ways, then actual speech-production
+
+
+--- Sentence/switch
+id: 291
+r#  50318  919  53
+
+
+--- Sentence//end
+id: 291
+r#  50678  926  47
+p: .
+t. 
+|  Basic organizational principles migrate from one to
+|  the other, such that cognitive-perceptual structures
+|  (attentional foci, \clrmAlt{9}{51}say) become manifest,
+|  within communicative intent and staging, as
+|  linguistic phenomena (e.g., that to which
+|  I can perceptually attend becomes a noun; attributes
+.  noticed so to do this become adjectives, etc.)
+
+--- Sentence/end 
+id: 291
+r#  50679  926  48
+
+--- Paragraph/end 
+id: 51
+y: N/A
+
+
+--- Paragraph/start
+id: 52
+r#  50681  928  1
+
+
+--- Sentence/start
+id: 292
+r#  50681  928  1
+
+--- Sentence//end
+id: 292
+r#  50886  931  42
+p: .
+t. 
+|  If this is correct, then posits of linguistic argumentation
+|  have origins in cognitive faculties that can be
+|  phenomenologically investigated (and should be if we
+.  want an encompassing, in vivo theory)
+
+
+--- Sentence/switch
+id: 293
+r#  50887  931  43
+
+
+--- Sentence//end
+id: 293
+r#  51056  935  27
+p: .
+t. 
+|   At the
+|  same time, language elucidates
+|  how models of other minds are inherent to our
+|  rational agency; they aren't esoteric superstitions
+.  of a phenomenological sect
+
+
+--- Sentence/switch
+id: 294
+r#  51057  935  28
+
+
+--- Sentence//end
+id: 294
+r#  51171  937  50
+p: .
+t. 
+|   Language is the
+|  best case-study for how phenomenology simply
+.  codifies folk theories of mind and cognition
+
+--- Sentence/end 
+id: 294
+r#  51172  937  51
+
+--- Paragraph/end 
+id: 52
+y: N/A
+
+
+--- Paragraph/start
+id: 53
+r#  51176  939  1
+
+
+--- Sentence/start
+id: 295
+r#  51176  939  1
+
+--- Sentence//end
+id: 295
+r#  51354  942  32
+p: .
+t. 
+|  Phenomenology and cognitive linguistics, then, to
+|  my mind reinforce each other; and each can be said
+|  to depend on the other, from an expository
+.  and justificatory point of view
+
+
+--- Sentence/switch
+id: 296
+r#  51355  942  33
+
+
+--- Sentence//end
+id: 296
+r#  51577  947  22
+p: .
+t. 
+|   More to the current
+|  point, hypothetical situations are methodologically
+|  valid because both disciplines curate a
+|  toolkit of terms and concepts whose
+|  applicability transfers over from constructed
+.  to empirical examples
+
+
+--- Sentence/switch
+id: 297
+r#  51578  947  23
+
+--- Paragraph/end 
+id: 53
+y: N/A
+
+--- Paragraph/end 
+id: 53
+y: N/A
+
+
+--- Sentence//end
+id: 297
+r#  51907  955  53
+p: .
+t. 
+|   And, in particular, the
+|  menagerie of theoretical posits in
+|  phenomenology and in linguistics are interrelated,
+.  as  and  hopefully illustrate. [/JamesPustejovsky:2/]
+
+
+--- Sentence//end
+id: 297
+r#  52047  957  38
+p: .
+t. 
+.  
+
+
+--- Sentence//end
+id: 297
+r#  52144  959  26
+p: .
+t. 
+.  
+
+
+--- Section/start
+-l  1
+-i  3
+-t  Concepts and CompositionalityThe meaning of a sentence is a function of its words and
+how they are composed (cf. )  In itself, that seems uncontroversial,
+except that words are not combined per se; rather,
+the concepts to which they point  There are two
+key questions: how this pointing works; and how
+concepts are combined
+
+
+--- Sentence/switch
+id: 298
+r#  52147  961  1
+
+
+--- Paragraph/start
+id: 54
+r#  52148  961  2
+
+
+--- Sentence/start
+id: 299
+r#  52148  961  2
+
+--- Sentence//end
+id: 299
+r#  52378  964  33
+p: .
+t. 
+|  A good example of formal answers to the second question is
+|   [/Bolt/], based on Peter 's Conceptual Space
+|  theory, alongside a syntactic approach related to Categorial Grammar
+.  and mathematical Category Theory
+
+
+--- Sentence/switch
+id: 300
+r#  52379  964  34
+
+
+--- Sentence//end
+id: 300
+r#  52657  969  27
+p: .
+t. 
+|   Consider red box, and
+|  (for sake of argument, although this deviates from the
+|  specifics of -inspired work on conceptualization)
+|  define the concepts set-theoretically:
+|  red means the set of red things; box means the set of
+.  boxes (or box-like things)
+
+
+--- Sentence/switch
+id: 301
+r#  52658  969  28
+
+
+--- Sentence//end
+id: 301
+r#  52727  970  37
+p: .
+t. 
+|   Combining the concepts yields
+.  an intersection between the two sets
+
+
+--- Sentence/switch
+id: 302
+r#  52728  970  38
+
+
+--- Sentence//end
+id: 302
+r#  52893  973  30
+p: .
+t. 
+|   Meanwhile,
+|  syntactically, that compositional motif is cued by the left-adjacency of
+|  red before box, which in English binds
+.  adjectives to nominal targets
+
+
+--- Sentence/switch
+id: 303
+r#  52894  973  31
+
+
+--- Sentence//end
+id: 303
+r#  53002  975  38
+p: .
+t. 
+|   Thus we have a
+|  syntactic operation/relation (left-adjacency) and a
+.  semantic operation (set-intersection)
+
+
+--- Sentence/switch
+id: 304
+r#  53003  975  39
+
+
+--- Sentence//end
+id: 304
+r#  53232  979  30
+p: .
+t. 
+|   The gist
+|  of [/Bolt/] is that mapping the phrase to its signification
+|  depends not just on mapping the two words but also
+|  mapping the intra-Category morphisms to each other (adjacency
+.  projects to set-intersection)
+
+--- Sentence/end 
+id: 304
+r#  53233  979  31
+
+--- Paragraph/end 
+id: 54
+y: N/A
+
+
+--- Paragraph/start
+id: 55
+r#  53245  981  11
+
+
+--- Sentence/start
+id: 305
+r#  53245  981  11
+
+--- Sentence//end
+id: 305
+r#  53455  984  36
+p: .
+t. 
+|   generalize this kind of insight by proposing
+|  Categories (in the mathematical sense) for syntax and semantics,
+|  with lexical word-meanings serving as maps (technically
+.  functors) from one to the other
+
+
+--- Sentence/switch
+id: 306
+r#  53456  984  37
+
+
+--- Sentence//end
+id: 306
+r#  53733  989  8
+p: .
+t. 
+|   Because functors
+|  project morphisms (transforms in Categories) from one Category
+|  to another, \clrmr{9}{46}assemblies of syntactic operations
+|  project onto semantic/conceptual structures systematically,
+|  extending the lexicon-to-concept functor to aggregate
+.  phrases
+
+
+--- Sentence/switch
+id: 307
+r#  53734  989  9
+
+
+--- Sentence//end
+id: 307
+r#  53929  992  22
+p: .
+t. 
+|   In other words, we can give a mathematical gloss
+|  to combining concepts, and specifically the role of
+|  syntax in defining compositional patterns that get transferred
+.  to the semantic plane
+
+--- Sentence/end 
+id: 307
+r#  53930  992  23
+
+--- Paragraph/end 
+id: 55
+y: N/A
+
+
+--- Paragraph/start
+id: 56
+r#  53933  994  1
+
+
+--- Sentence/start
+id: 308
+r#  53933  994  1
+
+--- Sentence//end
+id: 308
+r#  53994  994  62
+p: .
+t. 
+.  For , then, syntax and semantics develop in consort
+
+
+--- Sentence/switch
+id: 309
+r#  53995  994  63
+
+
+--- Sentence//end
+id: 309
+r#  54147  996  79
+p: .
+t. 
+|   On the
+|  one hand, we have theories for how to properly model syntactic
+.  structure (e.g., Categorial Grammar [/YusukeKubota/], [/WybraniecSkardowska/])
+
+
+--- Sentence/switch
+id: 310
+r#  54148  996  80
+
+
+--- Sentence//end
+id: 310
+r#  54297  998  47
+p: .
+t. 
+|   On the other, semantic theory
+|  should define operations that are referenced by syntactic operations
+.  by analogy to how lexicons define single words
+
+
+--- Sentence/switch
+id: 311
+r#  54298  998  48
+
+
+--- Sentence//end
+id: 311
+r#  54537  1002  37
+p: .
+t. 
+|   In [/Bolt/], Conceptual Spaces
+|  supply the requisite semantic architecture, analyzing how
+|  two concepts' respective spaces can interact (similar
+|  results can be based on alternative amalgram
+.  models; cf. [/Schorlemmeretal/])
+
+
+--- Sentence/switch
+id: 312
+r#  54538  1002  38
+
+
+--- Sentence//end
+id: 312
+r#  54764  1006  62
+p: .
+t. 
+|  I am not convinced of the explanatory value of
+|  quasi-mathematical treatments for concepts, such as
+|  advanced by  (such criteria as convexivity
+.  feel forced to me, outside special contexts like color terms)
+
+
+--- Sentence/switch
+id: 313
+r#  54765  1006  63
+
+
+--- Sentence//end
+id: 313
+r#  55021  1011  39
+p: .
+t. 
+|  Nonetheless,  codify what a formal engagement
+|  between semantics and syntax should look for: having determined
+|  a pattern of synthesis among components by
+|  virtue of syntax, we seek a translation of that
+.  synthesis into the conceptual register
+
+--- Sentence/end 
+id: 313
+r#  55022  1011  40
+
+--- Paragraph/end 
+id: 56
+y: N/A
+
+
+--- Paragraph/start
+id: 57
+r#  55026  1013  1
+
+
+--- Sentence/start
+id: 314
+r#  55026  1013  1
+
+--- Sentence//end
+id: 314
+r#  55250  1016  31
+p: .
+t. 
+|  If we abstract away word-order (the left/right adjacency distinction),
+|  Categorial Grammar resembles a kind of type-theoretic syntax
+|  where parts of speech may be likened to a system of types,
+.  such as nouns and propositions
+
+
+--- Sentence/switch
+id: 315
+r#  55251  1016  32
+
+
+--- Sentence//end
+id: 315
+r#  55417  1019  39
+p: .
+t. 
+|   Because mappings from a tuple
+|  of types to some result type are themselves a type,
+|  we can build an arbitrarily large system
+.  out of a small basis (e.g., )
+
+
+--- Sentence/switch
+id: 316
+r#  55418  1019  40
+
+
+--- Sentence//end
+id: 316
+r#  55531  1022  8
+p: .
+t. 
+|  Propositions are an overarching sentential type,
+|  whereas phrases may have intermediate types between
+.  
+
+
+--- Sentence/switch
+id: 317
+r#  55532  1022  9
+
+
+--- Sentence//end
+id: 317
+r#  55726  1026  37
+p: .
+t. 
+|   A sentence is properly
+|  formed if those intermediates resolve to propositionality,
+|  via type-inference rules like reading (intransitive)
+|  finite-verb/noun
+.  pairs as producing a grounded clause
+
+--- Sentence/end 
+id: 317
+r#  55727  1026  38
+
+--- Paragraph/end 
+id: 57
+y: N/A
+
+
+--- Paragraph/start
+id: 58
+r#  55732  1028  1
+
+
+--- Sentence/start
+id: 318
+r#  55732  1028  1
+
+--- Sentence//end
+id: 318
+r#  55970  1032  30
+p: .
+t. 
+|  All of these paradigms assume that phrases compose
+|  meanings by synthesizing concepts in order-dependent
+|  ways, so it is important to examine how pairs of
+|  concepts can transform into something more specific
+.  then either one in particular
+
+
+--- Sentence/switch
+id: 319
+r#  55971  1032  31
+
+--- Paragraph/end 
+id: 58
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  2
+-t  
+
+
+--- Paragraph/start
+id: 59
+r#  56069  1037  1
+
+
+--- Sentence/start
+id: 320
+r#  56069  1037  1
+
+--- Sentence//end
+id: 320
+r#  56203  1040  14
+p: .
+t. 
+|   I will outline a
+|  cognitive-phenomenological reading of this phenomenon. It is circular just
+|  to say that red box means something possessing
+|  both redness and boxness, so we need to look a
+.  little deeper
+
+
+--- Sentence/switch
+id: 321
+r#  56204  1040  15
+
+
+--- Sentence//end
+id: 321
+r#  56240  1043  1
+p: 
+t. 
+.   Consider a full sentence:
+
+
+--- Sentence/switch
+id: 322
+r#  56243  1043  4
+
+
+--- Sentence//end
+id: 322
+r#  56306  1043  67
+p: !
+t. 
+.   I put Mom's chocolate brownies in this red tin box, take some
+
+
+--- Sentence/switch
+id: 323
+r#  56307  1043  68
+
+
+--- Sentence//end
+id: 323
+r#  56413  1047  40
+p: .
+t. 
+|  
+|  It's easy to destructure this into a union of concepts where
+.  each word makes a distinct contribution
+
+
+--- Sentence/switch
+id: 324
+r#  56414  1047  41
+
+
+--- Sentence//end
+id: 324
+r#  57328  1068  60
+p: .
+t. 
+|   Here are a few:   box   \clrmAltSub{10}{60}{a}provides insight
+|  into how the box will look, and
+|  feel to the touch, and how to open it    tin box   the color helps one find it amidst other objects    red tin box   invites the hearer to focus on something proximate
+|  to the speaker; deictic augments descriptive reference    this red tin box   draws attention to the interior, with its functional
+|  affordance of holding and storing contents    brownies   chocolate adds detail relevant to whether the
+|  hearer will want to eat them    chocolate brownies   helps anchor the referent in situations
+|  known to the listener (insofar as the brownies are not otherwise identified);
+.  viz., Mom made them, and this fact is known to the listener
+
+
+--- Sentence/switch
+id: 325
+r#  57329  1068  61
+
+
+--- Sentence//end
+id: 325
+r#  57430  1069  65
+p: .
+t. 
+|   On an alternative interpretation,
+.  the brownies are for Mom, but this is less likely in context
+
+--- Sentence/end 
+id: 325
+r#  57434  1071  2
+
+--- Paragraph/end 
+id: 59
+y: N/A
+
+
+--- Paragraph/start
+id: 60
+r#  57437  1074  1
+
+
+--- Sentence/start
+id: 326
+r#  57437  1074  1
+
+--- Sentence//end
+id: 326
+r#  57490  1074  54
+p: .
+t. 
+.  We should examine both syntactic and semantic factors
+
+
+--- Sentence/switch
+id: 327
+r#  57491  1074  55
+
+
+--- Sentence//end
+id: 327
+r#  57594  1076  55
+p: .
+t. 
+|  Semantically, clearly each word adds its own
+.  details to an emerging picture of the speaker's intent
+
+
+--- Sentence/switch
+id: 328
+r#  57595  1076  56
+
+
+--- Sentence//end
+id: 328
+r#  57705  1079  9
+p: .
+t. 
+|  How to properly model the intermediate stages
+|  of the overall conceptual bundling remains an open
+.  question
+
+
+--- Sentence/switch
+id: 329
+r#  57706  1079  10
+
+
+--- Sentence//end
+id: 329
+r#  57825  1081  11
+p: .
+t. 
+|   Syntactically, it should be obvious that
+|  there is a fixed order to when each word enters the stage,
+.  as it were
+
+
+--- Sentence/switch
+id: 330
+r#  57826  1081  12
+
+
+--- Sentence//end
+id: 330
+r#  57958  1083  26
+p: .
+t. 
+|   This is presumably enforced by, or an effect of,
+|  grammatical form, though again a theory would have to
+.  describe how this happens
+
+--- Sentence/end 
+id: 330
+r#  57959  1083  27
+
+--- Paragraph/end 
+id: 60
+y: N/A
+
+
+--- Paragraph/start
+id: 61
+r#  57961  1085  1
+
+
+--- Sentence/start
+id: 331
+r#  57961  1085  1
+
+--- Sentence//end
+id: 331
+r#  58081  1086  60
+p: .
+t. 
+|  Addressing the semantic plane first, considering words with
+.  explicit sensation-related meaning is a good place to start
+
+
+--- Sentence/switch
+id: 332
+r#  58082  1086  61
+
+
+--- Sentence//end
+id: 332
+r#  58160  1088  15
+p: .
+t. 
+|  It's simple to note that red box designates a box which
+.  appears as red
+
+
+--- Sentence/switch
+id: 333
+r#  58161  1088  16
+
+
+--- Sentence//end
+id: 333
+r#  58249  1089  51
+p: .
+t. 
+|   But we should investigate how this
+.  meaning actually factors into cognitive processing
+
+
+--- Sentence/switch
+id: 334
+r#  58250  1089  52
+
+
+--- Sentence//end
+id: 334
+r#  58390  1092  10
+p: .
+t. 
+|   I would
+|  question an analysis whereby understanding  entails forming a
+|  mental image of a red tin box, at least with any
+.  vividness
+
+
+--- Sentence/switch
+id: 335
+r#  58391  1092  11
+
+
+--- Sentence//end
+id: 335
+r#  58474  1093  38
+p: .
+t. 
+|   But nor do we make sense of that phrase in
+.  complete isolation from sense-content
+
+
+--- Sentence/switch
+id: 336
+r#  58475  1093  39
+
+
+--- Sentence//end
+id: 336
+r#  58576  1095  20
+p: .
+t. 
+|   This is a good
+|  place to invoke the maxim that meanings are usually precursors
+.  to concrete actions
+
+
+--- Sentence/switch
+id: 337
+r#  58577  1095  21
+
+
+--- Sentence//end
+id: 337
+r#  58691  1096  71
+p: .
+t. 
+|   Should 's hearer decide to partake in
+.  brownies, the meaning-content helps prep for finding and grasping them
+
+
+--- Sentence/switch
+id: 338
+r#  58692  1096  72
+
+
+--- Sentence//end
+id: 338
+r#  58816  1098  73
+p: .
+t. 
+|  Red tin box thereby equips said hearer with
+.  information relevant to locating, opening, and reaching inside the stash
+
+
+--- Sentence/switch
+id: 339
+r#  58817  1098  74
+
+
+--- Sentence//end
+id: 339
+r#  58971  1101  21
+p: .
+t. 
+|  Hearer does not require an explicit mental image at the moment
+|  (of enunciation), but does need to later isolate the box from
+.  fields of sense-data
+
+
+--- Sentence/switch
+id: 340
+r#  58972  1101  22
+
+
+--- Sentence//end
+id: 340
+r#  59132  1103  35
+p: .
+t. 
+|   Of course, while imagining that future scenario,
+|  hearer might potentially form a certain mental picture of a red tin box,
+.  but it can adequately be imprecise
+
+--- Sentence/end 
+id: 340
+r#  59133  1103  36
+
+--- Paragraph/end 
+id: 61
+y: N/A
+
+
+--- Paragraph/start
+id: 62
+r#  59135  1105  1
+
+
+--- Sentence/start
+id: 341
+r#  59135  1105  1
+
+--- Sentence//end
+id: 341
+r#  59344  1108  34
+p: .
+t. 
+|  Taking this case as an example, it seems as if phrases
+|  with concrete, sense-related meanings occupy some intermediate
+|  cognitive realm, neither abstract concept-clusters nor
+.  photorealistic imaginary pictures
+
+
+--- Sentence/switch
+id: 342
+r#  59345  1108  35
+
+
+--- Sentence//end
+id: 342
+r#  59677  1113  39
+p: .
+t. 
+|   This presumably reflects
+|  cognitive anticipation of future behavior more generally: mentally
+|  rehearsing planned actions involves pictorial imagination to
+|  some degree, but we focus on enactive schema more than sensory
+|  details \clrmr{10}{63}(maybe a temporal mirror-image of how perceptual
+.  specifics likewise fade from memories)
+
+
+--- Sentence/switch
+id: 343
+r#  59678  1113  40
+
+
+--- Sentence//end
+id: 343
+r#  59784  1115  32
+p: .
+t. 
+|  If we can accept this as a feature of cognition as such, it yields a
+.  natural framework for semantics
+
+
+--- Sentence/switch
+id: 344
+r#  59785  1115  33
+
+
+--- Sentence//end
+id: 344
+r#  59887  1116  71
+p: .
+t. 
+|   Such semi-perceptual content
+.  serves as a staging area for intermediate-level concept-aggregates
+
+--- Sentence/end 
+id: 344
+r#  59888  1116  72
+
+--- Paragraph/end 
+id: 62
+y: N/A
+
+
+--- Paragraph/start
+id: 63
+r#  59890  1118  1
+
+
+--- Sentence/start
+id: 345
+r#  59890  1118  1
+
+--- Sentence//end
+id: 345
+r#  59949  1118  60
+p: .
+t. 
+.  Syntactically, meanwhile, the word order seems fairly rigid
+
+
+--- Sentence/switch
+id: 346
+r#  59950  1118  61
+
+
+--- Sentence//end
+id: 346
+r#  60052  1120  44
+p: .
+t. 
+|   This
+|  is hardly self-evident, because each contribution
+.  (e.g., red and tin) feels unrelated
+
+
+--- Sentence/switch
+id: 347
+r#  60053  1120  45
+
+
+--- Sentence//end
+id: 347
+r#  60222  1124  9
+p: .
+t. 
+|   Still,
+|  evidently there are cognitive trends in the mental
+|  staging area that yield a preference for
+|  building conceptual bundles via canonical, ordered
+.  formulae
+
+
+--- Sentence/switch
+id: 348
+r#  60223  1124  10
+
+
+--- Sentence//end
+id: 348
+r#  60393  1127  11
+p: .
+t. 
+|   Among adjectives, those naming attributes that are
+|  more intrinsic to the nature of their substrata appear
+|  closer to the noun than qualities which are more
+.  incidental
+
+
+--- Sentence/switch
+id: 349
+r#  60394  1127  12
+
+
+--- Sentence//end
+id: 349
+r#  60458  1128  20
+p: .
+t. 
+|   A metal box can be painted over, but will
+.  never become wooden
+
+
+--- Sentence/switch
+id: 350
+r#  60459  1128  21
+
+
+--- Sentence//end
+id: 350
+r#  60529  1129  47
+p: .
+t. 
+|   Hence red slots
+.  outside tin (tin red box sounds wrong)
+
+
+--- Sentence/switch
+id: 351
+r#  60530  1129  48
+
+
+--- Sentence//end
+id: 351
+r#  60640  1131  59
+p: .
+t. 
+|  Adjectives of compositional substance bind more
+.  tightly than color, which is ontologically accidental
+
+
+--- Sentence/switch
+id: 352
+r#  60641  1131  60
+
+
+--- Sentence//end
+id: 352
+r#  60932  1138  23
+p: .
+t. 
+|  Such conventions evidently reflect
+|  how adjectives play different roles in different
+|  contexts  -  affixing black inseparably to
+|  belt clarifies that the color, here, is not
+|  primarily a sensate quale, but part
+|  an enumeration (black baseball cap, but
+.  karate black belt)
+
+--- Sentence/end 
+id: 352
+r#  60933  1138  24
+
+--- Paragraph/end 
+id: 63
+y: N/A
+
+
+--- Paragraph/start
+id: 64
+r#  60935  1140  1
+
+
+--- Sentence/start
+id: 353
+r#  60935  1140  1
+
+--- Sentence//end
+id: 353
+r#  61130  1143  30
+p: .
+t. 
+|  Phrases built around material objects thereby evidently
+|  pan outward from their minimal physical substantiation
+|  to the ambient situational context, with word-order
+.  marking a parallel trajectory
+
+
+--- Sentence/switch
+id: 354
+r#  61131  1143  31
+
+
+--- Sentence//end
+id: 354
+r#  61344  1147  26
+p: .
+t. 
+|   This is a syntactic
+|  principle in the sense that tin red box is ill-formed
+|  by virtue of word order, but also since we
+|  need to mark phrasal boundaries: adjective-to-noun distance
+.  depends on which noun
+
+--- Sentence/end 
+id: 354
+r#  61345  1147  27
+
+--- Paragraph/end 
+id: 64
+y: N/A
+
+
+--- Paragraph/start
+id: 65
+r#  61347  1149  1
+
+
+--- Sentence/start
+id: 355
+r#  61347  1149  1
+
+--- Sentence//end
+id: 355
+r#  61505  1151  56
+p: .
+t. 
+|  Parts of speech, moreover, reflect how words play
+|  specific roles relative to aggregating concepts in
+.  (what I would call) a semi-perceptual staging area
+
+
+--- Sentence/switch
+id: 356
+r#  61506  1151  57
+
+
+--- Sentence//end
+id: 356
+r#  61644  1154  32
+p: .
+t. 
+|  Noun phrases are de-facto landmarks in the synthesizing
+|  process, forming a conceptual nexus with some
+.  level of completeness and unity
+
+
+--- Sentence/switch
+id: 357
+r#  61645  1154  33
+
+
+--- Sentence//end
+id: 357
+r#  61845  1158  33
+p: .
+t. 
+|   This surely reflects
+|  how sentences reconstruct perceptual orientation:
+|  in , say, John and the stove represent two
+|  object-concepts inferred to stand as
+.  attentional foci for the speaker
+
+
+--- Sentence/switch
+id: 358
+r#  61846  1158  34
+
+
+--- Sentence//end
+id: 358
+r#  61952  1160  43
+p: .
+t. 
+|   They serve
+|  as attractional zones, or foregrounds, absorbing
+.  awareness of other details and backgrounds
+
+
+--- Sentence/switch
+id: 359
+r#  61953  1160  44
+
+
+--- Sentence//end
+id: 359
+r#  62164  1164  11
+p: .
+t. 
+|   Since linguistic structure
+|  intuitively reconstructs perceptual organization,
+|  it makes sense that noun-phrases are cognitive-staging
+|  milestones, because their significands are cognitive-perceptual
+.  attractors
+
+--- Sentence/end 
+id: 359
+r#  62165  1164  12
+
+--- Paragraph/end 
+id: 65
+y: N/A
+
+
+--- Paragraph/start
+id: 66
+r#  62169  1166  1
+
+
+--- Sentence/start
+id: 360
+r#  62169  1166  1
+
+--- Sentence//end
+id: 360
+r#  62322  1169  23
+p: .
+t. 
+|  Type-theoretically, modeling some parts of speech as
+|  functions captures the
+|  interplay of stasis and dynamics that typifies
+.  cognitive staging
+
+
+--- Sentence/switch
+id: 361
+r#  62323  1169  24
+
+
+--- Sentence//end
+id: 361
+r#  62433  1171  32
+p: .
+t. 
+|   Noun-like conceptual
+|  aggregates have a kind of holistic unity that becomes
+.  destabilized by added modifiers
+
+
+--- Sentence/switch
+id: 362
+r#  62434  1171  33
+
+
+--- Sentence//end
+id: 362
+r#  62636  1175  25
+p: .
+t. 
+|   Tin box, say,
+|  has a certain stasis as idea, semi-image, or
+|  precursor to action; a stasis disrupted by red, but
+|  then via further processing the staged image settles
+.  back into a stable unity
+
+
+--- Sentence/switch
+id: 363
+r#  62637  1175  26
+
+
+--- Sentence//end
+id: 363
+r#  62933  1180  40
+p: .
+t. 
+|   The formal construct
+|  of adjectives mapping nouns to nouns captures the
+|  surface-level manifestation of a churning cognitive
+|  underground, \clrmAlt{11}{67}where intellectual labor is expended in
+|  forming, altering (by assimilating new detail), and
+.  re-establishing static precursor-images
+
+
+--- Sentence/switch
+id: 364
+r#  62934  1180  41
+
+
+--- Sentence//end
+id: 364
+r#  63236  1186  15
+p: .
+t. 
+|   Similarly, propositions
+|  have a kind of situational stasis  -  representations of
+|  states of affairs more than
+|  discrete objects, but still fixpoints within
+|  our construal of facts and affordances surrounding us  - 
+|  which gets destabilized when subordinate clauses become nested into
+.  superordinates
+
+--- Sentence/end 
+id: 364
+r#  63237  1186  16
+
+--- Paragraph/end 
+id: 66
+y: N/A
+
+
+--- Paragraph/start
+id: 67
+r#  63239  1188  1
+
+
+--- Sentence/start
+id: 365
+r#  63239  1188  1
+
+--- Sentence//end
+id: 365
+r#  63362  1189  37
+p: .
+t. 
+|  (Syntactic-) Categorial type theories are, of course, just a few among many protocols
+.  deployed to model sentence structure
+
+
+--- Sentence/switch
+id: 366
+r#  63363  1189  38
+
+
+--- Sentence//end
+id: 366
+r#  63420  1190  19
+p: .
+t. 
+|   Phrase-structure grammars emphasize
+.  nested hierarchies
+
+
+--- Sentence/switch
+id: 367
+r#  63421  1190  20
+
+
+--- Sentence//end
+id: 367
+r#  63692  1194  52
+p: .
+t. 
+|   Dependency grammars
+|  focus more on inter-word relations (often among adjacent words, but crucial
+|  connections can exist between distant ones, such as pronoun/antecedent,
+|  or subject to verb when a clause intervenes)
+.  [/Kahane/], [/TimothyOsborne/], [/GeroldSchneider/]
+
+
+--- Sentence/switch
+id: 368
+r#  63693  1194  53
+
+
+--- Sentence//end
+id: 368
+r#  64017  1200  45
+p: .
+t. 
+|  If our framework is instead (or in addition) more
+|  cognitive, we can emphasize the transformative effects
+|  of any single word on a conceptual synthesis established
+|  via preceding words, in a logical ordering that
+|  deviates from the sequence of enunciation, though grammar
+.  determines how the latter maps to the former
+
+--- Sentence/end 
+id: 368
+r#  64018  1200  46
+
+--- Paragraph/end 
+id: 67
+y: N/A
+
+
+--- Paragraph/start
+id: 68
+r#  64022  1202  1
+
+
+--- Sentence/start
+id: 369
+r#  64022  1202  1
+
+--- Sentence//end
+id: 369
+r#  64255  1205  59
+p: .
+t. 
+|  To examine further, imagine a simple programming language with
+|  just a few components: function symbols, string (character-sequence)
+|  and numeric literals, and variable
+.  symbols that must be assigned a value before they are used
+
+
+--- Sentence/switch
+id: 370
+r#  64256  1205  60
+
+
+--- Sentence//end
+id: 370
+r#  64387  1207  38
+p: .
+t. 
+|  The most common structure in such a language would be expressions consisting of a function
+.  symbol and one or more arguments
+
+
+--- Sentence/switch
+id: 371
+r#  64388  1207  39
+
+
+--- Sentence//end
+id: 371
+r#  64534  1210  8
+p: .
+t. 
+|   The interpreter
+|  that would execute programs written in the language is essentially
+|  a state machine, reading a sequence of symbols
+.  in turn
+
+
+--- Sentence/switch
+id: 372
+r#  64535  1210  9
+
+
+--- Sentence//end
+id: 372
+r#  64602  1214  3
+p: .
+t. 
+.   Assume the following basic operations: 1
+
+
+--- Sentence/switch
+id: 373
+r#  64603  1214  4
+
+
+--- Sentence//end
+id: 373
+r#  64723  1215  43
+p: .
+t. 
+|   If the current symbol is a numeric literal, convert it to an actual number
+.  (e.g., 16 becomes hexadecimal )
+
+
+--- Sentence/switch
+id: 374
+r#  64724  1215  44
+
+
+--- Sentence//end
+id: 374
+r#  64818  1217  48
+p: .
+t. 
+|   Convert
+|  string literals to arrays of glyph
+.  codes (e.g., in the Unicode  format)
+
+
+--- Sentence/switch
+id: 375
+r#  64819  1217  49
+
+
+--- Sentence//end
+id: 375
+r#  64864  1218  25
+p: .
+t. 
+|   Place the current
+.  value on a program stack
+
+
+--- Sentence/switch
+id: 376
+r#  64867  1220  1
+
+
+--- Sentence//end
+id: 376
+r#  64869  1220  3
+p: .
+t. 
+.  2
+
+
+--- Sentence/switch
+id: 377
+r#  64870  1220  4
+
+
+--- Sentence//end
+id: 377
+r#  64948  1221  30
+p: .
+t. 
+|   If the current symbol is a variable, retrieve
+.  its value from a global index
+
+
+--- Sentence/switch
+id: 378
+r#  64949  1221  31
+
+
+--- Sentence//end
+id: 378
+r#  65149  1224  77
+p: .
+t. 
+|   Because every
+|  variable is initialized before use, we can assume that
+|  any value is ultimately obtained from source code
+.  as in item , or read from an external source (like a local file)
+
+
+--- Sentence/switch
+id: 379
+r#  65150  1224  78
+
+
+--- Sentence//end
+id: 379
+r#  65200  1225  50
+p: .
+t. 
+.  Again, place the current value on a program stack
+
+
+--- Sentence/switch
+id: 380
+r#  65203  1227  1
+
+
+--- Sentence//end
+id: 380
+r#  65205  1227  3
+p: .
+t. 
+.  3
+
+
+--- Sentence/switch
+id: 381
+r#  65206  1227  4
+
+
+--- Sentence//end
+id: 381
+r#  65300  1228  39
+p: .
+t. 
+|   If the current symbol is a function-symbol, identify
+.  which procedure is named by the symbol
+
+
+--- Sentence/switch
+id: 382
+r#  65301  1228  40
+
+
+--- Sentence//end
+id: 382
+r#  65506  1232  14
+p: .
+t. 
+|   If we allow
+|  polymorphism  -  one name may reference multiple code-blocks,
+|  distinguished by their signatures  -  then this process
+|  requires examining the types of values further down the
+.  program stack
+
+
+--- Sentence/switch
+id: 383
+r#  65507  1232  15
+
+
+--- Sentence//end
+id: 383
+r#  65755  1236  42
+p: .
+t. 
+|   Once the correct procedure is identified,
+|  transfer control to that function body (if compiled
+|  correctly, the new callee will take its inputs off the
+|  stack and push its own return values, which in turn
+.  may serve as inputs to later subroutines)
+
+
+--- Sentence/switch
+id: 384
+r#  65756  1236  43
+
+
+--- Sentence//end
+id: 384
+r#  65915  1241  9
+p: .
+t. 
+|  
+|  For sake of discussion, I will call this a push/transfer execution
+|  model, given the two main operations (pushing a value, or transferring
+.  control)
+
+
+--- Sentence/switch
+id: 385
+r#  65916  1241  10
+
+
+--- Sentence//end
+id: 385
+r#  66068  1243  48
+p: .
+t. 
+|   While this account is too simplistic for practical computer
+|  languages, \clrmrAlt{11}{69}{a}it serves
+.  as a useful case-study for real-world compilers
+
+--- Sentence/end 
+id: 385
+r#  66069  1243  49
+
+--- Paragraph/end 
+id: 68
+y: N/A
+
+
+--- Paragraph/start
+id: 69
+r#  66071  1245  1
+
+
+--- Sentence/start
+id: 386
+r#  66071  1245  1
+
+--- Sentence//end
+id: 386
+r#  66233  1247  33
+p: .
+t. 
+|  Among the added complications relevant to a real-world push/transfer
+|  implementation are  -  first  -  resolving polymorphically
+.  overloaded function symbols
+
+
+--- Sentence/switch
+id: 387
+r#  66234  1247  34
+
+
+--- Sentence//end
+id: 387
+r#  66339  1248  59
+p: .
+t. 
+|   By stipulation, the interpreter or compiler
+.  has access to a list mapping procedure names to signatures
+
+
+--- Sentence/switch
+id: 388
+r#  66340  1248  60
+
+
+--- Sentence//end
+id: 388
+r#  66459  1250  46
+p: .
+t. 
+|  Selecting a correct overload is straightforward if there is one exact
+.  signature-match given the current stack types
+
+
+--- Sentence/switch
+id: 389
+r#  66460  1250  47
+
+
+--- Sentence//end
+id: 389
+r#  66600  1252  38
+p: .
+t. 
+|   However, most modern
+|  programming environments allow implicit type-casts (e.g., any integer is also
+.  a decimal, with fractional part zero)
+
+
+--- Sentence/switch
+id: 390
+r#  66601  1252  39
+
+
+--- Sentence//end
+id: 390
+r#  66786  1255  9
+p: .
+t. 
+|   Moreover, modern languages commonly
+|  adopt template-metaprogramming and/or class-inheritance systems wherein
+|  a given variable-symbol could have different types in different
+.  contexts
+
+
+--- Sentence/switch
+id: 391
+r#  66787  1255  10
+
+
+--- Sentence//end
+id: 391
+r#  66911  1256  68
+p: .
+t. 
+|   In these systems, to compute which overload matches a
+.  given sequence of parameter-values is considerably more complicated
+
+--- Sentence/end 
+id: 391
+r#  66912  1256  69
+
+--- Paragraph/end 
+id: 69
+y: N/A
+
+
+--- Paragraph/start
+id: 70
+r#  66914  1258  1
+
+
+--- Sentence/start
+id: 392
+r#  66914  1258  1
+
+--- Sentence//end
+id: 392
+r#  67241  1262  43
+p: .
+t. 
+|  A second difficulty for push/transfer mechanics is deriving the correct
+|  sequence for presenting symbols to the interpreter (in real life, said
+|  interpreter is more like an abstract representation guiding the compilation
+|  of high-level code, but we can still reason about source
+.  code as if it were interpreted on-the-fly)
+
+
+--- Sentence/switch
+id: 393
+r#  67242  1262  44
+
+
+--- Sentence//end
+id: 393
+r#  67384  1264  39
+p: .
+t. 
+|   Usually this sequence is
+|  different from the order in which tokens appear in source code, so symbols
+.  have to be reordered for push/transfer
+
+
+--- Sentence/switch
+id: 394
+r#  67385  1264  40
+
+
+--- Sentence//end
+id: 394
+r#  67617  1267  41
+p: .
+t. 
+|   Compilers must also deduce which tokens
+|  are associated with which function-symbols, a process that involves
+|  both syntax (e.g., nested parentheses) and semantics (e.g., order of operands,
+.  like multiplication preempting addition)
+
+
+--- Sentence/switch
+id: 395
+r#  67618  1267  42
+
+
+--- Sentence//end
+id: 395
+r#  67963  1271  83
+p: .
+t. 
+|   Parsing high-level code is therefore a
+|  matter of reducing source files (which have extra structures such as nested
+|  expressions) to a simpler representation based on token-sequences
+|  (details like nesting become flattened to a single lineup, which works
+.  because subroutines enforce a contract about how the program stack should be used)
+
+--- Sentence/end 
+id: 395
+r#  67964  1271  84
+
+--- Paragraph/end 
+id: 70
+y: N/A
+
+
+--- Paragraph/start
+id: 71
+r#  67967  1273  1
+
+
+--- Sentence/start
+id: 396
+r#  67967  1273  1
+
+--- Sentence//end
+id: 396
+r#  68094  1274  53
+p: .
+t. 
+|  Despite its simplistic provenance, the push/transfer execution model
+.  has some interesting resonance with natural language
+
+
+--- Sentence/switch
+id: 397
+r#  68095  1274  54
+
+
+--- Sentence//end
+id: 397
+r#  68334  1278  18
+p: .
+t. 
+|   For one
+|  thing, the syntactic process just described  -  parsing more-complex
+|  code down to symbols arranged in a sequence ordered for push and transfer
+|  actions  -  has some schematic resemblance to the role of syntax
+.  in human language
+
+
+--- Sentence/switch
+id: 398
+r#  68335  1278  19
+
+
+--- Sentence//end
+id: 398
+r#  68532  1281  20
+p: .
+t. 
+|   Moreover, semantic complexities such as
+|  function polymorphism recall phenomena like multiple word-senses,
+|  where lexical units are, in effect, overloaded with divergent
+.  meanings by context
+
+--- Sentence/end 
+id: 398
+r#  68533  1281  21
+
+--- Paragraph/end 
+id: 71
+y: N/A
+
+
+--- Paragraph/start
+id: 72
+r#  68537  1283  1
+
+
+--- Sentence/start
+id: 399
+r#  68537  1283  1
+
+--- Sentence//end
+id: 399
+r#  68818  1287  19
+p: .
+t. 
+|  Both computer code and natural language are, by many lights,
+|  better represented in terms of parse-graphs than trees
+|  (particularly in so far as some relations, like anaphora in the latter context
+|  and side-effect propagation in the former, cut across tree-like
+.  directed branches)
+
+
+--- Sentence/switch
+id: 400
+r#  68819  1287  20
+
+
+--- Sentence//end
+id: 400
+r#  68932  1288  64
+p: .
+t. 
+|   With proper edge-filtering, tree visiting
+.  algorithms (e.g., push/transfer) can be adopted to parse graphs
+
+
+--- Sentence/switch
+id: 401
+r#  68933  1288  65
+
+
+--- Sentence//end
+id: 401
+r#  69065  1291  21
+p: .
+t. 
+|  Type-checking may be described as a graph-traversal
+|  strategy where the program stack holds types rather
+.  than concrete values
+
+
+--- Sentence/switch
+id: 402
+r#  69066  1291  22
+
+
+--- Sentence//end
+id: 402
+r#  69363  1297  9
+p: .
+t. 
+|   Assuming
+|  polymorphism, \clrmAlt{12}{73}a type-checker
+|  must confirm that, given any stack-state with a
+|  procedure symbol on top, there is a unique implementation
+|  whose parameter-types match those symbolized lower on the stack
+|  (if so, its output type is then placed on the stack
+.  instead)
+
+
+--- Sentence/switch
+id: 403
+r#  69364  1297  10
+
+
+--- Sentence//end
+id: 403
+r#  69830  1305  67
+p: .
+t. 
+|   Both type-checking
+|  and push/transfer may thereby be modeled
+|  as versions of a generic graph-traversal pattern, whose
+|  central operations are crossing to unvisited child nodes;
+|  pushing leaf-nodes' values (or types, etc.) onto an
+|  external stack; and performing some external operation
+|  on non-leaf nodes once all descendent branches have been explored
+|  (in effect, navigating graphs with a state
+.  machine holding stack-memory and a trace of previously-seen nodes)
+
+--- Sentence/end 
+id: 403
+r#  69831  1305  68
+
+--- Paragraph/end 
+id: 72
+y: N/A
+
+
+--- Paragraph/start
+id: 73
+r#  69833  1307  1
+
+
+--- Sentence/start
+id: 404
+r#  69833  1307  1
+
+--- Sentence//end
+id: 404
+r#  70150  1312  39
+p: .
+t. 
+|  In short, whenever a directed graph models a computational
+|  process, we can extract a postordering of nodes
+|  representing the proper sequence for a push/transfer traversal;
+|  and we can type-check relationships between
+|  child nodes and parent nodes, the latter being interpreted
+.  as procedures with specific signatures
+
+
+--- Sentence/switch
+id: 405
+r#  70151  1312  40
+
+
+--- Sentence//end
+id: 405
+r#  70276  1314  52
+p: .
+t. 
+|   I believe
+|  both of these operations  -  postordering and type-checking
+.   -  have approximate correlates in natural language
+
+
+--- Sentence/switch
+id: 406
+r#  70277  1314  53
+
+
+--- Sentence//end
+id: 406
+r#  70460  1318  47
+p: .
+t. 
+|  The mapping of a general parse-graph onto
+|  a postorder traversal sequence recalls
+|  underlying machineries for conceptual synthesis,
+.  conformant to a word-by-word staging order
+
+
+--- Sentence/switch
+id: 407
+r#  70461  1318  48
+
+
+--- Sentence//end
+id: 407
+r#  70743  1324  63
+p: .
+t. 
+|  Intuitively, nouns are akin to
+|  values pushed onto a conceptual stack,
+|  whereas verbs, adjectives, and other modifiers
+|  embody cognitive transforms applied to concepts
+|  currently residing on this stack
+.  (albeit which, in the present context, is mostly metaphorical)
+
+
+--- Sentence/switch
+id: 408
+r#  70744  1324  64
+
+
+--- Sentence//end
+id: 408
+r#  70907  1327  66
+p: .
+t. 
+|  Given this conceptual background, I will adopt the
+|  phrase staging order as a linguistic
+.  counterpart to computational push/transfer order
+
+--- Sentence/end 
+id: 408
+r#  70908  1327  67
+
+--- Paragraph/end 
+id: 73
+y: N/A
+
+
+--- Paragraph/start
+id: 74
+r#  70911  1329  1
+
+
+--- Sentence/start
+id: 409
+r#  70911  1329  1
+
+--- Sentence//end
+id: 409
+r#  71157  1333  32
+p: .
+t. 
+|  Type-checking and postordering are functionalizable
+|  similarities between natural and programming languages
+|   -  whatever the metaphysical differences between how
+|  they are realized, the two domains have some
+.  functional structures in common
+
+
+--- Sentence/switch
+id: 410
+r#  71158  1333  33
+
+
+--- Sentence//end
+id: 410
+r#  71292  1336  16
+p: .
+t. 
+|   By analogy,
+|  human and computer vision share capabilities
+|  whose functional roles in larger processing modules
+.  can be analyzed
+
+
+--- Sentence/switch
+id: 411
+r#  71293  1336  17
+
+
+--- Sentence//end
+id: 411
+r#  71571  1340  32
+p: .
+t. 
+|   Image-analysis tactics such as texture
+|  segmentation, occlusion compensation, and gradient-vector inference
+|  have detailed mathematical formulae that could offer functional insights into
+|  visual perception (even if computer implementations may
+.  be very different from brains')
+
+
+--- Sentence/switch
+id: 412
+r#  71572  1340  33
+
+
+--- Sentence//end
+id: 412
+r#  71810  1344  27
+p: .
+t. 
+|   Postordering and type-checking are
+|  not at the same level of quantitative sophistication,
+|  so we don't necessarily move a theoretical needle very far
+|  by detecting structural analogies between graph-postorder
+.  and cognitive staging
+
+
+--- Sentence/switch
+id: 413
+r#  71811  1344  28
+
+
+--- Sentence//end
+id: 413
+r#  71981  1347  49
+p: .
+t. 
+|   Still,
+|  I believe these analogies imply a precis of the
+|  syntax/semantics interface that is more cognitively realistic
+.  than 's appeal to commutative diagrams
+
+
+--- Sentence/switch
+id: 414
+r#  71982  1347  50
+
+--- Paragraph/end 
+id: 74
+y: N/A
+
+--- Paragraph/end 
+id: 74
+y: N/A
+
+
+--- Paragraph/start
+id: 75
+r#  72209  1357  1
+
+
+--- Sentence/start
+id: 415
+r#  72209  1357  1
+
+--- Sentence//end
+id: 415
+r#  72294  1358  28
+p: .
+t. 
+|   Compilers
+|  are stateful processing/workflow \textcolor{white}{platforms,
+|  more than term-reduce artefacts.}
+|  More substantially, postordering is not just a heuristic
+.  for revisiting parse graphs
+
+
+--- Sentence/switch
+id: 416
+r#  72295  1358  29
+
+
+--- Sentence//end
+id: 416
+r#  72403  1360  34
+p: .
+t. 
+|   Type reduction and
+|  conceptual-synthesis conventions act as constraints
+.  on parse-graphs to begin with
+
+
+--- Sentence/switch
+id: 417
+r#  72404  1360  35
+
+
+--- Sentence//end
+id: 417
+r#  72466  1361  35
+p: .
+t. 
+|   Most sentences give rise
+.  to many minimally plausible graphs
+
+
+--- Sentence/switch
+id: 418
+r#  72467  1361  36
+
+
+--- Sentence//end
+id: 418
+r#  72658  1364  33
+p: .
+t. 
+|   Even when excluding
+|  unrelated contexts like the family name, for instance, the
+|  word trump in a \clrmr{12}{76}playing-card context can serve as noun,
+.  verb, adjective, and even adverb
+
+
+--- Sentence/switch
+id: 419
+r#  72659  1364  34
+
+
+--- Sentence//end
+id: 419
+r#  72770  1366  23
+p: .
+t. 
+|   The distribution of a
+|  single word-sense over multiple syntactic categories is more a
+.  norm than an exception
+
+
+--- Sentence/switch
+id: 420
+r#  72771  1366  24
+
+
+--- Sentence//end
+id: 420
+r#  72910  1368  28
+p: .
+t. 
+|   This fact in itself suggests a proliferation
+|  of plausible parse-graphs, even before addressing polysemy and
+.  phrase-boundary ambiguities
+
+
+--- Sentence/switch
+id: 421
+r#  72911  1368  29
+
+
+--- Sentence//end
+id: 421
+r#  73110  1371  29
+p: .
+t. 
+|   From many plausible candidates,
+|  the set of correct parse graphs are those that meet
+|  case-by-case criteria of coherence, some of which can be modeled in terms
+.  of graph-traversal protocols
+
+--- Sentence/end 
+id: 421
+r#  73111  1371  30
+
+--- Paragraph/end 
+id: 75
+y: N/A
+
+
+--- Paragraph/start
+id: 76
+r#  73115  1373  1
+
+
+--- Sentence/start
+id: 422
+r#  73115  1373  1
+
+--- Sentence//end
+id: 422
+r#  73250  1374  67
+p: .
+t. 
+|  Such processes are apparently interdependent, in that (for example)
+.  part-of-speech assignment influences phrase nesting and vice-versa
+
+
+--- Sentence/switch
+id: 423
+r#  73251  1374  68
+
+
+--- Sentence//end
+id: 423
+r#  73403  1377  33
+p: .
+t. 
+|  Language would be more computationally tractable if processing algorithms
+|  had a logical order, with earlier ones'
+.  results available to those later
+
+
+--- Sentence/switch
+id: 424
+r#  73404  1377  34
+
+
+--- Sentence//end
+id: 424
+r#  73725  1383  15
+p: .
+t. 
+|   In reality,
+|  it seems as if our minds subconsciously test out many
+|  initial-condition sets for traversals (e.g., multiple ways
+|  of construing syntactic categories) and converge on best solutions
+|  (e.g., parts of speech and phrase boundaries
+|  being mutually consistent, without deriving the former first,
+.  or vice-versa)
+
+
+--- Sentence/switch
+id: 425
+r#  73726  1383  16
+
+
+--- Sentence//end
+id: 425
+r#  74093  1387  81
+p: .
+t. 
+|   Conceptual synthesis and staging are
+|  surely part of this process insofar as assessments of meaningfulness, on the
+|  one hand, and well-formedness (on syntactic, semantic, and pragmatic criteria)
+|  on the other, coexist in a kind of feedback loop, converging on the most plausible
+.  construals in all domains (syntax, semantics, pragmatics, and conceptualization)
+
+--- Sentence/end 
+id: 425
+r#  74094  1387  82
+
+--- Paragraph/end 
+id: 76
+y: N/A
+
+
+--- Paragraph/start
+id: 77
+r#  74101  1389  1
+
+
+--- Sentence/start
+id: 426
+r#  74101  1389  1
+
+--- Sentence//end
+id: 426
+r#  74448  1395  47
+p: .
+t. 
+|  This interpretation of parse-graphs  -  as
+|  intermediate representation for sentence content,
+|  endowed with post\-order and type-checking traversals
+|    -  works by analogy to
+|  (but also in place of) set-theoretic or (say) modal-logic
+|  approaches, where languages are treated as a surface-level
+.  manifestation of logico-mathematical rule sets
+
+
+--- Sentence/switch
+id: 427
+r#  74449  1395  48
+
+
+--- Sentence//end
+id: 427
+r#  74683  1399  31
+p: .
+t. 
+|   A key difference,
+|  however  -  apropos computer-code as metaphor for human
+|  language  -  is that within transfer of control the space
+|  of available functions is not restricted to those explicitly
+.  implemented in high-level code
+
+
+--- Sentence/switch
+id: 428
+r#  74684  1399  32
+
+
+--- Sentence//end
+id: 428
+r#  75096  1406  46
+p: .
+t. 
+|   Operating-system functions,
+|  language runtimes, standard libraries, and other
+|  pre-compiled procedures would be analogous to extralinguistic
+|  cognitive competence that may be solicited by constructions
+|  in discourse: conceptual transformations' staging-order position
+|  might be established by syntactic and
+|  semantic means, but their cognitive effects need not be
+.  modeled solely in semantic or pragmatic terms
+
+--- Sentence/end 
+id: 428
+r#  75097  1406  47
+
+--- Paragraph/end 
+id: 77
+y: N/A
+
+
+--- Paragraph/start
+id: 78
+r#  75102  1408  1
+
+
+--- Sentence/start
+id: 429
+r#  75102  1408  1
+
+--- Sentence//end
+id: 429
+r#  75335  1412  17
+p: .
+t. 
+|  I intend to propose these ideas as a foundation for
+|  grounding syntactic theory on cognitive optimization
+|   -  and, by extension, situating the theory's overall
+|  series of disciplinary warrants against the paradigms
+.  of phenomenology
+
+
+--- Sentence/switch
+id: 430
+r#  75336  1412  18
+
+--- Paragraph/end 
+id: 78
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  3
+-t  
+
+
+--- Paragraph/start
+id: 79
+r#  75460  1419  1
+
+
+--- Sentence/start
+id: 431
+r#  75460  1419  1
+
+--- Sentence//end
+id: 431
+r#  75592  1421  6
+p: .
+t. 
+|   However, I feel there are two
+|  issues to address that could complicate the picture
+|  I've outlined. First, my discussion has implied that word-order and associated
+|  sentence properties, such as phrase-structure, are logically
+.  fixed
+
+
+--- Sentence/switch
+id: 432
+r#  75593  1421  7
+
+
+--- Sentence//end
+id: 432
+r#  75689  1423  17
+p: .
+t. 
+|   \clrmAlt{13}{80}That
+|  may be true in some sentences, but one might find
+.  counter-examples
+
+
+--- Sentence/switch
+id: 433
+r#  75690  1423  18
+
+
+--- Sentence//end
+id: 433
+r#  75716  1426  1
+p: 
+t. 
+.   I will examine:
+
+
+--- Sentence/switch
+id: 434
+r#  75719  1426  4
+
+
+--- Sentence//end
+id: 434
+r#  75749  1426  34
+p: .
+t. 
+.   I'm heading out to the store
+
+
+--- Sentence/switch
+id: 435
+r#  75750  1426  35
+
+
+--- Sentence//end
+id: 435
+r#  75863  1430  30
+p: .
+t. 
+|  
+|  As I see it, there are two ways to read this sentence, and they imply phrasal
+.  and staging-order differences
+
+
+--- Sentence/switch
+id: 436
+r#  75864  1430  31
+
+
+--- Sentence//end
+id: 436
+r#  76007  1432  22
+p: .
+t. 
+|   We can read heading out as a compound
+|  verb, or we can treat out, instead, as part of an expression describing
+.  direction of movement
+
+
+--- Sentence/switch
+id: 437
+r#  76008  1432  23
+
+
+--- Sentence//end
+id: 437
+r#  76092  1436  1
+p: 
+t. 
+|   That both are feasible may be demonstrated by
+.  question-and-answer forms:
+
+
+--- Sentence/switch
+id: 438
+r#  76095  1436  4
+
+
+--- Sentence//end
+id: 438
+r#  76116  1436  25
+p: ?
+t. 
+.   Where are you going
+
+
+--- Sentence/switch
+id: 439
+r#  76117  1436  26
+
+
+--- Sentence//end
+id: 439
+r#  76135  1436  44
+p: .
+t. 
+.   Out to the store
+
+
+--- Sentence/switch
+id: 440
+r#  76136  1436  45
+
+
+--- Sentence//end
+id: 440
+r#  76137  1437  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 441
+r#  76140  1437  4
+
+
+--- Sentence//end
+id: 441
+r#  76160  1437  24
+p: ?
+t. 
+.   What are you doing
+
+
+--- Sentence/switch
+id: 442
+r#  76161  1437  25
+
+
+--- Sentence//end
+id: 442
+r#  76174  1437  38
+p: .
+t. 
+.   Heading out
+
+
+--- Sentence/switch
+id: 443
+r#  76175  1437  39
+
+
+--- Sentence//end
+id: 443
+r#  76288  1441  47
+p: .
+t. 
+|  
+|  Movement verbs reference spatial trajectories, but these are
+.  defined by more than just start and end points
+
+
+--- Sentence/switch
+id: 444
+r#  76289  1441  48
+
+
+--- Sentence//end
+id: 444
+r#  76413  1443  47
+p: .
+t. 
+|   A path
+|  to the store has a functionally distinct early part in leaving
+.  the building, to which  alludes via out
+
+
+--- Sentence/switch
+id: 445
+r#  76414  1443  48
+
+
+--- Sentence//end
+id: 445
+r#  76554  1445  56
+p: .
+t. 
+|   At the same time,
+|  the process has dimensions beyond just spatial movement; going
+.  out typically involves grabbing keys, wallet, phone
+
+
+--- Sentence/switch
+id: 446
+r#  76555  1445  57
+
+
+--- Sentence//end
+id: 446
+r#  76733  1448  45
+p: .
+t. 
+|  In short, the presence of out results in  referring to
+|  the speaker's planned actions with extra detail both  the
+.  path trajectory and the operative components
+
+
+--- Sentence/switch
+id: 447
+r#  76734  1448  46
+
+
+--- Sentence//end
+id: 447
+r#  76954  1451  73
+p: .
+t. 
+|   Either of these
+|  semantic effects are triggered by attaching out to a word
+|  or phrase  -  but a given parse will draw the phrasal boundaries
+.  one place or another, and thereby model only one part of the word's role
+
+--- Sentence/end 
+id: 447
+r#  76955  1451  74
+
+--- Paragraph/end 
+id: 79
+y: N/A
+
+
+--- Paragraph/start
+id: 80
+r#  76957  1453  1
+
+
+--- Sentence/start
+id: 448
+r#  76957  1453  1
+
+--- Sentence//end
+id: 448
+r#  77131  1455  32
+p: .
+t. 
+|  I would address this issue by arguing that parse-graphs are provisional:
+|  diagramming one version that is appropriate for a sentence does not
+.  preclude others working as well
+
+
+--- Sentence/switch
+id: 449
+r#  77132  1455  33
+
+
+--- Sentence//end
+id: 449
+r#  77272  1457  45
+p: .
+t. 
+|   The actual syntactic forms that
+|  influence sentences' reception may serve as a superposition
+.  of multiple different phrase-nesting schemes
+
+
+--- Sentence/switch
+id: 450
+r#  77273  1457  46
+
+
+--- Sentence//end
+id: 450
+r#  77512  1461  36
+p: .
+t. 
+|   Since out
+|  in  is stated both immediately after heading and before
+|  to the store we can, while hearing , process out
+|  simultaneously as influencing our interpretation of both the
+.  prior word and the following clause
+
+
+--- Sentence/switch
+id: 451
+r#  77513  1461  37
+
+
+--- Sentence//end
+id: 451
+r#  77759  1465  38
+p: .
+t. 
+|   A parse-graph represents
+|  how we experience certain words as implying a modification of
+|  some intermediate complex (what I've called staging),
+|  particularly if we allow edge-annotations to notate where
+.  words have that restaging effect
+
+
+--- Sentence/switch
+id: 452
+r#  77760  1465  39
+
+
+--- Sentence//end
+id: 452
+r#  77904  1468  26
+p: .
+t. 
+|  In this sense parse-graphs are cognitively motivated,
+|  but such does not preclude a sentence from yielding several
+.  distinct motivated graphs
+
+
+--- Sentence/switch
+id: 453
+r#  77905  1468  27
+
+
+--- Sentence//end
+id: 453
+r#  78130  1472  26
+p: .
+t. 
+|   If we believe syntax should
+|  provide one definitive construction representing sentences'
+|  deep structure, then we can take the unit of exposition
+|  as a superposition of multiple graphs rather
+.  than one single structure
+
+--- Sentence/end 
+id: 453
+r#  78131  1472  27
+
+--- Paragraph/end 
+id: 80
+y: N/A
+
+
+--- Paragraph/start
+id: 81
+r#  78133  1474  1
+
+
+--- Sentence/start
+id: 454
+r#  78133  1474  1
+
+--- Sentence//end
+id: 454
+r#  78382  1477  33
+p: .
+t. 
+|  So, in short, two different parse-graphs  -  one wherein out attaches
+|  to heading to yield a verb-phrase, and another where the same word
+|  connects to to the store to provide a direct object  -  are both
+.  correct, but neither is complete
+
+
+--- Sentence/switch
+id: 455
+r#  78383  1477  34
+
+
+--- Sentence//end
+id: 455
+r#  78486  1478  73
+p: .
+t. 
+|   The definitive parsing
+.  structure for  would be a superposition of the two provisional graphs
+
+--- Sentence/end 
+id: 455
+r#  78487  1478  74
+
+--- Paragraph/end 
+id: 81
+y: N/A
+
+
+--- Paragraph/start
+id: 82
+r#  78489  1480  1
+
+
+--- Sentence/start
+id: 456
+r#  78489  1480  1
+
+--- Sentence//end
+id: 456
+r#  78614  1481  54
+p: .
+t. 
+|  The second issue I'd like to address is the extent of complete phrase-
+.  (and sentence-) level scale in contrast to word-pairs
+
+
+--- Sentence/switch
+id: 457
+r#  78615  1481  55
+
+
+--- Sentence//end
+id: 457
+r#  78795  1484  41
+p: .
+t. 
+|  My preliminary proposal is that individual words contribute
+|  cognitive restaging \clrmr{13}{83}of aggregates formed from logically
+.  (not necessarily temporally) prior words
+
+
+--- Sentence/switch
+id: 458
+r#  78796  1484  42
+
+
+--- Sentence//end
+id: 458
+r#  78995  1488  49
+p: .
+t. 
+|   From a
+|  given conceptual bundle, we
+|  interpret a particular succedent word as adding detail or
+|  variation, wherein the synthesis re-stabilizes into
+.  an updated unity by assimilating the new content
+
+
+--- Sentence/switch
+id: 459
+r#  78996  1488  50
+
+
+--- Sentence//end
+id: 459
+r#  79135  1491  42
+p: .
+t. 
+|  In broad outline, the process is not unlike
+|  how scientific theories adapt to accommodate new
+.  empirical data, though on a smaller scale
+
+--- Sentence/end 
+id: 459
+r#  79136  1491  43
+
+--- Paragraph/end 
+id: 82
+y: N/A
+
+
+--- Paragraph/start
+id: 83
+r#  79138  1493  1
+
+
+--- Sentence/start
+id: 460
+r#  79138  1493  1
+
+--- Sentence//end
+id: 460
+r#  79363  1497  21
+p: .
+t. 
+|  Such an analysis might work fine on mostly
+|  local levels, e.g., adjectives, adverbs, relative
+|  pronouns, determiners, and so forth, but require
+|  further clarification for verbs (and perhaps conjunctions,
+.  subordinators, etc.)
+
+
+--- Sentence/switch
+id: 461
+r#  79364  1497  22
+
+
+--- Sentence//end
+id: 461
+r#  79506  1500  7
+p: .
+t. 
+|   In the case of verbs, a
+|  local analysis could accommodate intransitives,
+|  but not subject/object (and possibly indirect object)
+.  tuples
+
+
+--- Sentence/switch
+id: 462
+r#  79507  1500  8
+
+
+--- Sentence//end
+id: 462
+r#  79617  1502  33
+p: .
+t. 
+|   Categorially, (di)transitive verbs
+|  require multiple nominal constructs to
+.  yield proposition-like syntheses
+
+
+--- Sentence/switch
+id: 463
+r#  79618  1502  34
+
+
+--- Sentence//end
+id: 463
+r#  79919  1508  45
+p: .
+t. 
+|   Moreover,
+|  verbs may command multiple clauses governed
+|  by various case-forms: locative constructions,
+|  (ab)lative, benefactive, instrumental, etc., each marking
+|  that an associated phrase presents some detail
+|  (the where, why, how) for the central verb
+.  in the immediate surrounding phrase/sentence
+
+--- Sentence/end 
+id: 463
+r#  79920  1508  46
+
+--- Paragraph/end 
+id: 83
+y: N/A
+
+
+--- Paragraph/start
+id: 84
+r#  79922  1510  1
+
+
+--- Sentence/start
+id: 464
+r#  79922  1510  1
+
+--- Sentence//end
+id: 464
+r#  80217  1515  49
+p: .
+t. 
+|  In the realm of conceptual synthesis, that is, verbs
+|  function uniquely: they don't alter a single aggregate so
+|  much as collate a collection of distinct nouns
+|  (or noun-phrases), using a roster of thematic relations,
+|  in particular, to organize
+.  the significatory role of different constituents
+
+
+--- Sentence/switch
+id: 465
+r#  80218  1515  50
+
+
+--- Sentence//end
+id: 465
+r#  80305  1517  28
+p: .
+t. 
+|  A sentence, in general, accrues various kinds of detail
+.  related to its central verb
+
+
+--- Sentence/switch
+id: 466
+r#  80306  1517  29
+
+
+--- Sentence//end
+id: 466
+r#  80389  1519  3
+p: .
+t. 
+|   Some of these
+|  would appear to be intrinsic to the verb's meaning; some, less
+.  so
+
+
+--- Sentence/switch
+id: 467
+r#  80390  1519  4
+
+
+--- Sentence//end
+id: 467
+r#  80528  1524  1
+p: 
+t. 
+|   Given donate, for example, it seems necessary
+|  to indicate (perhaps by implicit context) a giver, a gift,
+.  and a recipient:
+
+
+--- Sentence/switch
+id: 468
+r#  80531  1524  4
+
+
+--- Sentence//end
+id: 468
+r#  80596  1524  69
+p: .
+t. 
+.   Last weekend we donated a hundred dollars to the animal shelter
+
+
+--- Sentence/switch
+id: 469
+r#  80597  1524  70
+
+
+--- Sentence//end
+id: 469
+r#  80813  1529  49
+p: .
+t. 
+|  
+|  Here, the indicator of when (viz., last weekend) is subsidiary, adding merely a tangential
+|  factoid to the overall sentence, but the other components are
+.  mandatory given the relevant sense of donate
+
+
+--- Sentence/switch
+id: 470
+r#  80814  1529  50
+
+
+--- Sentence//end
+id: 470
+r#  80958  1535  1
+p: 
+t. 
+|   A verb's
+|  theta grid models elements that are sufficiently
+|  intrinsic that special grammatic forms embed them concisely,
+.  as in
+
+
+--- Sentence/switch
+id: 471
+r#  80961  1535  4
+
+
+--- Sentence//end
+id: 471
+r#  81007  1535  50
+p: .
+t. 
+.   We gave the animal shelter a hundred dollars
+
+
+--- Sentence/switch
+id: 472
+r#  81008  1535  51
+
+
+--- Sentence//end
+id: 472
+r#  81210  1540  67
+p: .
+t. 
+|  
+|  However, indirect objects may be ineliminable for a completed idea while
+|  also resistant to the transform whereby a clause headed
+.  by to moves before the direct object, dropping the preposition
+
+
+--- Sentence/switch
+id: 473
+r#  81211  1540  68
+
+
+--- Sentence//end
+id: 473
+r#  81349  1542  67
+p: .
+t. 
+|  It is not clear why the abridged double object form is acceptable
+.  with some English verbs and not others ([/Bruening/], for example)
+
+
+--- Sentence/switch
+id: 474
+r#  81350  1542  68
+
+
+--- Sentence//end
+id: 474
+r#  81659  1547  23
+p: .
+t. 
+|   Be that as it may,
+|  verb details exist on multiple levels of essentiality,
+|  from a core subject/object nexus (spanned by theta grids) to
+|  essential and then eliminable thematic relations, plus potential marginal
+|  emendations (like when something happened, or further elaboration
+.  on motives or context)
+
+
+--- Sentence/switch
+id: 475
+r#  81660  1547  24
+
+
+--- Sentence//end
+id: 475
+r#  81992  1551  112
+p: .
+t. 
+|   Verbs have implicit
+|  slots for such variegated thematic roles, and by observing
+|  the particular slot slated for a given word (via theta formations)
+|  or phrases (via case-marking; particularly, in English, leading
+.  prepositions) \clrmAltSub{14}{85}{b}we identify the intended role for the constituent [/LucasChampollion/]
+
+
+--- Sentence/switch
+id: 476
+r#  81993  1551  113
+
+--- Paragraph/end 
+id: 84
+y: N/A
+
+
+--- Paragraph/start
+id: 85
+r#  82075  1554  1
+
+
+--- Sentence/start
+id: 477
+r#  82075  1554  1
+
+--- Sentence//end
+id: 477
+r#  82220  1555  74
+p: .
+t. 
+|   (Philosophically,
+|  the concept of a phrase itself may be emergent/derivative.)In presenting conceptual syntheses, then, verbs operate via structures
+.  of roles rather than one-word-at-a-time reworking of conceptual syntheses
+
+
+--- Sentence/switch
+id: 478
+r#  82221  1555  75
+
+
+--- Sentence//end
+id: 478
+r#  82479  1559  61
+p: .
+t. 
+|  Cognitive staging is still intrinsic to inferred meaning; the point
+|  here is that verbs effectuate such processes on a larger scale,
+|  spanning the breadth of a phrase or sentence, whereas other
+.  syntactic categories (e.g., adjectives) operate more locally
+
+
+--- Sentence/switch
+id: 479
+r#  82480  1559  62
+
+
+--- Sentence//end
+id: 479
+r#  82578  1561  38
+p: .
+t. 
+|  A theory of cognitive staging can cover both cases if it
+.  accounts for thematic roles/relations
+
+
+--- Sentence/switch
+id: 480
+r#  82579  1561  39
+
+
+--- Sentence//end
+id: 480
+r#  82865  1566  32
+p: .
+t. 
+|  We can still study verb-constructions as sets of word-pairs
+|  that trigger mutual cognitive reinterpretation, but the difference
+|  here is that we need to describe which thematic
+|  role governs how the verb is oriented to any conceptual aggregate that
+.  it transforms and/or vice-versa
+
+
+--- Sentence/switch
+id: 481
+r#  82866  1566  33
+
+
+--- Sentence//end
+id: 481
+r#  83066  1569  42
+p: .
+t. 
+|   The conceptual pairing of verbs to a
+|  locative phrase, for example, would be different than the
+|  same phrase (perhaps swapping out the preposition) figured
+.  as indirect object, or genitive, or so on
+
+--- Sentence/end 
+id: 481
+r#  83067  1569  43
+
+--- Paragraph/end 
+id: 85
+y: N/A
+
+
+--- Paragraph/start
+id: 86
+r#  83069  1571  1
+
+
+--- Sentence/start
+id: 482
+r#  83069  1571  1
+
+--- Sentence//end
+id: 482
+r#  83360  1575  35
+p: .
+t. 
+|  Systems of thematic relations establish a kind of two-tiered
+|  dimension of sentence structure: the set of words and phrases that
+|  add detail for a central verb provides sentences' inner skeleton,
+|  whereas adjectives and other localized modifiers form
+.  a peripheral epitope (so to speak)
+
+
+--- Sentence/switch
+id: 483
+r#  83361  1575  36
+
+
+--- Sentence//end
+id: 483
+r#  83579  1578  71
+p: .
+t. 
+|   Conceptually, the
+|  central firmament's multi-part nature means that cognitive
+|  integration must synthesize multiple components, in contrast to a
+.  single re-staging such as diamond in her diamond wedding ring
+
+
+--- Sentence/switch
+id: 484
+r#  83580  1578  72
+
+
+--- Sentence//end
+id: 484
+r#  83971  1584  40
+p: .
+t. 
+|  To put it differently, the underlying intellectual phenomenon
+|  is less about a single concept acting on a provisional image-aggregate
+|  (as diamond acts upon wedding ring,
+|  red upon tin box, or karate upon black belt) so much as a verb, in conjunction with
+|  multiple thematically related details, setting forth the principal
+.  data of situations or states of affairs
+
+
+--- Sentence/switch
+id: 485
+r#  83972  1584  41
+
+
+--- Sentence//end
+id: 485
+r#  84216  1588  48
+p: .
+t. 
+|   Whereas semantics
+|  on the localizable periphery appears to tap into a
+|  cognitive faculty of schematic planning and proto-images,
+|  the meaningfulness of the central structure reflects a
+.  more holistic, situational cognitive repertoire
+
+--- Sentence/end 
+id: 485
+r#  84217  1588  49
+
+--- Paragraph/end 
+id: 86
+y: N/A
+
+
+--- Paragraph/start
+id: 87
+r#  84220  1590  1
+
+
+--- Sentence/start
+id: 486
+r#  84220  1590  1
+
+--- Sentence//end
+id: 486
+r#  84530  1595  16
+p: .
+t. 
+|  We can also say that the veins of a sentence's thematic scaffolding
+|  provide multiple sites for speaker-relative grounding
+|  (subjectification): for
+|  each person's discourse to encode their particular epistemic
+|  orientation and perspectival vantage [/LangackerIntro;pp. 263--265, 296--309, 422, 
+.  441, 449, 485/]
+
+
+--- Sentence/switch
+id: 487
+r#  84531  1595  17
+
+
+--- Sentence//end
+id: 487
+r#  85024  1604  12
+p: .
+t. 
+|   Such details may
+|  be manifest temporally (e.g., via choice of verb tense/aspect),
+|  spatially (via locative constructions and deictics), perceptually
+|  (through, say, figure/ground, single/plural,
+|  mass/count, and landmark/ trajector pairings),
+|  or in terms of narrative construal from an evidential
+|  standpoint (I argued earlier how rhetorical patterns
+|  imply evidential narratives even if these are not marked
+|  directly on a morphological scale) or local qualities, such as
+.  verb-aspect
+
+
+--- Sentence/switch
+id: 488
+r#  85025  1604  13
+
+
+--- Sentence//end
+id: 488
+r#  85156  1606  24
+p: .
+t. 
+|   Not to imply that this list is exhaustive;
+|  modeling all modes of subjectification requires a detailed
+.  theory in its own right
+
+
+--- Sentence/switch
+id: 489
+r#  85157  1606  25
+
+
+--- Sentence//end
+id: 489
+r#  85398  1610  59
+p: .
+t. 
+|   Here I simply want to observe that
+|  such grounding is holistic in the sense that it encompasses
+|  a central verb (profiling some event, \clrmr{14}{88}state,
+|  or process) as well as
+.  the set of noun-concepts or -foci that participate therein
+
+
+--- Sentence/switch
+id: 490
+r#  85399  1610  60
+
+
+--- Sentence//end
+id: 490
+r#  85603  1614  28
+p: .
+t. 
+|  The central spine that pulls together multiple thematic
+|  relata likewise consolidates multiple sites for speaker
+|  grounding/epistemics, allowing listeners to piece together
+.  speakers' belief-provenance
+
+--- Sentence/end 
+id: 490
+r#  85604  1614  29
+
+--- Paragraph/end 
+id: 87
+y: N/A
+
+
+--- Paragraph/start
+id: 88
+r#  85606  1616  1
+
+
+--- Sentence/start
+id: 491
+r#  85606  1616  1
+
+--- Sentence//end
+id: 491
+r#  85817  1619  42
+p: .
+t. 
+|  From a formal perspective, thematic relations suggest a
+|  form of typed lambda calculus wherein functions act upon
+|  input-tuples indexed not by sequence, but instead by
+.  assigning distinct roles to each argument
+
+
+--- Sentence/switch
+id: 492
+r#  85818  1619  43
+
+
+--- Sentence//end
+id: 492
+r#  86552  1633  69
+p: .
+t. 
+|  Consider lambda-expressions taking (in lieu of
+|  value-tuples) parameter-packs indexed via
+|  distinct role-attributions for each argument.\footnote{
+|   This kind of calling convention
+|   -  adopted as labeled or keyword parameters
+|  in some computer languages  -  is arguably
+|  more natural than the alternative (positional
+|  arguments) anyhow, because each value passed in to a procedure
+|  typically has a distinct role, possibly suggested by its
+|  name in the function's implementation
+|  block.}  In spoken language, the particular
+|  thematic relation that connects a subsidiary clause to the
+|  central verb determines how we infer its meaning
+.  (or, more precisely, its contribution to the larger meaning overall)
+
+--- Sentence/end 
+id: 492
+r#  86553  1633  70
+
+--- Paragraph/end 
+id: 88
+y: N/A
+
+
+--- Paragraph/start
+id: 89
+r#  86557  1635  1
+
+
+--- Sentence/start
+id: 493
+r#  86557  1635  1
+
+--- Sentence//end
+id: 493
+r#  86758  1638  69
+p: .
+t. 
+|  Such roles may be outside the normal
+|  scope of lambda calculi (or other computation-models), but there are
+|  related ideas in
+.  hypergraph databases, or similar knowledge-representation techniques
+
+
+--- Sentence/switch
+id: 494
+r#  86759  1638  70
+
+
+--- Sentence//end
+id: 494
+r#  87008  1642  48
+p: .
+t. 
+|  A multi-part relation (schematically a hyperedge) can assign distinct roles
+|  to each participant; e.g., divorce implies two individuals,
+|  a prior situation of marriage, and some legal entity or
+.  context which recognizes the divorce as binding
+
+
+--- Sentence/switch
+id: 495
+r#  87009  1642  49
+
+
+--- Sentence//end
+id: 495
+r#  87212  1646  9
+p: .
+t. 
+|  A binary relation such that one party is divorced from
+|  another thereby implies the presence of further participants
+|  (so treating this relation as merely arity-two excludes constitutive
+.  details)
+
+--- Sentence/end 
+id: 495
+r#  87213  1646  10
+
+--- Paragraph/end 
+id: 89
+y: N/A
+
+
+--- Paragraph/start
+id: 90
+r#  87217  1648  1
+
+
+--- Sentence/start
+id: 496
+r#  87217  1648  1
+
+--- Sentence//end
+id: 496
+r#  87405  1650  62
+p: .
+t. 
+|  Unlike a Semantic Web style hyperedge, calling a procedure
+|  does not assert a presumed fact but rather obtains a computed
+.  result, perhaps then used in some larger or future expression
+
+
+--- Sentence/switch
+id: 497
+r#  87406  1650  63
+
+
+--- Sentence//end
+id: 497
+r#  87718  1655  19
+p: .
+t. 
+|  However, there are various commonalities between sets of interrelated
+|  software procedures (e.g., code libraries, coalescing procedural
+|  rather than declarative knowledge [/AnirudhGoyal/]) and graph databases,
+|  that could potentially serve as approximative inspiration for theories
+.  of human cognition
+
+
+--- Sentence/switch
+id: 498
+r#  87719  1655  20
+
+
+--- Sentence//end
+id: 498
+r#  87847  1657  17
+p: .
+t. 
+|   Procedural memoization (caching results to
+|  avoid repeating prior calculations) combines evaluation and
+.  data-persistence
+
+
+--- Sentence/switch
+id: 499
+r#  87848  1657  18
+
+
+--- Sentence//end
+id: 499
+r#  88054  1661  30
+p: .
+t. 
+|   More substantially, pre- and post-conditions
+|  embody contracts [/TimurDoumler/]
+|  (or proofs [/Idris:47/]), partially
+|  mimicking shape/range constraints on hypergraph
+.  neighborhoods [/IovkaBoneva/]
+
+
+--- Sentence/switch
+id: 500
+r#  88055  1661  31
+
+
+--- Sentence//end
+id: 500
+r#  88131  1662  42
+p: .
+t. 
+|   For such contexts, database and
+.  software-language concerns interpenetrate
+
+--- Sentence/end 
+id: 500
+r#  88132  1662  43
+
+--- Paragraph/end 
+id: 90
+y: N/A
+
+
+--- Paragraph/start
+id: 91
+r#  88136  1664  1
+
+
+--- Sentence/start
+id: 501
+r#  88136  1664  1
+
+--- Sentence//end
+id: 501
+r#  88247  1666  18
+p: .
+t. 
+|  In cognition, meanwhile, the line between
+|  predicative belief and practical know-how is more
+.  radically blurred
+
+
+--- Sentence/switch
+id: 502
+r#  88248  1666  19
+
+
+--- Sentence//end
+id: 502
+r#  88376  1668  37
+p: .
+t. 
+|   For one thing, facts are not isolated data-points;
+|  they are inextricably contextualized
+.  by conceptual and pragmatic networks
+
+
+--- Sentence/switch
+id: 503
+r#  88377  1668  38
+
+
+--- Sentence//end
+id: 503
+r#  88521  1670  24
+p: .
+t. 
+|   For another, facts and enactive maxims
+|  share agent and theme/role structures, on a vaguely Neo-Davidsonian event
+.  semantics [/HarryBunt/]
+
+
+--- Sentence/switch
+id: 504
+r#  88522  1670  25
+
+
+--- Sentence//end
+id: 504
+r#  88855  1676  58
+p: .
+t. 
+|  Conceptual integration is in some sense an
+|  intellectual procedure  -  computing in the
+|  domain \clrmAlt{15}{92}of conceptual staging and proto-images, if we don't take the mind/machine
+|  metaphor too literally  -  and
+|  language-users deploy background knowledge
+.  to execute such scripts in comunally-sanctioned ways
+
+--- Sentence/end 
+id: 504
+r#  88856  1676  59
+
+--- Paragraph/end 
+id: 91
+y: N/A
+
+
+--- Paragraph/start
+id: 92
+r#  88859  1678  1
+
+
+--- Sentence/start
+id: 505
+r#  88859  1678  1
+
+--- Sentence//end
+id: 505
+r#  89015  1680  39
+p: .
+t. 
+|  The interface theory of meaning developed
+|  by Orlin Vakarelov is another route to articulate similar intuitions
+.  [/OrlinVakarelov/], [/VakarelovAgent/]
+
+
+--- Sentence/switch
+id: 506
+r#  89016  1680  40
+
+
+--- Sentence//end
+id: 506
+r#  89415  1686  14
+p: .
+t. 
+|   By analogy to how lexicons codify a space of linguistic
+|  knowledge  -  speakers are acquainted with the concepts associated to thousands of
+|  words in their native tongue  -  we likewise have (and acquire) a
+|  dictionary of mental scripts guiding how concepts are to be
+|  merged; e.g., pair an object with its
+|  constitutive material (like tin box), or its manner of appearance
+.  (red box)
+
+
+--- Sentence/switch
+id: 507
+r#  89416  1686  15
+
+
+--- Sentence//end
+id: 507
+r#  89638  1689  19
+p: .
+t. 
+|   In many cases these semanticized scripts derive
+|  from analogous skillfulness in social, collective life: menu, waiter, and
+|  restaurant belong to a semantic frame that regulates one form
+.  of social activity
+
+
+--- Sentence/switch
+id: 508
+r#  89639  1689  20
+
+
+--- Sentence//end
+id: 508
+r#  89760  1691  5
+p: .
+t. 
+|   Knowledge of what to do when visiting a
+|  sit-down eatery is coiled together with knowing what words like menu
+.  mean
+
+--- Sentence/end 
+id: 508
+r#  89761  1691  6
+
+--- Paragraph/end 
+id: 92
+y: N/A
+
+
+--- Paragraph/start
+id: 93
+r#  89765  1693  1
+
+
+--- Sentence/start
+id: 509
+r#  89765  1693  1
+
+--- Sentence//end
+id: 509
+r#  89926  1695  39
+p: .
+t. 
+|  Such examples motivate theories wherein language-users are
+|  also, on a broader scale, competent members of a society, who
+.  have learned certain norms and rituals
+
+
+--- Sentence/switch
+id: 510
+r#  89927  1695  40
+
+
+--- Sentence//end
+id: 510
+r#  90150  1699  8
+p: .
+t. 
+|   Enculturated
+|  knowledge acts by analogy to precompiled code libraries supplied
+|  by a computer operating system, for example, from which source code
+|  may solicit a particular function as needed (e.g., opening
+.  a file)
+
+
+--- Sentence/switch
+id: 511
+r#  90151  1699  9
+
+
+--- Sentence//end
+id: 511
+r#  90382  1702  52
+p: .
+t. 
+|   Language, by analogy, defers to a social repertoire of
+|  enactive scripts, and words often acquire their context-specific
+|  meaning by triggering associations  -  or hypothetical
+.  situations  -  grounded in social-pragmatic schemas
+
+
+--- Sentence/switch
+id: 512
+r#  90383  1702  53
+
+
+--- Sentence//end
+id: 512
+r#  90471  1704  26
+p: .
+t. 
+|  The meaning of sentences are their consequence for further
+.  (context-specific) action
+
+
+--- Sentence/switch
+id: 513
+r#  90472  1704  27
+
+
+--- Sentence//end
+id: 513
+r#  90727  1709  27
+p: .
+t. 
+|  Rather than trying to define e.g. menu via
+|  logical or set-theoretic machinery, we should simply recognize that
+|  anyone familiar with the restaurant domain  -  as a nexus
+|  of social practice  -  understands such actions as
+.  selecting items off a menu
+
+
+--- Sentence/switch
+id: 514
+r#  90728  1709  28
+
+
+--- Sentence//end
+id: 514
+r#  90925  1713  40
+p: .
+t. 
+|  Presumably speakers rarely talk about
+|  menus anyhow outside that dining/ordering context; so proper use
+|  of the word merely reflects normative behavior in
+.  the preeminent contexts where it's used
+
+--- Sentence/end 
+id: 514
+r#  90926  1713  41
+
+--- Paragraph/end 
+id: 93
+y: N/A
+
+
+--- Paragraph/start
+id: 94
+r#  90930  1715  1
+
+
+--- Sentence/start
+id: 515
+r#  90930  1715  1
+
+--- Sentence//end
+id: 515
+r#  91153  1717  83
+p: .
+t. 
+|  More than anything, after all, this is what the word means: not so
+|  much its contribution to signification of some statement's truthmakers,
+.  but rather what makes it correct to token this word in a particular social setting
+
+
+--- Sentence/switch
+id: 516
+r#  91154  1717  84
+
+--- Paragraph/end 
+id: 94
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  4
+-t  
+
+
+--- Paragraph/start
+id: 95
+r#  91470  1726  1
+
+
+--- Sentence/start
+id: 517
+r#  91470  1726  1
+
+--- Sentence//end
+id: 517
+r#  91572  1727  38
+p: .
+t. 
+|  Metaphorical uses also exist (the idiom not on the menu
+|  extends beyond food), but that is merely one of innumerable examples
+|  of metaphoric word-sense that abstracts from concrete
+|  socialized usage properly modeled via something like an
+|  interface theory of meaning. The premise that individual words conceptually modify logically
+.  precedent aggregates may seem obvious
+
+
+--- Sentence/switch
+id: 518
+r#  91573  1727  39
+
+
+--- Sentence//end
+id: 518
+r#  91665  1728  64
+p: .
+t. 
+|   But I want to extend that
+.  maybe-underwhelming starting point with three further arguments
+
+--- Sentence/end 
+id: 518
+r#  91666  1728  65
+
+--- Paragraph/end 
+id: 95
+y: N/A
+
+
+--- Paragraph/start
+id: 96
+r#  91668  1730  1
+
+
+--- Sentence/start
+id: 519
+r#  91668  1730  1
+
+--- Sentence//end
+id: 519
+r#  91776  1731  46
+p: .
+t. 
+|  First, I claim that this overall phenomenon can be taken as a
+.  groundwork for syntactic theory to begin with
+
+
+--- Sentence/switch
+id: 520
+r#  91777  1731  47
+
+
+--- Sentence//end
+id: 520
+r#  91960  1735  37
+p: .
+t. 
+|  When interpreting a sentence, we need to queue up words
+|  in a well-determined order, each acting as a
+|  kind of conceptual transform applied to
+.  syntheses borne from precedent words
+
+
+--- Sentence/switch
+id: 521
+r#  91961  1735  38
+
+
+--- Sentence//end
+id: 521
+r#  92163  1739  43
+p: .
+t. 
+|   To sequence
+|  which word comes on the stage, when, demands a
+|  rigorous set of phrase-bounding and morphosyntactic
+|  conventions, which gestate within language
+.  under the guise of syntactic proscriptions
+
+
+--- Sentence/switch
+id: 522
+r#  92164  1739  44
+
+
+--- Sentence//end
+id: 522
+r#  92343  1743  11
+p: .
+t. 
+|  Conventions in grammar acquire rule-like status
+|  in light of processing demands for aligning staging
+|  word-order to optimal cognitive construal of conceptual
+.  aggregates
+
+
+--- Sentence/switch
+id: 523
+r#  92344  1743  12
+
+
+--- Sentence//end
+id: 523
+r#  92553  1746  57
+p: .
+t. 
+|   So such word-order is not just a feature
+|  of syntax; it is a causative foundation for
+|  syntax (see likewise [/GerdesKahane;pp. 4--9, 12-13/],
+.  if one accepts a cognitive reading of fragmentation)
+
+--- Sentence/end 
+id: 523
+r#  92554  1746  58
+
+--- Paragraph/end 
+id: 96
+y: N/A
+
+
+--- Paragraph/start
+id: 97
+r#  92556  1748  1
+
+
+--- Sentence/start
+id: 524
+r#  92556  1748  1
+
+--- Sentence//end
+id: 524
+r#  92676  1749  53
+p: .
+t. 
+|  Second, verbs are distinct in that their conceptual syntheses
+.  demand contributions via numerous thematic relations
+
+
+--- Sentence/switch
+id: 525
+r#  92677  1749  54
+
+
+--- Sentence//end
+id: 525
+r#  92889  1753  39
+p: .
+t. 
+|  This formulation generalizes the typically local phenomenon
+|  of one concept modifying another, to a more holistic
+|  realm where syntheses are molded against enactive
+.  and situational (agent/role) templates
+
+
+--- Sentence/switch
+id: 526
+r#  92890  1753  40
+
+
+--- Sentence//end
+id: 526
+r#  93056  1755  55
+p: .
+t. 
+|   Meanwhile, the expansion of conceptual
+|  synthesis into a multi-themed complex expands the plurality of sites
+.  where speakers express epistemically-inflected content
+
+
+--- Sentence/switch
+id: 527
+r#  93057  1755  56
+
+
+--- Sentence//end
+id: 527
+r#  93253  1758  64
+p: .
+t. 
+|  Any locative construction, for example, because it will assert a
+|  spatial path and/or place (or set of places), is invested with
+.  speaker's orientation to the spatial framework of the discourse
+
+
+--- Sentence/switch
+id: 528
+r#  93254  1758  65
+
+
+--- Sentence//end
+id: 528
+r#  93315  1759  59
+p: ?
+t. 
+.  How does the speaker see, imagine, know about these spaces
+
+--- Sentence/end 
+id: 528
+r#  93316  1759  60
+
+--- Paragraph/end 
+id: 97
+y: N/A
+
+
+--- Paragraph/start
+id: 98
+r#  93318  1761  1
+
+
+--- Sentence/start
+id: 529
+r#  93318  1761  1
+
+--- Sentence//end
+id: 529
+r#  93508  1763  71
+p: .
+t. 
+|  Listeners instinctively reconstruct details of the speaker's
+|  belief-forming perspective because they have to recreate
+.  for themselves the pattern of subjectivization expressed in a sentence
+
+
+--- Sentence/switch
+id: 530
+r#  93509  1763  72
+
+
+--- Sentence//end
+id: 530
+r#  93633  1765  55
+p: .
+t. 
+|  For example, in John spilled water the person is grounded as
+.  focus of perceptual orientation and as an active agent
+
+
+--- Sentence/switch
+id: 531
+r#  93634  1765  56
+
+
+--- Sentence//end
+id: 531
+r#  93727  1766  80
+p: .
+t. 
+|   Meanwhile,
+.  rhetorically, John is grounded as a noun, and (specifically) a verb-subject
+
+
+--- Sentence/switch
+id: 532
+r#  93728  1766  81
+
+
+--- Sentence//end
+id: 532
+r#  93822  1768  35
+p: .
+t. 
+|  Processing the latter, listeners inevitably reconstruct
+.  the former (cognitive) orientation
+
+
+--- Sentence/switch
+id: 533
+r#  93823  1768  36
+
+
+--- Sentence//end
+id: 533
+r#  94010  1771  55
+p: .
+t. 
+|  Because discursive structure has parameters that replicate
+|  perceptual comportment, we constantly receive other's communications
+.  as saturated with their particular epistemic attitudes
+
+
+--- Sentence/switch
+id: 534
+r#  94011  1771  56
+
+
+--- Sentence//end
+id: 534
+r#  94176  1774  35
+p: .
+t. 
+|  (Speaker-relative epistemics is not some adjunct that we only
+|  entertain explicitly when a speaker's authority is in question,
+.  say, or when there is disagreement
+
+
+--- Sentence/switch
+id: 535
+r#  94177  1774  36
+
+
+--- Sentence//end
+id: 535
+r#  94312  1776  57
+p: .
+t. 
+|   Instead, synchronizing
+|  cognitive disposition is woven tightly with minimal
+.  facts of language constituents, such as parts of speech)
+
+--- Sentence/end 
+id: 535
+r#  94313  1776  58
+
+--- Paragraph/end 
+id: 98
+y: N/A
+
+
+--- Paragraph/start
+id: 99
+r#  94315  1778  1
+
+
+--- Sentence/start
+id: 536
+r#  94315  1778  1
+
+--- Sentence//end
+id: 536
+r#  94514  1781  13
+p: .
+t. 
+|  Third, given the accretionary nature of conceptual synthesis,
+|  any theory of meaning must address the intermediate
+|  aggregates: those in between lexical word-meanings and sentence-level
+.  propositions
+
+
+--- Sentence/switch
+id: 537
+r#  94515  1781  14
+
+
+--- Sentence//end
+id: 537
+r#  94606  1782  48
+p: .
+t. 
+|   To the degree that we use formal models,
+.  they should be explanatory rather than circular
+
+
+--- Sentence/switch
+id: 538
+r#  94607  1782  49
+
+
+--- Sentence//end
+id: 538
+r#  94685  1784  29
+p: .
+t. 
+|  The idea red box obviously intersects the
+.  concepts box and red
+
+
+--- Sentence/switch
+id: 539
+r#  94686  1784  30
+
+
+--- Sentence//end
+id: 539
+r#  94904  1788  29
+p: .
+t. 
+|   If we then analyze this
+|  signification as, say, the set of things that are both
+|  red and boxes, then such a construction might be
+|  theoretical progress if we had some literal engineering
+.  whereby words reference sets
+
+
+--- Sentence/switch
+id: 540
+r#  94905  1788  30
+
+
+--- Sentence//end
+id: 540
+r#  95095  1792  19
+p: .
+t. 
+|   \clrmAlt{16}{100}However,
+|  if we accept set-theoretic
+|  language in just a metaphoric way, describing
+|  red box as the intersection  merely restates what
+.  should be analyzed
+
+--- Sentence/end 
+id: 540
+r#  95096  1792  20
+
+--- Paragraph/end 
+id: 99
+y: N/A
+
+
+--- Paragraph/start
+id: 100
+r#  95108  1794  11
+
+
+--- Sentence/start
+id: 541
+r#  95108  1794  11
+
+--- Sentence//end
+id: 541
+r#  95241  1796  29
+p: .
+t. 
+|  , mentioned earlier, propose Conceptual Space theory
+|  as an alternative to symbolic logic, for modeling
+.  aggregates like 
+
+
+--- Sentence/switch
+id: 542
+r#  95242  1796  30
+
+
+--- Sentence//end
+id: 542
+r#  95664  1804  22
+p: .
+t. 
+|   To the extent that
+|  our overall conceptual worlds may be represented via
+|  quasi-mathematical operations, then aggregative meanings
+|  can be seen as functors between Categories of grammatic
+|  formations and of multi-part conceptual units, respectively
+|  (composition operators on a purely syntactic level,
+|  and conceptual syntheses on a signifactory plane,
+|  being mutually commutative in the sense of
+.  commutative diagrams)
+
+
+--- Sentence/switch
+id: 543
+r#  95665  1804  23
+
+
+--- Sentence//end
+id: 543
+r#  95815  1807  30
+p: .
+t. 
+|   Unfortunately, I am not
+|  convinced that there is any logico-mathematical
+|  formulation that models/captures conceptual
+.  synthesis in any general case
+
+
+--- Sentence/switch
+id: 544
+r#  95816  1807  31
+
+
+--- Sentence//end
+id: 544
+r#  96031  1811  53
+p: .
+t. 
+|   The meaningfulness
+|  of intermediate conceptual complexes, from my
+|  perspective, depends on some sort of
+|  cognitive staging and the use of partially-formed
+.  perceptual images as precursors to purposeful action
+
+
+--- Sentence/switch
+id: 545
+r#  96032  1811  54
+
+
+--- Sentence//end
+id: 545
+r#  96133  1813  47
+p: .
+t. 
+|  I suggest that, almost always, such intermediaries
+.  depend on extralinguistic cognitive engagement
+
+--- Sentence/end 
+id: 545
+r#  96134  1813  48
+
+--- Paragraph/end 
+id: 100
+y: N/A
+
+
+--- Paragraph/start
+id: 101
+r#  96136  1815  1
+
+
+--- Sentence/start
+id: 546
+r#  96136  1815  1
+
+--- Sentence//end
+id: 546
+r#  96436  1820  53
+p: .
+t. 
+|  There is certainly a role for semantic theories:
+|  many patterns of meaning have recurring structures
+|  that doubtless guide cognitive schemata,
+|  such as the mass/count distinction within modes
+|  of plurality/multiplicity (and others listed earlier:
+.  singular/plural, figure/ground, landmark/ trajector)
+
+
+--- Sentence/switch
+id: 547
+r#  96437  1820  54
+
+
+--- Sentence//end
+id: 547
+r#  96832  1829  17
+p: .
+t. 
+|  For another example, alongside type-theoretic
+|  grammar, there is a branch of type-theoretic
+|  semantics which highlights the partition
+|  of our discursive domains into, in effect,
+|  distinct ontological regions, such as
+|  physical objects, living things, sentient
+|  beings, and rational agents [/JensAllwood/], [/MeryRetore/],
+|  [/PustejovskyType/], [/ChungChiehShan/],
+.  [/PeterRSutton/]
+
+
+--- Sentence/switch
+id: 548
+r#  96833  1829  18
+
+
+--- Sentence//end
+id: 548
+r#  96975  1834  1
+p: 
+t. 
+|   The superposition of
+|  multiple such regions gives conceptual structure
+.  to sentences about referents that exist in multiple strata:
+
+
+--- Sentence/switch
+id: 549
+r#  96978  1834  4
+
+
+--- Sentence//end
+id: 549
+r#  97071  1835  28
+p: .
+t. 
+|   That newspaper [pointing to a table] just moved to 10th street
+.  and laid off half its staff
+
+
+--- Sentence/switch
+id: 550
+r#  97072  1835  29
+
+
+--- Sentence//end
+id: 550
+r#  97073  1836  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 551
+r#  97076  1836  4
+
+
+--- Sentence//end
+id: 551
+r#  97132  1836  60
+p: .
+t. 
+.   At home you can print out this book from a PDF link
+
+
+--- Sentence/switch
+id: 552
+r#  97133  1836  61
+
+
+--- Sentence//end
+id: 552
+r#  97134  1837  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 553
+r#  97137  1837  4
+
+
+--- Sentence//end
+id: 553
+r#  97281  1843  1
+p: 
+t. 
+|   The borough of Queens voted heavily for Mamdani.
+|  
+.  Also, apparent region violations drive many functional metaphors:
+
+
+--- Sentence/switch
+id: 554
+r#  97284  1843  4
+
+
+--- Sentence//end
+id: 554
+r#  97325  1843  45
+p: .
+t. 
+.   These flowers really want some sunshine
+
+
+--- Sentence/switch
+id: 555
+r#  97326  1843  46
+
+
+--- Sentence//end
+id: 555
+r#  97327  1844  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 556
+r#  97330  1844  4
+
+
+--- Sentence//end
+id: 556
+r#  97370  1844  44
+p: .
+t. 
+.   This drought has left the soil parched
+
+
+--- Sentence/switch
+id: 557
+r#  97371  1844  45
+
+
+--- Sentence//end
+id: 557
+r#  97372  1845  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 558
+r#  97375  1845  4
+
+
+--- Sentence//end
+id: 558
+r#  97411  1845  40
+p: .
+t. 
+.   Our car stubbornly refused to move
+
+
+--- Sentence/switch
+id: 559
+r#  97412  1845  41
+
+
+--- Sentence//end
+id: 559
+r#  97413  1846  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 560
+r#  97416  1846  4
+
+
+--- Sentence//end
+id: 560
+r#  97811  1853  62
+p: .
+t. 
+|   The spell-checker thinks hooman isn't a word.
+|  
+|  Examples such as  through  have been analyzed in terms of
+|  type coercions, monads, dependent types, continuations, and
+|  other structures recognized within mathematical type theory (and
+|  formalized within the semantics of computer programming languages)
+.  [/AsherPustejovsky/], [/ChatzikyriakidisLuo/], [/ZhaohuiLuo/]
+
+--- Sentence/end 
+id: 560
+r#  97812  1853  63
+
+--- Paragraph/end 
+id: 101
+y: N/A
+
+
+--- Paragraph/start
+id: 102
+r#  97814  1855  1
+
+
+--- Sentence/start
+id: 561
+r#  97814  1855  1
+
+--- Sentence//end
+id: 561
+r#  98060  1858  62
+p: .
+t. 
+|  These are options for formal semantics that have, I contend,
+|  explanatory merit  natural language, but they describe
+|  constraints on cognitive processing more than end-to-end
+.  \clrmr{16}{103}algorithms for constructing signified meanings
+
+
+--- Sentence/switch
+id: 562
+r#  98061  1858  63
+
+
+--- Sentence//end
+id: 562
+r#  98230  1861  68
+p: .
+t. 
+|  They do not, in my opinion, substitute for cognitive
+|  accounts of intermediate staging, necessary
+.  to bridge lexical word-sense with full-phrase propositional content
+
+--- Sentence/end 
+id: 562
+r#  98231  1861  69
+
+--- Paragraph/end 
+id: 102
+y: N/A
+
+
+--- Paragraph/start
+id: 103
+r#  98233  1863  1
+
+
+--- Sentence/start
+id: 563
+r#  98233  1863  1
+
+--- Sentence//end
+id: 563
+r#  98314  1864  21
+p: .
+t. 
+|  To be sure, I have offered rather inchoate characterization
+.  of this staging
+
+
+--- Sentence/switch
+id: 564
+r#  98315  1864  22
+
+
+--- Sentence//end
+id: 564
+r#  98534  1867  57
+p: .
+t. 
+|   The space of mid-level conceptual
+|  aggregates belongs neither to a realm of abstract reasoning nor
+|  in-the-moment sensate perception, so it may be difficult to
+.  analyze without special-purpose vocabulary and paradigms
+
+
+--- Sentence/switch
+id: 565
+r#  98535  1867  58
+
+
+--- Sentence//end
+id: 565
+r#  98633  1869  38
+p: .
+t. 
+|  Whatever their details, I believe such theories' central
+.  concerns will be extra-linguistic
+
+
+--- Sentence/switch
+id: 566
+r#  98634  1869  39
+
+
+--- Sentence//end
+id: 566
+r#  98812  1872  21
+p: .
+t. 
+|   This is not a kind
+|  of limited contextual detour, where resolving
+|  ambiguities such as which sense of bat (animal or wooden instrument) depends on
+.  background knowledge
+
+
+--- Sentence/switch
+id: 567
+r#  98813  1872  22
+
+--- Paragraph/end 
+id: 103
+y: N/A
+
+
+--- Section/start
+-l  1
+-i  4
+-t  Conclusion
+
+
+--- Paragraph/start
+id: 104
+r#  99161  1882  1
+
+
+--- Sentence/start
+id: 568
+r#  99161  1882  1
+
+--- Sentence//end
+id: 568
+r#  99316  1884  59
+p: .
+t. 
+|   Since conceptual syntheses are
+|  reshuffled with almost every word, we are
+|  invoking staging faculties at almost every
+|  step, such that sentence-understanding is intrinsically a
+|  process that swings back and forth between
+|  extralinguistic and syntactic/semantic/pragmatic
+|  inference.  Against this backdrop, I think I can more rigorously
+|  defend my earlier-stated objection to the
+.  idea (explicit or not) that sentences signify propositions
+
+
+--- Sentence/switch
+id: 569
+r#  99317  1884  60
+
+
+--- Sentence//end
+id: 569
+r#  99482  1888  10
+p: .
+t. 
+|  Discourse may indeed communicate beliefs,
+|  but that phenomenon emerges from a multifaceted
+|  process integrating both linguistic and extralinguistic
+.  ideations
+
+
+--- Sentence/switch
+id: 570
+r#  99483  1888  11
+
+
+--- Sentence//end
+id: 570
+r#  99716  1892  11
+p: .
+t. 
+|   We cannot account for proposition-like
+|  meanings within the affordances of syntax, semantics,
+|  or pragmatics alone, at least without widening the scope
+|  of one or more of these to an extent that is not explanatorily
+.  productive
+
+--- Sentence/end 
+id: 570
+r#  99717  1892  12
+
+--- Paragraph/end 
+id: 104
+y: N/A
+
+
+--- Paragraph/start
+id: 105
+r#  99719  1894  1
+
+
+--- Sentence/start
+id: 571
+r#  99719  1894  1
+
+--- Sentence//end
+id: 571
+r#  99881  1896  54
+p: .
+t. 
+|  Holding, in our minds, semi-complete precursor images of
+|  future or hypothetical objects, surroundings, and
+.  situations is an intrinsic part of rational agenthood
+
+
+--- Sentence/switch
+id: 572
+r#  99882  1896  55
+
+
+--- Sentence//end
+id: 572
+r#  100096  1901  8
+p: .
+t. 
+|  During talk, we exploit these capabilities
+|  to synchronize behavior among two or more people,
+|  leveraging future-oriented cognitive routines even
+|  when the focus of our discourse exists in the immediate
+.  present
+
+
+--- Sentence/switch
+id: 573
+r#  100097  1901  9
+
+
+--- Sentence//end
+id: 573
+r#  100342  1905  31
+p: .
+t. 
+|   Cooperation between multiple individuals engenders
+|  abstracting demands, refactoring perceptual experience
+|  into propositional/enactive schemata (perhaps we can find this
+|  analogous to the sensate indeterminacy
+.  of an imagined/planned future)
+
+--- Sentence/end 
+id: 573
+r#  100343  1905  32
+
+--- Paragraph/end 
+id: 105
+y: N/A
+
+
+--- Paragraph/start
+id: 106
+r#  100347  1907  1
+
+
+--- Sentence/start
+id: 574
+r#  100347  1907  1
+
+--- Sentence//end
+id: 574
+r#  100550  1910  10
+p: .
+t. 
+|  Certainly, purposeful action coordinated among several people requires
+|  everyone to know (and mostly share) each other's beliefs,
+|  so communicating what we deem factual is an important part of
+.  discourse
+
+
+--- Sentence/switch
+id: 575
+r#  100551  1910  11
+
+
+--- Sentence//end
+id: 575
+r#  100665  1911  58
+p: .
+t. 
+|   Expressing not just what we believe, but why,
+.  is relevant because we want others to hear our rationales
+
+
+--- Sentence/switch
+id: 576
+r#  100666  1911  59
+
+
+--- Sentence//end
+id: 576
+r#  101030  1918  22
+p: .
+t. 
+|  Given these requirements, it is inevitable that human
+|  language evolved structures within almost every sentence
+|  to express one or more beliefs  -  either as assertions that
+|  are the sentence's point or preambles to some further
+|  comment, suggestion or request  -  and moreover
+|  encode speaker-relative perspectives and foreknowledge that
+.  clarify their origins
+
+
+--- Sentence/switch
+id: 577
+r#  101031  1918  23
+
+
+--- Sentence//end
+id: 577
+r#  101182  1921  32
+p: .
+t. 
+|   This
+|  epistemics-oriented \clrmAlt{17}{107}disclosure
+|  emerges from the overall regimes of subjectification and
+.  cognitive linguistic processing
+
+--- Sentence/end 
+id: 577
+r#  101183  1921  33
+
+--- Paragraph/end 
+id: 106
+y: N/A
+
+
+--- Paragraph/start
+id: 107
+r#  101186  1923  1
+
+
+--- Sentence/start
+id: 578
+r#  101186  1923  1
+
+--- Sentence//end
+id: 578
+r#  101527  1928  45
+p: .
+t. 
+|  But we should not conclude from such hypotheses that
+|  sentences signify propositions  -  i.e., that
+|  we can list a series of formal rules governing a determinative signifying process,
+|  existing on a minimal level in the mapping of lexemes
+|  to word-sense, that propagates outward to predicate
+.  structure in a logical or mechanical fashion
+
+
+--- Sentence/switch
+id: 579
+r#  101528  1928  46
+
+
+--- Sentence//end
+id: 579
+r#  101765  1933  34
+p: .
+t. 
+|  Paraphrases such as red box as the set-theoretic
+|  intersection of redness and boxness may
+|  create an illusion that the transformative
+|  effects of one word on a priorly-processed aggregate
+.  can be modeled via formal systems
+
+
+--- Sentence/switch
+id: 580
+r#  101766  1933  35
+
+
+--- Sentence//end
+id: 580
+r#  101970  1937  35
+p: .
+t. 
+|   Yet such
+|  formalization, I contend, will be either circular
+|  (explaining not much, in the end) or oversimplistic
+|  (explaining only cherry-picked linguistic artifacts,
+.  not typical usages and utterances)
+
+
+--- Sentence/switch
+id: 581
+r#  101971  1937  36
+
+
+--- Sentence//end
+id: 581
+r#  102144  1941  18
+p: .
+t. 
+|   To the degree
+|  that cognitive transforms and staging are
+|  amenable to rigorous analysis, such analysis
+|  would have to be grounded in an overarching
+.  cognitive science
+
+--- Sentence/end 
+id: 581
+r#  102145  1941  19
+
+--- Paragraph/end 
+id: 107
+y: N/A
+
+
+--- Paragraph/start
+id: 108
+r#  102147  1943  1
+
+
+--- Sentence/start
+id: 582
+r#  102147  1943  1
+
+--- Sentence//end
+id: 582
+r#  102400  1946  32
+p: .
+t. 
+|  Formal syntax has a notion of sentences being grammatically well formed
+|  (depending on which grammar applies, of course) because we can give
+|  mechanical algorithms for testing when a string of words may, or may not,
+.  be derived via production rules
+
+
+--- Sentence/switch
+id: 583
+r#  102401  1946  33
+
+
+--- Sentence//end
+id: 583
+r#  102687  1950  53
+p: .
+t. 
+|   Whatever actual philosophy is in play,
+|  formal semantics often seems to want semantics to follow a
+|  similar mechanizable protocol; e.g., we can imagine testing whether a
+|  particular conceptual assemblage is well formed by
+.  consulting an enumeration of concept-formation rules
+
+
+--- Sentence/switch
+id: 584
+r#  102688  1950  54
+
+
+--- Sentence//end
+id: 584
+r#  102739  1951  48
+p: .
+t. 
+.  Married bachelor, say, would be ill-formed
+
+
+--- Sentence/switch
+id: 585
+r#  102740  1951  49
+
+
+--- Sentence//end
+id: 585
+r#  102949  1954  64
+p: .
+t. 
+|   By contrast,
+|  I believe married bachelor names a reasonable concept, in
+|  that most people would infer its intension (in the sense of an
+.  intensionality/extensionality contrast)  -  hence  and 
+
+--- Sentence/end 
+id: 585
+r#  102950  1954  65
+
+--- Paragraph/end 
+id: 108
+y: N/A
+
+
+--- Paragraph/start
+id: 109
+r#  102954  1956  1
+
+
+--- Sentence/start
+id: 586
+r#  102954  1956  1
+
+--- Sentence//end
+id: 586
+r#  103335  1961  71
+p: .
+t. 
+|  More broadly, building
+|  models of algorithmic conceptual synthesis would allow the comparably
+|  algorithmic notion of grammatic production to map onto the semantic
+|  plane, as anticipated by : syntactic and semantic syntheses
+|  commuting like Categorical diagrams, with both atomic and complex functors
+.  between syntax and semantics (the atomic being lexical word-sense)
+
+
+--- Sentence/switch
+id: 587
+r#  103336  1961  72
+
+
+--- Sentence//end
+id: 587
+r#  103416  1963  10
+p: .
+t. 
+|  My arguments in this paper are that such an overly-tidy picture is
+.  untenable
+
+
+--- Sentence/switch
+id: 588
+r#  103417  1963  11
+
+
+--- Sentence//end
+id: 588
+r#  103511  1964  46
+p: .
+t. 
+|   Concepts simply don't synthesize according to
+.  production rules akin to BNF grammars
+
+--- Sentence/end 
+id: 588
+r#  103512  1964  47
+
+--- Paragraph/end 
+id: 109
+y: N/A
+
+
+--- Paragraph/start
+id: 110
+r#  103516  1966  1
+
+
+--- Sentence/start
+id: 589
+r#  103516  1966  1
+
+--- Sentence//end
+id: 589
+r#  103745  1970  6
+p: .
+t. 
+|  I think the story  and many similar analyses have
+|  in mind  -  once expressed informally  -  is roughly like this:
+|  semantics tells us how to combine concepts;
+|  syntax tells us which concepts to combine, in which
+.  order
+
+
+--- Sentence/switch
+id: 590
+r#  103746  1970  7
+
+
+--- Sentence//end
+id: 590
+r#  104024  1975  54
+p: .
+t. 
+|   I mostly dispute the first part; although
+|  semantics establishes parameters on concept-admixture,
+|  our intellect molds multi-part
+|  conceptual formations against dictates
+|  of social norms and purposeful action, rather than
+.  by manipulating concepts as formalizable abstractions
+
+--- Sentence/end 
+id: 590
+r#  104025  1975  55
+
+--- Paragraph/end 
+id: 110
+y: N/A
+
+
+--- Paragraph/start
+id: 111
+r#  104027  1977  1
+
+
+--- Sentence/start
+id: 591
+r#  104027  1977  1
+
+--- Sentence//end
+id: 591
+r#  104382  1983  9
+p: .
+t. 
+|  To draw once again from coding analogies,
+|  programming language semantics is concerned with the binding
+|  of values to symbols --- when those markings start and
+|  cease to be appropriate --- as well as polymorphic
+|  definition of multiple procedures with the \clrmr{17}{112}same symbol
+|  but different parameter types, and other type-related
+.  concerns
+
+
+--- Sentence/switch
+id: 592
+r#  104383  1983  10
+
+
+--- Sentence//end
+id: 592
+r#  104710  1988  21
+p: .
+t. 
+|   Code syntax addresses such issues as
+|  expression boundaries, storage-duration scope, and sequence points, indicating
+|  which values are parameters for which function-calls as
+|  well as, potentially, the order of procedures' side-effects
+|  (particularly when a prior effect could be visible to
+.  a future subroutine)
+
+
+--- Sentence/switch
+id: 593
+r#  104711  1988  22
+
+
+--- Sentence//end
+id: 593
+r#  104934  1991  63
+p: .
+t. 
+|   Syntactic and
+|  semantic systems are necessary to ensure that high-level code
+|  maps (properly) to a push/transfer-like stack representation, ensuring that
+.  all procedures' type and precondition contracts are guaranteed
+
+
+--- Sentence/switch
+id: 594
+r#  104935  1991  64
+
+
+--- Sentence//end
+id: 594
+r#  105156  1995  46
+p: .
+t. 
+|  Note that the algorithmetized syntax and semantics here
+|  serve as preparation for function-calls, many of which
+|  may be to precompiled routines whose implementations are
+.  opaque to the high-level compiler and runtime
+
+
+--- Sentence/switch
+id: 595
+r#  105157  1995  47
+
+
+--- Sentence//end
+id: 595
+r#  105381  1999  44
+p: .
+t. 
+|   I find this
+|  roughly comparable to the role of syntax and semantics
+|  in natural language, which bridge discourse to cognitive
+|  operations even if the cognitive processing itself
+.  is opaque to linguistic analysis per se
+
+--- Sentence/end 
+id: 595
+r#  105382  1999  45
+
+--- Paragraph/end 
+id: 111
+y: N/A
+
+
+--- Paragraph/start
+id: 112
+r#  105385  2001  1
+
+
+--- Sentence/start
+id: 596
+r#  105385  2001  1
+
+--- Sentence//end
+id: 596
+r#  105534  2003  12
+p: .
+t. 
+|  This exposition might be a little straw-man-like in that ,
+|  for example, do not specifically work from a system of grammatical
+.  productions
+
+
+--- Sentence/switch
+id: 597
+r#  105535  2003  13
+
+
+--- Sentence//end
+id: 597
+r#  105706  2005  57
+p: .
+t. 
+|   Their syntactic theory is more about, starting
+|  from any given sentence, retracing the compositional principles
+.  that build up a complex network from isolated word-pairs
+
+
+--- Sentence/switch
+id: 598
+r#  105707  2005  58
+
+
+--- Sentence//end
+id: 598
+r#  105826  2007  45
+p: .
+t. 
+|  We aren't producing (or, for that matter, testing) sentences
+.  so much as retracing their unifying formulae
+
+
+--- Sentence/switch
+id: 599
+r#  105827  2007  46
+
+
+--- Sentence//end
+id: 599
+r#  105972  2010  35
+p: .
+t. 
+|   But still,
+|  any analysis wherein conceptual syntheses
+|  reciprocate composition-patterns implicitly invokes a
+.  principle of conceptual production
+
+
+--- Sentence/switch
+id: 600
+r#  105973  2010  36
+
+
+--- Sentence//end
+id: 600
+r#  106379  2016  57
+p: .
+t. 
+|  Either we view such production as inherently cognitive and extralinguistic, which is
+|  my approach, or we must articulate rules for how concepts
+|  in their totality form a logical system, wherein all concepts are
+|  built up (almost syntactically!) from primitive roots by operations such as
+|  those of set theory (union, intersection, disjoint union ...)
+.  or other formalizations (modal logic, quantifiers, etc.)
+
+--- Sentence/end 
+id: 600
+r#  106380  2016  58
+
+--- Paragraph/end 
+id: 112
+y: N/A
+
+
+--- Paragraph/start
+id: 113
+r#  106385  2018  1
+
+
+--- Sentence/start
+id: 601
+r#  106385  2018  1
+
+--- Sentence//end
+id: 601
+r#  106561  2020  65
+p: .
+t. 
+|  Referring back to my reading of the successive syntheses
+|  connoted by in this red tin box, I don't believe
+.  any of those transforms can be glossed in such logical terms
+
+
+--- Sentence/switch
+id: 602
+r#  106562  2020  66
+
+
+--- Sentence//end
+id: 602
+r#  106828  2025  19
+p: .
+t. 
+|  Put aphoristically, linguistic formalization should model
+|   -  perhaps with the aid of computational analogs  -  processes
+|  through which surface-level discourse is mapped to a sequence
+|  of cognitive transforms presented to extralinguistic
+.  rational faculties
+
+
+--- Sentence/switch
+id: 603
+r#  106829  2025  20
+
+
+--- Sentence//end
+id: 603
+r#  106958  2028  9
+p: .
+t. 
+|   This is different from attempting
+|  to model concept-synthesis, as a kind of
+|  algorithmetizable cognitive process,
+.  directly
+
+
+--- Sentence/switch
+id: 604
+r#  106959  2028  10
+
+
+--- Sentence//end
+id: 604
+r#  107148  2030  68
+p: .
+t. 
+|   As a useful analogy, programmers are not obligated to
+|  study how system-kernel procedures are implemented; they merely
+.  need to know the type-signatures and preconditions for calling them
+
+--- Sentence/end 
+id: 604
+r#  107149  2030  69
+
+--- Paragraph/end 
+id: 113
+y: N/A
+
+
+--- Paragraph/start
+id: 114
+r#  107152  2032  1
+
+
+--- Sentence/start
+id: 605
+r#  107152  2032  1
+
+--- Sentence//end
+id: 605
+r#  107331  2035  54
+p: .
+t. 
+|  I have also argued that any cognitive
+|  science, to be comprehensive, has to work
+|  with cognition as lived by flesh-and-blood
+.  people in social, embodied, personalistic life-worlds
+
+
+--- Sentence/switch
+id: 606
+r#  107332  2035  55
+
+
+--- Sentence//end
+id: 606
+r#  107602  2041  28
+p: .
+t. 
+|  Such an approach would be only tangentially a
+|  natural science  -  the physicalistic
+|  intuitions that lend systematicity
+|  and \clrmAlt{18}{115}disputative structure to studies of nature
+|  would, in this context, dilute rather than
+.  guarantee explanatory rigor
+
+
+--- Sentence/switch
+id: 607
+r#  107603  2041  29
+
+
+--- Sentence//end
+id: 607
+r#  107775  2045  8
+p: .
+t. 
+|   Endorsing
+|  phenomenology as an alternative foundation,
+|  theories of cognitive-semantic staging
+|  would  -  on this architecture  -  rest on phenomenological
+.  grounds
+
+
+--- Sentence/switch
+id: 608
+r#  107776  2045  9
+
+
+--- Sentence//end
+id: 608
+r#  107991  2050  46
+p: .
+t. 
+|   Thus semantics has a
+|  kind of nomological dependence
+|  on cognitive phenomenology, and
+|  syntax on semantics in the sense
+|  that phrase-structure rules become entrenched
+.  by virtue of conceptual demands on word-order
+
+
+--- Sentence/switch
+id: 609
+r#  107992  2050  47
+
+
+--- Sentence//end
+id: 609
+r#  108158  2055  13
+p: .
+t. 
+|  So phenomenology can stand as a foundation
+|  supporting multiple facets of the
+|  linguistics project, even if it
+|  lies outside the normal scope of that
+.  discipline's
+
+
+--- Sentence/switch
+id: 610
+r#  108159  2055  14
+
+
+--- Sentence//end
+id: 610
+r#  108279  2058  32
+p: .
+t. 
+|   This is consistent with a
+|  philosophy wherein
+|  phenomenology provides an explanatory
+.  scaffold for all humanities
+
+--- Sentence/end 
+id: 610
+r#  108280  2058  33
+
+--- Paragraph/end 
+id: 114
+y: N/A
+
+--- Paragraph/end 
+id: 114
+y: N/A

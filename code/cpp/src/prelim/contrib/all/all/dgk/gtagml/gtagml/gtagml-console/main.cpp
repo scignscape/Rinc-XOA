@@ -102,8 +102,8 @@ int main(int argc, char *argv[])
  QString manfolder;
 
 
- file = ROOT_FOLDER "/../gt/[Project-Name]/[Project-Name].gt";
- folder = ROOT_FOLDER "/../gt/[Project-Name]/src";
+ file = ROOT_FOLDER "/../gt/OrderingConceptualSynthesis/OrderingConceptualSynthesis.gt";
+ folder = ROOT_FOLDER "/../gt/OrderingConceptualSynthesis/src";
 
  _main(file, folder, manfolder);
 
