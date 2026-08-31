@@ -930,24 +930,10 @@ compiler_clean: compiler_moc_predefs_clean
 ####### Compile
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-dominion.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-dominion.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.cpp
-
-/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-document.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -995,12 +981,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -1027,71 +1014,197 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-grammar.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-root.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-dominion.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.cpp
+
+/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-document.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfiginclude.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconfig.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcore-config.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfigmacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationdefinitions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompilerdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qprocessordetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsystemdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreexports.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationmarkers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtclasshelpermacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtpreprocessorsupport.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qassert.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtnoop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypes.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversion.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypeinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsysinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlogging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qflags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasicatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic_cxx11.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qgenericatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qyieldcpu.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconstructormacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdarwinhelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qexceptionhandling.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qforeach.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttypetraits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobalstatic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmalloc.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qminmax.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnumeric.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qoverload.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qswap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtenvironmentvariables.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnamespace.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtmetamacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qpair.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydatapointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydataops.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainertools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxptype_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20functional.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q17memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qutf8stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.templates.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-graph.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-markup-position.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qvector.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QXmlStreamWriter \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qxmlstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-regex.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/rz-typedefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpression \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qregularexpression.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
@@ -1100,22 +1213,42 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20iterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QBuffer \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbuffer.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/textio.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QFile \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfile.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfiledevice.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20iterator.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-grammar.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-grammar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpressionMatch \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QVectorIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvector.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-root.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-graph.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-markup-position.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QXmlStreamWriter \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxmlstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QBuffer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbuffer.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/textio.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QFileInfo \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfileinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatetime.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcalendar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlocale.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtimezone.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDir \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdir.h \
@@ -1128,11 +1261,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-document.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-document-info.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -1180,12 +1312,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -1212,21 +1345,43 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
@@ -1234,26 +1389,12 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfile.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfiledevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qabstracteventdispatcher.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qeventloop.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
@@ -1385,16 +1526,23 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
@@ -1429,10 +1577,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-folder.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-folder.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-project-info.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-project-info.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-project-info.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -1480,12 +1628,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -1512,44 +1661,49 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -1574,10 +1728,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-project-info.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-project-info.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/sdi-sentence-reader.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/sdi-sentence-reader.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/sdi-sentence-reader.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -1625,12 +1779,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -1657,44 +1812,49 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -1735,10 +1895,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/sdi-sentence-reader.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/sdi-sentence-reader.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/sdi-sentence.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/sentences/sdi-sentence.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/sentences/sdi-sentence.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -1786,12 +1946,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -1818,44 +1979,49 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -1865,13 +2031,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/sdi-sentence.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/sentences/sdi-sentence.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-frame.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -1919,9 +2082,10 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
@@ -1951,35 +2115,48 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -1987,10 +2164,9 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-frame.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-grammar.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-grammar.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-grammar.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-grammar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpressionMatch \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qregularexpression.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -2038,15 +2214,11 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -2073,28 +2245,32 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
@@ -2106,36 +2282,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-markup-position.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qvector.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QXmlStreamWriter \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qxmlstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
@@ -2144,6 +2292,53 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QVectorIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvector.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-regex.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/rz-typedefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpression \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-markup-position.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QXmlStreamWriter \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxmlstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/q20iterator.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QBuffer \
@@ -2157,14 +2352,12 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatetime.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcalendar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlocale.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtimezone.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDir \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdir.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdirlisting.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.h
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.templates.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-grammar.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-grammar.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-parse-state.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.h \
@@ -2289,33 +2482,41 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvector.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QXmlStreamWriter \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qxmlstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-regex.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/rz-typedefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpression \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qregularexpression.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
@@ -2324,6 +2525,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QXmlStreamWriter \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxmlstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/q20iterator.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QBuffer \
@@ -2337,9 +2545,6 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatetime.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcalendar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlocale.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtimezone.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDir \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdir.h \
@@ -2352,8 +2557,7 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tile/gtagml-raw-tile.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/annotation/gtagml-annotation-tile.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-parse-state.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-state.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-pregraph.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-pregraph.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-pregraph.h \
@@ -2624,30 +2828,188 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-markup-position.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvector.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-regex.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/rz-typedefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpression \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qregularexpression.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-streams.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-streams.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-parser.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfiginclude.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconfig.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcore-config.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfigmacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationdefinitions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompilerdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qprocessordetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsystemdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreexports.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationmarkers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtclasshelpermacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtpreprocessorsupport.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qassert.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtnoop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypes.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversion.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypeinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsysinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlogging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qflags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasicatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic_cxx11.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qgenericatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qyieldcpu.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconstructormacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdarwinhelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qexceptionhandling.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qforeach.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttypetraits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobalstatic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmalloc.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qminmax.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnumeric.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qoverload.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qswap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtenvironmentvariables.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnamespace.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtmetamacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qpair.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydatapointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydataops.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainertools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxptype_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20functional.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q17memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qutf8stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-regex.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/rz-typedefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpression \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qregularexpression.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qabstracteventdispatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qeventloop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-parser.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parser.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-parse-context.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-parser.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
@@ -2765,21 +3127,283 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-regex.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/rz-typedefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QRegularExpression \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qregularexpression.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20utility.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qabstracteventdispatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qeventloop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-parse-context.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parse-context.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-graph.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-graph.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-graph.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfiginclude.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconfig.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcore-config.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfigmacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationdefinitions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompilerdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qprocessordetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsystemdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreexports.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationmarkers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtclasshelpermacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtpreprocessorsupport.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qassert.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtnoop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypes.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversion.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypeinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsysinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlogging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qflags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasicatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic_cxx11.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qgenericatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qyieldcpu.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconstructormacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdarwinhelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qexceptionhandling.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qforeach.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttypetraits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobalstatic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmalloc.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qminmax.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnumeric.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qoverload.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qswap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtenvironmentvariables.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnamespace.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtmetamacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qpair.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydatapointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydataops.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainertools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxptype_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20functional.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q17memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qutf8stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-graph.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-graph.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-node.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfiginclude.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconfig.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcore-config.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfigmacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationdefinitions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompilerdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qprocessordetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsystemdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreexports.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationmarkers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtclasshelpermacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtpreprocessorsupport.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qassert.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtnoop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypes.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversion.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypeinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsysinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlogging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qflags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasicatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic_cxx11.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qgenericatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qyieldcpu.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconstructormacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdarwinhelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qexceptionhandling.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qforeach.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttypetraits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobalstatic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmalloc.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qminmax.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnumeric.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qoverload.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qswap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtenvironmentvariables.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnamespace.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtmetamacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qpair.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydatapointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydataops.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainertools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxptype_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20functional.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q17memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qutf8stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-node.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.cpp
 
@@ -2904,22 +3528,28 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/graph/gtagml-node.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/frame/gtagml-frame.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QVector \
@@ -2942,8 +3572,126 @@ compiler_clean: compiler_moc_predefs_clean
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-query.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfiginclude.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconfig.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcore-config.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtconfigmacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationdefinitions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompilerdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qprocessordetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsystemdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreexports.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtdeprecationmarkers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtclasshelpermacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtpreprocessorsupport.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qassert.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtnoop.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypes.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversion.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtypeinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsysinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlogging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qflags.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasicatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qatomic_cxx11.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qgenericatomic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qyieldcpu.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qconstructormacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdarwinhelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qexceptionhandling.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qforeach.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttypetraits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobalstatic.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmalloc.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qminmax.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnumeric.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qoverload.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qswap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtenvironmentvariables.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qnamespace.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtmetamacros.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qpair.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydatapointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qarraydataops.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainertools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qxptype_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q23type_traits.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20functional.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q17memory.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearrayview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringfwd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qutf8stringview.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-query.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.cpp
 
@@ -3031,10 +3779,9 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-connection-descriptor.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-output-bundle.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-output-bundle.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-output-bundle.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -3082,9 +3829,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -3111,22 +3862,37 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
@@ -3386,6 +4152,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/gh/gh-prenode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-tile.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tile/gtagml-tile.cpp
@@ -3513,6 +4281,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
@@ -3649,6 +4419,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-paralex-tile.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tile/gtagml-paralex-tile.cpp
 
@@ -3775,6 +4547,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
@@ -4155,6 +4929,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
@@ -4284,6 +5060,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
@@ -5272,6 +6050,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
@@ -5403,6 +6183,8 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
@@ -5486,13 +6268,12 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringfwd.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
@@ -5500,28 +6281,51 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
@@ -5531,22 +6335,7 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -5586,15 +6375,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-output-event-handler.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-handler.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-output-event-generator.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-generator.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-generator.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -5642,9 +6426,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -5671,43 +6459,52 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -5720,7 +6517,6 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/tag-command/gtagml-tag-command-callback.h \
@@ -5803,12 +6599,12 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
@@ -5816,27 +6612,49 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-handler.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-generator.h \
@@ -5849,22 +6667,7 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -5883,7 +6686,6 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStack \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstack.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QSet \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/gh/gh-block-writer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QFile \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfile.h \
@@ -5915,14 +6717,10 @@ compiler_clean: compiler_moc_predefs_clean
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-output-latex.o /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-latex.cpp
 
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6/PROJECT_OBJECTS/gtagml/debug/gtagml-output-base.o: /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.cpp /home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtcoreglobal.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtversionchecks.h \
@@ -5970,9 +6768,13 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qtresource.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qttranslation.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qversiontagging.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcompare.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstdlibdetection.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcomparehelpers.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qchar.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qrefcount.h \
@@ -5999,31 +6801,53 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevicebase.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QTextStream \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtextstream.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/grammar/gtagml-parsing-mode.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/document/gtagml-document-info.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QStringList \
@@ -6032,24 +6856,11 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfiledevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qabstracteventdispatcher.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qeventloop.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
@@ -6062,8 +6873,6 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -6150,12 +6959,12 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringalgorithms.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter_base.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstring.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qlatin1stringview.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qanystringview.h \
@@ -6163,27 +6972,49 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringtokenizer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringbuilder.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringconverter.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-handler.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmap.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qhashfunctions.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterator.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qbytearraylist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringlist.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qalgorithms.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/q20bit.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsimd.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qstringmatcher.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopeguard.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-generator.h \
@@ -6196,22 +7027,7 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qset.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
@@ -6364,20 +7180,41 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qshareddata_impl.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/kans.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QString \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/accessors.h \
-		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/preproc-concat.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-handler.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/output/gtagml-connection-descriptor.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-types.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QtGlobal \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMap \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/QPair \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/global-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/enum-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-generator.h \
@@ -6390,22 +7227,7 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/flags.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QDebug \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/whitespace/gtagml-whitespace-holder.h \
@@ -6562,8 +7384,29 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qhash.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/QMultiMap \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-base.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-node-ptr.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/relae-caon-ptr.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QSharedPointer \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QMapIterator \
+		/home/nlevisrael/Qt6-src/install/include/QtCore/QList \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/gtagml-dominion.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/types.h \
+		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph/relae-graph/dominion-macros.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/query/gtagml-query.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/kernel/dominion/connectors.h \
 		/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/src/prelim/contrib/all/all/dgk/gtagml/gtagml/gtagml/output/gtagml-output-event-handler.h \
@@ -6573,24 +7416,11 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qfiledevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qiodevice.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qobjectdefs_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfunctionaltools_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcoreevent.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbasictimer.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qabstracteventdispatcher.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qeventloop.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdeadlinetimer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetatype.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qdatastream.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qscopedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qfloat16.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmath.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtformat_impl.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qiterable.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qtaggedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qmetacontainer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontainerinfo.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qobject_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qbindingstorage.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qspan.h \
@@ -6604,8 +7434,6 @@ compiler_clean: compiler_moc_predefs_clean
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvariant.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qdebug.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qcontiguouscache.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer.h \
-		/home/nlevisrael/Qt6-src/install/include/QtCore/qsharedpointer_impl.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qvarlengtharray.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/qalloc.h \
 		/home/nlevisrael/Qt6-src/install/include/QtCore/q23utility.h \
