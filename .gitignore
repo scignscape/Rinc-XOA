@@ -8,6 +8,9 @@
 **/build/**
 **/dest/**
 
+**/build-/**
+
+
 code/cpp/targets/contrib/**
 
 
