@@ -10,20 +10,6 @@
 \setlength{\columnsep}{38pt}
 
 
-\newcommand{\textcolorwh}[1]{\textcolor{white}{#1}}
-
-
-
-\newcommand{\ellThree}[2]{%
-\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
-
-\newcommand{\ellFour}[2]{%
-\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
-
-
-
-
-
 
 \usepackage{eso-pic}
 
@@ -352,13 +338,9 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 \usepackage{tikz}
 \usetikzlibrary{shapes, shapes.misc, positioning}
 
-\definecolor{mForecolor}{RGB}{2, 31, 48}
-
-\definecolor{mBkgcolor}{RGB}{243, 231, 222}
-
 
 \newcommand{\mpcodeffore}[1]{%
-\textcolor{mForecolor}{%
+\textcolor{margin!60!black}{%
 \resizebox{!}{5pt}{#1}}}
 
 %\newcommand{\mpcodefbkg}[1]{#1} %\colorbox{margin!10}{#1}}
@@ -369,7 +351,7 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 %\node at (0, 0)
  \node[shape=regular polygon, regular polygon sides = 8,
-fill = mBkgcolor, inner sep=#1] (char)
+fill = margin!10, inner sep=#1] (char)
 %top color=white, bottom color=blggr!6,
 %fill opacity=1, yscale=.7, shape border rotate=39,
 %inner sep=6.5pt, shading angle=90,label={}] (bk) 
@@ -460,6 +442,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 %\definecolor{clrmcrAlt}{RGB}{148, 30, 0}
 %\definecolor{clrmcrAlt}{RGB}{130, 99, 53}
 \definecolor{clrmcrAlt}{RGB}{130, 89, 68}
+
 
 
 
@@ -610,12 +593,6 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \resizebox{5pt}{!}{#1}}}
 
 
-
-\newcommand{\clrmBlockQuoteFmt}[1]{%
-\textcolor{clrmcMid!20!gray}{%
-\resizebox{!}{6.5pt}{\textit{#1}}}}
-
-
 \newcommand{\clrmMidImpl}[1]{\micro{.}%
 \if@firstcolumn%
 \clrmarginpar{-21pt}{1pt}{\clrmMidFmt{#1}}%
@@ -623,16 +600,6 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \clrmarginpar{-2pt}{1pt}{\clrmMidFmt{#1}}%
 \fi%
 }
-
-\newcommand{\clrmBlockQuoteImpl}[1]{\micro{.}%
-\if@firstcolumn%
-\clrmarginpar{-18pt}{1pt}{\clrmBlockQuoteFmt{#1}}%
-\else%
-\clrmarginpar{-2pt}{1pt}{\clrmBlockQuoteFmt{#1}}%
-\fi%
-}
-
-
 
 %\newcommand{\clrmMidLabelTest}[1]{\label{p2a}}
 
@@ -642,25 +609,10 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\clrmMidFormLabel}[1]{p\thempcode#1}
 
-\newcommand{\clrmBlockQuoteFormLabel}[1]{p\thempcode#1}
-
 %%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
 
 \newcommand{\clrmMidLabel}[1]{%
 \Hy@raisedlink{\hypertarget{\clrmMidFormLabel{#1}}{}}}
-
-\newcommand{\clrmBlockQuoteLabel}[1]{%
-\Hy@raisedlink{\hypertarget{\clrmBlockQuoteFormLabel{#1}}{}}}
-
-
-
-\newcommand{\clrmBlockQuote}[1]{\clrmBlockQuoteLabel{#1}%
-\ifnum\value{mpcode} = 69%
-\else%
-\clrmBlockQuoteImpl{#1}%
-\fi%
-}
-
 
 
 %\makeatletter

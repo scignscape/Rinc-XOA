@@ -35,8 +35,10 @@ class Relae_Parser
  tString eval_string_;
  tString seek_string_;
 
+public:
  int current_position_;
 
+private:
  caon_ptr<tGraph> graph_;
 
  QVector<Match_Info> saved_matches_;

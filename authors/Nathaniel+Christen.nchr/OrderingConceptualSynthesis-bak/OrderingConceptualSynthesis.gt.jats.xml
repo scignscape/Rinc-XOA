@@ -74,10 +74,10 @@ formalization, consider these pairs of sentences:<exs-group><exs-item></exs-item
 <exs-item></exs-item> All appeals are heard by a panel of three judges.<exs-item></exs-item> All New Yorkers live in one of five boroughs.
 <exs-item></exs-item> All New Yorkers complain about how long it takes to commute to New York City.<exs-item></exs-item> In Ariel's picture of Beatrice, she looks sick.
 <exs-item></exs-item> In Ariel's picture of Beatrice, she snapped the lens just
-as two cardinals flew by.4.5pt<exs-item></exs-item> We operated near the bank.
+as two cardinals flew by.\vspace*{4.5pt}<exs-item></exs-item> We operated near the bank.
 <exs-item></exs-item> On the mantle was a wooden bat.
 </exs-group>
-Each \clrmrAlt{1}{3}{}pair shows interpretive reliance on extra-linguistic
+Each \clrmrAlt{1}{3}pair shows interpretive reliance on extra-linguistic
 reasoning. The situation in <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef> is quantifier scope: assuming <-exsRef>r</-exsRef> discusses some
 musical performance, it would be abnormal for everyone in the audience to individually choose
 exactly three songs to sing along with. Hence, we can assume that, among all songs
@@ -116,13 +116,13 @@ Beatrice photographing colorful birds.
 
 <!--enter p.1-->
         <p id="Para-6">The issue in <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef>, by contrast, is ordinary polysemy: <-exsRef>r</-exsRef> might reflect an
-accountant with offices facing a financial institution, or otherwise a field clinic established \clrmAltnear
+accountant with offices facing a financial institution, or otherwise a field clinic established \clrmAlt{2}{6}near
 a river. And <-exsRef>r</-exsRef> could describe a baseball collectible or an animal sculpture.
 I include these for point of comparison. The ambiguity in the former three pairs,
 I believe, is <italic>holistic</italic> and <italic>compositional</italic> whereas the latter's underdeterminism
 is more localized (even though selecting one or another reading of <italic>bank</italic>, and
 <italic>bat</italic>, frames lexical choices for the overall sentence; my point is that
-the locus of sense-divergence can be reduced to a single word.
+the locus of sense-divergence can be reduced to a single word).
 </p> <!--/p.1-->
         <!--end of p1 paragraph-->
 
@@ -194,10 +194,10 @@ expresses beliefs via narrativizing constructions or metaphors like
 
 <!--enter p.1-->
         <p id="Para-11">Cumulatively, then, I believe that sentences  offer examples
-of two issues for formal semantics: <list><list-item><p>  While assertion (or implicature) of some proposition <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content>
+of two issues for formal semantics: <enums>1. While assertion (or implicature) of some proposition <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content>
 features in most sentences, there may be details contained in
 the meaning of the sentence that are not contained in <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content> itself
-(or in logically related propositions, such as <italic>belief that <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content></italic>).</p></list-item><list-item><p> Even if the meaning of sentence <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">S</styled-content> is indeed to a large extent included in some
+(or in logically related propositions, such as <italic>belief that <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content></italic>).2. Even if the meaning of sentence <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">S</styled-content> is indeed to a large extent included in some
 <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content>, background knowledge may be needed to infer <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content> as the intended
 meaning. There might be no deterministic process to extract <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">P</styled-content> from
 <styled-content style-type="emph-symbol" style="color:rgb(93, 129, 194)">S</styled-content> via syntactic, semantic, or pragmatic rules alone.
@@ -242,9 +242,9 @@ compositional intent, predicate signification remains underdetermined.
 <!--enter p.1-->
         <p id="Para-14">To borrow the apologia from the lexical realm, we'd have to argue that
 lurking behind any spoken dialect is an idealized language
-which \clrmAlt<styled-content style-type="double-quote">&#x201c;marks&#x201d;</styled-content> all logically salient elements &#x2014; quantifiers, anaphora, deictics
+which \clrmAlt{3}{14}<styled-content style-type="double-quote">&#x201c;marks&#x201d;</styled-content> all logically salient elements &#x2014; quantifiers, anaphora, deictics
 (imagine differentiating a proximate versus distal <styled-content style-type="double-quote">&#x201c;there&#x201d;</styled-content>, or abstract versus concrete
-<styled-content style-type="double-quote">&#x201c;here&#x201d;</styled-content>,
+<styled-content style-type="double-quote">&#x201c;here&#x201d;</styled-content>),
 conjunctions (cf. <styled-content style-type="double-quote">&#x201c;and&#x201d;</styled-content> as temporal as in <styled-content style-type="double-quote">&#x201c;John quit his job and moved out of town&#x201d;</styled-content>,
 wherein we hear <styled-content style-type="double-quote">&#x201c;and <italic>then</italic>&#x201d;</styled-content>) &#x2014; with enough granularity to forestall
 all compositional ambiguities. Imagine inflectional variations
@@ -256,8 +256,8 @@ distinguish verb subjects from objects in anaphoric reference.
 
 
 <!--enter p.1-->
-        <p id="Para-15">Imagine, that is &#x2014; or so we might be tempted &#x2014; a formal semantics whose basic premises are roughly these: <list><list-item><p>  Canonically, sentences signify propositions &#x2014; by analogy to how words signify concepts.
-</p></list-item><list-item><p>  Behind any actual language is an idealized language wherein sentences denote
+        <p id="Para-15">Imagine, that is &#x2014; or so we might be tempted &#x2014; a formal semantics whose basic premises are roughly these: <enums>1. Canonically, sentences signify propositions &#x2014; by analogy to how words signify concepts.
+ 2. Behind any actual language is an idealized language wherein sentences denote
 structured propositions via compositional maxims, themselves encoded through
 syntactic conventions and the semantic properties of specific word-classes
 (quantifiers, pronouns, case-markers, determiners, etc.).
@@ -449,12 +449,12 @@ emergent/token-supervening describability [<xref ref-type="bibr" rid="B65536">65
 physical scales may suffice for purely mechanical explanations of
 physical processes, but remains explanatorily incomplete insofar
 as macro-scale phenomena structure and mold the micro-scale
-aggregates.For instance, a purely molecular account of the dynamics of a spinning
+aggregates.\footnote{For instance, a purely molecular account of the dynamics of a spinning
 baseball does not take into consideration the thought processes
 of the pitcher who decided to throw a curveball. A complete
 account of the universe in that moment needs to recognize such
 work of mind as part of the causal background for the ball's
-trajectory.  Complex systems may not introduce new forms of matter or energy
+trajectory.}  Complex systems may not introduce new forms of matter or energy
 (existents with spacetime extension and causative influence),
 or new forces beyond those physicists \clrmr{4}{25}recognize
 &#x2014; e.g.,  Philosophy of Mind, first-person consciousness
@@ -513,12 +513,12 @@ on a higher scale, brain scientists identify many distinct
 neurophysical substrata to vivid <italic>Lebenswelt</italic>
 consciousness (and vice-versa). Telically,
 theories' connecting arrows will more deftly point both up and
-down the ranks of physical constituency.Science is <italic>guided</italic> by a more
+down the ranks of physical constituency.\footnote{Science is <italic>guided</italic> by a more
 <styled-content style-type="double-quote">&#x201c;top-down&#x201d;</styled-content> metaphysic: lifeworld
 experience seeds our
 recognition of phenomena needing microphysical explanation. But we might still take it on faith that
 no aspect of reality is <italic>fundamentally</italic> incommensurate
-with basic scientific methods.
+with basic scientific methods.}
 </p> <!--/p.1-->
         <!--end of p1 paragraph-->
 
@@ -530,7 +530,7 @@ how purely biological phenomena can give rise to subjective
 <styled-content style-type="double-quote">&#x201c;first-personal&#x201d;</styled-content> states and awareness [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>],
 [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>]. Some philosophers
 apparently minimize this gap by construing consciousness as epiphenomenal,
-ontologically \clrmAltseparated from the primary functional structures
+ontologically \clrmAlt{5}{29}separated from the primary functional structures
 of cognition [<xref ref-type="bibr" rid="B65536">65536, p. 7</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>],
 [<xref ref-type="bibr" rid="B65536">65536</xref>]. However, the
 nature of consciousness <italic>per se</italic> clearly
@@ -539,8 +539,8 @@ Consciousness evolved at some point in natural history, and presumably
 it conferred adaptative benefits. Instead of reacting to stimuli
 merely via instinct, forming conscious mental representations
 &#x2014; with a certain distance between observer and
-observedApart from rare occasions for
-<styled-content style-type="double-quote">&#x201c;fight or flight&#x201d;</styled-content> reflexes, anyhow. &#x2014;
+observed\footnote{Apart from rare occasions for
+<styled-content style-type="double-quote">&#x201c;fight or flight&#x201d;</styled-content> reflexes, anyhow.} &#x2014;
 evidently permits a wider and more malleable response
 repertoire. Animal behavior and intelligence
 has evolved in consort with consciousness: we exist in a world
@@ -548,12 +548,12 @@ of conscious representations that allow us to observe
 surrounding environments without immediately committing to a
 course of action. We benefit
 from opportunities to formulate reactions thoughtfully, informed
-by values, personal identity, and past experience.We benefit
+by values, personal identity, and past experience.\footnote{We benefit
 <italic>both</italic> from such
 distancing &#x2014; bracketing consciousness's affective
 dimensions &#x2014; and yet also from the greater detail in
 representations carved via sense-data affectively
-impinging on awareness.
+impinging on awareness.}
 </p> <!--/p.1-->
         <!--end of p1 paragraph-->
 
@@ -570,8 +570,8 @@ times, and could break off the <styled-content style-type="double-quote">&#x201c
 stimuli. Perhaps I hear my cell phone pinging. Or announcements
 that the current train is out of service, so it's a moot point. The key
 detail is that such protocols don't just occur by
-instinct. They continue,
-or not, because of subjectively controllable choices of cognitive orientation.
+\textcolor{white}{instinct. They continue,
+or not, because of subjectively controllable choices of cognitive orientation.}
 </p> <!--/p.1-->
         <!--end of p1 paragraph-->
 
@@ -582,7 +582,7 @@ jectively controllable choices of cognitive orientation.
         <p id="Para-31">Not that we have first-person awareness of all cognitive
 processes. Conscious reality has many constituents
 that we experience as perceptual givens despite being the product of
-complex (subconscious reasoning. We see a world of discrete objects,
+complex (subconscious) reasoning. We see a world of discrete objects,
 whose contours and boundaries are inferred via visual processing.
 Sight employs color variation to partition visual scenes, but
 it is not as simple as isolating distinct color patches. Given a
@@ -593,9 +593,9 @@ variation is expected in an extended region resulting from texture
 and lighting; and second because visible substances have
 optical qualities beyond just red/green/blue quantities
 &#x2014; albedo, specularity, glossiness, metallicity, opaqueness,
-etc.For instance, [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>],
+etc.\footnote{For instance, [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>],
 [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>],
-[<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>].
+[<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>].}
 Object boundaries (and meaningful detected edges) are
 suggested by discontinuities in visual properties of
 varying kinds, not just pure color; moreover, segmentation
@@ -839,7 +839,7 @@ and cognitive linguistics.
 <!--enter p.1-->
         <p id="Para-41">Similar to the controversial status of first-person reports
  theoretical confirmability/falsifiability, the
-linguistics community \clrmAltis divided over the value of
+linguistics community \clrmAlt{7}{41}is divided over the value of
 analyses based on subjective assessments of
 acceptability [<xref ref-type="bibr" rid="B65536">65536, pp.  52&#x2013;55</xref>], [<xref ref-type="bibr" rid="B65536">65536, pp.  2&#x2013;6</xref>].
 It is, of course, common for linguists of multiple persuasions
@@ -849,7 +849,7 @@ raise two questions: whether samples not taken from
 real-life corpora are empirically valid, and whether
 language-users &#x2014; in testing that sentences are meaningful, or grammatical
 &#x2014; can rely on just their own judgment
-(rather than conducting some survey as conclusive.
+(rather than conducting some survey) as conclusive.
 </p> <!--/p.1-->
         <!--end of p1 paragraph-->
 
@@ -887,7 +887,7 @@ a domain of entities encompassing both public observables and <styled-content st
 posits that &#x2014; for one of several possible reasons &#x2014; cannot be <styled-content style-type="double-quote">&#x201c;seen&#x201d;</styled-content>.
 Empiricism is <italic>structural</italic> insofar as such <styled-content style-type="double-quote">&#x201c;unobservables&#x201d;</styled-content> are
 taken seriously because they contribute to persuasive explanations
-of <italic>observables'</italic> behavior, with structured models unifying the seen
+of <italic>observables* behavior, with structured models unifying the seen
 and the hidden into a rational package. Sometimes unseen posits are
 deemed just as real as everything else, merely beyond our capabilities
 of (instrument-enhanced) observation, at least for now. Other phenomena
@@ -899,12 +899,12 @@ is not an object, but rather an encompassing system wherein adaptation drives
 evolution. Potentially <styled-content style-type="double-quote">&#x201c;dark&#x201d;</styled-content> matter and energy will ultimately
 be given a similarly indirect and holistic cosmological interpretation,
 rather than deemed to refer to a specific kind of field or particle.
-</p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+</italic>
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-44">The status of mental attitudes and subjectivity  physics and material
+            <p id="Para-44">The status of mental attitudes and subjectivity  physics and material
 science is more circuitous than these other more-physical <styled-content style-type="double-quote">&#x201c;unobservables&#x201d;</styled-content>,
 but Kowalewski implies that we should treat the cognitive as adjunct to the
 physical in a similar structural vein. If explanations quantifying
@@ -940,11 +940,11 @@ objects is broader than merely the totality of sentences humans have in
 fact created. Ad-hoc hypotheticals also belong to that
 domain if they serve and fit within model-building regimes.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-45">I would put it thus: what makes a sentence an object in the
+            <p id="Para-45">I would put it thus: what makes a sentence an object in the
 domain of entities spotlighted by linguistics is not the
 fact of its being empirically an example of real language-use, but
 rather how upon that sentence we can apply observations, analyses,
@@ -954,18 +954,18 @@ and point out where pragmatic interpretation is needed. Constructed
 sentences may or may not conform to English grammar,
 but at least the question of whether they do so is
 well-posed. Even <italic>imagined</italic> speech
-\clrmAltis grammatical (or not.
+\clrmAlt{8}{45}is grammatical (or not).
 We can label syntactic categories; track
 pronoun-antecedent pairings and singular or plural alignment; observe
 how inflections indicate verb-tense; and etc.: minimal operations in the
 syntactic and semantic realms that apply equally
 whether samples are real or hypothetical.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-46">My earlier subway-platform speculation was similarly about hypothetical
+            <p id="Para-46">My earlier subway-platform speculation was similarly about hypothetical
 circumstances. I have caught New York subways in real life,
 but that's beside the point: we are primed to learn from experience,
 but in a manner that abstracts nonsalient details; it is not a
@@ -986,11 +986,11 @@ attentional system, grounding predication,
 subjectification, subjective and objective construal)
 whose theoretical merits may be tested against constructed (and also real) sentences.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-47">Methodologically speaking, reasonably, a hypothetical object, space, or situation becomes
+            <p id="Para-47">Methodologically speaking, reasonably, a hypothetical object, space, or situation becomes
 an instance of a theoretical model via the applicability of
 that model's simulative and descriptive maxims. The proper explanatory
 domain of a theory is any structure that can be analyzed
@@ -1003,11 +1003,11 @@ are objects of mathematical reasoning because they are
 amenable to many quantitative methods (add/multiply,
 path-integration, infinite summation, and so forth).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-48">Constructed examples are prominent in both linguistics
+            <p id="Para-48">Constructed examples are prominent in both linguistics
 and phenomenology. Relatedly, the <styled-content style-type="double-quote">&#x201c;demarcation problem&#x201d;</styled-content>
 &#x2014; defending them as legitimate inquiry, not pseudoscience
 &#x2014; plays similarly in both contexts. Suppose I examine a
@@ -1023,11 +1023,11 @@ sentence is not merely notating observable details: choice of words can encode \
 epistemic starting-point. This phenomenon
 is nicely illustrated in <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef>, constructed or not.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-49">But let's step back. For sake of discussion, I will assume <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef>
+            <p id="Para-49">But let's step back. For sake of discussion, I will assume <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef>
 occur in contexts where listeners know the speaker saw John firsthand
 (the evidence is direct observation, not hearsay). Implicit
 in a communicative claim to <italic>describe</italic> something witnessed
@@ -1050,11 +1050,11 @@ the role of larger-scale situational awareness guiding
 our granular decisions to direct attention hither and
 thither [<xref ref-type="bibr" rid="B65536">65536</xref>].
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-50">And yet, such configurations are also implicit in the
+            <p id="Para-50">And yet, such configurations are also implicit in the
 sentences' meanings. Foci of attention tend to become
 signified as nouns; so in both cases we have <styled-content style-type="double-quote">&#x201c;John&#x201d;</styled-content> and
 <styled-content style-type="double-quote">&#x201c;the stove&#x201d;</styled-content>. It is John who initiates the action that
@@ -1071,11 +1071,11 @@ construal that I tried to explicate phenomenologically.
 Syntactic categories like nouns and verbs are
 rooted in listeners' need to infer speaker's cognitive attitudes.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-51">As a feature of our
+            <p id="Para-51">As a feature of our
 reason and lifeworld, mental states exist
 in a vivid way in our own momentary consciousness,
 but they also exist in an approximative manner
@@ -1093,17 +1093,17 @@ environments to framings of states of affairs
 in communicable ways, then actual speech-production.
 Basic organizational principles migrate from one to
 the other, such that cognitive-perceptual structures
-(attentional foci, \clrmAltsay become manifest,
+(attentional foci, \clrmAlt{9}{51}say) become manifest,
 within communicative intent and staging, as
 linguistic phenomena (e.g., that to which
 I can perceptually attend becomes a noun; attributes
 noticed so to do this become adjectives, etc.).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-52">If this is correct, then posits of linguistic argumentation
+            <p id="Para-52">If this is correct, then posits of linguistic argumentation
 have origins in cognitive faculties that can be
 phenomenologically investigated (and should be if we
 want an encompassing, <styled-content style-type="double-quote">&#x201c;in vivo&#x201d;</styled-content> theory). At the
@@ -1114,11 +1114,11 @@ of a phenomenological sect. Language is the
 best case-study for how phenomenology simply
 codifies <styled-content style-type="double-quote">&#x201c;folk theories&#x201d;</styled-content> of mind and cognition.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-53">Phenomenology and cognitive linguistics, then, to
+            <p id="Para-53">Phenomenology and cognitive linguistics, then, to
 my mind reinforce each other; and each can be said
 to depend on the other, from an expository
 and justificatory point of view. More to the current
@@ -1131,30 +1131,30 @@ menagerie of theoretical posits in
 phenomenology and in linguistics are interrelated,
 as <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef> hopefully illustrate. 
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
-
-</sec>
-
-
-
-<sec><title>Concepts</title>
-
-
-<!--enter p.1-->
-        <p id="Para-54"><styled-content style-type="double-quote">&#x201c;The meaning of a sentence is a function of its words and
-how they are composed&#x201d;</styled-content> (cf. [<xref ref-type="bibr" rid="B65536">65536, p. 2</xref>]). In itself, that seems uncontroversial,
-except that <italic>words</italic> are not combined <italic>per se</italic>; rather,
-the concepts to which they <styled-content style-type="double-quote">&#x201c;point&#x201d;</styled-content>. There are two
-key questions: how this <styled-content style-type="double-quote">&#x201c;pointing&#x201d;</styled-content> works; and how
-<italic>concepts</italic> are combined.
 </p> <!--/p.1-->
         <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-55">A good example of formal answers to the second question is
+        <p id="Para-54"><styled-content style-type="double-quote">&#x201c;&#x201d;</styled-content>[<xref ref-type="bibr" rid="B65536">65536, p. 2</xref>].<italic></italic><italic></italic><styled-content style-type="double-quote">&#x201c;&#x201d;</styled-content>.<styled-content style-type="double-quote">&#x201c;&#x201d;</styled-content><italic></italic>.
+
+</sec>
+
+
+
+<sec><title>Concepts and CompositionalityThe meaning of a sentence is a function of its words and
+how they are composed (cf. )  In itself, that seems uncontroversial,
+except that words are not combined per se; rather,
+the concepts to which they point  There are two
+key questions: how this pointing works; and how
+concepts are combined</title>
+
+
+<!--enter p.1-->
+            <p id="Para-55">A good example of formal answers to the second question is
  [<xref ref-type="bibr" rid="B65536">65536</xref>], based on Peter 's Conceptual Space
 theory, alongside a syntactic approach related to Categorial Grammar
 and mathematical Category Theory. Consider <styled-content style-type="double-quote">&#x201c;red box&#x201d;</styled-content>, and
@@ -1174,11 +1174,11 @@ depends not just on mapping the two <italic>words</italic> but also
 mapping the intra-Category <italic>morphisms</italic> to each other (adjacency
 projects to set-intersection).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-56"> generalize this kind of insight by proposing
+            <p id="Para-56"> generalize this kind of insight by proposing
 Categories (in the mathematical sense) for syntax and semantics,
 with <italic>lexical</italic> word-meanings serving as maps (technically
 <italic>functors</italic>) from one to the other. Because functors
@@ -1191,11 +1191,11 @@ to <styled-content style-type="double-quote">&#x201c;combining concepts&#x201d;<
 syntax in defining compositional patterns that get transferred
 to the semantic plane.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-57">For , then, syntax and semantics develop in consort. On the
+            <p id="Para-57">For , then, syntax and semantics develop in consort. On the
 one hand, we have theories for how to properly model syntactic
 structure (e.g., Categorial Grammar [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>]). On the other, semantic theory
 should define operations that are referenced by syntactic operations
@@ -1214,11 +1214,11 @@ a pattern of synthesis among components by
 virtue of syntax, we seek a translation of that
 synthesis into the conceptual register.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-58">If we abstract away word-order (the left/right adjacency distinction),
+            <p id="Para-58">If we abstract away word-order (the left/right adjacency distinction),
 Categorial Grammar resembles a kind of type-theoretic syntax
 where parts of speech may be likened to a system of types,
 such as nouns and propositions. Because mappings from a tuple
@@ -1233,18 +1233,18 @@ via type-inference rules like reading (intransitive)
 finite-verb/noun
 pairs as producing a grounded clause.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-59">All of these paradigms assume that phrases compose
+            <p id="Para-59">All of these paradigms assume that phrases compose
 meanings by synthesizing concepts in order-dependent
 ways, so it is important to examine how pairs of
 concepts can transform into something more specific
 then either one in particular. I will outline a
 cognitive-phenomenological reading of this phenomenon. 
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 
@@ -1256,27 +1256,27 @@ cognitive-phenomenological reading of this phenomenon.
 
 
 <!--enter p.1-->
-        <p id="Para-60">It is circular just
+            <p id="Para-60">It is circular just
 to say that <styled-content style-type="double-quote">&#x201c;red box&#x201d;</styled-content> means something possessing
 both redness and boxness, so we need to look a
 little deeper. Consider a full sentence:<exs-group><exs-item></exs-item> I put Mom's chocolate brownies in this red tin box, take some!
 </exs-group>
 It's easy to destructure this into a union of concepts where
-each word makes a distinct contribution. Here are a few:<itemz><sym-item></sym-item>   box   \clrmAltSubprovides insight
+each word makes a distinct contribution. Here are a few:<itemz><sym-item></sym-item>   box   \clrmAltSub{10}{60}{a}provides insight
 into how the box will look, and
 feel to the touch, and how to open it <sym-item></sym-item>   tin box   the color helps one find it amidst other objects <sym-item></sym-item>   red tin box   invites the hearer to focus on something proximate
 to the speaker; deictic augments descriptive reference <sym-item></sym-item>   this red tin box   draws attention to the interior, with its functional
 affordance of holding and storing contents <sym-item></sym-item>   brownies   <styled-content style-type="double-quote">&#x201c;chocolate&#x201d;</styled-content> adds detail relevant to whether the
 hearer will want to eat them <sym-item></sym-item>   chocolate brownies   helps anchor the referent in situations
-known to the listener (insofar as the brownies are not otherwise identified;
+known to the listener (insofar as the brownies are not otherwise identified);
 viz., Mom made them, and this fact is known to the listener. On an alternative interpretation,
 the brownies are <italic>for</italic> Mom, but this is less likely in context.</itemz>
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-61">We should examine both syntactic and semantic factors.
+            <p id="Para-61">We should examine both syntactic and semantic factors.
 Semantically, clearly each word adds its own
 details to an emerging picture of the speaker's intent.
 How to properly model the intermediate stages
@@ -1287,11 +1287,11 @@ as it were. This is presumably enforced by, or an effect of,
 grammatical form, though again a theory would have to
 describe how this happens.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-62">Addressing the semantic plane first, considering words with
+            <p id="Para-62">Addressing the semantic plane first, considering words with
 explicit sensation-related meaning is a good place to start.
 It's simple to note that <styled-content style-type="double-quote">&#x201c;red box&#x201d;</styled-content> designates a box which
 appears as red. But we should investigate how this
@@ -1311,11 +1311,11 @@ fields of sense-data. Of course, while imagining that future scenario,
 hearer might potentially form a certain mental picture of a red tin box,
 but it can adequately be imprecise.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-63">Taking this case as an example, it seems as if phrases
+            <p id="Para-63">Taking this case as an example, it seems as if phrases
 with concrete, sense-related meanings occupy some intermediate
 cognitive realm, neither abstract concept-clusters nor
 photorealistic imaginary pictures. This presumably reflects
@@ -1328,11 +1328,11 @@ If we can accept this as a feature of cognition as such, it yields a
 natural framework for semantics. Such semi-perceptual content
 serves as a <styled-content style-type="double-quote">&#x201c;staging area&#x201d;</styled-content> for intermediate-level concept-aggregates.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-64">Syntactically, meanwhile, the word order seems fairly rigid. This
+            <p id="Para-64">Syntactically, meanwhile, the word order seems fairly rigid. This
 is hardly self-evident, because each contribution
 (e.g., <italic>red</italic> and <italic>tin</italic>) feels unrelated. Still,
 evidently there are cognitive trends in the mental
@@ -1354,11 +1354,11 @@ primarily a sensate quale, but part
 an enumeration (<italic>black baseball cap</italic>, but
 <italic>karate black belt</italic>).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-65">Phrases built around material objects thereby evidently
+            <p id="Para-65">Phrases built around material objects thereby evidently
 pan outward from their minimal physical substantiation
 to the ambient situational context, with word-order
 marking a parallel trajectory. This is a syntactic
@@ -1367,11 +1367,11 @@ by virtue of word order, but also since we
 need to mark phrasal boundaries: adjective-to-noun distance
 depends on <italic>which</italic> noun.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-66">Parts of speech, moreover, reflect how words play
+            <p id="Para-66">Parts of speech, moreover, reflect how words play
 specific roles relative to aggregating concepts in
 (what I would call) a <styled-content style-type="double-quote">&#x201c;semi-perceptual&#x201d;</styled-content> staging area.
 Noun phrases are de-facto landmarks in the synthesizing
@@ -1388,11 +1388,11 @@ it makes sense that noun-phrases are cognitive-staging
 milestones, because their significands are cognitive-perceptual
 attractors.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-67">Type-theoretically, modeling some parts of speech as
+            <p id="Para-67">Type-theoretically, modeling some parts of speech as
 <styled-content style-type="double-quote">&#x201c;functions&#x201d;</styled-content> captures the
 interplay of stasis and dynamics that typifies
 cognitive <styled-content style-type="double-quote">&#x201c;staging&#x201d;</styled-content>. Noun-like conceptual
@@ -1404,8 +1404,8 @@ then via further processing the staged image settles
 back into a stable unity. The formal construct
 of adjectives mapping nouns to nouns captures the
 surface-level manifestation of a churning cognitive
-underground, \clrmAltwhere intellectual labor is expended in
-forming, altering (by assimilating new detail, and
+underground, \clrmAlt{11}{67}where intellectual labor is expended in
+forming, altering (by assimilating new detail), and
 re-establishing static precursor-images. Similarly, propositions
 have a kind of situational stasis &#x2014; representations of
 states of affairs more than
@@ -1414,11 +1414,11 @@ our construal of facts and affordances surrounding us &#x2014;
 which gets destabilized when subordinate clauses become nested into
 superordinates.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-68">(Syntactic-) Categorial type theories are, of course, just a few among many protocols
+            <p id="Para-68">(Syntactic-) Categorial type theories are, of course, just a few among many protocols
 deployed to model sentence structure. Phrase-structure grammars emphasize
 nested hierarchies. Dependency grammars
 focus more on inter-word relations (often among adjacent words, but crucial
@@ -1432,11 +1432,11 @@ via preceding words, in a <italic>logical</italic> ordering that
 deviates from the sequence of enunciation, though grammar
 determines how the latter maps to the former.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-69">To examine further, imagine a simple programming language with
+            <p id="Para-69">To examine further, imagine a simple programming language with
 just a few components: function symbols, string (character-sequence)
 and numeric literals, and <styled-content style-type="double-quote">&#x201c;variable&#x201d;</styled-content>
 symbols that must be assigned a value before they are used.
@@ -1444,16 +1444,16 @@ The most common structure in such a language would be expressions consisting of 
 symbol and one or more <styled-content style-type="double-quote">&#x201c;arguments&#x201d;</styled-content>. The <italic>interpreter</italic>
 that would execute programs written in the language is essentially
 a state machine, reading a sequence of symbols
-in turn. Assume the following basic operations: <list><list-item><p>  If the current symbol is a numeric literal, convert it to an actual number
+in turn. Assume the following basic operations: <enums>1. If the current symbol is a numeric literal, convert it to an actual number
 (e.g., <styled-content style-type="double-quote">&#x201c;16&#x201d;</styled-content> becomes hexadecimal ). Convert
 string literals to arrays of glyph
 codes (e.g., in the Unicode  format). Place the current
-value on a program stack.</p></list-item><list-item><p> If the current symbol is a variable, retrieve
+value on a program stack.2. If the current symbol is a variable, retrieve
 its value from a global index. Because every
 variable is initialized before use, we can assume that
 any value is ultimately obtained from source code
 as in item , or read from an external source (like a local file).
-Again, place the current value on a program stack.</p></list-item><list-item><p> If the current symbol is a function-symbol, identify
+Again, place the current value on a program stack.3. If the current symbol is a function-symbol, identify
 which procedure is named by the symbol. If we allow
 polymorphism &#x2014; one name may reference multiple code-blocks,
 distinguished by their signatures &#x2014; then this process
@@ -1470,11 +1470,11 @@ control). While this account is too simplistic for practical computer
 languages, \clrmrAlt{11}{69}{a}it serves
 as a useful case-study for real-world compilers.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-70">Among the added complications relevant to a real-world push/transfer
+            <p id="Para-70">Among the added complications relevant to a real-world push/transfer
 implementation are &#x2014; first &#x2014; resolving polymorphically
 <styled-content style-type="double-quote">&#x201c;overloaded&#x201d;</styled-content> function symbols. By stipulation, the interpreter or compiler
 has access to a list mapping procedure names to signatures.
@@ -1487,11 +1487,11 @@ a given variable-symbol could have different types in different
 contexts. In these systems, to compute which overload matches a
 given sequence of parameter-values is considerably more complicated.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-71">A second difficulty for push/transfer mechanics is deriving the correct
+            <p id="Para-71">A second difficulty for push/transfer mechanics is deriving the correct
 sequence for presenting symbols to the <styled-content style-type="double-quote">&#x201c;interpreter&#x201d;</styled-content> (in real life, said
 interpreter is more like an abstract representation guiding the compilation
 of high-level code, but we can still reason about source
@@ -1506,11 +1506,11 @@ expressions) to a simpler representation based on token-sequences
 (details like nesting become <styled-content style-type="double-quote">&#x201c;flattened&#x201d;</styled-content> to a single lineup, which works
 because subroutines enforce a contract about how the program stack should be used).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-72">Despite its simplistic provenance, the <styled-content style-type="double-quote">&#x201c;push/transfer&#x201d;</styled-content> execution model
+            <p id="Para-72">Despite its simplistic provenance, the <styled-content style-type="double-quote">&#x201c;push/transfer&#x201d;</styled-content> execution model
 has some interesting resonance with natural language. For one
 thing, the syntactic process just described &#x2014; parsing more-complex
 code down to symbols arranged in a sequence ordered for push and transfer
@@ -1520,11 +1520,11 @@ function polymorphism recall phenomena like multiple word-senses,
 where lexical units are, in effect, <styled-content style-type="double-quote">&#x201c;overloaded&#x201d;</styled-content> with divergent
 meanings by context.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-73">Both computer code and natural language are, by many lights,
+            <p id="Para-73">Both computer code and natural language are, by many lights,
 better represented in terms of parse-graphs than trees
 (particularly in so far as some relations, like anaphora in the latter context
 and side-effect propagation in the former, cut across tree-like
@@ -1533,12 +1533,12 @@ algorithms (e.g., push/transfer) can be adopted to parse graphs.
 Type-checking may be described as a graph-traversal
 strategy where the <styled-content style-type="double-quote">&#x201c;program stack&#x201d;</styled-content> holds types rather
 than concrete values. Assuming
-polymorphism, \clrmAlta type-checker
+polymorphism, \clrmAlt{12}{73}a type-checker
 must confirm that, given any stack-state with a
 procedure symbol on top, there is a unique implementation
 whose parameter-types match those symbolized lower on the stack
 (if so, its output type is then placed on the stack
-instead. Both type-checking
+instead). Both type-checking
 and push/transfer may thereby be modeled
 as versions of a generic graph-traversal pattern, whose
 central operations are crossing to unvisited child nodes;
@@ -1548,11 +1548,11 @@ on non-leaf nodes once all descendent branches have been explored
 (in effect, navigating graphs with a state
 machine holding stack-memory and a trace of previously-seen nodes).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-74">In short, whenever a directed graph models a computational
+            <p id="Para-74">In short, whenever a directed graph models a computational
 process, we can extract a postordering of nodes
 representing the proper sequence for a push/transfer traversal;
 and we can type-check relationships between
@@ -1574,11 +1574,11 @@ Given this conceptual background, I will adopt the
 phrase <styled-content style-type="double-quote">&#x201c;staging order&#x201d;</styled-content> as a linguistic
 counterpart to computational <styled-content style-type="double-quote">&#x201c;push/transfer&#x201d;</styled-content> order.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-75">Type-checking and postordering are <styled-content style-type="double-quote">&#x201c;functionalizable&#x201d;</styled-content>
+            <p id="Para-75">Type-checking and postordering are <styled-content style-type="double-quote">&#x201c;functionalizable&#x201d;</styled-content>
 similarities between natural and programming languages
 &#x2014; whatever the metaphysical differences between how
 they are realized, the two domains have some
@@ -1600,12 +1600,12 @@ than 's appeal to commutative diagrams. Compilers
 are <italic>stateful</italic> processing/workflow \textcolor{white}{platforms,
 more than term-reduce artefacts.}
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 
 <!--enter p.1-->
-        <p id="Para-76">More substantially, postordering is not just a heuristic
+            <p id="Para-76">More substantially, postordering is not just a heuristic
 for revisiting parse graphs. Type reduction and
 conceptual-synthesis conventions act as constraints
 <italic>on</italic> parse-graphs to begin with. Most sentences give rise
@@ -1621,11 +1621,11 @@ the set of <italic>correct</italic> parse graphs are those that meet
 case-by-case criteria of coherence, some of which can be modeled in terms
 of graph-traversal protocols.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-77">Such processes are apparently interdependent, in that (for example)
+            <p id="Para-77">Such processes are apparently interdependent, in that (for example)
 part-of-speech assignment influences phrase nesting and vice-versa.
 Language would be more computationally tractable if processing algorithms
 had a logical order, with earlier ones'
@@ -1641,11 +1641,11 @@ one hand, and well-formedness (on syntactic, semantic, and pragmatic criteria)
 on the other, coexist in a kind of feedback loop, converging on the most plausible
 construals in all domains (syntax, semantics, pragmatics, and conceptualization).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-78">This interpretation of parse-graphs &#x2014; as
+            <p id="Para-78">This interpretation of parse-graphs &#x2014; as
 <styled-content style-type="double-quote">&#x201c;intermediate representation&#x201d;</styled-content> for sentence content,
 endowed with postorder and type-checking traversals
  &#x2014; works by analogy to
@@ -1664,11 +1664,11 @@ might be established by syntactic and
 semantic means, but their cognitive effects need not be
 modeled solely in semantic or pragmatic terms.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-79">I intend to propose these ideas as a foundation for
+            <p id="Para-79">I intend to propose these ideas as a foundation for
 grounding syntactic theory on cognitive optimization
 &#x2014; and, by extension, situating the theory's overall
 series of disciplinary warrants against the paradigms
@@ -1676,7 +1676,7 @@ of phenomenology. However, I feel there are two
 issues to address that could complicate the picture
 I've outlined. 
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 
@@ -1688,9 +1688,9 @@ I've outlined.
 
 
 <!--enter p.1-->
-        <p id="Para-80">First, my discussion has implied that word-order and associated
+            <p id="Para-80">First, my discussion has implied that word-order and associated
 sentence properties, such as phrase-structure, are logically
-fixed. \clrmAltThat
+fixed. \clrmAlt{13}{80}That
 may be true in some sentences, but one might find
 counter-examples. I will examine:<exs-group><exs-item></exs-item> I'm heading out to the store.
 </exs-group>
@@ -1714,11 +1714,11 @@ semantic effects are triggered by attaching <styled-content style-type="double-q
 or phrase &#x2014; but a given parse will draw the phrasal boundaries
 one place or another, and thereby model only one part of the word's role.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-81">I would address this issue by arguing that parse-graphs are provisional:
+            <p id="Para-81">I would address this issue by arguing that parse-graphs are provisional:
 diagramming one version that is appropriate for a sentence does not
 preclude others working as well. The actual syntactic forms that
 influence sentences' reception may serve as a superposition
@@ -1728,7 +1728,7 @@ in <-exsRef>r</-exsRef> is stated both immediately after <styled-content style-t
 simultaneously as influencing our interpretation of both the
 prior word and the following clause. A parse-graph represents
 how we experience certain words as implying a modification of
-some intermediate complex (what I've called <styled-content style-type="double-quote">&#x201c;staging&#x201d;</styled-content>,
+some intermediate complex (what I've called <styled-content style-type="double-quote">&#x201c;staging&#x201d;</styled-content>),
 particularly if we allow edge-annotations to notate where
 words have that <styled-content style-type="double-quote">&#x201c;restaging&#x201d;</styled-content> effect.
 In this sense parse-graphs are cognitively motivated,
@@ -1739,21 +1739,21 @@ provide one definitive construction representing sentences'
 as a superposition of multiple graphs rather
 than one single structure.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-82">So, in short, two different parse-graphs &#x2014; one wherein <styled-content style-type="double-quote">&#x201c;out&#x201d;</styled-content> attaches
+            <p id="Para-82">So, in short, two different parse-graphs &#x2014; one wherein <styled-content style-type="double-quote">&#x201c;out&#x201d;</styled-content> attaches
 to <styled-content style-type="double-quote">&#x201c;heading&#x201d;</styled-content> to yield a verb-phrase, and another where the same word
 connects to <styled-content style-type="double-quote">&#x201c;to the store&#x201d;</styled-content> to provide a direct object &#x2014; are both
 correct, but neither is complete. The <styled-content style-type="double-quote">&#x201c;definitive&#x201d;</styled-content> parsing
 structure for <-exsRef>r</-exsRef> would be a superposition of the two provisional graphs.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-83">The second issue I'd like to address is the extent of complete phrase-
+            <p id="Para-83">The second issue I'd like to address is the extent of complete phrase-
 (and sentence-) level scale in contrast to word-pairs.
 My preliminary proposal is that individual words contribute
 cognitive <styled-content style-type="double-quote">&#x201c;restaging&#x201d;</styled-content> \clrmr{13}{83}of aggregates formed from logically
@@ -1766,11 +1766,11 @@ In broad outline, the process is not unlike
 how scientific theories adapt to accommodate new
 empirical data, though on a smaller scale.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-84">Such an analysis might work fine on mostly
+            <p id="Para-84">Such an analysis might work fine on mostly
 local levels, e.g., adjectives, adverbs, relative
 pronouns, determiners, and so forth, but require
 further clarification for verbs (and perhaps conjunctions,
@@ -1787,11 +1787,11 @@ that an associated phrase presents some detail
 (the where, why, how) for the central verb
 in the immediate surrounding phrase/sentence.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-85">In the realm of conceptual synthesis, that is, verbs
+            <p id="Para-85">In the realm of conceptual synthesis, that is, verbs
 function uniquely: they don't alter a single aggregate so
 much as collate a collection of distinct nouns
 (or noun-phrases), using a roster of thematic relations,
@@ -1824,14 +1824,14 @@ on motives or context). Verbs have implicit
 <styled-content style-type="double-quote">&#x201c;slots&#x201d;</styled-content> for such variegated thematic roles, and by observing
 the particular slot slated for a given word (via theta formations)
 or phrases (via case-marking; particularly, in English, leading
-prepositions) \clrmAltSubwe identify the intended role for the constituent [<xref ref-type="bibr" rid="B65536">65536</xref>]. (Philosophically,
-the concept of a phrase itself may be emergent/derivative.
+prepositions) \clrmAltSub{14}{85}{b}we identify the intended role for the constituent [<xref ref-type="bibr" rid="B65536">65536</xref>]. (Philosophically,
+the concept of a phrase itself may be emergent/derivative.)
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-86">In presenting conceptual syntheses, then, verbs operate via structures
+            <p id="Para-86">In presenting conceptual syntheses, then, verbs operate via structures
 of roles rather than one-word-at-a-time reworking of conceptual syntheses.
 Cognitive staging is still intrinsic to inferred meaning; the point
 here is that verbs effectuate such processes on a larger scale,
@@ -1848,11 +1848,11 @@ locative phrase, for example, would be different than the
 same phrase (perhaps swapping out the preposition) figured
 as indirect object, or genitive, or so on.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-87">Systems of thematic relations establish a kind of two-tiered
+            <p id="Para-87">Systems of thematic relations establish a kind of two-tiered
 dimension of sentence structure: the set of words and phrases that
 add detail for a central verb provides sentences' inner skeleton,
 whereas adjectives and other <styled-content style-type="double-quote">&#x201c;localized&#x201d;</styled-content> modifiers form
@@ -1871,11 +1871,11 @@ cognitive faculty of schematic planning and proto-images,
 the meaningfulness of the <styled-content style-type="double-quote">&#x201c;central&#x201d;</styled-content> structure reflects a
 more holistic, situational cognitive repertoire.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-88">We can also say that the veins of a sentence's thematic scaffolding
+            <p id="Para-88">We can also say that the veins of a sentence's thematic scaffolding
 provide multiple sites for speaker-relative grounding
 (subjectification): for
 each person's discourse to encode their particular epistemic
@@ -1901,17 +1901,17 @@ relata likewise consolidates multiple sites for speaker
 grounding/epistemics, allowing listeners to piece together
 speakers' belief-provenance.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-89">From a formal perspective, thematic relations suggest a
+            <p id="Para-89">From a formal perspective, thematic relations suggest a
 form of typed lambda calculus wherein functions act upon
 input-tuples indexed not by sequence, but instead by
 assigning distinct roles to each argument.
 Consider lambda-expressions taking (in lieu of
 value-tuples) parameter-packs indexed via
-distinct role-attributions for each argument.
+distinct role-attributions for each argument.\footnote{
  This kind of calling convention
 &#x2014; adopted as <styled-content style-type="double-quote">&#x201c;labeled&#x201d;</styled-content> or <styled-content style-type="double-quote">&#x201c;keyword&#x201d;</styled-content> parameters
 in some computer languages &#x2014; is arguably
@@ -1919,16 +1919,16 @@ more natural than the alternative (<styled-content style-type="double-quote">&#x
 arguments) anyhow, because each value passed in to a procedure
 typically has a distinct role, possibly suggested by its
 name in the function's implementation
-block.  In spoken language, the particular
+block.}  In spoken language, the particular
 thematic relation that connects a subsidiary clause to the
 central verb determines how we infer its meaning
 (or, more precisely, its contribution to the larger meaning overall).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-90">Such <styled-content style-type="double-quote">&#x201c;roles&#x201d;</styled-content> may be outside the normal
+            <p id="Para-90">Such <styled-content style-type="double-quote">&#x201c;roles&#x201d;</styled-content> may be outside the normal
 scope of lambda calculi (or other computation-models), but there are
 related ideas in
 hypergraph databases, or similar knowledge-representation techniques.
@@ -1941,11 +1941,11 @@ another thereby implies the presence of further participants
 (so treating this relation as merely arity-two excludes constitutive
 details).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-91">Unlike a <styled-content style-type="double-quote">&#x201c;Semantic Web&#x201d;</styled-content> style hyperedge, calling a procedure
+            <p id="Para-91">Unlike a <styled-content style-type="double-quote">&#x201c;Semantic Web&#x201d;</styled-content> style hyperedge, calling a procedure
 does not assert a presumed fact but rather obtains a computed
 result, perhaps then used in some larger or future expression.
 However, there are various commonalities between sets of interrelated
@@ -1961,11 +1961,11 @@ mimicking shape/range constraints on hypergraph
 neighborhoods [<xref ref-type="bibr" rid="B65536">65536</xref>]. For such contexts, database and
 software-language concerns interpenetrate.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-92">In cognition, meanwhile, the line between
+            <p id="Para-92">In cognition, meanwhile, the line between
 predicative belief and practical know-how is more
 radically blurred. For one thing, facts are not isolated data-points;
 they are inextricably contextualized
@@ -1974,20 +1974,20 @@ share agent and theme/role structures, on a vaguely <styled-content style-type="
 semantics [<xref ref-type="bibr" rid="B65536">65536</xref>].
 Conceptual integration is in some sense an
 intellectual procedure &#x2014; <styled-content style-type="double-quote">&#x201c;computing&#x201d;</styled-content> in the
-domain \clrmAltof conceptual staging and proto-images, if we don't take the mind/machine
+domain \clrmAlt{15}{92}of conceptual staging and proto-images, if we don't take the mind/machine
 metaphor too literally &#x2014; and
 language-users deploy background knowledge
 to <styled-content style-type="double-quote">&#x201c;execute&#x201d;</styled-content> such scripts in comunally-sanctioned ways.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-93">The <styled-content style-type="double-quote">&#x201c;interface theory of meaning&#x201d;</styled-content> developed
+            <p id="Para-93">The <styled-content style-type="double-quote">&#x201c;interface theory of meaning&#x201d;</styled-content> developed
 by Orlin Vakarelov is another route to articulate similar intuitions
 [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>]. By analogy to how lexicons codify a space of linguistic
 knowledge &#x2014; speakers are acquainted with the concepts associated to thousands of
-words in their native tongue &#x2014; we likewise have (and acquire a
+words in their native tongue &#x2014; we likewise have (and acquire) a
 dictionary of mental <styled-content style-type="double-quote">&#x201c;scripts&#x201d;</styled-content> guiding how concepts are to be
 merged; e.g., pair an object with its
 constitutive material (like <styled-content style-type="double-quote">&#x201c;tin box&#x201d;</styled-content>), or its manner of appearance
@@ -1998,11 +1998,11 @@ of social activity. Knowledge of what to do when visiting a
 sit-down eatery is coiled together with knowing what words like <styled-content style-type="double-quote">&#x201c;menu&#x201d;</styled-content>
 mean.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-94">Such examples motivate theories wherein language-users are
+            <p id="Para-94">Such examples motivate theories wherein language-users are
 also, on a broader scale, competent members of a society, who
 have learned certain norms and rituals. Enculturated
 knowledge acts by analogy to precompiled code libraries supplied
@@ -2024,11 +2024,11 @@ menus anyhow outside that dining/ordering context; so proper use
 of the word merely reflects normative behavior in
 the preeminent contexts where it's used.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-95">More than anything, after all, this is what the word means: not so
+            <p id="Para-95">More than anything, after all, this is what the word means: not so
 much its contribution to signification of some statement's truthmakers,
 but rather what makes it correct to token this word in a particular social setting.
 Metaphorical uses also exist (the idiom <styled-content style-type="double-quote">&#x201c;not on the menu&#x201d;</styled-content>
@@ -2037,7 +2037,7 @@ of metaphoric word-sense that abstracts from concrete
 <styled-content style-type="double-quote">&#x201c;socialized&#x201d;</styled-content> usage properly modeled via something like an
 <styled-content style-type="double-quote">&#x201c;interface theory&#x201d;</styled-content> of meaning. 
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 
@@ -2049,15 +2049,15 @@ of metaphoric word-sense that abstracts from concrete
 
 
 <!--enter p.1-->
-        <p id="Para-96">The premise that individual words conceptually modify logically
+            <p id="Para-96">The premise that individual words conceptually modify logically
 precedent aggregates may seem obvious. But I want to extend that
 maybe-underwhelming starting point with three further arguments.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-97">First, I claim that this overall phenomenon can be taken as a
+            <p id="Para-97">First, I claim that this overall phenomenon can be taken as a
 groundwork for syntactic theory to begin with.
 When interpreting a sentence, we need to queue up words
 in a well-determined order, each acting as a
@@ -2075,11 +2075,11 @@ aggregates. So such word-order is not just a feature
 syntax (see likewise [<xref ref-type="bibr" rid="B65536">65536, pp.  4&#x2013;9, 12-13</xref>],
 if one accepts a cognitive reading of <styled-content style-type="double-quote">&#x201c;fragmentation&#x201d;</styled-content>).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-98">Second, verbs are distinct in that <styled-content style-type="double-quote">&#x201c;their&#x201d;</styled-content> conceptual syntheses
+            <p id="Para-98">Second, verbs are distinct in that <styled-content style-type="double-quote">&#x201c;their&#x201d;</styled-content> conceptual syntheses
 demand contributions via numerous thematic relations.
 This formulation generalizes the typically <styled-content style-type="double-quote">&#x201c;local&#x201d;</styled-content> phenomenon
 of one concept modifying another, to a more holistic
@@ -2092,11 +2092,11 @@ spatial path and/or place (or set of places), is invested with
 speaker's orientation to the spatial framework of the discourse.
 How does the speaker see, imagine, know about these spaces?
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-99">Listeners instinctively reconstruct details of the speaker's
+            <p id="Para-99">Listeners instinctively reconstruct details of the speaker's
 belief-forming perspective because they have to recreate
 for themselves the pattern of subjectivization expressed in a sentence.
 For example, in <styled-content style-type="double-quote">&#x201c;John spilled water&#x201d;</styled-content> the person is grounded as
@@ -2113,11 +2113,11 @@ say, or when there is disagreement. Instead, synchronizing
 cognitive disposition is woven tightly with minimal
 facts of language constituents, such as parts of speech).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-100">Third, given the accretionary nature of conceptual synthesis,
+            <p id="Para-100">Third, given the accretionary nature of conceptual synthesis,
 any theory of meaning must address the intermediate
 aggregates: those in between lexical word-meanings and sentence-level
 propositions. To the degree that we use formal models,
@@ -2127,17 +2127,17 @@ concepts <italic>box</italic> and <italic>red</italic>. If we then analyze this
 signification as, say, the set of things that are both
 red and boxes, then such a construction might be
 theoretical progress if we had some literal engineering
-whereby words reference sets. \clrmAltHowever,
+whereby words reference sets. \clrmAlt{16}{100}However,
 if we accept set-theoretic
 language in just a metaphoric way, describing
 <styled-content style-type="double-quote">&#x201c;red box&#x201d;</styled-content> as the intersection  merely restates what
 should be analyzed.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-101">, mentioned earlier, propose Conceptual Space theory
+            <p id="Para-101">, mentioned earlier, propose Conceptual Space theory
 as an alternative to symbolic logic, for modeling
 aggregates like . To the extent that
 our overall conceptual worlds may be represented via
@@ -2147,7 +2147,7 @@ formations and of multi-part conceptual units, respectively
 (composition operators on a purely syntactic level,
 and conceptual syntheses on a signifactory plane,
 being mutually commutative in the sense of
-commutative diagrams. Unfortunately, I am not
+commutative diagrams). Unfortunately, I am not
 convinced that there is any logico-mathematical
 formulation that models/captures conceptual
 synthesis in any general case. The meaningfulness
@@ -2158,11 +2158,11 @@ perceptual images as precursors to purposeful action.
 I suggest that, almost always, such intermediaries
 depend on extralinguistic cognitive engagement.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-102">There is certainly a role for semantic theories:
+            <p id="Para-102">There is certainly a role for semantic theories:
 many patterns of meaning have recurring structures
 that doubtless guide cognitive schemata,
 such as the mass/count distinction within modes
@@ -2194,11 +2194,11 @@ other structures recognized within mathematical type theory (and
 formalized within the semantics of computer programming languages)
 [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>], [<xref ref-type="bibr" rid="B65536">65536</xref>].
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-103">These are options for formal semantics that have, I contend,
+            <p id="Para-103">These are options for formal semantics that have, I contend,
 explanatory merit  natural language, but they describe
 constraints on cognitive processing more than end-to-end
 \clrmr{16}{103}algorithms for constructing signified meanings.
@@ -2206,11 +2206,11 @@ They do not, in my opinion, substitute for cognitive
 accounts of intermediate staging, necessary
 to bridge lexical word-sense with full-phrase propositional content.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-104">To be sure, I have offered rather inchoate characterization
+            <p id="Para-104">To be sure, I have offered rather inchoate characterization
 of this <styled-content style-type="double-quote">&#x201c;staging&#x201d;</styled-content>. The space of mid-level conceptual
 aggregates belongs neither to a realm of abstract reasoning nor
 in-the-moment sensate perception, so it may be difficult to
@@ -2227,7 +2227,7 @@ process that swings back and forth between
 extralinguistic and syntactic/semantic/pragmatic
 inference.  
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 
@@ -2239,7 +2239,7 @@ inference.
 
 
 <!--enter p.1-->
-        <p id="Para-105">Against this backdrop, I think I can more rigorously
+            <p id="Para-105">Against this backdrop, I think I can more rigorously
 defend my earlier-stated objection to the
 idea (explicit or not) that sentences signify propositions.
 Discourse may indeed <italic>communicate</italic> beliefs,
@@ -2251,11 +2251,11 @@ or pragmatics alone, at least without widening the scope
 of one or more of these to an extent that is not explanatorily
 productive.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-106">Holding, in our minds, semi-complete precursor images of
+            <p id="Para-106">Holding, in our minds, semi-complete precursor images of
 future or hypothetical objects, surroundings, and
 situations is an intrinsic part of rational agenthood.
 During talk, we exploit these capabilities
@@ -2268,11 +2268,11 @@ into propositional/enactive schemata (perhaps we can find this
 analogous to the sensate indeterminacy
 of an imagined/planned future).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-107">Certainly, purposeful action coordinated among several people requires
+            <p id="Para-107">Certainly, purposeful action coordinated among several people requires
 everyone to know (and mostly share) each other's beliefs,
 so communicating what we deem factual is an important part of
 discourse. Expressing not just <italic>what</italic> we believe, but <italic>why</italic>,
@@ -2284,15 +2284,15 @@ are the sentence's point or preambles to some further
 comment, suggestion or request &#x2014; and moreover
 encode speaker-relative perspectives and foreknowledge that
 clarify their origins. This
-epistemics-oriented \clrmAltdisclosure
+epistemics-oriented \clrmAlt{17}{107}disclosure
 emerges from the overall regimes of subjectification and
 cognitive linguistic processing.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-108">But we should not conclude from such hypotheses that
+            <p id="Para-108">But we should not conclude from such hypotheses that
 sentences <italic>signify</italic> propositions &#x2014; i.e., that
 we can list a series of formal rules governing a determinative signifying process,
 existing on a minimal level in the mapping of lexemes
@@ -2304,7 +2304,7 @@ create an illusion that the transformative
 effects of one word on a priorly-processed aggregate
 can be modeled via formal systems. Yet such
 formalization, I contend, will be either circular
-(explaining not much, in the end or oversimplistic
+(explaining not much, in the end) or oversimplistic
 (explaining only cherry-picked linguistic artifacts,
 not typical usages and utterances). To the degree
 that cognitive transforms and <styled-content style-type="double-quote">&#x201c;staging&#x201d;</styled-content> are
@@ -2312,11 +2312,11 @@ amenable to rigorous analysis, such analysis
 would have to be grounded in an overarching
 cognitive science.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-109">Formal syntax has a notion of sentences being <styled-content style-type="double-quote">&#x201c;grammatically well formed&#x201d;</styled-content>
+            <p id="Para-109">Formal syntax has a notion of sentences being <styled-content style-type="double-quote">&#x201c;grammatically well formed&#x201d;</styled-content>
 (depending on which grammar applies, of course) because we can give
 mechanical algorithms for testing when a string of words may, or may not,
 be derived via production rules. Whatever actual philosophy is in play,
@@ -2329,11 +2329,11 @@ I believe <styled-content style-type="double-quote">&#x201c;married bachelor&#x2
 that most people would infer its intension (in the sense of an
 intensionality/extensionality contrast) &#x2014; hence <-exsRef>r</-exsRef> and <-exsRef>r</-exsRef>.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-110">More broadly, building
+            <p id="Para-110">More broadly, building
 models of algorithmic conceptual synthesis would allow the comparably
 algorithmic notion of grammatic production to map onto the semantic
 plane, as anticipated by : syntactic and semantic syntheses
@@ -2343,11 +2343,11 @@ My arguments in this paper are that such an overly-tidy picture is
 untenable. Concepts simply don't synthesize according to
 <styled-content style-type="double-quote">&#x201c;production rules&#x201d;</styled-content> akin to <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>BNF</abbrev></styled-content> grammars.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-111">I think the story  and many similar analyses have
+            <p id="Para-111">I think the story  and many similar analyses have
 in mind &#x2014; once expressed informally &#x2014; is roughly like this:
 semantics tells us how to combine concepts;
 syntax tells us which concepts to combine, in which
@@ -2358,11 +2358,11 @@ conceptual formations against dictates
 of social norms and purposeful action, rather than
 by manipulating concepts as formalizable abstractions.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-112">To draw once again from coding analogies,
+            <p id="Para-112">To draw once again from coding analogies,
 programming language <italic>semantics</italic> is concerned with the binding
 of values to symbols --- when those <styled-content style-type="double-quote">&#x201c;markings&#x201d;</styled-content> start and
 cease to be appropriate --- as well as polymorphic
@@ -2386,11 +2386,11 @@ in natural language, which bridge discourse to cognitive
 operations even if the cognitive processing itself
 is opaque to linguistic analysis <italic>per se</italic>.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-113">This exposition might be a little straw-man-like in that ,
+            <p id="Para-113">This exposition might be a little straw-man-like in that ,
 for example, do not specifically work from a system of grammatical
 productions. Their syntactic theory is more about, starting
 from any given sentence, retracing the compositional principles
@@ -2407,11 +2407,11 @@ built up (almost syntactically!) from primitive roots by operations such as
 those of set theory (union, intersection, disjoint union )
 or other formalizations (modal logic, quantifiers, etc.).
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-114">Referring back to my reading of the successive syntheses
+            <p id="Para-114">Referring back to my reading of the successive syntheses
 connoted by <styled-content style-type="double-quote">&#x201c;in this red tin box&#x201d;</styled-content>, I don't believe
 <italic>any</italic> of those transforms can be glossed in such logical terms.
 Put aphoristically, linguistic formalization should model
@@ -2425,18 +2425,18 @@ directly. As a useful analogy, programmers are not obligated to
 study how system-kernel procedures are implemented; they merely
 need to know the type-signatures and preconditions for calling them.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-        <p id="Para-115">I have also argued that any cognitive
+            <p id="Para-115">I have also argued that any cognitive
 science, to be comprehensive, has to work
 with cognition as lived by flesh-and-blood
 people in social, embodied, personalistic life-worlds.
 Such an approach would be only tangentially a
 <italic>natural</italic> science &#x2014; the physicalistic
 intuitions that lend systematicity
-and \clrmAltdisputative structure to studies of nature
+and \clrmAlt{18}{115}disputative structure to studies of nature
 would, in this context, dilute rather than
 guarantee explanatory rigor. Endorsing
 phenomenology as an alternative foundation,
@@ -2457,22 +2457,23 @@ philosophy wherein
 phenomenology provides an explanatory
 scaffold for <italic>all</italic> humanities.
 </p> <!--/p.1-->
-        <!--end of p1 paragraph-->
+            <!--end of p1 paragraph-->
 
 
 
 </sec>
 <!--end section-->
-    </body>
-    <!--ended body-->
-    <!--inserting bibliography-->
+        </p> <!--/p.1-->
+        <!--ended body-->
+        <!--inserting bibliography-->
 
 <back>
-        <ref-list>
-            <title>Bibliography</title>
-            
-        </ref-list>
-    </back>
+            <ref-list>
+                <title>Bibliography</title>
+                
+            </ref-list>
+        </back>
+    </body>
 </article>
 
 <!--ended document-->

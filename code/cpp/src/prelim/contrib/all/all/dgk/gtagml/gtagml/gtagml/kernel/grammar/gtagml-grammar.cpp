@@ -90,6 +90,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 //  parse_state.prepare_end_document();
 // });
 
+
  add_rule( gtagml_context, "left-right-mid-processing-instruction",
    "  .space-to-end-of-line.* \\( (?<left> <*) (?<left-dash> -+) (?<instruction> [^-]*) (?<right-dash> -+) (?<right> >*) \\) "
    ,[&] //raw_context, &parse_state, this, &p]
@@ -114,11 +115,33 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
  });
 
 
- add_rule( gtagml_context, "tag-command-entry",
+ add_rule( gtagml_context, "outer-tag-command-entry",
    " (?<blank-lines> .blank-lines.?) "
    " (?<outer> [[{(] )  (?<pre> [^\\s\\[\\]`]*) ` "
    " (?<main> (?: [^\\s\\[\\]`,;.] | (?: \\s+ ->> \\s+ ) )+ ) "
    " (?*supl* (?: ` (/- [^\\s\\[\\]`,;.]+ -/) )* ) "
+   " (?<post> [,;.]+ )"
+   ,[&] //raw_context, &parse_state, this, &p]
+ {
+  QString blank_lines = p.matched("blank-lines");
+
+  QString outer = p.matched("outer");
+  QString pre = p.matched("pre");
+  QString main = p.matched("main");
+
+  QStringVector supl; //? = p.rematched("supl");
+
+  QString post = p.matched("post");
+
+  parse_state.outer_tag_command_entry(blank_lines,
+    outer, pre, main, supl, post);
+
+ });
+
+ add_rule( gtagml_context, "tag-command-entry-no-supl",
+   " (?<blank-lines> .blank-lines.?) "
+   " (?<outer> [[{(] )  (?<pre> [^\\s\\[\\]`]*) ` "
+   " (?<main> (?: [^\\s\\[\\]`,;.] | (?: \\s+ ->> \\s+ ) )+ ) "
    " (?<post> [,;.]+ )"
    ,[&] //raw_context, &parse_state, this, &p]
  {
@@ -157,7 +180,8 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
  });
 
  add_rule( gtagml_context, "outer-tag-command-leave",
-   " (?<pre> [%+]* ` [\\w`-]+ )* ` (?<post> [\\])}] )"
+   //?" (?<pre> [%+]* ` [\\w`-]+ )* ` (?<post> [\\])}] )"
+   " (?<pre> [%+]* ` [\\w`-]+ )* ` (?<post> [\\])] )"
    ,[&]
  {
   QString pre = p.matched("pre");
@@ -170,6 +194,30 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 
 
 
+
+ add_rule( flags_all_(parse_context ,read_numbered_items),
+   gtagml_context, "enums-item",
+   " (?<= \\n (?: .single-space. | .single-space. .single-space.) )  ( ?<number> \\d+) (?<text> \\S*) (?<follow> [).]) "
+   ,[&]
+ {
+  u2 number = p.matched("number").toShort();
+  QString text = p.matched("text");
+  QString follow = p.matched("follow");
+
+  parse_state.enums_item(number, text, follow);
+ });
+
+ add_rule( flags_all_(parse_context ,read_numbered_items),
+   gtagml_context, "enums-item_alt",
+   " (?<= \\n) .single-space.* ( ?<number> \\d+) (?<text> \\S*) (?<follow> [).]) "
+   ,[&]
+ {
+  u2 number = p.matched("number").toShort();
+  QString text = p.matched("text");
+  QString follow = p.matched("follow");
+
+  parse_state.enums_item(number, text, follow);
+ });
 
 
 
@@ -571,17 +619,6 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 //  parse_state.show_latex();
  });
 
- add_rule( flags_all_(parse_context ,read_numbered_items),
-   gtagml_context, "enums-item",
-   " (?<= \\n) (?<number> \\d+) (?<text> \\S*) (?<follow> [).]) "
-   ,[&]
- {
-  u2 number = p.matched("number").toShort();
-  QString text = p.matched("text");
-  QString follow = p.matched("follow");
-
-  parse_state.enums_item(number, text, follow);
- });
 
  add_rule( flags_all_(parse_context ,read_bulleted_items),
    gtagml_context, "bulleted-item",
@@ -612,9 +649,15 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 
  add_rule( flags_all_(parse_context ,italics_mode),
    gtagml_context, "leave-italics-mode",
-   " /\\* "
+   " (?<pre-guard> ['\"]?) /\\* "
    ,[&]
  {
+  QString pre_guard = p.matched("pre-guard");
+
+  // //  prevents '/* being parsed as single-quote, etc.
+  if(!pre_guard.isEmpty())
+    parse_state.primary_acc(pre_guard);
+
   parse_state.leave_italics_mode();
  });
 

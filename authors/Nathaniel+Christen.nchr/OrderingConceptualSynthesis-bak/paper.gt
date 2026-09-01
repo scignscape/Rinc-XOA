@@ -61,13 +61,13 @@ formalization, consider these pairs of sentences:
 
 (7)  In Ariel's picture of Beatrice, she looks sick.
 (8)  In Ariel's picture of Beatrice, she snapped the lens just 
-as two cardinals flew by.`vfillnulleject;(`vspace*.4.5pt`)`enlargethispage<2em>;
+as two cardinals flew by.`vfillnulleject;\vspace*{4.5pt}`enlargethispage<2em>;
 
 (9)  We operated near the bank.
 (10)  On the mantle was a wooden bat.
 /+
 
-Each \clrmrAlt{1}{3}{}pair shows interpretive reliance on extra-linguistic 
+Each \clrmrAlt{1}{3}pair shows interpretive reliance on extra-linguistic 
 reasoning.  The situation in (3) and (4) is quantifier scope: assuming (3) discusses some 
 musical performance, it would be abnormal for everyone in the audience to individually choose 
 exactly three songs to sing along with.  Hence, we can assume that, among all songs 
@@ -92,7 +92,6 @@ former option is more likely in (7) because one can tell from a photograph what 
 it seems as if Ariel's hands were shaking/".  
 Nor can we entirely disregard a scenario for (8) where Ariel takes a picture of 
 Beatrice photographing colorful birds.
-
 
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
 accountant with offices facing a financial institution, or otherwise a field clinic established \clrmAlt{2}{6}`pgl;near 
@@ -366,12 +365,12 @@ More generally, examining progressively smaller
 physical scales may suffice for purely mechanical explanations of 
 physical processes, but remains explanatorily incomplete insofar 
 as macro-scale phenomena structure and mold the micro-scale 
-aggregates.(`footnote.For instance, a purely molecular account of the dynamics of a spinning 
+aggregates.\footnote{For instance, a purely molecular account of the dynamics of a spinning 
 baseball does not take into consideration the thought processes 
 of the pitcher who decided to throw a curveball.  A complete 
 account of the universe in that moment needs to recognize such 
 work of mind as part of the causal background for the ball's 
-trajectory.`)`condenlargepage<2em>;  Complex systems may not introduce new forms of matter or energy 
+trajectory.}`condenlargepage<2em>;  Complex systems may not introduce new forms of matter or energy 
 (existents with spacetime extension and causative influence), 
 or new forces beyond those physicists \clrmr{4}{25}recognize 
 %-- e.g., `visavis; Philosophy of Mind, first-person consciousness 
@@ -418,12 +417,12 @@ on a higher scale, brain scientists identify many distinct
 neurophysical substrata to vivid */Lebenswelt/* 
 consciousness (and vice-versa).  Telically,
 theories' connecting arrows will more deftly point both up and
-down the ranks of physical constituency.(`footnote.Science is */guided/* by a more   
+down the ranks of physical constituency.\footnote{Science is */guided/* by a more   
 "/top-down/" metaphysic: `label<fn:scienceGuided>;lifeworld 
 experience seeds our 
 recognition of phenomena needing microphysical explanation.  But we might still take it on faith that 
 no aspect of reality is */fundamentally/* incommensurate 
-with basic scientific methods.`)`condenlargepage<2em>; 
+with basic scientific methods.}`condenlargepage<2em>; 
 
 There is an almost universally recognized explanatory gap with respect 
 to consciousness itself: we still have little understanding of 
@@ -440,8 +439,8 @@ Consciousness evolved at some point in natural history, and presumably
 it conferred adaptative benefits.  Instead of reacting to stimuli 
 merely via instinct, forming conscious mental representations  
 %-- with a certain distance between observer and 
-observed(`footnote.Apart from rare occasions for   
-"/fight or flight/" reflexes, anyhow.`) %--  
+observed\footnote{Apart from rare occasions for   
+"/fight or flight/" reflexes, anyhow.} %--  
 evidently permits a wider and more malleable response 
 repertoire.  Animal behavior and intelligence 
 has evolved in consort with consciousness: we exist in a world 
@@ -449,12 +448,12 @@ of conscious representations that allow us to observe
 surrounding environments without immediately committing to a 
 course of action.  We benefit 
 from opportunities to formulate reactions thoughtfully, informed 
-by values, personal identity, and past experience.(`footnote.We benefit 
+by values, personal identity, and past experience.\footnote{We benefit 
 */both/* from `label<fn:benefit>;such 
 distancing %-- bracketing consciousness's affective 
 dimensions %-- and yet also from the greater detail in 
 representations carved via sense-data affectively 
-impinging on awareness.`)`condenlargepage<1em>;
+impinging on awareness.}`condenlargepage<1em>;
 
 Suppose I stand by a platform waiting for the subway to arrive.  I need to board 
 my correct train.  To do so, I may well follow a well-rehearsed 
@@ -467,8 +466,8 @@ times, and could break off the "t/protocol/" given some external
 stimuli.  Perhaps I hear my cell phone pinging.  Or announcements 
 that the current train is out of service, so it's a moot point.  The key 
 detail is that such protocols don't just occur by
-(`textcolorwh.instinct.  They continue,
-or not, because of subjectively controllable choices of cognitive orientation.`)
+\textcolor{white}{instinct.  They continue,
+or not, because of subjectively controllable choices of cognitive orientation.}
 
 %.pa
 `upAdj<3em>;
@@ -489,9 +488,9 @@ variation is expected in an extended region resulting from texture
 and lighting; and second because visible substances have 
 optical qualities beyond just red/green/blue quantities 
 %-- albedo, specularity, glossiness, metallicity, opaqueness, 
-etc.(`footnote.For instance, [/DavitGigilashvili/], [/XiaoyingGuo/], 
+etc.\footnote{For instance, [/DavitGigilashvili/], [/XiaoyingGuo/], 
 [/HarveySmithson/], [/Mallickelal/], [/MirjaliliHardeberg/], 
-[/ShinyaNishida/], [/Osadchyetal/], [/WendtFaul/], [/JanaZujovic/].`)
+[/ShinyaNishida/], [/Osadchyetal/], [/WendtFaul/], [/JanaZujovic/].}
 Object boundaries (and meaningful detected edges) are 
 suggested by discontinuities in visual properties of 
 varying kinds, not just pure color; moreover, segmentation 
@@ -950,7 +949,7 @@ menagerie of theoretical posits in
 phenomenology and in linguistics are interrelated, 
 as (1) and (2) hopefully illustrate. `vspace<6pt>;
 
-///  Concepts
+///  Concepts and Compositionality 
 
 `upAdj<2pt>;"t/The meaning of a sentence is a function of its words and 
 how they are composed/" (cf. [/JamesPustejovsky:2/]).  In itself, that seems uncontroversial, 
@@ -1010,7 +1009,6 @@ between semantics and syntax should look for: having determined
 a pattern of synthesis among components by 
 virtue of syntax, we seek a translation of that 
 synthesis into the conceptual register.  
-
 
 If we abstract away word-order (the left/right adjacency distinction), 
 Categorial Grammar resembles a kind of type-theoretic syntax 
@@ -1621,7 +1619,7 @@ input-tuples indexed not by sequence, but instead by
 assigning distinct roles to each argument.  
 Consider lambda-expressions taking (in lieu of 
 value-tuples) parameter-packs indexed via 
-distinct role-attributions for each argument.(`footnote.
+distinct role-attributions for each argument.\footnote{
 `label<fn:cc>; This kind of calling convention 
 %-- adopted as "t/labeled/" or "t/keyword/" parameters 
 in some computer languages %-- is arguably 
@@ -1629,7 +1627,7 @@ more natural than the alternative ("t/positional/"
 arguments) anyhow, because each value passed in to a procedure 
 typically has a distinct role, possibly suggested by its 
 name in the function's implementation 
-block.`)  In spoken language, the particular 
+block.}  In spoken language, the particular 
 thematic relation that connects a subsidiary clause to the 
 central verb determines how we infer its meaning 
 (or, more precisely, its contribution to the larger meaning overall).  
@@ -2061,7 +2059,6 @@ scaffold for */all/* humanities.
 
 %.pa
 `input<biblio>;
-
 
 /// //
 

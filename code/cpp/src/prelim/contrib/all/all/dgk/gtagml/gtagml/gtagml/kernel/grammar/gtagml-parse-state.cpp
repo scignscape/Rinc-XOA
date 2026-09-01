@@ -65,8 +65,8 @@ GTagML_Parse_State::GTagML_Parse_State(GTagML_Graph& g, GTagML_Document_Info& do
 //   ,jats_stream_(&jats_)
 {
 
-// flags.use_latex_sdi_all_markers = true;
-// flags.use_latex_sdi_paragraph_markers = true;
+ flags.use_latex_sdi_all_markers = true;
+ flags.use_latex_sdi_paragraph_markers = true;
 }
 
 void GTagML_Parse_State::auto_closed_tag_command_leave(QString post)
@@ -1310,6 +1310,7 @@ void GTagML_Parse_State::enter_subparagraph(QString text, QString sup)
  else if(text == "enums")
  {
 //?  streams_.latex_stream() << "\n\n\\begin{enums}\n";
+  streams_.latex_stream() << "\n\n%% found enums\n";
   streams_.latex_stream() << "\n\n\\begin{docEnumerate}\n";
   streams_.xml_writer().writeStartElement("enums");
   parse_context_.flags.read_numbered_items = true;
