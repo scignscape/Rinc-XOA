@@ -140,7 +140,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 
  add_rule( gtagml_context, "tag-command-entry-no-supl",
    " (?<blank-lines> .blank-lines.?) "
-   " (?<outer> [[{(] )  (?<pre> [^\\s\\[\\]`]*) ` "
+   " (?<outer> [[{(] )  (?<pre> [^\\s\\[\\]}`]*) ` "
    " (?<main> (?: [^\\s\\[\\]`,;.] | (?: \\s+ ->> \\s+ ) )+ ) "
    " (?<post> [,;.]+ )"
    ,[&] //raw_context, &parse_state, this, &p]
