@@ -90,6 +90,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 //  parse_state.prepare_end_document();
 // });
 
+ add_rule( gtagml_context, "suppress-sentence-switch-marker",
+   " !> "
+   ,[&]
+ {
+  parse_state.primary_acc("{\\sssm}");
+ });
+
+
 
  add_rule( gtagml_context, "left-right-mid-processing-instruction",
    "  .space-to-end-of-line.* \\( (?<left> <*) (?<left-dash> -+) (?<instruction> [^-]*) (?<right-dash> -+) (?<right> >*) \\) "

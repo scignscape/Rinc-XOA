@@ -198,8 +198,10 @@ void SDI_Sentence_Reader::read_Sentence_field(QString data, QStringList spl, QSt
    {"_end.t", { ._dot = &SDI_Sentence::read_sentence_text} },
    {"_end.g", { ._dot = &SDI_Sentence::read_sentence_gaps} },
    {"start#r", { ._hash =  &SDI_Sentence::read_sentence_range_Start} },
+   {"switch#r", { ._hash =  &SDI_Sentence::read_sentence_range_Switch} },
    {"end#r", { ._hash =  &SDI_Sentence::read_sentence_range_End} },
    {"_end#r", { ._hash =  &SDI_Sentence::read_sentence_range__End} },
+   {"_end.p", { ._dot =  &SDI_Sentence::read_sentence_end_punctuation} },
    }};
 
  auto it = static_map.find(key);

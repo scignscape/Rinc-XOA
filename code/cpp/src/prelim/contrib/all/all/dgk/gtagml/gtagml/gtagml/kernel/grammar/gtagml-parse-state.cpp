@@ -364,7 +364,10 @@ void GTagML_Parse_State::primary_acc(QString text)
   if(count < 2)
   {
    if(flags.use_latex_sdi_all_markers)
-     streams_.latex(" \\> ");
+   {
+    //?  qDebug() << streams_.latex_text();
+    streams_.latex(" \\> ");
+   }
 
    ++sentence_id_;
    streams_.sentences_sdi_stream() << "\n\n--- Sentence/switch\nid: "
