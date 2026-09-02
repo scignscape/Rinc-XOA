@@ -90,6 +90,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 //  parse_state.prepare_end_document();
 // });
 
+ add_rule( gtagml_context, "ell-3-plain",
+   " ![.]{3}! "
+   ,[&]
+ {
+  parse_state.primary_acc("...");
+//  parse_state.ell_count(p.match_text().size(), "\\");
+ });
+
  add_rule( gtagml_context, "suppress-sentence-switch-marker",
    " !(?<postpone> =?)>(?<extra> >?)"
    ,[&]
@@ -304,6 +312,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
  {
   parse_state.noindent_marker();
  });
+
 
 
  add_rule( gtagml_context, "ell-count-restrict-space",

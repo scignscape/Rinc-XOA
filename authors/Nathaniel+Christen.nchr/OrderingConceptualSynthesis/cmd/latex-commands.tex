@@ -12,6 +12,13 @@
 
 \newcommand{\textcolorwh}[1]{\textcolor{white}{#1}}
 
+\newcommand{\sssm}{}
+
+\usepackage{environ}
+
+\NewEnviron{makeboxenv}{%
+\makebox{\BODY}%
+}{}
 
 
 \newcommand{\ellThree}[2]{%
@@ -336,7 +343,6 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 \Hy@raisedlink{\hypertarget{pgn#1}{}}%
 }
 %\makeatother 
-
 
 \newcommand{\pgl}{\stepcounter{pglNumber}%
 \pglabel{\thepglNumber}\ignorespaces}
