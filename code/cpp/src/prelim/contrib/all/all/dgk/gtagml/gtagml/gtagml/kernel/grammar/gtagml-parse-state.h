@@ -289,6 +289,11 @@ public:
 
  }
 
+ bool suppress_sentence_switch_marker()
+ {
+  return flags.suppress_sentence_switch_marker;
+ }
+
  void suppress_sentence_switch_marker(QString postpone)
  {
   flags.suppress_sentence_switch_marker = true;
@@ -322,6 +327,8 @@ public:
  {
   end_sentence("", Nesting_Codes::Signal_Default, {});
  }
+
+ void force_end_sentence();
 
  void pseudo_paragraph();
 
@@ -394,6 +401,11 @@ public:
 
  void primary_acc(QString text);
  void reset_primary();
+
+ QString primary_text()
+ {
+  return streams_.primary_text();
+ }
 
  void close_paragraph();
  void check_close_paragraph();

@@ -334,6 +334,7 @@ void GTagML_Parse_State::enter_abstract()
 
 void GTagML_Parse_State::primary_acc(QString text)
 {
+
  if(flags.heading_acc)
  {
   if(!flags.latex_only)
@@ -620,10 +621,10 @@ void GTagML_Parse_State::force_end_sentence_mark(QString follow)
 {
  streams_.latex_stream() << "\\<";
 
- if(follow == ";")
- {
-  close_paragraph();
- }
+// if(follow == ";")
+// {
+//  close_paragraph();
+// }
 }
 
 void GTagML_Parse_State::ell_2_nonbreak()
@@ -692,6 +693,10 @@ void GTagML_Parse_State::footnote_marker(QString text)
    streams_.latex_stream() << "\\fnm{" << text << "}";
 }
 
+void GTagML_Parse_State::force_end_sentence()
+{
+
+}
 
 void GTagML_Parse_State::end_sentence(QString punctuation,
   u1 nesting_code, QVector<QPair<QString, QString>> supplements)
@@ -1169,13 +1174,12 @@ void GTagML_Parse_State::close_paragraph()
   streams_.latex_stream() << "\\;";
  }
 
- qDebug() << "\n\n" << streams_.latex_text() << "\n\n";
- qDebug() << streams_.sentences_sdi_text() << "\n\n";
+ qDebug() << "\n\n" << streams_.sentences_sdi_text();
 
  streams_.sentences_sdi_stream() << "\n--- Paragraph/end \nid: " << paragraph_id_
    << "\ny: " << current_paragraph_type_to_string() << "\n";
 
- qDebug() << streams_.sentences_sdi_text() << "\n\n";
+ qDebug() << "\n\n" << streams_.sentences_sdi_text();
 
  if(current_paragraph_type_ == Paragraph_Types::Abstract)
  {

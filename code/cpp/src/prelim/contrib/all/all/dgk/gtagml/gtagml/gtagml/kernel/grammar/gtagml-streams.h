@@ -72,6 +72,11 @@ class GTagML_Streams
   return latex_;
  }
 
+ QString primary_text()
+ {
+  return primary_acc_;
+ }
+
  QString sentences_sdi_text()
  {
   return sentences_sdi_;
