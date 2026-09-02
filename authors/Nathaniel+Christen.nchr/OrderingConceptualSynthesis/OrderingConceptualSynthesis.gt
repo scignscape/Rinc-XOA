@@ -39,8 +39,8 @@ these are quite meaningful:`fnm;
 
 
 %/ exs
-\ifnum\presetStretch=2\vspace*{9pt}\else\fi
-(1)  My brother has been married for 10 years, but in many ways he's still a bachelor.
+-%> \ifnum\presetStretch=2\vspace*{9pt}\else\fi
+(1)  My brother has been married for 10 years, but in many ways he's still a bachelor. !>
 (2)  All of the eligible bachelors in this town are married.
 /+
 
@@ -52,22 +52,22 @@ speakers will ignore them.
 To motivate further discussion about the limits of linguistic 
 formalization, consider these pairs of sentences:
 
-%/ exs
-(3)  Everyone sang along to three songs.
+%/ exs 
+(3)  Everyone sang along to three songs. !>
 (4)  All appeals are heard by a panel of three judges.
 
-(5)  All New Yorkers live in one of five boroughs.
+(5)  All New Yorkers live in one of five boroughs. !>
 (6)  All New Yorkers complain about how long it takes to commute to New York City.
 
-(7)  In Ariel's picture of Beatrice, she looks sick.
+(7)  In Ariel's picture of Beatrice, she looks sick. !>
 (8)  In Ariel's picture of Beatrice, she snapped the lens just 
-as two cardinals flew by.`vfillnulleject;(`vspace*.4.5pt`)`enlargethispage<2em>;
+as two cardinals flew by. -%> `vfillnulleject;(`vspace*.4.5pt`)`enlargethispage<2em>;
 
-(9)  We operated near the bank.
+(9)  We operated near the bank. !>
 (10)  On the mantle was a wooden bat.
 /+
 
-Each \clrmrAlt{1}{3}{}pair shows interpretive reliance on extra-linguistic 
+Each -%> \clrmrAlt{1}{3}{} pair shows interpretive reliance on extra-linguistic 
 reasoning.  The situation in (3) and (4) is quantifier scope: assuming (3) discusses some 
 musical performance, it would be abnormal for everyone in the audience to individually choose 
 exactly three songs to sing along with.  Hence, we can assume that, among all songs 
@@ -95,7 +95,8 @@ Beatrice photographing colorful birds.
 
 
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
-accountant with offices facing a financial institution, or otherwise a field clinic established \clrmAlt{2}{6}`pgl;near 
+accountant with offices facing a financial institution, or otherwise a field clinic 
+established  -%> \clrmAlt{2}{6}`pgl;near 
 a river.  And (10) could describe a baseball collectible or an animal sculpture. 
 I include these for point of comparison.  The ambiguity in the former three pairs, 
 I believe, is */holistic/* and */compositional/* whereas the latter's underdeterminism 
@@ -109,7 +110,7 @@ in the most */likely/* reading.  But subtle variation can point to the opposite,
 for (3)/(4):
 
 %/ exs
-(11)  Every band performed three songs.
+(11)  Every band performed three songs. !>
 (12)  Everyone sang along to one song or another.
 /+
 
@@ -117,14 +118,14 @@ Changing the context to a */band/* playing, versus an audience member, imposes a
 framework: usually bands perform a "d/set/" with their own material/ covers.  Meanwhile, switching 
 from the exact "/three/" to the more flexible "/one [song] or another/" gives enough construal slack that 
 putting the later scope in the former makes interpretive sense.  
-\ifnum\presetStretch=2{}\else{\thispagestyle{two}}\fi
+ -%> \ifnum\presetStretch=2{}\else{\thispagestyle{two}}\fi
 
 Despite the competing readings, each option for each sentence I have discussed so 
 far, I believe, has a fairly obvious logical form.  But there are other examples where a logical 
 gloss would not fully capture the communicated content of a given statement.  Consider: 
 
 %/ exs
-(13)  This election is slipping away from the Democrats.
+(13)  This election is slipping away from the Democrats. !>
 (14)  Student after student came by to complain about the reading assignments.
 /+
 
@@ -151,7 +152,7 @@ However, the resources a speaker has for expressing the backstory of their
 propositional attitudes span a wide spectrum of connotations and experiences, 
 and I'd argue that there is no logical system that could precisely model 
 all ways that language-users characterize how one belief compels 
-or reinforces another.  \clrmr{2}{10}Most usage embeds propositions not in 
+or reinforces another.   -%> \clrmr{2}{10}Most usage embeds propositions not in 
 chains of deductive reasoning but rather in narrative presentations 
 that reflect perspectives, the interlocking of situations, and 
 in general the somewhat informal manner by which 
@@ -204,7 +205,7 @@ compositional intent, predicate signification remains underdetermined.
 
 To borrow the apologia from the lexical realm, we'd have to argue that 
 lurking behind any spoken dialect is an idealized language 
-which \clrmAlt{3}{14}`pgl;"t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
+which  -%> \clrmAlt{3}{14}`pgl;"t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
 (imagine differentiating a proximate versus distal "m/there/", or abstract versus concrete 
 "m/here/"), 
 conjunctions (cf. "m/and/" as temporal as in "m/John quit his job and moved out of town/", 
@@ -217,7 +218,7 @@ distinguish verb subjects from objects in anaphoric reference.
 Imagine, that is %-- or so we might be tempted %-- a formal semantics whose basic premises are roughly these: `vspace<-22pt>;
 
 %/  enums
- 1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.
+ 1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts. !>
  2.  Behind any actual language is an idealized language wherein sentences denote 
 structured propositions via compositional maxims, themselves encoded through 
 syntactic conventions and the semantic properties of specific word-classes 
@@ -259,7 +260,7 @@ merely bridging a gap between real and ideal language, by analogy to
 real and ideal dictionaries (where each distinct word-sense might 
 be marked in some disambiguating manner).  This isn't only an 
 issue of pragmatic context guiding inference of one word-sense 
-or another.  \clrmr{3}{17}Cognition plays a more holistic role, such that 
+or another.  -%> clrmr{3}{17} Cognition plays a more holistic role, such that 
 any */compositional/* determination depends, in general, 
 on a case-by-case admixture of linguistic and extralinguistic reasoning. 
 Even when "i/the meaning of a 
@@ -373,7 +374,7 @@ account of the universe in that moment needs to recognize such
 work of mind as part of the causal background for the ball's 
 trajectory.`)`condenlargepage<2em>;  Complex systems may not introduce new forms of matter or energy 
 (existents with spacetime extension and causative influence), 
-or new forces beyond those physicists \clrmr{4}{25}recognize 
+or new forces beyond those physicists -%> \clrmr{4}{25} recognize 
 %-- e.g., `visavis; Philosophy of Mind, first-person consciousness 
 is not a redoubt of dualism or magic %-- but they 
 still deserve specialized descriptive and theory-semantic regimens.
@@ -404,7 +405,7 @@ The mindset of a single person acts as a societal "t/reductive base/"
 (likewise for economics: individual workers/consumers).  Such brings 
 one naturally to cognition, which is an inevitable explanatory 
 setting for any talk of decision-making, social \makebox{commons, selfhood, identity, or ideology 
-[/RyanMcVeigh/]; [/SchottenForkel:\hspaceback{2pt}3/].`hspaceback<12pt>;}
+[/RyanMcVeigh/]; [/SchottenForkel:!-2pt!3/]. -%> `hspaceback<12pt>;}
 
 Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level  
 analyses.  Source files, for example,   
@@ -423,7 +424,7 @@ down the ranks of physical constituency.(`footnote.Science is */guided/* by a mo
 experience seeds our 
 recognition of phenomena needing microphysical explanation.  But we might still take it on faith that 
 no aspect of reality is */fundamentally/* incommensurate 
-with basic scientific methods.`)`condenlargepage<2em>; 
+with basic scientific methods.`) -%> `condenlargepage<2em>; 
 
 There is an almost universally recognized explanatory gap with respect 
 to consciousness itself: we still have little understanding of 
@@ -431,7 +432,7 @@ how purely biological phenomena can give rise to subjective
 "t/first-personal/" states and awareness [/JiriBenovsky/], [/DavidJChalmers/],
 [/FranciscoVarela/], [/DanZahavi/].  Some philosophers 
 apparently minimize this gap by construing consciousness as epiphenomenal, 
-ontologically \clrmAlt{5}{29}`pgl;separated from the primary functional structures 
+ontologically -%> \clrmAlt{5}{29}`pgl; separated from the primary functional structures 
 of cognition [/JKim:7/], [/MarekPokropski/], 
 [/RobertDRupert/].  However, the 
 nature of consciousness */per se/* clearly 
@@ -454,7 +455,7 @@ by values, personal identity, and past experience.(`footnote.We benefit
 distancing %-- bracketing consciousness's affective 
 dimensions %-- and yet also from the greater detail in 
 representations carved via sense-data affectively 
-impinging on awareness.`)`condenlargepage<1em>;
+impinging on awareness.`) -%> `condenlargepage<1em>;
 
 Suppose I stand by a platform waiting for the subway to arrive.  I need to board 
 my correct train.  To do so, I may well follow a well-rehearsed 
@@ -623,7 +624,7 @@ may not be identifiable neurobiological correlates to the
 concepts of (e.g.) */protention/* and */retention/*.  
 Searching for such correlates would be a valid investigation 
 bridging the (metaphorical) "/in vivo/" and "/in vitro/" 
-facets of human minds.  \clrmr{6}{37}But as a high-level science, 
+facets of human minds.  -%> \clrmr{6}{37} But as a high-level science, 
 cognitive phenomenology does not need to develop a 
 complete theory about how the parameters in its 
 explanatory arsenal emerge from and/or supervene upon physical substrata 
@@ -690,7 +691,7 @@ and cognitive linguistics.
 
 Similar to the controversial status of first-person reports 
 `visavis; theoretical confirmability/falsifiability, the 
-linguistics community \clrmAlt{7}{41}`pgl;is divided over the value of 
+linguistics community -%> \clrmAlt{7}{41}`pgl; is divided over the value of 
 analyses based on subjective assessments of 
 acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/].   
 It is, of course, common for linguists of multiple persuasions 
@@ -716,7 +717,7 @@ less than claims warranted by more empirical measures.
 In one discussion that elucidates metascientific 
 background for syntactic theory, Hubert Kowalewski 
 presents the work of Ronald Langacker, and by extension 
-Cognitive Grammar overall, in terms of "/Structural Empiricism/": `upAdj<3pt>;
+Cognitive Grammar overall, in terms of "/Structural Empiricism/": -%> `upAdj<3pt>;
 
 %/ block
 `clrmBlockQuote<i>;Viewed through the lens of structural empiricism, Cognitive Grammar
@@ -755,7 +756,7 @@ over subjective states provide convincing accounts of observed
 behavior (in this case, linguistic performance), then the first-personal 
 realm should be judged scientifically legitimate as a kind of "t/hidden variables/" 
 dimension.  Specifically in regard to ad-hoc sentence 
-examples, he argues as follows: `upAdj<7pt>;
+examples, he argues as follows: -%> `upAdj<7pt>;
 
 %/ block
 `clrmBlockQuote<i>;The linguistic material analyzed in many ... texts [is] constructed 
@@ -771,11 +772,11 @@ that many useful scientific models involve clearly counterfactual scenarios
 [whose] role is not merely heuristic or pedagogical. [/kow:32/]
 /+ 
 
-He then analyzes how `upAdj<9pt>;
+He then analyzes how -%> `upAdj<9pt>;
 
 %/ block
 `clrmBlockQuote<ii>;fictional models in natural sciences can be accounted for in
-philosophical terms.  In `hspace<-1pt>; ... structural empiricism, isolated
+philosophical terms.  In -%> `hspace<-1pt>; ... structural empiricism, isolated
 systems, frictionless pendulums, and perfect liquids are treated just like
 any other theoretical objects, except their theoreticity does not follow from
 unobservability, as is the case with electrons and electromagnetic fields, but
@@ -801,7 +802,7 @@ and point out where pragmatic interpretation is needed.  Constructed
 sentences may or may not conform to English grammar, 
 but at least the question of whether they do so is 
 well-posed.  Even */imagined/* speech 
-\clrmAlt{8}{45}`pgl;is grammatical (or not).    
+-%> \clrmAlt{8}{45}`pgl; is grammatical (or not).    
 We can label syntactic categories; track 
 pronoun-antecedent pairings and singular or plural alignment; observe
 how inflections indicate verb-tense; and etc.: minimal operations in the
@@ -858,7 +859,8 @@ action in different ways (deliberate or accidental).  By selecting
 one or the other, the speaker implicitly expresses beliefs about 
 John's mental state; such choice-effects are cued by the lexical contrast 
 between the two verbs.  The 
-sentence is not merely notating observable details: choice of words can encode \clrmrAlt{8}{48}{a}information about the speaker's 
+sentence is not merely notating observable details: choice of words can 
+encode -%> \clrmrAlt{8}{48}{a}information about the speaker's 
 epistemic starting-point.  This phenomenon 
 is nicely illustrated in (1) and (2), constructed or not.  
 
@@ -920,7 +922,7 @@ environments to framings of states of affairs
 in communicable ways, then actual speech-production.  
 Basic organizational principles migrate from one to 
 the other, such that cognitive-perceptual structures 
-(attentional foci, \clrmAlt{9}{51}`pgl;say) become manifest, 
+(attentional foci, -%> \clrmAlt{9}{51}`pgl; say) become manifest, 
 within communicative intent and staging, as 
 linguistic phenomena (e.g., that to which 
 I can perceptually attend becomes a noun; attributes 
@@ -952,7 +954,7 @@ as (1) and (2) hopefully illustrate. `vspace<6pt>;
 
 ///  Concepts
 
-`upAdj<2pt>;"t/The meaning of a sentence is a function of its words and 
+-%> `upAdj<2pt>; "t/The meaning of a sentence is a function of its words and 
 how they are composed/" (cf. [/JamesPustejovsky:2/]).  In itself, that seems uncontroversial, 
 except that */words/* are not combined */per se/*; rather, 
 the concepts to which they "t/point/".  There are two 
@@ -984,7 +986,7 @@ Categories (in the mathematical sense) for syntax and semantics,
 with */lexical/* word-meanings serving as maps (technically 
 */functors/*) from one to the other.  Because functors 
 project "t/morphisms/" (transforms */in/* Categories) from one Category 
-to another, \clrmr{9}{46}assemblies of syntactic operations 
+to another, -%> \clrmr{9}{46} assemblies of syntactic operations 
 project onto semantic/conceptual structures systematically, 
 extending the lexicon-to-concept functor to aggregate 
 phrases.  In other words, we can give a mathematical gloss 
@@ -1032,7 +1034,7 @@ meanings by synthesizing concepts in order-dependent
 ways, so it is important to examine how pairs of 
 concepts can transform into something more specific 
 then either one in particular.  I will outline a 
-cognitive-phenomenological reading of this phenomenon. `vspace<6pt>; 
+cognitive-phenomenological reading of this phenomenon. -%> `vspace<6pt>; 
 
 // //
 
@@ -1050,7 +1052,7 @@ each word makes a distinct contribution.  Here are a few:
 
 %/ itemz
 
- *  `underline<tin>; box `sarr;  \clrmAltSub{10}{60}{a}`pgl;provides insight 
+ *  `underline<tin>; box `sarr; -%> \clrmAltSub{10}{60}{a}`pgl; provides insight 
 into how the box will look, and 
 feel to the touch, and how to open it
 
@@ -1111,7 +1113,7 @@ photorealistic imaginary pictures.  This presumably reflects
 cognitive anticipation of future behavior more generally: mentally 
 rehearsing planned actions involves pictorial imagination to 
 some degree, but we focus on enactive schema more than sensory 
-details \clrmr{10}{63}(maybe a temporal mirror-image of how perceptual 
+details -%> \clrmr{10}{63} (maybe a temporal mirror-image of how perceptual 
 specifics likewise fade from memories).    
 If we can accept this as a feature of cognition as such, it yields a 
 natural framework for semantics.  Such semi-perceptual content 
@@ -1177,7 +1179,7 @@ then via further processing the staged image settles
 back into a stable unity.  The formal construct 
 of adjectives mapping nouns to nouns captures the 
 surface-level manifestation of a churning cognitive 
-underground, \clrmAlt{11}{67}`pgl;where intellectual labor is expended in  
+underground, -%> \clrmAlt{11}{67}`pgl; where intellectual labor is expended in  
 forming, altering (by assimilating new detail), and 
 re-establishing static precursor-images.  Similarly, propositions 
 have a kind of situational stasis %-- representations of 
@@ -1209,7 +1211,7 @@ The most common structure in such a language would be expressions consisting of 
 symbol and one or more "t/arguments/".  The */interpreter/* 
 that would execute programs written in the language is essentially 
 a state machine, reading a sequence of symbols 
-in turn.  Assume the following basic operations: `upAdj<4pt>;
+in turn.  Assume the following basic operations: -%> `upAdj<4pt>;
 
 %/ enums
 
@@ -1241,7 +1243,7 @@ may serve as inputs to later subroutines).
 For sake of discussion, I will call this a "t/push/transfer/" execution 
 model, given the two main operations (pushing a value, or transferring 
 control).  While this account is too simplistic for practical computer 
-languages, \clrmrAlt{11}{69}{a}it serves 
+languages, -%> \clrmrAlt{11}{69}{a}it serves 
 as a useful case-study for real-world compilers.
 
 Among the added complications relevant to a real-world push/transfer 
@@ -1291,7 +1293,7 @@ algorithms (e.g., push/transfer) can be adopted to parse graphs.
 Type-checking may be described as a graph-traversal 
 strategy where the "t/program stack/" holds types rather 
 than concrete values.  Assuming 
-polymorphism, \clrmAlt{12}{73}`pgl;a type-checker 
+polymorphism, -%> \clrmAlt{12}{73}`pgl; a type-checker 
 must confirm that, given any stack-state with a 
 procedure symbol on top, there is a unique implementation 
 whose parameter-types match those symbolized lower on the stack 
@@ -1362,7 +1364,7 @@ conceptual-synthesis conventions act as constraints
 */on/* parse-graphs to begin with.  Most sentences give rise 
 to many minimally plausible graphs.  Even when excluding 
 unrelated contexts like the family name, for instance, the 
-word "m/trump/" in a \clrmr{12}{76}playing-card context can serve as noun, 
+word "m/trump/" in a -%> \clrmr{12}{76}playing-card context can serve as noun, 
 verb, adjective, and even adverb.  The distribution of a 
 single word-sense over multiple syntactic categories is more a 
 norm than an exception.  This fact in itself suggests a proliferation 
@@ -1420,7 +1422,7 @@ I've outlined. `upAdj<14pt>;
 
 First, my discussion has implied that word-order and associated 
 sentence properties, such as phrase-structure, are logically 
-fixed.  \clrmAlt{13}{80}`pgl;That 
+fixed.  -%> \clrmAlt{13}{80}`pgl; That 
 may be true in some sentences, but one might find 
 counter-examples.  I will examine:
 
@@ -1482,7 +1484,7 @@ structure for (1) would be a superposition of the two provisional graphs.
 The second issue I'd like to address is the extent of complete phrase- 
 (and sentence-) level scale in contrast to word-pairs.  
 My preliminary proposal is that individual words contribute 
-cognitive "t/restaging/" \clrmr{13}{83}of aggregates formed from logically 
+cognitive "t/restaging/" -%> \clrmr{13}{83} of aggregates formed from logically 
 (not necessarily temporally) prior words.  From a 
 given conceptual bundle, we 
 interpret a particular succedent word as adding detail or 
@@ -1550,7 +1552,8 @@ on motives or context).  Verbs have implicit
 "h/slots/" for such variegated thematic roles, and by observing 
 the particular slot slated for a given word (via theta formations) 
 or phrases (via case-marking; particularly, in English, leading 
-prepositions) \clrmAltSub{14}{85}{b}`pgl;we identify the intended role for the constituent [/LucasChampollion/].  (Philosophically, 
+prepositions) -%> \clrmAltSub{14}{85}{b}`pgl; we identify 
+the intended role for the constituent [/LucasChampollion/].  (Philosophically, 
 the concept of a phrase itself may be emergent/derivative.)
 
 In presenting conceptual syntheses, then, verbs operate via structures 
@@ -1607,7 +1610,7 @@ verb-aspect.  Not to imply that this list is exhaustive;
 modeling all modes of subjectification requires a detailed 
 theory in its own right.  Here I simply want to observe that 
 such grounding is holistic in the sense that it encompasses 
-a central verb (profiling some event, \clrmr{14}{88}state, 
+a central verb (profiling some event, -%> \clrmr{14}{88}state, 
 or process) as well as 
 the set of noun-concepts or -foci that participate therein.  
 The central spine that pulls together multiple thematic 
@@ -1672,7 +1675,7 @@ share agent and theme/role structures, on a vaguely "/Neo-Davidsonian/" event
 semantics [/HarryBunt/].  
 Conceptual integration is in some sense an 
 intellectual procedure %-- "t/computing/" in the 
-domain \clrmAlt{15}{92}`pgl;of conceptual staging and proto-images, if we don't take the mind/machine 
+domain -%> \clrmAlt{15}{92}`pgl; of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and 
 language-users deploy background knowledge 
 to "h/execute/" such scripts in comunally-sanctioned ways. 
@@ -1787,7 +1790,7 @@ concepts */box/* and */red/*.  If we then analyze this
 signification as, say, the set of things that are both 
 red and boxes, then such a construction might be 
 theoretical progress if we had some literal engineering 
-whereby words reference sets.  \clrmAlt{16}{100}`pgl;However, 
+whereby words reference sets.  -%> \clrmAlt{16}{100}`pgl;However, 
 if we accept set-theoretic 
 language in just a metaphoric way, describing 
 "/red box/" as the intersection `redbox; merely restates what 
@@ -1836,7 +1839,7 @@ to sentences about referents that exist in multiple strata:
 (1)  That newspaper [pointing to a table] just moved to 10th street 
 and laid off half its staff.
 (2)  At home you can print out this book from a ;/PDF/ link.
-(3)  The borough of Queens voted heavily for Mamdani.`vspace<2pt>;  
+(3)  The borough of Queens voted heavily for Mamdani. -%> `vspace<2pt>;  
 /+
 
 Also, apparent region violations drive many functional metaphors:
@@ -1845,7 +1848,7 @@ Also, apparent region violations drive many functional metaphors:
 (4)  These flowers really want some sunshine.
 (5)  This drought has left the soil parched.
 (6)  Our car stubbornly refused to move.
-(7)  The spell-checker thinks "/hooman/" isn't a word.`vspace<2pt>;  
+(7)  The spell-checker thinks "/hooman/" isn't a word. -%> `vspace<2pt>;  
 /+
 
 Examples such as (1) through (5) have been analyzed in terms of 
@@ -1857,7 +1860,7 @@ formalized within the semantics of computer programming languages)
 These are options for formal semantics that have, I contend, 
 explanatory merit `visavis; natural language, but they describe 
 constraints on cognitive processing more than end-to-end 
-\clrmr{16}{103}algorithms for constructing signified meanings.  
+ -%> \clrmr{16}{103}algorithms for constructing signified meanings.  
 They do not, in my opinion, substitute for cognitive 
 accounts of intermediate staging, necessary 
 to bridge lexical word-sense with full-phrase propositional content.
@@ -1877,7 +1880,7 @@ invoking "t/staging/" faculties at almost every
 step, such that sentence-understanding is intrinsically a 
 process that swings back and forth between 
 extralinguistic and syntactic/semantic/pragmatic 
-inference. `vspace<4pt>; `enlargethispage<5pt>; 
+inference.  -%> `vspace<4pt>;`enlargethispage<5pt>; 
 
 ///  Conclusion
 
@@ -1918,7 +1921,7 @@ are the sentence's point or preambles to some further
 comment, suggestion or request %-- and moreover 
 encode speaker-relative perspectives and foreknowledge that 
 clarify their origins.  This 
-epistemics-oriented \clrmAlt{17}{107}`pgl;disclosure 
+epistemics-oriented -%> \clrmAlt{17}{107}`pgl; disclosure 
 emerges from the overall regimes of subjectification and 
 cognitive linguistic processing. 
 
@@ -1980,7 +1983,7 @@ To draw once again from coding analogies,
 programming language */semantics/* is concerned with the binding 
 of values to symbols --- when those "t/markings/" start and 
 cease to be appropriate --- as well as polymorphic 
-definition of multiple procedures with the \clrmr{17}{112}same symbol
+definition of multiple procedures with the -%> \clrmr{17}{112}same symbol
 but different parameter types, and other type-related 
 concerns.  Code */syntax/* addresses such issues as 
 expression boundaries, storage-duration scope, and "t/sequence points/", indicating 
@@ -2038,7 +2041,7 @@ people in social, embodied, personalistic life-worlds.
 Such an approach would be only tangentially a 
 */natural/* science %-- the physicalistic 
 intuitions that lend systematicity 
-and \clrmAlt{18}{115}`pgl;disputative structure to studies of nature 
+and -%> \clrmAlt{18}{115}`pgl;disputative structure to studies of nature 
 would, in this context, dilute rather than 
 guarantee explanatory rigor.  Endorsing  
 phenomenology as an alternative foundation, 
