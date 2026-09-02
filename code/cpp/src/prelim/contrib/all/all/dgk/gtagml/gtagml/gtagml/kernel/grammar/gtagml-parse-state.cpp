@@ -423,27 +423,33 @@ void GTagML_Parse_State::primary_acc(QString text)
 
 void GTagML_Parse_State::reset_primary()
 {
- auto handle_sentences = [this]()
+ QString pa = streams_.primary_acc();
+ QRegularExpression ref_strip("<!\\(\\d+\\)!>");
+ QString pa_ref_strip = pa;
+ pa_ref_strip.replace(ref_strip, "");
+
+ auto handle_sentences = [this, &pa]()
  {
+  QString pa_copy = pa;
+
   if(flags.sentences_latex_filter)
   {
-   QString pa = streams_.primary_acc();
    QRegularExpression rx ("\\\\\\w+");
    while(true)
    {
     QRegularExpressionMatch m = rx.match(pa);
     if(m.hasMatch())
-      pa.replace(m.capturedStart(), m.capturedEnd() - m.capturedStart(), "");
+      pa_copy.replace(m.capturedStart(), m.capturedEnd() - m.capturedStart(), "");
     else
       break;
    }
-   pa.replace("{", "");
-   pa.replace("}", "");
-   pa.replace("\\", "");
-   sentences_text_stream_ << pa;
+   pa_copy.replace("{", "");
+   pa_copy.replace("}", "");
+   pa_copy.replace("\\", "");
+   sentences_text_stream_ << pa_copy;
   }
   else
-    sentences_text_stream_ << streams_.primary_acc();
+    sentences_text_stream_ << pa;
  };
 
  if(flags.sentences_only)
@@ -453,7 +459,7 @@ void GTagML_Parse_State::reset_primary()
 
  else if(flags.latex_only)
  {
-  streams_.latex_stream() << streams_.primary_acc();
+  streams_.latex_stream() << pa_ref_strip;
   u4 pos = parser_->current_position();
 
   sentence_gaps_stream_ << "\n +" << line_and_column_string_tight(pos);
@@ -466,8 +472,8 @@ void GTagML_Parse_State::reset_primary()
 
  else
  {
-  streams_.latex_stream() << streams_.primary_acc();
-  streams_.xml_writer().writeCharacters(streams_.primary_acc());
+  streams_.latex_stream() << pa_ref_strip;
+  streams_.xml_writer().writeCharacters(pa_ref_strip);
   handle_sentences();
  }
 
@@ -1532,9 +1538,10 @@ void GTagML_Parse_State::single_slash_line()
 
 void GTagML_Parse_State::paren_ref_global(u2 number, QString text)
 {
- reset_primary();
-
  QString r = QString::number(number);
+
+ reset_primary();
+ streams_.primary_acc_stream() << "<!(" << r << ")!>" ;
 
  streams_.latex_stream() << "\\exsRef(" << r << ")" ;
  streams_.xml_writer().writeTextElement("-exsRef", "r");
@@ -1543,12 +1550,14 @@ void GTagML_Parse_State::paren_ref_global(u2 number, QString text)
 
 void GTagML_Parse_State::paren_ref(u2 number, QString text)
 {
- reset_primary();
-
  QString r = QString::number(number + current_exs_offset_);
+
+ streams_.primary_acc_stream() << "<!(" << r << ")!>" ;
+ reset_primary();
 
  streams_.latex_stream() << "\\exsRef(" << r << ")" ;
  streams_.xml_writer().writeTextElement("-exsRef", "r");
+
 }
 
 
@@ -2198,7 +2207,7 @@ void GTagML_Parse_State::special_character_sequence(QString text)
  };
 
  QMap<QString, QStringList> static_map {{
-   { "%--", {"\\mdash{}", " - ", "@=#x2014;"}}, //&mdash
+   { "%--", {"\\mdash{}", "-=-", "@=#x2014;"}}, //&mdash
    { "%-", {"\\ndash{}", "--", "@=#x2013;"}},
    { "^:", {"\\raiseColon{}", ":", ":"}},
    { "%$", {"\\$", "$", "$"}},

@@ -1349,14 +1349,8 @@ and cognitive "t/staging/".  Still,
 I believe these analogies imply a precis of the 
 syntax/semantics interface that is more cognitively realistic 
 than `Boltetal;'s appeal to commutative diagrams.  Compilers 
-are */stateful/* processing/workflow \textcolor{white}{platforms, 
-more than term-reduce artefacts.}
-
-%.pa
-`upAdj<1.8em>;
-`noindent;`makebox<platforms, 
-more than mechanistic term-reduce 
-artefacts.>;`upAdj<1em>;
+are */stateful/* processing/workflow platforms, 
+more than mechanistic term-reduce artefacts.
 
 More substantially, postordering is not just a heuristic 
 for revisiting parse graphs.  Type reduction and 
@@ -1415,7 +1409,7 @@ grounding syntactic theory on cognitive optimization
 series of disciplinary warrants against the paradigms 
 of phenomenology.  However, I feel there are two 
 issues to address that could complicate the picture 
-I've outlined.  -%> `upAdj<7pt>;
+I've outlined.  -%> `upAdj<10pt>;
 
 
 // //

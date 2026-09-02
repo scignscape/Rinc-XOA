@@ -7,7 +7,6 @@ USING_KANS(GTagML)
 
 GTagML_Parse_Context::GTagML_Parse_Context(): Flags(0)
 {
-
 }
 
 

@@ -72,6 +72,11 @@ class GTagML_Streams
   return latex_;
  }
 
+ u4 primary_text_size()
+ {
+  return primary_text().size();
+ }
+
  QString primary_text()
  {
   return primary_acc_;

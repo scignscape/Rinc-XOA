@@ -12,6 +12,8 @@
 
 #include <QFile>
 #include <QTextStream>
+#include <QRegularExpression>
+
 
 #include "kans.h"
 
@@ -70,6 +72,13 @@ void SDI_Sentence::read_sentence_text(QStringList read_dispatch)
  if(read_dispatch.takeFirst() == "_end")
  {
   set_sentence_text(read_dispatch.last().trimmed());
+
+  sentence_text_.replace("...\\", "...");
+  sentence_text_.replace("{\\sssm}", "");
+  sentence_text_.replace("\\-", "-");
+  sentence_text_.replace("-=-", "---");
+
+  sentence_text_.replace(QRegularExpression("<!\\((\\d+)\\)!>"), "(\\1)");
 
   vm_writer_->write_text_block(sentence_text_);
   vm_writer_->opstatement_text_block("sdi-sentence-text");
