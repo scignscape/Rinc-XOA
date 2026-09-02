@@ -1547,7 +1547,33 @@ void GTagML_Parse_State::citation(QString full_match, QString label, QString loc
 
  reset_primary();
 
+ QRegularExpression strip_horizontal_adjustment("!([+-])(\\d+)(\\w*)!");
+
+ full_match.replace(strip_horizontal_adjustment, "");
+
  sentences_text_stream_ << full_match;
+
+
+ while(true)
+ {
+  QRegularExpressionMatch match = strip_horizontal_adjustment.match(locator);
+  if(match.hasMatch())
+  {
+   QString c1 = match.captured(1);
+   QString c2 = match.captured(2);
+   QString c3 = match.captured(3);
+   if(c3.isEmpty())
+     c3 = "pt";
+   QString repl;
+   if(c1 == "-")
+     repl = "\\hspaceback{" + c2 + c3 + "}";
+   else
+     repl = "\\hspaceforward{" + c2 + c3 + "}";
+   locator.replace(match.capturedStart(), match.capturedLength(), repl);
+  }
+  else
+    break;
+ }
 
  QStringList qsl = locator.split("==");
  locator = qsl.takeFirst();
