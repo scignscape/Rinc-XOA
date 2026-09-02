@@ -363,17 +363,24 @@ void GTagML_Parse_State::primary_acc(QString text)
 
   if(count < 2)
   {
+   bool had_suppress_sentence_switch_marker = flags.suppress_sentence_switch_marker;
+
+   flags.suppress_sentence_switch_marker = false;
+
+
    if(flags.use_latex_sdi_all_markers)
    {
-    //?  qDebug() << streams_.latex_text();
-    streams_.latex(" \\> ");
+    if(!had_suppress_sentence_switch_marker)
+      streams_.latex(" \\> ");
    }
 
    ++sentence_id_;
-   streams_.sentences_sdi_stream() << "\n\n--- Sentence/switch\nid: "
-     << sentence_id_ << "\nr#  "
-     << document_info_.line_and_column_string(parser_->current_position())
-     << "\n";
+
+   if(!had_suppress_sentence_switch_marker)
+     streams_.sentences_sdi_stream() << "\n\n--- Sentence/switch\nid: "
+       << sentence_id_ << "\nr#  "
+       << document_info_.line_and_column_string(parser_->current_position())
+       << "\n";
 
    if(text.startsWith(" "))
      text.chop(1);
@@ -607,6 +614,16 @@ void GTagML_Parse_State::leave_sentences_only(QString close, QString post_space)
 void GTagML_Parse_State::force_switch_sentence()
 {
  end_sentence("");
+}
+
+void GTagML_Parse_State::force_end_sentence_mark(QString follow)
+{
+ streams_.latex_stream() << "\\<";
+
+ if(follow == ";")
+ {
+  close_paragraph();
+ }
 }
 
 void GTagML_Parse_State::ell_2_nonbreak()
@@ -1143,11 +1160,22 @@ void GTagML_Parse_State::close_paragraph()
  }
 
  if(flags.use_latex_sdi_all_markers || flags.use_latex_sdi_paragraph_markers)
-   streams_.latex_stream() << "\\;";
+ {
+  if(flags.postpone_sentence_switch_marker)
+  {
+   streams_.latex_stream() << "\\<";
+   flags.postpone_sentence_switch_marker = false;
+  }
+  streams_.latex_stream() << "\\;";
+ }
+
+ qDebug() << "\n\n" << streams_.latex_text() << "\n\n";
+ qDebug() << streams_.sentences_sdi_text() << "\n\n";
 
  streams_.sentences_sdi_stream() << "\n--- Paragraph/end \nid: " << paragraph_id_
    << "\ny: " << current_paragraph_type_to_string() << "\n";
 
+ qDebug() << streams_.sentences_sdi_text() << "\n\n";
 
  if(current_paragraph_type_ == Paragraph_Types::Abstract)
  {

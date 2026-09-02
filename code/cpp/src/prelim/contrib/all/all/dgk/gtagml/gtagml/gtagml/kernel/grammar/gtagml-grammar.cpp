@@ -91,11 +91,18 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 // });
 
  add_rule( gtagml_context, "suppress-sentence-switch-marker",
-   " !> "
+   " !(?<postpone> =?)>(?<extra> >?)"
    ,[&]
  {
-  parse_state.primary_acc("{\\sssm}");
+  QString postpone = p.matched("postpone");
+  QString extra = p.matched("extra");
+
+  if(extra.isEmpty())
+    parse_state.primary_acc("{\\sssm}");
+  else
+    parse_state.suppress_sentence_switch_marker(postpone);
  });
+
 
 
 
@@ -343,10 +350,12 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 // });
 
  add_rule( gtagml_context, "enter-latex-only-to-space--leave-space",
-  " .single-space.* -%>> (?<sp> .single-space.*)  "
+  " .single-space.* (?<m> -%>>) (?<sp> .single-space.*)  "
   ,[&]
  {
-  parse_state.enter_latex_only_to_space(p.matched("sp"));
+  // //  is this ok here?
+  parse_state.primary_acc(p.matched("sp"));
+  parse_state.enter_latex_only_to_space(p.matched("m"));
  });
 
 
@@ -443,6 +452,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
   ,[&]
  {
   parse_state.force_switch_sentence();
+ });
+
+ add_rule( gtagml_context, "force-end-sentence-mark",
+  " !=< (?<follow> ;?) \\s "
+  ,[&]
+ {
+  QString follow = p.matched("follow");
+  parse_state.force_end_sentence_mark(follow);
  });
 
  add_rule( gtagml_context, "enter-sentences-latex-filter",

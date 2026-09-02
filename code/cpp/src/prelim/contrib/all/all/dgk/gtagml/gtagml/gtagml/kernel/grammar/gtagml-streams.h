@@ -72,6 +72,11 @@ class GTagML_Streams
   return latex_;
  }
 
+ QString sentences_sdi_text()
+ {
+  return sentences_sdi_;
+ }
+
  void latex(QString text);
  void primary(QString text);
 

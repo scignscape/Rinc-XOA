@@ -64,6 +64,8 @@ class GTagML_Parse_State
   bool heading_acc:1;
   bool in_pa_1:1;
   bool in_ql:1;
+  bool suppress_sentence_switch_marker:1;
+  bool postpone_sentence_switch_marker:1;
  _flags
 
  enum class Acc_Mode {
@@ -287,6 +289,13 @@ public:
 
  }
 
+ void suppress_sentence_switch_marker(QString postpone)
+ {
+  flags.suppress_sentence_switch_marker = true;
+
+  if(postpone == "=")
+    flags.postpone_sentence_switch_marker = true;
+ }
 
  void end_sentence(QString punctuation,
    u1 nesting_code = Nesting_Codes::Signal_Default,
@@ -364,6 +373,7 @@ public:
  void leave_sentences_latex_filter(QString pretext);
 
  void force_switch_sentence();
+ void force_end_sentence_mark(QString follow);
 
  void enter_sentences_only(QString open, QString pre_space);
  void leave_sentences_only(QString close, QString post_space);
