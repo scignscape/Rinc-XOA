@@ -1174,12 +1174,8 @@ void GTagML_Parse_State::close_paragraph()
   streams_.latex_stream() << "\\;";
  }
 
- qDebug() << "\n\n" << streams_.sentences_sdi_text();
-
  streams_.sentences_sdi_stream() << "\n--- Paragraph/end \nid: " << paragraph_id_
    << "\ny: " << current_paragraph_type_to_string() << "\n";
-
- qDebug() << "\n\n" << streams_.sentences_sdi_text();
 
  if(current_paragraph_type_ == Paragraph_Types::Abstract)
  {
