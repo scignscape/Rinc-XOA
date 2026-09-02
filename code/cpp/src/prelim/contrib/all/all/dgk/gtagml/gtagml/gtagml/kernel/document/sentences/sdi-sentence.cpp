@@ -18,22 +18,40 @@
 USING_KANS(GTagML)
 
 
-SDI_Sentence::SDI_Sentence(u4 id)
-  :  id_(id)
+SDI_Sentence::SDI_Sentence(u4 id, SDI_VM_Writer* vm_writer)
+  :  id_(id), vm_writer_(vm_writer)
 {
 }
 
 
-void SDI_Sentence::read_sentence_range(QStringList read_dispatch, QVector<s4> numbers)
+void SDI_Sentence::read_sentence_range_Start(QStringList read_dispatch, QVector<s4> numbers)
 {
-
+ vm_writer_->opstatement_u4s("sdi-sentence-start-pos", numbers);
 }
+
+void SDI_Sentence::read_sentence_range_End(QStringList read_dispatch, QVector<s4> numbers)
+{
+ vm_writer_->opstatement_u4s("sdi-sentence-end-pos", numbers);
+}
+
+void SDI_Sentence::read_sentence_range__End(QStringList read_dispatch, QVector<s4> numbers)
+{
+ vm_writer_->opstatement_u4s("sdi-sentence--end-pos", numbers);
+}
+
 
 
 void SDI_Sentence::read_sentence_text(QStringList read_dispatch)
 {
  if(read_dispatch.takeFirst() == "_end")
-   set_sentence_text(read_dispatch.last());
+ {
+  set_sentence_text(read_dispatch.last().trimmed());
+
+  vm_writer_->write_text_block(sentence_text_);
+  vm_writer_->opstatement_text_block("sdi-sentence-text");
+
+
+ }
 }
 
 void SDI_Sentence::read_sentence_gaps(QStringList read_dispatch)

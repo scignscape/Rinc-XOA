@@ -79,14 +79,24 @@ void SDI_Sentence_Reader::parse_numbers_line(QString field, QString data)
 }
 
 
+void SDI_Sentence_Reader::write_sentence_end()
+{
+
+}
+
 void SDI_Sentence_Reader::parse_colon_line(QString field, QString data)
 {
  if(field == "id")
  {
-  if(current_prelim_ == "Sentence/start")
+  if(current_prelim_ == "Sentence/switch")
+    write_sentence_end();
+
+  if(current_prelim_ == "Sentence/start" || current_prelim_ == "Sentence/switch")
   {
-   sdi_sentences_.push_back(SDI_Sentence(data.simplified().toInt()));
+   sdi_sentences_.push_back(SDI_Sentence(data.simplified().toInt(), &vm_writer_));
    current_sentence_ = &sdi_sentences_.last();
+   vm_writer_.blank_line();
+   vm_writer_.opstatement_u4("sdi-new-sentence", current_sentence_->id());
    return;
   }
  }
@@ -94,6 +104,7 @@ void SDI_Sentence_Reader::parse_colon_line(QString field, QString data)
  read_field(field, data, ".");
 
 }
+
 
 void SDI_Sentence_Reader::parse_data_line(s2 pos, QString line, QString* simpptr)
 {
@@ -186,7 +197,9 @@ void SDI_Sentence_Reader::read_Sentence_field(QString data, QStringList spl, QSt
  static QMap<QString, fn_union> static_map {{
    {"_end.t", { ._dot = &SDI_Sentence::read_sentence_text} },
    {"_end.g", { ._dot = &SDI_Sentence::read_sentence_gaps} },
-   {"start#r", { ._hash =  &SDI_Sentence::read_sentence_range} }
+   {"start#r", { ._hash =  &SDI_Sentence::read_sentence_range_Start} },
+   {"end#r", { ._hash =  &SDI_Sentence::read_sentence_range_End} },
+   {"_end#r", { ._hash =  &SDI_Sentence::read_sentence_range__End} },
    }};
 
  auto it = static_map.find(key);
@@ -257,14 +270,17 @@ void SDI_Sentence_Reader::parse_sdi()
 
 void SDI_Sentence_Reader::parse_pipe_line(QString line)
 {
- pipe_acc_ += line.mid(3);
+// if(!pipe_acc_.isEmpty())
+//   pipe_acc_ += " ";
+
+ pipe_acc_ += line.mid(3) + "\n";
 }
 
 
 void SDI_Sentence_Reader::sdi_check(QString gt_contents, QString out_path)
 {
  parse_sdi();
- KA::TextIO::save_file(out_path, gt_contents);
+ KA::TextIO::save_file(out_path, vm_writer_.vm());
 }
 
 

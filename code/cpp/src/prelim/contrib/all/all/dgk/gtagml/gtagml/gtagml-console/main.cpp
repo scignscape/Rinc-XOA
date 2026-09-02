@@ -58,13 +58,9 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
 
- gdoc->save_pregraph(path + ".pre.gtvm");
+ // gdoc->save_pregraph(path + ".pre.gtvm");
 
- qDebug() << "path = " << path + ".jats";
-
- return; // 0;
-
-
+ gdoc->sdi_check(path + ".sentences.sdi", path + ".sentences.sdi-check.txt");
 }
 
 void _main(QString file, QString folder, QString manfolder)
@@ -96,6 +92,16 @@ void _main(QString file, QString folder, QString manfolder)
 
 
 int main(int argc, char *argv[])
+{
+ QString path = ROOT_FOLDER "/../gt/OrderingConceptualSynthesis/OrderingConceptualSynthesis.gt";
+
+ GTagML_Document* gdoc = new GTagML_Document;
+
+ gdoc->sdi_check(path + ".sentences.sdi", path + ".sentences.sdi-check.txt");
+
+}
+
+int main1(int argc, char *argv[])
 {
  QString folder;
  QString file;

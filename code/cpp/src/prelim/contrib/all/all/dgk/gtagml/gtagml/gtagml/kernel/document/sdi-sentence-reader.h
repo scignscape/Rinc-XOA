@@ -23,6 +23,8 @@
 
 #include "sentences/sdi-sentence.h"
 
+#include "vm/sdi-vm-writer.h"
+
 
 KANS_(GTagML)
 
@@ -56,6 +58,10 @@ class SDI_Sentence_Reader
 
 
  QString current_pipe_field_;
+
+ SDI_VM_Writer vm_writer_;
+
+ void write_sentence_end();
 
 public:
 

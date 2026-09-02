@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.3, 2026-09-01T09:14:53. -->
+<!-- Written by QtCreator 4.13.3, 2026-09-01T20:16:48. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -300,6 +300,7 @@
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/nlevisrael/gits/pnp-dev/rinc-xoa/manuscript-projects/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-6-11-1-GCC_14_Qt6</value>
    </valuemap>

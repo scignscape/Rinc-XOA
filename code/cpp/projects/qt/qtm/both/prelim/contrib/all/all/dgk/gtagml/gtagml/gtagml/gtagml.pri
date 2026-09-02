@@ -43,6 +43,7 @@ HEADERS += \
   $$SRC_DIR/kernel/document/gtagml-project-info.h \
   $$SRC_DIR/kernel/document/sdi-sentence-reader.h \
   $$SRC_DIR/kernel/document/sentences/sdi-sentence.h \
+  $$SRC_DIR/kernel/document/vm/sdi-vm-writer.h \
   $$SRC_DIR/kernel/dominion/connectors.h \
   $$SRC_DIR/kernel/dominion/types.h \
   $$SRC_DIR/kernel/frame/gtagml-frame.h \
@@ -102,6 +103,7 @@ SOURCES += \
   $$SRC_DIR/kernel/document/gtagml-project-info.cpp \
   $$SRC_DIR/kernel/document/sdi-sentence-reader.cpp \
   $$SRC_DIR/kernel/document/sentences/sdi-sentence.cpp \
+  $$SRC_DIR/kernel/document/vm/sdi-vm-writer.cpp \
   $$SRC_DIR/kernel/frame/gtagml-frame.cpp \
   $$SRC_DIR/kernel/grammar/gtagml-grammar.cpp \
   $$SRC_DIR/kernel/grammar/gtagml-parse-state.cpp \
