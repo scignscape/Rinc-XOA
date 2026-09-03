@@ -98,6 +98,13 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 //  parse_state.ell_count(p.match_text().size(), "\\");
  });
 
+ add_rule( gtagml_context, "suppress-latex",
+   " (?<main> <!![\\w()\"-]+!!>) .single-space.* "
+   ,[&]
+ {
+  parse_state.primary_acc(p.matched("main"));
+ });
+
  add_rule( gtagml_context, "suppress-sentence-switch-marker",
    " !(?<postpone> =?)>(?<extra> >?)"
    ,[&]

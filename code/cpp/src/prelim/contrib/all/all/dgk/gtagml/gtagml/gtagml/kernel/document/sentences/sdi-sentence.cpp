@@ -79,6 +79,7 @@ void SDI_Sentence::read_sentence_text(QStringList read_dispatch)
   sentence_text_.replace("-=-", "---");
 
   sentence_text_.replace(QRegularExpression("<!\\((\\d+)\\)!>"), "(\\1)");
+  sentence_text_.replace(QRegularExpression("<!!([\"()\\w-]+)!!>"), "\\1");
 
   vm_writer_->write_text_block(sentence_text_);
   vm_writer_->opstatement_text_block("sdi-sentence-text");

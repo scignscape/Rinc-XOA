@@ -428,6 +428,9 @@ void GTagML_Parse_State::reset_primary()
  QString pa_ref_strip = pa;
  pa_ref_strip.replace(ref_strip, "");
 
+ QRegularExpression more_strip("<!![\"()\\w-]+!!>");
+ pa_ref_strip.replace(more_strip, "");
+
  auto handle_sentences = [this, &pa]()
  {
   QString pa_copy = pa;
@@ -1859,6 +1862,7 @@ void GTagML_Parse_State::hyperlink_1(QString text)
 
 void GTagML_Parse_State::emph_symbolic(QString text)
 {
+ streams_.primary_acc_stream() << "<!!" << text << "!!>";
  reset_primary();
 
  streams_.xml_writer().writeTextElement("eS", text);
@@ -1892,6 +1896,8 @@ void GTagML_Parse_State::emph_acronym(QString text)
 
 void GTagML_Parse_State::enter_double_quote_mode(QString pre)
 {
+ streams_.primary("<!!\"!!>");
+
  reset_primary();
 
  parse_context_.flags.double_quote_mode = true;
@@ -1914,6 +1920,8 @@ void GTagML_Parse_State::enter_double_quote_mode(QString pre)
 
 void GTagML_Parse_State::leave_double_quote_mode()
 {
+ streams_.primary("<!!\"!!>");
+
  reset_primary();
 
  parse_context_.flags.double_quote_mode = false;
