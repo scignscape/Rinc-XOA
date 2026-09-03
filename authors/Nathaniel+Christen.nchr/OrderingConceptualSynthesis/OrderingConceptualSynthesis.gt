@@ -95,7 +95,7 @@ Beatrice photographing colorful birds.
 
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
 accountant with offices facing a financial institution, or otherwise a field clinic 
-established -%>> \clrmAlt{2}{6}`pgl;near 
+established -%>> \clrmAlt{2}{6}`pgl; near 
 a river.  And (10) could describe a baseball collectible or an animal sculpture. 
 I include these for point of comparison.  The ambiguity in the former three pairs, 
 I believe, is */holistic/* and */compositional/* whereas the latter's underdeterminism 
@@ -203,7 +203,7 @@ compositional intent, predicate signification remains underdetermined.
 
 To borrow the apologia from the lexical realm, we'd have to argue that 
 lurking behind any spoken dialect is an idealized language 
-which  -%> \clrmAlt{3}{14}`pgl;"t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
+which  -%>> \clrmAlt{3}{14}`pgl; "t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
 (imagine differentiating a proximate versus distal "m/there/", or abstract versus concrete 
 "m/here/"), 
 conjunctions (cf. "m/and/" as temporal as in "m/John quit his job and moved out of town/", 
@@ -214,7 +214,7 @@ independent quantification; or morphological features on pronouns to
 distinguish verb subjects from objects in anaphoric reference.  
 
 Imagine, that is %-- or so we might be tempted %-- a formal semantics whose basic 
-premises are roughly these:  -%> `vspace<-11pt>;
+premises are roughly these:   => -%> `vspace<-19pt>;
 
 %/  enums
  1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.  
@@ -431,7 +431,7 @@ how purely biological phenomena can give rise to subjective
 "t/first-personal/" states and awareness [/JiriBenovsky/], [/DavidJChalmers/],
 [/FranciscoVarela/], [/DanZahavi/].  Some philosophers 
 apparently minimize this gap by construing consciousness as epiphenomenal, 
-ontologically -%> \clrmAlt{5}{29}`pgl; separated from the primary functional structures 
+ontologically -%>> \clrmAlt{5}{29}`pgl; separated from the primary functional structures 
 of cognition [/JKim:7/], [/MarekPokropski/], 
 [/RobertDRupert/].  However, the 
 nature of consciousness */per se/* clearly 
@@ -690,7 +690,7 @@ and cognitive linguistics.
 
 Similar to the controversial status of first-person reports 
 `visavis; theoretical confirmability/falsifiability, the 
-linguistics community -%> \clrmAlt{7}{41}`pgl; is divided over the value of 
+linguistics community -%>> \clrmAlt{7}{41}`pgl; is divided over the value of 
 analyses based on subjective assessments of 
 acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/].   
 It is, of course, common for linguists of multiple persuasions 
@@ -716,7 +716,7 @@ less than claims warranted by more empirical measures.
 In one discussion that elucidates metascientific 
 background for syntactic theory, Hubert Kowalewski 
 presents the work of Ronald Langacker, and by extension 
-Cognitive Grammar overall, in terms of "/Structural Empiricism/":  -%> `upAdj<3pt>;
+Cognitive Grammar overall, in terms of "/Structural Empiricism/":   => -%> `upAdj<3pt>;
 
 %/ block
 `clrmBlockQuote<i>;Viewed through the lens of structural empiricism, Cognitive Grammar
@@ -755,7 +755,7 @@ over subjective states provide convincing accounts of observed
 behavior (in this case, linguistic performance), then the first-personal 
 realm should be judged scientifically legitimate as a kind of "t/hidden variables/" 
 dimension.  Specifically in regard to ad-hoc sentence 
-examples, he argues as follows:  -%> `upAdj<7pt>;
+examples, he argues as follows:   => -%> `upAdj<7pt>;
 
 %/ block
 `clrmBlockQuote<i>;The linguistic material analyzed in many !...! texts [is] constructed 
@@ -801,7 +801,7 @@ and point out where pragmatic interpretation is needed.  Constructed
 sentences may or may not conform to English grammar, 
 but at least the question of whether they do so is 
 well-posed.  Even */imagined/* speech 
--%> \clrmAlt{8}{45}`pgl; is grammatical (or not).    
+-%>> \clrmAlt{8}{45}`pgl; is grammatical (or not).    
 We can label syntactic categories; track 
 pronoun-antecedent pairings and singular or plural alignment; observe
 how inflections indicate verb-tense; and etc.: minimal operations in the
@@ -921,7 +921,7 @@ environments to framings of states of affairs
 in communicable ways, then actual speech-production.  
 Basic organizational principles migrate from one to 
 the other, such that cognitive-perceptual structures 
-(attentional foci, -%> \clrmAlt{9}{51}`pgl; say) become manifest, 
+(attentional foci, -%>> \clrmAlt{9}{51}`pgl; say) become manifest, 
 within communicative intent and staging, as 
 linguistic phenomena (e.g., that to which 
 I can perceptually attend becomes a noun; attributes 
@@ -1047,26 +1047,26 @@ little deeper.  Consider a full sentence:
 /+
 
 It's easy to destructure this into a union of concepts where 
-each word makes a distinct contribution.  Here are a few: 
+each word makes a distinct contribution.  Here are a few:  =>
 
 %/ itemz
 
- *  `underline<tin>; box `sarr; -%> \clrmAltSub{10}{60}{a}`pgl; provides insight 
+ *  <!!tin!!> `underline<tin>; box `sarr; -%>> \clrmAltSub{10}{60}{a}`pgl; provides insight 
 into how the box will look, and 
 feel to the touch, and how to open it
 
- *  `underline<red>; tin box `sarr;  the color helps one find it amidst other objects
+ *  <!!red!!> `underline<red>; tin box `sarr;  the color helps one find it amidst other objects
 
- *  `underline<this>; red tin box `sarr;  invites the hearer to focus on something proximate 
+ *  <!!this!!> `underline<this>; red tin box `sarr;  invites the hearer to focus on something proximate 
 to the speaker; deictic augments descriptive reference
 
- *  `underline<in>; this red tin box `sarr;  draws attention to the interior, with its functional 
+ *  <!!in!!> `underline<in>; this red tin box `sarr;  draws attention to the interior, with its functional 
 affordance of holding and storing contents
 
- *  `underline<chocolate>; brownies `sarr;  "/chocolate/" adds detail relevant to whether the 
+ *  <!!chocolate!!> `underline<chocolate>; brownies `sarr;  "/chocolate/" adds detail relevant to whether the 
 hearer will want to eat them
 
- *  `underline<Mom's>; chocolate brownies `sarr;  helps anchor the referent in situations 
+ *  <!!Mom's!!> `underline<Mom's>; chocolate brownies `sarr;  helps anchor the referent in situations 
 known to the listener (insofar as the brownies are not otherwise identified); 
 viz., Mom made them, and this fact is known to the listener.  On an alternative interpretation, 
 the brownies are */for/* Mom, but this is less likely in context.
@@ -1178,7 +1178,7 @@ then via further processing the staged image settles
 back into a stable unity.  The formal construct 
 of adjectives mapping nouns to nouns captures the 
 surface-level manifestation of a churning cognitive 
-underground, -%> \clrmAlt{11}{67}`pgl; where intellectual labor is expended in  
+underground, -%>> \clrmAlt{11}{67}`pgl; where intellectual labor is expended in  
 forming, altering (by assimilating new detail), and 
 re-establishing static precursor-images.  Similarly, propositions 
 have a kind of situational stasis %-- representations of 
@@ -1210,7 +1210,7 @@ The most common structure in such a language would be expressions consisting of 
 symbol and one or more "t/arguments/".  The */interpreter/* 
 that would execute programs written in the language is essentially 
 a state machine, reading a sequence of symbols 
-in turn.  Assume the following basic operations:  -%> `upAdj<4pt>;
+in turn.  Assume the following basic operations:   => -%> `upAdj<4pt>;
 
 %/ enums
 
@@ -1292,7 +1292,7 @@ algorithms (e.g., push/transfer) can be adopted to parse graphs.
 Type-checking may be described as a graph-traversal 
 strategy where the "t/program stack/" holds types rather 
 than concrete values.  Assuming 
-polymorphism, -%> \clrmAlt{12}{73}`pgl; a type-checker 
+polymorphism, -%>> \clrmAlt{12}{73}`pgl; a type-checker 
 must confirm that, given any stack-state with a 
 procedure symbol on top, there is a unique implementation 
 whose parameter-types match those symbolized lower on the stack 
@@ -1415,7 +1415,7 @@ I've outlined.  -%> `upAdj<19pt>;
 
 First, my discussion has implied that word-order and associated 
 sentence properties, such as phrase-structure, are logically 
-fixed.  -%> \clrmAlt{13}{80}`pgl; That 
+fixed.  -%>> \clrmAlt{13}{80}`pgl; That 
 may be true in some sentences, but one might find 
 counter-examples.  I will examine:
 
@@ -1545,7 +1545,7 @@ on motives or context).  Verbs have implicit
 "h/slots/" for such variegated thematic roles, and by observing 
 the particular slot slated for a given word (via theta formations) 
 or phrases (via case-marking; particularly, in English, leading 
-prepositions) -%> \clrmAltSub{14}{85}{b}`pgl; we identify 
+prepositions) -%>> \clrmAltSub{14}{85}{b}`pgl; we identify 
 the intended role for the constituent [/LucasChampollion/].  (Philosophically, 
 the concept of a phrase itself may be emergent/derivative.)
 
@@ -1668,7 +1668,7 @@ share agent and theme/role structures, on a vaguely "/Neo-Davidsonian/" event
 semantics [/HarryBunt/].  
 Conceptual integration is in some sense an 
 intellectual procedure %-- "t/computing/" in the 
-domain -%> \clrmAlt{15}{92}`pgl; of conceptual staging and proto-images, if we don't take the mind/machine 
+domain -%>> \clrmAlt{15}{92}`pgl; of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and 
 language-users deploy background knowledge 
 to "h/execute/" such scripts in comunally-sanctioned ways. 
@@ -1783,7 +1783,7 @@ concepts */box/* and */red/*.  If we then analyze this
 signification as, say, the set of things that are both 
 red and boxes, then such a construction might be 
 theoretical progress if we had some literal engineering 
-whereby words reference sets.  -%> \clrmAlt{16}{100}`pgl;However, 
+whereby words reference sets.  -%>> \clrmAlt{16}{100}`pgl; However, 
 if we accept set-theoretic 
 language in just a metaphoric way, describing 
 "/red box/" as the intersection `redbox; merely restates what 
@@ -1914,7 +1914,7 @@ are the sentence's point or preambles to some further
 comment, suggestion or request %-- and moreover 
 encode speaker-relative perspectives and foreknowledge that 
 clarify their origins.  This 
-epistemics-oriented -%> \clrmAlt{17}{107}`pgl; disclosure 
+epistemics-oriented -%>> \clrmAlt{17}{107}`pgl; disclosure 
 emerges from the overall regimes of subjectification and 
 cognitive linguistic processing. 
 
@@ -2034,7 +2034,7 @@ people in social, embodied, personalistic life-worlds.
 Such an approach would be only tangentially a 
 */natural/* science %-- the physicalistic 
 intuitions that lend systematicity 
-and -%> \clrmAlt{18}{115}`pgl;disputative structure to studies of nature 
+and -%>> \clrmAlt{18}{115}`pgl; disputative structure to studies of nature 
 would, in this context, dilute rather than 
 guarantee explanatory rigor.  Endorsing  
 phenomenology as an alternative foundation, 

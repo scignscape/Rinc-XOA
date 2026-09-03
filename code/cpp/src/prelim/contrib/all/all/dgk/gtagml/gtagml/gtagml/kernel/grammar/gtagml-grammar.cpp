@@ -99,7 +99,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
  });
 
  add_rule( gtagml_context, "suppress-latex",
-   " (?<main> <!![\\w()\"-]+!!>) .single-space.* "
+   " (?<main> <!![\"'\\w()-]+!!>) .single-space.* "
    ,[&]
  {
   parse_state.primary_acc(p.matched("main"));
