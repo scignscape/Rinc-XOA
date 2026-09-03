@@ -93,10 +93,9 @@ it seems as if Ariel's hands were shaking/".
 Nor can we entirely disregard a scenario for (8) where Ariel takes a picture of 
 Beatrice photographing colorful birds.
 
-
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
 accountant with offices facing a financial institution, or otherwise a field clinic 
-established  -%> \clrmAlt{2}{6}`pgl;near 
+established -%>> \clrmAlt{2}{6}`pgl;near 
 a river.  And (10) could describe a baseball collectible or an animal sculpture. 
 I include these for point of comparison.  The ambiguity in the former three pairs, 
 I believe, is */holistic/* and */compositional/* whereas the latter's underdeterminism 
@@ -161,9 +160,8 @@ expresses beliefs via narrativizing constructions or metaphors like
 "/slipping away/" and "/student after student/" %-- or so I claim %-- this 
 `makebox<aspect of discourse>; cannot be adequately captured via formulaic logic.
 
-
-Cumulatively, then, I believe that sentences `onethrft; offer examples 
-of two issues for formal semantics: `vspace<5pt>;
+Cumulatively, then, I believe that sentences <!!(1)-(14)!!> `onethrft; offer examples 
+of two issues for formal semantics:  => -%> `vspace<5pt>;
 
 %/ enums
  1.  While assertion (or implicature) of some proposition @/P  
@@ -188,7 +186,7 @@ need not progress to */sentence-level/* ambiguity.
 
 However, the */lexical/* underdeterminacy of "/dresser/" or "/bat/"  
 is a purely local phenomenon that can't be equated with more holistic 
-examples such as `onethrn;.  To put it differently, 
+examples such as <!!(1)-(9)!!> `onethrn;.  To put it differently, 
 it's credible to imagine homonyms like "/dresser/"  
 as surface-level accidents, artifacts of random drift in usage, borrowings, or 
 accent, masking a lexical 
@@ -200,7 +198,7 @@ function via composition: as words signify concepts, so sentences
 convey propositional content because they merge concepts according 
 to specific recipes (syntax matters because multi-concept complexes 
 are not just unstructured "t/bags/": the king loves the queen versus vice-versa).  
-I argue from cases like `onethrft; that even after fully digesting 
+I argue from cases like <!!(1)-(14)!!> `onethrft; that even after fully digesting 
 compositional intent, predicate signification remains underdetermined.
 
 To borrow the apologia from the lexical realm, we'd have to argue that 
@@ -215,10 +213,11 @@ on words like "m/all/" to distinguish crisp from fuzzy domains, or nested from
 independent quantification; or morphological features on pronouns to 
 distinguish verb subjects from objects in anaphoric reference.  
 
-Imagine, that is %-- or so we might be tempted %-- a formal semantics whose basic premises are roughly these: `vspace<-22pt>;
+Imagine, that is %-- or so we might be tempted %-- a formal semantics whose basic 
+premises are roughly these:  -%> `vspace<-11pt>;
 
 %/  enums
- 1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts. !>
+ 1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.  
  2.  Behind any actual language is an idealized language wherein sentences denote 
 structured propositions via compositional maxims, themselves encoded through 
 syntactic conventions and the semantic properties of specific word-classes 
@@ -242,7 +241,7 @@ project, which is to describe the rules of the latter.
 I contend that paradigms authorizing linguists and philosophers to 
 imagine such ideal languages lead us 
 to underestimate the theoretical dependence of linguistics 
-on other disciplines.  By way of example, sentences `onethrft; imply 
+on other disciplines.  By way of example, sentences <!!(1)-(14)!!> `onethrft; imply 
 that the specific @/P derived from an @/S 
 depends (in part) on addressees' rational acts that aren't linguistic 
 in nature.  The reason why quantifier scope is nested in (4) but not (3) is that 
@@ -260,7 +259,7 @@ merely bridging a gap between real and ideal language, by analogy to
 real and ideal dictionaries (where each distinct word-sense might 
 be marked in some disambiguating manner).  This isn't only an 
 issue of pragmatic context guiding inference of one word-sense 
-or another.  -%> clrmr{3}{17} Cognition plays a more holistic role, such that 
+or another.  -%> \clrmr{3}{17} Cognition plays a more holistic role, such that 
 any */compositional/* determination depends, in general, 
 on a case-by-case admixture of linguistic and extralinguistic reasoning. 
 Even when "i/the meaning of a 
@@ -717,7 +716,7 @@ less than claims warranted by more empirical measures.
 In one discussion that elucidates metascientific 
 background for syntactic theory, Hubert Kowalewski 
 presents the work of Ronald Langacker, and by extension 
-Cognitive Grammar overall, in terms of "/Structural Empiricism/": -%> `upAdj<3pt>;
+Cognitive Grammar overall, in terms of "/Structural Empiricism/":  -%> `upAdj<3pt>;
 
 %/ block
 `clrmBlockQuote<i>;Viewed through the lens of structural empiricism, Cognitive Grammar
@@ -756,7 +755,7 @@ over subjective states provide convincing accounts of observed
 behavior (in this case, linguistic performance), then the first-personal 
 realm should be judged scientifically legitimate as a kind of "t/hidden variables/" 
 dimension.  Specifically in regard to ad-hoc sentence 
-examples, he argues as follows: -%> `upAdj<7pt>;
+examples, he argues as follows:  -%> `upAdj<7pt>;
 
 %/ block
 `clrmBlockQuote<i>;The linguistic material analyzed in many !...! texts [is] constructed 
@@ -850,7 +849,7 @@ and phenomenology.  Relatedly, the "t/demarcation problem/"
 pair of hypothetical utterances:
 
 %/ exs
-(1)  John poured water onto the stove.
+(1)  John poured water onto the stove. !>
 (2)  John spilled water onto the stove.
 /+
 
@@ -1211,7 +1210,7 @@ The most common structure in such a language would be expressions consisting of 
 symbol and one or more "t/arguments/".  The */interpreter/* 
 that would execute programs written in the language is essentially 
 a state machine, reading a sequence of symbols 
-in turn.  Assume the following basic operations: -%> `upAdj<4pt>;
+in turn.  Assume the following basic operations:  -%> `upAdj<4pt>;
 
 %/ enums
 
@@ -1409,7 +1408,7 @@ grounding syntactic theory on cognitive optimization
 series of disciplinary warrants against the paradigms 
 of phenomenology.  However, I feel there are two 
 issues to address that could complicate the picture 
-I've outlined.  -%> `upAdj<10pt>;
+I've outlined.  -%> `upAdj<19pt>;
 
 
 // //

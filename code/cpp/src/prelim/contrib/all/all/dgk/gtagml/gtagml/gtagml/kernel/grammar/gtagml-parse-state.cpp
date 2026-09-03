@@ -624,6 +624,7 @@ void GTagML_Parse_State::leave_sentences_only(QString close, QString post_space)
 void GTagML_Parse_State::force_switch_sentence()
 {
  end_sentence("");
+ streams_.latex_stream() << "\\>";
 }
 
 void GTagML_Parse_State::force_end_sentence_mark(QString follow)
