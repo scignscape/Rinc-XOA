@@ -1,6 +1,7 @@
 
 />>
 
+
 %. Abstract
 
 `noindent;`pgl;This paper examines methodological foundations for 
@@ -67,7 +68,7 @@ as two cardinals flew by. -%> `vfillnulleject;(`vspace*.4.5pt`)`enlargethispage<
 (10)  On the mantle was a wooden bat.
 /+
 
-Each -%> \clrmrAlt{1}{3}{} pair shows interpretive reliance on extra-linguistic 
+Each -%>> \clrmrAlt{1}{3}{} pair shows interpretive reliance on extra-linguistic 
 reasoning.  The situation in (3) and (4) is quantifier scope: assuming (3) discusses some 
 musical performance, it would be abnormal for everyone in the audience to individually choose 
 exactly three songs to sing along with.  Hence, we can assume that, among all songs 
@@ -128,7 +129,7 @@ gloss would not fully capture the communicated content of a given statement.  Co
 (14)  Student after student came by to complain about the reading assignments.
 /+
 
-Notice how (13) and (14) subtlely explicate warrants as well as assert beliefs.  
+Notice how (13) and (14) subtly explicate warrants as well as assert beliefs.  
 The metaphor of "m/slipping away/" connotes a 
 gradual process that the speaker has observed over an extended period of time.  Similarly, 
 (14) suggests multiple similar episodes that collectively motivate the enunciated, 
@@ -151,7 +152,7 @@ However, the resources a speaker has for expressing the backstory of their
 propositional attitudes span a wide spectrum of connotations and experiences, 
 and I'd argue that there is no logical system that could precisely model 
 all ways that language-users characterize how one belief compels 
-or reinforces another.   -%> \clrmr{2}{10}Most usage embeds propositions not in 
+or reinforces another.  -%> \clrmr{2}{10} Most usage embeds propositions not in 
 chains of deductive reasoning but rather in narrative presentations 
 that reflect perspectives, the interlocking of situations, and 
 in general the somewhat informal manner by which 
@@ -373,7 +374,7 @@ account of the universe in that moment needs to recognize such
 work of mind as part of the causal background for the ball's 
 trajectory.`)`condenlargepage<2em>;  Complex systems may not introduce new forms of matter or energy 
 (existents with spacetime extension and causative influence), 
-or new forces beyond those physicists -%> \clrmr{4}{25} recognize 
+or new forces beyond those physicists -%>> \clrmr{4}{25} recognize 
 %-- e.g., `visavis; Philosophy of Mind, first-person consciousness 
 is not a redoubt of dualism or magic %-- but they 
 still deserve specialized descriptive and theory-semantic regimens.
@@ -859,7 +860,7 @@ one or the other, the speaker implicitly expresses beliefs about
 John's mental state; such choice-effects are cued by the lexical contrast 
 between the two verbs.  The 
 sentence is not merely notating observable details: choice of words can 
-encode -%> \clrmrAlt{8}{48}{a}information about the speaker's 
+encode -%>> \clrmrAlt{8}{48}{a} information about the speaker's 
 epistemic starting-point.  This phenomenon 
 is nicely illustrated in (1) and (2), constructed or not.  
 
@@ -961,11 +962,11 @@ key questions: how this "t/pointing/" works; and how
 */concepts/* are combined.
 
 A good example of formal answers to the second question is 
-`Boltetal; [/Bolt/], based on Peter `Gardenfors;'s Conceptual Space 
+<!!Bolt et. al.!!> `Boltetal; [/Bolt/], based on Peter <!!Gardenfors!!> `Gardenfors;'s Conceptual Space 
 theory, alongside a syntactic approach related to Categorial Grammar 
 and mathematical Category Theory.  Consider "t/red box/", and 
 (for sake of argument, although this deviates from the 
-specifics of `Gardenfors;-inspired work on conceptualization) 
+specifics of <!!Gardenfors!!> `Gardenfors;-inspired work on conceptualization) 
 define the concepts set-theoretically: 
 */red/* means the set of red things; */box/* means the set of 
 boxes (or box-like things).  Combining the concepts yields 
@@ -980,12 +981,12 @@ depends not just on mapping the two */words/* but also
 mapping the intra-Category */morphisms/* to each other (adjacency 
 projects to set-intersection).
 
-`Boltetal; generalize this kind of insight by proposing  
+<!!Bolt et. al.!!> `Boltetal; generalize this kind of insight by proposing  
 Categories (in the mathematical sense) for syntax and semantics, 
 with */lexical/* word-meanings serving as maps (technically 
 */functors/*) from one to the other.  Because functors 
 project "t/morphisms/" (transforms */in/* Categories) from one Category 
-to another, -%> \clrmr{9}{46} assemblies of syntactic operations 
+to another, -%>> \clrmr{9}{46} assemblies of syntactic operations 
 project onto semantic/conceptual structures systematically, 
 extending the lexicon-to-concept functor to aggregate 
 phrases.  In other words, we can give a mathematical gloss 
@@ -1004,7 +1005,7 @@ results can be based on alternative "/amalgram/"
 models; */cf./* [/Schorlemmeretal/]).  
 I am not convinced of the explanatory value of 
 quasi-mathematical treatments for concepts, such as 
-advanced by `Gardenfors; (such criteria as "t/convexivity/" 
+advanced by <!!Gardenfors!!> `Gardenfors; (such criteria as "t/convexivity/" 
 feel forced to me, outside special contexts like color terms).  
 Nonetheless, `Boltetal; codify what a formal engagement 
 between semantics and syntax should look for: having determined 
@@ -1051,25 +1052,25 @@ each word makes a distinct contribution.  Here are a few:  =>
 
 %/ itemz
 
- *  <!!tin!!> `underline<tin>; box `sarr; -%>> \clrmAltSub{10}{60}{a}`pgl; provides insight 
+ *  <!!tin!!> `underline<tin>; box <!!->!!> `sarr; -%>> \clrmAltSub{10}{60}{a}`pgl; provides insight 
 into how the box will look, and 
-feel to the touch, and how to open it
+feel to the touch, and how to open it =>
 
- *  <!!red!!> `underline<red>; tin box `sarr;  the color helps one find it amidst other objects
+ *  <!!red!!> `underline<red>; tin box <!!->!!> `sarr;  the color helps one find it amidst other objects =>
 
- *  <!!this!!> `underline<this>; red tin box `sarr;  invites the hearer to focus on something proximate 
-to the speaker; deictic augments descriptive reference
+ *  <!!this!!> `underline<this>; red tin box <!!->!!> `sarr;  invites the hearer to focus on something proximate 
+to the speaker; deictic augments descriptive reference =>
 
- *  <!!in!!> `underline<in>; this red tin box `sarr;  draws attention to the interior, with its functional 
-affordance of holding and storing contents
+ *  <!!in!!> `underline<in>; this red tin box <!!->!!> `sarr;  draws attention to the interior, with its functional 
+affordance of holding and storing contents =>
 
- *  <!!chocolate!!> `underline<chocolate>; brownies `sarr;  "/chocolate/" adds detail relevant to whether the 
-hearer will want to eat them
+ *  <!!chocolate!!> `underline<chocolate>; brownies <!!->!!> `sarr;  "/chocolate/" adds detail relevant to whether the 
+hearer will want to eat them =>
 
- *  <!!Mom's!!> `underline<Mom's>; chocolate brownies `sarr;  helps anchor the referent in situations 
+ *  <!!Mom's!!> `underline<Mom's>; chocolate brownies <!!->!!> `sarr;  helps anchor the referent in situations 
 known to the listener (insofar as the brownies are not otherwise identified); 
 viz., Mom made them, and this fact is known to the listener.  On an alternative interpretation, 
-the brownies are */for/* Mom, but this is less likely in context.
+the brownies are */for/* Mom, but this is less likely in context. 
 
 /
 
@@ -1242,7 +1243,7 @@ may serve as inputs to later subroutines).
 For sake of discussion, I will call this a "t/push/transfer/" execution 
 model, given the two main operations (pushing a value, or transferring 
 control).  While this account is too simplistic for practical computer 
-languages, -%> \clrmrAlt{11}{69}{a}it serves 
+languages, -%>> \clrmrAlt{11}{69}{a} it serves 
 as a useful case-study for real-world compilers.
 
 Among the added complications relevant to a real-world push/transfer 
@@ -1717,7 +1718,7 @@ Metaphorical uses also exist (the idiom "m/not on the menu/"
 extends beyond food), but that is merely one of innumerable examples 
 of metaphoric word-sense that abstracts from concrete 
 "/socialized/" usage properly modeled via something like an 
-"t/interface theory/" of meaning. `vspace<-1.4em>;
+"t/interface theory/" of meaning.  `vspace<-1.4em>;
 
 // //
       
@@ -1832,7 +1833,7 @@ to sentences about referents that exist in multiple strata:
 (1)  That newspaper [pointing to a table] just moved to 10th street 
 and laid off half its staff.
 (2)  At home you can print out this book from a ;/PDF/ link.
-(3)  The borough of Queens voted heavily for Mamdani. -%> `vspace<2pt>;  
+(3)  The borough of Queens voted heavily for Mamdani.  -%> `vspace<2pt>;  
 /+
 
 Also, apparent region violations drive many functional metaphors:

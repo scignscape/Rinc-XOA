@@ -31,6 +31,8 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
  pre_rule( "end-of-line", "[__\\t\\S]* \\n" );
  pre_rule( "single-space", "[__\\t]" );
 // pre_rule( "single-dot", "[.]" );
+ pre_rule( "dot-in-character-class", "." );
+ pre_rule( "ss-in-character-class", "__" );
 
  pre_rule( "blank-line-content", "[__\\t]* \\n" );
 
@@ -99,10 +101,11 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
  });
 
  add_rule( gtagml_context, "suppress-latex",
-   " (?<main> <!![\"'\\w()-]+!!>) .single-space.* "
+   " (?<main> <!! (?: [\"'>=+*.dot-in-character-class.\\w()-] | .single-space.)+ !!>) .single-space.* "
    ,[&]
  {
-  parse_state.primary_acc(p.matched("main"));
+  QString m = p.matched("main");
+  parse_state.primary_acc(m);
  });
 
  add_rule( gtagml_context, "suppress-sentence-switch-marker",

@@ -428,7 +428,7 @@ void GTagML_Parse_State::reset_primary()
  QString pa_ref_strip = pa;
  pa_ref_strip.replace(ref_strip, "");
 
- QRegularExpression more_strip("<!![\"'()\\w-]+!!>");
+ QRegularExpression more_strip("<!![\"'>=+*. ()\\w-]+!!>");
  pa_ref_strip.replace(more_strip, "");
 
  auto handle_sentences = [this, &pa]()

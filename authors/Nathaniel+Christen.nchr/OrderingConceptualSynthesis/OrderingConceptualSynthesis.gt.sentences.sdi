@@ -10,7 +10,7 @@ id: 0
 
 --- Sentence//end
 id: 0
-r#  154  8  22
+r#  155  9  22
 p: .
 t. 
 |  This paper examines methodological foundations for
@@ -20,12 +20,12 @@ t.
 
 --- Sentence/switch
 id: 1
-r#  155  8  23
+r#  156  9  23
 
 
 --- Sentence//end
 id: 1
-r#  315  11  36
+r#  316  12  36
 p: .
 t. 
 |   I argue for explanatory
@@ -36,12 +36,12 @@ t.
 
 --- Sentence/switch
 id: 2
-r#  316  11  37
+r#  317  12  37
 
 
 --- Sentence//end
 id: 2
-r#  595  17  14
+r#  596  18  14
 p: .
 t. 
 |   In lieu
@@ -55,12 +55,12 @@ t.
 
 --- Sentence/switch
 id: 3
-r#  596  17  15
+r#  597  18  15
 
 
 --- Sentence//end
 id: 3
-r#  867  22  45
+r#  868  23  45
 p: .
 t. 
 |   In particular, I emphasize how
@@ -72,7 +72,7 @@ t.
 
 --- Sentence/end 
 id: 3
-r#  868  22  46
+r#  869  23  46
 
 --- Paragraph/end 
 id: 0
@@ -87,16 +87,16 @@ y: Abstract
 
 --- Paragraph/start
 id: 1
-r#  891  27  1
+r#  892  28  1
 
 
 --- Sentence/start
 id: 4
-r#  891  27  1
+r#  892  28  1
 
 --- Sentence//end
 id: 4
-r#  1076  29  10
+r#  1077  30  10
 p: .
 t. 
 |  It is clearly true that an important part of human language is governed by rules or
@@ -106,12 +106,12 @@ t.
 
 --- Sentence/switch
 id: 5
-r#  1077  29  11
+r#  1078  30  11
 
 
 --- Sentence//end
 id: 5
-r#  1381  32  73
+r#  1382  33  73
 p: .
 t. 
 |   And yet, language was not designed by committee: claiming that a
@@ -122,12 +122,12 @@ t.
 
 --- Sentence/switch
 id: 6
-r#  1382  32  74
+r#  1383  33  74
 
 
 --- Sentence//end
 id: 6
-r#  1447  33  59
+r#  1448  34  59
 p: .
 t. 
 |   The
@@ -135,7 +135,7 @@ t.
 
 --- Sentence/end 
 id: 6
-r#  1448  33  60
+r#  1449  34  60
 
 --- Paragraph/end 
 id: 1
@@ -144,16 +144,16 @@ y: N/A
 
 --- Paragraph/start
 id: 2
-r#  1452  35  1
+r#  1453  36  1
 
 
 --- Sentence/start
 id: 7
-r#  1452  35  1
+r#  1453  36  1
 
 --- Sentence//end
 id: 7
-r#  1501  36  29
+r#  1502  37  29
 p: .
 t. 
 |  Plus, we should not
@@ -162,16 +162,16 @@ t.
 
 --- Sentence/switch
 id: 8
-r#  1502  36  30
+r#  1503  37  30
 
 
 --- Sentence//end
 id: 8
-r#  1719  43  1
+r#  1720  44  1
 g. 
-|   @l(-%>) +1671/42/1
-|   +1718/42/48:43=1761/43/43
-.   @l() -1718/42/48
+|   @l(-%>) +1672/43/1
+|   +1719/43/48:43=1762/44/43
+.   @l() -1719/43/48
 p: 
 t. 
 |   That a bachelor is an unmarried man, for example,
@@ -182,12 +182,12 @@ t.
 
 --- Sentence/switch
 id: 9
-r#  1722  43  4
+r#  1723  44  4
 
 
 --- Sentence//end
 id: 9
-r#  1809  44  1
+r#  1810  45  1
 p: 
 t. 
 |   My brother has been married for 10 years, but in many ways he's still a bachelor. {\sssm}
@@ -196,12 +196,12 @@ t.
 
 --- Sentence/switch
 id: 10
-r#  1812  44  4
+r#  1813  45  4
 
 
 --- Sentence//end
 id: 10
-r#  1868  44  60
+r#  1869  45  60
 p: .
 t. 
 .   All of the eligible bachelors in this town are married
@@ -209,12 +209,12 @@ t.
 
 --- Sentence/switch
 id: 11
-r#  1869  44  61
+r#  1870  45  61
 
 
 --- Sentence//end
 id: 11
-r#  2133  50  26
+r#  2134  51  26
 p: .
 t. 
 |  
@@ -225,7 +225,7 @@ t.
 
 --- Sentence/end 
 id: 11
-r#  2134  50  27
+r#  2135  51  27
 
 --- Paragraph/end 
 id: 2
@@ -234,16 +234,16 @@ y: N/A
 
 --- Paragraph/start
 id: 3
-r#  2138  52  1
+r#  2139  53  1
 
 
 --- Sentence/start
 id: 12
-r#  2138  52  1
+r#  2139  53  1
 
 --- Sentence//end
 id: 12
-r#  2260  56  1
+r#  2261  57  1
 p: 
 t. 
 |  To motivate further discussion about the limits of linguistic
@@ -252,12 +252,12 @@ t.
 
 --- Sentence/switch
 id: 13
-r#  2263  56  4
+r#  2264  57  4
 
 
 --- Sentence//end
 id: 13
-r#  2304  57  1
+r#  2305  58  1
 p: 
 t. 
 |   Everyone sang along to three songs. {\sssm}
@@ -266,12 +266,12 @@ t.
 
 --- Sentence/switch
 id: 14
-r#  2307  57  4
+r#  2308  58  4
 
 
 --- Sentence//end
 id: 14
-r#  2357  57  54
+r#  2358  58  54
 p: .
 t. 
 .   All appeals are heard by a panel of three judges
@@ -279,7 +279,7 @@ t.
 
 --- Sentence//end
 id: 14
-r#  2360  59  1
+r#  2361  60  1
 p: 
 t. 
 .  
@@ -287,12 +287,12 @@ t.
 
 --- Sentence/switch
 id: 15
-r#  2363  59  4
+r#  2364  60  4
 
 
 --- Sentence//end
 id: 15
-r#  2414  60  1
+r#  2415  61  1
 p: 
 t. 
 |   All New Yorkers live in one of five boroughs. {\sssm}
@@ -301,12 +301,12 @@ t.
 
 --- Sentence/switch
 id: 16
-r#  2417  60  4
+r#  2418  61  4
 
 
 --- Sentence//end
 id: 16
-r#  2495  60  82
+r#  2496  61  82
 p: .
 t. 
 .   All New Yorkers complain about how long it takes to commute to New York City
@@ -314,7 +314,7 @@ t.
 
 --- Sentence//end
 id: 16
-r#  2498  62  1
+r#  2499  63  1
 p: 
 t. 
 .  
@@ -322,12 +322,12 @@ t.
 
 --- Sentence/switch
 id: 17
-r#  2501  62  4
+r#  2502  63  4
 
 
 --- Sentence//end
 id: 17
-r#  2554  63  1
+r#  2555  64  1
 p: 
 t. 
 |   In Ariel's picture of Beatrice, she looks sick. {\sssm}
@@ -336,20 +336,20 @@ t.
 
 --- Sentence/switch
 id: 18
-r#  2557  63  4
+r#  2558  64  4
 
 
 --- Sentence//end
 id: 18
-r#  2705  66  1
+r#  2706  67  1
 g. 
-|   @l(-%>) +2643/64/26
-|   +2648/64/31:0=2648/64/31
-|   +2664/64/47:0=2664/64/47
-|   +2679/64/62:5=2684/64/67
-|   +2681/64/64:0=2681/64/64
-|   +2703/64/86:0=2703/64/86
-.   @l() -2703/64/86
+|   @l(-%>) +2644/65/26
+|   +2649/65/31:0=2649/65/31
+|   +2665/65/47:0=2665/65/47
+|   +2680/65/62:5=2685/65/67
+|   +2682/65/64:0=2682/65/64
+|   +2704/65/86:0=2704/65/86
+.   @l() -2704/65/86
 p: 
 t. 
 |   In Ariel's picture of Beatrice, she snapped the lens just
@@ -358,12 +358,12 @@ t.
 
 --- Sentence/switch
 id: 19
-r#  2708  66  4
+r#  2709  67  4
 
 
 --- Sentence//end
 id: 19
-r#  2740  67  1
+r#  2741  68  1
 p: 
 t. 
 |   We operated near the bank. {\sssm}
@@ -372,12 +372,12 @@ t.
 
 --- Sentence/switch
 id: 20
-r#  2744  67  5
+r#  2745  68  5
 
 
 --- Sentence//end
 id: 20
-r#  2776  67  37
+r#  2777  68  37
 p: .
 t. 
 .   On the mantle was a wooden bat
@@ -385,16 +385,16 @@ t.
 
 --- Sentence/switch
 id: 21
-r#  2777  67  38
+r#  2778  68  38
 
 
 --- Sentence//end
 id: 21
-r#  2873  71  10
+r#  2874  72  10
 g. 
-|   @l(-%>>) +2786/70/5
-|   +2809/70/28:17=2826/70/45
-.   @l() -2809/70/28
+|   @l(-%>>) +2787/71/5
+|   +2810/71/28:17=2827/71/45
+.   @l() -2810/71/28
 p: .
 t. 
 |  
@@ -404,12 +404,12 @@ t.
 
 --- Sentence/switch
 id: 22
-r#  2874  71  11
+r#  2875  72  11
 
 
 --- Sentence//end
 id: 22
-r#  3088  73  39
+r#  3089  74  39
 p: .
 t. 
 |   The situation in <!(3)!> and <!(4)!> is quantifier scope: assuming <!(3)!> discusses some
@@ -419,12 +419,12 @@ t.
 
 --- Sentence/switch
 id: 23
-r#  3089  73  40
+r#  3090  74  40
 
 
 --- Sentence//end
 id: 23
-r#  3238  75  10
+r#  3239  76  10
 p: .
 t. 
 |   Hence, we can assume that, among all songs
@@ -434,12 +434,12 @@ t.
 
 --- Sentence/switch
 id: 24
-r#  3239  75  11
+r#  3240  76  11
 
 
 --- Sentence//end
 id: 24
-r#  3315  75  87
+r#  3316  76  87
 p: .
 t. 
 .   The numeral-quantifier <!!"!!>three<!!"!!> is thus outside the scope of <!!"!!>everyone<!!"!!>
@@ -447,12 +447,12 @@ t.
 
 --- Sentence/switch
 id: 25
-r#  3316  75  88
+r#  3317  76  88
 
 
 --- Sentence//end
 id: 25
-r#  3508  78  47
+r#  3509  79  47
 p: .
 t. 
 |  By contrast, one is free to hear <!(4)!> as nesting the scope of <!!"!!>three<!!"!!> inside <!!"!!>all<!!"!!>
@@ -461,7 +461,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  3509  78  48
+r#  3510  79  48
 
 --- Paragraph/end 
 id: 3
@@ -470,16 +470,16 @@ y: N/A
 
 --- Paragraph/start
 id: 4
-r#  3513  80  1
+r#  3514  81  1
 
 
 --- Sentence/start
 id: 26
-r#  3513  80  1
+r#  3514  81  1
 
 --- Sentence//end
 id: 26
-r#  3603  80  91
+r#  3604  81  91
 p: .
 t. 
 .  In <!(5)!> and <!(6)!>, reading a quantifier's intent requires distinguishing levels of exactitude
@@ -487,12 +487,12 @@ t.
 
 --- Sentence/switch
 id: 27
-r#  3604  80  92
+r#  3605  81  92
 
 
 --- Sentence//end
 id: 27
-r#  3658  81  38
+r#  3659  82  38
 p: .
 t. 
 |   Rhetorically,
@@ -501,12 +501,12 @@ t.
 
 --- Sentence/switch
 id: 28
-r#  3659  81  39
+r#  3660  82  39
 
 
 --- Sentence//end
 id: 28
-r#  3824  83  41
+r#  3825  84  41
 p: .
 t. 
 |   The <!(6)!> speaker is not heard to
@@ -516,12 +516,12 @@ t.
 
 --- Sentence/switch
 id: 29
-r#  3825  83  42
+r#  3826  84  42
 
 
 --- Sentence//end
 id: 29
-r#  4023  85  57
+r#  4024  86  57
 p: .
 t. 
 |   On the other hand, geopolitically New York is indeed
@@ -531,12 +531,12 @@ t.
 
 --- Sentence/switch
 id: 30
-r#  4024  85  58
+r#  4025  86  58
 
 
 --- Sentence//end
 id: 30
-r#  4108  86  43
+r#  4109  87  43
 p: .
 t. 
 |   In numerous contexts this term extends
@@ -544,7 +544,7 @@ t.
 
 --- Sentence/end 
 id: 30
-r#  4109  86  44
+r#  4110  87  44
 
 --- Paragraph/end 
 id: 4
@@ -553,16 +553,16 @@ y: N/A
 
 --- Paragraph/start
 id: 5
-r#  4111  88  1
+r#  4112  89  1
 
 
 --- Sentence/start
 id: 31
-r#  4111  88  1
+r#  4112  89  1
 
 --- Sentence//end
 id: 31
-r#  4213  88  103
+r#  4214  89  103
 p: .
 t. 
 .  Uncertainties in <!(7)!> and <!(8)!> are of a different sort: anaphora resolution rather than quantifier scope
@@ -570,12 +570,12 @@ t.
 
 --- Sentence/switch
 id: 32
-r#  4214  88  104
+r#  4215  89  104
 
 
 --- Sentence//end
 id: 32
-r#  4321  89  105
+r#  4322  90  105
 p: .
 t. 
 .  These also have two competing interpretations, depending on whether <!!"!!>she<!!"!!> is read as Ariel or Beatrice
@@ -583,12 +583,12 @@ t.
 
 --- Sentence/switch
 id: 33
-r#  4322  89  106
+r#  4323  90  106
 
 
 --- Sentence//end
 id: 33
-r#  4445  91  15
+r#  4446  92  15
 p: .
 t. 
 |   The
@@ -598,12 +598,12 @@ t.
 
 --- Sentence/switch
 id: 34
-r#  4446  91  16
+r#  4447  92  16
 
 
 --- Sentence//end
 id: 34
-r#  4562  92  44
+r#  4563  93  44
 p: .
 t. 
 |   But we can't a priori exclude a continuation like <!!"!!>I'm worried,
@@ -612,12 +612,12 @@ t.
 
 --- Sentence/switch
 id: 35
-r#  4563  92  45
+r#  4564  93  45
 
 
 --- Sentence//end
 id: 35
-r#  4684  94  38
+r#  4685  95  38
 p: .
 t. 
 |  Nor can we entirely disregard a scenario for <!(8)!> where Ariel takes a picture of
@@ -625,7 +625,7 @@ t.
 
 --- Sentence/end 
 id: 35
-r#  4685  94  39
+r#  4686  95  39
 
 --- Paragraph/end 
 id: 5
@@ -634,21 +634,21 @@ y: N/A
 
 --- Paragraph/start
 id: 6
-r#  4687  96  1
+r#  4688  97  1
 
 
 --- Sentence/start
 id: 36
-r#  4687  96  1
+r#  4688  97  1
 
 --- Sentence//end
 id: 36
-r#  4906  99  8
+r#  4907  100  8
 g. 
-|   @l(-%>>) +4867/98/12
-|   +4887/98/32:14=4901/99/3
-|   +4892/98/37:0=4892/98/37
-.   @l() -4892/98/37
+|   @l(-%>>) +4868/99/12
+|   +4888/99/32:14=4902/100/3
+|   +4893/99/37:0=4893/99/37
+.   @l() -4893/99/37
 p: .
 t. 
 |  The issue in <!(9)!> and <!(10)!>, by contrast, is ordinary polysemy: <!(9)!> might reflect an
@@ -659,12 +659,12 @@ t.
 
 --- Sentence/switch
 id: 37
-r#  4907  99  9
+r#  4908  100  9
 
 
 --- Sentence//end
 id: 37
-r#  4978  99  80
+r#  4979  100  80
 p: .
 t. 
 .   And <!(10)!> could describe a baseball collectible or an animal sculpture
@@ -672,12 +672,12 @@ t.
 
 --- Sentence/switch
 id: 38
-r#  4979  99  81
+r#  4980  100  81
 
 
 --- Sentence//end
 id: 38
-r#  5020  100  40
+r#  5021  101  40
 p: .
 t. 
 .  I include these for point of comparison
@@ -685,12 +685,12 @@ t.
 
 --- Sentence/switch
 id: 39
-r#  5021  100  41
+r#  5022  101  41
 
 
 --- Sentence//end
 id: 39
-r#  5373  104  63
+r#  5374  105  63
 p: .
 t. 
 |   The ambiguity in the former three pairs,
@@ -701,7 +701,7 @@ t.
 
 --- Sentence/end 
 id: 39
-r#  5374  104  64
+r#  5375  105  64
 
 --- Paragraph/end 
 id: 6
@@ -710,16 +710,16 @@ y: N/A
 
 --- Paragraph/start
 id: 7
-r#  5378  106  1
+r#  5379  107  1
 
 
 --- Sentence/start
 id: 40
-r#  5378  106  1
+r#  5379  107  1
 
 --- Sentence//end
 id: 40
-r#  5532  108  31
+r#  5533  109  31
 p: .
 t. 
 |  I chose the first three sentence-pairs because the variable factor in each
@@ -729,12 +729,12 @@ t.
 
 --- Sentence/switch
 id: 41
-r#  5533  108  32
+r#  5534  109  32
 
 
 --- Sentence//end
 id: 41
-r#  5630  112  1
+r#  5631  113  1
 p: 
 t. 
 |   But subtle variation can point to the opposite, as in these alternatives
@@ -743,12 +743,12 @@ t.
 
 --- Sentence/switch
 id: 42
-r#  5634  112  5
+r#  5635  113  5
 
 
 --- Sentence//end
 id: 42
-r#  5673  113  1
+r#  5674  114  1
 p: 
 t. 
 |   Every band performed three songs. {\sssm}
@@ -757,12 +757,12 @@ t.
 
 --- Sentence/switch
 id: 43
-r#  5677  113  5
+r#  5678  114  5
 
 
 --- Sentence//end
 id: 43
-r#  5721  113  49
+r#  5722  114  49
 p: .
 t. 
 .   Everyone sang along to one song or another
@@ -770,12 +770,12 @@ t.
 
 --- Sentence/switch
 id: 44
-r#  5722  113  50
+r#  5723  114  50
 
 
 --- Sentence//end
 id: 44
-r#  5907  117  76
+r#  5908  118  76
 p: .
 t. 
 |  
@@ -785,12 +785,12 @@ t.
 
 --- Sentence/switch
 id: 45
-r#  5908  117  77
+r#  5909  118  77
 
 
 --- Sentence//end
 id: 45
-r#  6101  119  63
+r#  6102  120  63
 p: .
 t. 
 |   Meanwhile, switching
@@ -800,7 +800,7 @@ t.
 
 --- Sentence/switch
 id: 46
-r#  6102  119  64
+r#  6103  120  64
 
 --- Paragraph/end 
 id: 7
@@ -809,20 +809,20 @@ y: N/A
 
 --- Paragraph/start
 id: 8
-r#  6165  122  1
+r#  6166  123  1
 
 
 --- Sentence/start
 id: 47
-r#  6165  122  1
+r#  6166  123  1
 
 --- Sentence//end
 id: 47
-r#  6297  123  50
+r#  6298  124  50
 g. 
-|   @l(-%>) +6105/120/1
-|   +6163/120/59:53=6216/122/52
-.   @l() -6163/120/59
+|   @l(-%>) +6106/121/1
+|   +6164/121/59:53=6217/123/52
+.   @l() -6164/121/59
 p: .
 t. 
 |  Despite the competing readings, each option for each sentence I have discussed so
@@ -831,12 +831,12 @@ t.
 
 --- Sentence/switch
 id: 48
-r#  6298  123  51
+r#  6299  124  51
 
 
 --- Sentence//end
 id: 48
-r#  6421  124  76
+r#  6422  125  76
 p: .
 t. 
 |   But there are other examples where a logical
@@ -845,12 +845,12 @@ t.
 
 --- Sentence/switch
 id: 49
-r#  6422  124  77
+r#  6423  125  77
 
 
 --- Sentence//end
 id: 49
-r#  6443  127  1
+r#  6444  128  1
 p: 
 t. 
 .   Consider:
@@ -858,12 +858,12 @@ t.
 
 --- Sentence/switch
 id: 50
-r#  6447  127  5
+r#  6448  128  5
 
 
 --- Sentence//end
 id: 50
-r#  6503  128  1
+r#  6504  129  1
 p: 
 t. 
 |   This election is slipping away from the Democrats. {\sssm}
@@ -872,12 +872,12 @@ t.
 
 --- Sentence/switch
 id: 51
-r#  6507  128  5
+r#  6508  129  5
 
 
 --- Sentence//end
 id: 51
-r#  6580  128  78
+r#  6581  129  78
 p: .
 t. 
 .   Student after student came by to complain about the reading assignments
@@ -885,12 +885,12 @@ t.
 
 --- Sentence/switch
 id: 52
-r#  6581  128  79
+r#  6582  129  79
 
 
 --- Sentence//end
 id: 52
-r#  6662  131  77
+r#  6663  132  77
 p: .
 t. 
 |  
@@ -899,12 +899,12 @@ t.
 
 --- Sentence/switch
 id: 53
-r#  6663  131  78
+r#  6664  132  78
 
 
 --- Sentence//end
 id: 53
-r#  6790  133  78
+r#  6791  134  78
 p: .
 t. 
 |  The metaphor of <!!"!!>slipping away<!!"!!> connotes a
@@ -913,12 +913,12 @@ t.
 
 --- Sentence/switch
 id: 54
-r#  6791  133  79
+r#  6792  134  79
 
 
 --- Sentence//end
 id: 54
-r#  6956  136  17
+r#  6957  137  17
 p: .
 t. 
 |   Similarly,
@@ -929,12 +929,12 @@ t.
 
 --- Sentence/switch
 id: 55
-r#  6957  136  18
+r#  6958  137  18
 
 
 --- Sentence//end
 id: 55
-r#  7052  137  10
+r#  7053  138  10
 p: .
 t. 
 |   These examples reveal a kind of <!!"!!>narrative account<!!"!!> of the speaker's evidential
@@ -943,12 +943,12 @@ t.
 
 --- Sentence/switch
 id: 56
-r#  7053  137  11
+r#  7054  138  11
 
 
 --- Sentence//end
 id: 56
-r#  7166  138  33
+r#  7167  139  33
 p: .
 t. 
 |   The details in <!(14)!> are different than if all objections were made during one
@@ -956,7 +956,7 @@ t.
 
 --- Sentence/end 
 id: 56
-r#  7167  138  34
+r#  7168  139  34
 
 --- Paragraph/end 
 id: 8
@@ -965,16 +965,16 @@ y: N/A
 
 --- Paragraph/start
 id: 9
-r#  7171  140  1
+r#  7172  141  1
 
 
 --- Sentence/start
 id: 57
-r#  7171  140  1
+r#  7172  141  1
 
 --- Sentence//end
 id: 57
-r#  7279  141  63
+r#  7280  142  63
 p: .
 t. 
 |  With no further qualification, of course, we
@@ -983,12 +983,12 @@ t.
 
 --- Sentence/switch
 id: 58
-r#  7280  141  64
+r#  7281  142  64
 
 
 --- Sentence//end
 id: 58
-r#  7425  143  61
+r#  7426  144  61
 p: .
 t. 
 |   Since a
@@ -998,12 +998,12 @@ t.
 
 --- Sentence/switch
 id: 59
-r#  7426  143  62
+r#  7427  144  62
 
 
 --- Sentence//end
 id: 59
-r#  7568  145  69
+r#  7569  146  69
 p: .
 t. 
 |  Often, it should be obvious, we present one claim to justify another
@@ -1012,12 +1012,12 @@ t.
 
 --- Sentence/switch
 id: 60
-r#  7569  145  70
+r#  7570  146  70
 
 
 --- Sentence//end
 id: 60
-r#  7758  148  61
+r#  7759  149  61
 p: .
 t. 
 |  So the pattern of propositions justifying other propositions
@@ -1026,7 +1026,7 @@ t.
 
 --- Sentence/end 
 id: 60
-r#  7759  148  62
+r#  7760  149  62
 
 --- Paragraph/end 
 id: 9
@@ -1035,16 +1035,16 @@ y: N/A
 
 --- Paragraph/start
 id: 10
-r#  7761  150  1
+r#  7762  151  1
 
 
 --- Sentence/start
 id: 61
-r#  7761  150  1
+r#  7762  151  1
 
 --- Sentence//end
 id: 61
-r#  8077  154  22
+r#  8078  155  22
 p: .
 t. 
 |  However, the resources a speaker has for expressing the backstory of their
@@ -1056,16 +1056,16 @@ t.
 
 --- Sentence/switch
 id: 62
-r#  8084  154  29
+r#  8085  155  29
 
 
 --- Sentence//end
 id: 62
-r#  8353  158  34
+r#  8354  159  34
 g. 
-|   @l(-%>) +8078/154/23
-|   +8097/154/42:13=8110/154/55
-.   @l() -8097/154/42
+|   @l(-%>) +8079/155/23
+|   +8098/155/42:13=8111/155/55
+.   @l() -8098/155/42
 p: .
 t. 
 |  Most usage embeds propositions not in
@@ -1077,12 +1077,12 @@ t.
 
 --- Sentence/switch
 id: 63
-r#  8354  158  35
+r#  8355  159  35
 
 
 --- Sentence//end
 id: 63
-r#  8605  161  81
+r#  8606  162  81
 p: .
 t. 
 |   To the degree that one
@@ -1092,7 +1092,7 @@ t.
 
 --- Sentence/end 
 id: 63
-r#  8606  161  82
+r#  8607  162  82
 
 --- Paragraph/end 
 id: 10
@@ -1101,16 +1101,16 @@ y: N/A
 
 --- Paragraph/start
 id: 11
-r#  8608  163  1
+r#  8609  164  1
 
 
 --- Sentence/start
 id: 64
-r#  8608  163  1
+r#  8609  164  1
 
 --- Sentence//end
 id: 64
-r#  8732  164  38
+r#  8733  165  38
 p: 
 t. 
 |  Cumulatively, then, I believe that sentences <!!(1)-(14)!!> offer examples
@@ -1119,12 +1119,12 @@ t.
 
 --- Sentence//end
 id: 64
-r#  9023  170  68
+r#  9024  171  68
 g. 
-|   @l(-%>) +8735/164/41
-|   +8739/164/45:0=8739/164/45
-|   +8752/164/58:0=8752/164/58
-.   @l() -8752/164/58
+|   @l(-%>) +8736/165/41
+|   +8740/165/45:0=8740/165/45
+|   +8753/165/58:0=8753/165/58
+.   @l() -8753/165/58
 p: .
 t. 
 |    While assertion (or implicature) of some proposition <!!P!!>
@@ -1135,12 +1135,12 @@ t.
 
 --- Sentence/switch
 id: 65
-r#  9029  172  4
+r#  9030  173  4
 
 
 --- Sentence//end
 id: 65
-r#  9190  174  8
+r#  9191  175  8
 p: .
 t. 
 |   Even if the meaning of sentence <!!S!!> is indeed to a large extent included in some
@@ -1150,12 +1150,12 @@ t.
 
 --- Sentence/switch
 id: 66
-r#  9191  174  9
+r#  9192  175  9
 
 
 --- Sentence//end
 id: 66
-r#  9307  175  54
+r#  9308  176  54
 p: .
 t. 
 |   There might be no deterministic process to extract <!!P!!> from
@@ -1164,12 +1164,12 @@ t.
 
 --- Sentence/switch
 id: 67
-r#  9308  175  55
+r#  9309  176  55
 
 
 --- Sentence//end
 id: 67
-r#  9477  179  81
+r#  9478  180  81
 p: .
 t. 
 |  
@@ -1178,7 +1178,7 @@ t.
 
 --- Sentence/end 
 id: 67
-r#  9478  179  82
+r#  9479  180  82
 
 --- Paragraph/end 
 id: 11
@@ -1187,16 +1187,16 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  9482  181  1
+r#  9483  182  1
 
 
 --- Sentence/start
 id: 68
-r#  9482  181  1
+r#  9483  182  1
 
 --- Sentence//end
 id: 68
-r#  9545  181  64
+r#  9546  182  64
 p: .
 t. 
 .  I don't want to make too much out of ambiguity in and of itself
@@ -1204,12 +1204,12 @@ t.
 
 --- Sentence/switch
 id: 69
-r#  9546  181  65
+r#  9547  182  65
 
 
 --- Sentence//end
 id: 69
-r#  9618  182  70
+r#  9619  183  70
 p: .
 t. 
 .  A <!!"!!>dresser<!!"!!> can be someone donning clothes or a piece of furniture
@@ -1217,12 +1217,12 @@ t.
 
 --- Sentence/switch
 id: 70
-r#  9619  182  71
+r#  9620  183  71
 
 
 --- Sentence//end
 id: 70
-r#  9715  183  94
+r#  9716  184  94
 p: .
 t. 
 .  So people must discern which word-sense applies, usually with the aid of background knowledge
@@ -1230,12 +1230,12 @@ t.
 
 --- Sentence/switch
 id: 71
-r#  9716  183  95
+r#  9717  184  95
 
 
 --- Sentence//end
 id: 71
-r#  9847  185  50
+r#  9848  186  50
 p: .
 t. 
 |  Anyone who believes that such facts problematize a particular semantic theory
@@ -1243,7 +1243,7 @@ t.
 
 --- Sentence/end 
 id: 71
-r#  9848  185  51
+r#  9849  186  51
 
 --- Paragraph/end 
 id: 12
@@ -1252,16 +1252,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  9850  187  1
+r#  9851  188  1
 
 
 --- Sentence/start
 id: 72
-r#  9850  187  1
+r#  9851  188  1
 
 --- Sentence//end
 id: 72
-r#  10031  189  41
+r#  10032  190  41
 p: .
 t. 
 |  However, the lexical underdeterminacy of <!!"!!>dresser<!!"!!> or <!!"!!>bat<!!"!!>
@@ -1271,12 +1271,12 @@ t.
 
 --- Sentence/switch
 id: 73
-r#  10032  189  42
+r#  10033  190  42
 
 
 --- Sentence//end
 id: 73
-r#  10265  193  48
+r#  10266  194  48
 p: .
 t. 
 |   To put it differently,
@@ -1288,12 +1288,12 @@ t.
 
 --- Sentence/switch
 id: 74
-r#  10266  193  49
+r#  10267  194  49
 
 
 --- Sentence//end
 id: 74
-r#  10428  196  16
+r#  10429  197  16
 p: .
 t. 
 |  Perhaps lurking behind English lies an idealized language where senses
@@ -1303,12 +1303,12 @@ t.
 
 --- Sentence/switch
 id: 75
-r#  10429  196  17
+r#  10430  197  17
 
 
 --- Sentence//end
 id: 75
-r#  10780  200  81
+r#  10781  201  81
 p: .
 t. 
 |   The problem on a larger scale is that sentences are supposed to
@@ -1320,12 +1320,12 @@ t.
 
 --- Sentence/switch
 id: 76
-r#  10781  200  82
+r#  10782  201  82
 
 
 --- Sentence//end
 id: 76
-r#  10936  202  70
+r#  10937  203  70
 p: .
 t. 
 |  I argue from cases like <!!(1)-(14)!!> that even after fully digesting
@@ -1333,7 +1333,7 @@ t.
 
 --- Sentence/end 
 id: 76
-r#  10937  202  71
+r#  10938  203  71
 
 --- Paragraph/end 
 id: 13
@@ -1342,21 +1342,21 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  10939  204  1
+r#  10940  205  1
 
 
 --- Sentence/start
 id: 77
-r#  10939  204  1
+r#  10940  205  1
 
 --- Sentence//end
 id: 77
-r#  11486  211  30
+r#  11487  212  30
 g. 
-|   @l(-%>>) +11076/206/6
-|   +11098/206/28:15=11113/206/43
-|   +11103/206/33:0=11103/206/33
-.   @l() -11103/206/33
+|   @l(-%>>) +11077/207/6
+|   +11099/207/28:15=11114/207/43
+|   +11104/207/33:0=11104/207/33
+.   @l() -11104/207/33
 p: .
 t. 
 |  To borrow the apologia from the lexical realm, we'd have to argue that
@@ -1371,12 +1371,12 @@ t.
 
 --- Sentence/switch
 id: 78
-r#  11487  211  31
+r#  11488  212  31
 
 
 --- Sentence//end
 id: 78
-r#  11733  214  62
+r#  11734  215  62
 p: .
 t. 
 |   Imagine inflectional variations
@@ -1386,7 +1386,7 @@ t.
 
 --- Sentence/end 
 id: 78
-r#  11734  214  63
+r#  11735  215  63
 
 --- Paragraph/end 
 id: 14
@@ -1395,16 +1395,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  11738  216  1
+r#  11739  217  1
 
 
 --- Sentence/start
 id: 79
-r#  11738  216  1
+r#  11739  217  1
 
 --- Sentence//end
 id: 79
-r#  11851  217  31
+r#  11852  218  31
 p: 
 t. 
 |  Imagine, that is -=- or so we might be tempted -=- a formal semantics whose basic
@@ -1413,12 +1413,12 @@ t.
 
 --- Sentence//end
 id: 79
-r#  11978  220  94
+r#  11979  221  94
 g. 
-|   @l(-%>) +11854/217/34
-|   +11858/217/38:0=11858/217/38
-|   +11873/217/53:0=11873/217/53
-.   @l() -11873/217/53
+|   @l(-%>) +11855/218/34
+|   +11859/218/38:0=11859/218/38
+|   +11874/218/53:0=11874/218/53
+.   @l() -11874/218/53
 p: .
 t. 
 .    Canonically, sentences signify propositions -=- by analogy to how words signify concepts
@@ -1426,12 +1426,12 @@ t.
 
 --- Sentence/switch
 id: 80
-r#  11979  220  95
+r#  11980  221  95
 
 
 --- Sentence//end
 id: 80
-r#  12275  224  57
+r#  12276  225  57
 p: .
 t. 
 |    Behind any actual language is an idealized language wherein sentences denote
@@ -1442,12 +1442,12 @@ t.
 
 --- Sentence/switch
 id: 81
-r#  12276  224  58
+r#  12277  225  58
 
 
 --- Sentence//end
 id: 81
-r#  12427  229  40
+r#  12428  230  40
 p: .
 t. 
 |  
@@ -1458,12 +1458,12 @@ t.
 
 --- Sentence/switch
 id: 82
-r#  12428  229  41
+r#  12429  230  41
 
 
 --- Sentence//end
 id: 82
-r#  12684  233  46
+r#  12685  234  46
 p: .
 t. 
 |  It is true, say, that Trump should be interpreted differently
@@ -1474,12 +1474,12 @@ t.
 
 --- Sentence/switch
 id: 83
-r#  12685  233  47
+r#  12686  234  47
 
 
 --- Sentence//end
 id: 83
-r#  12761  235  5
+r#  12762  236  5
 p: .
 t. 
 |   Context
@@ -1489,12 +1489,12 @@ t.
 
 --- Sentence/switch
 id: 84
-r#  12762  235  6
+r#  12763  236  6
 
 
 --- Sentence//end
 id: 84
-r#  12909  236  75
+r#  12910  237  75
 p: .
 t. 
 |   But such concerns are antecedent to semantics proper: for theoretical
@@ -1503,12 +1503,12 @@ t.
 
 --- Sentence/switch
 id: 85
-r#  12910  236  76
+r#  12911  237  76
 
 
 --- Sentence//end
 id: 85
-r#  13069  239  54
+r#  13070  240  54
 p: .
 t. 
 |  From this perspective, the cognitive gap between
@@ -1517,7 +1517,7 @@ t.
 
 --- Sentence/end 
 id: 85
-r#  13070  239  55
+r#  13071  240  55
 
 --- Paragraph/end 
 id: 15
@@ -1526,16 +1526,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  13076  241  1
+r#  13077  242  1
 
 
 --- Sentence/start
 id: 86
-r#  13076  241  1
+r#  13077  242  1
 
 --- Sentence//end
 id: 86
-r#  13262  244  21
+r#  13263  245  21
 p: .
 t. 
 |  I contend that paradigms authorizing linguists and philosophers to
@@ -1546,12 +1546,12 @@ t.
 
 --- Sentence/switch
 id: 87
-r#  13263  244  22
+r#  13264  245  22
 
 
 --- Sentence//end
 id: 87
-r#  13450  247  10
+r#  13451  248  10
 p: .
 t. 
 |   By way of example, sentences <!!(1)-(14)!!> imply
@@ -1562,12 +1562,12 @@ t.
 
 --- Sentence/switch
 id: 88
-r#  13451  247  11
+r#  13452  248  11
 
 
 --- Sentence//end
 id: 88
-r#  13685  250  18
+r#  13686  251  18
 p: .
 t. 
 |   The reason why quantifier scope is nested in <!(4)!> but not <!(3)!> is that
@@ -1578,12 +1578,12 @@ t.
 
 --- Sentence/switch
 id: 89
-r#  13686  250  19
+r#  13687  251  19
 
 
 --- Sentence//end
 id: 89
-r#  13910  253  30
+r#  13911  254  30
 p: .
 t. 
 |   In short, whatever a sentence means, it does so
@@ -1594,12 +1594,12 @@ t.
 
 --- Sentence/switch
 id: 90
-r#  13911  253  31
+r#  13912  254  31
 
 
 --- Sentence//end
 id: 90
-r#  13970  254  32
+r#  13971  255  32
 p: .
 t. 
 |   Consequently, linguistic
@@ -1607,7 +1607,7 @@ t.
 
 --- Sentence/end 
 id: 90
-r#  13971  254  33
+r#  13972  255  33
 
 --- Paragraph/end 
 id: 16
@@ -1616,16 +1616,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  13975  256  1
+r#  13976  257  1
 
 
 --- Sentence/start
 id: 91
-r#  13975  256  1
+r#  13976  257  1
 
 --- Sentence//end
 id: 91
-r#  14261  260  41
+r#  14262  261  41
 p: .
 t. 
 |  Moreover, these issues are sufficiently
@@ -1637,12 +1637,12 @@ t.
 
 --- Sentence/switch
 id: 92
-r#  14262  260  42
+r#  14263  261  42
 
 
 --- Sentence//end
 id: 92
-r#  14358  262  11
+r#  14359  263  11
 p: .
 t. 
 |   This isn't only an
@@ -1652,16 +1652,16 @@ t.
 
 --- Sentence/switch
 id: 93
-r#  14365  262  18
+r#  14366  263  18
 
 
 --- Sentence//end
 id: 93
-r#  14557  264  72
+r#  14558  265  72
 g. 
-|   @l(-%>) +14359/262/12
-|   +14378/262/31:13=14391/262/44
-.   @l() -14378/262/31
+|   @l(-%>) +14360/263/12
+|   +14379/263/31:13=14392/263/44
+.   @l() -14379/263/31
 p: .
 t. 
 |  Cognition plays a more holistic role, such that
@@ -1671,12 +1671,12 @@ t.
 
 --- Sentence/switch
 id: 94
-r#  14558  264  73
+r#  14559  265  73
 
 
 --- Sentence//end
 id: 94
-r#  14725  268  24
+r#  14726  269  24
 p: .
 t. 
 |  Even when <!!"!!>the meaning of a
@@ -1687,12 +1687,12 @@ t.
 
 --- Sentence/switch
 id: 95
-r#  14726  268  25
+r#  14727  269  25
 
 
 --- Sentence//end
 id: 95
-r#  14856  270  9
+r#  14857  271  9
 p: .
 t. 
 |   People don't talk out of abstract desires
@@ -1702,12 +1702,12 @@ t.
 
 --- Sentence/switch
 id: 96
-r#  14857  270  10
+r#  14858  271  10
 
 
 --- Sentence//end
 id: 96
-r#  15021  272  58
+r#  15022  273  58
 p: .
 t. 
 |   Logically transparent statements are certainly an
@@ -1717,12 +1717,12 @@ t.
 
 --- Sentence/switch
 id: 97
-r#  15022  272  59
+r#  15023  273  59
 
 
 --- Sentence//end
 id: 97
-r#  15179  274  75
+r#  15180  275  75
 p: .
 t. 
 |  The existence of (relatively) deterministic  mappings is not an axiom to
@@ -1730,7 +1730,7 @@ t.
 
 --- Sentence/end 
 id: 97
-r#  15180  274  76
+r#  15181  275  76
 
 --- Paragraph/end 
 id: 17
@@ -1739,16 +1739,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  15182  276  1
+r#  15183  277  1
 
 
 --- Sentence/start
 id: 98
-r#  15182  276  1
+r#  15183  277  1
 
 --- Sentence//end
 id: 98
-r#  15354  278  39
+r#  15355  279  39
 p: .
 t. 
 |  A plausible rejoinder is that language has a cognitively-important
@@ -1758,12 +1758,12 @@ t.
 
 --- Sentence/switch
 id: 99
-r#  15355  278  40
+r#  15356  279  40
 
 
 --- Sentence//end
 id: 99
-r#  15523  280  78
+r#  15524  281  78
 p: .
 t. 
 |   The problem then is that
@@ -1773,12 +1773,12 @@ t.
 
 --- Sentence/switch
 id: 100
-r#  15524  280  79
+r#  15525  281  79
 
 
 --- Sentence//end
 id: 100
-r#  15668  282  69
+r#  15669  283  69
 p: .
 t. 
 |  But the machinery of how programming languages are implemented does not
@@ -1787,12 +1787,12 @@ t.
 
 --- Sentence/switch
 id: 101
-r#  15669  282  70
+r#  15670  283  70
 
 
 --- Sentence//end
 id: 101
-r#  15831  285  17
+r#  15832  286  17
 p: .
 t. 
 |   The germinal
@@ -1803,12 +1803,12 @@ t.
 
 --- Sentence/switch
 id: 102
-r#  15832  285  18
+r#  15833  286  18
 
 
 --- Sentence//end
 id: 102
-r#  16045  288  48
+r#  16046  289  48
 p: .
 t. 
 |   If we take compilers and runtimes as
@@ -1818,7 +1818,7 @@ t.
 
 --- Sentence/end 
 id: 102
-r#  16046  288  49
+r#  16047  289  49
 
 --- Paragraph/end 
 id: 18
@@ -1827,16 +1827,16 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  16050  290  1
+r#  16051  291  1
 
 
 --- Sentence/start
 id: 103
-r#  16050  290  1
+r#  16051  291  1
 
 --- Sentence//end
 id: 103
-r#  16129  291  13
+r#  16130  292  13
 p: .
 t. 
 |  To be clear, I do believe the value of signifying propositions is
@@ -1845,12 +1845,12 @@ t.
 
 --- Sentence/switch
 id: 104
-r#  16130  291  14
+r#  16131  292  14
 
 
 --- Sentence//end
 id: 104
-r#  16290  293  46
+r#  16291  294  46
 p: .
 t. 
 |   My point is that any instance of <!!S!!> conveying <!!P!!>
@@ -1860,12 +1860,12 @@ t.
 
 --- Sentence/switch
 id: 105
-r#  16291  293  47
+r#  16292  294  47
 
 
 --- Sentence//end
 id: 105
-r#  16447  296  38
+r#  16448  297  38
 p: .
 t. 
 |  If I slip, fall, clutch my ankle, and grimace, you may
@@ -1875,12 +1875,12 @@ t.
 
 --- Sentence/switch
 id: 106
-r#  16448  296  39
+r#  16449  297  39
 
 
 --- Sentence//end
 id: 106
-r#  16625  299  15
+r#  16626  300  15
 p: .
 t. 
 |   Similarly, if I see a
@@ -1891,12 +1891,12 @@ t.
 
 --- Sentence/switch
 id: 107
-r#  16626  299  16
+r#  16627  300  16
 
 
 --- Sentence//end
 id: 107
-r#  16941  304  48
+r#  16942  305  48
 p: .
 t. 
 |   In most communication, true, linguistic structure
@@ -1908,7 +1908,7 @@ t.
 
 --- Sentence/end 
 id: 107
-r#  16942  304  49
+r#  16943  305  49
 
 --- Paragraph/end 
 id: 19
@@ -1917,16 +1917,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  16944  306  1
+r#  16945  307  1
 
 
 --- Sentence/start
 id: 108
-r#  16944  306  1
+r#  16945  307  1
 
 --- Sentence//end
 id: 108
-r#  17095  308  46
+r#  17096  309  46
 p: .
 t. 
 |  Lexical plurality is one domain where
@@ -1936,12 +1936,12 @@ t.
 
 --- Sentence/switch
 id: 109
-r#  17096  308  47
+r#  17097  309  47
 
 
 --- Sentence//end
 id: 109
-r#  17301  312  22
+r#  17302  313  22
 p: .
 t. 
 |   But I believe
@@ -1953,7 +1953,7 @@ t.
 
 --- Sentence/switch
 id: 110
-r#  17302  312  23
+r#  17303  313  23
 
 --- Paragraph/end 
 id: 20
@@ -1962,16 +1962,16 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  17525  318  1
+r#  17526  319  1
 
 
 --- Sentence/start
 id: 111
-r#  17525  318  1
+r#  17526  319  1
 
 --- Sentence//end
 id: 111
-r#  17686  320  34
+r#  17687  321  34
 p: .
 t. 
 |   Hence, linguistics
@@ -1985,12 +1985,12 @@ t.
 
 --- Sentence/switch
 id: 112
-r#  17687  320  35
+r#  17688  321  35
 
 
 --- Sentence//end
 id: 112
-r#  17868  324  10
+r#  17869  325  10
 p: .
 t. 
 |   Here, I will outline
@@ -2001,7 +2001,7 @@ t.
 
 --- Sentence/end 
 id: 112
-r#  17869  324  11
+r#  17870  325  11
 
 --- Paragraph/end 
 id: 21
@@ -2016,16 +2016,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  17923  329  1
+r#  17924  330  1
 
 
 --- Sentence/start
 id: 113
-r#  17923  329  1
+r#  17924  330  1
 
 --- Sentence//end
 id: 113
-r#  18075  332  12
+r#  18076  333  12
 p: .
 t. 
 |  I argue in this section that (Husserlian) phenomenology and the
@@ -2036,12 +2036,12 @@ t.
 
 --- Sentence/switch
 id: 114
-r#  18076  332  13
+r#  18077  333  13
 
 
 --- Sentence//end
 id: 114
-r#  18184  333  54
+r#  18185  334  54
 p: .
 t. 
 |   On (overly superficial, I believe) interpretations,
@@ -2050,12 +2050,12 @@ t.
 
 --- Sentence/switch
 id: 115
-r#  18185  333  55
+r#  18186  334  55
 
 
 --- Sentence//end
 id: 115
-r#  18383  336  41
+r#  18384  337  41
 p: .
 t. 
 |   I propose, however,
@@ -2065,7 +2065,7 @@ t.
 
 --- Sentence/end 
 id: 115
-r#  18384  336  42
+r#  18385  337  42
 
 --- Paragraph/end 
 id: 22
@@ -2074,16 +2074,16 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  18386  338  1
+r#  18387  339  1
 
 
 --- Sentence/start
 id: 116
-r#  18386  338  1
+r#  18387  339  1
 
 --- Sentence//end
 id: 116
-r#  18505  339  52
+r#  18506  340  52
 p: .
 t. 
 |  An intrinsic aspect of any science is establishing a collection of
@@ -2092,12 +2092,12 @@ t.
 
 --- Sentence/switch
 id: 117
-r#  18506  339  53
+r#  18507  340  53
 
 
 --- Sentence//end
 id: 117
-r#  18621  341  37
+r#  18622  342  37
 p: .
 t. 
 |   Apart from
@@ -2107,12 +2107,12 @@ t.
 
 --- Sentence/switch
 id: 118
-r#  18622  341  38
+r#  18623  342  38
 
 
 --- Sentence//end
 id: 118
-r#  18702  342  57
+r#  18703  343  57
 p: .
 t. 
 |   Hydrology depends on
@@ -2121,12 +2121,12 @@ t.
 
 --- Sentence/switch
 id: 119
-r#  18703  342  58
+r#  18704  343  58
 
 
 --- Sentence//end
 id: 119
-r#  18817  344  49
+r#  18818  345  49
 p: .
 t. 
 |  However, the discourse of the higher-scale disciplines should
@@ -2135,12 +2135,12 @@ t.
 
 --- Sentence/switch
 id: 120
-r#  18818  344  50
+r#  18819  345  50
 
 
 --- Sentence//end
 id: 120
-r#  18991  347  45
+r#  18992  348  45
 p: .
 t. 
 |   It is the
@@ -2151,12 +2151,12 @@ t.
 
 --- Sentence/switch
 id: 121
-r#  18992  347  46
+r#  18993  348  46
 
 
 --- Sentence//end
 id: 121
-r#  19093  349  28
+r#  19094  350  28
 p: .
 t. 
 |   Explanations can
@@ -2165,7 +2165,7 @@ t.
 
 --- Sentence/end 
 id: 121
-r#  19094  349  29
+r#  19095  350  29
 
 --- Paragraph/end 
 id: 23
@@ -2174,16 +2174,16 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  19096  351  1
+r#  19097  352  1
 
 
 --- Sentence/start
 id: 122
-r#  19096  351  1
+r#  19097  352  1
 
 --- Sentence//end
 id: 122
-r#  19291  353  67
+r#  19292  354  67
 p: .
 t. 
 |  By analogy, there is a distinct set of terms relevant to
@@ -2193,12 +2193,12 @@ t.
 
 --- Sentence/switch
 id: 123
-r#  19292  353  68
+r#  19293  354  68
 
 
 --- Sentence//end
 id: 123
-r#  19420  355  50
+r#  19421  356  50
 p: .
 t. 
 |  Separately, there are terms related to machine code (registers,  prefixes,
@@ -2207,12 +2207,12 @@ t.
 
 --- Sentence/switch
 id: 124
-r#  19421  355  51
+r#  19422  356  51
 
 
 --- Sentence//end
 id: 124
-r#  19592  358  9
+r#  19593  359  9
 p: .
 t. 
 |   Although source files compile
@@ -2223,12 +2223,12 @@ t.
 
 --- Sentence/switch
 id: 125
-r#  19593  358  10
+r#  19594  359  10
 
 
 --- Sentence//end
 id: 125
-r#  19774  360  57
+r#  19775  361  57
 p: .
 t. 
 |   Moreover, it would be impossible to explain the rational
@@ -2238,12 +2238,12 @@ t.
 
 --- Sentence/switch
 id: 126
-r#  19775  360  58
+r#  19776  361  58
 
 
 --- Sentence//end
 id: 126
-r#  19967  363  60
+r#  19968  364  60
 p: .
 t. 
 |   While
@@ -2253,7 +2253,7 @@ t.
 
 --- Sentence/end 
 id: 126
-r#  19968  363  61
+r#  19969  364  61
 
 --- Paragraph/end 
 id: 24
@@ -2262,16 +2262,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  19973  365  1
+r#  19974  366  1
 
 
 --- Sentence/start
 id: 127
-r#  19973  365  1
+r#  19974  366  1
 
 --- Sentence//end
 id: 127
-r#  20422  371  48
+r#  20423  372  48
 p: .
 t. 
 |  More generally, examining progressively smaller
@@ -2285,16 +2285,16 @@ t.
 
 --- Sentence/switch
 id: 128
-r#  20423  371  49
+r#  20424  372  49
 
 
 --- Sentence//end
 id: 128
-r#  20981  379  67
+r#  20982  380  67
 g. 
-|   @l(-%>>) +20765/376/38
-|   +20784/376/57:13=20797/377/2
-.   @l() -20784/376/57
+|   @l(-%>>) +20766/377/38
+|   +20785/377/57:13=20798/378/2
+.   @l() -20785/377/57
 p: .
 t. 
 |   A complete
@@ -2309,7 +2309,7 @@ t.
 
 --- Sentence/end 
 id: 128
-r#  20982  379  68
+r#  20983  380  68
 
 --- Paragraph/end 
 id: 25
@@ -2318,16 +2318,16 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  20984  381  1
+r#  20985  382  1
 
 
 --- Sentence/start
 id: 129
-r#  20984  381  1
+r#  20985  382  1
 
 --- Sentence//end
 id: 129
-r#  21353  386  54
+r#  21354  387  54
 p: .
 t. 
 |  In short, causative explanation is incomplete on any one scale in
@@ -2340,12 +2340,12 @@ t.
 
 --- Sentence/switch
 id: 130
-r#  21354  386  55
+r#  21355  387  55
 
 
 --- Sentence//end
 id: 130
-r#  21702  392  20
+r#  21703  393  20
 p: .
 t. 
 |   Individual
@@ -2359,12 +2359,12 @@ t.
 
 --- Sentence/switch
 id: 131
-r#  21703  392  21
+r#  21704  393  21
 
 
 --- Sentence//end
 id: 131
-r#  22153  398  34
+r#  22154  399  34
 p: .
 t. 
 |   This is intrinsic to any science: hydrology
@@ -2377,7 +2377,7 @@ t.
 
 --- Sentence/end 
 id: 131
-r#  22154  398  35
+r#  22155  399  35
 
 --- Paragraph/end 
 id: 26
@@ -2386,16 +2386,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  22156  400  1
+r#  22157  401  1
 
 
 --- Sentence/start
 id: 132
-r#  22156  400  1
+r#  22157  401  1
 
 --- Sentence//end
 id: 132
-r#  22227  400  72
+r#  22228  401  72
 p: .
 t. 
 .  The situation is similar with respect to humanities and social sciences
@@ -2403,12 +2403,12 @@ t.
 
 --- Sentence/switch
 id: 133
-r#  22228  400  73
+r#  22229  401  73
 
 
 --- Sentence//end
 id: 133
-r#  22375  402  67
+r#  22376  403  67
 p: .
 t. 
 |  A political theorist might note the waxing and waning of parties' popularity,
@@ -2417,12 +2417,12 @@ t.
 
 --- Sentence/switch
 id: 134
-r#  22376  402  68
+r#  22377  403  68
 
 
 --- Sentence//end
 id: 134
-r#  22504  404  55
+r#  22505  405  55
 p: .
 t. 
 |  The mindset of a single person acts as a societal <!!"!!>reductive base<!!"!!>
@@ -2431,16 +2431,16 @@ t.
 
 --- Sentence/switch
 id: 135
-r#  22505  404  56
+r#  22506  405  56
 
 
 --- Sentence//end
 id: 135
-r#  22745  407  48
+r#  22746  408  48
 g. 
-|   @l(-%>>) +22631/406/48
-|   +22655/406/72:18=22673/406/90
-.   @l() -22655/406/72
+|   @l(-%>>) +22632/407/48
+|   +22656/407/72:18=22674/407/90
+.   @l() -22656/407/72
 p: .
 t. 
 |   Such brings
@@ -2455,23 +2455,23 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  22793  409  1
+r#  22794  410  1
 
 
 --- Sentence/start
 id: 137
-r#  22793  409  1
+r#  22794  410  1
 
 --- Sentence//end
 id: 137
-r#  22885  410  9
+r#  22886  411  9
 g. 
-|   @l(-%>) +22746/407/49
-|   +22752/407/55:0=22752/407/55
-|   +22770/407/73:0=22770/407/73
-|   @l(-%>) +22770/407/73
-|   +22791/407/94:16=22807/409/15
-.   @l() -22791/407/94
+|   @l(-%>) +22747/408/49
+|   +22753/408/55:0=22753/408/55
+|   +22771/408/73:0=22771/408/73
+|   @l(-%>) +22771/408/73
+|   +22792/408/94:16=22808/410/15
+.   @l() -22792/408/94
 p: .
 t. 
 |  Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level
@@ -2480,12 +2480,12 @@ t.
 
 --- Sentence/switch
 id: 138
-r#  22886  410  10
+r#  22887  411  10
 
 
 --- Sentence//end
 id: 138
-r#  23000  411  83
+r#  23001  412  83
 p: .
 t. 
 |   Source files, for example,
@@ -2494,12 +2494,12 @@ t.
 
 --- Sentence/switch
 id: 139
-r#  23001  411  84
+r#  23002  412  84
 
 
 --- Sentence//end
 id: 139
-r#  23312  416  27
+r#  23313  417  27
 p: .
 t. 
 |    the
@@ -2512,12 +2512,12 @@ t.
 
 --- Sentence/switch
 id: 140
-r#  23313  416  28
+r#  23314  417  28
 
 
 --- Sentence//end
 id: 140
-r#  23471  419  31
+r#  23472  420  31
 p: .
 t. 
 |   Working from
@@ -2528,12 +2528,12 @@ t.
 
 --- Sentence/switch
 id: 141
-r#  23472  419  32
+r#  23473  420  32
 
 
 --- Sentence//end
 id: 141
-r#  23775  424  59
+r#  23776  425  59
 p: .
 t. 
 |   Telically,
@@ -2546,7 +2546,7 @@ t.
 
 --- Sentence/switch
 id: 142
-r#  23776  424  60
+r#  23777  425  60
 
 --- Paragraph/end 
 id: 28
@@ -2555,21 +2555,21 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  23940  428  1
+r#  23941  429  1
 
 
 --- Sentence/start
 id: 143
-r#  23940  428  1
+r#  23941  429  1
 
 --- Sentence//end
 id: 143
-r#  24250  432  35
+r#  24251  433  35
 g. 
-|   @l(-%>) +23910/426/33
-|   +23915/426/38:0=23915/426/38
-|   +23937/426/60:0=23937/426/60
-.   @l() -23937/426/60
+|   @l(-%>) +23911/427/33
+|   +23916/427/38:0=23916/427/38
+|   +23938/427/60:0=23938/427/60
+.   @l() -23938/427/60
 p: .
 t. 
 |   But we might still take it on faith that
@@ -2583,17 +2583,17 @@ t.
 
 --- Sentence/switch
 id: 144
-r#  24251  432  36
+r#  24252  433  36
 
 
 --- Sentence//end
 id: 144
-r#  24501  436  18
+r#  24502  437  18
 g. 
-|   @l(-%>>) +24361/434/14
-|   +24382/434/35:15=24397/434/50
-|   +24387/434/40:0=24387/434/40
-.   @l() -24387/434/40
+|   @l(-%>>) +24362/435/14
+|   +24383/435/35:15=24398/435/50
+|   +24388/435/40:0=24388/435/40
+.   @l() -24388/435/40
 p: .
 t. 
 |   Some philosophers
@@ -2605,12 +2605,12 @@ t.
 
 --- Sentence/switch
 id: 145
-r#  24502  436  19
+r#  24503  437  19
 
 
 --- Sentence//end
 id: 145
-r#  24626  438  65
+r#  24627  439  65
 p: .
 t. 
 |   However, the
@@ -2620,12 +2620,12 @@ t.
 
 --- Sentence/switch
 id: 146
-r#  24627  438  66
+r#  24628  439  66
 
 
 --- Sentence//end
 id: 146
-r#  24734  440  33
+r#  24735  441  33
 p: .
 t. 
 |  Consciousness evolved at some point in natural history, and presumably
@@ -2634,12 +2634,12 @@ t.
 
 --- Sentence/switch
 id: 147
-r#  24735  440  34
+r#  24736  441  34
 
 
 --- Sentence//end
 id: 147
-r#  25046  446  11
+r#  25047  447  11
 p: .
 t. 
 |   Instead of reacting to stimuli
@@ -2653,12 +2653,12 @@ t.
 
 --- Sentence/switch
 id: 148
-r#  25047  446  12
+r#  25048  447  12
 
 
 --- Sentence//end
 id: 148
-r#  25280  450  17
+r#  25281  451  17
 p: .
 t. 
 |   Animal behavior and intelligence
@@ -2670,7 +2670,7 @@ t.
 
 --- Sentence/switch
 id: 149
-r#  25281  450  18
+r#  25282  451  18
 
 --- Paragraph/end 
 id: 29
@@ -2679,21 +2679,21 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  25687  459  1
+r#  25688  460  1
 
 
 --- Sentence/start
 id: 150
-r#  25687  459  1
+r#  25688  460  1
 
 --- Sentence//end
 id: 150
-r#  25749  459  63
+r#  25750  460  63
 g. 
-|   @l(-%>) +25658/457/26
-|   +25663/457/31:0=25663/457/31
-|   +25685/457/53:0=25685/457/53
-.   @l() -25685/457/53
+|   @l(-%>) +25659/458/26
+|   +25664/458/31:0=25664/458/31
+|   +25686/458/53:0=25686/458/53
+.   @l() -25686/458/53
 p: .
 t. 
 |   We benefit
@@ -2708,12 +2708,12 @@ t.
 
 --- Sentence/switch
 id: 151
-r#  25750  459  64
+r#  25751  460  64
 
 
 --- Sentence//end
 id: 151
-r#  25785  460  17
+r#  25786  461  17
 p: .
 t. 
 |   I need to board
@@ -2722,12 +2722,12 @@ t.
 
 --- Sentence/switch
 id: 152
-r#  25786  460  18
+r#  25787  461  18
 
 
 --- Sentence//end
 id: 152
-r#  26004  463  28
+r#  26005  464  28
 p: .
 t. 
 |   To do so, I may well follow a well-rehearsed
@@ -2738,12 +2738,12 @@ t.
 
 --- Sentence/switch
 id: 153
-r#  26005  463  29
+r#  26006  464  29
 
 
 --- Sentence//end
 id: 153
-r#  26088  464  45
+r#  26089  465  45
 p: .
 t. 
 |   If it indicates my preferred train,
@@ -2752,12 +2752,12 @@ t.
 
 --- Sentence/switch
 id: 154
-r#  26089  464  46
+r#  26090  465  46
 
 
 --- Sentence//end
 id: 154
-r#  26156  464  113
+r#  26157  465  113
 p: .
 t. 
 .   Now, notice how each step in this process is consciously mediated
@@ -2765,12 +2765,12 @@ t.
 
 --- Sentence/switch
 id: 155
-r#  26157  464  114
+r#  26158  465  114
 
 
 --- Sentence//end
 id: 155
-r#  26286  467  8
+r#  26287  468  8
 p: .
 t. 
 |  I deliberately shift perceptual orientation multiple
@@ -2780,12 +2780,12 @@ t.
 
 --- Sentence/switch
 id: 156
-r#  26287  467  9
+r#  26288  468  9
 
 
 --- Sentence//end
 id: 156
-r#  26325  467  47
+r#  26326  468  47
 p: .
 t. 
 .   Perhaps I hear my cell phone pinging
@@ -2793,12 +2793,12 @@ t.
 
 --- Sentence/switch
 id: 157
-r#  26326  467  48
+r#  26327  468  48
 
 
 --- Sentence//end
 id: 157
-r#  26408  468  63
+r#  26409  469  63
 p: .
 t. 
 |   Or announcements
@@ -2807,12 +2807,12 @@ t.
 
 --- Sentence/switch
 id: 158
-r#  26409  468  64
+r#  26410  469  64
 
 
 --- Sentence//end
 id: 158
-r#  26492  470  23
+r#  26493  471  23
 p: .
 t. 
 |   The key
@@ -2822,7 +2822,7 @@ t.
 
 --- Sentence/switch
 id: 159
-r#  26493  470  24
+r#  26494  471  24
 
 --- Paragraph/end 
 id: 30
@@ -2831,7 +2831,7 @@ y: N/A
 
 --- Sentence//end
 id: 159
-r#  26637  475  28
+r#  26638  476  28
 p: .
 t. 
 |   They continue,
@@ -2841,12 +2841,12 @@ t.
 
 --- Sentence/switch
 id: 160
-r#  26638  475  29
+r#  26639  476  29
 
 
 --- Sentence//end
 id: 160
-r#  26734  476  56
+r#  26735  477  56
 p: .
 t. 
 |   They continue, or not, because of sub-
@@ -2854,7 +2854,7 @@ t.
 
 --- Sentence/end 
 id: 160
-r#  26735  476  57
+r#  26736  477  57
 
 --- Paragraph/end 
 id: 30
@@ -2863,16 +2863,16 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  26737  478  1
+r#  26738  479  1
 
 
 --- Sentence/start
 id: 161
-r#  26737  478  1
+r#  26738  479  1
 
 --- Sentence//end
 id: 161
-r#  26804  479  10
+r#  26805  480  10
 p: .
 t. 
 |  Not that we have first-person awareness of all cognitive
@@ -2881,12 +2881,12 @@ t.
 
 --- Sentence/switch
 id: 162
-r#  26805  479  11
+r#  26806  480  11
 
 
 --- Sentence//end
 id: 162
-r#  26950  481  33
+r#  26951  482  33
 p: .
 t. 
 |   Conscious reality has many constituents
@@ -2896,12 +2896,12 @@ t.
 
 --- Sentence/switch
 id: 163
-r#  26951  481  34
+r#  26952  482  34
 
 
 --- Sentence//end
 id: 163
-r#  27054  482  65
+r#  27055  483  65
 p: .
 t. 
 |   We see a world of discrete objects,
@@ -2910,12 +2910,12 @@ t.
 
 --- Sentence/switch
 id: 164
-r#  27055  482  66
+r#  27056  483  66
 
 
 --- Sentence//end
 id: 164
-r#  27176  484  56
+r#  27177  485  56
 p: .
 t. 
 |  Sight employs color variation to partition visual scenes, but
@@ -2924,12 +2924,12 @@ t.
 
 --- Sentence/switch
 id: 165
-r#  27177  484  57
+r#  27178  485  57
 
 
 --- Sentence//end
 id: 165
-r#  27302  486  51
+r#  27303  487  51
 p: .
 t. 
 |   Given a
@@ -2939,12 +2939,12 @@ t.
 
 --- Sentence/switch
 id: 166
-r#  27303  486  52
+r#  27304  487  52
 
 
 --- Sentence//end
 id: 166
-r#  28099  499  61
+r#  28100  500  61
 p: .
 t. 
 |  Color-perception has added complexity first because some chromatic
@@ -2963,7 +2963,7 @@ t.
 
 --- Sentence/end 
 id: 166
-r#  28100  499  62
+r#  28101  500  62
 
 --- Paragraph/end 
 id: 31
@@ -2972,16 +2972,16 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  28103  501  1
+r#  28104  502  1
 
 
 --- Sentence/start
 id: 167
-r#  28103  501  1
+r#  28104  502  1
 
 --- Sentence//end
 id: 167
-r#  28629  508  90
+r#  28630  509  90
 p: .
 t. 
 |  Humans subconsciously perform complex image-analysis tasks, many
@@ -2996,12 +2996,12 @@ t.
 
 --- Sentence/switch
 id: 168
-r#  28630  508  91
+r#  28631  509  91
 
 
 --- Sentence//end
 id: 168
-r#  28891  512  63
+r#  28892  513  63
 p: .
 t. 
 |  Via color alone we infer textural and optical details, yielding a significantly
@@ -3012,12 +3012,12 @@ t.
 
 --- Sentence/switch
 id: 169
-r#  28892  512  64
+r#  28893  513  64
 
 
 --- Sentence//end
 id: 169
-r#  29011  514  51
+r#  29012  515  51
 p: .
 t. 
 |  We do not consciously direct these processes, by contrast to
@@ -3026,12 +3026,12 @@ t.
 
 --- Sentence/switch
 id: 170
-r#  29012  514  52
+r#  29013  515  52
 
 
 --- Sentence//end
 id: 170
-r#  29284  519  30
+r#  29285  520  30
 p: .
 t. 
 |   Nevertheless,
@@ -3044,12 +3044,12 @@ t.
 
 --- Sentence/switch
 id: 171
-r#  29285  519  31
+r#  29286  520  31
 
 
 --- Sentence//end
 id: 171
-r#  29404  521  30
+r#  29405  522  30
 p: .
 t. 
 |   We do exercise deliberate
@@ -3058,7 +3058,7 @@ t.
 
 --- Sentence/end 
 id: 171
-r#  29405  521  31
+r#  29406  522  31
 
 --- Paragraph/end 
 id: 32
@@ -3067,16 +3067,16 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  29407  523  1
+r#  29408  524  1
 
 
 --- Sentence/start
 id: 172
-r#  29407  523  1
+r#  29408  524  1
 
 --- Sentence//end
 id: 172
-r#  29552  525  30
+r#  29553  526  30
 p: .
 t. 
 |  Presumably this balance between conscious and subconscious
@@ -3086,12 +3086,12 @@ t.
 
 --- Sentence/switch
 id: 173
-r#  29553  525  31
+r#  29554  526  31
 
 
 --- Sentence//end
 id: 173
-r#  29801  530  14
+r#  29802  531  14
 p: .
 t. 
 |   But even if perceptual
@@ -3104,12 +3104,12 @@ t.
 
 --- Sentence/switch
 id: 174
-r#  29802  530  15
+r#  29803  531  15
 
 
 --- Sentence//end
 id: 174
-r#  30167  537  29
+r#  30168  538  29
 p: .
 t. 
 |   Our minds work in such a manner
@@ -3124,12 +3124,12 @@ t.
 
 --- Sentence/switch
 id: 175
-r#  30168  537  30
+r#  30169  538  30
 
 
 --- Sentence//end
 id: 175
-r#  30379  541  59
+r#  30380  542  59
 p: .
 t. 
 |   Consciousness
@@ -3140,7 +3140,7 @@ t.
 
 --- Sentence/end 
 id: 175
-r#  30380  541  60
+r#  30381  542  60
 
 --- Paragraph/end 
 id: 33
@@ -3149,16 +3149,16 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  30382  543  1
+r#  30383  544  1
 
 
 --- Sentence/start
 id: 176
-r#  30382  543  1
+r#  30383  544  1
 
 --- Sentence//end
 id: 176
-r#  30640  547  22
+r#  30641  548  22
 p: .
 t. 
 |  Any comprehensive theory of human cognition, then, is necessarily a
@@ -3170,12 +3170,12 @@ t.
 
 --- Sentence/switch
 id: 177
-r#  30641  547  23
+r#  30642  548  23
 
 
 --- Sentence//end
 id: 177
-r#  30957  553  14
+r#  30958  554  14
 p: .
 t. 
 |   Consequently, investigations
@@ -3189,12 +3189,12 @@ t.
 
 --- Sentence/switch
 id: 178
-r#  30958  553  15
+r#  30959  554  15
 
 
 --- Sentence//end
 id: 178
-r#  31147  556  49
+r#  31148  557  49
 p: .
 t. 
 |   Biologists notice a similar contrast
@@ -3205,12 +3205,12 @@ t.
 
 --- Sentence/switch
 id: 179
-r#  31148  556  50
+r#  31149  557  50
 
 
 --- Sentence//end
 id: 179
-r#  31195  557  29
+r#  31196  558  29
 p: .
 t. 
 |   Lab experiments
@@ -3219,12 +3219,12 @@ t.
 
 --- Sentence/switch
 id: 180
-r#  31196  557  30
+r#  31197  558  30
 
 
 --- Sentence//end
 id: 180
-r#  31457  562  27
+r#  31458  563  27
 p: .
 t. 
 |   I propose
@@ -3236,7 +3236,7 @@ t.
 
 --- Sentence/end 
 id: 180
-r#  31458  562  28
+r#  31459  563  28
 
 --- Paragraph/end 
 id: 34
@@ -3245,16 +3245,16 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  31460  564  1
+r#  31461  565  1
 
 
 --- Sentence/start
 id: 181
-r#  31460  564  1
+r#  31461  565  1
 
 --- Sentence//end
 id: 181
-r#  31638  567  20
+r#  31639  568  20
 p: .
 t. 
 |  Subjective awareness affords a <!!"!!>geometric<!!"!!> model
@@ -3265,12 +3265,12 @@ t.
 
 --- Sentence/switch
 id: 182
-r#  31639  567  21
+r#  31640  568  21
 
 
 --- Sentence//end
 id: 182
-r#  31815  570  29
+r#  31816  571  29
 p: .
 t. 
 |   Still, the in vivo raises
@@ -3281,12 +3281,12 @@ t.
 
 --- Sentence/switch
 id: 183
-r#  31816  570  30
+r#  31817  571  30
 
 
 --- Sentence//end
 id: 183
-r#  31944  572  59
+r#  31945  573  59
 p: .
 t. 
 |   For
@@ -3296,12 +3296,12 @@ t.
 
 --- Sentence/switch
 id: 184
-r#  31945  572  60
+r#  31946  573  60
 
 
 --- Sentence//end
 id: 184
-r#  31994  573  47
+r#  31995  574  47
 p: .
 t. 
 .  This is a well-known philosophical controversy
@@ -3309,12 +3309,12 @@ t.
 
 --- Sentence/switch
 id: 185
-r#  31995  573  48
+r#  31996  574  48
 
 
 --- Sentence//end
 id: 185
-r#  32160  576  31
+r#  32161  577  31
 p: .
 t. 
 |   Phenomenology
@@ -3325,12 +3325,12 @@ t.
 
 --- Sentence/switch
 id: 186
-r#  32161  576  32
+r#  32162  577  32
 
 
 --- Sentence//end
 id: 186
-r#  32366  579  45
+r#  32367  580  45
 p: .
 t. 
 |   In particular, while introspective
@@ -3341,12 +3341,12 @@ t.
 
 --- Sentence/switch
 id: 187
-r#  32367  579  46
+r#  32368  580  46
 
 
 --- Sentence//end
 id: 187
-r#  32469  581  15
+r#  32470  582  15
 p: .
 t. 
 |   Our minds are primed to learn
@@ -3356,12 +3356,12 @@ t.
 
 --- Sentence/switch
 id: 188
-r#  32470  581  16
+r#  32471  582  16
 
 
 --- Sentence//end
 id: 188
-r#  32669  585  27
+r#  32670  586  27
 p: .
 t. 
 |   Usually this would occur
@@ -3372,7 +3372,7 @@ t.
 
 --- Sentence/end 
 id: 188
-r#  32670  585  28
+r#  32671  586  28
 
 --- Paragraph/end 
 id: 35
@@ -3381,16 +3381,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  32672  587  1
+r#  32673  588  1
 
 
 --- Sentence/start
 id: 189
-r#  32672  587  1
+r#  32673  588  1
 
 --- Sentence//end
 id: 189
-r#  32718  587  47
+r#  32719  588  47
 p: .
 t. 
 .  Suppose I examine a colorful glass paperweight
@@ -3398,12 +3398,12 @@ t.
 
 --- Sentence/switch
 id: 190
-r#  32719  587  48
+r#  32720  588  48
 
 
 --- Sentence//end
 id: 190
-r#  32881  590  5
+r#  32882  591  5
 p: .
 t. 
 |   I will most likely shift my
@@ -3414,12 +3414,12 @@ t.
 
 --- Sentence/switch
 id: 191
-r#  32882  590  6
+r#  32883  591  6
 
 
 --- Sentence//end
 id: 191
-r#  32909  590  33
+r#  32910  591  33
 p: .
 t. 
 .   Then I might turn it over
@@ -3427,12 +3427,12 @@ t.
 
 --- Sentence/switch
 id: 192
-r#  32910  590  34
+r#  32911  591  34
 
 
 --- Sentence//end
 id: 192
-r#  33049  592  35
+r#  33050  593  35
 p: .
 t. 
 |   Perhaps, from touch, I infer that
@@ -3442,12 +3442,12 @@ t.
 
 --- Sentence/switch
 id: 193
-r#  33050  592  36
+r#  33051  593  36
 
 
 --- Sentence//end
 id: 193
-r#  33190  594  37
+r#  33191  595  37
 p: .
 t. 
 |   As I just begin that action I
@@ -3457,12 +3457,12 @@ t.
 
 --- Sentence/switch
 id: 194
-r#  33191  594  38
+r#  33192  595  38
 
 
 --- Sentence//end
 id: 194
-r#  33351  596  64
+r#  33352  597  64
 p: .
 t. 
 |   So a proto-image of that
@@ -3472,12 +3472,12 @@ t.
 
 --- Sentence/switch
 id: 195
-r#  33352  596  65
+r#  33353  597  65
 
 
 --- Sentence//end
 id: 195
-r#  33427  598  21
+r#  33428  599  21
 p: .
 t. 
 |  The interplay of protention and retention creates a
@@ -3486,12 +3486,12 @@ t.
 
 --- Sentence/switch
 id: 196
-r#  33428  598  22
+r#  33429  599  22
 
 
 --- Sentence//end
 id: 196
-r#  33674  602  27
+r#  33675  603  27
 p: .
 t. 
 |   Validation of protentive expectations
@@ -3503,12 +3503,12 @@ t.
 
 --- Sentence/switch
 id: 197
-r#  33675  602  28
+r#  33676  603  28
 
 
 --- Sentence//end
 id: 197
-r#  33850  605  27
+r#  33851  606  27
 p: .
 t. 
 |   Our ability to both formulate
@@ -3518,7 +3518,7 @@ t.
 
 --- Sentence/end 
 id: 197
-r#  33851  605  28
+r#  33852  606  28
 
 --- Paragraph/end 
 id: 36
@@ -3527,16 +3527,16 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  33853  607  1
+r#  33854  608  1
 
 
 --- Sentence/start
 id: 198
-r#  33853  607  1
+r#  33854  608  1
 
 --- Sentence//end
 id: 198
-r#  33975  609  10
+r#  33976  610  10
 p: .
 t. 
 |  Via discussions like these we can collectively analyze
@@ -3546,12 +3546,12 @@ t.
 
 --- Sentence/switch
 id: 199
-r#  33976  609  11
+r#  33977  610  11
 
 
 --- Sentence//end
 id: 199
-r#  34065  611  9
+r#  34066  612  9
 p: .
 t. 
 |   Empirical actuality
@@ -3561,12 +3561,12 @@ t.
 
 --- Sentence/switch
 id: 200
-r#  34066  611  10
+r#  34067  612  10
 
 
 --- Sentence//end
 id: 200
-r#  34210  613  41
+r#  34211  614  41
 p: .
 t. 
 |   I am not literally holding a paperweight while
@@ -3576,12 +3576,12 @@ t.
 
 --- Sentence/switch
 id: 201
-r#  34211  613  42
+r#  34212  614  42
 
 
 --- Sentence//end
 id: 201
-r#  34426  617  33
+r#  34427  618  33
 p: .
 t. 
 |   I assume that
@@ -3593,12 +3593,12 @@ t.
 
 --- Sentence/switch
 id: 202
-r#  34427  617  34
+r#  34428  618  34
 
 
 --- Sentence//end
 id: 202
-r#  34534  619  31
+r#  34535  620  31
 p: .
 t. 
 |   This gives the analysis
@@ -3608,12 +3608,12 @@ t.
 
 --- Sentence/switch
 id: 203
-r#  34535  619  32
+r#  34536  620  32
 
 
 --- Sentence//end
 id: 203
-r#  34642  621  45
+r#  34643  622  45
 p: .
 t. 
 |   We aren't using
@@ -3623,12 +3623,12 @@ t.
 
 --- Sentence/switch
 id: 204
-r#  34643  621  46
+r#  34644  622  46
 
 
 --- Sentence//end
 id: 204
-r#  34769  623  52
+r#  34770  624  52
 p: .
 t. 
 |   There may or
@@ -3638,12 +3638,12 @@ t.
 
 --- Sentence/switch
 id: 205
-r#  34770  623  53
+r#  34771  624  53
 
 
 --- Sentence//end
 id: 205
-r#  34914  626  22
+r#  34915  627  22
 p: .
 t. 
 |  Searching for such correlates would be a valid investigation
@@ -3653,16 +3653,16 @@ t.
 
 --- Sentence/switch
 id: 206
-r#  34921  626  29
+r#  34922  627  29
 
 
 --- Sentence//end
 id: 206
-r#  35267  632  21
+r#  35268  633  21
 g. 
-|   @l(-%>) +34915/626/23
-|   +34934/626/42:13=34947/626/55
-.   @l() -34934/626/42
+|   @l(-%>) +34916/627/23
+|   +34935/627/42:13=34948/627/55
+.   @l() -34935/627/42
 p: .
 t. 
 |  But as a high-level science,
@@ -3676,12 +3676,12 @@ t.
 
 --- Sentence/switch
 id: 207
-r#  35268  632  22
+r#  35269  633  22
 
 
 --- Sentence//end
 id: 207
-r#  35506  637  22
+r#  35507  638  22
 p: .
 t. 
 |  Its goal, rather, should be to work toward
@@ -3692,7 +3692,7 @@ t.
 
 --- Sentence/end 
 id: 207
-r#  35507  637  23
+r#  35508  638  23
 
 --- Paragraph/end 
 id: 37
@@ -3701,16 +3701,16 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  35518  639  1
+r#  35519  640  1
 
 
 --- Sentence/start
 id: 208
-r#  35518  639  1
+r#  35519  640  1
 
 --- Sentence//end
 id: 208
-r#  35638  641  17
+r#  35639  642  17
 p: .
 t. 
 |  Phenomenologists from Husserl onward have built a
@@ -3720,12 +3720,12 @@ t.
 
 --- Sentence/switch
 id: 209
-r#  35639  641  18
+r#  35640  642  18
 
 
 --- Sentence//end
 id: 209
-r#  35749  643  9
+r#  35750  644  9
 p: .
 t. 
 |   Phenomenology explores how minimal sensate
@@ -3735,12 +3735,12 @@ t.
 
 --- Sentence/switch
 id: 210
-r#  35750  643  10
+r#  35751  644  10
 
 
 --- Sentence//end
 id: 210
-r#  35964  647  20
+r#  35965  648  20
 p: .
 t. 
 |   Apperceptive synthesis
@@ -3752,12 +3752,12 @@ t.
 
 --- Sentence/switch
 id: 211
-r#  35965  647  21
+r#  35966  648  21
 
 
 --- Sentence//end
 id: 211
-r#  36154  651  24
+r#  36155  652  24
 p: .
 t. 
 |   We cannot posit
@@ -3769,12 +3769,12 @@ t.
 
 --- Sentence/switch
 id: 212
-r#  36155  651  25
+r#  36156  652  25
 
 
 --- Sentence//end
 id: 212
-r#  36413  655  52
+r#  36414  656  52
 p: .
 t. 
 |   Such episodes then aggregate into
@@ -3786,12 +3786,12 @@ t.
 
 --- Sentence/switch
 id: 213
-r#  36414  655  53
+r#  36415  656  53
 
 
 --- Sentence//end
 id: 213
-r#  36563  658  35
+r#  36564  659  35
 p: .
 t. 
 |   And
@@ -3801,7 +3801,7 @@ t.
 
 --- Sentence/end 
 id: 213
-r#  36564  658  36
+r#  36565  659  36
 
 --- Paragraph/end 
 id: 38
@@ -3810,16 +3810,16 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  36566  660  1
+r#  36567  661  1
 
 
 --- Sentence/start
 id: 214
-r#  36566  660  1
+r#  36567  661  1
 
 --- Sentence//end
 id: 214
-r#  36847  665  14
+r#  36848  666  14
 p: .
 t. 
 |  We therefore have a provisional network of theoretical
@@ -3832,12 +3832,12 @@ t.
 
 --- Sentence/switch
 id: 215
-r#  36848  665  15
+r#  36849  666  15
 
 
 --- Sentence//end
 id: 215
-r#  37170  671  17
+r#  37171  672  17
 p: .
 t. 
 |   Phenomenology
@@ -3850,7 +3850,7 @@ t.
 
 --- Sentence/end 
 id: 215
-r#  37171  671  18
+r#  37172  672  18
 
 --- Paragraph/end 
 id: 39
@@ -3859,16 +3859,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  37175  673  1
+r#  37176  674  1
 
 
 --- Sentence/start
 id: 216
-r#  37175  673  1
+r#  37176  674  1
 
 --- Sentence//end
 id: 216
-r#  37510  680  13
+r#  37511  681  13
 p: .
 t. 
 |  By systematizing a process
@@ -3883,12 +3883,12 @@ t.
 
 --- Sentence/switch
 id: 217
-r#  37511  680  14
+r#  37512  681  14
 
 
 --- Sentence//end
 id: 217
-r#  37701  684  9
+r#  37702  685  9
 p: .
 t. 
 |   Phenomenological terminology is
@@ -3900,12 +3900,12 @@ t.
 
 --- Sentence/switch
 id: 218
-r#  37702  684  10
+r#  37703  685  10
 
 
 --- Sentence//end
 id: 218
-r#  37822  686  26
+r#  37823  687  26
 p: .
 t. 
 |   Via this sense of discursive praxis I
@@ -3914,7 +3914,7 @@ t.
 
 --- Sentence/end 
 id: 218
-r#  37823  686  27
+r#  37824  687  27
 
 --- Paragraph/end 
 id: 40
@@ -3929,21 +3929,21 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  37833  691  1
+r#  37834  692  1
 
 
 --- Sentence/start
 id: 219
-r#  37833  691  1
+r#  37834  692  1
 
 --- Sentence//end
 id: 219
-r#  38141  695  67
+r#  38142  696  67
 g. 
-|   @l(-%>>) +37973/693/22
-|   +37994/693/43:15=38009/693/58
-|   +37999/693/48:0=37999/693/48
-.   @l() -37999/693/48
+|   @l(-%>>) +37974/694/22
+|   +37995/694/43:15=38010/694/58
+|   +38000/694/48:0=38000/694/48
+.   @l() -38000/694/48
 p: .
 t. 
 |  Similar to the controversial status of first-person reports
@@ -3955,12 +3955,12 @@ t.
 
 --- Sentence/switch
 id: 220
-r#  38142  695  68
+r#  38143  696  68
 
 
 --- Sentence//end
 id: 220
-r#  38284  698  22
+r#  38285  699  22
 p: .
 t. 
 |  It is, of course, common for linguists of multiple persuasions
@@ -3970,12 +3970,12 @@ t.
 
 --- Sentence/switch
 id: 221
-r#  38285  698  23
+r#  38286  699  23
 
 
 --- Sentence//end
 id: 221
-r#  38576  703  51
+r#  38577  704  51
 p: .
 t. 
 |   Such methods
@@ -3987,7 +3987,7 @@ t.
 
 --- Sentence/end 
 id: 221
-r#  38577  703  52
+r#  38578  704  52
 
 --- Paragraph/end 
 id: 41
@@ -3996,16 +3996,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  38581  705  1
+r#  38582  706  1
 
 
 --- Sentence/start
 id: 222
-r#  38581  705  1
+r#  38582  706  1
 
 --- Sentence//end
 id: 222
-r#  38705  707  21
+r#  38706  708  21
 p: .
 t. 
 |  There are interesting analogies between the epistemic
@@ -4015,12 +4015,12 @@ t.
 
 --- Sentence/switch
 id: 223
-r#  38706  707  22
+r#  38707  708  22
 
 
 --- Sentence//end
 id: 223
-r#  38849  710  15
+r#  38850  711  15
 p: .
 t. 
 |   Both disciplines
@@ -4031,12 +4031,12 @@ t.
 
 --- Sentence/switch
 id: 224
-r#  38850  710  16
+r#  38851  711  16
 
 
 --- Sentence//end
 id: 224
-r#  39097  714  54
+r#  39098  715  54
 p: .
 t. 
 |   The possibility of one writer assenting
@@ -4047,7 +4047,7 @@ t.
 
 --- Sentence/end 
 id: 224
-r#  39098  714  55
+r#  39099  715  55
 
 --- Paragraph/end 
 id: 42
@@ -4056,16 +4056,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  39100  716  1
+r#  39101  717  1
 
 
 --- Sentence/start
 id: 225
-r#  39100  716  1
+r#  39101  717  1
 
 --- Sentence//end
 id: 225
-r#  39327  719  69
+r#  39328  720  69
 p: 
 t. 
 |  In one discussion that elucidates metascientific
@@ -4076,12 +4076,12 @@ t.
 
 --- Sentence//end
 id: 225
-r#  39498  723  55
+r#  39499  724  55
 g. 
-|   @l(-%>) +39330/719/72
-|   +39334/719/76:0=39334/719/76
-|   +39346/719/88:0=39346/719/88
-.   @l() -39346/719/88
+|   @l(-%>) +39331/720/72
+|   +39335/720/76:0=39335/720/76
+|   +39347/720/88:0=39347/720/88
+.   @l() -39347/720/88
 p: .
 t. 
 |  Viewed through the lens of structural empiricism, Cognitive Grammar
@@ -4090,12 +4090,12 @@ t.
 
 --- Sentence/switch
 id: 226
-r#  39499  723  56
+r#  39500  724  56
 
 
 --- Sentence//end
 id: 226
-r#  39969  731  79
+r#  39970  732  79
 p: .
 t. 
 |   Like any other scientific theory,
@@ -4110,12 +4110,12 @@ t.
 
 --- Sentence/switch
 id: 227
-r#  39970  731  80
+r#  39971  732  80
 
 
 --- Sentence//end
 id: 227
-r#  40211  734  76
+r#  40212  735  76
 p: .
 t. 
 |  In particular, most scientific theories entertain taxonomies and analyses of
@@ -4125,12 +4125,12 @@ t.
 
 --- Sentence/switch
 id: 228
-r#  40212  734  77
+r#  40213  735  77
 
 
 --- Sentence//end
 id: 228
-r#  40462  738  39
+r#  40463  739  39
 p: .
 t. 
 |  Empiricism is structural insofar as such <!!"!!>unobservables<!!"!!> are
@@ -4141,12 +4141,12 @@ t.
 
 --- Sentence/switch
 id: 229
-r#  40463  738  40
+r#  40464  739  40
 
 
 --- Sentence//end
 id: 229
-r#  40620  740  55
+r#  40621  741  55
 p: .
 t. 
 |   Sometimes unseen posits are
@@ -4156,12 +4156,12 @@ t.
 
 --- Sentence/switch
 id: 230
-r#  40621  740  56
+r#  40622  741  56
 
 
 --- Sentence//end
 id: 230
-r#  40902  744  43
+r#  40903  745  43
 p: .
 t. 
 |   Other phenomena
@@ -4173,12 +4173,12 @@ t.
 
 --- Sentence/switch
 id: 231
-r#  40903  744  44
+r#  40904  745  44
 
 
 --- Sentence//end
 id: 231
-r#  41027  746  10
+r#  41028  747  10
 p: .
 t. 
 |   Natural selection or <!!"!!>design<!!"!!>
@@ -4188,12 +4188,12 @@ t.
 
 --- Sentence/switch
 id: 232
-r#  41028  746  11
+r#  41029  747  11
 
 
 --- Sentence//end
 id: 232
-r#  41227  748  68
+r#  41228  749  68
 p: .
 t. 
 |   Potentially <!!"!!>dark<!!"!!> matter and energy will ultimately
@@ -4202,7 +4202,7 @@ t.
 
 --- Sentence/end 
 id: 232
-r#  41228  748  69
+r#  41229  749  69
 
 --- Paragraph/end 
 id: 43
@@ -4211,16 +4211,16 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  41232  750  1
+r#  41233  751  1
 
 
 --- Sentence/start
 id: 233
-r#  41232  750  1
+r#  41233  751  1
 
 --- Sentence//end
 id: 233
-r#  41505  753  38
+r#  41506  754  38
 p: .
 t. 
 |  The status of mental attitudes and subjectivity  physics and material
@@ -4231,12 +4231,12 @@ t.
 
 --- Sentence/switch
 id: 234
-r#  41506  753  39
+r#  41507  754  39
 
 
 --- Sentence//end
 id: 234
-r#  41769  757  10
+r#  41770  758  10
 p: .
 t. 
 |   If explanations quantifying
@@ -4248,12 +4248,12 @@ t.
 
 --- Sentence/switch
 id: 235
-r#  41770  757  11
+r#  41771  758  11
 
 
 --- Sentence//end
 id: 235
-r#  41849  758  35
+r#  41850  759  35
 p: 
 t. 
 |   Specifically in regard to ad-hoc sentence
@@ -4262,12 +4262,12 @@ t.
 
 --- Sentence//end
 id: 235
-r#  42008  762  40
+r#  42009  763  40
 g. 
-|   @l(-%>) +41852/758/38
-|   +41856/758/42:0=41856/758/42
-|   +41868/758/54:0=41868/758/54
-.   @l() -41868/758/54
+|   @l(-%>) +41853/759/38
+|   +41857/759/42:0=41857/759/42
+|   +41869/759/54:0=41869/759/54
+.   @l() -41869/759/54
 p: .
 t. 
 |  The linguistic material analyzed in many ... texts [is] constructed
@@ -4276,12 +4276,12 @@ t.
 
 --- Sentence/switch
 id: 236
-r#  42009  762  41
+r#  42010  763  41
 
 
 --- Sentence//end
 id: 236
-r#  42146  764  62
+r#  42147  765  62
 p: .
 t. 
 |  For this reason, the analyses can be easily attacked on the grounds that
@@ -4290,12 +4290,12 @@ t.
 
 --- Sentence/switch
 id: 237
-r#  42147  764  63
+r#  42148  765  63
 
 
 --- Sentence//end
 id: 237
-r#  42485  769  23
+r#  42486  770  23
 p: .
 t. 
 |   ...
@@ -4308,17 +4308,17 @@ t.
 
 --- Sentence/switch
 id: 238
-r#  42486  769  24
+r#  42487  770  24
 
 
 --- Sentence//end
 id: 238
-r#  42827  778  20
+r#  42828  779  20
 g. 
-|   @l(-%>) +42699/774/21
-|   +42704/774/26:0=42704/774/26
-|   +42716/774/38:0=42716/774/38
-.   @l() -42716/774/38
+|   @l(-%>) +42700/775/21
+|   +42705/775/26:0=42705/775/26
+|   +42717/775/38:0=42717/775/38
+.   @l() -42717/775/38
 p: .
 t. 
 |   However, this conviction overlooks the fact
@@ -4331,17 +4331,17 @@ t.
 
 --- Sentence/switch
 id: 239
-r#  42828  778  21
+r#  42829  779  21
 
 
 --- Sentence//end
 id: 239
-r#  43150  782  31
+r#  43151  783  31
 g. 
-|   @l(-%>) +42832/778/25
-|   +42837/778/30:0=42837/778/30
-|   +42851/778/44:0=42851/778/44
-.   @l() -42851/778/44
+|   @l(-%>) +42833/779/25
+|   +42838/779/30:0=42838/779/30
+|   +42852/779/44:0=42852/779/44
+.   @l() -42852/779/44
 p: .
 t. 
 |   In...\ structural empiricism, isolated
@@ -4353,12 +4353,12 @@ t.
 
 --- Sentence/switch
 id: 240
-r#  43151  782  32
+r#  43152  783  32
 
 
 --- Sentence//end
 id: 240
-r#  43368  785  25
+r#  43369  786  25
 p: .
 t. 
 |   [A] structural empiricist is not
@@ -4369,12 +4369,12 @@ t.
 
 --- Sentence/switch
 id: 241
-r#  43369  785  26
+r#  43370  786  26
 
 
 --- Sentence//end
 id: 241
-r#  43622  791  13
+r#  43623  792  13
 p: .
 t. 
 |   [/kow:33/]
@@ -4387,12 +4387,12 @@ t.
 
 --- Sentence/switch
 id: 242
-r#  43623  791  14
+r#  43624  792  14
 
 
 --- Sentence//end
 id: 242
-r#  43725  792  59
+r#  43726  793  59
 p: .
 t. 
 |   Ad-hoc hypotheticals also belong to that
@@ -4400,7 +4400,7 @@ t.
 
 --- Sentence/end 
 id: 242
-r#  43726  792  60
+r#  43727  793  60
 
 --- Paragraph/end 
 id: 44
@@ -4409,16 +4409,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  43728  794  1
+r#  43729  795  1
 
 
 --- Sentence/start
 id: 243
-r#  43728  794  1
+r#  43729  795  1
 
 --- Sentence//end
 id: 243
-r#  44052  799  14
+r#  44053  800  14
 p: .
 t. 
 |  I would put it thus: what makes a sentence an object in the
@@ -4431,12 +4431,12 @@ t.
 
 --- Sentence/switch
 id: 244
-r#  44053  799  15
+r#  44054  800  15
 
 
 --- Sentence//end
 id: 244
-r#  44184  800  55
+r#  44185  801  55
 p: .
 t. 
 |   We can, for instance, note syntactic, morphological, or lexical patterns,
@@ -4445,12 +4445,12 @@ t.
 
 --- Sentence/switch
 id: 245
-r#  44185  800  56
+r#  44186  801  56
 
 
 --- Sentence//end
 id: 245
-r#  44316  803  11
+r#  44317  804  11
 p: .
 t. 
 |   Constructed
@@ -4461,17 +4461,17 @@ t.
 
 --- Sentence/switch
 id: 246
-r#  44317  803  12
+r#  44318  804  12
 
 
 --- Sentence//end
 id: 246
-r#  44394  804  50
+r#  44395  805  50
 g. 
-|   @l(-%>>) +44345/804/1
-|   +44365/804/21:15=44380/804/36
-|   +44370/804/26:0=44370/804/26
-.   @l() -44370/804/26
+|   @l(-%>>) +44346/805/1
+|   +44366/805/21:15=44381/805/36
+|   +44371/805/26:0=44371/805/26
+.   @l() -44371/805/26
 p: .
 t. 
 |   Even imagined speech
@@ -4480,12 +4480,12 @@ t.
 
 --- Sentence/switch
 id: 247
-r#  44395  804  51
+r#  44396  805  51
 
 
 --- Sentence//end
 id: 247
-r#  44674  809  41
+r#  44675  810  41
 p: .
 t. 
 |  We can label syntactic categories; track
@@ -4496,7 +4496,7 @@ t.
 
 --- Sentence/end 
 id: 247
-r#  44675  809  42
+r#  44676  810  42
 
 --- Paragraph/end 
 id: 45
@@ -4505,16 +4505,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  44677  811  1
+r#  44678  812  1
 
 
 --- Sentence/start
 id: 248
-r#  44677  811  1
+r#  44678  812  1
 
 --- Sentence//end
 id: 248
-r#  44763  812  14
+r#  44764  813  14
 p: .
 t. 
 |  My earlier subway-platform speculation was similarly about hypothetical
@@ -4523,12 +4523,12 @@ t.
 
 --- Sentence/switch
 id: 249
-r#  44764  812  15
+r#  44765  813  15
 
 
 --- Sentence//end
 id: 249
-r#  45015  815  70
+r#  45016  816  70
 p: .
 t. 
 |   I have caught New York subways in real life,
@@ -4539,12 +4539,12 @@ t.
 
 --- Sentence/switch
 id: 250
-r#  45016  815  71
+r#  45017  816  71
 
 
 --- Sentence//end
 id: 250
-r#  45271  819  27
+r#  45272  820  27
 p: .
 t. 
 |  Husserl and his commentators, too, build many analyses around constructed situations,
@@ -4555,12 +4555,12 @@ t.
 
 --- Sentence/switch
 id: 251
-r#  45272  819  28
+r#  45273  820  28
 
 
 --- Sentence//end
 id: 251
-r#  45496  822  74
+r#  45497  823  74
 p: .
 t. 
 |   Following such examples, my presentation
@@ -4571,12 +4571,12 @@ t.
 
 --- Sentence/switch
 id: 252
-r#  45497  822  75
+r#  45498  823  75
 
 
 --- Sentence//end
 id: 252
-r#  45715  826  18
+r#  45716  827  18
 p: .
 t. 
 |  Instead of focusing on the contrast between real and hypothetical
@@ -4587,12 +4587,12 @@ t.
 
 --- Sentence/switch
 id: 253
-r#  45716  826  19
+r#  45717  827  19
 
 
 --- Sentence//end
 id: 253
-r#  46041  830  85
+r#  46042  831  85
 p: .
 t. 
 |   Similarly, Cognitive Grammar advances a series of interrelated
@@ -4603,7 +4603,7 @@ t.
 
 --- Sentence/end 
 id: 253
-r#  46042  830  86
+r#  46043  831  86
 
 --- Paragraph/end 
 id: 46
@@ -4612,16 +4612,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  46045  832  1
+r#  46046  833  1
 
 
 --- Sentence/start
 id: 254
-r#  46045  832  1
+r#  46046  833  1
 
 --- Sentence//end
 id: 254
-r#  46243  834  47
+r#  46244  835  47
 p: .
 t. 
 |  Methodologically speaking, reasonably, a hypothetical object, space, or situation becomes
@@ -4631,12 +4631,12 @@ t.
 
 --- Sentence/switch
 id: 255
-r#  46244  834  48
+r#  46245  835  48
 
 
 --- Sentence//end
 id: 255
-r#  46447  837  57
+r#  46448  838  57
 p: .
 t. 
 |   The proper explanatory
@@ -4647,12 +4647,12 @@ t.
 
 --- Sentence/switch
 id: 256
-r#  46448  837  58
+r#  46449  838  58
 
 
 --- Sentence//end
 id: 256
-r#  46793  843  52
+r#  46794  844  52
 p: .
 t. 
 |  By analogy, complex numbers (and other dreamed-up number systems:
@@ -4664,7 +4664,7 @@ t.
 
 --- Sentence/end 
 id: 256
-r#  46794  843  53
+r#  46795  844  53
 
 --- Paragraph/end 
 id: 47
@@ -4673,16 +4673,16 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  46796  845  1
+r#  46797  846  1
 
 
 --- Sentence/start
 id: 257
-r#  46796  845  1
+r#  46797  846  1
 
 --- Sentence//end
 id: 257
-r#  46869  846  18
+r#  46870  847  18
 p: .
 t. 
 |  Constructed examples are prominent in both linguistics
@@ -4691,12 +4691,12 @@ t.
 
 --- Sentence/switch
 id: 258
-r#  46870  846  19
+r#  46871  847  19
 
 
 --- Sentence//end
 id: 258
-r#  47010  848  37
+r#  47011  849  37
 p: .
 t. 
 |   Relatedly, the <!!"!!>demarcation problem<!!"!!>
@@ -4706,12 +4706,12 @@ t.
 
 --- Sentence/switch
 id: 259
-r#  47011  848  38
+r#  47012  849  38
 
 
 --- Sentence//end
 id: 259
-r#  47075  852  1
+r#  47076  853  1
 p: 
 t. 
 |   Suppose I examine a
@@ -4720,12 +4720,12 @@ t.
 
 --- Sentence/switch
 id: 260
-r#  47078  852  4
+r#  47079  853  4
 
 
 --- Sentence//end
 id: 260
-r#  47117  853  1
+r#  47118  854  1
 p: 
 t. 
 |   John poured water onto the stove. {\sssm}
@@ -4734,12 +4734,12 @@ t.
 
 --- Sentence/switch
 id: 261
-r#  47120  853  4
+r#  47121  854  4
 
 
 --- Sentence//end
 id: 261
-r#  47155  853  39
+r#  47156  854  39
 p: .
 t. 
 .   John spilled water onto the stove
@@ -4747,12 +4747,12 @@ t.
 
 --- Sentence/switch
 id: 262
-r#  47156  853  40
+r#  47157  854  40
 
 
 --- Sentence//end
 id: 262
-r#  47290  857  52
+r#  47291  858  52
 p: .
 t. 
 |  
@@ -4762,12 +4762,12 @@ t.
 
 --- Sentence/switch
 id: 263
-r#  47291  857  53
+r#  47292  858  53
 
 
 --- Sentence//end
 id: 263
-r#  47469  860  22
+r#  47470  861  22
 p: .
 t. 
 |   By selecting
@@ -4778,16 +4778,16 @@ t.
 
 --- Sentence/switch
 id: 264
-r#  47470  860  23
+r#  47471  861  23
 
 
 --- Sentence//end
 id: 264
-r#  47639  863  25
+r#  47640  864  25
 g. 
-|   @l(-%>>) +47556/862/7
-|   +47581/862/32:19=47600/862/51
-.   @l() -47581/862/32
+|   @l(-%>>) +47557/863/7
+|   +47582/863/32:19=47601/863/51
+.   @l() -47582/863/32
 p: .
 t. 
 |   The
@@ -4798,12 +4798,12 @@ t.
 
 --- Sentence/switch
 id: 265
-r#  47640  863  26
+r#  47641  864  26
 
 
 --- Sentence//end
 id: 265
-r#  47715  864  57
+r#  47716  865  57
 p: .
 t. 
 |   This phenomenon
@@ -4811,7 +4811,7 @@ t.
 
 --- Sentence/end 
 id: 265
-r#  47716  864  58
+r#  47717  865  58
 
 --- Paragraph/end 
 id: 48
@@ -4820,16 +4820,16 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  47720  866  1
+r#  47721  867  1
 
 
 --- Sentence/start
 id: 266
-r#  47720  866  1
+r#  47721  867  1
 
 --- Sentence//end
 id: 266
-r#  47739  866  20
+r#  47740  867  20
 p: .
 t. 
 .  But let's step back
@@ -4837,12 +4837,12 @@ t.
 
 --- Sentence/switch
 id: 267
-r#  47740  866  21
+r#  47741  867  21
 
 
 --- Sentence//end
 id: 267
-r#  47913  868  50
+r#  47914  869  50
 p: .
 t. 
 |   For sake of discussion, I will assume <!(15)!> and <!(16)!>
@@ -4852,12 +4852,12 @@ t.
 
 --- Sentence/switch
 id: 268
-r#  47914  868  51
+r#  47915  869  51
 
 
 --- Sentence//end
 id: 268
-r#  48044  870  57
+r#  48045  871  57
 p: .
 t. 
 |   Implicit
@@ -4867,12 +4867,12 @@ t.
 
 --- Sentence/switch
 id: 269
-r#  48045  870  58
+r#  48046  871  58
 
 
 --- Sentence//end
 id: 269
-r#  48296  875  11
+r#  48297  876  11
 p: .
 t. 
 |   The
@@ -4885,12 +4885,12 @@ t.
 
 --- Sentence/switch
 id: 270
-r#  48297  875  12
+r#  48298  876  12
 
 
 --- Sentence//end
 id: 270
-r#  48445  877  41
+r#  48446  878  41
 p: .
 t. 
 |   Likewise, probably they were talking to
@@ -4900,12 +4900,12 @@ t.
 
 --- Sentence/switch
 id: 271
-r#  48446  877  42
+r#  48447  878  42
 
 
 --- Sentence//end
 id: 271
-r#  49015  887  24
+r#  49016  888  24
 p: .
 t. 
 |   Much of the
@@ -4922,7 +4922,7 @@ t.
 
 --- Sentence/end 
 id: 271
-r#  49016  887  25
+r#  49017  888  25
 
 --- Paragraph/end 
 id: 49
@@ -4931,16 +4931,16 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  49018  889  1
+r#  49019  890  1
 
 
 --- Sentence/start
 id: 272
-r#  49018  889  1
+r#  49019  890  1
 
 --- Sentence//end
 id: 272
-r#  49092  890  20
+r#  49093  891  20
 p: .
 t. 
 |  And yet, such configurations are also implicit in the
@@ -4949,12 +4949,12 @@ t.
 
 --- Sentence/switch
 id: 273
-r#  49093  890  21
+r#  49094  891  21
 
 
 --- Sentence//end
 id: 273
-r#  49201  892  14
+r#  49202  893  14
 p: .
 t. 
 |   Foci of attention tend to become
@@ -4964,12 +4964,12 @@ t.
 
 --- Sentence/switch
 id: 274
-r#  49202  892  15
+r#  49203  893  15
 
 
 --- Sentence//end
 id: 274
-r#  49339  894  36
+r#  49340  895  36
 p: .
 t. 
 |   It is John who initiates the action that
@@ -4979,12 +4979,12 @@ t.
 
 --- Sentence/switch
 id: 275
-r#  49340  894  37
+r#  49341  895  37
 
 
 --- Sentence//end
 id: 275
-r#  49585  899  16
+r#  49586  900  16
 p: .
 t. 
 |   Since speakers
@@ -4997,12 +4997,12 @@ t.
 
 --- Sentence/switch
 id: 276
-r#  49586  899  17
+r#  49587  900  17
 
 
 --- Sentence//end
 id: 276
-r#  49778  902  55
+r#  49779  903  55
 p: .
 t. 
 |   Anyone hearing <!(15)!> and <!(16)!> will,
@@ -5013,12 +5013,12 @@ t.
 
 --- Sentence/switch
 id: 277
-r#  49779  902  56
+r#  49780  903  56
 
 
 --- Sentence//end
 id: 277
-r#  49891  904  65
+r#  49892  905  65
 p: .
 t. 
 |  Syntactic categories like nouns and verbs are
@@ -5026,7 +5026,7 @@ t.
 
 --- Sentence/end 
 id: 277
-r#  49892  904  66
+r#  49893  905  66
 
 --- Paragraph/end 
 id: 50
@@ -5035,16 +5035,16 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  49894  906  1
+r#  49895  907  1
 
 
 --- Sentence/start
 id: 278
-r#  49894  906  1
+r#  49895  907  1
 
 --- Sentence//end
 id: 278
-r#  50104  910  47
+r#  50105  911  47
 p: .
 t. 
 |  As a feature of our
@@ -5056,12 +5056,12 @@ t.
 
 --- Sentence/switch
 id: 279
-r#  50105  910  48
+r#  50106  911  48
 
 
 --- Sentence//end
 id: 279
-r#  50288  914  41
+r#  50289  915  41
 p: .
 t. 
 |  Others' cognitions being, modulo such imprecision,
@@ -5072,12 +5072,12 @@ t.
 
 --- Sentence/switch
 id: 280
-r#  50289  914  42
+r#  50290  915  42
 
 
 --- Sentence//end
 id: 280
-r#  50586  921  52
+r#  50587  922  52
 p: .
 t. 
 |  We have a
@@ -5091,17 +5091,17 @@ t.
 
 --- Sentence/switch
 id: 281
-r#  50587  921  53
+r#  50588  922  53
 
 
 --- Sentence//end
 id: 281
-r#  50953  928  47
+r#  50954  929  47
 g. 
-|   @l(-%>>) +50715/924/19
-|   +50736/924/40:15=50751/924/55
-|   +50741/924/45:0=50741/924/45
-.   @l() -50741/924/45
+|   @l(-%>>) +50716/925/19
+|   +50737/925/40:15=50752/925/55
+|   +50742/925/45:0=50742/925/45
+.   @l() -50742/925/45
 p: .
 t. 
 |  Basic organizational principles migrate from one to
@@ -5114,7 +5114,7 @@ t.
 
 --- Sentence/end 
 id: 281
-r#  50954  928  48
+r#  50955  929  48
 
 --- Paragraph/end 
 id: 51
@@ -5123,16 +5123,16 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  50956  930  1
+r#  50957  931  1
 
 
 --- Sentence/start
 id: 282
-r#  50956  930  1
+r#  50957  931  1
 
 --- Sentence//end
 id: 282
-r#  51161  933  42
+r#  51162  934  42
 p: .
 t. 
 |  If this is correct, then posits of linguistic argumentation
@@ -5143,12 +5143,12 @@ t.
 
 --- Sentence/switch
 id: 283
-r#  51162  933  43
+r#  51163  934  43
 
 
 --- Sentence//end
 id: 283
-r#  51331  937  27
+r#  51332  938  27
 p: .
 t. 
 |   At the
@@ -5160,12 +5160,12 @@ t.
 
 --- Sentence/switch
 id: 284
-r#  51332  937  28
+r#  51333  938  28
 
 
 --- Sentence//end
 id: 284
-r#  51446  939  50
+r#  51447  940  50
 p: .
 t. 
 |   Language is the
@@ -5174,7 +5174,7 @@ t.
 
 --- Sentence/end 
 id: 284
-r#  51447  939  51
+r#  51448  940  51
 
 --- Paragraph/end 
 id: 52
@@ -5183,16 +5183,16 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  51451  941  1
+r#  51452  942  1
 
 
 --- Sentence/start
 id: 285
-r#  51451  941  1
+r#  51452  942  1
 
 --- Sentence//end
 id: 285
-r#  51629  944  32
+r#  51630  945  32
 p: .
 t. 
 |  Phenomenology and cognitive linguistics, then, to
@@ -5203,12 +5203,12 @@ t.
 
 --- Sentence/switch
 id: 286
-r#  51630  944  33
+r#  51631  945  33
 
 
 --- Sentence//end
 id: 286
-r#  51852  949  22
+r#  51853  950  22
 p: .
 t. 
 |   More to the current
@@ -5221,7 +5221,7 @@ t.
 
 --- Sentence/switch
 id: 287
-r#  51853  949  23
+r#  51854  950  23
 
 --- Paragraph/end 
 id: 53
@@ -5236,21 +5236,21 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  52055  956  21
+r#  52056  957  21
 
 
 --- Sentence/start
 id: 288
-r#  52055  956  21
+r#  52056  957  21
 
 --- Sentence//end
 id: 288
-r#  52165  957  53
+r#  52166  958  53
 g. 
-|   @l(-%>) +52035/956/1
-|   +52039/956/5:0=52039/956/5
-|   +52051/956/17:0=52051/956/17
-.   @l() -52051/956/17
+|   @l(-%>) +52036/957/1
+|   +52040/957/5:0=52040/957/5
+|   +52052/957/17:0=52052/957/17
+.   @l() -52052/957/17
 p: .
 t. 
 |   And, in particular, the
@@ -5262,12 +5262,12 @@ t.
 
 --- Sentence/switch
 id: 289
-r#  52166  957  54
+r#  52167  958  54
 
 
 --- Sentence//end
 id: 289
-r#  52305  959  38
+r#  52306  960  38
 p: .
 t. 
 |   In itself, that seems uncontroversial,
@@ -5277,12 +5277,12 @@ t.
 
 --- Sentence/switch
 id: 290
-r#  52306  959  39
+r#  52307  960  39
 
 
 --- Sentence//end
 id: 290
-r#  52402  961  26
+r#  52403  962  26
 p: .
 t. 
 |   There are two
@@ -5291,7 +5291,7 @@ t.
 
 --- Sentence/end 
 id: 290
-r#  52403  961  27
+r#  52404  962  27
 
 --- Paragraph/end 
 id: 54
@@ -5300,37 +5300,37 @@ y: N/A
 
 --- Paragraph/start
 id: 55
-r#  52405  963  1
+r#  52406  964  1
 
 
 --- Sentence/start
 id: 291
-r#  52405  963  1
+r#  52406  964  1
 
 --- Sentence//end
 id: 291
-r#  52636  966  33
+r#  52673  967  33
 p: .
 t. 
 |  A good example of formal answers to the second question is
-|   [/Bolt/], based on Peter 's Conceptual Space
+|  <!!Bolt et. al.!!> [/Bolt/], based on Peter <!!Gardenfors!!>'s Conceptual Space
 |  theory, alongside a syntactic approach related to Categorial Grammar
 .  and mathematical Category Theory
 
 
 --- Sentence/switch
 id: 292
-r#  52637  966  34
+r#  52674  967  34
 
 
 --- Sentence//end
 id: 292
-r#  52915  971  27
+r#  52969  972  27
 p: .
 t. 
 |   Consider <!!"!!>red box<!!"!!>, and
 |  (for sake of argument, although this deviates from the
-|  specifics of -inspired work on conceptualization)
+|  specifics of <!!Gardenfors!!>-inspired work on conceptualization)
 |  define the concepts set-theoretically:
 |  red means the set of red things; box means the set of
 .  boxes (or box-like things)
@@ -5338,12 +5338,12 @@ t.
 
 --- Sentence/switch
 id: 293
-r#  52916  971  28
+r#  52970  972  28
 
 
 --- Sentence//end
 id: 293
-r#  52985  972  37
+r#  53039  973  37
 p: .
 t. 
 |   Combining the concepts yields
@@ -5352,12 +5352,12 @@ t.
 
 --- Sentence/switch
 id: 294
-r#  52986  972  38
+r#  53040  973  38
 
 
 --- Sentence//end
 id: 294
-r#  53151  975  30
+r#  53205  976  30
 p: .
 t. 
 |   Meanwhile,
@@ -5368,12 +5368,12 @@ t.
 
 --- Sentence/switch
 id: 295
-r#  53152  975  31
+r#  53206  976  31
 
 
 --- Sentence//end
 id: 295
-r#  53260  977  38
+r#  53314  978  38
 p: .
 t. 
 |   Thus we have a
@@ -5383,12 +5383,12 @@ t.
 
 --- Sentence/switch
 id: 296
-r#  53261  977  39
+r#  53315  978  39
 
 
 --- Sentence//end
 id: 296
-r#  53490  981  30
+r#  53544  982  30
 p: .
 t. 
 |   The gist
@@ -5399,7 +5399,7 @@ t.
 
 --- Sentence/end 
 id: 296
-r#  53491  981  31
+r#  53545  982  31
 
 --- Paragraph/end 
 id: 55
@@ -5408,19 +5408,19 @@ y: N/A
 
 --- Paragraph/start
 id: 56
-r#  53503  983  11
+r#  53547  984  1
 
 
 --- Sentence/start
 id: 297
-r#  53503  983  11
+r#  53547  984  1
 
 --- Sentence//end
 id: 297
-r#  53713  986  36
+r#  53786  987  36
 p: .
 t. 
-|   generalize this kind of insight by proposing
+|  <!!Bolt et. al.!!> generalize this kind of insight by proposing
 |  Categories (in the mathematical sense) for syntax and semantics,
 |  with lexical word-meanings serving as maps (technically
 .  functors) from one to the other
@@ -5428,21 +5428,21 @@ t.
 
 --- Sentence/switch
 id: 298
-r#  53714  986  37
+r#  53787  987  37
 
 
 --- Sentence//end
 id: 298
-r#  53996  991  8
+r#  54070  992  8
 g. 
-|   @l(-%>) +53818/988/12
-|   +53836/988/30:13=53849/988/43
-.   @l() -53836/988/30
+|   @l(-%>>) +53891/989/12
+|   +53910/989/31:13=53923/989/44
+.   @l() -53910/989/31
 p: .
 t. 
 |   Because functors
 |  project <!!"!!>morphisms<!!"!!> (transforms in Categories) from one Category
-|  to another,assemblies of syntactic operations
+|  to another, assemblies of syntactic operations
 |  project onto semantic/conceptual structures systematically,
 |  extending the lexicon-to-concept functor to aggregate
 .  phrases
@@ -5450,12 +5450,12 @@ t.
 
 --- Sentence/switch
 id: 299
-r#  53997  991  9
+r#  54071  992  9
 
 
 --- Sentence//end
 id: 299
-r#  54192  994  22
+r#  54266  995  22
 p: .
 t. 
 |   In other words, we can give a mathematical gloss
@@ -5465,7 +5465,7 @@ t.
 
 --- Sentence/end 
 id: 299
-r#  54193  994  23
+r#  54267  995  23
 
 --- Paragraph/end 
 id: 56
@@ -5474,16 +5474,16 @@ y: N/A
 
 --- Paragraph/start
 id: 57
-r#  54196  996  1
+r#  54270  997  1
 
 
 --- Sentence/start
 id: 300
-r#  54196  996  1
+r#  54270  997  1
 
 --- Sentence//end
 id: 300
-r#  54257  996  62
+r#  54331  997  62
 p: .
 t. 
 .  For , then, syntax and semantics develop in consort
@@ -5491,12 +5491,12 @@ t.
 
 --- Sentence/switch
 id: 301
-r#  54258  996  63
+r#  54332  997  63
 
 
 --- Sentence//end
 id: 301
-r#  54410  998  79
+r#  54484  999  79
 p: .
 t. 
 |   On the
@@ -5506,12 +5506,12 @@ t.
 
 --- Sentence/switch
 id: 302
-r#  54411  998  80
+r#  54485  999  80
 
 
 --- Sentence//end
 id: 302
-r#  54560  1000  47
+r#  54634  1001  47
 p: .
 t. 
 |   On the other, semantic theory
@@ -5521,12 +5521,12 @@ t.
 
 --- Sentence/switch
 id: 303
-r#  54561  1000  48
+r#  54635  1001  48
 
 
 --- Sentence//end
 id: 303
-r#  54800  1004  37
+r#  54874  1005  37
 p: .
 t. 
 |   In [/Bolt/], Conceptual Spaces
@@ -5538,28 +5538,28 @@ t.
 
 --- Sentence/switch
 id: 304
-r#  54801  1004  38
+r#  54875  1005  38
 
 
 --- Sentence//end
 id: 304
-r#  55027  1008  62
+r#  55118  1009  62
 p: .
 t. 
 |  I am not convinced of the explanatory value of
 |  quasi-mathematical treatments for concepts, such as
-|  advanced by  (such criteria as <!!"!!>convexivity<!!"!!>
+|  advanced by <!!Gardenfors!!> (such criteria as <!!"!!>convexivity<!!"!!>
 .  feel forced to me, outside special contexts like color terms)
 
 
 --- Sentence/switch
 id: 305
-r#  55028  1008  63
+r#  55119  1009  63
 
 
 --- Sentence//end
 id: 305
-r#  55284  1013  39
+r#  55375  1014  39
 p: .
 t. 
 |  Nonetheless,  codify what a formal engagement
@@ -5570,7 +5570,7 @@ t.
 
 --- Sentence/end 
 id: 305
-r#  55285  1013  40
+r#  55376  1014  40
 
 --- Paragraph/end 
 id: 57
@@ -5579,16 +5579,16 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  55290  1016  1
+r#  55381  1017  1
 
 
 --- Sentence/start
 id: 306
-r#  55290  1016  1
+r#  55381  1017  1
 
 --- Sentence//end
 id: 306
-r#  55514  1019  31
+r#  55605  1020  31
 p: .
 t. 
 |  If we abstract away word-order (the left/right adjacency distinction),
@@ -5599,12 +5599,12 @@ t.
 
 --- Sentence/switch
 id: 307
-r#  55515  1019  32
+r#  55606  1020  32
 
 
 --- Sentence//end
 id: 307
-r#  55681  1022  39
+r#  55772  1023  39
 p: .
 t. 
 |   Because mappings from a tuple
@@ -5615,12 +5615,12 @@ t.
 
 --- Sentence/switch
 id: 308
-r#  55682  1022  40
+r#  55773  1023  40
 
 
 --- Sentence//end
 id: 308
-r#  55795  1025  8
+r#  55886  1026  8
 p: .
 t. 
 |  Propositions are an overarching sentential type,
@@ -5630,12 +5630,12 @@ t.
 
 --- Sentence/switch
 id: 309
-r#  55796  1025  9
+r#  55887  1026  9
 
 
 --- Sentence//end
 id: 309
-r#  55990  1029  37
+r#  56081  1030  37
 p: .
 t. 
 |   A sentence is properly
@@ -5646,7 +5646,7 @@ t.
 
 --- Sentence/end 
 id: 309
-r#  55991  1029  38
+r#  56082  1030  38
 
 --- Paragraph/end 
 id: 58
@@ -5655,16 +5655,16 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  55996  1031  1
+r#  56087  1032  1
 
 
 --- Sentence/start
 id: 310
-r#  55996  1031  1
+r#  56087  1032  1
 
 --- Sentence//end
 id: 310
-r#  56234  1035  30
+r#  56325  1036  30
 p: .
 t. 
 |  All of these paradigms assume that phrases compose
@@ -5676,7 +5676,7 @@ t.
 
 --- Sentence/switch
 id: 311
-r#  56235  1035  31
+r#  56326  1036  31
 
 --- Paragraph/end 
 id: 59
@@ -5691,21 +5691,21 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  56337  1040  1
+r#  56428  1041  1
 
 
 --- Sentence/start
 id: 312
-r#  56337  1040  1
+r#  56428  1041  1
 
 --- Sentence//end
 id: 312
-r#  56471  1043  14
+r#  56562  1044  14
 g. 
-|   @l(-%>) +56309/1036/55
-|   +56314/1036/60:0=56314/1036/60
-|   +56327/1036/73:0=56327/1036/73
-.   @l() -56327/1036/73
+|   @l(-%>) +56400/1037/55
+|   +56405/1037/60:0=56405/1037/60
+|   +56418/1037/73:0=56418/1037/73
+.   @l() -56418/1037/73
 p: .
 t. 
 |   I will outline a
@@ -5717,12 +5717,12 @@ t.
 
 --- Sentence/switch
 id: 313
-r#  56472  1043  15
+r#  56563  1044  15
 
 
 --- Sentence//end
 id: 313
-r#  56508  1046  1
+r#  56599  1047  1
 p: 
 t. 
 .   Consider a full sentence:
@@ -5730,12 +5730,12 @@ t.
 
 --- Sentence/switch
 id: 314
-r#  56511  1046  4
+r#  56602  1047  4
 
 
 --- Sentence//end
 id: 314
-r#  56574  1046  67
+r#  56665  1047  67
 p: !
 t. 
 .   I put Mom's chocolate brownies in this red tin box, take some
@@ -5743,12 +5743,12 @@ t.
 
 --- Sentence/switch
 id: 315
-r#  56575  1046  68
+r#  56666  1047  68
 
 
 --- Sentence//end
 id: 315
-r#  56681  1050  40
+r#  56772  1051  40
 p: .
 t. 
 |  
@@ -5758,12 +5758,12 @@ t.
 
 --- Sentence/switch
 id: 316
-r#  56682  1050  41
+r#  56773  1051  41
 
 
 --- Sentence//end
 id: 316
-r#  56701  1050  60
+r#  56792  1051  60
 p: 
 t. 
 .   Here are a few:  
@@ -5771,72 +5771,72 @@ t.
 
 --- Sentence//end
 id: 316
-r#  56879  1056  39
+r#  56979  1057  39
 g. 
-|   @l(-%>>) +56756/1054/42
-|   +56784/1054/70:22=56806/1054/92
-|   +56789/1054/75:0=56789/1054/75
-.   @l() -56789/1054/75
+|   @l(-%>>) +56856/1055/51
+|   +56884/1055/79:22=56906/1055/101
+|   +56889/1055/84:0=56889/1055/84
+.   @l() -56889/1055/84
 p: 
 t. 
-|    <!!tin!!> box  provides insight
+|    <!!tin!!> box <!!->!!> provides insight
 |  into how the box will look, and
 .  feel to the touch, and how to open it 
 
 
 --- Sentence//end
 id: 316
-r#  56979  1058  97
+r#  57088  1059  106
 p: 
 t. 
-.     <!!red!!> tin box   the color helps one find it amidst other objects 
+.     <!!red!!> tin box <!!->!!>  the color helps one find it amidst other objects 
 
 
 --- Sentence//end
 id: 316
-r#  57143  1061  56
+r#  57261  1062  56
 p: 
 t. 
-|     <!!this!!> red tin box   invites the hearer to focus on something proximate
+|     <!!this!!> red tin box <!!->!!>  invites the hearer to focus on something proximate
 .  to the speaker; deictic augments descriptive reference 
 
 
 --- Sentence//end
 id: 316
-r#  57298  1064  44
+r#  57425  1065  44
 p: 
 t. 
-|     <!!in!!> this red tin box   draws attention to the interior, with its functional
+|     <!!in!!> this red tin box <!!->!!>  draws attention to the interior, with its functional
 .  affordance of holding and storing contents 
 
 
 --- Sentence//end
 id: 316
-r#  57442  1067  30
+r#  57578  1068  30
 p: 
 t. 
-|     <!!chocolate!!> brownies   <!!"!!>chocolate<!!"!!> adds detail relevant to whether the
+|     <!!chocolate!!> brownies <!!->!!>  <!!"!!>chocolate<!!"!!> adds detail relevant to whether the
 .  hearer will want to eat them 
 
 
 --- Sentence//end
 id: 316
-r#  57687  1071  60
+r#  57832  1072  60
 p: .
 t. 
-|     <!!Mom's!!> chocolate brownies   helps anchor the referent in situations
+|     <!!Mom's!!> chocolate brownies <!!->!!>  helps anchor the referent in situations
 |  known to the listener (insofar as the brownies are not otherwise identified);
 .  viz., Mom made them, and this fact is known to the listener
 
 
 --- Sentence/switch
 id: 317
-r#  57688  1071  61
+r#  57833  1072  61
 
 
 --- Sentence//end
 id: 317
-r#  57789  1072  65
+r#  57934  1073  65
 p: .
 t. 
 |   On an alternative interpretation,
@@ -5844,7 +5844,7 @@ t.
 
 --- Sentence/end 
 id: 317
-r#  57794  1074  2
+r#  57939  1075  2
 
 --- Paragraph/end 
 id: 60
@@ -5853,16 +5853,16 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  57797  1077  1
+r#  57942  1078  1
 
 
 --- Sentence/start
 id: 318
-r#  57797  1077  1
+r#  57942  1078  1
 
 --- Sentence//end
 id: 318
-r#  57850  1077  54
+r#  57995  1078  54
 p: .
 t. 
 .  We should examine both syntactic and semantic factors
@@ -5870,12 +5870,12 @@ t.
 
 --- Sentence/switch
 id: 319
-r#  57851  1077  55
+r#  57996  1078  55
 
 
 --- Sentence//end
 id: 319
-r#  57954  1079  55
+r#  58099  1080  55
 p: .
 t. 
 |  Semantically, clearly each word adds its own
@@ -5884,12 +5884,12 @@ t.
 
 --- Sentence/switch
 id: 320
-r#  57955  1079  56
+r#  58100  1080  56
 
 
 --- Sentence//end
 id: 320
-r#  58065  1082  9
+r#  58210  1083  9
 p: .
 t. 
 |  How to properly model the intermediate stages
@@ -5899,12 +5899,12 @@ t.
 
 --- Sentence/switch
 id: 321
-r#  58066  1082  10
+r#  58211  1083  10
 
 
 --- Sentence//end
 id: 321
-r#  58185  1084  11
+r#  58330  1085  11
 p: .
 t. 
 |   Syntactically, it should be obvious that
@@ -5914,12 +5914,12 @@ t.
 
 --- Sentence/switch
 id: 322
-r#  58186  1084  12
+r#  58331  1085  12
 
 
 --- Sentence//end
 id: 322
-r#  58318  1086  26
+r#  58463  1087  26
 p: .
 t. 
 |   This is presumably enforced by, or an effect of,
@@ -5928,7 +5928,7 @@ t.
 
 --- Sentence/end 
 id: 322
-r#  58319  1086  27
+r#  58464  1087  27
 
 --- Paragraph/end 
 id: 61
@@ -5937,16 +5937,16 @@ y: N/A
 
 --- Paragraph/start
 id: 62
-r#  58321  1088  1
+r#  58466  1089  1
 
 
 --- Sentence/start
 id: 323
-r#  58321  1088  1
+r#  58466  1089  1
 
 --- Sentence//end
 id: 323
-r#  58441  1089  60
+r#  58586  1090  60
 p: .
 t. 
 |  Addressing the semantic plane first, considering words with
@@ -5955,12 +5955,12 @@ t.
 
 --- Sentence/switch
 id: 324
-r#  58442  1089  61
+r#  58587  1090  61
 
 
 --- Sentence//end
 id: 324
-r#  58520  1091  15
+r#  58665  1092  15
 p: .
 t. 
 |  It's simple to note that <!!"!!>red box<!!"!!> designates a box which
@@ -5969,12 +5969,12 @@ t.
 
 --- Sentence/switch
 id: 325
-r#  58521  1091  16
+r#  58666  1092  16
 
 
 --- Sentence//end
 id: 325
-r#  58609  1092  51
+r#  58754  1093  51
 p: .
 t. 
 |   But we should investigate how this
@@ -5983,12 +5983,12 @@ t.
 
 --- Sentence/switch
 id: 326
-r#  58610  1092  52
+r#  58755  1093  52
 
 
 --- Sentence//end
 id: 326
-r#  58750  1095  10
+r#  58895  1096  10
 p: .
 t. 
 |   I would
@@ -5999,12 +5999,12 @@ t.
 
 --- Sentence/switch
 id: 327
-r#  58751  1095  11
+r#  58896  1096  11
 
 
 --- Sentence//end
 id: 327
-r#  58834  1096  38
+r#  58979  1097  38
 p: .
 t. 
 |   But nor do we make sense of that phrase in
@@ -6013,12 +6013,12 @@ t.
 
 --- Sentence/switch
 id: 328
-r#  58835  1096  39
+r#  58980  1097  39
 
 
 --- Sentence//end
 id: 328
-r#  58936  1098  20
+r#  59081  1099  20
 p: .
 t. 
 |   This is a good
@@ -6028,12 +6028,12 @@ t.
 
 --- Sentence/switch
 id: 329
-r#  58937  1098  21
+r#  59082  1099  21
 
 
 --- Sentence//end
 id: 329
-r#  59051  1099  71
+r#  59196  1100  71
 p: .
 t. 
 |   Should <!(17)!>'s hearer decide to partake in
@@ -6042,12 +6042,12 @@ t.
 
 --- Sentence/switch
 id: 330
-r#  59052  1099  72
+r#  59197  1100  72
 
 
 --- Sentence//end
 id: 330
-r#  59176  1101  73
+r#  59321  1102  73
 p: .
 t. 
 |  <!!"!!>Red tin box<!!"!!> thereby equips said hearer with
@@ -6056,12 +6056,12 @@ t.
 
 --- Sentence/switch
 id: 331
-r#  59177  1101  74
+r#  59322  1102  74
 
 
 --- Sentence//end
 id: 331
-r#  59331  1104  21
+r#  59476  1105  21
 p: .
 t. 
 |  Hearer does not require an explicit mental image at the moment
@@ -6071,12 +6071,12 @@ t.
 
 --- Sentence/switch
 id: 332
-r#  59332  1104  22
+r#  59477  1105  22
 
 
 --- Sentence//end
 id: 332
-r#  59492  1106  35
+r#  59637  1107  35
 p: .
 t. 
 |   Of course, while imagining that future scenario,
@@ -6085,7 +6085,7 @@ t.
 
 --- Sentence/end 
 id: 332
-r#  59493  1106  36
+r#  59638  1107  36
 
 --- Paragraph/end 
 id: 62
@@ -6094,16 +6094,16 @@ y: N/A
 
 --- Paragraph/start
 id: 63
-r#  59495  1108  1
+r#  59640  1109  1
 
 
 --- Sentence/start
 id: 333
-r#  59495  1108  1
+r#  59640  1109  1
 
 --- Sentence//end
 id: 333
-r#  59704  1111  34
+r#  59849  1112  34
 p: .
 t. 
 |  Taking this case as an example, it seems as if phrases
@@ -6114,16 +6114,16 @@ t.
 
 --- Sentence/switch
 id: 334
-r#  59705  1111  35
+r#  59850  1112  35
 
 
 --- Sentence//end
 id: 334
-r#  60042  1116  39
+r#  60187  1117  39
 g. 
-|   @l(-%>) +59934/1115/8
-|   +59953/1115/27:14=59967/1115/41
-.   @l() -59953/1115/27
+|   @l(-%>) +60079/1116/8
+|   +60098/1116/27:14=60112/1116/41
+.   @l() -60098/1116/27
 p: .
 t. 
 |   This presumably reflects
@@ -6136,12 +6136,12 @@ t.
 
 --- Sentence/switch
 id: 335
-r#  60043  1116  40
+r#  60188  1117  40
 
 
 --- Sentence//end
 id: 335
-r#  60149  1118  32
+r#  60294  1119  32
 p: .
 t. 
 |  If we can accept this as a feature of cognition as such, it yields a
@@ -6150,12 +6150,12 @@ t.
 
 --- Sentence/switch
 id: 336
-r#  60150  1118  33
+r#  60295  1119  33
 
 
 --- Sentence//end
 id: 336
-r#  60252  1119  71
+r#  60397  1120  71
 p: .
 t. 
 |   Such semi-perceptual content
@@ -6163,7 +6163,7 @@ t.
 
 --- Sentence/end 
 id: 336
-r#  60253  1119  72
+r#  60398  1120  72
 
 --- Paragraph/end 
 id: 63
@@ -6172,16 +6172,16 @@ y: N/A
 
 --- Paragraph/start
 id: 64
-r#  60255  1121  1
+r#  60400  1122  1
 
 
 --- Sentence/start
 id: 337
-r#  60255  1121  1
+r#  60400  1122  1
 
 --- Sentence//end
 id: 337
-r#  60314  1121  60
+r#  60459  1122  60
 p: .
 t. 
 .  Syntactically, meanwhile, the word order seems fairly rigid
@@ -6189,12 +6189,12 @@ t.
 
 --- Sentence/switch
 id: 338
-r#  60315  1121  61
+r#  60460  1122  61
 
 
 --- Sentence//end
 id: 338
-r#  60417  1123  44
+r#  60562  1124  44
 p: .
 t. 
 |   This
@@ -6204,12 +6204,12 @@ t.
 
 --- Sentence/switch
 id: 339
-r#  60418  1123  45
+r#  60563  1124  45
 
 
 --- Sentence//end
 id: 339
-r#  60587  1127  9
+r#  60732  1128  9
 p: .
 t. 
 |   Still,
@@ -6221,12 +6221,12 @@ t.
 
 --- Sentence/switch
 id: 340
-r#  60588  1127  10
+r#  60733  1128  10
 
 
 --- Sentence//end
 id: 340
-r#  60758  1130  11
+r#  60903  1131  11
 p: .
 t. 
 |   Among adjectives, those naming attributes that are
@@ -6237,12 +6237,12 @@ t.
 
 --- Sentence/switch
 id: 341
-r#  60759  1130  12
+r#  60904  1131  12
 
 
 --- Sentence//end
 id: 341
-r#  60823  1131  20
+r#  60968  1132  20
 p: .
 t. 
 |   A metal box can be painted over, but will
@@ -6251,12 +6251,12 @@ t.
 
 --- Sentence/switch
 id: 342
-r#  60824  1131  21
+r#  60969  1132  21
 
 
 --- Sentence//end
 id: 342
-r#  60894  1132  47
+r#  61039  1133  47
 p: .
 t. 
 |   Hence <!!"!!>red<!!"!!> slots
@@ -6265,12 +6265,12 @@ t.
 
 --- Sentence/switch
 id: 343
-r#  60895  1132  48
+r#  61040  1133  48
 
 
 --- Sentence//end
 id: 343
-r#  61005  1134  59
+r#  61150  1135  59
 p: .
 t. 
 |  Adjectives of compositional substance bind more
@@ -6279,12 +6279,12 @@ t.
 
 --- Sentence/switch
 id: 344
-r#  61006  1134  60
+r#  61151  1135  60
 
 
 --- Sentence//end
 id: 344
-r#  61297  1141  23
+r#  61442  1142  23
 p: .
 t. 
 |  Such conventions evidently reflect
@@ -6297,7 +6297,7 @@ t.
 
 --- Sentence/end 
 id: 344
-r#  61298  1141  24
+r#  61443  1142  24
 
 --- Paragraph/end 
 id: 64
@@ -6306,16 +6306,16 @@ y: N/A
 
 --- Paragraph/start
 id: 65
-r#  61300  1143  1
+r#  61445  1144  1
 
 
 --- Sentence/start
 id: 345
-r#  61300  1143  1
+r#  61445  1144  1
 
 --- Sentence//end
 id: 345
-r#  61495  1146  30
+r#  61640  1147  30
 p: .
 t. 
 |  Phrases built around material objects thereby evidently
@@ -6326,12 +6326,12 @@ t.
 
 --- Sentence/switch
 id: 346
-r#  61496  1146  31
+r#  61641  1147  31
 
 
 --- Sentence//end
 id: 346
-r#  61709  1150  26
+r#  61854  1151  26
 p: .
 t. 
 |   This is a syntactic
@@ -6342,7 +6342,7 @@ t.
 
 --- Sentence/end 
 id: 346
-r#  61710  1150  27
+r#  61855  1151  27
 
 --- Paragraph/end 
 id: 65
@@ -6351,16 +6351,16 @@ y: N/A
 
 --- Paragraph/start
 id: 66
-r#  61712  1152  1
+r#  61857  1153  1
 
 
 --- Sentence/start
 id: 347
-r#  61712  1152  1
+r#  61857  1153  1
 
 --- Sentence//end
 id: 347
-r#  61870  1154  56
+r#  62015  1155  56
 p: .
 t. 
 |  Parts of speech, moreover, reflect how words play
@@ -6370,12 +6370,12 @@ t.
 
 --- Sentence/switch
 id: 348
-r#  61871  1154  57
+r#  62016  1155  57
 
 
 --- Sentence//end
 id: 348
-r#  62009  1157  32
+r#  62154  1158  32
 p: .
 t. 
 |  Noun phrases are de-facto landmarks in the synthesizing
@@ -6385,12 +6385,12 @@ t.
 
 --- Sentence/switch
 id: 349
-r#  62010  1157  33
+r#  62155  1158  33
 
 
 --- Sentence//end
 id: 349
-r#  62210  1161  33
+r#  62355  1162  33
 p: .
 t. 
 |   This surely reflects
@@ -6402,12 +6402,12 @@ t.
 
 --- Sentence/switch
 id: 350
-r#  62211  1161  34
+r#  62356  1162  34
 
 
 --- Sentence//end
 id: 350
-r#  62317  1163  43
+r#  62462  1164  43
 p: .
 t. 
 |   They serve
@@ -6417,12 +6417,12 @@ t.
 
 --- Sentence/switch
 id: 351
-r#  62318  1163  44
+r#  62463  1164  44
 
 
 --- Sentence//end
 id: 351
-r#  62529  1167  11
+r#  62674  1168  11
 p: .
 t. 
 |   Since linguistic structure
@@ -6433,7 +6433,7 @@ t.
 
 --- Sentence/end 
 id: 351
-r#  62530  1167  12
+r#  62675  1168  12
 
 --- Paragraph/end 
 id: 66
@@ -6442,16 +6442,16 @@ y: N/A
 
 --- Paragraph/start
 id: 67
-r#  62534  1169  1
+r#  62679  1170  1
 
 
 --- Sentence/start
 id: 352
-r#  62534  1169  1
+r#  62679  1170  1
 
 --- Sentence//end
 id: 352
-r#  62687  1172  23
+r#  62832  1173  23
 p: .
 t. 
 |  Type-theoretically, modeling some parts of speech as
@@ -6462,12 +6462,12 @@ t.
 
 --- Sentence/switch
 id: 353
-r#  62688  1172  24
+r#  62833  1173  24
 
 
 --- Sentence//end
 id: 353
-r#  62798  1174  32
+r#  62943  1175  32
 p: .
 t. 
 |   Noun-like conceptual
@@ -6477,12 +6477,12 @@ t.
 
 --- Sentence/switch
 id: 354
-r#  62799  1174  33
+r#  62944  1175  33
 
 
 --- Sentence//end
 id: 354
-r#  63001  1178  25
+r#  63146  1179  25
 p: .
 t. 
 |   <!!"!!>Tin box<!!"!!>, say,
@@ -6494,17 +6494,17 @@ t.
 
 --- Sentence/switch
 id: 355
-r#  63002  1178  26
+r#  63147  1179  26
 
 
 --- Sentence//end
 id: 355
-r#  63304  1183  40
+r#  63449  1184  40
 g. 
-|   @l(-%>>) +63142/1181/13
-|   +63164/1181/35:16=63180/1181/51
-|   +63169/1181/40:0=63169/1181/40
-.   @l() -63169/1181/40
+|   @l(-%>>) +63287/1182/13
+|   +63309/1182/35:16=63325/1182/51
+|   +63314/1182/40:0=63314/1182/40
+.   @l() -63314/1182/40
 p: .
 t. 
 |   The formal construct
@@ -6517,12 +6517,12 @@ t.
 
 --- Sentence/switch
 id: 356
-r#  63305  1183  41
+r#  63450  1184  41
 
 
 --- Sentence//end
 id: 356
-r#  63607  1189  15
+r#  63752  1190  15
 p: .
 t. 
 |   Similarly, propositions
@@ -6535,7 +6535,7 @@ t.
 
 --- Sentence/end 
 id: 356
-r#  63608  1189  16
+r#  63753  1190  16
 
 --- Paragraph/end 
 id: 67
@@ -6544,16 +6544,16 @@ y: N/A
 
 --- Paragraph/start
 id: 68
-r#  63610  1191  1
+r#  63755  1192  1
 
 
 --- Sentence/start
 id: 357
-r#  63610  1191  1
+r#  63755  1192  1
 
 --- Sentence//end
 id: 357
-r#  63733  1192  37
+r#  63878  1193  37
 p: .
 t. 
 |  (Syntactic-) Categorial type theories are, of course, just a few among many protocols
@@ -6562,12 +6562,12 @@ t.
 
 --- Sentence/switch
 id: 358
-r#  63734  1192  38
+r#  63879  1193  38
 
 
 --- Sentence//end
 id: 358
-r#  63791  1193  19
+r#  63936  1194  19
 p: .
 t. 
 |   Phrase-structure grammars emphasize
@@ -6576,12 +6576,12 @@ t.
 
 --- Sentence/switch
 id: 359
-r#  63792  1193  20
+r#  63937  1194  20
 
 
 --- Sentence//end
 id: 359
-r#  64063  1197  52
+r#  64208  1198  52
 p: .
 t. 
 |   Dependency grammars
@@ -6593,12 +6593,12 @@ t.
 
 --- Sentence/switch
 id: 360
-r#  64064  1197  53
+r#  64209  1198  53
 
 
 --- Sentence//end
 id: 360
-r#  64388  1203  45
+r#  64533  1204  45
 p: .
 t. 
 |  If our framework is instead (or in addition) more
@@ -6610,7 +6610,7 @@ t.
 
 --- Sentence/end 
 id: 360
-r#  64389  1203  46
+r#  64534  1204  46
 
 --- Paragraph/end 
 id: 68
@@ -6619,16 +6619,16 @@ y: N/A
 
 --- Paragraph/start
 id: 69
-r#  64393  1205  1
+r#  64538  1206  1
 
 
 --- Sentence/start
 id: 361
-r#  64393  1205  1
+r#  64538  1206  1
 
 --- Sentence//end
 id: 361
-r#  64626  1208  59
+r#  64771  1209  59
 p: .
 t. 
 |  To examine further, imagine a simple programming language with
@@ -6639,12 +6639,12 @@ t.
 
 --- Sentence/switch
 id: 362
-r#  64627  1208  60
+r#  64772  1209  60
 
 
 --- Sentence//end
 id: 362
-r#  64758  1210  38
+r#  64903  1211  38
 p: .
 t. 
 |  The most common structure in such a language would be expressions consisting of a function
@@ -6653,12 +6653,12 @@ t.
 
 --- Sentence/switch
 id: 363
-r#  64759  1210  39
+r#  64904  1211  39
 
 
 --- Sentence//end
 id: 363
-r#  64905  1213  8
+r#  65050  1214  8
 p: .
 t. 
 |   The interpreter
@@ -6669,12 +6669,12 @@ t.
 
 --- Sentence/switch
 id: 364
-r#  64906  1213  9
+r#  65051  1214  9
 
 
 --- Sentence//end
 id: 364
-r#  64949  1213  52
+r#  65094  1214  52
 p: 
 t. 
 .   Assume the following basic operations:   
@@ -6682,12 +6682,12 @@ t.
 
 --- Sentence//end
 id: 364
-r#  65103  1218  43
+r#  65248  1219  43
 g. 
-|   @l(-%>) +64952/1213/55
-|   +64956/1213/59:0=64956/1213/59
-|   +64968/1213/71:0=64968/1213/71
-.   @l() -64968/1213/71
+|   @l(-%>) +65097/1214/55
+|   +65101/1214/59:0=65101/1214/59
+|   +65113/1214/71:0=65113/1214/71
+.   @l() -65113/1214/71
 p: .
 t. 
 |    If the current symbol is a numeric literal, convert it to an actual number
@@ -6696,12 +6696,12 @@ t.
 
 --- Sentence/switch
 id: 365
-r#  65104  1218  44
+r#  65249  1219  44
 
 
 --- Sentence//end
 id: 365
-r#  65198  1220  48
+r#  65343  1221  48
 p: .
 t. 
 |   Convert
@@ -6711,12 +6711,12 @@ t.
 
 --- Sentence/switch
 id: 366
-r#  65199  1220  49
+r#  65344  1221  49
 
 
 --- Sentence//end
 id: 366
-r#  65244  1221  25
+r#  65389  1222  25
 p: .
 t. 
 |   Place the current
@@ -6725,12 +6725,12 @@ t.
 
 --- Sentence/switch
 id: 367
-r#  65250  1223  4
+r#  65395  1224  4
 
 
 --- Sentence//end
 id: 367
-r#  65328  1224  30
+r#  65473  1225  30
 p: .
 t. 
 |   If the current symbol is a variable, retrieve
@@ -6739,12 +6739,12 @@ t.
 
 --- Sentence/switch
 id: 368
-r#  65329  1224  31
+r#  65474  1225  31
 
 
 --- Sentence//end
 id: 368
-r#  65529  1227  77
+r#  65674  1228  77
 p: .
 t. 
 |   Because every
@@ -6755,12 +6755,12 @@ t.
 
 --- Sentence/switch
 id: 369
-r#  65530  1227  78
+r#  65675  1228  78
 
 
 --- Sentence//end
 id: 369
-r#  65580  1228  50
+r#  65725  1229  50
 p: .
 t. 
 .  Again, place the current value on a program stack
@@ -6768,12 +6768,12 @@ t.
 
 --- Sentence/switch
 id: 370
-r#  65586  1230  4
+r#  65731  1231  4
 
 
 --- Sentence//end
 id: 370
-r#  65680  1231  39
+r#  65825  1232  39
 p: .
 t. 
 |   If the current symbol is a function-symbol, identify
@@ -6782,12 +6782,12 @@ t.
 
 --- Sentence/switch
 id: 371
-r#  65681  1231  40
+r#  65826  1232  40
 
 
 --- Sentence//end
 id: 371
-r#  65886  1235  14
+r#  66031  1236  14
 p: .
 t. 
 |   If we allow
@@ -6799,12 +6799,12 @@ t.
 
 --- Sentence/switch
 id: 372
-r#  65887  1235  15
+r#  66032  1236  15
 
 
 --- Sentence//end
 id: 372
-r#  66135  1239  42
+r#  66280  1240  42
 p: .
 t. 
 |   Once the correct procedure is identified,
@@ -6816,12 +6816,12 @@ t.
 
 --- Sentence/switch
 id: 373
-r#  66136  1239  43
+r#  66281  1240  43
 
 
 --- Sentence//end
 id: 373
-r#  66295  1244  9
+r#  66440  1245  9
 p: .
 t. 
 |  
@@ -6832,16 +6832,16 @@ t.
 
 --- Sentence/switch
 id: 374
-r#  66296  1244  10
+r#  66441  1245  10
 
 
 --- Sentence//end
 id: 374
-r#  66454  1246  48
+r#  66599  1247  48
 g. 
-|   @l(-%>>) +66369/1245/11
-|   +66395/1245/37:20=66415/1246/9
-.   @l() -66395/1245/37
+|   @l(-%>>) +66514/1246/11
+|   +66540/1246/37:20=66560/1247/9
+.   @l() -66540/1246/37
 p: .
 t. 
 |   While this account is too simplistic for practical computer
@@ -6850,7 +6850,7 @@ t.
 
 --- Sentence/end 
 id: 374
-r#  66455  1246  49
+r#  66600  1247  49
 
 --- Paragraph/end 
 id: 69
@@ -6859,16 +6859,16 @@ y: N/A
 
 --- Paragraph/start
 id: 70
-r#  66457  1248  1
+r#  66602  1249  1
 
 
 --- Sentence/start
 id: 375
-r#  66457  1248  1
+r#  66602  1249  1
 
 --- Sentence//end
 id: 375
-r#  66619  1250  33
+r#  66764  1251  33
 p: .
 t. 
 |  Among the added complications relevant to a real-world push/transfer
@@ -6878,12 +6878,12 @@ t.
 
 --- Sentence/switch
 id: 376
-r#  66620  1250  34
+r#  66765  1251  34
 
 
 --- Sentence//end
 id: 376
-r#  66725  1251  59
+r#  66870  1252  59
 p: .
 t. 
 |   By stipulation, the interpreter or compiler
@@ -6892,12 +6892,12 @@ t.
 
 --- Sentence/switch
 id: 377
-r#  66726  1251  60
+r#  66871  1252  60
 
 
 --- Sentence//end
 id: 377
-r#  66845  1253  46
+r#  66990  1254  46
 p: .
 t. 
 |  Selecting a correct overload is straightforward if there is one exact
@@ -6906,12 +6906,12 @@ t.
 
 --- Sentence/switch
 id: 378
-r#  66846  1253  47
+r#  66991  1254  47
 
 
 --- Sentence//end
 id: 378
-r#  66986  1255  38
+r#  67131  1256  38
 p: .
 t. 
 |   However, most modern
@@ -6921,12 +6921,12 @@ t.
 
 --- Sentence/switch
 id: 379
-r#  66987  1255  39
+r#  67132  1256  39
 
 
 --- Sentence//end
 id: 379
-r#  67172  1258  9
+r#  67317  1259  9
 p: .
 t. 
 |   Moreover, modern languages commonly
@@ -6937,12 +6937,12 @@ t.
 
 --- Sentence/switch
 id: 380
-r#  67173  1258  10
+r#  67318  1259  10
 
 
 --- Sentence//end
 id: 380
-r#  67297  1259  68
+r#  67442  1260  68
 p: .
 t. 
 |   In these systems, to compute which overload matches a
@@ -6950,7 +6950,7 @@ t.
 
 --- Sentence/end 
 id: 380
-r#  67298  1259  69
+r#  67443  1260  69
 
 --- Paragraph/end 
 id: 70
@@ -6959,16 +6959,16 @@ y: N/A
 
 --- Paragraph/start
 id: 71
-r#  67300  1261  1
+r#  67445  1262  1
 
 
 --- Sentence/start
 id: 381
-r#  67300  1261  1
+r#  67445  1262  1
 
 --- Sentence//end
 id: 381
-r#  67627  1265  43
+r#  67772  1266  43
 p: .
 t. 
 |  A second difficulty for push/transfer mechanics is deriving the correct
@@ -6980,12 +6980,12 @@ t.
 
 --- Sentence/switch
 id: 382
-r#  67628  1265  44
+r#  67773  1266  44
 
 
 --- Sentence//end
 id: 382
-r#  67770  1267  39
+r#  67915  1268  39
 p: .
 t. 
 |   Usually this sequence is
@@ -6995,12 +6995,12 @@ t.
 
 --- Sentence/switch
 id: 383
-r#  67771  1267  40
+r#  67916  1268  40
 
 
 --- Sentence//end
 id: 383
-r#  68003  1270  41
+r#  68148  1271  41
 p: .
 t. 
 |   Compilers must also deduce which tokens
@@ -7011,12 +7011,12 @@ t.
 
 --- Sentence/switch
 id: 384
-r#  68004  1270  42
+r#  68149  1271  42
 
 
 --- Sentence//end
 id: 384
-r#  68349  1274  83
+r#  68494  1275  83
 p: .
 t. 
 |   Parsing high-level code is therefore a
@@ -7027,7 +7027,7 @@ t.
 
 --- Sentence/end 
 id: 384
-r#  68350  1274  84
+r#  68495  1275  84
 
 --- Paragraph/end 
 id: 71
@@ -7036,16 +7036,16 @@ y: N/A
 
 --- Paragraph/start
 id: 72
-r#  68353  1276  1
+r#  68498  1277  1
 
 
 --- Sentence/start
 id: 385
-r#  68353  1276  1
+r#  68498  1277  1
 
 --- Sentence//end
 id: 385
-r#  68480  1277  53
+r#  68625  1278  53
 p: .
 t. 
 |  Despite its simplistic provenance, the <!!"!!>push/transfer<!!"!!> execution model
@@ -7054,12 +7054,12 @@ t.
 
 --- Sentence/switch
 id: 386
-r#  68481  1277  54
+r#  68626  1278  54
 
 
 --- Sentence//end
 id: 386
-r#  68720  1281  18
+r#  68865  1282  18
 p: .
 t. 
 |   For one
@@ -7071,12 +7071,12 @@ t.
 
 --- Sentence/switch
 id: 387
-r#  68721  1281  19
+r#  68866  1282  19
 
 
 --- Sentence//end
 id: 387
-r#  68918  1284  20
+r#  69063  1285  20
 p: .
 t. 
 |   Moreover, semantic complexities such as
@@ -7086,7 +7086,7 @@ t.
 
 --- Sentence/end 
 id: 387
-r#  68919  1284  21
+r#  69064  1285  21
 
 --- Paragraph/end 
 id: 72
@@ -7095,16 +7095,16 @@ y: N/A
 
 --- Paragraph/start
 id: 73
-r#  68923  1286  1
+r#  69068  1287  1
 
 
 --- Sentence/start
 id: 388
-r#  68923  1286  1
+r#  69068  1287  1
 
 --- Sentence//end
 id: 388
-r#  69204  1290  19
+r#  69349  1291  19
 p: .
 t. 
 |  Both computer code and natural language are, by many lights,
@@ -7116,12 +7116,12 @@ t.
 
 --- Sentence/switch
 id: 389
-r#  69205  1290  20
+r#  69350  1291  20
 
 
 --- Sentence//end
 id: 389
-r#  69318  1291  64
+r#  69463  1292  64
 p: .
 t. 
 |   With proper edge-filtering, tree <!!"!!>visiting<!!"!!>
@@ -7130,12 +7130,12 @@ t.
 
 --- Sentence/switch
 id: 390
-r#  69319  1291  65
+r#  69464  1292  65
 
 
 --- Sentence//end
 id: 390
-r#  69451  1294  21
+r#  69596  1295  21
 p: .
 t. 
 |  Type-checking may be described as a graph-traversal
@@ -7145,17 +7145,17 @@ t.
 
 --- Sentence/switch
 id: 391
-r#  69452  1294  22
+r#  69597  1295  22
 
 
 --- Sentence//end
 id: 391
-r#  69755  1300  9
+r#  69900  1301  9
 g. 
-|   @l(-%>>) +69477/1295/14
-|   +69499/1295/36:16=69515/1295/52
-|   +69504/1295/41:0=69504/1295/41
-.   @l() -69504/1295/41
+|   @l(-%>>) +69622/1296/14
+|   +69644/1296/36:16=69660/1296/52
+|   +69649/1296/41:0=69649/1296/41
+.   @l() -69649/1296/41
 p: .
 t. 
 |   Assuming
@@ -7169,12 +7169,12 @@ t.
 
 --- Sentence/switch
 id: 392
-r#  69756  1300  10
+r#  69901  1301  10
 
 
 --- Sentence//end
 id: 392
-r#  70222  1308  67
+r#  70367  1309  67
 p: .
 t. 
 |   Both type-checking
@@ -7189,7 +7189,7 @@ t.
 
 --- Sentence/end 
 id: 392
-r#  70223  1308  68
+r#  70368  1309  68
 
 --- Paragraph/end 
 id: 73
@@ -7198,16 +7198,16 @@ y: N/A
 
 --- Paragraph/start
 id: 74
-r#  70225  1310  1
+r#  70370  1311  1
 
 
 --- Sentence/start
 id: 393
-r#  70225  1310  1
+r#  70370  1311  1
 
 --- Sentence//end
 id: 393
-r#  70542  1315  39
+r#  70687  1316  39
 p: .
 t. 
 |  In short, whenever a directed graph models a computational
@@ -7220,12 +7220,12 @@ t.
 
 --- Sentence/switch
 id: 394
-r#  70543  1315  40
+r#  70688  1316  40
 
 
 --- Sentence//end
 id: 394
-r#  70668  1317  52
+r#  70813  1318  52
 p: .
 t. 
 |   I believe
@@ -7235,12 +7235,12 @@ t.
 
 --- Sentence/switch
 id: 395
-r#  70669  1317  53
+r#  70814  1318  53
 
 
 --- Sentence//end
 id: 395
-r#  70852  1321  47
+r#  70997  1322  47
 p: .
 t. 
 |  The mapping of a general parse-graph onto
@@ -7251,12 +7251,12 @@ t.
 
 --- Sentence/switch
 id: 396
-r#  70853  1321  48
+r#  70998  1322  48
 
 
 --- Sentence//end
 id: 396
-r#  71135  1327  63
+r#  71280  1328  63
 p: .
 t. 
 |  Intuitively, nouns are akin to
@@ -7269,12 +7269,12 @@ t.
 
 --- Sentence/switch
 id: 397
-r#  71136  1327  64
+r#  71281  1328  64
 
 
 --- Sentence//end
 id: 397
-r#  71299  1330  66
+r#  71444  1331  66
 p: .
 t. 
 |  Given this conceptual background, I will adopt the
@@ -7283,7 +7283,7 @@ t.
 
 --- Sentence/end 
 id: 397
-r#  71300  1330  67
+r#  71445  1331  67
 
 --- Paragraph/end 
 id: 74
@@ -7292,16 +7292,16 @@ y: N/A
 
 --- Paragraph/start
 id: 75
-r#  71303  1332  1
+r#  71448  1333  1
 
 
 --- Sentence/start
 id: 398
-r#  71303  1332  1
+r#  71448  1333  1
 
 --- Sentence//end
 id: 398
-r#  71549  1336  32
+r#  71694  1337  32
 p: .
 t. 
 |  Type-checking and postordering are <!!"!!>functionalizable<!!"!!>
@@ -7313,12 +7313,12 @@ t.
 
 --- Sentence/switch
 id: 399
-r#  71550  1336  33
+r#  71695  1337  33
 
 
 --- Sentence//end
 id: 399
-r#  71684  1339  16
+r#  71829  1340  16
 p: .
 t. 
 |   By analogy,
@@ -7329,12 +7329,12 @@ t.
 
 --- Sentence/switch
 id: 400
-r#  71685  1339  17
+r#  71830  1340  17
 
 
 --- Sentence//end
 id: 400
-r#  71963  1343  32
+r#  72108  1344  32
 p: .
 t. 
 |   Image-analysis tactics such as texture
@@ -7346,12 +7346,12 @@ t.
 
 --- Sentence/switch
 id: 401
-r#  71964  1343  33
+r#  72109  1344  33
 
 
 --- Sentence//end
 id: 401
-r#  72202  1347  27
+r#  72347  1348  27
 p: .
 t. 
 |   Postordering and type-checking are
@@ -7363,12 +7363,12 @@ t.
 
 --- Sentence/switch
 id: 402
-r#  72203  1347  28
+r#  72348  1348  28
 
 
 --- Sentence//end
 id: 402
-r#  72373  1350  49
+r#  72518  1351  49
 p: .
 t. 
 |   Still,
@@ -7379,12 +7379,12 @@ t.
 
 --- Sentence/switch
 id: 403
-r#  72374  1350  50
+r#  72519  1351  50
 
 
 --- Sentence//end
 id: 403
-r#  72479  1352  44
+r#  72624  1353  44
 p: .
 t. 
 |   Compilers
@@ -7393,7 +7393,7 @@ t.
 
 --- Sentence/end 
 id: 403
-r#  72480  1352  45
+r#  72625  1353  45
 
 --- Paragraph/end 
 id: 75
@@ -7402,16 +7402,16 @@ y: N/A
 
 --- Paragraph/start
 id: 76
-r#  72482  1354  1
+r#  72627  1355  1
 
 
 --- Sentence/start
 id: 404
-r#  72482  1354  1
+r#  72627  1355  1
 
 --- Sentence//end
 id: 404
-r#  72567  1355  28
+r#  72712  1356  28
 p: .
 t. 
 |  More substantially, postordering is not just a heuristic
@@ -7420,12 +7420,12 @@ t.
 
 --- Sentence/switch
 id: 405
-r#  72568  1355  29
+r#  72713  1356  29
 
 
 --- Sentence//end
 id: 405
-r#  72676  1357  34
+r#  72821  1358  34
 p: .
 t. 
 |   Type reduction and
@@ -7435,12 +7435,12 @@ t.
 
 --- Sentence/switch
 id: 406
-r#  72677  1357  35
+r#  72822  1358  35
 
 
 --- Sentence//end
 id: 406
-r#  72739  1358  35
+r#  72884  1359  35
 p: .
 t. 
 |   Most sentences give rise
@@ -7449,16 +7449,16 @@ t.
 
 --- Sentence/switch
 id: 407
-r#  72740  1358  36
+r#  72885  1359  36
 
 
 --- Sentence//end
 id: 407
-r#  72935  1361  33
+r#  73080  1362  33
 g. 
-|   @l(-%>) +72843/1360/21
-|   +72874/1360/52:26=72900/1360/78
-.   @l() -72874/1360/52
+|   @l(-%>) +72988/1361/21
+|   +73019/1361/52:26=73045/1361/78
+.   @l() -73019/1361/52
 p: .
 t. 
 |   Even when excluding
@@ -7469,12 +7469,12 @@ t.
 
 --- Sentence/switch
 id: 408
-r#  72936  1361  34
+r#  73081  1362  34
 
 
 --- Sentence//end
 id: 408
-r#  73047  1363  23
+r#  73192  1364  23
 p: .
 t. 
 |   The distribution of a
@@ -7484,12 +7484,12 @@ t.
 
 --- Sentence/switch
 id: 409
-r#  73048  1363  24
+r#  73193  1364  24
 
 
 --- Sentence//end
 id: 409
-r#  73187  1365  28
+r#  73332  1366  28
 p: .
 t. 
 |   This fact in itself suggests a proliferation
@@ -7499,12 +7499,12 @@ t.
 
 --- Sentence/switch
 id: 410
-r#  73188  1365  29
+r#  73333  1366  29
 
 
 --- Sentence//end
 id: 410
-r#  73387  1368  29
+r#  73532  1369  29
 p: .
 t. 
 |   From many plausible candidates,
@@ -7514,7 +7514,7 @@ t.
 
 --- Sentence/end 
 id: 410
-r#  73388  1368  30
+r#  73533  1369  30
 
 --- Paragraph/end 
 id: 76
@@ -7523,16 +7523,16 @@ y: N/A
 
 --- Paragraph/start
 id: 77
-r#  73392  1370  1
+r#  73537  1371  1
 
 
 --- Sentence/start
 id: 411
-r#  73392  1370  1
+r#  73537  1371  1
 
 --- Sentence//end
 id: 411
-r#  73527  1371  67
+r#  73672  1372  67
 p: .
 t. 
 |  Such processes are apparently interdependent, in that (for example)
@@ -7541,12 +7541,12 @@ t.
 
 --- Sentence/switch
 id: 412
-r#  73528  1371  68
+r#  73673  1372  68
 
 
 --- Sentence//end
 id: 412
-r#  73680  1374  33
+r#  73825  1375  33
 p: .
 t. 
 |  Language would be more computationally tractable if processing algorithms
@@ -7556,12 +7556,12 @@ t.
 
 --- Sentence/switch
 id: 413
-r#  73681  1374  34
+r#  73826  1375  34
 
 
 --- Sentence//end
 id: 413
-r#  74002  1380  15
+r#  74147  1381  15
 p: .
 t. 
 |   In reality,
@@ -7575,12 +7575,12 @@ t.
 
 --- Sentence/switch
 id: 414
-r#  74003  1380  16
+r#  74148  1381  16
 
 
 --- Sentence//end
 id: 414
-r#  74370  1384  81
+r#  74515  1385  81
 p: .
 t. 
 |   Conceptual synthesis and <!!"!!>staging<!!"!!> are
@@ -7591,7 +7591,7 @@ t.
 
 --- Sentence/end 
 id: 414
-r#  74371  1384  82
+r#  74516  1385  82
 
 --- Paragraph/end 
 id: 77
@@ -7600,16 +7600,16 @@ y: N/A
 
 --- Paragraph/start
 id: 78
-r#  74378  1386  1
+r#  74523  1387  1
 
 
 --- Sentence/start
 id: 415
-r#  74378  1386  1
+r#  74523  1387  1
 
 --- Sentence//end
 id: 415
-r#  74725  1392  47
+r#  74870  1393  47
 p: .
 t. 
 |  This interpretation of parse-graphs -=- as
@@ -7623,12 +7623,12 @@ t.
 
 --- Sentence/switch
 id: 416
-r#  74726  1392  48
+r#  74871  1393  48
 
 
 --- Sentence//end
 id: 416
-r#  74960  1396  31
+r#  75105  1397  31
 p: .
 t. 
 |   A key difference,
@@ -7640,12 +7640,12 @@ t.
 
 --- Sentence/switch
 id: 417
-r#  74961  1396  32
+r#  75106  1397  32
 
 
 --- Sentence//end
 id: 417
-r#  75373  1403  46
+r#  75518  1404  46
 p: .
 t. 
 |   Operating-system functions,
@@ -7659,7 +7659,7 @@ t.
 
 --- Sentence/end 
 id: 417
-r#  75374  1403  47
+r#  75519  1404  47
 
 --- Paragraph/end 
 id: 78
@@ -7668,16 +7668,16 @@ y: N/A
 
 --- Paragraph/start
 id: 79
-r#  75379  1405  1
+r#  75524  1406  1
 
 
 --- Sentence/start
 id: 418
-r#  75379  1405  1
+r#  75524  1406  1
 
 --- Sentence//end
 id: 418
-r#  75612  1409  17
+r#  75757  1410  17
 p: .
 t. 
 |  I intend to propose these ideas as a foundation for
@@ -7689,12 +7689,12 @@ t.
 
 --- Sentence/switch
 id: 419
-r#  75613  1409  18
+r#  75758  1410  18
 
 
 --- Sentence//end
 id: 419
-r#  75712  1411  14
+r#  75857  1412  14
 p: .
 t. 
 |   However, I feel there are two
@@ -7703,12 +7703,12 @@ t.
 
 --- Sentence/end 
 id: 419
-r#  75732  1411  34
+r#  75877  1412  34
 g. 
-|   @l(-%>) +75713/1411/15
-|   +75719/1411/21:0=75719/1411/21
-|   +75732/1411/34:0=75732/1411/34
-.   @l() -75732/1411/34
+|   @l(-%>) +75858/1412/15
+|   +75864/1412/21:0=75864/1412/21
+|   +75877/1412/34:0=75877/1412/34
+.   @l() -75877/1412/34
 
 --- Paragraph/end 
 id: 79
@@ -7723,16 +7723,16 @@ y: N/A
 
 --- Paragraph/start
 id: 80
-r#  75742  1416  1
+r#  75887  1417  1
 
 
 --- Sentence/start
 id: 420
-r#  75742  1416  1
+r#  75887  1417  1
 
 --- Sentence//end
 id: 420
-r#  75874  1418  6
+r#  76019  1419  6
 p: .
 t. 
 |  First, my discussion has implied that word-order and associated
@@ -7742,17 +7742,17 @@ t.
 
 --- Sentence/switch
 id: 421
-r#  75875  1418  7
+r#  76020  1419  7
 
 
 --- Sentence//end
 id: 421
-r#  75977  1420  17
+r#  76122  1421  17
 g. 
-|   @l(-%>>) +75875/1418/7
-|   +75898/1418/30:16=75914/1419/5
-|   +75903/1418/35:0=75903/1418/35
-.   @l() -75903/1418/35
+|   @l(-%>>) +76020/1419/7
+|   +76043/1419/30:16=76059/1420/5
+|   +76048/1419/35:0=76048/1419/35
+.   @l() -76048/1419/35
 p: .
 t. 
 |  That
@@ -7762,12 +7762,12 @@ t.
 
 --- Sentence/switch
 id: 422
-r#  75978  1420  18
+r#  76123  1421  18
 
 
 --- Sentence//end
 id: 422
-r#  76004  1423  1
+r#  76149  1424  1
 p: 
 t. 
 .   I will examine:
@@ -7775,12 +7775,12 @@ t.
 
 --- Sentence/switch
 id: 423
-r#  76007  1423  4
+r#  76152  1424  4
 
 
 --- Sentence//end
 id: 423
-r#  76037  1423  34
+r#  76182  1424  34
 p: .
 t. 
 .   I'm heading out to the store
@@ -7788,12 +7788,12 @@ t.
 
 --- Sentence/switch
 id: 424
-r#  76038  1423  35
+r#  76183  1424  35
 
 
 --- Sentence//end
 id: 424
-r#  76151  1427  30
+r#  76296  1428  30
 p: .
 t. 
 |  
@@ -7803,12 +7803,12 @@ t.
 
 --- Sentence/switch
 id: 425
-r#  76152  1427  31
+r#  76297  1428  31
 
 
 --- Sentence//end
 id: 425
-r#  76295  1429  22
+r#  76440  1430  22
 p: .
 t. 
 |   We can read <!!"!!>heading out<!!"!!> as a compound
@@ -7818,12 +7818,12 @@ t.
 
 --- Sentence/switch
 id: 426
-r#  76296  1429  23
+r#  76441  1430  23
 
 
 --- Sentence//end
 id: 426
-r#  76380  1433  1
+r#  76525  1434  1
 p: 
 t. 
 |   That both are feasible may be demonstrated by
@@ -7832,12 +7832,12 @@ t.
 
 --- Sentence/switch
 id: 427
-r#  76383  1433  4
+r#  76528  1434  4
 
 
 --- Sentence//end
 id: 427
-r#  76404  1433  25
+r#  76549  1434  25
 p: ?
 t. 
 .   Where are you going
@@ -7845,12 +7845,12 @@ t.
 
 --- Sentence/switch
 id: 428
-r#  76405  1433  26
+r#  76550  1434  26
 
 
 --- Sentence//end
 id: 428
-r#  76423  1433  44
+r#  76568  1434  44
 p: .
 t. 
 .   Out to the store
@@ -7858,12 +7858,12 @@ t.
 
 --- Sentence/switch
 id: 429
-r#  76424  1433  45
+r#  76569  1434  45
 
 
 --- Sentence//end
 id: 429
-r#  76425  1434  1
+r#  76570  1435  1
 p: 
 t. 
 .  
@@ -7871,12 +7871,12 @@ t.
 
 --- Sentence/switch
 id: 430
-r#  76428  1434  4
+r#  76573  1435  4
 
 
 --- Sentence//end
 id: 430
-r#  76448  1434  24
+r#  76593  1435  24
 p: ?
 t. 
 .   What are you doing
@@ -7884,12 +7884,12 @@ t.
 
 --- Sentence/switch
 id: 431
-r#  76449  1434  25
+r#  76594  1435  25
 
 
 --- Sentence//end
 id: 431
-r#  76462  1434  38
+r#  76607  1435  38
 p: .
 t. 
 .   Heading out
@@ -7897,12 +7897,12 @@ t.
 
 --- Sentence/switch
 id: 432
-r#  76463  1434  39
+r#  76608  1435  39
 
 
 --- Sentence//end
 id: 432
-r#  76576  1438  47
+r#  76721  1439  47
 p: .
 t. 
 |  
@@ -7912,12 +7912,12 @@ t.
 
 --- Sentence/switch
 id: 433
-r#  76577  1438  48
+r#  76722  1439  48
 
 
 --- Sentence//end
 id: 433
-r#  76701  1440  47
+r#  76846  1441  47
 p: .
 t. 
 |   A path
@@ -7927,12 +7927,12 @@ t.
 
 --- Sentence/switch
 id: 434
-r#  76702  1440  48
+r#  76847  1441  48
 
 
 --- Sentence//end
 id: 434
-r#  76842  1442  56
+r#  76987  1443  56
 p: .
 t. 
 |   At the same time,
@@ -7942,12 +7942,12 @@ t.
 
 --- Sentence/switch
 id: 435
-r#  76843  1442  57
+r#  76988  1443  57
 
 
 --- Sentence//end
 id: 435
-r#  77021  1445  45
+r#  77166  1446  45
 p: .
 t. 
 |  In short, the presence of out results in <!(18)!> referring to
@@ -7957,12 +7957,12 @@ t.
 
 --- Sentence/switch
 id: 436
-r#  77022  1445  46
+r#  77167  1446  46
 
 
 --- Sentence//end
 id: 436
-r#  77242  1448  73
+r#  77387  1449  73
 p: .
 t. 
 |   Either of these
@@ -7972,7 +7972,7 @@ t.
 
 --- Sentence/end 
 id: 436
-r#  77243  1448  74
+r#  77388  1449  74
 
 --- Paragraph/end 
 id: 80
@@ -7981,16 +7981,16 @@ y: N/A
 
 --- Paragraph/start
 id: 81
-r#  77245  1450  1
+r#  77390  1451  1
 
 
 --- Sentence/start
 id: 437
-r#  77245  1450  1
+r#  77390  1451  1
 
 --- Sentence//end
 id: 437
-r#  77419  1452  32
+r#  77564  1453  32
 p: .
 t. 
 |  I would address this issue by arguing that parse-graphs are provisional:
@@ -8000,12 +8000,12 @@ t.
 
 --- Sentence/switch
 id: 438
-r#  77420  1452  33
+r#  77565  1453  33
 
 
 --- Sentence//end
 id: 438
-r#  77560  1454  45
+r#  77705  1455  45
 p: .
 t. 
 |   The actual syntactic forms that
@@ -8015,12 +8015,12 @@ t.
 
 --- Sentence/switch
 id: 439
-r#  77561  1454  46
+r#  77706  1455  46
 
 
 --- Sentence//end
 id: 439
-r#  77800  1458  36
+r#  77945  1459  36
 p: .
 t. 
 |   Since <!!"!!>out<!!"!!>
@@ -8032,12 +8032,12 @@ t.
 
 --- Sentence/switch
 id: 440
-r#  77801  1458  37
+r#  77946  1459  37
 
 
 --- Sentence//end
 id: 440
-r#  78047  1462  38
+r#  78192  1463  38
 p: .
 t. 
 |   A parse-graph represents
@@ -8049,12 +8049,12 @@ t.
 
 --- Sentence/switch
 id: 441
-r#  78048  1462  39
+r#  78193  1463  39
 
 
 --- Sentence//end
 id: 441
-r#  78192  1465  26
+r#  78337  1466  26
 p: .
 t. 
 |  In this sense parse-graphs are cognitively motivated,
@@ -8064,12 +8064,12 @@ t.
 
 --- Sentence/switch
 id: 442
-r#  78193  1465  27
+r#  78338  1466  27
 
 
 --- Sentence//end
 id: 442
-r#  78418  1469  26
+r#  78563  1470  26
 p: .
 t. 
 |   If we believe syntax should
@@ -8080,7 +8080,7 @@ t.
 
 --- Sentence/end 
 id: 442
-r#  78419  1469  27
+r#  78564  1470  27
 
 --- Paragraph/end 
 id: 81
@@ -8089,16 +8089,16 @@ y: N/A
 
 --- Paragraph/start
 id: 82
-r#  78421  1471  1
+r#  78566  1472  1
 
 
 --- Sentence/start
 id: 443
-r#  78421  1471  1
+r#  78566  1472  1
 
 --- Sentence//end
 id: 443
-r#  78670  1474  33
+r#  78815  1475  33
 p: .
 t. 
 |  So, in short, two different parse-graphs -=- one wherein <!!"!!>out<!!"!!> attaches
@@ -8109,12 +8109,12 @@ t.
 
 --- Sentence/switch
 id: 444
-r#  78671  1474  34
+r#  78816  1475  34
 
 
 --- Sentence//end
 id: 444
-r#  78774  1475  73
+r#  78919  1476  73
 p: .
 t. 
 |   The <!!"!!>definitive<!!"!!> parsing
@@ -8122,7 +8122,7 @@ t.
 
 --- Sentence/end 
 id: 444
-r#  78775  1475  74
+r#  78920  1476  74
 
 --- Paragraph/end 
 id: 82
@@ -8131,16 +8131,16 @@ y: N/A
 
 --- Paragraph/start
 id: 83
-r#  78777  1477  1
+r#  78922  1478  1
 
 
 --- Sentence/start
 id: 445
-r#  78777  1477  1
+r#  78922  1478  1
 
 --- Sentence//end
 id: 445
-r#  78902  1478  54
+r#  79047  1479  54
 p: .
 t. 
 |  The second issue I'd like to address is the extent of complete phrase-
@@ -8149,16 +8149,16 @@ t.
 
 --- Sentence/switch
 id: 446
-r#  78903  1478  55
+r#  79048  1479  55
 
 
 --- Sentence//end
 id: 446
-r#  79088  1481  41
+r#  79233  1482  41
 g. 
-|   @l(-%>) +78991/1480/25
-|   +79010/1480/44:14=79024/1480/58
-.   @l() -79010/1480/44
+|   @l(-%>) +79136/1481/25
+|   +79155/1481/44:14=79169/1481/58
+.   @l() -79155/1481/44
 p: .
 t. 
 |  My preliminary proposal is that individual words contribute
@@ -8168,12 +8168,12 @@ t.
 
 --- Sentence/switch
 id: 447
-r#  79089  1481  42
+r#  79234  1482  42
 
 
 --- Sentence//end
 id: 447
-r#  79288  1485  49
+r#  79433  1486  49
 p: .
 t. 
 |   From a
@@ -8185,12 +8185,12 @@ t.
 
 --- Sentence/switch
 id: 448
-r#  79289  1485  50
+r#  79434  1486  50
 
 
 --- Sentence//end
 id: 448
-r#  79428  1488  42
+r#  79573  1489  42
 p: .
 t. 
 |  In broad outline, the process is not unlike
@@ -8199,7 +8199,7 @@ t.
 
 --- Sentence/end 
 id: 448
-r#  79429  1488  43
+r#  79574  1489  43
 
 --- Paragraph/end 
 id: 83
@@ -8208,16 +8208,16 @@ y: N/A
 
 --- Paragraph/start
 id: 84
-r#  79431  1490  1
+r#  79576  1491  1
 
 
 --- Sentence/start
 id: 449
-r#  79431  1490  1
+r#  79576  1491  1
 
 --- Sentence//end
 id: 449
-r#  79656  1494  21
+r#  79801  1495  21
 p: .
 t. 
 |  Such an analysis might work fine on mostly
@@ -8229,12 +8229,12 @@ t.
 
 --- Sentence/switch
 id: 450
-r#  79657  1494  22
+r#  79802  1495  22
 
 
 --- Sentence//end
 id: 450
-r#  79799  1497  7
+r#  79944  1498  7
 p: .
 t. 
 |   In the case of verbs, a
@@ -8245,12 +8245,12 @@ t.
 
 --- Sentence/switch
 id: 451
-r#  79800  1497  8
+r#  79945  1498  8
 
 
 --- Sentence//end
 id: 451
-r#  79910  1499  33
+r#  80055  1500  33
 p: .
 t. 
 |   Categorially, (di)transitive verbs
@@ -8260,12 +8260,12 @@ t.
 
 --- Sentence/switch
 id: 452
-r#  79911  1499  34
+r#  80056  1500  34
 
 
 --- Sentence//end
 id: 452
-r#  80212  1505  45
+r#  80357  1506  45
 p: .
 t. 
 |   Moreover,
@@ -8278,7 +8278,7 @@ t.
 
 --- Sentence/end 
 id: 452
-r#  80213  1505  46
+r#  80358  1506  46
 
 --- Paragraph/end 
 id: 84
@@ -8287,16 +8287,16 @@ y: N/A
 
 --- Paragraph/start
 id: 85
-r#  80215  1507  1
+r#  80360  1508  1
 
 
 --- Sentence/start
 id: 453
-r#  80215  1507  1
+r#  80360  1508  1
 
 --- Sentence//end
 id: 453
-r#  80510  1512  49
+r#  80655  1513  49
 p: .
 t. 
 |  In the realm of conceptual synthesis, that is, verbs
@@ -8309,12 +8309,12 @@ t.
 
 --- Sentence/switch
 id: 454
-r#  80511  1512  50
+r#  80656  1513  50
 
 
 --- Sentence//end
 id: 454
-r#  80598  1514  28
+r#  80743  1515  28
 p: .
 t. 
 |  A sentence, in general, accrues various kinds of detail
@@ -8323,12 +8323,12 @@ t.
 
 --- Sentence/switch
 id: 455
-r#  80599  1514  29
+r#  80744  1515  29
 
 
 --- Sentence//end
 id: 455
-r#  80682  1516  3
+r#  80827  1517  3
 p: .
 t. 
 |   Some of these
@@ -8338,12 +8338,12 @@ t.
 
 --- Sentence/switch
 id: 456
-r#  80683  1516  4
+r#  80828  1517  4
 
 
 --- Sentence//end
 id: 456
-r#  80821  1521  1
+r#  80966  1522  1
 p: 
 t. 
 |   Given donate, for example, it seems necessary
@@ -8353,12 +8353,12 @@ t.
 
 --- Sentence/switch
 id: 457
-r#  80824  1521  4
+r#  80969  1522  4
 
 
 --- Sentence//end
 id: 457
-r#  80889  1521  69
+r#  81034  1522  69
 p: .
 t. 
 .   Last weekend we donated a hundred dollars to the animal shelter
@@ -8366,12 +8366,12 @@ t.
 
 --- Sentence/switch
 id: 458
-r#  80890  1521  70
+r#  81035  1522  70
 
 
 --- Sentence//end
 id: 458
-r#  81106  1526  49
+r#  81251  1527  49
 p: .
 t. 
 |  
@@ -8382,12 +8382,12 @@ t.
 
 --- Sentence/switch
 id: 459
-r#  81107  1526  50
+r#  81252  1527  50
 
 
 --- Sentence//end
 id: 459
-r#  81251  1532  1
+r#  81396  1533  1
 p: 
 t. 
 |   A verb's
@@ -8398,12 +8398,12 @@ t.
 
 --- Sentence/switch
 id: 460
-r#  81254  1532  4
+r#  81399  1533  4
 
 
 --- Sentence//end
 id: 460
-r#  81300  1532  50
+r#  81445  1533  50
 p: .
 t. 
 .   We gave the animal shelter a hundred dollars
@@ -8411,12 +8411,12 @@ t.
 
 --- Sentence/switch
 id: 461
-r#  81301  1532  51
+r#  81446  1533  51
 
 
 --- Sentence//end
 id: 461
-r#  81503  1537  67
+r#  81648  1538  67
 p: .
 t. 
 |  
@@ -8427,12 +8427,12 @@ t.
 
 --- Sentence/switch
 id: 462
-r#  81504  1537  68
+r#  81649  1538  68
 
 
 --- Sentence//end
 id: 462
-r#  81642  1539  67
+r#  81787  1540  67
 p: .
 t. 
 |  It is not clear why the abridged <!!"!!>double object<!!"!!> form is acceptable
@@ -8441,12 +8441,12 @@ t.
 
 --- Sentence/switch
 id: 463
-r#  81643  1539  68
+r#  81788  1540  68
 
 
 --- Sentence//end
 id: 463
-r#  81952  1544  23
+r#  82097  1545  23
 p: .
 t. 
 |   Be that as it may,
@@ -8459,17 +8459,17 @@ t.
 
 --- Sentence/switch
 id: 464
-r#  81953  1544  24
+r#  82098  1545  24
 
 
 --- Sentence//end
 id: 464
-r#  82292  1549  59
+r#  82437  1550  59
 g. 
-|   @l(-%>>) +82187/1548/14
-|   +82215/1548/42:22=82237/1549/4
-|   +82220/1548/47:0=82220/1548/47
-.   @l() -82220/1548/47
+|   @l(-%>>) +82332/1549/14
+|   +82360/1549/42:22=82382/1550/4
+|   +82365/1549/47:0=82365/1549/47
+.   @l() -82365/1549/47
 p: .
 t. 
 |   Verbs have implicit
@@ -8482,7 +8482,7 @@ t.
 
 --- Sentence/switch
 id: 465
-r#  82293  1549  60
+r#  82438  1550  60
 
 --- Paragraph/end 
 id: 85
@@ -8491,16 +8491,16 @@ y: N/A
 
 --- Paragraph/start
 id: 86
-r#  82375  1552  1
+r#  82520  1553  1
 
 
 --- Sentence/start
 id: 466
-r#  82375  1552  1
+r#  82520  1553  1
 
 --- Sentence//end
 id: 466
-r#  82520  1553  74
+r#  82665  1554  74
 p: .
 t. 
 |   (Philosophically,
@@ -8510,12 +8510,12 @@ t.
 
 --- Sentence/switch
 id: 467
-r#  82521  1553  75
+r#  82666  1554  75
 
 
 --- Sentence//end
 id: 467
-r#  82779  1557  61
+r#  82924  1558  61
 p: .
 t. 
 |  Cognitive staging is still intrinsic to inferred meaning; the point
@@ -8526,12 +8526,12 @@ t.
 
 --- Sentence/switch
 id: 468
-r#  82780  1557  62
+r#  82925  1558  62
 
 
 --- Sentence//end
 id: 468
-r#  82878  1559  38
+r#  83023  1560  38
 p: .
 t. 
 |  A theory of cognitive staging can cover both cases if it
@@ -8540,12 +8540,12 @@ t.
 
 --- Sentence/switch
 id: 469
-r#  82879  1559  39
+r#  83024  1560  39
 
 
 --- Sentence//end
 id: 469
-r#  83165  1564  32
+r#  83310  1565  32
 p: .
 t. 
 |  We can still study verb-constructions as sets of word-pairs
@@ -8557,12 +8557,12 @@ t.
 
 --- Sentence/switch
 id: 470
-r#  83166  1564  33
+r#  83311  1565  33
 
 
 --- Sentence//end
 id: 470
-r#  83366  1567  42
+r#  83511  1568  42
 p: .
 t. 
 |   The conceptual pairing of verbs to a
@@ -8572,7 +8572,7 @@ t.
 
 --- Sentence/end 
 id: 470
-r#  83367  1567  43
+r#  83512  1568  43
 
 --- Paragraph/end 
 id: 86
@@ -8581,16 +8581,16 @@ y: N/A
 
 --- Paragraph/start
 id: 87
-r#  83369  1569  1
+r#  83514  1570  1
 
 
 --- Sentence/start
 id: 471
-r#  83369  1569  1
+r#  83514  1570  1
 
 --- Sentence//end
 id: 471
-r#  83660  1573  35
+r#  83805  1574  35
 p: .
 t. 
 |  Systems of thematic relations establish a kind of two-tiered
@@ -8602,12 +8602,12 @@ t.
 
 --- Sentence/switch
 id: 472
-r#  83661  1573  36
+r#  83806  1574  36
 
 
 --- Sentence//end
 id: 472
-r#  83879  1576  71
+r#  84024  1577  71
 p: .
 t. 
 |   Conceptually, the
@@ -8618,12 +8618,12 @@ t.
 
 --- Sentence/switch
 id: 473
-r#  83880  1576  72
+r#  84025  1577  72
 
 
 --- Sentence//end
 id: 473
-r#  84271  1582  40
+r#  84416  1583  40
 p: .
 t. 
 |  To put it differently, the underlying intellectual phenomenon
@@ -8636,12 +8636,12 @@ t.
 
 --- Sentence/switch
 id: 474
-r#  84272  1582  41
+r#  84417  1583  41
 
 
 --- Sentence//end
 id: 474
-r#  84516  1586  48
+r#  84661  1587  48
 p: .
 t. 
 |   Whereas semantics
@@ -8652,7 +8652,7 @@ t.
 
 --- Sentence/end 
 id: 474
-r#  84517  1586  49
+r#  84662  1587  49
 
 --- Paragraph/end 
 id: 87
@@ -8661,16 +8661,16 @@ y: N/A
 
 --- Paragraph/start
 id: 88
-r#  84520  1588  1
+r#  84665  1589  1
 
 
 --- Sentence/start
 id: 475
-r#  84520  1588  1
+r#  84665  1589  1
 
 --- Sentence//end
 id: 475
-r#  84830  1593  16
+r#  84975  1594  16
 p: .
 t. 
 |  We can also say that the veins of a sentence's thematic scaffolding
@@ -8683,12 +8683,12 @@ t.
 
 --- Sentence/switch
 id: 476
-r#  84831  1593  17
+r#  84976  1594  17
 
 
 --- Sentence//end
 id: 476
-r#  85324  1602  12
+r#  85469  1603  12
 p: .
 t. 
 |   Such details may
@@ -8705,12 +8705,12 @@ t.
 
 --- Sentence/switch
 id: 477
-r#  85325  1602  13
+r#  85470  1603  13
 
 
 --- Sentence//end
 id: 477
-r#  85456  1604  24
+r#  85601  1605  24
 p: .
 t. 
 |   Not to imply that this list is exhaustive;
@@ -8720,16 +8720,16 @@ t.
 
 --- Sentence/switch
 id: 478
-r#  85457  1604  25
+r#  85602  1605  25
 
 
 --- Sentence//end
 id: 478
-r#  85702  1608  59
+r#  85847  1609  59
 g. 
-|   @l(-%>) +85593/1606/38
-|   +85618/1606/63:20=85638/1607/19
-.   @l() -85618/1606/63
+|   @l(-%>) +85738/1607/38
+|   +85763/1607/63:20=85783/1608/19
+.   @l() -85763/1607/63
 p: .
 t. 
 |   Here I simply want to observe that
@@ -8741,12 +8741,12 @@ t.
 
 --- Sentence/switch
 id: 479
-r#  85703  1608  60
+r#  85848  1609  60
 
 
 --- Sentence//end
 id: 479
-r#  85907  1612  28
+r#  86052  1613  28
 p: .
 t. 
 |  The central spine that pulls together multiple thematic
@@ -8756,7 +8756,7 @@ t.
 
 --- Sentence/end 
 id: 479
-r#  85908  1612  29
+r#  86053  1613  29
 
 --- Paragraph/end 
 id: 88
@@ -8765,16 +8765,16 @@ y: N/A
 
 --- Paragraph/start
 id: 89
-r#  85910  1614  1
+r#  86055  1615  1
 
 
 --- Sentence/start
 id: 480
-r#  85910  1614  1
+r#  86055  1615  1
 
 --- Sentence//end
 id: 480
-r#  86121  1617  42
+r#  86266  1618  42
 p: .
 t. 
 |  From a formal perspective, thematic relations suggest a
@@ -8785,12 +8785,12 @@ t.
 
 --- Sentence/switch
 id: 481
-r#  86122  1617  43
+r#  86267  1618  43
 
 
 --- Sentence//end
 id: 481
-r#  86858  1631  69
+r#  87003  1632  69
 p: .
 t. 
 |  Consider lambda-expressions taking (in lieu of
@@ -8810,7 +8810,7 @@ t.
 
 --- Sentence/end 
 id: 481
-r#  86859  1631  70
+r#  87004  1632  70
 
 --- Paragraph/end 
 id: 89
@@ -8819,16 +8819,16 @@ y: N/A
 
 --- Paragraph/start
 id: 90
-r#  86863  1633  1
+r#  87008  1634  1
 
 
 --- Sentence/start
 id: 482
-r#  86863  1633  1
+r#  87008  1634  1
 
 --- Sentence//end
 id: 482
-r#  87064  1636  69
+r#  87209  1637  69
 p: .
 t. 
 |  Such <!!"!!>roles<!!"!!> may be outside the normal
@@ -8839,12 +8839,12 @@ t.
 
 --- Sentence/switch
 id: 483
-r#  87065  1636  70
+r#  87210  1637  70
 
 
 --- Sentence//end
 id: 483
-r#  87314  1640  48
+r#  87459  1641  48
 p: .
 t. 
 |  A multi-part relation (schematically a hyperedge) can assign distinct roles
@@ -8855,12 +8855,12 @@ t.
 
 --- Sentence/switch
 id: 484
-r#  87315  1640  49
+r#  87460  1641  49
 
 
 --- Sentence//end
 id: 484
-r#  87518  1644  9
+r#  87663  1645  9
 p: .
 t. 
 |  A binary relation such that one party is divorced from
@@ -8870,7 +8870,7 @@ t.
 
 --- Sentence/end 
 id: 484
-r#  87519  1644  10
+r#  87664  1645  10
 
 --- Paragraph/end 
 id: 90
@@ -8879,16 +8879,16 @@ y: N/A
 
 --- Paragraph/start
 id: 91
-r#  87523  1646  1
+r#  87668  1647  1
 
 
 --- Sentence/start
 id: 485
-r#  87523  1646  1
+r#  87668  1647  1
 
 --- Sentence//end
 id: 485
-r#  87711  1648  62
+r#  87856  1649  62
 p: .
 t. 
 |  Unlike a <!!"!!>Semantic Web<!!"!!> style hyperedge, calling a procedure
@@ -8898,12 +8898,12 @@ t.
 
 --- Sentence/switch
 id: 486
-r#  87712  1648  63
+r#  87857  1649  63
 
 
 --- Sentence//end
 id: 486
-r#  88024  1653  19
+r#  88169  1654  19
 p: .
 t. 
 |  However, there are various commonalities between sets of interrelated
@@ -8915,12 +8915,12 @@ t.
 
 --- Sentence/switch
 id: 487
-r#  88025  1653  20
+r#  88170  1654  20
 
 
 --- Sentence//end
 id: 487
-r#  88153  1655  17
+r#  88298  1656  17
 p: .
 t. 
 |   Procedural <!!"!!>memoization<!!"!!> (caching results to
@@ -8930,12 +8930,12 @@ t.
 
 --- Sentence/switch
 id: 488
-r#  88154  1655  18
+r#  88299  1656  18
 
 
 --- Sentence//end
 id: 488
-r#  88360  1659  30
+r#  88505  1660  30
 p: .
 t. 
 |   More substantially, pre- and post-conditions
@@ -8947,12 +8947,12 @@ t.
 
 --- Sentence/switch
 id: 489
-r#  88361  1659  31
+r#  88506  1660  31
 
 
 --- Sentence//end
 id: 489
-r#  88437  1660  42
+r#  88582  1661  42
 p: .
 t. 
 |   For such contexts, database and
@@ -8960,7 +8960,7 @@ t.
 
 --- Sentence/end 
 id: 489
-r#  88438  1660  43
+r#  88583  1661  43
 
 --- Paragraph/end 
 id: 91
@@ -8969,16 +8969,16 @@ y: N/A
 
 --- Paragraph/start
 id: 92
-r#  88442  1662  1
+r#  88587  1663  1
 
 
 --- Sentence/start
 id: 490
-r#  88442  1662  1
+r#  88587  1663  1
 
 --- Sentence//end
 id: 490
-r#  88553  1664  18
+r#  88698  1665  18
 p: .
 t. 
 |  In cognition, meanwhile, the line between
@@ -8988,12 +8988,12 @@ t.
 
 --- Sentence/switch
 id: 491
-r#  88554  1664  19
+r#  88699  1665  19
 
 
 --- Sentence//end
 id: 491
-r#  88682  1666  37
+r#  88827  1667  37
 p: .
 t. 
 |   For one thing, facts are not isolated data-points;
@@ -9003,12 +9003,12 @@ t.
 
 --- Sentence/switch
 id: 492
-r#  88683  1666  38
+r#  88828  1667  38
 
 
 --- Sentence//end
 id: 492
-r#  88827  1668  24
+r#  88972  1669  24
 p: .
 t. 
 |   For another, facts and enactive maxims
@@ -9018,17 +9018,17 @@ t.
 
 --- Sentence/switch
 id: 493
-r#  88828  1668  25
+r#  88973  1669  25
 
 
 --- Sentence//end
 id: 493
-r#  89167  1674  58
+r#  89312  1675  58
 g. 
-|   @l(-%>>) +88931/1671/7
-|   +88953/1671/29:16=88969/1671/45
-|   +88958/1671/34:0=88958/1671/34
-.   @l() -88958/1671/34
+|   @l(-%>>) +89076/1672/7
+|   +89098/1672/29:16=89114/1672/45
+|   +89103/1672/34:0=89103/1672/34
+.   @l() -89103/1672/34
 p: .
 t. 
 |  Conceptual integration is in some sense an
@@ -9040,7 +9040,7 @@ t.
 
 --- Sentence/end 
 id: 493
-r#  89168  1674  59
+r#  89313  1675  59
 
 --- Paragraph/end 
 id: 92
@@ -9049,16 +9049,16 @@ y: N/A
 
 --- Paragraph/start
 id: 93
-r#  89171  1676  1
+r#  89316  1677  1
 
 
 --- Sentence/start
 id: 494
-r#  89171  1676  1
+r#  89316  1677  1
 
 --- Sentence//end
 id: 494
-r#  89327  1678  39
+r#  89472  1679  39
 p: .
 t. 
 |  The <!!"!!>interface theory of meaning<!!"!!> developed
@@ -9068,12 +9068,12 @@ t.
 
 --- Sentence/switch
 id: 495
-r#  89328  1678  40
+r#  89473  1679  40
 
 
 --- Sentence//end
 id: 495
-r#  89727  1684  14
+r#  89872  1685  14
 p: .
 t. 
 |   By analogy to how lexicons codify a space of linguistic
@@ -9087,12 +9087,12 @@ t.
 
 --- Sentence/switch
 id: 496
-r#  89728  1684  15
+r#  89873  1685  15
 
 
 --- Sentence//end
 id: 496
-r#  89950  1687  19
+r#  90095  1688  19
 p: .
 t. 
 |   In many cases these semanticized scripts derive
@@ -9103,12 +9103,12 @@ t.
 
 --- Sentence/switch
 id: 497
-r#  89951  1687  20
+r#  90096  1688  20
 
 
 --- Sentence//end
 id: 497
-r#  90072  1689  5
+r#  90217  1690  5
 p: .
 t. 
 |   Knowledge of what to do when visiting a
@@ -9117,7 +9117,7 @@ t.
 
 --- Sentence/end 
 id: 497
-r#  90073  1689  6
+r#  90218  1690  6
 
 --- Paragraph/end 
 id: 93
@@ -9126,16 +9126,16 @@ y: N/A
 
 --- Paragraph/start
 id: 94
-r#  90077  1691  1
+r#  90222  1692  1
 
 
 --- Sentence/start
 id: 498
-r#  90077  1691  1
+r#  90222  1692  1
 
 --- Sentence//end
 id: 498
-r#  90238  1693  39
+r#  90383  1694  39
 p: .
 t. 
 |  Such examples motivate theories wherein language-users are
@@ -9145,12 +9145,12 @@ t.
 
 --- Sentence/switch
 id: 499
-r#  90239  1693  40
+r#  90384  1694  40
 
 
 --- Sentence//end
 id: 499
-r#  90462  1697  8
+r#  90607  1698  8
 p: .
 t. 
 |   Enculturated
@@ -9162,12 +9162,12 @@ t.
 
 --- Sentence/switch
 id: 500
-r#  90463  1697  9
+r#  90608  1698  9
 
 
 --- Sentence//end
 id: 500
-r#  90694  1700  52
+r#  90839  1701  52
 p: .
 t. 
 |   Language, by analogy, defers to a social repertoire of
@@ -9178,12 +9178,12 @@ t.
 
 --- Sentence/switch
 id: 501
-r#  90695  1700  53
+r#  90840  1701  53
 
 
 --- Sentence//end
 id: 501
-r#  90783  1702  26
+r#  90928  1703  26
 p: .
 t. 
 |  The meaning of sentences are their consequence for further
@@ -9192,12 +9192,12 @@ t.
 
 --- Sentence/switch
 id: 502
-r#  90784  1702  27
+r#  90929  1703  27
 
 
 --- Sentence//end
 id: 502
-r#  91039  1707  27
+r#  91184  1708  27
 p: .
 t. 
 |  Rather than trying to define e.g. menu via
@@ -9209,12 +9209,12 @@ t.
 
 --- Sentence/switch
 id: 503
-r#  91040  1707  28
+r#  91185  1708  28
 
 
 --- Sentence//end
 id: 503
-r#  91237  1711  40
+r#  91382  1712  40
 p: .
 t. 
 |  Presumably speakers rarely talk about
@@ -9224,7 +9224,7 @@ t.
 
 --- Sentence/end 
 id: 503
-r#  91238  1711  41
+r#  91383  1712  41
 
 --- Paragraph/end 
 id: 94
@@ -9233,16 +9233,16 @@ y: N/A
 
 --- Paragraph/start
 id: 95
-r#  91242  1713  1
+r#  91387  1714  1
 
 
 --- Sentence/start
 id: 504
-r#  91242  1713  1
+r#  91387  1714  1
 
 --- Sentence//end
 id: 504
-r#  91465  1715  83
+r#  91610  1716  83
 p: .
 t. 
 |  More than anything, after all, this is what the word means: not so
@@ -9252,7 +9252,24 @@ t.
 
 --- Sentence/switch
 id: 505
-r#  91466  1715  84
+r#  91611  1716  84
+
+
+--- Sentence//end
+id: 505
+r#  91894  1721  33
+p: .
+t. 
+|  Metaphorical uses also exist (the idiom <!!"!!>not on the menu<!!"!!>
+|  extends beyond food), but that is merely one of innumerable examples
+|  of metaphoric word-sense that abstracts from concrete
+|  <!!"!!>socialized<!!"!!> usage properly modeled via something like an
+.  <!!"!!>interface theory<!!"!!> of meaning
+
+
+--- Sentence/switch
+id: 506
+r#  91895  1721  34
 
 --- Paragraph/end 
 id: 95
@@ -9267,42 +9284,38 @@ y: N/A
 
 --- Paragraph/start
 id: 96
-r#  91782  1724  1
+r#  91928  1725  1
 
 
 --- Sentence/start
-id: 506
-r#  91782  1724  1
+id: 507
+r#  91928  1725  1
 
 --- Sentence//end
-id: 506
-r#  91884  1725  38
+id: 507
+r#  92030  1726  38
 p: .
 t. 
-|  Metaphorical uses also exist (the idiom <!!"!!>not on the menu<!!"!!>
-|  extends beyond food), but that is merely one of innumerable examples
-|  of metaphoric word-sense that abstracts from concrete
-|  <!!"!!>socialized<!!"!!> usage properly modeled via something like an
-|  <!!"!!>interface theory<!!"!!> of meaning. The premise that individual words conceptually modify logically
+|   The premise that individual words conceptually modify logically
 .  precedent aggregates may seem obvious
 
 
 --- Sentence/switch
-id: 507
-r#  91885  1725  39
+id: 508
+r#  92031  1726  39
 
 
 --- Sentence//end
-id: 507
-r#  91977  1726  64
+id: 508
+r#  92123  1727  64
 p: .
 t. 
 |   But I want to extend that
 .  maybe-underwhelming starting point with three further arguments
 
 --- Sentence/end 
-id: 507
-r#  91978  1726  65
+id: 508
+r#  92124  1727  65
 
 --- Paragraph/end 
 id: 96
@@ -9311,16 +9324,16 @@ y: N/A
 
 --- Paragraph/start
 id: 97
-r#  91980  1728  1
+r#  92126  1729  1
 
 
 --- Sentence/start
-id: 508
-r#  91980  1728  1
+id: 509
+r#  92126  1729  1
 
 --- Sentence//end
-id: 508
-r#  92088  1729  46
+id: 509
+r#  92234  1730  46
 p: .
 t. 
 |  First, I claim that this overall phenomenon can be taken as a
@@ -9328,13 +9341,13 @@ t.
 
 
 --- Sentence/switch
-id: 509
-r#  92089  1729  47
+id: 510
+r#  92235  1730  47
 
 
 --- Sentence//end
-id: 509
-r#  92272  1733  37
+id: 510
+r#  92418  1734  37
 p: .
 t. 
 |  When interpreting a sentence, we need to queue up words
@@ -9344,13 +9357,13 @@ t.
 
 
 --- Sentence/switch
-id: 510
-r#  92273  1733  38
+id: 511
+r#  92419  1734  38
 
 
 --- Sentence//end
-id: 510
-r#  92475  1737  43
+id: 511
+r#  92621  1738  43
 p: .
 t. 
 |   To sequence
@@ -9361,13 +9374,13 @@ t.
 
 
 --- Sentence/switch
-id: 511
-r#  92476  1737  44
+id: 512
+r#  92622  1738  44
 
 
 --- Sentence//end
-id: 511
-r#  92655  1741  11
+id: 512
+r#  92801  1742  11
 p: .
 t. 
 |  Conventions in grammar acquire rule-like status
@@ -9377,13 +9390,13 @@ t.
 
 
 --- Sentence/switch
-id: 512
-r#  92656  1741  12
+id: 513
+r#  92802  1742  12
 
 
 --- Sentence//end
-id: 512
-r#  92865  1744  57
+id: 513
+r#  93011  1745  57
 p: .
 t. 
 |   So such word-order is not just a feature
@@ -9392,8 +9405,8 @@ t.
 .  if one accepts a cognitive reading of <!!"!!>fragmentation<!!"!!>)
 
 --- Sentence/end 
-id: 512
-r#  92866  1744  58
+id: 513
+r#  93012  1745  58
 
 --- Paragraph/end 
 id: 97
@@ -9402,16 +9415,16 @@ y: N/A
 
 --- Paragraph/start
 id: 98
-r#  92868  1746  1
+r#  93014  1747  1
 
 
 --- Sentence/start
-id: 513
-r#  92868  1746  1
+id: 514
+r#  93014  1747  1
 
 --- Sentence//end
-id: 513
-r#  92988  1747  53
+id: 514
+r#  93134  1748  53
 p: .
 t. 
 |  Second, verbs are distinct in that <!!"!!>their<!!"!!> conceptual syntheses
@@ -9419,13 +9432,13 @@ t.
 
 
 --- Sentence/switch
-id: 514
-r#  92989  1747  54
+id: 515
+r#  93135  1748  54
 
 
 --- Sentence//end
-id: 514
-r#  93201  1751  39
+id: 515
+r#  93347  1752  39
 p: .
 t. 
 |  This formulation generalizes the typically <!!"!!>local<!!"!!> phenomenon
@@ -9435,13 +9448,13 @@ t.
 
 
 --- Sentence/switch
-id: 515
-r#  93202  1751  40
+id: 516
+r#  93348  1752  40
 
 
 --- Sentence//end
-id: 515
-r#  93368  1753  55
+id: 516
+r#  93514  1754  55
 p: .
 t. 
 |   Meanwhile, the expansion of conceptual
@@ -9450,13 +9463,13 @@ t.
 
 
 --- Sentence/switch
-id: 516
-r#  93369  1753  56
+id: 517
+r#  93515  1754  56
 
 
 --- Sentence//end
-id: 516
-r#  93565  1756  64
+id: 517
+r#  93711  1757  64
 p: .
 t. 
 |  Any locative construction, for example, because it will assert a
@@ -9465,20 +9478,20 @@ t.
 
 
 --- Sentence/switch
-id: 517
-r#  93566  1756  65
+id: 518
+r#  93712  1757  65
 
 
 --- Sentence//end
-id: 517
-r#  93627  1757  59
+id: 518
+r#  93773  1758  59
 p: ?
 t. 
 .  How does the speaker see, imagine, know about these spaces
 
 --- Sentence/end 
-id: 517
-r#  93628  1757  60
+id: 518
+r#  93774  1758  60
 
 --- Paragraph/end 
 id: 98
@@ -9487,16 +9500,16 @@ y: N/A
 
 --- Paragraph/start
 id: 99
-r#  93630  1759  1
+r#  93776  1760  1
 
 
 --- Sentence/start
-id: 518
-r#  93630  1759  1
+id: 519
+r#  93776  1760  1
 
 --- Sentence//end
-id: 518
-r#  93820  1761  71
+id: 519
+r#  93966  1762  71
 p: .
 t. 
 |  Listeners instinctively reconstruct details of the speaker's
@@ -9505,13 +9518,13 @@ t.
 
 
 --- Sentence/switch
-id: 519
-r#  93821  1761  72
+id: 520
+r#  93967  1762  72
 
 
 --- Sentence//end
-id: 519
-r#  93945  1763  55
+id: 520
+r#  94091  1764  55
 p: .
 t. 
 |  For example, in <!!"!!>John spilled water<!!"!!> the person is grounded as
@@ -9519,13 +9532,13 @@ t.
 
 
 --- Sentence/switch
-id: 520
-r#  93946  1763  56
+id: 521
+r#  94092  1764  56
 
 
 --- Sentence//end
-id: 520
-r#  94039  1764  80
+id: 521
+r#  94185  1765  80
 p: .
 t. 
 |   Meanwhile,
@@ -9533,13 +9546,13 @@ t.
 
 
 --- Sentence/switch
-id: 521
-r#  94040  1764  81
+id: 522
+r#  94186  1765  81
 
 
 --- Sentence//end
-id: 521
-r#  94134  1766  35
+id: 522
+r#  94280  1767  35
 p: .
 t. 
 |  Processing the latter, listeners inevitably reconstruct
@@ -9547,13 +9560,13 @@ t.
 
 
 --- Sentence/switch
-id: 522
-r#  94135  1766  36
+id: 523
+r#  94281  1767  36
 
 
 --- Sentence//end
-id: 522
-r#  94322  1769  55
+id: 523
+r#  94468  1770  55
 p: .
 t. 
 |  Because discursive structure has parameters that replicate
@@ -9562,13 +9575,13 @@ t.
 
 
 --- Sentence/switch
-id: 523
-r#  94323  1769  56
+id: 524
+r#  94469  1770  56
 
 
 --- Sentence//end
-id: 523
-r#  94488  1772  35
+id: 524
+r#  94634  1773  35
 p: .
 t. 
 |  (Speaker-relative epistemics is not some adjunct that we only
@@ -9577,13 +9590,13 @@ t.
 
 
 --- Sentence/switch
-id: 524
-r#  94489  1772  36
+id: 525
+r#  94635  1773  36
 
 
 --- Sentence//end
-id: 524
-r#  94624  1774  57
+id: 525
+r#  94770  1775  57
 p: .
 t. 
 |   Instead, synchronizing
@@ -9591,8 +9604,8 @@ t.
 .  facts of language constituents, such as parts of speech)
 
 --- Sentence/end 
-id: 524
-r#  94625  1774  58
+id: 525
+r#  94771  1775  58
 
 --- Paragraph/end 
 id: 99
@@ -9601,16 +9614,16 @@ y: N/A
 
 --- Paragraph/start
 id: 100
-r#  94627  1776  1
+r#  94773  1777  1
 
 
 --- Sentence/start
-id: 525
-r#  94627  1776  1
+id: 526
+r#  94773  1777  1
 
 --- Sentence//end
-id: 525
-r#  94826  1779  13
+id: 526
+r#  94972  1780  13
 p: .
 t. 
 |  Third, given the accretionary nature of conceptual synthesis,
@@ -9620,13 +9633,13 @@ t.
 
 
 --- Sentence/switch
-id: 526
-r#  94827  1779  14
+id: 527
+r#  94973  1780  14
 
 
 --- Sentence//end
-id: 526
-r#  94918  1780  48
+id: 527
+r#  95064  1781  48
 p: .
 t. 
 |   To the degree that we use formal models,
@@ -9634,13 +9647,13 @@ t.
 
 
 --- Sentence/switch
-id: 527
-r#  94919  1780  49
+id: 528
+r#  95065  1781  49
 
 
 --- Sentence//end
-id: 527
-r#  94997  1782  29
+id: 528
+r#  95143  1783  29
 p: .
 t. 
 |  The idea <!!"!!>red box<!!"!!> obviously intersects the
@@ -9648,13 +9661,13 @@ t.
 
 
 --- Sentence/switch
-id: 528
-r#  94998  1782  30
+id: 529
+r#  95144  1783  30
 
 
 --- Sentence//end
-id: 528
-r#  95216  1786  29
+id: 529
+r#  95362  1787  29
 p: .
 t. 
 |   If we then analyze this
@@ -9665,18 +9678,18 @@ t.
 
 
 --- Sentence/switch
-id: 529
-r#  95217  1786  30
+id: 530
+r#  95363  1787  30
 
 
 --- Sentence//end
-id: 529
-r#  95413  1790  19
+id: 530
+r#  95559  1791  19
 g. 
-|   @l(-%>>) +95217/1786/30
-|   +95241/1786/54:17=95258/1787/2
-|   +95246/1786/59:0=95246/1786/59
-.   @l() -95246/1786/59
+|   @l(-%>>) +95363/1787/30
+|   +95387/1787/54:17=95404/1788/2
+|   +95392/1787/59:0=95392/1787/59
+.   @l() -95392/1787/59
 p: .
 t. 
 |  However,
@@ -9686,8 +9699,8 @@ t.
 .  should be analyzed
 
 --- Sentence/end 
-id: 529
-r#  95414  1790  20
+id: 530
+r#  95560  1791  20
 
 --- Paragraph/end 
 id: 100
@@ -9696,16 +9709,16 @@ y: N/A
 
 --- Paragraph/start
 id: 101
-r#  95426  1792  11
+r#  95572  1793  11
 
 
 --- Sentence/start
-id: 530
-r#  95426  1792  11
+id: 531
+r#  95572  1793  11
 
 --- Sentence//end
-id: 530
-r#  95559  1794  29
+id: 531
+r#  95705  1795  29
 p: .
 t. 
 |  , mentioned earlier, propose Conceptual Space theory
@@ -9714,13 +9727,13 @@ t.
 
 
 --- Sentence/switch
-id: 531
-r#  95560  1794  30
+id: 532
+r#  95706  1795  30
 
 
 --- Sentence//end
-id: 531
-r#  95982  1802  22
+id: 532
+r#  96128  1803  22
 p: .
 t. 
 |   To the extent that
@@ -9735,13 +9748,13 @@ t.
 
 
 --- Sentence/switch
-id: 532
-r#  95983  1802  23
+id: 533
+r#  96129  1803  23
 
 
 --- Sentence//end
-id: 532
-r#  96133  1805  30
+id: 533
+r#  96279  1806  30
 p: .
 t. 
 |   Unfortunately, I am not
@@ -9751,13 +9764,13 @@ t.
 
 
 --- Sentence/switch
-id: 533
-r#  96134  1805  31
+id: 534
+r#  96280  1806  31
 
 
 --- Sentence//end
-id: 533
-r#  96349  1809  53
+id: 534
+r#  96495  1810  53
 p: .
 t. 
 |   The meaningfulness
@@ -9768,21 +9781,21 @@ t.
 
 
 --- Sentence/switch
-id: 534
-r#  96350  1809  54
+id: 535
+r#  96496  1810  54
 
 
 --- Sentence//end
-id: 534
-r#  96451  1811  47
+id: 535
+r#  96597  1812  47
 p: .
 t. 
 |  I suggest that, almost always, such intermediaries
 .  depend on extralinguistic cognitive engagement
 
 --- Sentence/end 
-id: 534
-r#  96452  1811  48
+id: 535
+r#  96598  1812  48
 
 --- Paragraph/end 
 id: 101
@@ -9791,16 +9804,16 @@ y: N/A
 
 --- Paragraph/start
 id: 102
-r#  96454  1813  1
+r#  96600  1814  1
 
 
 --- Sentence/start
-id: 535
-r#  96454  1813  1
+id: 536
+r#  96600  1814  1
 
 --- Sentence//end
-id: 535
-r#  96754  1818  53
+id: 536
+r#  96900  1819  53
 p: .
 t. 
 |  There is certainly a role for semantic theories:
@@ -9812,13 +9825,13 @@ t.
 
 
 --- Sentence/switch
-id: 536
-r#  96755  1818  54
+id: 537
+r#  96901  1819  54
 
 
 --- Sentence//end
-id: 536
-r#  97150  1827  17
+id: 537
+r#  97296  1828  17
 p: .
 t. 
 |  For another example, alongside type-theoretic
@@ -9833,13 +9846,13 @@ t.
 
 
 --- Sentence/switch
-id: 537
-r#  97151  1827  18
+id: 538
+r#  97297  1828  18
 
 
 --- Sentence//end
-id: 537
-r#  97293  1832  1
+id: 538
+r#  97439  1833  1
 p: 
 t. 
 |   The superposition of
@@ -9848,13 +9861,13 @@ t.
 
 
 --- Sentence/switch
-id: 538
-r#  97296  1832  4
+id: 539
+r#  97442  1833  4
 
 
 --- Sentence//end
-id: 538
-r#  97389  1833  28
+id: 539
+r#  97535  1834  28
 p: .
 t. 
 |   That newspaper [pointing to a table] just moved to 10th street
@@ -9862,155 +9875,167 @@ t.
 
 
 --- Sentence/switch
-id: 539
-r#  97390  1833  29
+id: 540
+r#  97536  1834  29
 
 
 --- Sentence//end
-id: 539
-r#  97391  1834  1
+id: 540
+r#  97537  1835  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 540
-r#  97394  1834  4
+id: 541
+r#  97540  1835  4
 
 
 --- Sentence//end
-id: 540
-r#  97450  1834  60
+id: 541
+r#  97596  1835  60
 p: .
 t. 
 .   At home you can print out this book from a PDF link
 
 
 --- Sentence/switch
-id: 541
-r#  97451  1834  61
+id: 542
+r#  97597  1835  61
 
 
 --- Sentence//end
-id: 541
-r#  97452  1835  1
+id: 542
+r#  97598  1836  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 542
-r#  97455  1835  4
+id: 543
+r#  97601  1836  4
 
 
 --- Sentence//end
-id: 542
-r#  97604  1841  1
+id: 543
+r#  97650  1836  53
+p: .
+t. 
+.   The borough of Queens voted heavily for Mamdani
+
+
+--- Sentence/switch
+id: 544
+r#  97672  1836  75
+
+
+--- Sentence//end
+id: 544
+r#  97751  1842  1
 g. 
-|   @l(-%>) +97505/1835/54
-|   +97510/1835/59:0=97510/1835/59
-|   +97523/1835/72:0=97523/1835/72
-.   @l() -97523/1835/72
+|   @l(-%>) +97651/1836/54
+|   +97657/1836/60:0=97657/1836/60
+|   +97670/1836/73:0=97670/1836/73
+.   @l() -97670/1836/73
 p: 
 t. 
-|   The borough of Queens voted heavily for Mamdani.
 |  
 .  Also, apparent region violations drive many functional metaphors:
 
 
 --- Sentence/switch
-id: 543
-r#  97607  1841  4
+id: 545
+r#  97754  1842  4
 
 
 --- Sentence//end
-id: 543
-r#  97648  1841  45
+id: 545
+r#  97795  1842  45
 p: .
 t. 
 .   These flowers really want some sunshine
 
 
 --- Sentence/switch
-id: 544
-r#  97649  1841  46
+id: 546
+r#  97796  1842  46
 
 
 --- Sentence//end
-id: 544
-r#  97650  1842  1
+id: 546
+r#  97797  1843  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 545
-r#  97653  1842  4
+id: 547
+r#  97800  1843  4
 
 
 --- Sentence//end
-id: 545
-r#  97693  1842  44
+id: 547
+r#  97840  1843  44
 p: .
 t. 
 .   This drought has left the soil parched
 
 
 --- Sentence/switch
-id: 546
-r#  97694  1842  45
+id: 548
+r#  97841  1843  45
 
 
 --- Sentence//end
-id: 546
-r#  97695  1843  1
+id: 548
+r#  97842  1844  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 547
-r#  97698  1843  4
+id: 549
+r#  97845  1844  4
 
 
 --- Sentence//end
-id: 547
-r#  97734  1843  40
+id: 549
+r#  97881  1844  40
 p: .
 t. 
 .   Our car stubbornly refused to move
 
 
 --- Sentence/switch
-id: 548
-r#  97735  1843  41
+id: 550
+r#  97882  1844  41
 
 
 --- Sentence//end
-id: 548
-r#  97736  1844  1
+id: 550
+r#  97883  1845  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 549
-r#  97739  1844  4
+id: 551
+r#  97886  1845  4
 
 
 --- Sentence//end
-id: 549
-r#  98139  1851  62
+id: 551
+r#  98286  1852  62
 g. 
-|   @l(-%>) +97790/1844/55
-|   +97795/1844/60:0=97795/1844/60
-|   +97808/1844/73:0=97808/1844/73
-.   @l() -97808/1844/73
+|   @l(-%>) +97937/1845/55
+|   +97942/1845/60:0=97942/1845/60
+|   +97955/1845/73:0=97955/1845/73
+.   @l() -97955/1845/73
 p: .
 t. 
 |   The spell-checker thinks <!!"!!>hooman<!!"!!> isn't a word.
@@ -10022,8 +10047,8 @@ t.
 .  [/AsherPustejovsky/], [/ChatzikyriakidisLuo/], [/ZhaohuiLuo/]
 
 --- Sentence/end 
-id: 549
-r#  98140  1851  63
+id: 551
+r#  98287  1852  63
 
 --- Paragraph/end 
 id: 102
@@ -10032,20 +10057,20 @@ y: N/A
 
 --- Paragraph/start
 id: 103
-r#  98142  1853  1
+r#  98289  1854  1
 
 
 --- Sentence/start
-id: 550
-r#  98142  1853  1
+id: 552
+r#  98289  1854  1
 
 --- Sentence//end
-id: 550
-r#  98393  1856  67
+id: 552
+r#  98540  1857  67
 g. 
-|   @l(-%>) +98327/1856/1
-|   +98357/1856/31:25=98382/1856/56
-.   @l() -98357/1856/31
+|   @l(-%>) +98474/1857/1
+|   +98504/1857/31:25=98529/1857/56
+.   @l() -98504/1857/31
 p: .
 t. 
 |  These are options for formal semantics that have, I contend,
@@ -10055,13 +10080,13 @@ t.
 
 
 --- Sentence/switch
-id: 551
-r#  98394  1856  68
+id: 553
+r#  98541  1857  68
 
 
 --- Sentence//end
-id: 551
-r#  98563  1859  68
+id: 553
+r#  98710  1860  68
 p: .
 t. 
 |  They do not, in my opinion, substitute for cognitive
@@ -10069,8 +10094,8 @@ t.
 .  to bridge lexical word-sense with full-phrase propositional content
 
 --- Sentence/end 
-id: 551
-r#  98564  1859  69
+id: 553
+r#  98711  1860  69
 
 --- Paragraph/end 
 id: 103
@@ -10079,16 +10104,16 @@ y: N/A
 
 --- Paragraph/start
 id: 104
-r#  98566  1861  1
+r#  98713  1862  1
 
 
 --- Sentence/start
-id: 552
-r#  98566  1861  1
+id: 554
+r#  98713  1862  1
 
 --- Sentence//end
-id: 552
-r#  98647  1862  21
+id: 554
+r#  98794  1863  21
 p: .
 t. 
 |  To be sure, I have offered rather inchoate characterization
@@ -10096,13 +10121,13 @@ t.
 
 
 --- Sentence/switch
-id: 553
-r#  98648  1862  22
+id: 555
+r#  98795  1863  22
 
 
 --- Sentence//end
-id: 553
-r#  98867  1865  57
+id: 555
+r#  99014  1866  57
 p: .
 t. 
 |   The space of mid-level conceptual
@@ -10112,13 +10137,13 @@ t.
 
 
 --- Sentence/switch
-id: 554
-r#  98868  1865  58
+id: 556
+r#  99015  1866  58
 
 
 --- Sentence//end
-id: 554
-r#  98966  1867  38
+id: 556
+r#  99113  1868  38
 p: .
 t. 
 |  Whatever their details, I believe such theories' central
@@ -10126,13 +10151,13 @@ t.
 
 
 --- Sentence/switch
-id: 555
-r#  98967  1867  39
+id: 557
+r#  99114  1868  39
 
 
 --- Sentence//end
-id: 555
-r#  99145  1870  21
+id: 557
+r#  99292  1871  21
 p: .
 t. 
 |   This is not a kind
@@ -10142,13 +10167,13 @@ t.
 
 
 --- Sentence/switch
-id: 556
-r#  99146  1870  22
+id: 558
+r#  99293  1871  22
 
 
 --- Sentence//end
-id: 556
-r#  99436  1876  10
+id: 558
+r#  99583  1877  10
 p: .
 t. 
 |   Since conceptual syntheses are
@@ -10160,14 +10185,14 @@ t.
 .  inference
 
 --- Sentence/end 
-id: 556
-r#  99479  1876  53
+id: 558
+r#  99626  1877  53
 g. 
-|   @l(-%>) +99437/1876/11
-|   +99443/1876/17:0=99443/1876/17
-|   +99456/1876/30:0=99456/1876/30
-|   +99478/1876/52:0=99478/1876/52
-.   @l() -99478/1876/52
+|   @l(-%>) +99584/1877/11
+|   +99590/1877/17:0=99590/1877/17
+|   +99603/1877/30:0=99603/1877/30
+|   +99625/1877/52:0=99625/1877/52
+.   @l() -99625/1877/52
 
 --- Paragraph/end 
 id: 104
@@ -10182,16 +10207,16 @@ y: N/A
 
 --- Paragraph/start
 id: 105
-r#  99498  1880  1
+r#  99645  1881  1
 
 
 --- Sentence/start
-id: 557
-r#  99498  1880  1
+id: 559
+r#  99645  1881  1
 
 --- Sentence//end
-id: 557
-r#  99653  1882  59
+id: 559
+r#  99800  1883  59
 p: .
 t. 
 |  Against this backdrop, I think I can more rigorously
@@ -10200,13 +10225,13 @@ t.
 
 
 --- Sentence/switch
-id: 558
-r#  99654  1882  60
+id: 560
+r#  99801  1883  60
 
 
 --- Sentence//end
-id: 558
-r#  99819  1886  10
+id: 560
+r#  99966  1887  10
 p: .
 t. 
 |  Discourse may indeed communicate beliefs,
@@ -10216,13 +10241,13 @@ t.
 
 
 --- Sentence/switch
-id: 559
-r#  99820  1886  11
+id: 561
+r#  99967  1887  11
 
 
 --- Sentence//end
-id: 559
-r#  100053  1890  11
+id: 561
+r#  100200  1891  11
 p: .
 t. 
 |   We cannot account for proposition-like
@@ -10232,8 +10257,8 @@ t.
 .  productive
 
 --- Sentence/end 
-id: 559
-r#  100054  1890  12
+id: 561
+r#  100201  1891  12
 
 --- Paragraph/end 
 id: 105
@@ -10242,16 +10267,16 @@ y: N/A
 
 --- Paragraph/start
 id: 106
-r#  100056  1892  1
+r#  100203  1893  1
 
 
 --- Sentence/start
-id: 560
-r#  100056  1892  1
+id: 562
+r#  100203  1893  1
 
 --- Sentence//end
-id: 560
-r#  100218  1894  54
+id: 562
+r#  100365  1895  54
 p: .
 t. 
 |  Holding, in our minds, semi-complete precursor images of
@@ -10260,13 +10285,13 @@ t.
 
 
 --- Sentence/switch
-id: 561
-r#  100219  1894  55
+id: 563
+r#  100366  1895  55
 
 
 --- Sentence//end
-id: 561
-r#  100433  1899  8
+id: 563
+r#  100580  1900  8
 p: .
 t. 
 |  During talk, we exploit these capabilities
@@ -10277,13 +10302,13 @@ t.
 
 
 --- Sentence/switch
-id: 562
-r#  100434  1899  9
+id: 564
+r#  100581  1900  9
 
 
 --- Sentence//end
-id: 562
-r#  100679  1903  31
+id: 564
+r#  100826  1904  31
 p: .
 t. 
 |   Cooperation between multiple individuals engenders
@@ -10293,8 +10318,8 @@ t.
 .  of an imagined/planned future)
 
 --- Sentence/end 
-id: 562
-r#  100680  1903  32
+id: 564
+r#  100827  1904  32
 
 --- Paragraph/end 
 id: 106
@@ -10303,16 +10328,16 @@ y: N/A
 
 --- Paragraph/start
 id: 107
-r#  100684  1905  1
+r#  100831  1906  1
 
 
 --- Sentence/start
-id: 563
-r#  100684  1905  1
+id: 565
+r#  100831  1906  1
 
 --- Sentence//end
-id: 563
-r#  100887  1908  10
+id: 565
+r#  101034  1909  10
 p: .
 t. 
 |  Certainly, purposeful action coordinated among several people requires
@@ -10322,13 +10347,13 @@ t.
 
 
 --- Sentence/switch
-id: 564
-r#  100888  1908  11
+id: 566
+r#  101035  1909  11
 
 
 --- Sentence//end
-id: 564
-r#  101002  1909  58
+id: 566
+r#  101149  1910  58
 p: .
 t. 
 |   Expressing not just what we believe, but why,
@@ -10336,13 +10361,13 @@ t.
 
 
 --- Sentence/switch
-id: 565
-r#  101003  1909  59
+id: 567
+r#  101150  1910  59
 
 
 --- Sentence//end
-id: 565
-r#  101367  1916  22
+id: 567
+r#  101514  1917  22
 p: .
 t. 
 |  Given these requirements, it is inevitable that human
@@ -10355,18 +10380,18 @@ t.
 
 
 --- Sentence/switch
-id: 566
-r#  101368  1916  23
+id: 568
+r#  101515  1917  23
 
 
 --- Sentence//end
-id: 566
-r#  101525  1919  32
+id: 568
+r#  101672  1920  32
 g. 
-|   @l(-%>>) +101395/1917/20
-|   +101418/1917/43:17=101435/1917/60
-|   +101423/1917/48:0=101423/1917/48
-.   @l() -101423/1917/48
+|   @l(-%>>) +101542/1918/20
+|   +101565/1918/43:17=101582/1918/60
+|   +101570/1918/48:0=101570/1918/48
+.   @l() -101570/1918/48
 p: .
 t. 
 |   This
@@ -10375,8 +10400,8 @@ t.
 .  cognitive linguistic processing
 
 --- Sentence/end 
-id: 566
-r#  101526  1919  33
+id: 568
+r#  101673  1920  33
 
 --- Paragraph/end 
 id: 107
@@ -10385,16 +10410,16 @@ y: N/A
 
 --- Paragraph/start
 id: 108
-r#  101529  1921  1
+r#  101676  1922  1
 
 
 --- Sentence/start
-id: 567
-r#  101529  1921  1
+id: 569
+r#  101676  1922  1
 
 --- Sentence//end
-id: 567
-r#  101870  1926  45
+id: 569
+r#  102017  1927  45
 p: .
 t. 
 |  But we should not conclude from such hypotheses that
@@ -10406,13 +10431,13 @@ t.
 
 
 --- Sentence/switch
-id: 568
-r#  101871  1926  46
+id: 570
+r#  102018  1927  46
 
 
 --- Sentence//end
-id: 568
-r#  102108  1931  34
+id: 570
+r#  102255  1932  34
 p: .
 t. 
 |  Paraphrases such as red box as the set-theoretic
@@ -10423,13 +10448,13 @@ t.
 
 
 --- Sentence/switch
-id: 569
-r#  102109  1931  35
+id: 571
+r#  102256  1932  35
 
 
 --- Sentence//end
-id: 569
-r#  102313  1935  35
+id: 571
+r#  102460  1936  35
 p: .
 t. 
 |   Yet such
@@ -10440,13 +10465,13 @@ t.
 
 
 --- Sentence/switch
-id: 570
-r#  102314  1935  36
+id: 572
+r#  102461  1936  36
 
 
 --- Sentence//end
-id: 570
-r#  102487  1939  18
+id: 572
+r#  102634  1940  18
 p: .
 t. 
 |   To the degree
@@ -10456,8 +10481,8 @@ t.
 .  cognitive science
 
 --- Sentence/end 
-id: 570
-r#  102488  1939  19
+id: 572
+r#  102635  1940  19
 
 --- Paragraph/end 
 id: 108
@@ -10466,16 +10491,16 @@ y: N/A
 
 --- Paragraph/start
 id: 109
-r#  102490  1941  1
+r#  102637  1942  1
 
 
 --- Sentence/start
-id: 571
-r#  102490  1941  1
+id: 573
+r#  102637  1942  1
 
 --- Sentence//end
-id: 571
-r#  102743  1944  32
+id: 573
+r#  102890  1945  32
 p: .
 t. 
 |  Formal syntax has a notion of sentences being <!!"!!>grammatically well formed<!!"!!>
@@ -10485,13 +10510,13 @@ t.
 
 
 --- Sentence/switch
-id: 572
-r#  102744  1944  33
+id: 574
+r#  102891  1945  33
 
 
 --- Sentence//end
-id: 572
-r#  103030  1948  53
+id: 574
+r#  103177  1949  53
 p: .
 t. 
 |   Whatever actual philosophy is in play,
@@ -10502,26 +10527,26 @@ t.
 
 
 --- Sentence/switch
-id: 573
-r#  103031  1948  54
+id: 575
+r#  103178  1949  54
 
 
 --- Sentence//end
-id: 573
-r#  103082  1949  48
+id: 575
+r#  103229  1950  48
 p: .
 t. 
 .  <!!"!!>Married bachelor<!!"!!>, say, would be ill-formed
 
 
 --- Sentence/switch
-id: 574
-r#  103083  1949  49
+id: 576
+r#  103230  1950  49
 
 
 --- Sentence//end
-id: 574
-r#  103292  1952  64
+id: 576
+r#  103439  1953  64
 p: .
 t. 
 |   By contrast,
@@ -10530,8 +10555,8 @@ t.
 .  intensionality/extensionality contrast) -=- hence <!(1)!> and <!(2)!>
 
 --- Sentence/end 
-id: 574
-r#  103293  1952  65
+id: 576
+r#  103440  1953  65
 
 --- Paragraph/end 
 id: 109
@@ -10540,16 +10565,16 @@ y: N/A
 
 --- Paragraph/start
 id: 110
-r#  103297  1954  1
+r#  103444  1955  1
 
 
 --- Sentence/start
-id: 575
-r#  103297  1954  1
+id: 577
+r#  103444  1955  1
 
 --- Sentence//end
-id: 575
-r#  103678  1959  71
+id: 577
+r#  103825  1960  71
 p: .
 t. 
 |  More broadly, building
@@ -10561,13 +10586,13 @@ t.
 
 
 --- Sentence/switch
-id: 576
-r#  103679  1959  72
+id: 578
+r#  103826  1960  72
 
 
 --- Sentence//end
-id: 576
-r#  103759  1961  10
+id: 578
+r#  103906  1962  10
 p: .
 t. 
 |  My arguments in this paper are that such an overly-tidy picture is
@@ -10575,21 +10600,21 @@ t.
 
 
 --- Sentence/switch
-id: 577
-r#  103760  1961  11
+id: 579
+r#  103907  1962  11
 
 
 --- Sentence//end
-id: 577
-r#  103854  1962  46
+id: 579
+r#  104001  1963  46
 p: .
 t. 
 |   Concepts simply don't synthesize according to
 .  <!!"!!>production rules<!!"!!> akin to BNF grammars
 
 --- Sentence/end 
-id: 577
-r#  103855  1962  47
+id: 579
+r#  104002  1963  47
 
 --- Paragraph/end 
 id: 110
@@ -10598,16 +10623,16 @@ y: N/A
 
 --- Paragraph/start
 id: 111
-r#  103859  1964  1
+r#  104006  1965  1
 
 
 --- Sentence/start
-id: 578
-r#  103859  1964  1
+id: 580
+r#  104006  1965  1
 
 --- Sentence//end
-id: 578
-r#  104088  1968  6
+id: 580
+r#  104235  1969  6
 p: .
 t. 
 |  I think the story  and many similar analyses have
@@ -10618,13 +10643,13 @@ t.
 
 
 --- Sentence/switch
-id: 579
-r#  104089  1968  7
+id: 581
+r#  104236  1969  7
 
 
 --- Sentence//end
-id: 579
-r#  104367  1973  54
+id: 581
+r#  104514  1974  54
 p: .
 t. 
 |   I mostly dispute the first part; although
@@ -10635,8 +10660,8 @@ t.
 .  by manipulating concepts as formalizable abstractions
 
 --- Sentence/end 
-id: 579
-r#  104368  1973  55
+id: 581
+r#  104515  1974  55
 
 --- Paragraph/end 
 id: 111
@@ -10645,20 +10670,20 @@ y: N/A
 
 --- Paragraph/start
 id: 112
-r#  104370  1975  1
+r#  104517  1976  1
 
 
 --- Sentence/start
-id: 580
-r#  104370  1975  1
+id: 582
+r#  104517  1976  1
 
 --- Sentence//end
-id: 580
-r#  104729  1981  9
+id: 582
+r#  104876  1982  9
 g. 
-|   @l(-%>) +104634/1979/43
-|   +104658/1979/67:19=104677/1980/12
-.   @l() -104658/1979/67
+|   @l(-%>) +104781/1980/43
+|   +104805/1980/67:19=104824/1981/12
+.   @l() -104805/1980/67
 p: .
 t. 
 |  To draw once again from coding analogies,
@@ -10671,13 +10696,13 @@ t.
 
 
 --- Sentence/switch
-id: 581
-r#  104730  1981  10
+id: 583
+r#  104877  1982  10
 
 
 --- Sentence//end
-id: 581
-r#  105057  1986  21
+id: 583
+r#  105204  1987  21
 p: .
 t. 
 |   Code syntax addresses such issues as
@@ -10689,13 +10714,13 @@ t.
 
 
 --- Sentence/switch
-id: 582
-r#  105058  1986  22
+id: 584
+r#  105205  1987  22
 
 
 --- Sentence//end
-id: 582
-r#  105281  1989  63
+id: 584
+r#  105428  1990  63
 p: .
 t. 
 |   Syntactic and
@@ -10705,13 +10730,13 @@ t.
 
 
 --- Sentence/switch
-id: 583
-r#  105282  1989  64
+id: 585
+r#  105429  1990  64
 
 
 --- Sentence//end
-id: 583
-r#  105503  1993  46
+id: 585
+r#  105650  1994  46
 p: .
 t. 
 |  Note that the algorithmetized syntax and semantics here
@@ -10721,13 +10746,13 @@ t.
 
 
 --- Sentence/switch
-id: 584
-r#  105504  1993  47
+id: 586
+r#  105651  1994  47
 
 
 --- Sentence//end
-id: 584
-r#  105728  1997  44
+id: 586
+r#  105875  1998  44
 p: .
 t. 
 |   I find this
@@ -10737,8 +10762,8 @@ t.
 .  is opaque to linguistic analysis per se
 
 --- Sentence/end 
-id: 584
-r#  105729  1997  45
+id: 586
+r#  105876  1998  45
 
 --- Paragraph/end 
 id: 112
@@ -10747,16 +10772,16 @@ y: N/A
 
 --- Paragraph/start
 id: 113
-r#  105732  1999  1
+r#  105879  2000  1
 
 
 --- Sentence/start
-id: 585
-r#  105732  1999  1
+id: 587
+r#  105879  2000  1
 
 --- Sentence//end
-id: 585
-r#  105881  2001  12
+id: 587
+r#  106028  2002  12
 p: .
 t. 
 |  This exposition might be a little straw-man-like in that ,
@@ -10765,13 +10790,13 @@ t.
 
 
 --- Sentence/switch
-id: 586
-r#  105882  2001  13
+id: 588
+r#  106029  2002  13
 
 
 --- Sentence//end
-id: 586
-r#  106053  2003  57
+id: 588
+r#  106200  2004  57
 p: .
 t. 
 |   Their syntactic theory is more about, starting
@@ -10780,13 +10805,13 @@ t.
 
 
 --- Sentence/switch
-id: 587
-r#  106054  2003  58
+id: 589
+r#  106201  2004  58
 
 
 --- Sentence//end
-id: 587
-r#  106173  2005  45
+id: 589
+r#  106320  2006  45
 p: .
 t. 
 |  We aren't <!!"!!>producing<!!"!!> (or, for that matter, <!!"!!>testing<!!"!!>) sentences
@@ -10794,13 +10819,13 @@ t.
 
 
 --- Sentence/switch
-id: 588
-r#  106174  2005  46
+id: 590
+r#  106321  2006  46
 
 
 --- Sentence//end
-id: 588
-r#  106319  2008  35
+id: 590
+r#  106466  2009  35
 p: .
 t. 
 |   But still,
@@ -10810,13 +10835,13 @@ t.
 
 
 --- Sentence/switch
-id: 589
-r#  106320  2008  36
+id: 591
+r#  106467  2009  36
 
 
 --- Sentence//end
-id: 589
-r#  106726  2014  57
+id: 591
+r#  106873  2015  57
 p: .
 t. 
 |  Either we view such production as inherently cognitive and extralinguistic, which is
@@ -10827,8 +10852,8 @@ t.
 .  or other formalizations (modal logic, quantifiers, etc.)
 
 --- Sentence/end 
-id: 589
-r#  106727  2014  58
+id: 591
+r#  106874  2015  58
 
 --- Paragraph/end 
 id: 113
@@ -10837,16 +10862,16 @@ y: N/A
 
 --- Paragraph/start
 id: 114
-r#  106732  2016  1
+r#  106879  2017  1
 
 
 --- Sentence/start
-id: 590
-r#  106732  2016  1
+id: 592
+r#  106879  2017  1
 
 --- Sentence//end
-id: 590
-r#  106908  2018  65
+id: 592
+r#  107055  2019  65
 p: .
 t. 
 |  Referring back to my reading of the successive syntheses
@@ -10855,13 +10880,13 @@ t.
 
 
 --- Sentence/switch
-id: 591
-r#  106909  2018  66
+id: 593
+r#  107056  2019  66
 
 
 --- Sentence//end
-id: 591
-r#  107175  2023  19
+id: 593
+r#  107322  2024  19
 p: .
 t. 
 |  Put aphoristically, linguistic formalization should model
@@ -10872,13 +10897,13 @@ t.
 
 
 --- Sentence/switch
-id: 592
-r#  107176  2023  20
+id: 594
+r#  107323  2024  20
 
 
 --- Sentence//end
-id: 592
-r#  107305  2026  9
+id: 594
+r#  107452  2027  9
 p: .
 t. 
 |   This is different from attempting
@@ -10888,13 +10913,13 @@ t.
 
 
 --- Sentence/switch
-id: 593
-r#  107306  2026  10
+id: 595
+r#  107453  2027  10
 
 
 --- Sentence//end
-id: 593
-r#  107495  2028  68
+id: 595
+r#  107642  2029  68
 p: .
 t. 
 |   As a useful analogy, programmers are not obligated to
@@ -10902,8 +10927,8 @@ t.
 .  need to know the type-signatures and preconditions for calling them
 
 --- Sentence/end 
-id: 593
-r#  107496  2028  69
+id: 595
+r#  107643  2029  69
 
 --- Paragraph/end 
 id: 114
@@ -10912,16 +10937,16 @@ y: N/A
 
 --- Paragraph/start
 id: 115
-r#  107499  2030  1
+r#  107646  2031  1
 
 
 --- Sentence/start
-id: 594
-r#  107499  2030  1
+id: 596
+r#  107646  2031  1
 
 --- Sentence//end
-id: 594
-r#  107678  2033  54
+id: 596
+r#  107825  2034  54
 p: .
 t. 
 |  I have also argued that any cognitive
@@ -10931,18 +10956,18 @@ t.
 
 
 --- Sentence/switch
-id: 595
-r#  107679  2033  55
+id: 597
+r#  107826  2034  55
 
 
 --- Sentence//end
-id: 595
-r#  107955  2039  28
+id: 597
+r#  108102  2040  28
 g. 
-|   @l(-%>>) +107811/2037/4
-|   +107834/2037/27:17=107851/2037/44
-|   +107839/2037/32:0=107839/2037/32
-.   @l() -107839/2037/32
+|   @l(-%>>) +107958/2038/4
+|   +107981/2038/27:17=107998/2038/44
+|   +107986/2038/32:0=107986/2038/32
+.   @l() -107986/2038/32
 p: .
 t. 
 |  Such an approach would be only tangentially a
@@ -10954,13 +10979,13 @@ t.
 
 
 --- Sentence/switch
-id: 596
-r#  107956  2039  29
+id: 598
+r#  108103  2040  29
 
 
 --- Sentence//end
-id: 596
-r#  108128  2043  8
+id: 598
+r#  108275  2044  8
 p: .
 t. 
 |   Endorsing
@@ -10971,13 +10996,13 @@ t.
 
 
 --- Sentence/switch
-id: 597
-r#  108129  2043  9
+id: 599
+r#  108276  2044  9
 
 
 --- Sentence//end
-id: 597
-r#  108344  2048  46
+id: 599
+r#  108491  2049  46
 p: .
 t. 
 |   Thus semantics has a
@@ -10989,13 +11014,13 @@ t.
 
 
 --- Sentence/switch
-id: 598
-r#  108345  2048  47
+id: 600
+r#  108492  2049  47
 
 
 --- Sentence//end
-id: 598
-r#  108511  2053  13
+id: 600
+r#  108658  2054  13
 p: .
 t. 
 |  So phenomenology can stand as a foundation
@@ -11006,13 +11031,13 @@ t.
 
 
 --- Sentence/switch
-id: 599
-r#  108512  2053  14
+id: 601
+r#  108659  2054  14
 
 
 --- Sentence//end
-id: 599
-r#  108632  2056  32
+id: 601
+r#  108779  2057  32
 p: .
 t. 
 |   This is consistent with a
@@ -11021,8 +11046,8 @@ t.
 .  scaffold for all humanities
 
 --- Sentence/end 
-id: 599
-r#  108633  2056  33
+id: 601
+r#  108780  2057  33
 
 --- Paragraph/end 
 id: 115
