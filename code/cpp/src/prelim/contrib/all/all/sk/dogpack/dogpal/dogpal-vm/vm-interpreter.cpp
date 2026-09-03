@@ -1,8 +1,14 @@
 
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
 
-#include "qynviper-json-vm.h"
 
 
+#include "vm-interpreter.h"
+
+USING_OTNS(DogPal)
 
 #define STATIC_BASIC_SPACE static QChar basic_space = QChar::fromLatin1(' ');
 #define STATIC_END_CONTROL static QString end_control = ";.";
@@ -67,7 +73,7 @@ u2 _advance_past_end(QString& basis, QString* skipped, int ix0 = 0)
 }
 
 
-u2 Qynviper_JSON_VM::advance_past_dispatch(QString& basis, QString* skipped)
+u2 VM_Interpreter::advance_past_dispatch(QString& basis, QString* skipped)
 {
  STATIC_BASIC_SPACE
 
@@ -79,7 +85,7 @@ u2 Qynviper_JSON_VM::advance_past_dispatch(QString& basis, QString* skipped)
  return _advance_past(basis, skipped, ix0);
 }
 
-u2 Qynviper_JSON_VM::advance_past_mid_control(QString& basis, QString* skipped)
+u2 VM_Interpreter::advance_past_mid_control(QString& basis, QString* skipped)
 {
  STATIC_BASIC_SPACE
 
@@ -92,7 +98,7 @@ u2 Qynviper_JSON_VM::advance_past_mid_control(QString& basis, QString* skipped)
 
 }
 
-u2 Qynviper_JSON_VM::advance_past_mid_control(QString& basis, Mid_Control_Kinds& mck, Mid_Control_Coords& mcc)
+u2 VM_Interpreter::advance_past_mid_control(QString& basis, Mid_Control_Kinds& mck, Mid_Control_Coords& mcc)
 {
  static QMap<QString, Mid_Control_Kinds> known_mid_controls {
   {"_$", Mid_Control_Kinds::String},
@@ -121,12 +127,12 @@ u2 Qynviper_JSON_VM::advance_past_mid_control(QString& basis, Mid_Control_Kinds&
 }
 
 
-u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, QString* skipped)
+u2 VM_Interpreter::advance_past_end_control(QString& basis, QString* skipped)
 {
  return _advance_past(basis, skipped);
 }
 
-u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, QStringList* skipped)
+u2 VM_Interpreter::advance_past_end_control(QString& basis, QStringList* skipped)
 {
     QString sk;
 u2 result = _advance_past(basis, &sk);
@@ -134,7 +140,7 @@ u2 result = _advance_past(basis, &sk);
 return result;
 }
 
-u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, quint64* skipped)
+u2 VM_Interpreter::advance_past_end_control(QString& basis, quint64* skipped)
 {
     QString sk;
     u2 result = _advance_past(basis, &sk);
@@ -142,7 +148,7 @@ u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, quint64* skipped)
     return result;
 }
 
-u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, qint64* skipped)
+u2 VM_Interpreter::advance_past_end_control(QString& basis, qint64* skipped)
 {
     QString sk;
     u2 result = _advance_past(basis, &sk);
@@ -150,7 +156,7 @@ u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, qint64* skipped)
     return result;
 }
 
-u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, qreal* skipped)
+u2 VM_Interpreter::advance_past_end_control(QString& basis, qreal* skipped)
 {
     QString sk;
     u2 result = _advance_past(basis, &sk);
@@ -158,7 +164,7 @@ u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, qreal* skipped)
     return result;
 }
 
-u2 Qynviper_JSON_VM::advance_past_end_control(QString& basis, float* skipped)
+u2 VM_Interpreter::advance_past_end_control(QString& basis, float* skipped)
 {
     QString sk;
     u2 result = _advance_past(basis, &sk);

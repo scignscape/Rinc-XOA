@@ -1,10 +1,20 @@
 
-#ifndef QYNVIPER_JSON_VM__H
-#define QYNVIPER_JSON_VM__H
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+#ifndef VM_INTERPRETER__H
+#define VM_INTERPRETER__H
 
 #include "global-types.h"
 
-class Qynviper_JSON_VM
+#include "otns.h"
+
+OTNS_(DogPal)
+
+class VM_Interpreter
 {
 public:
  enum class Mid_Control_Kinds {
@@ -33,5 +43,6 @@ public:
 
 };
 
+_OTNS(DogPack)
 
-#endif // QYNVIPER_JSON_VM__H
+#endif // VM_INTERPRETER__H

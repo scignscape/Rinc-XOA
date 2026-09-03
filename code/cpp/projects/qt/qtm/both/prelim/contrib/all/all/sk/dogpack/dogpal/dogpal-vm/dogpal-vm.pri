@@ -21,14 +21,13 @@ CONFIG += no_keywords
 
 DEFINES += USE_OTNS
 
-message(S: $$SRC_DIR)
 
 HEADERS += \
-  $$SRC_DIR/dogpal-vm.h \
+  $$SRC_DIR/vm-interpreter.h \
 
 
 SOURCES += \
-  $$SRC_DIR/dogpal-vm.cpp \
+  $$SRC_DIR/vm-interpreter.cpp \
 
 
 message($$SRC_DIR)
