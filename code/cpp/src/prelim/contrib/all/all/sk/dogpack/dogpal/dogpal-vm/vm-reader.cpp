@@ -192,6 +192,11 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
    cc = VM_Opstatement::Control_Coords::x0;
  else
  {
+  u2 cutpoint = control.size();
+  if(cutpoint > 1)
+  {
+   if(control[cutpoint - 1] == QChar('/'));
+  }
   QString control_key = control.size() == 1? QString("_") + control : control.left(2);
   QString right = control.mid(2);
   int right_index = 0;
