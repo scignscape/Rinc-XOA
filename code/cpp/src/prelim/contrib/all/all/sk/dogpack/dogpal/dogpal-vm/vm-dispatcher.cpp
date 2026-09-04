@@ -6,7 +6,7 @@
 
 
 
-#include "vm-interpreter.h"
+#include "vm-dispatcher.h"
 
 #include "textio.h"
 
@@ -14,20 +14,7 @@ USING_KANS(TextIO)
 
 USING_OTNS(DogPal)
 
-VM_Interpreter::VM_Interpreter()
+VM_Dispatcher::VM_Dispatcher()
 {
 
 }
-
-
-void VM_Interpreter::load_file(QString path)
-{
- reader_.load_file(path);
-}
-
-void VM_Interpreter::parse()
-{
- VM_Opstatement vmo = reader_.next_opstatement();
-
-}
-

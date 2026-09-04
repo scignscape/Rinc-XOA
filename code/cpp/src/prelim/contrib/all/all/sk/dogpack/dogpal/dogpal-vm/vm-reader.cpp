@@ -15,7 +15,7 @@ USING_KANS(TextIO)
 USING_OTNS(DogPal)
 
 VM_Reader::VM_Reader()
- : current_pos_(0), opstatement_index_(0)
+ : current_pos_(0), opstatement_index_(0)//?, cache_index_(0)
 {
 
 }
@@ -44,13 +44,24 @@ VM_Opstatement VM_Reader::next_opstatement()
   skip_space();
  }
 
- ++opstatement_index_;
-
  QString instruction = "=err";
  current_pos_ = advance_past_instruction(&instruction);
 
+ if(instruction.startsWith("$.#"))
+ {
+  u4 cache_index = instruction.mid(3).toUInt();
+
+  QString acc;
+  current_pos_ = advance_past_cached_string(file_contents_, current_pos_, &acc);
+  return VM_Opstatement(cache_index, acc, VM_Opstatement::Control_Coords::_Cached_String);
+ }
+
+ ++opstatement_index_;
+
  if(instruction.startsWith("="))
    return VM_Opstatement(opstatement_index_, instruction, VM_Opstatement::Control_Coords::_CMD);
+
+
 
  VM_Opstatement::Mid_Control_Kinds mck = VM_Opstatement::Mid_Control_Kinds::N_A;
  VM_Opstatement::Control_Coords cc = VM_Opstatement::Control_Coords::N_A;
@@ -87,18 +98,55 @@ void VM_Reader::skip_space()
 }
 
 
+u4 VM_Reader::advance_past_cached_string(QString& basis, u4 start_pos, QString* result)
+{
+ STATIC_BASIC_SPACE
+ STATIC_NEWLINE_SPACE
+
+ u4 end_pos;
+ while(true)
+ {
+  end_pos = basis.indexOf(newline_space, start_pos);
+  QString line = basis.mid(start_pos + 3, end_pos - start_pos - 2);
+  (*result) += line;
+
+  if(basis[start_pos] == ".")
+    break;
+
+  start_pos = end_pos + 1;
+ }
+
+
+ return end_pos;
+}
 
 
 u4 _advance_past(QString& basis, QString* skipped, int ix0 = 0)
 {
  STATIC_BASIC_SPACE
+ STATIC_NEWLINE_SPACE
 
  int ix1 = basis.indexOf(basic_space, ix0);
 
+ int ix1n = basis.indexOf(newline_space, ix0);
+
+
  if(ix1 == 0)
    return 0;
+
  if(ix1 == -1)
-   return 0;
+ {
+  if(ix1n == -1)
+    return 0;
+  ix1 = ix1n;
+ }
+ else if(ix1n < ix1)
+ {
+  if(basis[ix0] == QChar('$'))
+    ix1 = ix1n;
+  else
+    return 0;
+ }
 
  int ix2 = ix1 + 1;
 

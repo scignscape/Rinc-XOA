@@ -29,12 +29,15 @@ class VM_Reader
 
  u4 current_pos_;
  u4 opstatement_index_;
+//? u4 cache_index_;
 
  VM_Opstatement _EOF();
 
 public:
 
  VM_Reader();
+
+ u4 advance_past_cached_string(QString& basis, u4 start_pos, QString* result);
 
  u4 advance_past_instruction(QString* skipped = nullptr);
  u4 advance_past_mid_control(QString* skipped = nullptr);
