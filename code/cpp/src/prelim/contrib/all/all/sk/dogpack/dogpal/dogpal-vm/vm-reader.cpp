@@ -132,7 +132,7 @@ u4 _advance_past_end(QString& basis, QString* skipped, int ix0 = 0)
    --ix01;
 
  if(skipped)
-   *skipped = basis.mid(ix0, ix1 - ix0);
+   *skipped = basis.mid(ix0, ix01 - ix0 + 1);
 
  int ix2 = ix1 + 2;
 
@@ -193,24 +193,36 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
  else
  {
   u2 cutpoint = control.size();
-  if(cutpoint > 1)
+  if(cutpoint > 2)
   {
-   if(control[cutpoint - 1] == QChar('/'));
+   if(control[cutpoint - 2] == QChar('/'))
+   {
+    u1 last = control[cutpoint - 1].toLatin1();
+    switch (last)
+    {
+    case '2': cc = VM_Opstatement::Control_Coords::x2; break;
+    case '3': cc = VM_Opstatement::Control_Coords::x3; break;
+    case '4': cc = VM_Opstatement::Control_Coords::x4; break;
+    default: cc = VM_Opstatement::Control_Coords::x1; break;
+    }
+    cutpoint -= 2;
+   }
+   else if(control[cutpoint - 2] == control[cutpoint - 1])
+   {
+    cc = VM_Opstatement::Control_Coords::List;
+    cutpoint -= 1;
+   }
+   else if(control[cutpoint - 2] == QChar('*'))
+   {
+    if(control[cutpoint - 1] == "2")
+      cc = VM_Opstatement::Control_Coords::Matrix;
+    else
+      cc = VM_Opstatement::Control_Coords::Tensor;
+    cutpoint -= 2;
+   }
   }
-  QString control_key = control.size() == 1? QString("_") + control : control.left(2);
-  QString right = control.mid(2);
-  int right_index = 0;
-
-  if(control_key[1] == "-")
-  {
-   control_key.append(right[right_index]);
-   ++right_index;
-  }
-
-//  if(right.size())
-
+  QString control_key = control.left(cutpoint);
   mck = known_mid_controls.value(control_key, VM_Opstatement::Mid_Control_Kinds::N_A);
-  cc = VM_Opstatement::Control_Coords::N_A;
  }
 
  return result;
@@ -219,7 +231,7 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
 
 u4 VM_Reader::advance_past_end_control(QString* skipped)
 {
- return _advance_past(file_contents_, skipped);
+ return _advance_past_end(file_contents_, skipped, current_pos_);
 }
 
 u4 VM_Reader::advance_past_end_control(QStringList* skipped)
