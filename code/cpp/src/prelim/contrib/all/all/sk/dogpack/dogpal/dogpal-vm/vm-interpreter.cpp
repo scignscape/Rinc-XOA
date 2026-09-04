@@ -29,5 +29,6 @@ void VM_Interpreter::parse()
 {
  VM_Opstatement vmo = reader_.next_opstatement();
 
+
 }
 
