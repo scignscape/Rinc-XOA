@@ -13,6 +13,8 @@
 #include "vm-reader.h"
 #include "vm-opstatement.h"
 
+#include <QPair>
+
 #include "otns.h"
 
 OTNS_(DogPal)
@@ -40,36 +42,39 @@ OTNS_(DogPal)
 class VM_Dispatcher
 {
 #define WRAP_GET_VECTOR(m, c, name) \
-   inline void* _getVector_##m##_##c() { return &name##_; }
+   inline QPair<void*, u4> _getVector_##m##_##c(decltype(name##_)::value_type vt) \
+  { name##_.push_back(vt); \
+    return {&name##_, name##_.size()}; }
+
 
 
  QVector<void (VM_Dispatcher::*)()> instr_x0_;
  WRAP_GET_VECTOR(N_A, x0, instr_x0)
 
- QVector<void (VM_Dispatcher::*)(QString)> instr_x1_qstr_;
+ QVector<QPair<void (VM_Dispatcher::*)(QString), QString>> instr_x1_qstr_;
  WRAP_GET_VECTOR(String, x1, instr_x1_qstr)
 
- QVector<void (VM_Dispatcher::*)(QStringList)> instr_x1_qstrl_;
+ QVector<QPair<void (VM_Dispatcher::*)(QStringList), QStringList>> instr_x1_qstrl_;
  WRAP_GET_VECTOR(String, List, instr_x1_qstrl)
 
 #define VEC_1_ARG(type, uctype) \
-  QVector<void (VM_Dispatcher::*)(type)> instr_x1_##type##_; \
+  QVector<QPair<void (VM_Dispatcher::*)(type), type>> instr_x1_##type##_; \
   WRAP_GET_VECTOR(uctype, x1, instr_x1_##type)
 
 #define VEC_2_ARG(type, uctype) \
-  QVector<void (VM_Dispatcher::*)(type, type)> instr_x2_##type##_; \
+  QVector<QPair<void (VM_Dispatcher::*)(type, type), QVector<type>>> instr_x2_##type##_; \
   WRAP_GET_VECTOR(uctype, x2, instr_x2_##type)
 
 #define VEC_3_ARG(type, uctype) \
-  QVector<void (VM_Dispatcher::*)(type, type, type)> instr_x3_##type##_; \
+  QVector<QPair<void (VM_Dispatcher::*)(type, type, type), QVector<type>>> instr_x3_##type##_; \
   WRAP_GET_VECTOR(uctype, x3, instr_x3_##type)
 
 #define VEC_4_ARG(type, uctype) \
-  QVector<void (VM_Dispatcher::*)(type, type, type, type)> instr_x4_##type##_; \
+  QVector<QPair<void (VM_Dispatcher::*)(type, type, type, type), QVector<type>>> instr_x4_##type##_; \
   WRAP_GET_VECTOR(uctype, x4, instr_x4_##type)
 
 #define VEC_LIST_ARG(type, uctype) \
-  QVector<void (VM_Dispatcher::*)(QVector<type>)> instr_xx_##type##_; \
+  QVector<QPair<void (VM_Dispatcher::*)(QVector<type>), QVector<type>>> instr_xx_##type##_; \
   WRAP_GET_VECTOR(uctype, List, instr_xx_##type)
 
 #define VECS_ARG(type, uctype) \
@@ -93,13 +98,63 @@ public:
 
  VM_Dispatcher();
 
- void* get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-   VM_Opstatement::Control_Coords cc);
+ template<typename FN_Type>
+ QPair<void*, u4> get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+   VM_Opstatement::Control_Coords cc, FN_Type fn, QString args);
 
- template<VM_Opstatement::Control_Coords>
- void* _get_vector(VM_Opstatement::Mid_Control_Kinds mck);
+ struct _get_vector_x0
+ {
+  template<typename FN_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn);
+ };
+
+ struct _get_vector_x1
+ {
+  template<typename FN_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn, QString arg);
+ };
+
+ struct _get_vector_x2
+ {
+  template<typename FN_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn, QString args);
+ };
+
+ struct _get_vector_x3
+ {
+  template<typename FN_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn, QString args);
+ };
+
+ struct _get_vector_x4
+ {
+  template<typename FN_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn, QString args);
+ };
+
+ struct _get_vector_xx
+ {
+  template<typename FN_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn, QString args);
+ };
 
 };
+
+#ifdef HIDE
+template<>
+struct VM_Dispatcher::_get_vector_s<VM_Opstatement::Control_Coords::x0>
+{
+ template<typename FN_Type>
+ QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+   FN_Type fn);
+};
+#endif
 
 _OTNS(DogPack)
 
