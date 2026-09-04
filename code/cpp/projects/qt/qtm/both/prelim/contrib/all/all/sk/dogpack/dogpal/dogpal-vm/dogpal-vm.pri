@@ -24,6 +24,7 @@ DEFINES += USE_KANS
 
 HEADERS += \
   $$SRC_DIR/vm-interpreter.h \
+  $$SRC_DIR/vm-opmethods.h \
   $$SRC_DIR/vm-dispatcher.h \
   $$SRC_DIR/vm-reader.h \
   $$SRC_DIR/vm-opstatement.h \
@@ -31,6 +32,7 @@ HEADERS += \
 
 SOURCES += \
   $$SRC_DIR/vm-interpreter.cpp \
+  $$SRC_DIR/vm-opmethods.cpp \
   $$SRC_DIR/vm-dispatcher.cpp \
   $$SRC_DIR/vm-reader.cpp \
   $$SRC_DIR/vm-opstatement.cpp \

@@ -1,0 +1,58 @@
+
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+#ifndef VM_OPMETHODS__H
+#define VM_OPMETHODS__H
+
+#include "global-types.h"
+
+#include "vm-reader.h"
+#include "vm-opstatement.h"
+
+#include "otns.h"
+
+OTNS_(DogPal)
+
+class VM_OpMethods
+{
+
+
+public:
+
+ VM_OpMethods();
+
+ enum class Signatures {
+   N_A, x0, String, U4x1, U4x4
+ };
+
+ void sdi_new_sentence(u4 id);
+ void sdi_sentence_switch_pos(u4 id, u4 pos, u4 row, u4 col);
+ void sdi_sentence__end_pos(u4 id, u4 pos, u4 row, u4 col);
+ void sdi_sentence_end_pos(u4 id, u4 pos, u4 row, u4 col);
+ void sdi_sentence_end_punctuation(QString mark);
+ void sdi_sentence_text(QString text);
+
+ typedef void (VM_OpMethods::*methods_x0)();
+ typedef void (VM_OpMethods::*methods_String)(QString);
+ typedef void (VM_OpMethods::*methods_U4x1)(u4 arg);
+ typedef void (VM_OpMethods::*methods_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4);
+
+ methods_x0 get_method_x0(QString inst);
+ methods_String get_method_String(QString inst);
+ methods_U4x1 get_method_U4x1(QString inst);
+ methods_U4x4 get_method_U4x4(QString inst);
+
+// void ((VM_OpMethods::*get_method_x0)())(QString inst);
+// void ((VM_OpMethods::*get_method_String)(QString))(QString inst);
+// void ((VM_OpMethods::*get_method_U4x1)(u4 arg))(QString inst);
+// void ((VM_OpMethods::*get_method_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4))(QString inst);
+
+};
+
+_OTNS(DogPal)
+
+#endif // VM_OPMETHODS__H

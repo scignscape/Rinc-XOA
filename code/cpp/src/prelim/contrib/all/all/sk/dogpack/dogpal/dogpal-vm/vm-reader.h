@@ -58,6 +58,6 @@ public:
 
 };
 
-_OTNS(DogPack)
+_OTNS(DogPal)
 
 #endif // VM_INTERPRETER__H
