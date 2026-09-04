@@ -21,7 +21,9 @@ USING_OTNS(DogPal)
 int main(int argc, char *argv[])
 {
  QString vm_file_path = DEFAULT_VM_FOLDER "/test/t1.4lr";
-
+ VM_Interpreter vin;
+ vin.load_file(vm_file_path);
+ vin.parse();
 
 
 //    // QString cwd = QDir::currentPath();

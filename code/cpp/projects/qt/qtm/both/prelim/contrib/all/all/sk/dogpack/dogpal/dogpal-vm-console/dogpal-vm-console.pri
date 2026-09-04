@@ -39,7 +39,7 @@ SOURCES += \
   $$SRC_DIR/main.cpp \
 
 
-
+LIBS += -L$$TARGETSDIR -ldogpal-vm
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

@@ -20,14 +20,18 @@ INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 CONFIG += no_keywords
 
 DEFINES += USE_OTNS
-
+DEFINES += USE_KANS
 
 HEADERS += \
   $$SRC_DIR/vm-interpreter.h \
+  $$SRC_DIR/vm-reader.h \
+  $$SRC_DIR/vm-opstatement.h \
 
 
 SOURCES += \
   $$SRC_DIR/vm-interpreter.cpp \
+  $$SRC_DIR/vm-reader.cpp \
+  $$SRC_DIR/vm-opstatement.cpp \
 
 
 message($$SRC_DIR)

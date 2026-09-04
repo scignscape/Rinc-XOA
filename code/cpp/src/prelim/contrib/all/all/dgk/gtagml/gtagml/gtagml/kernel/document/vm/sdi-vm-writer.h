@@ -62,7 +62,11 @@ public:
  template<typename NUM_Type>
  void opstatement_u4s(QString instruction, QVector<NUM_Type> args)
  {
-  opstatement_to_mid(instruction, "4##");
+  if(args.count() > 4)
+    opstatement_to_mid(instruction, "4##");
+  else
+    opstatement_to_mid(instruction, "4#!" + QString::number(args.count()));
+
   for(NUM_Type arg: args)
     raw(" ").raw(QString::number(arg));
   write_end_control();
