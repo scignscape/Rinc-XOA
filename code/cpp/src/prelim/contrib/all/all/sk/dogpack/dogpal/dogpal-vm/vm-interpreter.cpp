@@ -8,6 +8,8 @@
 
 #include "vm-interpreter.h"
 
+#include "vm-opmethods.h"
+
 #include "textio.h"
 
 USING_KANS(TextIO)
@@ -27,8 +29,80 @@ void VM_Interpreter::load_file(QString path)
 
 void VM_Interpreter::parse()
 {
- VM_Opstatement vmo = reader_.next_opstatement();
+ VM_Opstatement opst = reader_.next_opstatement();
+
+ switch(opst.control_coords())
+ {
+ case VM_Opstatement::Control_Coords::x0:
+   parse_x0(opst); break;
+ case VM_Opstatement::Control_Coords::x1:
+   parse_x1(opst); break;
+ case VM_Opstatement::Control_Coords::x2:
+   parse_x2(opst); break;
+ case VM_Opstatement::Control_Coords::x3:
+   parse_x3(opst); break;
+ case VM_Opstatement::Control_Coords::x4:
+   parse_x4(opst); break;
+
+ case VM_Opstatement::Control_Coords::List:
+   parse_List(opst); break;
+
+
+ }
 
 
 }
 
+void VM_Interpreter::parse_x0(VM_Opstatement& opst)
+{
+
+}
+
+void VM_Interpreter::parse_x1(VM_Opstatement& opst)
+{
+ switch (opst.mid_control_kind())
+ {
+ case VM_Opstatement::Mid_Control_Kinds::String:
+  {
+   VM_OpMethods::methods_String fn = VM_OpMethods::get_method_String(opst.instruction());
+   break;
+  }
+ case VM_Opstatement::Mid_Control_Kinds::U4:
+  {
+   VM_OpMethods::methods_U4x1 fn = VM_OpMethods::get_method_U4x1(opst.instruction());
+   break;
+  }
+ default:
+  break;
+ }
+}
+
+void VM_Interpreter::parse_x2(VM_Opstatement& opst)
+{
+
+}
+
+void VM_Interpreter::parse_x3(VM_Opstatement& opst)
+{
+
+}
+
+void VM_Interpreter::parse_x4(VM_Opstatement& opst)
+{
+ switch (opst.mid_control_kind())
+ {
+ case VM_Opstatement::Mid_Control_Kinds::U4:
+  {
+   VM_OpMethods::methods_U4x4 fn = VM_OpMethods::get_method_U4x4(opst.instruction());
+   break;
+  }
+ default:
+  break;
+ }
+
+}
+
+void VM_Interpreter::parse_List(VM_Opstatement& opst)
+{
+
+}

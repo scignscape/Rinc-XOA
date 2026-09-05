@@ -21,6 +21,13 @@ class VM_Interpreter
 {
  VM_Reader reader_;
 
+ void parse_x0(VM_Opstatement& opst);
+ void parse_x1(VM_Opstatement& opst);
+ void parse_x2(VM_Opstatement& opst);
+ void parse_x3(VM_Opstatement& opst);
+ void parse_x4(VM_Opstatement& opst);
+ void parse_List(VM_Opstatement& opst);
+
 public:
 
  VM_Interpreter();

@@ -53,22 +53,53 @@ void VM_OpMethods::sdi_sentence_text(QString text)
 
 VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString inst)
 {
-
+ return nullptr;
 }
 
 VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString inst)
 {
+ QMap<QString, methods_String> static_map {
+   {"sdi-sentence-end-punctuation", &VM_OpMethods::sdi_sentence_end_punctuation},
+   {"sdi-sentence-text", &VM_OpMethods::sdi_sentence_text}
 
+ };
+
+ auto it = static_map.find(inst);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
+
+// QMap<SQstring, methods_x0> static_map {
+//   {}
+// };
 }
 
 VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString inst)
 {
+ QMap<QString, methods_U4x1> static_map {
+   {"sdi-new-sentence", &VM_OpMethods::sdi_new_sentence}
+ };
+
+ auto it = static_map.find(inst);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
 
 }
 
 VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString inst)
 {
+ QMap<QString, methods_U4x4> static_map {
+   {"sdi-sentence-end-pos", &VM_OpMethods::sdi_sentence_end_pos},
+   {"sdi-sentence--end-pos", &VM_OpMethods::sdi_sentence__end_pos},
+   {"sdi-sentence-switch-pos", &VM_OpMethods::sdi_sentence_switch_pos},
 
+ };
+
+ auto it = static_map.find(inst);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
 }
 
 //void ((VM_OpMethods::*get_method_x0)())(QString inst)
