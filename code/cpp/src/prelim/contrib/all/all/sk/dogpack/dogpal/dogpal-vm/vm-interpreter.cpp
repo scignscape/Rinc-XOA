@@ -53,23 +53,33 @@ void VM_Interpreter::parse()
 
 }
 
-void VM_Interpreter::parse_x0(VM_Opstatement& opst)
+template<typename FN_Type>
+void VM_Interpreter::parse_fn(FN_Type fn, const VM_Opstatement& opst)
+{
+ auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
+
+}
+
+
+void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
 {
 
 }
 
-void VM_Interpreter::parse_x1(VM_Opstatement& opst)
+void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
 {
  switch (opst.mid_control_kind())
  {
  case VM_Opstatement::Mid_Control_Kinds::String:
   {
    VM_OpMethods::methods_String fn = VM_OpMethods::get_method_String(opst.instruction());
+   parse_fn(fn, opst);
    break;
   }
  case VM_Opstatement::Mid_Control_Kinds::U4:
   {
    VM_OpMethods::methods_U4x1 fn = VM_OpMethods::get_method_U4x1(opst.instruction());
+   parse_fn(fn, opst);
    break;
   }
  default:
@@ -77,23 +87,25 @@ void VM_Interpreter::parse_x1(VM_Opstatement& opst)
  }
 }
 
-void VM_Interpreter::parse_x2(VM_Opstatement& opst)
+void VM_Interpreter::parse_x2(const VM_Opstatement& opst)
 {
 
 }
 
-void VM_Interpreter::parse_x3(VM_Opstatement& opst)
+void VM_Interpreter::parse_x3(const VM_Opstatement& opst)
 {
 
 }
 
-void VM_Interpreter::parse_x4(VM_Opstatement& opst)
+void VM_Interpreter::parse_x4(const VM_Opstatement& opst)
 {
  switch (opst.mid_control_kind())
  {
  case VM_Opstatement::Mid_Control_Kinds::U4:
   {
    VM_OpMethods::methods_U4x4 fn = VM_OpMethods::get_method_U4x4(opst.instruction());
+   parse_fn(fn, opst);
+//   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
    break;
   }
  default:
@@ -102,7 +114,7 @@ void VM_Interpreter::parse_x4(VM_Opstatement& opst)
 
 }
 
-void VM_Interpreter::parse_List(VM_Opstatement& opst)
+void VM_Interpreter::parse_List(const VM_Opstatement& opst)
 {
 
 }

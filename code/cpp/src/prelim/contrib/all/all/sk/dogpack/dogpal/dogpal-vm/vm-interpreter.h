@@ -12,6 +12,7 @@
 
 #include "vm-reader.h"
 #include "vm-opstatement.h"
+#include "vm-dispatcher.h"
 
 #include "otns.h"
 
@@ -20,13 +21,14 @@ OTNS_(DogPal)
 class VM_Interpreter
 {
  VM_Reader reader_;
+ VM_Dispatcher dispatcher_;
 
- void parse_x0(VM_Opstatement& opst);
- void parse_x1(VM_Opstatement& opst);
- void parse_x2(VM_Opstatement& opst);
- void parse_x3(VM_Opstatement& opst);
- void parse_x4(VM_Opstatement& opst);
- void parse_List(VM_Opstatement& opst);
+ void parse_x0(const VM_Opstatement& opst);
+ void parse_x1(const VM_Opstatement& opst);
+ void parse_x2(const VM_Opstatement& opst);
+ void parse_x3(const VM_Opstatement& opst);
+ void parse_x4(const VM_Opstatement& opst);
+ void parse_List(const VM_Opstatement& opst);
 
 public:
 
@@ -34,6 +36,9 @@ public:
 
  void load_file(QString path);
  void parse();
+
+ template<typename FN_Type>
+ void parse_fn(FN_Type fn, const VM_Opstatement& opst);
 
 };
 
