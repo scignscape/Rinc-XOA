@@ -50,14 +50,24 @@ class VM_Dispatcher
 #define WRAP_GET_VECTOR(m, c, name) \
    template<typename ...WRONG_Types> \
    inline QPair<void*, u4> _getVector_##m##_##c(WRONG_Types...) { return {nullptr, 0}; } \
-   inline QPair<void*, u4> _getVector_##m##_##c(decltype(name##_)::value_type vt) \
-   { name##_.push_back(vt); \
+   inline QPair<void*, u4> _getVector_##m##_##c(decltype(name##_)::value_type::first_type fn, \
+     decltype(name##_)::value_type::second_type val) \
+   { name##_.push_back({fn, val}); \
      return {&name##_, name##_.size()}; }
 
+#define WRAP_GET_VECTOR_X0(m, c, name) \
+   template<typename ...WRONG_Types> \
+   inline QPair<void*, u4> _getVector_##m##_##c(WRONG_Types...) { return {nullptr, 0}; } \
+   inline QPair<void*, u4> _getVector_##m##_##c(typename decltype(name##_)::value_type fn) \
+   { name##_.push_back(fn); \
+     return {&name##_, name##_.size()}; }
+
+//name##_.push_back({fn}); \
+//    return {&name##_, name##_.size()};
 
 
  QVector<void (VM_OpMethods::*)()> instr_x0_;
- WRAP_GET_VECTOR(N_A, x0, instr_x0)
+ WRAP_GET_VECTOR_X0(N_A, x0, instr_x0)
 
 // template<typename WRONG_Type>
 // inline QPair<void*, u4> _getVector_N_A_x0(WRONG_Type)
@@ -118,15 +128,20 @@ class VM_Dispatcher
  VECS_ARG(r8, R8)
 
 
-   template<typename WRONG_Type>
-   inline QPair<void*, u4> test_getVector_U4_x1(WRONG_Type fn)
+   template<typename ...WRONG_Types>
+   inline QPair<void*, u4> test_getVector_U4_x1(WRONG_Types... args)
    {
-    WRONG_Type* wt = &fn;
+    auto first = std::get<0>(std::forward_as_tuple(std::forward<WRONG_Types>(args)...));
+    auto secomd = std::get<1>(std::forward_as_tuple(std::forward<WRONG_Types>(args)...));
+
+//?    decltype(instr_x1_u4_)::value_type* vt = first;
+
     return {nullptr, 0};
    }
-   inline QPair<void*, u4> test_getVector_U4_x1(decltype(instr_x1_u4_)::value_type vt)
+   inline QPair<void*, u4> test_getVector_U4_x1(decltype(instr_x1_u4_)::value_type::first_type vt,
+                                                decltype(instr_x1_u4_)::value_type::second_type arg)
    {
-    instr_x1_u4_.push_back(vt);
+//?    instr_x1_u4_.push_back({vt, arg});
     return {&instr_x1_u4_, instr_x1_u4_.size()};
    }
 
