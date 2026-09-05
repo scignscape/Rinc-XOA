@@ -76,6 +76,21 @@ void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
 
 }
 
+void VM_Interpreter::encode_which_stack(u1 num)
+{
+ u4& number = current_proc_name_ops_.last().second;
+ number <<= 5;
+ number |= num;
+}
+
+u1 VM_Interpreter::decode_which_stack(u1& number)
+{
+ u1 result = number & 0b00011111;
+ number >>= 5;
+ return result;
+}
+
+
 void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
 {
  switch (opst.mid_control_kind())
@@ -84,6 +99,7 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
  {
   VM_OpMethods::methods_String fn = VM_OpMethods::get_method_String(opst.instruction());
   parse_fn(fn, opst);
+  encode_which_stack(VM_OpMethods::methods_String_StackCode);
   break;
  }
  case VM_Opstatement::Mid_Control_Kinds::U4:
@@ -91,6 +107,7 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
   u4 arg = opst.param().toUInt();
   VM_OpMethods::methods_U4x1 fn = VM_OpMethods::get_method_U4x1(opst.instruction());
   parse_fn(fn, opst, arg);
+  encode_which_stack(VM_OpMethods::methods_U4x1_StackCode);
   break;
  }
  default:
@@ -108,14 +125,25 @@ void VM_Interpreter::parse_x3(const VM_Opstatement& opst)
 
 }
 
+u4 QString_to_u4(const QString& basis)
+{
+ return basis.toUInt();
+}
+
 void VM_Interpreter::parse_x4(const VM_Opstatement& opst)
 {
  switch (opst.mid_control_kind())
  {
  case VM_Opstatement::Mid_Control_Kinds::U4:
  {
+  QStringList qsl = opst.param().simplified().split(" ");
+  QVector<u4> args(4);
+  std::transform(qsl.begin(), qsl.end(), args.begin(), &QString_to_u4);
+
   VM_OpMethods::methods_U4x4 fn = VM_OpMethods::get_method_U4x4(opst.instruction());
-  parse_fn(fn, opst);
+  parse_fn(fn, opst, args);
+  encode_which_stack(VM_OpMethods::methods_U4x4_StackCode);
+
   //   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
   break;
  }

@@ -41,6 +41,11 @@ public:
  typedef void (VM_OpMethods::*methods_U4x1)(u4 arg);
  typedef void (VM_OpMethods::*methods_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4);
 
+ static constexpr u1 methods_x0_StackCode = 1;
+ static constexpr u1 methods_String_StackCode = 2;
+ static constexpr u1 methods_U4x1_StackCode = 3;
+ static constexpr u1 methods_U4x4_StackCode = 4;
+
  static methods_x0 get_method_x0(QString inst);
  static methods_String get_method_String(QString inst);
  static methods_U4x1 get_method_U4x1(QString inst);
