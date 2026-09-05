@@ -50,6 +50,11 @@ public:
  ACCESSORS(QString ,param)
  ACCESSORS(u4 ,id)
 
+ VM_Opstatement copy_as_string() const
+ {
+  return VM_Opstatement(id_, instruction_, Mid_Control_Kinds::String, Control_Coords::x1);
+ }
+
 // void parse_mid();
 // void parse_param();
 

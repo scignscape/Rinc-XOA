@@ -118,7 +118,7 @@ u4 VM_Reader::advance_past_cached_string(QString& basis, u4 start_pos, QString* 
  }
 
 
- return end_pos;
+ return end_pos + 1;
 }
 
 

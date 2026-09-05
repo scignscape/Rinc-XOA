@@ -36,6 +36,10 @@ void VM_Interpreter::parse()
 
   switch(opst.control_coords())
   {
+  case VM_Opstatement::Control_Coords::_EOF:
+   break;
+  case VM_Opstatement::Control_Coords::_Cached_String:
+   parse_cached_string(opst); break;
   case VM_Opstatement::Control_Coords::x0:
    parse_x0(opst); break;
   case VM_Opstatement::Control_Coords::x1:
@@ -71,6 +75,13 @@ void VM_Interpreter::parse_fn(FN_Type fn, const VM_Opstatement& opst, ARGS... ar
 
 
 
+void VM_Interpreter::parse_cached_string(const VM_Opstatement& opst)
+{
+ if(cached_strings_.size() < opst.id())
+   cached_strings_.resize(opst.id());
+ cached_strings_[opst.id() - 1] = opst.instruction();
+}
+
 void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
 {
 
@@ -95,6 +106,15 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
 {
  switch (opst.mid_control_kind())
  {
+ case VM_Opstatement::Mid_Control_Kinds::Cached_String:
+ {
+  VM_OpMethods::methods_String fn = VM_OpMethods::get_method_String(opst.instruction());
+  VM_Opstatement copy = opst.copy_as_string();
+  QString cs = cached_strings_[opst.param().toUInt() - 1];
+  parse_fn(fn, copy, cs);
+  encode_which_stack(VM_OpMethods::methods_String_StackCode);
+  break;
+ }
  case VM_Opstatement::Mid_Control_Kinds::String:
  {
   VM_OpMethods::methods_String fn = VM_OpMethods::get_method_String(opst.instruction());

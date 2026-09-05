@@ -26,8 +26,12 @@ class VM_Interpreter
  QMap<QString, QVector<QPair<void*, u4>>> ops_by_proc_name_;
  QVector<QPair<void*, u4>>& current_proc_name_ops_;
 
+ QVector<QString> cached_strings_;
+
  void encode_which_stack(u1 num);
  u1 decode_which_stack(u1& number);
+
+ void parse_cached_string(const VM_Opstatement& opst);
 
  void parse_x0(const VM_Opstatement& opst);
  void parse_x1(const VM_Opstatement& opst);
