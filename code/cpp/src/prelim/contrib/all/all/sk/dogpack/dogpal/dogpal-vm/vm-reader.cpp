@@ -40,6 +40,7 @@ VM_Opstatement VM_Reader::next_opstatement()
   s4 pos = file_contents_.indexOf("=prog");
   if(pos == -1)
     return _EOF();
+  ++opstatement_index_;
   current_pos_ = pos + 5;
   skip_space();
  }
@@ -219,7 +220,7 @@ u4 VM_Reader::advance_past_mid_control(QString* skipped)
 u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, VM_Opstatement::Control_Coords& cc)
 {
  static QMap<QString, VM_Opstatement::Mid_Control_Kinds> known_mid_controls {
-   {"_$", VM_Opstatement::Mid_Control_Kinds::String},
+   {"$", VM_Opstatement::Mid_Control_Kinds::String},
    {"$$", VM_Opstatement::Mid_Control_Kinds::String_List},
    {"$#", VM_Opstatement::Mid_Control_Kinds::Cached_String},
    {"1#", VM_Opstatement::Mid_Control_Kinds::U1},
@@ -269,6 +270,17 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
     cutpoint -= 2;
    }
   }
+  else if(cutpoint == 2)
+  {
+   if(control[1] == "#")
+     cc = VM_Opstatement::Control_Coords::x1;
+  }
+  else if(cutpoint == 1)
+  {
+   if(control[1] == "$")
+     cc = VM_Opstatement::Control_Coords::x1;
+  }
+
   QString control_key = control.left(cutpoint);
   mck = known_mid_controls.value(control_key, VM_Opstatement::Mid_Control_Kinds::N_A);
  }

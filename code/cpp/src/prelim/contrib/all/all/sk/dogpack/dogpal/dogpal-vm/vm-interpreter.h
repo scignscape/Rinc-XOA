@@ -23,6 +23,9 @@ class VM_Interpreter
  VM_Reader reader_;
  VM_Dispatcher dispatcher_;
 
+ QMap<QString, QVector<QPair<void*, u4>>> ops_by_proc_name_;
+ QVector<QPair<void*, u4>>& current_proc_name_ops_;
+
  void parse_x0(const VM_Opstatement& opst);
  void parse_x1(const VM_Opstatement& opst);
  void parse_x2(const VM_Opstatement& opst);

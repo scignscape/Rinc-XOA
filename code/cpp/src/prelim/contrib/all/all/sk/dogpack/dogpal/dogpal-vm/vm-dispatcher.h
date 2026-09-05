@@ -44,14 +44,31 @@ OTNS_(DogPal)
 class VM_Dispatcher
 {
 #define WRAP_GET_VECTOR(m, c, name) \
+   template<typename WRONG_Type> \
+   inline QPair<void*, u4> _getVector_##m##_##c(WRONG_Type) { return {nullptr, 0}; } \
    inline QPair<void*, u4> _getVector_##m##_##c(decltype(name##_)::value_type vt) \
-  { name##_.push_back(vt); \
-    return {&name##_, name##_.size()}; }
+   { name##_.push_back(vt); \
+     return {&name##_, name##_.size()}; }
 
 
 
  QVector<void (VM_OpMethods::*)()> instr_x0_;
  WRAP_GET_VECTOR(N_A, x0, instr_x0)
+
+// template<typename WRONG_Type>
+// inline QPair<void*, u4> _getVector_N_A_x0(WRONG_Type)
+// {
+//  return {nullptr, 0};
+// }
+
+// inline QPair<void*, u4> _getVector_N_A_x0(decltype(instr_x0_)::value_type vt)
+// {
+//  instr_x0_.push_back(vt);
+//  return {&instr_x0_, instr_x0_.size()};
+// }
+
+
+
 
  QVector<QPair<void (VM_OpMethods::*)(QString), QString>> instr_x1_qstr_;
  WRAP_GET_VECTOR(String, x1, instr_x1_qstr)
@@ -106,6 +123,7 @@ public:
 
  struct _get_vector_x0
  {
+  VM_Dispatcher* _this;
   template<typename FN_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
     FN_Type fn);
@@ -113,6 +131,7 @@ public:
 
  struct _get_vector_x1
  {
+  VM_Dispatcher* _this;
   template<typename FN_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
     FN_Type fn, QString arg);
@@ -120,6 +139,7 @@ public:
 
  struct _get_vector_x2
  {
+  VM_Dispatcher* _this;
   template<typename FN_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
     FN_Type fn, QString args);
@@ -127,6 +147,7 @@ public:
 
  struct _get_vector_x3
  {
+  VM_Dispatcher* _this;
   template<typename FN_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
     FN_Type fn, QString args);
@@ -134,6 +155,7 @@ public:
 
  struct _get_vector_x4
  {
+  VM_Dispatcher* _this;
   template<typename FN_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
     FN_Type fn, QString args);
@@ -141,6 +163,7 @@ public:
 
  struct _get_vector_xx
  {
+  VM_Dispatcher* _this;
   template<typename FN_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
     FN_Type fn, QString args);
@@ -148,15 +171,138 @@ public:
 
 };
 
-#ifdef HIDE
-template<>
-struct VM_Dispatcher::_get_vector_s<VM_Opstatement::Control_Coords::x0>
+#define _GET_VECTOR_CASE_1(m) \
+  case VM_Opstatement::Mid_Control_Kinds::m: return _this->_getVector_##m(fn);
+
+#define _GET_VECTOR_CASE_2(m, c) \
+  case VM_Opstatement::Mid_Control_Kinds::m: return _this->_getVector_##m##_##c(fn);
+
+#define GET_VECTOR_CASE(...) \
+  _preproc_CONCAT(_GET_VECTOR_CASE_, _preproc_NUM_ARGS(__VA_ARGS__))(__VA_ARGS__)
+
+
+
+template<typename FN_Type>
+QPair<void*, u4> VM_Dispatcher::_get_vector_x0::_get_vector
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn)
+ {
+  switch (mck)
+  {
+//  case VM_Opstatement::Mid_Control_Kinds::N_A:
+//    return _getVector_N_A_x0(fn);
+ //? GET_VECTOR_CASE(N_A, x0)
+    case VM_Opstatement::Mid_Control_Kinds::N_A: return _this->_getVector_N_A_x0(fn);
+  default: return {nullptr, 0};
+  }
+ }
+
+
+#define GET_VECTOR_CASES(c) \
+  GET_VECTOR_CASE(U1, c) \
+  GET_VECTOR_CASE(U2, c) \
+  GET_VECTOR_CASE(U4, c) \
+  GET_VECTOR_CASE(U8, c) \
+  GET_VECTOR_CASE(S1, c) \
+  GET_VECTOR_CASE(S2, c) \
+  GET_VECTOR_CASE(S4, c) \
+  GET_VECTOR_CASE(S8, c) \
+  GET_VECTOR_CASE(R4, c) \
+  GET_VECTOR_CASE(R8, c) \
+
+
+template<typename FN_Type>
+QPair<void*, u4> VM_Dispatcher::_get_vector_x1::_get_vector
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QString arg)
 {
- template<typename FN_Type>
- QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-   FN_Type fn);
-};
-#endif
+ switch (mck)
+ {
+ GET_VECTOR_CASE(String, x1)
+ GET_VECTOR_CASE(String_List)
+ GET_VECTOR_CASES(x1)
+//   case VM_Opstatement::Mid_Control_Kinds::String:
+//   return _getVector_String_x1(fn);
+ default: return {nullptr, 0};
+ }
+}
+
+//GET_VECTOR_CASE(String, c) \
+GET_VECTOR_CASE(String_List, c) \
+
+
+template<typename FN_Type>
+QPair<void*, u4> VM_Dispatcher::_get_vector_x2::_get_vector
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QString arg)
+{
+ switch (mck)
+ {
+ GET_VECTOR_CASES(x2)
+ default: return {nullptr, 0};
+ }
+}
+
+
+template<typename FN_Type>
+//template<>
+QPair<void*, u4> VM_Dispatcher::_get_vector_x3::_get_vector
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QString arg)
+{
+ switch (mck)
+ {
+ GET_VECTOR_CASES(x3)
+ default: return {nullptr, 0};
+ }
+}
+
+
+template<typename FN_Type>
+QPair<void*, u4> VM_Dispatcher::_get_vector_x4::_get_vector
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QString arg)
+{
+ switch (mck)
+ {
+ GET_VECTOR_CASES(x4)
+ default: return {nullptr, 0};
+ }
+}
+
+
+template<typename FN_Type>
+QPair<void*, u4> VM_Dispatcher::_get_vector_xx::_get_vector
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QString arg)
+{
+ switch (mck)
+ {
+ GET_VECTOR_CASES(List)
+ default: return {nullptr, 0};
+ }
+}
+
+template<typename FN_Type>
+QPair<void*, u4> VM_Dispatcher::get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+  VM_Opstatement::Control_Coords cc, FN_Type fn, QString args)
+{
+#define GET_VECTOR_CC_CASE(c) \
+  case VM_Opstatement::Control_Coords::c: \
+    return _get_vector_##c{this}._get_vector(mck, fn, args);
+
+ switch (cc)
+ {
+ case VM_Opstatement::Control_Coords::x0:
+   return _get_vector_x0{this}._get_vector(mck, fn);
+
+// GET_VECTOR_CC_CASE(x0)
+ GET_VECTOR_CC_CASE(x1)
+ GET_VECTOR_CC_CASE(x2)
+ GET_VECTOR_CC_CASE(x3)
+ GET_VECTOR_CC_CASE(x4)
+
+//? GET_VECTOR_CC_CASE(xx)
+
+ default: return {nullptr, 0};
+ }
+
+}
+
 
 _OTNS(DogPal)
 
