@@ -40,8 +40,8 @@ public:
  void load_file(QString path);
  void parse();
 
- template<typename FN_Type>
- void parse_fn(FN_Type fn, const VM_Opstatement& opst);
+ template<typename FN_Type, typename ...ARGS>
+ void parse_fn(FN_Type fn, const VM_Opstatement& opst, ARGS ...args);
 
 };
 
