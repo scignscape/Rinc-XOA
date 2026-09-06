@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
  vin.load_file(vm_file_path);
  vin.parse();
 
+ vin.run();
 
 //    // QString cwd = QDir::currentPath();
 //    // qDebug() << "Current working directory:" << cwd;

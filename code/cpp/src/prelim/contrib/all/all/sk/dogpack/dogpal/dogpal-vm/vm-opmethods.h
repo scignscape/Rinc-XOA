@@ -41,6 +41,11 @@ public:
  typedef void (VM_OpMethods::*methods_U4x1)(u4 arg);
  typedef void (VM_OpMethods::*methods_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4);
 
+ typedef methods_x0 methods_x0_opstatement_type;
+ typedef QPair<methods_String, QString> methods_String_opstatement_type;
+ typedef QPair<methods_U4x1, u4> methods_U4x1_opstatement_type;
+ typedef QPair<methods_U4x4, QVector<u4>> methods_U4x4_opstatement_type;
+
  static constexpr u1 methods_x0_StackCode = 1;
  static constexpr u1 methods_String_StackCode = 2;
  static constexpr u1 methods_U4x1_StackCode = 3;

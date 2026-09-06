@@ -200,9 +200,11 @@ u4 _advance_past_end(QString& basis, QString* skipped, int ix0 = 0)
 u4 VM_Reader::advance_past_instruction(QString* skipped)
 {
  STATIC_BASIC_SPACE
+ STATIC_NEWLINE_SPACE
 
- while(file_contents_[current_pos_] == basic_space)
+ while(file_contents_[current_pos_] == basic_space || file_contents_[current_pos_] == newline_space)
    ++current_pos_;
+
 
  return _advance_past(file_contents_, skipped, current_pos_);
 }

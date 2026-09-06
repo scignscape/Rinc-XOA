@@ -20,6 +20,8 @@ OTNS_(DogPal)
 
 class VM_Interpreter
 {
+ VM_OpMethods methods_;
+
  VM_Reader reader_;
  VM_Dispatcher dispatcher_;
 
@@ -29,7 +31,9 @@ class VM_Interpreter
  QVector<QString> cached_strings_;
 
  void encode_which_stack(u1 num);
- u1 decode_which_stack(u1& number);
+ u1 decode_which_stack(u4& number);
+
+ void run_op_pair(QPair<void*, u4> pr);
 
  void parse_cached_string(const VM_Opstatement& opst);
 
@@ -40,15 +44,21 @@ class VM_Interpreter
  void parse_x4(const VM_Opstatement& opst);
  void parse_List(const VM_Opstatement& opst);
 
+ template<typename FN_Type, typename ...ARGS>
+ void parse_fn(FN_Type fn, const VM_Opstatement& opst, ARGS ...args);
+
 public:
 
  VM_Interpreter();
 
  void load_file(QString path);
  void parse();
+ void run_proc(QString proc_name);
 
- template<typename FN_Type, typename ...ARGS>
- void parse_fn(FN_Type fn, const VM_Opstatement& opst, ARGS ...args);
+ void run()
+ {
+  run_proc("<main>");
+ }
 
 };
 

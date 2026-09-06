@@ -38,6 +38,9 @@ void VM_Interpreter::parse()
   {
   case VM_Opstatement::Control_Coords::_EOF:
    break;
+  case VM_Opstatement::Control_Coords::_CMD:
+   if(opst.instruction() == "=done")
+     goto break_outer;
   case VM_Opstatement::Control_Coords::_Cached_String:
    parse_cached_string(opst); break;
   case VM_Opstatement::Control_Coords::x0:
@@ -57,7 +60,37 @@ void VM_Interpreter::parse()
 
   }
  }
+break_outer:
+ return;
 }
+
+void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
+{
+ u1 stack_code = decode_which_stack(pr.second);
+
+ switch(stack_code)
+ {
+ case VM_OpMethods::methods_String_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_String_opstatement_type>*)pr.first)[pr.second - 1];
+  auto opf = op_pair.first;
+  (methods_.*op_pair.first)(op_pair.second);
+   break;
+ }
+ default: break;
+ }
+}
+
+void VM_Interpreter::run_proc(QString proc_name)
+{
+ QVector<QPair<void*, u4>> ops = ops_by_proc_name_.value(proc_name);
+
+ for(auto pr : ops)
+ {
+  run_op_pair(pr);
+ }
+}
+
 
 template<typename FN_Type, typename... ARGS>
 void VM_Interpreter::parse_fn(FN_Type fn, const VM_Opstatement& opst, ARGS... args)
@@ -94,7 +127,7 @@ void VM_Interpreter::encode_which_stack(u1 num)
  number |= num;
 }
 
-u1 VM_Interpreter::decode_which_stack(u1& number)
+u1 VM_Interpreter::decode_which_stack(u4& number)
 {
  u1 result = number & 0b00011111;
  number >>= 5;
