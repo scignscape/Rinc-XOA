@@ -151,10 +151,6 @@ void VM_Interpreter::parse_cached_string(const VM_Opstatement& opst)
  cached_strings_[opst.id() - 1] = opst.instruction();
 }
 
-void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
-{
-
-}
 
 void VM_Interpreter::encode_which_stack(u1 num, _Module_Base* module)
 {
@@ -182,6 +178,13 @@ QPair<u1, _Module_Base*> VM_Interpreter::decode_which_stack(u4& number)
  return {result, module};
 }
 
+void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
+{
+ _Module_Base* module = nullptr;
+ VM_OpMethods::methods_x0 fn = methods_.get_method_x0(opst.instruction(), module);
+ parse_fn(fn, opst);
+ encode_which_stack(VM_OpMethods::methods_String_StackCode, module);
+}
 
 void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
 {

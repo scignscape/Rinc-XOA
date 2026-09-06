@@ -40,6 +40,8 @@ public:
 
  _Module_Base* get_module_by_index(u1 index);
 
+ _Module_Base* get_module_from_instruction(QString instr);
+
  enum class Signatures {
    N_A, x0, String, U4x1, U4x4
  };

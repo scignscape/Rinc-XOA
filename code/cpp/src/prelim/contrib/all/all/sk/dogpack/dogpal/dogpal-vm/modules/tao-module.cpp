@@ -11,6 +11,12 @@
 
 USING_OTNS(DogPal)
 
+
+void TAO_Module::test_empty()
+{
+
+}
+
 void TAO_Module::restrict_to_layer(QString layer)
 {
 

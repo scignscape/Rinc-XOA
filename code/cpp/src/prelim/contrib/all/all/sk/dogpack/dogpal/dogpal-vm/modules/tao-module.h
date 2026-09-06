@@ -31,6 +31,8 @@ public:
    N_A, x0, String, U4x1, U4x4
  };
 
+ void test_empty();
+
  void restrict_to_layer(QString layer);
  void unrestrict_from_layer(QString layer);
 

@@ -74,24 +74,48 @@ _Module_Base* VM_OpMethods::get_module_by_index(u1 index)
 
 //void ((VM_OpMethods::*)() get_method_x0)(QString inst);
 
-VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString inst, _Module_Base*& module)
-{
- module = sdi_module_;
 
- return nullptr;
+_Module_Base* VM_OpMethods::get_module_from_instruction(QString instr)
+{
+ int ix = instr.indexOf(QChar('-'));
+
+ QString module_code = instr.left(ix);
+
+ static QMap<QString, _Module_Base*> modules_map {
+   {"sdi", sdi_module_},
+   {"tao", tao_module_},
+ };
+
+ return modules_map.value(module_code);
 }
 
-VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString inst, _Module_Base*& module)
+
+VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_x0> static_map {
+   {"tao-test-empty", (methods_x0) &TAO_Module::test_empty},
+ };
+
+ module = get_module_from_instruction(instr);
+
+ auto it = static_map.find(instr);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
+}
+
+VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_String> static_map {
    {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
-   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text}
+   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text},
 
+   {"tao-restrict-to-layer", (methods_String) &TAO_Module::restrict_to_layer}
  };
 
- module = sdi_module_;
+ module = get_module_from_instruction(instr);
 
- auto it = static_map.find(inst);
+ auto it = static_map.find(instr);
  if(it == static_map.end())
    return nullptr;
  return *it;
@@ -101,33 +125,33 @@ VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString inst, _Modu
 // };
 }
 
-VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString inst, _Module_Base*& module)
+VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_U4x1> static_map {
    {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
  };
 
- module = sdi_module_;
+ module = get_module_from_instruction(instr);
 
- auto it = static_map.find(inst);
+ auto it = static_map.find(instr);
  if(it == static_map.end())
    return nullptr;
  return *it;
 
 }
 
-VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString inst, _Module_Base*& module)
+VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_Base*& module)
 {
- QMap<QString, methods_U4x4> static_map {
+ static QMap<QString, methods_U4x4> static_map {
    {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},
    {"sdi-sentence--end-pos", (methods_U4x4) &SDI_Module::sentence__end_pos},
    {"sdi-sentence-switch-pos", (methods_U4x4) &SDI_Module::sentence_switch_pos},
 
  };
 
- module = sdi_module_;
+ module = get_module_from_instruction(instr);
 
- auto it = static_map.find(inst);
+ auto it = static_map.find(instr);
  if(it == static_map.end())
    return nullptr;
  return *it;
