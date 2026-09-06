@@ -17,6 +17,8 @@ exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/co
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 
 
+CONFIG += debug
+
 CONFIG += no_keywords
 
 DEFINES += USE_OTNS

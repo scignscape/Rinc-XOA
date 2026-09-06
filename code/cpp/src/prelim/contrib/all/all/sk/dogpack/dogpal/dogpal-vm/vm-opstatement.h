@@ -28,7 +28,7 @@ public:
  };
 
  enum class Control_Coords {
-     N_A, _EOF, _CMD, _Cached_String, x0, x1, x2, x3, x4, List, Matrix, Tensor
+     N_A, _EOF, _Comment, _CMD, _Cached_String, x0, x1, x2, x3, x4, List, Matrix, Tensor
  };
 
 private:

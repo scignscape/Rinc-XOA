@@ -41,6 +41,8 @@ void VM_Interpreter::parse()
   case VM_Opstatement::Control_Coords::_CMD:
    if(opst.instruction() == "=done")
      goto break_outer;
+  case VM_Opstatement::Control_Coords::_Comment:
+   break;
   case VM_Opstatement::Control_Coords::_Cached_String:
    parse_cached_string(opst); break;
   case VM_Opstatement::Control_Coords::x0:
@@ -72,9 +74,26 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
  {
  case VM_OpMethods::methods_String_StackCode:
  {
-  auto op_pair = (*(QVector<VM_OpMethods::methods_String_opstatement_type>*)pr.first)[pr.second - 1];
-  auto opf = op_pair.first;
+  auto op_pair = (*(QVector<VM_OpMethods::methods_String_opstatement_type>*)pr.first)[pr.second];
   (methods_.*op_pair.first)(op_pair.second);
+   break;
+ }
+ case VM_OpMethods::methods_U4x1_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_U4x1_opstatement_type>*)pr.first)[pr.second];
+  (methods_.*op_pair.first)(op_pair.second);
+   break;
+ }
+ case VM_OpMethods::methods_U4x4_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_U4x4_opstatement_type>*)pr.first)[pr.second];
+  (methods_.*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
+   break;
+ }
+ case VM_OpMethods::methods_x0_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_x0_opstatement_type>*)pr.first)[pr.second];
+  (methods_.*op_pair)();
    break;
  }
  default: break;
@@ -151,7 +170,7 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
  case VM_Opstatement::Mid_Control_Kinds::String:
  {
   VM_OpMethods::methods_String fn = VM_OpMethods::get_method_String(opst.instruction());
-  parse_fn(fn, opst);
+  parse_fn(fn, opst, opst.param());
   encode_which_stack(VM_OpMethods::methods_String_StackCode);
   break;
  }

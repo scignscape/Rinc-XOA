@@ -48,6 +48,12 @@ VM_Opstatement VM_Reader::next_opstatement()
  QString instruction = "=err";
  current_pos_ = advance_past_instruction(&instruction);
 
+ if(instruction.startsWith(".;"))
+ {
+  current_pos_ = advance_past_end_control();
+  return VM_Opstatement(0, instruction, VM_Opstatement::Control_Coords::_Comment);
+ }
+
  if(instruction.startsWith("$.#"))
  {
   u4 cache_index = instruction.mid(3).toUInt();
@@ -265,7 +271,7 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
    }
    else if(control[cutpoint - 2] == QChar('*'))
    {
-    if(control[cutpoint - 1] == "2")
+    if(control[cutpoint - 1] == QChar('2'))
       cc = VM_Opstatement::Control_Coords::Matrix;
     else
       cc = VM_Opstatement::Control_Coords::Tensor;
@@ -279,7 +285,7 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
   }
   else if(cutpoint == 1)
   {
-   if(control[1] == "$")
+   if(control[0] == "$")
      cc = VM_Opstatement::Control_Coords::x1;
   }
 
