@@ -10,7 +10,7 @@
 
 **/build-/**
 
-!**/share-latex.zip/**
+!**/share-latex.zip
 
 code/cpp/targets/contrib/**
 
