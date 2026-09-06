@@ -8,6 +8,9 @@
 
 #include "vm-opmethods.h"
 
+#include "modules/sdi-module.h"
+#include "modules/tao-module.h"
+
 #include "textio.h"
 
 USING_KANS(TextIO)
@@ -19,50 +22,74 @@ VM_OpMethods::VM_OpMethods()
 
 }
 
-void VM_OpMethods::sdi_new_sentence(u4 id)
+u1 VM_OpMethods::get_module_index(_Module_Base* module)
 {
+ static QMap<_Module_Base*, u1> static_map {
+  { static_cast<_Module_Base*>(sdi_module_), 1},
+  { static_cast<_Module_Base*>(tao_module_), 2},
+ };
 
+ return static_map.value(module);
 }
 
-void VM_OpMethods::sdi_sentence_switch_pos(u4 id, u4 pos, u4 row, u4 col)
+_Module_Base* VM_OpMethods::get_module_by_index(u1 index)
 {
-
+ switch (index)
+ {
+ case 1: return static_cast<_Module_Base*>(sdi_module_);
+ case 2: return static_cast<_Module_Base*>(tao_module_);
+ default: return nullptr;
+ }
 }
 
-void VM_OpMethods::sdi_sentence__end_pos(u4 id, u4 pos, u4 row, u4 col)
-{
+//void VM_OpMethods::sdi_new_sentence(u4 id)
+//{
 
-}
+//}
 
-void VM_OpMethods::sdi_sentence_end_pos(u4 id, u4 pos, u4 row, u4 col)
-{
+//void VM_OpMethods::sdi_sentence_switch_pos(u4 id, u4 pos, u4 row, u4 col)
+//{
 
-}
+//}
 
-void VM_OpMethods::sdi_sentence_end_punctuation(QString mark)
-{
+//void VM_OpMethods::sdi_sentence__end_pos(u4 id, u4 pos, u4 row, u4 col)
+//{
 
-}
+//}
 
-void VM_OpMethods::sdi_sentence_text(QString text)
-{
+//void VM_OpMethods::sdi_sentence_end_pos(u4 id, u4 pos, u4 row, u4 col)
+//{
 
-}
+//}
+
+//void VM_OpMethods::sdi_sentence_end_punctuation(QString mark)
+//{
+
+//}
+
+//void VM_OpMethods::sdi_sentence_text(QString text)
+//{
+
+//}
 
 //void ((VM_OpMethods::*)() get_method_x0)(QString inst);
 
-VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString inst)
+VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString inst, _Module_Base*& module)
 {
+ module = sdi_module_;
+
  return nullptr;
 }
 
-VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString inst)
+VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString inst, _Module_Base*& module)
 {
  QMap<QString, methods_String> static_map {
-   {"sdi-sentence-end-punctuation", &VM_OpMethods::sdi_sentence_end_punctuation},
-   {"sdi-sentence-text", &VM_OpMethods::sdi_sentence_text}
+   {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
+   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text}
 
  };
+
+ module = sdi_module_;
 
  auto it = static_map.find(inst);
  if(it == static_map.end())
@@ -74,11 +101,13 @@ VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString inst)
 // };
 }
 
-VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString inst)
+VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString inst, _Module_Base*& module)
 {
  QMap<QString, methods_U4x1> static_map {
-   {"sdi-new-sentence", &VM_OpMethods::sdi_new_sentence}
+   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
  };
+
+ module = sdi_module_;
 
  auto it = static_map.find(inst);
  if(it == static_map.end())
@@ -87,14 +116,16 @@ VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString inst)
 
 }
 
-VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString inst)
+VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString inst, _Module_Base*& module)
 {
  QMap<QString, methods_U4x4> static_map {
-   {"sdi-sentence-end-pos", &VM_OpMethods::sdi_sentence_end_pos},
-   {"sdi-sentence--end-pos", &VM_OpMethods::sdi_sentence__end_pos},
-   {"sdi-sentence-switch-pos", &VM_OpMethods::sdi_sentence_switch_pos},
+   {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},
+   {"sdi-sentence--end-pos", (methods_U4x4) &SDI_Module::sentence__end_pos},
+   {"sdi-sentence-switch-pos", (methods_U4x4) &SDI_Module::sentence_switch_pos},
 
  };
+
+ module = sdi_module_;
 
  auto it = static_map.find(inst);
  if(it == static_map.end())

@@ -18,6 +18,8 @@
 
 OTNS_(DogPal)
 
+class _Module_Base;
+
 class VM_Interpreter
 {
  VM_OpMethods methods_;
@@ -30,8 +32,8 @@ class VM_Interpreter
 
  QVector<QString> cached_strings_;
 
- void encode_which_stack(u1 num);
- u1 decode_which_stack(u4& number);
+ void encode_which_stack(u1 stack, _Module_Base* module);
+ QPair<u1, _Module_Base*> decode_which_stack(u4& number);
 
  void run_op_pair(QPair<void*, u4> pr);
 

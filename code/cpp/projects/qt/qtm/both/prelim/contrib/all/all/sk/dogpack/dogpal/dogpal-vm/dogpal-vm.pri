@@ -30,6 +30,9 @@ HEADERS += \
   $$SRC_DIR/vm-dispatcher.h \
   $$SRC_DIR/vm-reader.h \
   $$SRC_DIR/vm-opstatement.h \
+  $$SRC_DIR/modules/module-base.h \
+  $$SRC_DIR/modules/sdi-module.h \
+  $$SRC_DIR/modules/tao-module.h \
 
 
 SOURCES += \
@@ -38,6 +41,8 @@ SOURCES += \
   $$SRC_DIR/vm-dispatcher.cpp \
   $$SRC_DIR/vm-reader.cpp \
   $$SRC_DIR/vm-opstatement.cpp \
+  $$SRC_DIR/modules/sdi-module.cpp \
+  $$SRC_DIR/modules/tao-module.cpp \
 
 
 message($$SRC_DIR)
