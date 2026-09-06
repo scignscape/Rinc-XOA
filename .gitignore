@@ -10,7 +10,6 @@
 
 **/build-/**
 
-!**/share-latex.zip
 
 code/cpp/targets/contrib/**
 
@@ -90,6 +89,8 @@ cpp/qmake-console/targets/*
 !/dev.zip
 !/GTagML-forms.zip
 !/documents/etc/slides.zip
+ 
+!**/share-latex.zip
 
 
 *.gz
