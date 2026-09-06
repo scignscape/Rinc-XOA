@@ -100,6 +100,29 @@ class GTagML_Streams
  GTagML_Streams& tao_end(QString text);
  GTagML_Streams& tao_end();
 
+ GTagML_Streams& tao_string_instr(QString text)
+ {
+  return tao_instr(text).tao_mid("$");
+ }
+
+ GTagML_Streams& tao_empty_instr(QString text)
+ {
+  return tao_instr(text).tao_end();
+ }
+
+ GTagML_Streams& tao_restrict_to_layer(QString text)
+ {
+  return tao_string_instr("restrict-to-layer").tao_end(text);
+ }
+
+ GTagML_Streams& tao_unrestrict_from_layer(QString text)
+ {
+  return tao_string_instr("unrestrict-from-layer").tao_end(text);
+ }
+
+ GTagML_Streams& tao_enter_element(QString element);
+ GTagML_Streams& tao_leave_element(QString element);
+
  void insert_latex_template(QString path, QString* result = nullptr);
  void insert_xml_template(QString path, QString* result = nullptr);
 
@@ -137,6 +160,7 @@ class GTagML_Streams
  }
 
  void enter_abstract();
+ void leave_abstract();
 
 };
 

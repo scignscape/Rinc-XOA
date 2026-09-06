@@ -161,6 +161,9 @@ void GTagML_Parse_State::outer_tag_command_entry(QString blank_lines,
   QString outer,
   QString pre, QString main, QStringVector supl, QString post)
 {
+ streams_.tao_string_instr("outer-tag-command-entry").tao_end(main);
+
+
  u2 nlcount = blank_lines.count(QLatin1Char('\n'));
 
  if(nlcount > 1)
@@ -424,6 +427,10 @@ void GTagML_Parse_State::primary_acc(QString text)
 void GTagML_Parse_State::reset_primary()
 {
  QString pa = streams_.primary_acc();
+
+ streams_.tao_string_instr("primary-acc").tao_end(pa);
+
+
  QRegularExpression ref_strip("<!\\(\\d+\\)!>");
  QString pa_ref_strip = pa;
  pa_ref_strip.replace(ref_strip, "");
@@ -515,6 +522,8 @@ void GTagML_Parse_State::section_heading(QString stext, QString ltext, u1 level)
  streams_.xml_writer().writeTextElement("s1", stext);
  streams_.latex_stream() << "\n\n\\s|" << level << "|{" << ltext << "}\n";
 
+ streams_.tao_enter_element("s1");
+
  ++section_ids_[level];
 
  streams_.sentences_sdi_stream() << "\n\n--- Section/start\n-l  " << level << "\n-i  "
@@ -567,6 +576,9 @@ void GTagML_Parse_State::enter_latex_only(QString match)
 {
  reset_primary();
 
+ streams_.tao_restrict_to_layer("latex");
+
+
  sentence_gaps_stream_ << "\n @l(" << match << ") +" << line_and_column_string_tight();
 
  parse_context_.flags.latex_only = true;
@@ -576,6 +588,9 @@ void GTagML_Parse_State::enter_latex_only(QString match)
 void GTagML_Parse_State::leave_latex_only(QString match)
 {
  reset_primary();
+
+ streams_.tao_unrestrict_from_layer("latex");
+
 
  sentence_gaps_stream_ << "\n @l(" << match << ") -" << line_and_column_string_tight();
 
@@ -592,6 +607,9 @@ void GTagML_Parse_State::enter_sentences_only(QString open, QString pre_space)
 
  reset_primary();
 
+ streams_.tao_restrict_to_layer("sdi");
+
+
  parse_context_.flags.sentences_only = true;
  flags.sentences_only = true;
 }
@@ -599,6 +617,8 @@ void GTagML_Parse_State::enter_sentences_only(QString open, QString pre_space)
 void GTagML_Parse_State::leave_sentences_only(QString close, QString post_space)
 {
  reset_primary();
+
+ streams_.tao_unrestrict_from_layer("sdi");
 
  parse_context_.flags.sentences_only = false;
  flags.sentences_only = false;
@@ -626,10 +646,14 @@ void GTagML_Parse_State::force_switch_sentence()
  end_sentence("");
  flags.just_ended_sentence = false;
  streams_.latex_stream() << "\\> ";
+
+ streams_.tao_empty_instr("force-switch-sentence");
 }
 
 void GTagML_Parse_State::force_end_sentence_mark(QString follow)
 {
+ streams_.tao_empty_instr("force-end-sentence");
+
  streams_.latex_stream() << "\\<";
 
 // if(follow == ";")
@@ -652,6 +676,9 @@ void GTagML_Parse_State::ell_2_nonbreak()
 void GTagML_Parse_State::ell_count(u1 count, QString follow)
 {
  reset_primary();
+
+ streams_.tao_instr("text-ellipsis").tao_mid("1#").tao_end(QString::number(count));
+
 
  static QStringList latex = {".\\@", "\\ellThree{2pt}{2pt}",
    "\\ellFour{2pt}{2pt}"};
@@ -690,12 +717,17 @@ void GTagML_Parse_State::noindent_marker()
 {
  if(!flags.sentences_only)
    streams_.latex_stream() << "\\noindent{}";
+
+ streams_.tao_empty_instr("force-noindent");
+
 }
 
 
 void GTagML_Parse_State::footnote_marker(QString text)
 {
  reset_primary();
+
+ streams_.tao_string_instr("footnote-marker").tao_end(text);
 
  if(!flags.latex_only)
    sentences_text_stream_ << "\\" << text;
@@ -713,6 +745,9 @@ void GTagML_Parse_State::end_sentence(QString punctuation,
   u1 nesting_code, QVector<QPair<QString, QString>> supplements)
 {
  flags.just_ended_sentence = true;
+
+ streams_.tao_string_instr("end-sentence").tao_end(punctuation);
+
 
  if(nesting_codes_by_depth_.contains(sentence_nesting_depth_))
  {
@@ -773,6 +808,10 @@ void GTagML_Parse_State::end_sentence(QString punctuation,
 
 void GTagML_Parse_State::heading(u1 count, QString stext, QString ltext)
 {
+ streams_.tao_instr("heading-level").tao_mid("1#").tao_end(QString::number(count));
+ //?streams_.tao_instr("section-index").tao_mid("2#").tao_end(current_section_number_);
+ streams_.tao_string_instr("heading-content").tao_end(stext);
+
  if(count == 3)
  {
   static QString text_default = "Section %1";
@@ -795,6 +834,8 @@ void GTagML_Parse_State::heading(u1 count, QString stext, QString ltext)
 
 void GTagML_Parse_State::prepare_bibliography()
 {
+ streams_.tao_enter_element("bibliography");
+
  streams_.xml_writer().writeCharacters("\n\n");
  //<sec><title>Introduction</title> <ref
 
@@ -814,6 +855,7 @@ void GTagML_Parse_State::prepare_bibliography()
 
 void GTagML_Parse_State::end_inner_document()
 {
+
  reset_primary();
 
  streams_.latex_stream() << "\n%END-TEMPLATE%\n";
@@ -828,6 +870,7 @@ void GTagML_Parse_State::end_document()
 
  reset_primary();
 
+ streams_.tao_empty_instr("end-document");
 
 //?? check_close_paragraph();
 
@@ -863,6 +906,9 @@ void GTagML_Parse_State::leave_footnote(QString pretext, QString space)
 {
  reset_primary();
 
+ streams_.tao_leave_element("footnote");
+
+
  QString latex_space;
 
  if(pretext.endsWith("_"))
@@ -896,6 +942,9 @@ void GTagML_Parse_State::leave_footnote(QString pretext, QString space)
 void GTagML_Parse_State::enter_footnote(QString pretext, QString space)
 {
  reset_primary();
+
+ streams_.tao_enter_element("footnote");
+
 
  QString latex_space;
 
@@ -969,6 +1018,9 @@ void GTagML_Parse_State::enter_sentences_latex_filter(QString pretext)
 {
  reset_primary();
 
+ // // streams_.tao_ ... ?
+
+
  sentence_gaps_stream_ << "\n @f(" << pretext << ") +" << line_and_column_string_tight();
 
  if(pretext == "~~")
@@ -991,6 +1043,8 @@ void GTagML_Parse_State::enter_sentences_latex_filter(QString pretext)
 void GTagML_Parse_State::leave_sentences_latex_filter(QString pretext)
 {
  reset_primary();
+
+ // // streams_.tao_ ... ?
 
  sentence_gaps_stream_ << "\n @f(" << pretext << ") -" << line_and_column_string_tight();
 
@@ -1157,6 +1211,8 @@ void GTagML_Parse_State::close_paragraph()
   streams_.xml_writer().writeEndElement();
   streams_.xml_writer().writeComment("end of p1 paragraph");
   streams_.xml_writer().writeCharacters("\n\n");
+
+  streams_.tao_leave_element("p1");
  }
 
  if(flags.just_ended_sentence)
@@ -1192,6 +1248,7 @@ void GTagML_Parse_State::close_paragraph()
  {
   current_paragraph_type_ = Paragraph_Types::N_A;
   streams_.latex_stream() << "\n\\end{docAbstract}] \n";
+  streams_.leave_abstract();
   set_paragraph_bridge();
  }
  else
@@ -1242,6 +1299,8 @@ void GTagML_Parse_State::auto_new_paragraph(QString cmd)
   streams_.xml_writer().writeComment("enter " + cmd);
   streams_.xml_writer().writeStartElement(cmd);
   streams_.xml_writer().writeAttribute("id", QString::number(current_paragraph_count_).prepend("Para-"));
+
+  streams_.tao_enter_element("p1");
  }
  else if(cmd == "pa.1")
  {
@@ -1304,6 +1363,8 @@ void GTagML_Parse_State::enter_implicit_subparagraph(QString pre, QString text)
 void GTagML_Parse_State::enter_subparagraph(QString text, QString sup)
 {
  reset_primary();
+
+ streams_.tao_string_instr("enter-subparagraph").tao_end(text);
 
  current_item_count_ = 0;
 
@@ -1397,6 +1458,9 @@ void GTagML_Parse_State::check_blank_line()
   reset_primary();
 //?  streams_.latex_stream() << "\n\\parbreak.2{}\n";
   streams_.latex_stream() << "\n\\parbreak{}\n";
+
+  streams_.tao_string_instr("inner-par-blank-line").tao_end("Block_Quote");
+
  }
 
  else if(current_paragraph_type_ == Paragraph_Types::Endnote_Block_Quote)
@@ -1404,6 +1468,7 @@ void GTagML_Parse_State::check_blank_line()
   reset_primary();
 //?  streams_.latex_stream() << "\n\\parbreak.2{}\n";
   streams_.latex_stream() << "\n\\parbreak{}\n";
+  streams_.tao_string_instr("inner-par-blank-line").tao_end("Endnote_Block_Quote");;
  }
 
  else if(parse_context_.flags.read_bulleted_items)
@@ -1417,6 +1482,8 @@ void GTagML_Parse_State::check_blank_line()
 
 void GTagML_Parse_State::leave_subparagraph_with_reset()
 {
+ streams_.tao_empty_instr("leave-subparagraph");
+
  if(parse_context_.flags.read_desc_label)
  {
   parse_context_.flags.read_desc_label = false;
@@ -1458,6 +1525,8 @@ void GTagML_Parse_State::leave_subparagraph_with_reset()
 
 void GTagML_Parse_State::leave_subparagraph_with_continue()
 {
+ streams_.tao_empty_instr("leave-subparagraph-with-continue");
+
  static QString letters = "abcdefghijklmnopqrstuvwxyz";
 
 // streams_.latex_stream() << "\n\\nip";
@@ -1489,6 +1558,9 @@ void GTagML_Parse_State::single_slash_line()
   streams_.xml_writer().writeCharacters("@=/list-item=@");
   streams_.xml_writer().writeCharacters("\n");
 
+  streams_.tao_leave_element("desc-list");
+
+
   streams_.xml_writer().writeEndElement();
   streams_.xml_writer().writeComment("end of description");
 
@@ -1505,6 +1577,9 @@ void GTagML_Parse_State::single_slash_line()
   streams_.latex_stream() << "\n\\end{exsGroup}\n";
   parse_context_.flags.read_parens_as_label = false;
   parse_context_.flags.read_parens_as_ref = true;
+
+  streams_.tao_leave_element("exsGroup-list");
+
  }
 
  else if(parse_context_.flags.read_numbered_items)
@@ -1513,6 +1588,9 @@ void GTagML_Parse_State::single_slash_line()
 //?  streams_.latex_stream() << "\n\\end{enums}\n";
   parse_context_.flags.read_numbered_items = false;
   parse_context_.flags.ignore_blank_lines = false;
+
+  streams_.tao_leave_element("enum-list");
+
  }
 
  else if(parse_context_.flags.read_bulleted_items)
@@ -1520,6 +1598,9 @@ void GTagML_Parse_State::single_slash_line()
   streams_.latex_stream() << "\n\\end{itemz}\n";
   parse_context_.flags.read_bulleted_items = false;
   parse_context_.flags.ignore_blank_lines = false;
+
+  streams_.tao_leave_element("itemz-list");
+
  }
 
 
@@ -1528,6 +1609,9 @@ void GTagML_Parse_State::single_slash_line()
   streams_.latex_stream() << "\\end{blockQuote}\n";
   parse_context_.flags.ignore_blank_lines = false;
   current_paragraph_type_ = held_paragraph_types_.pop();
+
+  streams_.tao_empty_instr("leave-block-quote");
+
  }
 
  else if(current_paragraph_type_ == Paragraph_Types::Endnote_Block_Quote)
@@ -1535,6 +1619,9 @@ void GTagML_Parse_State::single_slash_line()
   streams_.latex_stream() << "}\\newpage{}\n";
   parse_context_.flags.ignore_blank_lines = false;
   current_paragraph_type_ = held_paragraph_types_.pop();
+
+  streams_.tao_empty_instr("leave-endnote-block-quote");
+
  }
 
 }
@@ -1550,6 +1637,9 @@ void GTagML_Parse_State::paren_ref_global(u2 number, QString text)
 
  streams_.latex_stream() << "\\exsRef(" << r << ")" ;
  streams_.xml_writer().writeTextElement("-exsRef", "r");
+
+ streams_.tao_instr("paren-number-ref").tao_mid("4#").tao_end(r);
+
 }
 
 
@@ -1563,12 +1653,16 @@ void GTagML_Parse_State::paren_ref(u2 number, QString text)
  streams_.latex_stream() << "\\exsRef(" << r << ")" ;
  streams_.xml_writer().writeTextElement("-exsRef", "r");
 
+ streams_.tao_instr("paren-number-ref").tao_mid("4#").tao_end(r);
+
 }
 
 
 void GTagML_Parse_State::latex_command_auto_closed(QString command_name, QString arg)
 {
  reset_primary();
+
+ streams_.tao_string_instr("latex-command-auto-closed").tao_end(command_name);
 
  if(arg.isEmpty())
  {
@@ -1578,9 +1672,13 @@ void GTagML_Parse_State::latex_command_auto_closed(QString command_name, QString
  }
  else
  {
+  streams_.tao_string_instr("latex-command-auto-closed-text").tao_end(arg);
+
   streams_.latex_stream() << "\\" << command_name << "{" << arg << "}";
    // //  streams_.xml_writer().writeCharacters("!%1:%2%!"_qt.arg(command_name).arg(arg));
  }
+
+
 }
 
 void GTagML_Parse_State::citation(QString full_match, QString label, QString locator)
@@ -1636,6 +1734,8 @@ void GTagML_Parse_State::citation(QString full_match, QString label, QString loc
 
  if(locator.isEmpty())
  {
+  streams_.tao_string_instr("citation-label").tao_end(label);
+
   streams_.latex_stream() << "\\citeLabel{" << label << "}";
 //?  streams_.xml_writer().writeCharacters("!%1%!"_qt.arg(command_name));
  }
@@ -1647,6 +1747,9 @@ void GTagML_Parse_State::citation(QString full_match, QString label, QString loc
    streams_.latex_stream() << "\\citePage{" << label << "}"
      << "(" << qsl.first() << ")";
 
+   streams_.tao_string_instr("citation-page").tao_end(qsl.first());
+   streams_.tao_string_instr("citation-label").tao_end(label);
+
 //   streams_.xml_writer().writeAttribute("page", qsl.first());
    streams_.xml_writer().writeCharacters(", p. %1"_qt.arg(qsl.first()));
   }
@@ -1654,6 +1757,10 @@ void GTagML_Parse_State::citation(QString full_match, QString label, QString loc
   {
    streams_.latex_stream() << "\\citePages{" << label << "}"
      << "(" << qsl.join(", ") << ")";
+
+   streams_.tao_string_instr("citation-pages").tao_end(qsl.join(", "));
+   streams_.tao_string_instr("citation-label").tao_end(label);
+
 
    streams_.xml_writer().writeCharacters(", pp. %1"_qt.arg(qsl.join("&#x2013;")));
   }
@@ -1663,6 +1770,9 @@ void GTagML_Parse_State::citation(QString full_match, QString label, QString loc
  {
   streams_.latex_stream() << "\\citeLocator{" << label << "}"
     << "(" << locator.mid(1) << ")";
+
+  streams_.tao_string_instr("citation-locator").tao_end(locator.mid(1));
+  streams_.tao_string_instr("citation-label").tao_end(label);
 
   QString loc = locator.mid(1);
   loc.replace("pp.", "pp. ");
@@ -2187,6 +2297,8 @@ void GTagML_Parse_State::leave_emph_italics_mode()
 
 void GTagML_Parse_State::special_character_sequence(QString text)
 {
+ streams_.tao_string_instr("special-character-sequence").tao_end(text);
+
  auto process = [this](QString latex, QString sentences, QString xml)
  {
   if(flags.heading_acc)

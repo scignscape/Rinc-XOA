@@ -93,7 +93,12 @@ _Module_Base* VM_OpMethods::get_module_from_instruction(QString instr)
 VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_x0> static_map {
-   {"tao-test-empty", (methods_x0) &TAO_Module::test_empty},
+#define METHOD_Empty
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHOD_Empty
+
+//   {"tao-test-empty", (methods_x0) &TAO_Module::test_empty},
  };
 
  module = get_module_from_instruction(instr);
@@ -107,10 +112,15 @@ VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base
 VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_String> static_map {
-   {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
-   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text},
+#define METHOD_String
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHOD_String
 
-   {"tao-restrict-to-layer", (methods_String) &TAO_Module::restrict_to_layer}
+//   {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
+//   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text},
+
+//   {"tao-restrict-to-layer", (methods_String) &TAO_Module::restrict_to_layer}
  };
 
  module = get_module_from_instruction(instr);
@@ -128,7 +138,12 @@ VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Mod
 VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_U4x1> static_map {
-   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
+#define METHOD_U4x1
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHOD_U4x1
+
+//?   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
  };
 
  module = get_module_from_instruction(instr);
@@ -143,9 +158,15 @@ VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_
 VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_Base*& module)
 {
  static QMap<QString, methods_U4x4> static_map {
-   {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},
-   {"sdi-sentence--end-pos", (methods_U4x4) &SDI_Module::sentence__end_pos},
-   {"sdi-sentence-switch-pos", (methods_U4x4) &SDI_Module::sentence_switch_pos},
+#define METHOD_U4x4
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHOD_U4x1
+
+
+//   {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},
+//   {"sdi-sentence--end-pos", (methods_U4x4) &SDI_Module::sentence__end_pos},
+//   {"sdi-sentence-switch-pos", (methods_U4x4) &SDI_Module::sentence_switch_pos},
 
  };
 

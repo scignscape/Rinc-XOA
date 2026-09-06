@@ -92,12 +92,29 @@ void GTagML_Streams::primary(QString text)
  primary_acc_stream_ << text;
 }
 
+void GTagML_Streams::leave_abstract()
+{
+ tao_instr("leave-element").tao_mid("$").tao_end("abstract");
+}
+
+GTagML_Streams& GTagML_Streams::tao_enter_element(QString element)
+{
+ return tao_string_instr("enter-element").tao_end(element);
+}
+
+GTagML_Streams& GTagML_Streams::tao_leave_element(QString element)
+{
+ return tao_string_instr("leave-element").tao_end(element);
+}
+
 
 void GTagML_Streams::enter_abstract()
 {
  xml_writer_.writeCharacters("\n\n");
  xml_writer_.writeStartElement("doc-abstract");
  latex_stream_ << "\n\n\\twocolumn[\\begin{docAbstract}\n";
+
+ tao_enter_element("abstract");
 
  sentences_sdi_stream_ << "\n\n--- Abstract/start\n";
 
