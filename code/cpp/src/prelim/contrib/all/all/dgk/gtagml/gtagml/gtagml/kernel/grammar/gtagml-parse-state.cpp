@@ -428,7 +428,8 @@ void GTagML_Parse_State::reset_primary()
 {
  QString pa = streams_.primary_acc();
 
- streams_.tao_string_instr("primary-acc").tao_end(pa);
+ streams_.tao_primary_acc(pa);
+//? streams_.tao_string_instr("primary-acc").tao_end(pa);
 
 
  QRegularExpression ref_strip("<!\\(\\d+\\)!>");

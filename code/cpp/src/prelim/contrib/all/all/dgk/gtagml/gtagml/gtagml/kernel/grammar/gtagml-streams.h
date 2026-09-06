@@ -123,6 +123,8 @@ class GTagML_Streams
  GTagML_Streams& tao_enter_element(QString element);
  GTagML_Streams& tao_leave_element(QString element);
 
+ void tao_primary_acc(QString text);
+
  void insert_latex_template(QString path, QString* result = nullptr);
  void insert_xml_template(QString path, QString* result = nullptr);
 

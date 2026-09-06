@@ -86,6 +86,29 @@ GTagML_Streams& GTagML_Streams::tao_end(QString text)
  return *this;
 }
 
+void GTagML_Streams::tao_primary_acc(QString text)
+{
+ if(text.simplified().isEmpty())
+ {
+  n8 mask = 0;
+  u4 end = qMin(text.size(), 63);
+
+  n8 bit = 1 << end;
+  mask |= bit;
+
+  for(u1 index = 0; index < end; ++index)
+  {
+   bit >>= 1;
+   if(text[index] == QChar('\n'))
+     mask |= bit;
+  }
+  tao_instr("primary-acc-spaces").tao_mid("8#").tao_end(QString::number(mask));
+ }
+ else
+   tao_string_instr("primary-acc").tao_end(text);
+
+}
+
 
 void GTagML_Streams::primary(QString text)
 {
