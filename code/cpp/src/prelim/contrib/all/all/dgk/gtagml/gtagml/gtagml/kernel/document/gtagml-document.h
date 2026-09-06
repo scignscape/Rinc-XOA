@@ -124,6 +124,7 @@ public:
  void insert_xml_template(QString path);
 
  void save_sentences(QString path);
+ void save_tagml_opcode(QString path);
 
  void save_jats(QString path, QString bib_path);
  void save_latex(QString path);

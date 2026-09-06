@@ -45,6 +45,9 @@ class GTagML_Streams
  QString latex_;
  QTextStream latex_stream_;
 
+ QString tao_;
+ QTextStream tao_stream_;
+
  QString sentences_sdi_;
  QTextStream sentences_sdi_stream_;
 
@@ -62,6 +65,7 @@ class GTagML_Streams
 
  ACCESSORS__RGET(QTextStream ,primary_acc_stream)
  ACCESSORS__RGET(QTextStream ,latex_stream)
+ ACCESSORS__RGET(QTextStream ,tao_stream)
  ACCESSORS__RGET(QTextStream ,jats_stream)
  ACCESSORS__RGET(QTextStream ,sentences_sdi_stream)
  ACCESSORS__RGET(QXmlStreamWriter ,xml_writer)
@@ -87,8 +91,14 @@ class GTagML_Streams
   return sentences_sdi_;
  }
 
+ void tao(QString text);
  void latex(QString text);
  void primary(QString text);
+
+ GTagML_Streams& tao_instr(QString text);
+ GTagML_Streams& tao_mid(QString text);
+ GTagML_Streams& tao_end(QString text);
+ GTagML_Streams& tao_end();
 
  void insert_latex_template(QString path, QString* result = nullptr);
  void insert_xml_template(QString path, QString* result = nullptr);
@@ -113,6 +123,12 @@ class GTagML_Streams
  {
   //jats_ = QString::fromLatin1(jat)
   KA::TextIO::save_file(path, latex_);
+ }
+
+ void save_tao(QString path)
+ {
+  //jats_ = QString::fromLatin1(jat)
+  KA::TextIO::save_file(path, tao_);
  }
 
  void save_sentences(QString path)

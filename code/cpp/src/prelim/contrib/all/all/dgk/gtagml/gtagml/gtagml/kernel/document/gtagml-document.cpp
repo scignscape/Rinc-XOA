@@ -355,6 +355,11 @@ void GTagML_Document::sdi_check(QString sdi_path, QString out_path)
  //? parse_state_->sdi_check(sdi_path, out_path);
 }
 
+void GTagML_Document::save_tagml_opcode(QString path)
+{
+ streams_->save_tao(path);
+}
+
 void GTagML_Document::save_sentences(QString path)
 {
  streams_->save_sentences(path);

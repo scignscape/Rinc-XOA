@@ -14,7 +14,7 @@ USING_KANS(GTagML)
 
 GTagML_Streams::GTagML_Streams(GTagML_Parse_State* parse_state)
   :  parse_state_(parse_state), latex_stream_(&latex_),
-     sentences_sdi_stream_(&sentences_sdi_),
+     tao_stream_(&tao_), sentences_sdi_stream_(&sentences_sdi_),
      primary_acc_stream_(&primary_acc_)
 {
 
@@ -42,6 +42,9 @@ void GTagML_Streams::init()
 
  latex_stream_ << "\n\n%PREAMBLE-TEMPLATE%\n\n%BEGIN-TEMPLATE%";
 
+ tao_stream_ << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
+             << "=prog\n\n";
+
  sentences_sdi_stream_ << "--- Global/start\n\n";
 // xml_writer_.set
 // xml_writer_ = QXmlStreamWriter(jats_);
@@ -53,6 +56,36 @@ void GTagML_Streams::latex(QString text)
 {
  latex_stream_ << text;
 }
+
+void GTagML_Streams::tao(QString text)
+{
+ tao_stream_ << text;
+}
+
+GTagML_Streams& GTagML_Streams::tao_instr(QString text)
+{
+ tao_stream_ << "\n" << text;
+ return *this;
+}
+
+GTagML_Streams& GTagML_Streams::tao_mid(QString text)
+{
+ tao_stream_ << " " << text << " ";
+ return *this;
+}
+
+GTagML_Streams& GTagML_Streams::tao_end()
+{
+ tao_stream_ << " ;.\n";
+ return *this;
+}
+
+GTagML_Streams& GTagML_Streams::tao_end(QString text)
+{
+ tao_stream_ << text << " ;.\n";
+ return *this;
+}
+
 
 void GTagML_Streams::primary(QString text)
 {

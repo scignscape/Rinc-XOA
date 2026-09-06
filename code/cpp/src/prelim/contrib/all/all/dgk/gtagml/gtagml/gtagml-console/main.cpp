@@ -57,6 +57,7 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->save_jats(path + ".jats.xml", path + ".jats-bib.txt");
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
+ gdoc->save_tagml_opcode(path + ".tao");
 
  // gdoc->save_pregraph(path + ".pre.gtvm");
 
