@@ -9,11 +9,13 @@
 
 \setlength{\columnsep}{38pt}
 
-\newcommand{\invistxt}[1]{}
+\newcommand{\invtxt}[1]{}
 
-\newcommand{\textcolorwh}[1]{AAAAAAAAAA\textcolor{white}{#1}}
+\newcommand{\textcolorwh}[1]{\textcolor{white}{#1}}
 
 \newcommand{\sssm}{}
+
+%\author{\\\\\hspace{-8cm}Nathaniel Christen}
 
 \usepackage{environ}
 
@@ -34,6 +36,94 @@
 
 
 \usepackage{eso-pic}
+
+\usepackage{tcolorbox}
+
+\newcommand{\hlDbl}[2]{\resizebox{!}{#1pt}{\url{#2}}}
+\newcommand{\hlDblSplit}[3]{\resizebox{!}{#1pt}{\href{#2}{#3}}}
+
+\definecolor{tCB}{RGB}{2, 39, 87}
+
+\definecolor{tCBt}{RGB}{87, 39, 2}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{%1
+\AtTextLowerLeft{
+\hspace*{-15pt}\raisebox{773pt}{%
+\begin{tcolorbox}[
+		parbox=false, colback=gray!13,
+		colframe=tCBt,
+		width=590pt,boxsep=-3pt,
+		boxrule=1pt,rightrule=0pt,
+		leftrule=1pt,toprule=0pt,arc=0pt,auto outer arc
+		]
+\textit{This file is} \hspace*{3pt} \hlDbl{7}{%
+https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf%
+}
+\end{tcolorbox}
+}}}\fi
+}
+
+\definecolor{aD}{RGB}{112, 39, 187}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{%1
+\AtTextLowerLeft{
+\hspace*{-15pt}\raisebox{703pt}{%
+\textcolor{aD}{Author/Developer} %
+%
+{\large Nathaniel Christen}
+}}}\fi
+}
+
+
+
+\definecolor{Scolor}{RGB}{35, 48, 2}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{%1
+\AtTextLowerLeft{
+\hspace*{-33pt}\raisebox{-39pt}{%
+{\scriptsize
+\begin{minipage}{\textwidth}
+\begin{tcolorbox}[
+		parbox=false, colback=gray!13,
+		colframe=tCB,
+		width=576pt,
+		boxrule=1pt,leftrule=3pt,
+		rightrule=1pt,toprule=.5pt,arc=5pt,auto outer arc
+		]
+{\vspace*{-7pt}
+
+\resizebox{35pt}{!}{\hspace*{-7pt}%
+\raisebox{.5pt}{\colorbox{red!12}{\textcolor{Scolor}{\textbf{SOURCES}}}}} \hspace*{12pt}}%
+GTagML (main input) \hspace*{4pt} \hlDblSplit{5}{https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/.DogPack/OrderingConceptualSynthesis.gt}{@/.DogPack/OrderingConceptualSynthesis.gt} %
+\hspace*{12.5pt} | \hspace*{12pt} TAGML Opcodes \hspace*{3pt} \hlDblSplit{5}{https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/.DogPack/OrderingConceptualSynthesis.tao.4lr}{@/.DogPack/OrderingConceptualSynthesis.tao}\\%
+\hspace*{75pt} Sentences \hspace*{3pt} \hlDblSplit{5}{https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/.DogPack/OrderingConceptualSynthesis.sdi.4lr}{@/.DogPack/OrderingConceptualSynthesis.sdi.4lr} %
+\hspace*{12pt} | \hspace*{12pt} LaTeX \hspace*{3pt} \hlDblSplit{5}{https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/.DogPack/OrderingConceptualSynthesis.tex.zip}{@/.DogPack/OrderingConceptualSynthesis.tex.zip} %
+
+\vspace*{-5pt}
+\end{tcolorbox}
+\end{minipage}
+}
+}}}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+\hspace*{-3pt}\raisebox{-4.5pt}{%
+\mmakefntext{\footnotesize{This paper's examples are 
+serialized at \hlDblSplit{5}{https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/.DogPack/.ling-exs.xml}{@/.DogPack/OrderingConceptual}\\
+\hlDblSplit{5}{https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/.DogPack/.ling-exs.xml}%
+{Synthesis.ling-exs.xml} 
+(\eAfn{@} is the author folder/this document's base path).}}
+}}}\fi
+}
+
+
 
 
 \usepackage{natbib}
@@ -936,6 +1026,8 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 \newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+\newenvironment{docEnumerate}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+
 
 \newenvironment{itemz}{\vspace{0pt}\begin{itemize}}{\end{itemize}}
 
@@ -1402,7 +1494,8 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
  \rotatebox{90}{%
         \begin{minipage}{\paperheight}
    \centering 
-   {\color{codegr}\textcopyright ~\today{} \lbs\bs\bs\bs\bs\bs\bs\bs\bs{} \lbs\bs\bs\bs\bs\bs\bs\bs  % Nathaniel Christen
+   {\color{codegr}\textcopyright ~\today{} Nathaniel Christen
+% \lbs\bs\bs\bs\bs\bs\bs\bs\bs{} \lbs\bs\bs\bs\bs\bs\bs\bs  % Nathaniel Christen
    } 
         \end{minipage} %
       }
@@ -1475,6 +1568,11 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 
 \newcommand{\fnacr}[1]{\resizebox{!}{5.5pt}{#1}}
+%\newcommand{\fnacrEnlFirst}[2]{\resizebox{!}{6.5pt}{#1}}{\resizebox{!}{5.5pt}{#2}}}
+
+\newcommand{\fnacrEnlFirst}[2]{{\footnotesize #1}\resizebox{!}{5.5pt}{#2}}
+
+%\newcommand{\fnacrEnlFirst}[2]{\resizebox{!}{6.5pt}{#1}{\resizebox{!}{5.5pt}{#2}}
 
 
 \newcommand{\mmakefntextAlt}[2]{\makefnmarkfnArg{#1}\hskip.5em\relax%
@@ -1489,16 +1587,18 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}1}}}}
 
 
-\AddToShipoutPicture{%
-\ifnum\value{page}=1{
-\AtTextLowerLeft{
-\hspace*{-3pt}\raisebox{-4pt}{%
-\mmakefntext{\footnotesize{This paper's examples are 
-embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
-according to a standardized encoding.  See 
-the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
-}}}\fi
-}
+%\AddToShipoutPicture{%
+%\ifnum\value{page}=1{
+%\AtTextLowerLeft{
+%\hspace*{-3pt}\raisebox{-4pt}{%
+%\mmakefntext{\footnotesize{This paper's examples are 
+%embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
+%according to a standardized encoding.  See 
+%the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
+%}}}\fi
+%}
+
+
 
 \usepackage{dashrule}
 
