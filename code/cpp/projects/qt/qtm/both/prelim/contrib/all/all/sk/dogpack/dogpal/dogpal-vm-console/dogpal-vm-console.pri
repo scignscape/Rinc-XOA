@@ -17,6 +17,8 @@ exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/co
 
 CONFIG += debug
 
+CONFIG+=c++2a
+
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 

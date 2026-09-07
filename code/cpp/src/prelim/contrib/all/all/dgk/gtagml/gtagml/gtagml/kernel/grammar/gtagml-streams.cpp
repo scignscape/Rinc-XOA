@@ -14,7 +14,8 @@ USING_KANS(GTagML)
 
 GTagML_Streams::GTagML_Streams(GTagML_Parse_State* parse_state)
   :  parse_state_(parse_state), latex_stream_(&latex_),
-     tao_stream_(&tao_), sentences_sdi_stream_(&sentences_sdi_),
+     tao_stream_(&tao_), tao_cached_text_index_(0),
+     sentences_sdi_stream_(&sentences_sdi_),
      primary_acc_stream_(&primary_acc_)
 {
 
@@ -64,7 +65,7 @@ void GTagML_Streams::tao(QString text)
 
 GTagML_Streams& GTagML_Streams::tao_instr(QString text)
 {
- tao_stream_ << "\n" << text;
+ tao_stream_ << "tao-" << text;
  return *this;
 }
 
@@ -103,6 +104,20 @@ void GTagML_Streams::tao_primary_acc(QString text)
      mask |= bit;
   }
   tao_instr("primary-acc-spaces").tao_mid("8#").tao_end(QString::number(mask));
+ }
+ else if(text.contains(QChar('\n')))
+ {
+  text.replace("\n", "\n|  ");
+  text.prepend("|  ");
+
+  s4 ix = text.lastIndexOf("\n|  ");
+  text[ix + 1] = '.';
+
+  ++tao_cached_text_index_;
+  tao_stream_ << "\n$.#" << tao_cached_text_index_ << "\n" << text << "\n";
+
+  tao_instr("primary-acc-cached").tao_mid("$#").tao_end(QString::number(tao_cached_text_index_));
+
  }
  else
    tao_string_instr("primary-acc").tao_end(text);

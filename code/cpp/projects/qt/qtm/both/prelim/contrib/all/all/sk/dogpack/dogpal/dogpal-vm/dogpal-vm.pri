@@ -21,6 +21,8 @@ CONFIG += debug
 
 CONFIG += no_keywords
 
+CONFIG+=c++2a
+
 DEFINES += USE_OTNS
 DEFINES += USE_KANS
 

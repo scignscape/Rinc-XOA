@@ -1,4 +1,11 @@
 
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+
 #ifdef METHOD_String
 
    {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},

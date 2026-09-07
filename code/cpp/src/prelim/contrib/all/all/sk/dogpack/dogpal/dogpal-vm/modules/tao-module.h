@@ -27,14 +27,17 @@ public:
 
  TAO_Module();
 
- enum class Signatures {
-   N_A, x0, String, U4x1, U4x4
- };
-
- void test_empty();
+ void leave_subparagraph_with_continue();
 
  void restrict_to_layer(QString layer);
  void unrestrict_from_layer(QString layer);
+ void primary_acc_spaces(n8 encoded);
+
+ void primary_acc(QString text);
+ void leave_element(QString element);
+ void enter_element(QString element);
+
+ void end_sentence(QString text);
 
 };
 

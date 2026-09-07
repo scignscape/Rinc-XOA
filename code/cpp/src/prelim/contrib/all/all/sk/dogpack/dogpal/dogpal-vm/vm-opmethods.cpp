@@ -109,6 +109,15 @@ VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base
  return *it;
 }
 
+//primary-acc-cached $# 10 ;.
+//end-sentence $  ;.
+//primary-acc-spaces 8# 1 ;.
+//end-sentence $ . ;.
+//primary-acc $  All of the eligible bachelors in this town are married ;.
+//primary-acc-spaces 8# 3 ;.
+//leave-element $ exsGroup-list ;.
+//leave-subparagraph-with-continue ;.
+
 VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_String> static_map {
@@ -154,6 +163,27 @@ VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_
  return *it;
 
 }
+
+VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_N8x1> static_map {
+#define METHOD_N8x1
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHOD_N8x1
+
+//?   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
+ };
+
+ module = get_module_from_instruction(instr);
+
+ auto it = static_map.find(instr);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
+
+}
+
 
 VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_Base*& module)
 {

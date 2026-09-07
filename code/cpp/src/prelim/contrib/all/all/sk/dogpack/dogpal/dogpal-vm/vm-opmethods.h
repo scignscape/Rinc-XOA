@@ -43,7 +43,7 @@ public:
  _Module_Base* get_module_from_instruction(QString instr);
 
  enum class Signatures {
-   N_A, x0, String, U4x1, U4x4
+   N_A, x0, String, U4x1, U4x4, N8x1
  };
 
 // void sdi_new_sentence(u4 id);
@@ -56,21 +56,25 @@ public:
  typedef void (_Module_Base::*methods_x0)();
  typedef void (_Module_Base::*methods_String)(QString);
  typedef void (_Module_Base::*methods_U4x1)(u4 arg);
+ typedef void (_Module_Base::*methods_N8x1)(n8 arg);
  typedef void (_Module_Base::*methods_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4);
 
  typedef methods_x0 methods_x0_opstatement_type;
  typedef QPair<methods_String, QString> methods_String_opstatement_type;
+ typedef QPair<methods_N8x1, n8> methods_N8x1_opstatement_type;
  typedef QPair<methods_U4x1, u4> methods_U4x1_opstatement_type;
  typedef QPair<methods_U4x4, QVector<u4>> methods_U4x4_opstatement_type;
 
  static constexpr u1 methods_x0_StackCode = 1;
  static constexpr u1 methods_String_StackCode = 2;
  static constexpr u1 methods_U4x1_StackCode = 3;
- static constexpr u1 methods_U4x4_StackCode = 4;
+ static constexpr u1 methods_N8x1_StackCode = 4;
+ static constexpr u1 methods_U4x4_StackCode = 5;
 
  methods_x0 get_method_x0(QString inst, _Module_Base*& module);
  methods_String get_method_String(QString inst, _Module_Base*& module);
  methods_U4x1 get_method_U4x1(QString inst, _Module_Base*& module);
+ methods_N8x1 get_method_N8x1(QString inst, _Module_Base*& module);
  methods_U4x4 get_method_U4x4(QString inst, _Module_Base*& module);
 
 // void ((VM_OpMethods::*get_method_x0)())(QString inst);

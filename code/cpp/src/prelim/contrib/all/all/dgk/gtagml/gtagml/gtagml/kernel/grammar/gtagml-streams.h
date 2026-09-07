@@ -48,6 +48,8 @@ class GTagML_Streams
  QString tao_;
  QTextStream tao_stream_;
 
+ u4 tao_cached_text_index_;
+
  QString sentences_sdi_;
  QTextStream sentences_sdi_stream_;
 
