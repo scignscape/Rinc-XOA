@@ -358,12 +358,18 @@ void GTagML_Document::sdi_check(QString sdi_path, QString out_path, QString asl_
 void GTagML_Document::finalize_tao()
 {
 
- streams_->tao("\n\n=done\n");
+ streams_->tao("\n\n=done\n\n");
 }
 
-void GTagML_Document::rcs_add_module_uris(QStringList paths)
+void GTagML_Document::rcs_file_name_shortcut(QString sc)
 {
- streams_->rcs_stream() << "rcs-add-module-uris $$ " <<
+ streams_->rcs_stream() << "rcs-file-name-shortcut $ " <<
+   sc << " ;.\n";
+}
+
+void GTagML_Document::rcs_add_manifest_uris(QStringList paths)
+{
+ streams_->rcs_stream() << "rcs-add-manifest-uris $$ " <<
    paths.join(" ") << " ;.\n";
 }
 
@@ -428,7 +434,7 @@ void GTagML_Document::finalize_rcs()
    write_name_map("add-author");
   }
  }
- streams_->rcs("\n\n=done\n");
+ streams_->rcs("\n\n=done\n\n");
 }
 
 

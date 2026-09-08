@@ -58,25 +58,28 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
 
+ QString original_path = path;
+
  QFileInfo qfi(path);
  QString bn = qfi.baseName();
  path = qfi.dir().absoluteFilePath(bn); // strip .gt
+ QString dirpath = qfi.dir().absolutePath(); // strip .gt
 
  gdoc->finalize_tao();
- gdoc->save_tagml_opcode(path + ".tao.4lr");
+ gdoc->save_tagml_opcode(dirpath + "/4lr/" + bn + ".tao.4lr");
 
  gdoc->set_author("Nathaniel_Christen");
 
-
- gdoc->rcs_add_module_uris({bn + ".tao.4lr", bn + ".sdi.4lr",
-   bn + ".asl.4lr", bn + ".rcs.4lr"});
+ gdoc->rcs_file_name_shortcut(bn);
+ gdoc->rcs_add_manifest_uris({"$.tao.4lr", "$.sdi.4lr",
+   "$.asl.4lr", "$.rcs.4lr"});
 
  gdoc->finalize_rcs();
- gdoc->save_rcs(path + ".rcs.4lr");
+ gdoc->save_rcs(dirpath + "/4lr/" + bn + ".rcs.4lr");
 
  // gdoc->save_pregraph(path + ".pre.gtvm");
 
- gdoc->sdi_check(path + ".sentences.sdi", path + ".sdi.4lr", path + ".asl.4lr");
+ gdoc->sdi_check(original_path + ".sentences.sdi", dirpath + "/4lr/" + bn + ".sdi.4lr", dirpath + "/4lr/" + bn + ".asl.4lr");
 }
 
 void _main(QString file, QString folder, QString manfolder)
@@ -113,7 +116,15 @@ int main1(int argc, char *argv[])
 
  GTagML_Document* gdoc = new GTagML_Document;
 
- gdoc->sdi_check(path + ".sentences.sdi", path + ".sdi.4lr", path + ".asl.4lr");
+
+ QFileInfo qfi(path);
+ QString bn = qfi.baseName();
+
+ QString original_path = path;
+ path = qfi.dir().absoluteFilePath(bn); // strip .gt
+ QString dirpath = qfi.dir().absolutePath(); // strip .gt
+
+ gdoc->sdi_check(original_path + ".sentences.sdi", dirpath + "/4lr/" + bn + ".sdi.4lr", dirpath + "/4lr/" + bn + ".asl.4lr");
 
 }
 

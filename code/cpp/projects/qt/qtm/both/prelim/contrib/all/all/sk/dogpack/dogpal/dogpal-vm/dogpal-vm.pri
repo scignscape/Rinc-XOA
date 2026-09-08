@@ -35,6 +35,8 @@ HEADERS += \
   $$SRC_DIR/modules/module-base.h \
   $$SRC_DIR/modules/sdi-module.h \
   $$SRC_DIR/modules/tao-module.h \
+  $$SRC_DIR/modules/asl-module.h \
+  $$SRC_DIR/modules/rcs-module.h \
 
 
 SOURCES += \
@@ -45,11 +47,15 @@ SOURCES += \
   $$SRC_DIR/vm-opstatement.cpp \
   $$SRC_DIR/modules/sdi-module.cpp \
   $$SRC_DIR/modules/tao-module.cpp \
+  $$SRC_DIR/modules/asl-module.cpp \
+  $$SRC_DIR/modules/rcs-module.cpp \
 
 
 DISTFILES += \
   $$SRC_DIR/modules/sdi-module.cxx \
   $$SRC_DIR/modules/tao-module.cxx \
+  $$SRC_DIR/modules/asl-module.cxx \
+  $$SRC_DIR/modules/rcs-module.cxx \
 
 
 

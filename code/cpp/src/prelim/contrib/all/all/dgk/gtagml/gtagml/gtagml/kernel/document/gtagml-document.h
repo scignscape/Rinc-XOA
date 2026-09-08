@@ -133,7 +133,8 @@ public:
  void finalize_tao();
 
  void finalize_rcs();
- void rcs_add_module_uris(QStringList paths);
+ void rcs_file_name_shortcut(QString sc);
+ void rcs_add_manifest_uris(QStringList paths);
  void save_rcs(QString path);
 
  void save_jats(QString path, QString bib_path);

@@ -19,7 +19,7 @@
 
 OTNS_(DogPal)
 
-class TAO_Module : public _Module_Base
+class RCS_Module : public _Module_Base
 {
 
 
@@ -27,19 +27,12 @@ public:
 
  RCS_Module();
 
- void leave_subparagraph_with_continue();
+ void file_name_shortcut(QString sc);
+ void add_module_uris(QStringList paths);
+ void first_name(QString name);
+ void last_name(QString name);
+ void single_author();
 
- void restrict_to_layer(QString layer);
- void unrestrict_from_layer(QString layer);
- void primary_acc_spaces(n8 encoded);
-
- void primary_acc(QString text);
- void leave_element(QString element);
- void enter_element(QString element);
-
- void end_sentence(QString text);
-
- void tpos(u2 id, u2 pos);
 
 };
 

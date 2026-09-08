@@ -107,12 +107,12 @@ public:
 
  void finalize_svm()
  {
-  svm_acc_ << "\n\n=done\n";
+  svm_acc_ << "\n\n=done\n\n";
  }
 
  void finalize_avm()
  {
-  avm_acc_ << "\n\n=done\n";
+  avm_acc_ << "\n\n=done\n\n";
  }
 
 };

@@ -6,7 +6,7 @@
 
 
 
-#include "tao-module.h"
+#include "rcs-module.h"
 
 #include <bit>
 
@@ -16,46 +16,29 @@
 USING_OTNS(DogPal)
 
 
-void RCS_Module::()
-{
-}
-
-void TAO_Module::tpos(u2 id, u2 pos)
+void RCS_Module::file_name_shortcut(QString sc)
 {
 
 }
 
-void TAO_Module::leave_element(QString element)
+void RCS_Module::add_module_uris(QStringList paths)
 {
 
 }
 
-void TAO_Module::enter_element(QString element)
+void RCS_Module::first_name(QString name)
 {
 
 }
 
-void TAO_Module::end_sentence(QString text)
+void RCS_Module::last_name(QString name)
 {
 
 }
 
-void TAO_Module::primary_acc(QString text)
+void RCS_Module::single_author()
 {
 
 }
 
-void TAO_Module::leave_subparagraph_with_continue()
-{
 
-}
-
-void TAO_Module::restrict_to_layer(QString layer)
-{
-
-}
-
-void TAO_Module::unrestrict_from_layer(QString layer)
-{
-
-}
