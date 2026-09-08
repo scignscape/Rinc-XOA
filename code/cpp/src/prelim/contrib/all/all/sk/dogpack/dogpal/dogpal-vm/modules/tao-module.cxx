@@ -18,7 +18,8 @@
 #elif METHODS_U4x1
 #elif METHODS_N8x1
 {"tao-primary-acc-spaces", (methods_N8x1) &TAO_Module::primary_acc_spaces},
-#elif METHODS_U4x4
+#elif METHODS_U2x2
+{"tao-tpos", (methods_U2x2) &TAO_Module::tpos},
 #endif
 
 

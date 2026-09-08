@@ -39,6 +39,8 @@ public:
 
  void end_sentence(QString text);
 
+ void tpos(u2 id, u2 pos);
+
 };
 
 _OTNS(DogPal)

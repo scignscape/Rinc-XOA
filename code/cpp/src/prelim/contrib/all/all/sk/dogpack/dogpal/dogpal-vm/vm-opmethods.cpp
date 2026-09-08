@@ -151,8 +151,24 @@ VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_U4x1
+ };
 
-//?   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
+ module = get_module_from_instruction(instr);
+
+ auto it = static_map.find(instr);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
+
+}
+
+VM_OpMethods::methods_U2x1 VM_OpMethods::get_method_U2x1(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_U2x1> static_map {
+#define METHODS_U2x1 1
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHODS_U2x1
  };
 
  module = get_module_from_instruction(instr);
@@ -185,19 +201,31 @@ VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_
 }
 
 
+VM_OpMethods::methods_U2x2 VM_OpMethods::get_method_U2x2(QString instr, _Module_Base*& module)
+{
+ static QMap<QString, methods_U2x2> static_map {
+#define METHODS_U2x2 1
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHODS_U2x2
+ };
+
+ module = get_module_from_instruction(instr);
+
+ auto it = static_map.find(instr);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
+}
+
+
 VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_Base*& module)
 {
  static QMap<QString, methods_U4x4> static_map {
 #define METHODS_U4x4 1
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
-#undef METHODS_U4x1
-
-
-//   {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},
-//   {"sdi-sentence--end-pos", (methods_U4x4) &SDI_Module::sentence__end_pos},
-//   {"sdi-sentence-switch-pos", (methods_U4x4) &SDI_Module::sentence_switch_pos},
-
+#undef METHODS_U4x4
  };
 
  module = get_module_from_instruction(instr);

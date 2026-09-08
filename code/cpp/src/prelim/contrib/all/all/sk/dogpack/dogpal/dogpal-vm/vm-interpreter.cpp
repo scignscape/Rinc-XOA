@@ -97,11 +97,25 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second);
    break;
  }
+ case VM_OpMethods::methods_U2x1_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_U2x1_opstatement_type>*)pr.first)[pr.second];
+  std::invoke(op_pair.first, module, op_pair.second);
+   break;
+ }
  case VM_OpMethods::methods_N8x1_StackCode:
  {
   auto op_pair = (*(QVector<VM_OpMethods::methods_N8x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second);
+   break;
+ }
+ case VM_OpMethods::methods_U2x2_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_U2x2_opstatement_type>*)pr.first)[pr.second];
+  std::invoke(op_pair.first, module,
+    op_pair.second[0], op_pair.second[1]);
+//  (methods_.sdi_module()->*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
    break;
  }
  case VM_OpMethods::methods_U4x4_StackCode:
@@ -193,6 +207,17 @@ void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
  encode_which_stack(VM_OpMethods::methods_String_StackCode, module);
 }
 
+
+u4 QString_to_u4(const QString& basis)
+{
+ return basis.toUInt();
+}
+
+u2 QString_to_u2(const QString& basis)
+{
+ return basis.toUShort();
+}
+
 void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
 {
  _Module_Base* module = nullptr;
@@ -212,6 +237,14 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
   VM_OpMethods::methods_String fn = methods_.get_method_String(opst.instruction(), module);
   parse_fn(fn, opst, opst.param());
   encode_which_stack(VM_OpMethods::methods_String_StackCode, module);
+  break;
+ }
+ case VM_Opstatement::Mid_Control_Kinds::U2:
+ {
+  u2 arg = opst.param().toUShort();
+  VM_OpMethods::methods_U2x1 fn = methods_.get_method_U2x1(opst.instruction(), module);
+  parse_fn(fn, opst, arg);
+  encode_which_stack(VM_OpMethods::methods_U2x1_StackCode, module);
   break;
  }
  case VM_Opstatement::Mid_Control_Kinds::U4:
@@ -237,6 +270,26 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
 
 void VM_Interpreter::parse_x2(const VM_Opstatement& opst)
 {
+ _Module_Base* module;
+
+ switch (opst.mid_control_kind())
+ {
+ case VM_Opstatement::Mid_Control_Kinds::U2:
+ {
+  QStringList qsl = opst.param().simplified().split(" ");
+  QVector<u2> args(2);
+  std::transform(qsl.begin(), qsl.end(), args.begin(), &QString_to_u2);
+
+  VM_OpMethods::methods_U2x2 fn = methods_.get_method_U2x2(opst.instruction(), module);
+  parse_fn(fn, opst, args);
+  encode_which_stack(VM_OpMethods::methods_U2x2_StackCode, module);
+
+  //   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
+  break;
+ }
+ default:
+  break;
+ }
 
 }
 
@@ -245,10 +298,7 @@ void VM_Interpreter::parse_x3(const VM_Opstatement& opst)
 
 }
 
-u4 QString_to_u4(const QString& basis)
-{
- return basis.toUInt();
-}
+
 
 void VM_Interpreter::parse_x4(const VM_Opstatement& opst)
 {

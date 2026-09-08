@@ -38,6 +38,11 @@ void TAO_Module::primary_acc_spaces(n8 encoded)
  qDebug() << spaces;
 }
 
+void TAO_Module::tpos(u2 id, u2 pos)
+{
+
+}
+
 void TAO_Module::leave_element(QString element)
 {
 
