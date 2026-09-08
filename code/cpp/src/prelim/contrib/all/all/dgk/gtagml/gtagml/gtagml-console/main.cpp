@@ -61,7 +61,7 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
  // gdoc->save_pregraph(path + ".pre.gtvm");
 
- gdoc->sdi_check(path + ".sentences.sdi", path + ".sentences.sdi-check.txt");
+ gdoc->sdi_check(path + ".sentences.sdi", path + ".sdi.4lr", path + ".asl.4lr");
 }
 
 void _main(QString file, QString folder, QString manfolder)
@@ -98,7 +98,7 @@ int main1(int argc, char *argv[])
 
  GTagML_Document* gdoc = new GTagML_Document;
 
- gdoc->sdi_check(path + ".sentences.sdi", path + ".sentences.sdi-check.txt");
+ gdoc->sdi_check(path + ".sentences.sdi", path + ".sdi.4lr", path + ".asl.4lr");
 
 }
 

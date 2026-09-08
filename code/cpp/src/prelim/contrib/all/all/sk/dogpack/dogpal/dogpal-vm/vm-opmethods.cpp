@@ -93,10 +93,10 @@ _Module_Base* VM_OpMethods::get_module_from_instruction(QString instr)
 VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_x0> static_map {
-#define METHOD_Empty
+#define METHODS_Empty 1
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
-#undef METHOD_Empty
+#undef METHODS_Empty
 
 //   {"tao-test-empty", (methods_x0) &TAO_Module::test_empty},
  };
@@ -121,10 +121,10 @@ VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base
 VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_String> static_map {
-#define METHOD_String
+#define METHODS_String 1
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
-#undef METHOD_String
+#undef METHODS_String
 
 //   {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
 //   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text},
@@ -147,10 +147,10 @@ VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Mod
 VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_U4x1> static_map {
-#define METHOD_U4x1
+#define METHODS_U4x1 1
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
-#undef METHOD_U4x1
+#undef METHODS_U4x1
 
 //?   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
  };
@@ -167,10 +167,10 @@ VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_
 VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_N8x1> static_map {
-#define METHOD_N8x1
+#define METHODS_N8x1 1
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
-#undef METHOD_N8x1
+#undef METHODS_N8x1
 
 //?   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
  };
@@ -188,10 +188,10 @@ VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_
 VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_Base*& module)
 {
  static QMap<QString, methods_U4x4> static_map {
-#define METHOD_U4x4
+#define METHODS_U4x4 1
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
-#undef METHOD_U4x1
+#undef METHODS_U4x1
 
 
 //   {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},

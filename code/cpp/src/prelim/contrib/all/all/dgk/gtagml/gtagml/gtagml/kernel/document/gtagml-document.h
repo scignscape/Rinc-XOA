@@ -162,7 +162,7 @@ public:
 
  static void save_file(QString path, QString contents);
 
- void sdi_check(QString sdi_path, QString out_path);
+ void sdi_check(QString sdi_path, QString out_path, QString asl_path);
 
  static void clean_html(QString& str);
  static QString escape_unicode(QString contents);

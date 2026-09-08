@@ -5,7 +5,7 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#include "sdi-sentence.h".h"
+#include "sdi-sentence.h"
 
 
 // #include "gtagml-document-light-xml.h"
@@ -29,9 +29,9 @@ void SDI_Sentence::read_sentence_end_punctuation(QStringList read_dispatch)
 {
  QString p = read_dispatch.last();
  if(p.isEmpty())
-   vm_writer_->opstatement("sdi-sentence-end-punctuation-empty");
+   vm_writer_->opstatement("sentence-end-punctuation-empty", 3);
  else
-   vm_writer_->opstatement("sdi-sentence-end-punctuation", p);
+   vm_writer_->opstatement("sentence-end-punctuation", p, 3);
 }
 
 void SDI_Sentence::read_sentence_range_Start(QStringList read_dispatch, QVector<s4> numbers)
@@ -39,7 +39,7 @@ void SDI_Sentence::read_sentence_range_Start(QStringList read_dispatch, QVector<
 // if(id_ > 14)
 //  qDebug() << id_;
  numbers.prepend(id_);
- vm_writer_->opstatement_u4s("sdi-sentence-start-pos", numbers);
+ vm_writer_->opstatement_u4s("sentence-start-pos", numbers, 3);
 }
 
 void SDI_Sentence::read_sentence_range_End(QStringList read_dispatch, QVector<s4> numbers)
@@ -47,7 +47,7 @@ void SDI_Sentence::read_sentence_range_End(QStringList read_dispatch, QVector<s4
 // if(id_ > 14)
 //  qDebug() << id_;
  numbers.prepend(id_);
- vm_writer_->opstatement_u4s("sdi-sentence-end-pos", numbers);
+ vm_writer_->opstatement_u4s("sentence-end-pos", numbers, 3);
 }
 
 void SDI_Sentence::read_sentence_range__End(QStringList read_dispatch, QVector<s4> numbers)
@@ -55,7 +55,7 @@ void SDI_Sentence::read_sentence_range__End(QStringList read_dispatch, QVector<s
 // if(id_ > 14)
 //  qDebug() << id_;
  numbers.prepend(id_);
- vm_writer_->opstatement_u4s("sdi-sentence--end-pos", numbers);
+ vm_writer_->opstatement_u4s("sentence--end-pos", numbers, 3);
 }
 
 void SDI_Sentence::read_sentence_range_Switch(QStringList read_dispatch, QVector<s4> numbers)
@@ -63,7 +63,7 @@ void SDI_Sentence::read_sentence_range_Switch(QStringList read_dispatch, QVector
 // if(id_ > 14)
 //  qDebug() << id_;
  numbers.prepend(id_);
- vm_writer_->opstatement_u4s("sdi-sentence-switch-pos", numbers);
+ vm_writer_->opstatement_u4s("sentence-switch-pos", numbers, 3);
 }
 
 
@@ -76,13 +76,50 @@ void SDI_Sentence::read_sentence_text(QStringList read_dispatch)
   sentence_text_.replace("...\\", "...");
   sentence_text_.replace("{\\sssm}", "");
   sentence_text_.replace("\\-", "-");
-  sentence_text_.replace("-=-", "---");
 
-  sentence_text_.replace(QRegularExpression("<!\\((\\d+)\\)!>"), "(\\1)");
-  sentence_text_.replace(QRegularExpression("<!!([\"'>=+*. \\w()-]+)!!>"), "\\1");
+  QString atext = sentence_text_;
+  QString stext = sentence_text_;
 
-  vm_writer_->write_text_block(sentence_text_);
-  vm_writer_->opstatement_text_block("sdi-sentence-text");
+  stext.replace("<!!\"!!>", "");
+
+  QRegularExpression srx("<!\\((\\d+)\\)!>|<!!([\"'>=+*. \\w()-]+)!!>");
+
+  QRegularExpressionMatchIterator it = srx.globalMatch(stext);
+
+  while(it.hasNext())
+  {
+   QRegularExpressionMatch match = it.next();
+   QString c1 = match.captured(1);
+   QString c2 = match.captured(2);
+
+   if(c2 == "\"")
+     continue;
+
+   if(c1.isEmpty())
+   {
+    vm_writer_->opstatement("sentence-insert-iref", c2, 1);
+    vm_writer_->opstatement("sentence-insert-inner-pos", "2#/2",
+      "%1 %2"_qt.arg(match.capturedStart(2)).arg(match.capturedEnd(2)), 1);
+   }
+   else
+   {
+    vm_writer_->opstatement("sentence-insert-text", c1, 1);
+    vm_writer_->opstatement("sentence-insert-inner-pos", "2#/2",
+      "%1 %2"_qt.arg(match.capturedStart(1)).arg(match.capturedEnd(1)), 1);
+   }
+   vm_writer_->opstatement("sentence-insert-outer-pos", "2#/2",
+     "%1 %2"_qt.arg(match.capturedStart()).arg(match.capturedEnd()), 1);
+  }
+
+
+  atext.replace("-=-", "---");
+
+  atext.replace(QRegularExpression("<!\\((\\d+)\\)!>"), "(\\1)");
+  atext.replace(QRegularExpression("<!!([\"'>=+*. \\w()-]+)!!>"), "\\1");
+
+  vm_writer_->write_text_block(stext, 1);
+  vm_writer_->write_text_block(atext, 2);
+  vm_writer_->opstatement_text_block("sentence-text", 3);
 
 
  }

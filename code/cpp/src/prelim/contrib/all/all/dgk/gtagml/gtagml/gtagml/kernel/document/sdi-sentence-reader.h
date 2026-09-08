@@ -69,7 +69,7 @@ public:
 
  void parse_sdi();
 
- void sdi_check(QString gt_contents, QString out_path);
+ void sdi_check(QString gt_contents, QString out_path, QString asl_path);
 
  void read_Sentence_field(QString data, QStringList spl, QString field_style);
  void read_Paragraph_field(QString data, QStringList spl, QString field_style);

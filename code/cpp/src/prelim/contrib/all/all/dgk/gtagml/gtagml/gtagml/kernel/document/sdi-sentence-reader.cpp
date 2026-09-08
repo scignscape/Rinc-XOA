@@ -96,7 +96,7 @@ void SDI_Sentence_Reader::parse_colon_line(QString field, QString data)
    sdi_sentences_.push_back(SDI_Sentence(data.simplified().toInt(), &vm_writer_));
    current_sentence_ = &sdi_sentences_.last();
    vm_writer_.blank_line();
-   vm_writer_.opstatement_u4("sdi-new-sentence", current_sentence_->id());
+   vm_writer_.opstatement_u4("new-sentence", current_sentence_->id(), 3);
    return;
   }
  }
@@ -279,10 +279,11 @@ void SDI_Sentence_Reader::parse_pipe_line(QString line)
 }
 
 
-void SDI_Sentence_Reader::sdi_check(QString gt_contents, QString out_path)
+void SDI_Sentence_Reader::sdi_check(QString gt_contents, QString out_path, QString asl_path)
 {
  parse_sdi();
- KA::TextIO::save_file(out_path, vm_writer_.vm());
+ KA::TextIO::save_file(asl_path, vm_writer_.avm());
+ KA::TextIO::save_file(out_path, vm_writer_.svm());
 }
 
 

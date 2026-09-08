@@ -38,6 +38,15 @@ void TAO_Module::primary_acc_spaces(n8 encoded)
  qDebug() << spaces;
 }
 
+void TAO_Module::leave_element(QString element)
+{
+
+}
+
+void TAO_Module::enter_element(QString element)
+{
+
+}
 
 void TAO_Module::end_sentence(QString text)
 {

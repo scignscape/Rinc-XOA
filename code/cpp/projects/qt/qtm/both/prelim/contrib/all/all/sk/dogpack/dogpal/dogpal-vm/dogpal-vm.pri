@@ -47,6 +47,12 @@ SOURCES += \
   $$SRC_DIR/modules/tao-module.cpp \
 
 
+DISTFILES += \
+  $$SRC_DIR/modules/sdi-module.cxx \
+  $$SRC_DIR/modules/tao-module.cxx \
+
+
+
 message($$SRC_DIR)
 
 

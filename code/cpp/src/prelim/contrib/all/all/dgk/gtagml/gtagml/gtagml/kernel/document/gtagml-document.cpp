@@ -348,10 +348,10 @@ void GTagML_Document::insert_xml_template(QString path)
  streams_->insert_xml_template(path);
 }
 
-void GTagML_Document::sdi_check(QString sdi_path, QString out_path)
+void GTagML_Document::sdi_check(QString sdi_path, QString out_path, QString asl_path)
 {
  SDI_Sentence_Reader ssr(sdi_path);
- ssr.sdi_check(raw_text_, out_path);
+ ssr.sdi_check(raw_text_, out_path, asl_path);
  //? parse_state_->sdi_check(sdi_path, out_path);
 }
 
