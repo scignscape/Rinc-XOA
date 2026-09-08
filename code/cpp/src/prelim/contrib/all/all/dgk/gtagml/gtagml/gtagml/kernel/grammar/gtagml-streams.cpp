@@ -16,6 +16,7 @@ GTagML_Streams::GTagML_Streams(GTagML_Parse_State* parse_state)
   :  parse_state_(parse_state), latex_stream_(&latex_),
      tao_stream_(&tao_), tao_cached_text_index_(0),
      sentences_sdi_stream_(&sentences_sdi_),
+     rcs_stream_(&rcs_),
      primary_acc_stream_(&primary_acc_)
 {
 
@@ -46,6 +47,9 @@ void GTagML_Streams::init()
  tao_stream_ << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
              << "=prog\n\n";
 
+ rcs_stream_ << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
+             << "=prog\n\n";
+
  sentences_sdi_stream_ << "--- Global/start\n\n";
 // xml_writer_.set
 // xml_writer_ = QXmlStreamWriter(jats_);
@@ -61,6 +65,11 @@ void GTagML_Streams::latex(QString text)
 void GTagML_Streams::tao(QString text)
 {
  tao_stream_ << text;
+}
+
+void GTagML_Streams::rcs(QString text)
+{
+ rcs_stream_ << text;
 }
 
 GTagML_Streams& GTagML_Streams::tao_instr(QString text)

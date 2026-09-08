@@ -57,7 +57,22 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->save_jats(path + ".jats.xml", path + ".jats-bib.txt");
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
- gdoc->save_tagml_opcode(path + ".tao");
+
+ QFileInfo qfi(path);
+ QString bn = qfi.baseName();
+ path = qfi.dir().absoluteFilePath(bn); // strip .gt
+
+ gdoc->finalize_tao();
+ gdoc->save_tagml_opcode(path + ".tao.4lr");
+
+ gdoc->set_author("Nathaniel_Christen");
+
+
+ gdoc->rcs_add_module_uris({bn + ".tao.4lr", bn + ".sdi.4lr",
+   bn + ".asl.4lr", bn + ".rcs.4lr"});
+
+ gdoc->finalize_rcs();
+ gdoc->save_rcs(path + ".rcs.4lr");
 
  // gdoc->save_pregraph(path + ".pre.gtvm");
 

@@ -60,6 +60,7 @@ class GTagML_Document
  QString local_file_name_;
  QString file_job_name_;
 
+ QStringList authors_;
 
  QMap<QString, GTagML_Annotation_Tile* >* annotations_;
 
@@ -109,6 +110,10 @@ public:
 
  ACCESSORS(QTextStream*, divert)
 
+ void set_author(QString name)
+ {
+  authors_.push_back(name);
+ }
 
  GTagML_Document();
 
@@ -125,6 +130,11 @@ public:
 
  void save_sentences(QString path);
  void save_tagml_opcode(QString path);
+ void finalize_tao();
+
+ void finalize_rcs();
+ void rcs_add_module_uris(QStringList paths);
+ void save_rcs(QString path);
 
  void save_jats(QString path, QString bib_path);
  void save_latex(QString path);

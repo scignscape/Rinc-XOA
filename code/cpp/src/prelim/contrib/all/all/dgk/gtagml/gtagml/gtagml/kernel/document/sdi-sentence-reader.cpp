@@ -282,6 +282,10 @@ void SDI_Sentence_Reader::parse_pipe_line(QString line)
 void SDI_Sentence_Reader::sdi_check(QString gt_contents, QString out_path, QString asl_path)
 {
  parse_sdi();
+
+ vm_writer_.finalize_avm();
+ vm_writer_.finalize_svm();
+
  KA::TextIO::save_file(asl_path, vm_writer_.avm());
  KA::TextIO::save_file(out_path, vm_writer_.svm());
 }

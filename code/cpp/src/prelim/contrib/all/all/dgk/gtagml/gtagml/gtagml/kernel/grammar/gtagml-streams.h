@@ -53,6 +53,9 @@ class GTagML_Streams
  QString sentences_sdi_;
  QTextStream sentences_sdi_stream_;
 
+ QString rcs_;
+ QTextStream rcs_stream_;
+
  QString primary_acc_;
  QTextStream primary_acc_stream_;
 
@@ -68,6 +71,7 @@ class GTagML_Streams
  ACCESSORS__RGET(QTextStream ,primary_acc_stream)
  ACCESSORS__RGET(QTextStream ,latex_stream)
  ACCESSORS__RGET(QTextStream ,tao_stream)
+ ACCESSORS__RGET(QTextStream ,rcs_stream)
  ACCESSORS__RGET(QTextStream ,jats_stream)
  ACCESSORS__RGET(QTextStream ,sentences_sdi_stream)
  ACCESSORS__RGET(QXmlStreamWriter ,xml_writer)
@@ -93,6 +97,7 @@ class GTagML_Streams
   return sentences_sdi_;
  }
 
+ void rcs(QString text);
  void tao(QString text);
  void latex(QString text);
  void primary(QString text);
@@ -156,6 +161,12 @@ class GTagML_Streams
  {
   //jats_ = QString::fromLatin1(jat)
   KA::TextIO::save_file(path, tao_);
+ }
+
+ void save_rcs(QString path)
+ {
+  //jats_ = QString::fromLatin1(jat)
+  KA::TextIO::save_file(path, rcs_);
  }
 
  void save_sentences(QString path)

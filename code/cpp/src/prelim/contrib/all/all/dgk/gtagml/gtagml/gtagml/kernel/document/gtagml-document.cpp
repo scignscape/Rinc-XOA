@@ -355,6 +355,88 @@ void GTagML_Document::sdi_check(QString sdi_path, QString out_path, QString asl_
  //? parse_state_->sdi_check(sdi_path, out_path);
 }
 
+void GTagML_Document::finalize_tao()
+{
+
+ streams_->tao("\n\n=done\n");
+}
+
+void GTagML_Document::rcs_add_module_uris(QStringList paths)
+{
+ streams_->rcs_stream() << "rcs-add-module-uris $$ " <<
+   paths.join(" ") << " ;.\n";
+}
+
+void GTagML_Document::finalize_rcs()
+{
+ QMap<QString, QStringList> parts_map;
+
+ auto _write_name_map = [this, &parts_map](QString parts_key)
+ {
+  if(parts_map.contains(parts_key))
+  {
+   QStringList names = parts_map[parts_key];
+
+   for(QString n : names)
+   {
+    streams_->rcs_stream() << "rcs-" << parts_key << "-name $ " << n << " ;.\n";
+   }
+  }
+ };
+
+ auto write_name_map = [this, &parts_map, _write_name_map](QString instr)
+ {
+  _write_name_map("first");
+  _write_name_map("mid");
+  _write_name_map("last");
+
+  streams_->rcs_stream() << "rcs-" << instr << " ;.\n";
+ };
+
+ auto get_name_map = [this, &parts_map](QString name)
+ {
+  QStringList parts = name.simplified().split(QChar('_'));
+
+  u1 count = 0;
+  for(QString part : parts)
+  {
+   QString key;
+   if(count == 0)
+     key = "first";
+   else if(count == parts.size() - 1)
+     key = "last";
+   else
+     key = "mid";
+   ++count;
+
+   parts_map[key] = part.split(QChar(' '));
+  }
+
+  qDebug() << "p = " << parts_map;
+ };
+
+ if(authors_.size() == 1)
+ {
+  get_name_map(authors_.first());
+  write_name_map("single-author");
+ }
+ else
+ {
+  for(QString au : authors_)
+  {
+   get_name_map(au);
+   write_name_map("add-author");
+  }
+ }
+ streams_->rcs("\n\n=done\n");
+}
+
+
+void GTagML_Document::save_rcs(QString path)
+{
+ streams_->save_rcs(path);
+}
+
 void GTagML_Document::save_tagml_opcode(QString path)
 {
  streams_->save_tao(path);

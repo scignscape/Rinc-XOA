@@ -105,6 +105,16 @@ public:
 
  void write_text_block(QString contents, u1 mask);
 
+ void finalize_svm()
+ {
+  svm_acc_ << "\n\n=done\n";
+ }
+
+ void finalize_avm()
+ {
+  avm_acc_ << "\n\n=done\n";
+ }
+
 };
 
 _KANS(GTagML)
