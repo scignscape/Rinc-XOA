@@ -19,12 +19,16 @@
 
 OTNS_(DogPal)
 
+class ASL_Module;
+class RCS_Module;
 class SDI_Module;
 class TAO_Module;
 
 class VM_OpMethods
 {
 
+ ASL_Module* asl_module_;
+ RCS_Module* rcs_module_;
  SDI_Module* sdi_module_;
  TAO_Module* tao_module_;
 
@@ -33,6 +37,8 @@ public:
 
  VM_OpMethods();
 
+ ACCESSORS(ASL_Module* ,asl_module)
+ ACCESSORS(RCS_Module* ,rcs_module)
  ACCESSORS(SDI_Module* ,sdi_module)
  ACCESSORS(TAO_Module* ,tao_module)
 
@@ -43,7 +49,7 @@ public:
  _Module_Base* get_module_from_instruction(QString instr);
 
  enum class Signatures {
-   N_A, x0, String, U4x1, U4x4, N8x1
+   N_A, x0, String, StringList, U2x2, U4x1, U4x4, N8x1
  };
 
 // void sdi_new_sentence(u4 id);

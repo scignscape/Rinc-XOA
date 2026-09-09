@@ -8,6 +8,7 @@
 #ifndef MODULE_BASE__H
 #define MODULE_BASE__H
 
+#include <QString>
 
 #include "otns.h"
 
@@ -15,7 +16,7 @@ OTNS_(DogPal)
 
 struct _Module_Base
 {
-
+ QString module_name;
 };
 
 

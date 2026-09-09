@@ -10,6 +10,11 @@
 
 USING_OTNS(DogPal)
 
+SDI_Module::SDI_Module()
+ :  _Module_Base{"SDI"}
+{
+
+}
 
 void SDI_Module::new_sentence(u4 id)
 {
@@ -41,4 +46,23 @@ void SDI_Module::sentence_text(QString text)
 
 }
 
+void SDI_Module::sentence_insert_inner_pos(u2 start, u2 end)
+{
+
+}
+
+void SDI_Module::sentence_insert_outer_pos(u2 start, u2 end)
+{
+
+}
+
+void SDI_Module::sentence_insert_iref(QString text)
+{
+
+}
+
+void SDI_Module::sentence_insert_text(QString text)
+{
+
+}
 

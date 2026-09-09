@@ -28,7 +28,7 @@ public:
  RCS_Module();
 
  void file_name_shortcut(QString sc);
- void add_module_uris(QStringList paths);
+ void add_manifest_uris(QStringList paths);
  void first_name(QString name);
  void last_name(QString name);
  void single_author();

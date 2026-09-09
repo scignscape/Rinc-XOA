@@ -8,6 +8,8 @@
 
 #include "vm-opmethods.h"
 
+#include "modules/asl-module.h"
+#include "modules/rcs-module.h"
 #include "modules/sdi-module.h"
 #include "modules/tao-module.h"
 
@@ -19,14 +21,20 @@ USING_OTNS(DogPal)
 
 VM_OpMethods::VM_OpMethods()
 {
+ asl_module_ = new ASL_Module;
+ rcs_module_ = new RCS_Module;
+ sdi_module_ = new SDI_Module;
+ tao_module_ = new TAO_Module;
 
 }
 
 u1 VM_OpMethods::get_module_index(_Module_Base* module)
 {
  static QMap<_Module_Base*, u1> static_map {
-  { static_cast<_Module_Base*>(sdi_module_), 1},
-  { static_cast<_Module_Base*>(tao_module_), 2},
+  { static_cast<_Module_Base*>(asl_module_), 1},
+  { static_cast<_Module_Base*>(rcs_module_), 2},
+  { static_cast<_Module_Base*>(sdi_module_), 3},
+  { static_cast<_Module_Base*>(tao_module_), 4},
  };
 
  return static_map.value(module);
@@ -36,8 +44,10 @@ _Module_Base* VM_OpMethods::get_module_by_index(u1 index)
 {
  switch (index)
  {
- case 1: return static_cast<_Module_Base*>(sdi_module_);
- case 2: return static_cast<_Module_Base*>(tao_module_);
+ case 1: return static_cast<_Module_Base*>(asl_module_);
+ case 2: return static_cast<_Module_Base*>(rcs_module_);
+ case 3: return static_cast<_Module_Base*>(sdi_module_);
+ case 4: return static_cast<_Module_Base*>(tao_module_);
  default: return nullptr;
  }
 }
@@ -82,8 +92,11 @@ _Module_Base* VM_OpMethods::get_module_from_instruction(QString instr)
  QString module_code = instr.left(ix);
 
  static QMap<QString, _Module_Base*> modules_map {
+   {"asl", asl_module_},
+   {"rcs", rcs_module_},
    {"sdi", sdi_module_},
    {"tao", tao_module_},
+
  };
 
  return modules_map.value(module_code);
@@ -94,6 +107,8 @@ VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base
 {
  QMap<QString, methods_x0> static_map {
 #define METHODS_Empty 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_Empty
@@ -122,14 +137,11 @@ VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Mod
 {
  QMap<QString, methods_String> static_map {
 #define METHODS_String 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_String
-
-//   {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
-//   {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text},
-
-//   {"tao-restrict-to-layer", (methods_String) &TAO_Module::restrict_to_layer}
  };
 
  module = get_module_from_instruction(instr);
@@ -139,15 +151,35 @@ VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Mod
    return nullptr;
  return *it;
 
-// QMap<SQstring, methods_x0> static_map {
-//   {}
-// };
 }
+
+VM_OpMethods::methods_StringList VM_OpMethods::get_method_StringList(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_StringList> static_map {
+#define METHODS_StringList 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
+#include "modules/sdi-module.cxx"
+#include "modules/tao-module.cxx"
+#undef METHODS_StringList
+ };
+
+ module = get_module_from_instruction(instr);
+
+ auto it = static_map.find(instr);
+ if(it == static_map.end())
+   return nullptr;
+ return *it;
+
+}
+
 
 VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_U4x1> static_map {
 #define METHODS_U4x1 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_U4x1
@@ -166,6 +198,8 @@ VM_OpMethods::methods_U2x1 VM_OpMethods::get_method_U2x1(QString instr, _Module_
 {
  QMap<QString, methods_U2x1> static_map {
 #define METHODS_U2x1 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_U2x1
@@ -184,6 +218,8 @@ VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_
 {
  QMap<QString, methods_N8x1> static_map {
 #define METHODS_N8x1 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_N8x1
@@ -205,6 +241,8 @@ VM_OpMethods::methods_U2x2 VM_OpMethods::get_method_U2x2(QString instr, _Module_
 {
  static QMap<QString, methods_U2x2> static_map {
 #define METHODS_U2x2 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_U2x2
@@ -223,6 +261,8 @@ VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_
 {
  static QMap<QString, methods_U4x4> static_map {
 #define METHODS_U4x4 1
+#include "modules/asl-module.cxx"
+#include "modules/rcs-module.cxx"
 #include "modules/sdi-module.cxx"
 #include "modules/tao-module.cxx"
 #undef METHODS_U4x4

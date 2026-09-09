@@ -10,6 +10,11 @@
 
 USING_OTNS(DogPal)
 
+ASL_Module::ASL_Module()
+ :  _Module_Base{"ASL"}
+{
+
+}
 
 void ASL_Module::new_sentence(u4 id)
 {

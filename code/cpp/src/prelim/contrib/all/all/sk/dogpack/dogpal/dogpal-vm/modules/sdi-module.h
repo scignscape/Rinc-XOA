@@ -34,6 +34,10 @@ public:
  void sentence_end_punctuation(QString mark);
  void sentence_text(QString text);
 
+ void sentence_insert_inner_pos(u2 start, u2 end);
+ void sentence_insert_outer_pos(u2 start, u2 end);
+ void sentence_insert_iref(QString text);
+ void sentence_insert_text(QString text);
 
 };
 

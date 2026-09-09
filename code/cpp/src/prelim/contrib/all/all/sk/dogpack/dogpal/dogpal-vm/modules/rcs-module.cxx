@@ -7,13 +7,13 @@
 
 
 #if METHODS_String
-   {"file-name-shortcut", (methods_String) &RCS_Module::file_name_shortcut},
-   {"first-name", (methods_String) &TAO_Module::first_name},
-   {"last-name", (methods_String) &TAO_Module::last_name},
+   {"rcs-file-name-shortcut", (methods_String) &RCS_Module::file_name_shortcut},
+   {"rcs-first-name", (methods_String) &RCS_Module::first_name},
+   {"rcs-last-name", (methods_String) &RCS_Module::last_name},
 #elif METHODS_StringList
    {"rcs-add-manifest-uris", (methods_StringList) &RCS_Module::add_manifest_uris},
-#elif METHODS_x0
-   {"rcs-single-author", (methods_StringList) &RCS_Module::single_author},
+#elif METHODS_Empty
+   {"rcs-single-author", (methods_x0) &RCS_Module::single_author},
 #endif
 
 

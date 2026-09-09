@@ -213,7 +213,7 @@ public:
     FN_Type fn, QVector<ARG_Type> args);
  };
 
- struct _get_vector_xx
+ struct _get_vector_List
  {
   VM_Dispatcher* _this;
 
@@ -274,7 +274,6 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x1::_get_vector
  switch (mck)
  {
  GET_VECTOR_CASE(String, x1)
- GET_VECTOR_CASE(String_List)
  GET_VECTOR_CASES(x1)
 
 // GET_VECTOR_CASE(U4, x1)
@@ -330,11 +329,12 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x4::_get_vector
 
 
 template<typename FN_Type, typename ARG_Type>
-QPair<void*, u4> VM_Dispatcher::_get_vector_xx::_get_vector
+QPair<void*, u4> VM_Dispatcher::_get_vector_List::_get_vector
    (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVector<ARG_Type> args)
 {
  switch (mck)
  {
+ GET_VECTOR_CASE(String_List)
  GET_VECTOR_CASES(List)
  default: return {nullptr, 0};
  }
@@ -367,6 +367,8 @@ QPair<void*, u4> VM_Dispatcher::get_vector(VM_Opstatement::Mid_Control_Kinds mck
  GET_VECTOR_CC_CASE(x2)
  GET_VECTOR_CC_CASE(x3)
  GET_VECTOR_CC_CASE(x4)
+
+ GET_VECTOR_CC_CASE(List)
 
 //? GET_VECTOR_CC_CASE(xx)
 

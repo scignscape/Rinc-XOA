@@ -15,6 +15,11 @@
 
 USING_OTNS(DogPal)
 
+TAO_Module::TAO_Module()
+ :  _Module_Base{"TAO"}
+{
+
+}
 
 void TAO_Module::primary_acc_spaces(n8 encoded)
 {

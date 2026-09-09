@@ -250,38 +250,47 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
  else
  {
   u2 cutpoint = control.size();
-  if(cutpoint > 2)
+
+  if(cutpoint > 1)
   {
-   if(control[cutpoint - 2] == QChar('/'))
+   bool doubled = control[cutpoint - 2] == control[cutpoint - 1];
+   if(cutpoint > 2)
    {
-    u1 last = control[cutpoint - 1].toLatin1();
-    switch (last)
+    if(control[cutpoint - 2] == QChar('/'))
     {
-    case '2': cc = VM_Opstatement::Control_Coords::x2; break;
-    case '3': cc = VM_Opstatement::Control_Coords::x3; break;
-    case '4': cc = VM_Opstatement::Control_Coords::x4; break;
-    default: cc = VM_Opstatement::Control_Coords::x1; break;
+     u1 last = control[cutpoint - 1].toLatin1();
+     switch (last)
+     {
+     case '2': cc = VM_Opstatement::Control_Coords::x2; break;
+     case '3': cc = VM_Opstatement::Control_Coords::x3; break;
+     case '4': cc = VM_Opstatement::Control_Coords::x4; break;
+     default: cc = VM_Opstatement::Control_Coords::x1; break;
+     }
+     cutpoint -= 2;
     }
-    cutpoint -= 2;
+    else if(doubled)
+    {
+     cc = VM_Opstatement::Control_Coords::List;
+     cutpoint -= 1;
+    }
+    else if(control[cutpoint - 2] == QChar('*'))
+    {
+     if(control[cutpoint - 1] == QChar('2'))
+       cc = VM_Opstatement::Control_Coords::Matrix;
+     else
+       cc = VM_Opstatement::Control_Coords::Tensor;
+     cutpoint -= 2;
+    }
    }
-   else if(control[cutpoint - 2] == control[cutpoint - 1])
+   else if(cutpoint == 2)
    {
-    cc = VM_Opstatement::Control_Coords::List;
-    cutpoint -= 1;
+    if(doubled)
+    {
+     cc = VM_Opstatement::Control_Coords::List;
+    }
+    else if(control[1] == "#")
+      cc = VM_Opstatement::Control_Coords::x1;
    }
-   else if(control[cutpoint - 2] == QChar('*'))
-   {
-    if(control[cutpoint - 1] == QChar('2'))
-      cc = VM_Opstatement::Control_Coords::Matrix;
-    else
-      cc = VM_Opstatement::Control_Coords::Tensor;
-    cutpoint -= 2;
-   }
-  }
-  else if(cutpoint == 2)
-  {
-   if(control[1] == "#")
-     cc = VM_Opstatement::Control_Coords::x1;
   }
   else if(cutpoint == 1)
   {

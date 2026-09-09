@@ -9,9 +9,13 @@
 #if METHODS_String
    {"sdi-sentence-end-punctuation", (methods_String) &SDI_Module::sentence_end_punctuation},
    {"sdi-sentence-text", (methods_String) &SDI_Module::sentence_text},
-#elif METHODS_x0
+   {"sdi-sentence-insert-text", (methods_String) &SDI_Module::sentence_insert_text},
+   {"sdi-sentence-insert-iref", (methods_String) &SDI_Module::sentence_insert_iref},
 #elif METHODS_U4x1
-   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
+   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence},
+#elif METHODS_U2x2
+   {"sdi-sentence-insert-inner-pos", (methods_U2x2) &SDI_Module::sentence_insert_inner_pos},
+   {"sdi-sentence-insert-outer-pos", (methods_U2x2) &SDI_Module::sentence_insert_outer_pos},
 #elif METHODS_U4x4
    {"sdi-sentence-end-pos", (methods_U4x4) &SDI_Module::sentence_end_pos},
    {"sdi-sentence--end-pos", (methods_U4x4) &SDI_Module::sentence__end_pos},

@@ -110,7 +110,7 @@ void _main(QString file, QString folder, QString manfolder)
 }
 
 
-int main1(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
  QString path = ROOT_FOLDER "/../gt/OrderingConceptualSynthesis/OrderingConceptualSynthesis.gt";
 
@@ -128,7 +128,7 @@ int main1(int argc, char *argv[])
 
 }
 
-int main(int argc, char *argv[])
+int main1(int argc, char *argv[])
 {
  QString folder;
  QString file;

@@ -95,17 +95,17 @@ void SDI_Sentence::read_sentence_text(QStringList read_dispatch)
    if(c2 == "\"")
      continue;
 
-   if(c1.isEmpty())
+   if(c2.isEmpty())
    {
-    vm_writer_->opstatement("sentence-insert-iref", c2, 1);
+    vm_writer_->opstatement("sentence-insert-iref", c1, 1);
     vm_writer_->opstatement("sentence-insert-inner-pos", "2#/2",
-      "%1 %2"_qt.arg(match.capturedStart(2)).arg(match.capturedEnd(2)), 1);
+      "%1 %2"_qt.arg(match.capturedStart(1)).arg(match.capturedEnd(1)), 1);
    }
    else
    {
-    vm_writer_->opstatement("sentence-insert-text", c1, 1);
+    vm_writer_->opstatement("sentence-insert-text", c2, 1);
     vm_writer_->opstatement("sentence-insert-inner-pos", "2#/2",
-      "%1 %2"_qt.arg(match.capturedStart(1)).arg(match.capturedEnd(1)), 1);
+      "%1 %2"_qt.arg(match.capturedStart(2)).arg(match.capturedEnd(2)), 1);
    }
    vm_writer_->opstatement("sentence-insert-outer-pos", "2#/2",
      "%1 %2"_qt.arg(match.capturedStart()).arg(match.capturedEnd()), 1);
