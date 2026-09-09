@@ -32,3 +32,39 @@
 #endif
 
 #include "preproc-concat.h"
+
+#define MACRO_EXPAND_1(X, a1) X(a1)
+#define MACRO_EXPAND_2(X, a1, a2) X(a1) X(a2)
+#define MACRO_EXPAND_3(X, a1, a2, a3) X(a1) X(a2) X(a3)
+#define MACRO_EXPAND_4(X, a1, a2, a3, a4) X(a1) X(a2) X(a3) X(a4)
+#define MACRO_EXPAND_5(X, a1, a2, a3, a4, a5) X(a1) X(a2) X(a3) X(a4)
+#define MACRO_EXPAND_6(X, a1, a2, a3, a4, a5, a6) X(a1) X(a2) X(a3) X(a4) X(a5)
+#define MACRO_EXPAND_7(X, a1, a2, a3, a4, a5, a6, a7) X(a1) X(a2) X(a3) X(a4) X(a5) X(a6)
+#define MACRO_EXPAND_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8)
+
+#define MACRO_EXPAND_9(X, a1, a2, a3, a4, a5, a6, a7, a8, a9) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9)
+
+#define MACRO_EXPAND_10(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10)
+
+#define MACRO_EXPAND_11(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10) X(a11)
+
+#define MACRO_EXPAND_12(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10) X(a11) x(a12)
+
+#define MACRO_EXPAND_13(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10) X(a11) x(a12) x(a13)
+
+#define MACRO_EXPAND_14(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10) X(a11) x(a12) x(a13) x(a14)
+
+#define MACRO_EXPAND_15(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10) X(a11) x(a12) x(a13) x(a14) x(a15)
+
+#define MACRO_EXPAND_16(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16) \
+   X(a1) X(a2) X(a3) X(a4) X(a5) X(a6) X(a7) X(a8) X(a9) X(a10) X(a11) x(a12) x(a13) x(a14) x(a15) x(a16)
+
+#define _MACRO_EXPAND(X, ...) _preproc_CONCAT(MACRO_EXPAND_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
+

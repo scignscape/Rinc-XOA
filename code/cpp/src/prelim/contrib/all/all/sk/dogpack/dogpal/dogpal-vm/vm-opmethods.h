@@ -10,6 +10,8 @@
 
 #include "global-types.h"
 
+#include "global-macros.h"
+
 #include "vm-reader.h"
 #include "vm-opstatement.h"
 
@@ -19,14 +21,24 @@
 
 OTNS_(DogPal)
 
-class ASL_Module;
-class RCS_Module;
-class SDI_Module;
-class TAO_Module;
+
+#define MODULE_LIST_UC(X) _MACRO_EXPAND(X, ASL, RCS, SDI, TAO)
+#define MODULE_LIST_LC(X) _MACRO_EXPAND(X, asl, rcs, sdi, tao)
+
+
+#define CLASS(x) class x##_Module;
+
+//_MODULE_LIST_UC(CLASS, MACRO_EXPAND_4)
+
+MODULE_LIST_UC(CLASS)
+
+//class ASL_Module;
+//class RCS_Module;
+//class SDI_Module;
+//class TAO_Module;
 
 class VM_OpMethods
 {
-
  ASL_Module* asl_module_;
  RCS_Module* rcs_module_;
  SDI_Module* sdi_module_;
