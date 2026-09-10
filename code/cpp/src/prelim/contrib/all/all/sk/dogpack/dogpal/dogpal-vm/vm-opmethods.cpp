@@ -13,6 +13,12 @@
 #include "modules/sdi-module.h"
 #include "modules/tao-module.h"
 
+#define MODULE_LIST_INCLUDE(m) "modules/m##-module.h"
+
+//MODULE_LIST_LC_INCLUDES(MODULE_LIST_INCLUDE)
+
+//MACRO_EXPAND_EVENS_INCLUDES_8(MODULE_LIST_INCLUDE, ASL, asl,  RCS, rcs, SDI, sdi, TAO, tao)
+
 #include "textio.h"
 
 USING_KANS(TextIO)
@@ -21,20 +27,24 @@ USING_OTNS(DogPal)
 
 VM_OpMethods::VM_OpMethods()
 {
- asl_module_ = new ASL_Module;
- rcs_module_ = new RCS_Module;
- sdi_module_ = new SDI_Module;
- tao_module_ = new TAO_Module;
+#define MODULE_MEMBER_INIT(type, member) member##_module##_ = new type##_Module;
+MODULE_LIST_PAIRED(MODULE_MEMBER_INIT)
+
+
+// asl_module_ = new ASL_Module;
+// rcs_module_ = new RCS_Module;
+// sdi_module_ = new SDI_Module;
+// tao_module_ = new TAO_Module;
 
 }
 
 u1 VM_OpMethods::get_module_index(_Module_Base* module)
 {
+#define MODULE_MEMBER_INDEX(index, m) \
+ { static_cast<_Module_Base*>(m##_module_), index},
+
  static QMap<_Module_Base*, u1> static_map {
-  { static_cast<_Module_Base*>(asl_module_), 1},
-  { static_cast<_Module_Base*>(rcs_module_), 2},
-  { static_cast<_Module_Base*>(sdi_module_), 3},
-  { static_cast<_Module_Base*>(tao_module_), 4},
+  MODULE_LIST_LC_INDEXED(MODULE_MEMBER_INDEX)
  };
 
  return static_map.value(module);
@@ -42,12 +52,13 @@ u1 VM_OpMethods::get_module_index(_Module_Base* module)
 
 _Module_Base* VM_OpMethods::get_module_by_index(u1 index)
 {
+#define MODULE_MEMBER_CASE(index, m) \
+ case index: return static_cast<_Module_Base*>(m##_module_);
+
  switch (index)
  {
- case 1: return static_cast<_Module_Base*>(asl_module_);
- case 2: return static_cast<_Module_Base*>(rcs_module_);
- case 3: return static_cast<_Module_Base*>(sdi_module_);
- case 4: return static_cast<_Module_Base*>(tao_module_);
+ MODULE_LIST_LC_INDEXED(MODULE_MEMBER_CASE)
+
  default: return nullptr;
  }
 }

@@ -22,37 +22,40 @@
 OTNS_(DogPal)
 
 
-#define MODULE_LIST_UC(X) _MACRO_EXPAND(X, ASL, RCS, SDI, TAO)
-#define MODULE_LIST_LC(X) _MACRO_EXPAND(X, asl, rcs, sdi, tao)
+//#define MODULE_LIST_UC(X) _MACRO_EXPAND(X, ASL, RCS, SDI, TAO)
+//#define MODULE_LIST_LC(X) _MACRO_EXPAND(X, asl, rcs, sdi, tao)
+
+#define MODULE_LIST(X, ALT) _MACRO_EXPAND_ALT(X, ALT,\
+  ASL, asl,  RCS, rcs, SDI, sdi, TAO, tao)
+
+#define MODULE_LIST_PAIRED(X) MODULE_LIST(X, PAIRED)
+#define MODULE_LIST_UC(X) MODULE_LIST(X, ODDS)
+#define MODULE_LIST_LC(X) MODULE_LIST(X, EVENS)
+#define MODULE_LIST_LC_INDEXED(X) MODULE_LIST(X, EVENS_INDEXED)
+#define MODULE_LIST_LC_INCLUDES(X) MODULE_LIST(X, EVENS_INCLUDES)
 
 
-#define CLASS(x) class x##_Module;
-
-//_MODULE_LIST_UC(CLASS, MACRO_EXPAND_4)
-
-MODULE_LIST_UC(CLASS)
-
-//class ASL_Module;
-//class RCS_Module;
-//class SDI_Module;
-//class TAO_Module;
+#define MODULE_CLASS_DECLARE(x) class x##_Module;
+MODULE_LIST_UC(MODULE_CLASS_DECLARE)
 
 class VM_OpMethods
 {
- ASL_Module* asl_module_;
- RCS_Module* rcs_module_;
- SDI_Module* sdi_module_;
- TAO_Module* tao_module_;
+ #define MODULE_MEMBER(type, member) type##_Module* member##_module##_;
+ MODULE_LIST_PAIRED(MODULE_MEMBER)
+
 
 
 public:
 
  VM_OpMethods();
 
- ACCESSORS(ASL_Module* ,asl_module)
- ACCESSORS(RCS_Module* ,rcs_module)
- ACCESSORS(SDI_Module* ,sdi_module)
- ACCESSORS(TAO_Module* ,tao_module)
+#define MODULE_MEMBER(type, member) ACCESSORS(type##_Module* ,member##_module)
+MODULE_LIST_PAIRED(MODULE_MEMBER)
+
+// ACCESSORS(ASL_Module* ,asl_module)
+// ACCESSORS(RCS_Module* ,rcs_module)
+// ACCESSORS(SDI_Module* ,sdi_module)
+// ACCESSORS(TAO_Module* ,tao_module)
 
  u1 get_module_index(_Module_Base* module);
 
