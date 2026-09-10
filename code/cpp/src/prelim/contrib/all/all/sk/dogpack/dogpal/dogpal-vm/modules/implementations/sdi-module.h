@@ -5,27 +5,27 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef ASL_MODULE__H
-#define ASL_MODULE__H
+#ifndef SDI_MODULE__H
+#define SDI_MODULE__H
 
 #include "global-types.h"
 
 #include "vm-reader.h"
 #include "vm-opstatement.h"
 
-#include "module-base.h"
+#include "../module-base.h"
 
 
 #include "otns.h"
 
 OTNS_(DogPal)
 
-class ASL_Module : public _Module_Base
+class SDI_Module : public _Module_Base
 {
 
 public:
 
- ASL_Module();
+ SDI_Module();
 
  void new_sentence(u4 id);
  void sentence_switch_pos(u4 id, u4 pos, u4 row, u4 col);
@@ -34,9 +34,13 @@ public:
  void sentence_end_punctuation(QString mark);
  void sentence_text(QString text);
 
+ void sentence_insert_inner_pos(u2 start, u2 end);
+ void sentence_insert_outer_pos(u2 start, u2 end);
+ void sentence_insert_iref(QString text);
+ void sentence_insert_text(QString text);
 
 };
 
 _OTNS(DogPal)
 
-#endif // ASL_MODULE__H
+#endif // SDI_MODULE__H

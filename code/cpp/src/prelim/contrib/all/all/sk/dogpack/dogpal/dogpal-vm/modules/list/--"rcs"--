@@ -1,2 +1,8 @@
 
-#include "../rcs-module.h"
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/rcs-module.cxx"
+#else
+#include "../implementations/rcs-module.h"
+#endif
+
+

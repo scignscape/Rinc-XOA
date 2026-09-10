@@ -1,2 +1,6 @@
 
-#include "../sdi-module.h"
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/sdi-module.cxx"
+#else
+#include "../implementations/sdi-module.h"
+#endif

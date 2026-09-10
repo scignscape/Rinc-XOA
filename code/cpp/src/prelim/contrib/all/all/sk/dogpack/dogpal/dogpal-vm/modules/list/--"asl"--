@@ -1,2 +1,6 @@
 
-#include "../asl-module.h"
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/asl-module.cxx"
+#else
+#include "../implementations/asl-module.h"
+#endif

@@ -182,6 +182,10 @@
 #define MACRO_EXPAND_EVENS_16(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16) \
    X(a2) X(a4) X(a6) X(a8) X(a10) X(a12) x(a14) x(a16)
 
+#define MACRO_EXPAND_COUNT_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(8)
+
+#define _MACRO_EXPAND_COUNT(X, ...) \
+ _preproc_CONCAT(MACRO_EXPAND_COUNT_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
 
 #define _MACRO_EXPAND_PAIRED(X, ...) \
  _preproc_CONCAT(MACRO_EXPAND_PAIRED_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)

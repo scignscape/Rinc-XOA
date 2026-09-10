@@ -13,7 +13,7 @@
 #include "vm-reader.h"
 #include "vm-opstatement.h"
 
-#include "module-base.h"
+#include "../module-base.h"
 
 #include "otns.h"
 

@@ -21,6 +21,10 @@
 #define MODULE_LIST_LC_GET5(X) MODULE_LIST(X, EVENS_GET5)
 #define MODULE_LIST_LC_GET6(X) MODULE_LIST(X, EVENS_GET6)
 
+#define MODULE_LIST_COUNT(X) MODULE_LIST(X, COUNT)
+
+#define MODULE_INCLUDE(m) <modules/list/--#m-->
+#define MODULE_LIST_COUNT_INCLUDE(num) <modules/list/count/--#num-->
 
 
 #endif MODULE_MACROS__H

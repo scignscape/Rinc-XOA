@@ -8,13 +8,7 @@
 
 #include "vm-opmethods.h"
 
-
-#define MODULE_INCLUDE(m) <modules/list/--#m-->
-
-#include MODULE_LIST_LC_GET1(MODULE_INCLUDE)
-#include MODULE_LIST_LC_GET2(MODULE_INCLUDE)
-#include MODULE_LIST_LC_GET3(MODULE_INCLUDE)
-#include MODULE_LIST_LC_GET4(MODULE_INCLUDE)
+#include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
 
 
 #include "textio.h"
@@ -101,10 +95,14 @@ _Module_Base* VM_OpMethods::get_module_from_instruction(QString instr)
  QString module_code = instr.left(ix);
 
  static QMap<QString, _Module_Base*> modules_map {
-   {"asl", asl_module_},
-   {"rcs", rcs_module_},
-   {"sdi", sdi_module_},
-   {"tao", tao_module_},
+
+#define MODULE_MAP(x) {#x, x##_module##_},
+MODULE_LIST_LC(MODULE_MAP)
+
+//   {"asl", asl_module_},
+//   {"rcs", rcs_module_},
+//   {"sdi", sdi_module_},
+//   {"tao", tao_module_},
 
  };
 
@@ -112,184 +110,111 @@ _Module_Base* VM_OpMethods::get_module_from_instruction(QString instr)
 }
 
 
+// // //   This is the section where different modules' methods are declared for the VM.
+ //        The declaration files are repeatedly included with different macros defined
+ //        for different possible method signatures.
+#define MODULES_UNDER_DECLARATION
+
+#define get_method_COMMON \
+ module = get_module_from_instruction(instr); \
+ auto it = static_map.find(instr); \
+ if(it == static_map.end()) \
+   return nullptr; \
+ return *it; \
+
+
 VM_OpMethods::methods_x0 VM_OpMethods::get_method_x0(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_x0> static_map {
-#define METHODS_Empty 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_Empty
-
-//   {"tao-test-empty", (methods_x0) &TAO_Module::test_empty},
+  #define METHODS_Empty 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_Empty
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
+ get_method_COMMON
 }
 
-//primary-acc-cached $# 10 ;.
-//end-sentence $  ;.
-//primary-acc-spaces 8# 1 ;.
-//end-sentence $ . ;.
-//primary-acc $  All of the eligible bachelors in this town are married ;.
-//primary-acc-spaces 8# 3 ;.
-//leave-element $ exsGroup-list ;.
-//leave-subparagraph-with-continue ;.
 
 VM_OpMethods::methods_String VM_OpMethods::get_method_String(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_String> static_map {
-#define METHODS_String 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_String
+  #define METHODS_String 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_String
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
-
+ get_method_COMMON
 }
 
 VM_OpMethods::methods_StringList VM_OpMethods::get_method_StringList(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_StringList> static_map {
-#define METHODS_StringList 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_StringList
+  #define METHODS_StringList 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_StringList
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
-
+ get_method_COMMON
 }
 
 
 VM_OpMethods::methods_U4x1 VM_OpMethods::get_method_U4x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_U4x1> static_map {
-#define METHODS_U4x1 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_U4x1
+  #define METHODS_U4x1 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U4x1
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
-
+ get_method_COMMON
 }
 
 VM_OpMethods::methods_U2x1 VM_OpMethods::get_method_U2x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_U2x1> static_map {
-#define METHODS_U2x1 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_U2x1
+  #define METHODS_U2x1 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U2x1
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
-
+ get_method_COMMON
 }
 
 VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_N8x1> static_map {
-#define METHODS_N8x1 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_N8x1
-
-//?   {"sdi-new-sentence", (methods_U4x1) &SDI_Module::new_sentence}
+  #define METHODS_N8x1 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_N8x1
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
-
+ get_method_COMMON
 }
 
 
 VM_OpMethods::methods_U2x2 VM_OpMethods::get_method_U2x2(QString instr, _Module_Base*& module)
 {
  static QMap<QString, methods_U2x2> static_map {
-#define METHODS_U2x2 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_U2x2
+  #define METHODS_U2x2 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U2x2
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
+ get_method_COMMON
 }
 
 
 VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_Base*& module)
 {
  static QMap<QString, methods_U4x4> static_map {
-#define METHODS_U4x4 1
-#include "modules/asl-module.cxx"
-#include "modules/rcs-module.cxx"
-#include "modules/sdi-module.cxx"
-#include "modules/tao-module.cxx"
-#undef METHODS_U4x4
+  #define METHODS_U4x4 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U4x4
  };
 
- module = get_module_from_instruction(instr);
-
- auto it = static_map.find(instr);
- if(it == static_map.end())
-   return nullptr;
- return *it;
+ get_method_COMMON
 }
 
-//void ((VM_OpMethods::*get_method_x0)())(QString inst)
-//{
-// return nullptr;
-//}
-//void (VM_OpMethods::*get_method_String)() (QString inst);
-//void (VM_OpMethods::*get_method_U4x1)() (QString inst);
-//void (VM_OpMethods::*get_method_U4x4)() (QString inst);
+#undef MODULES_UNDER_DECLARATION
+
 

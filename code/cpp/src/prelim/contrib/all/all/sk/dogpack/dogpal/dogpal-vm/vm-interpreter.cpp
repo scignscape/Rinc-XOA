@@ -10,8 +10,8 @@
 
 #include "vm-opmethods.h"
 
-#include "modules/sdi-module.h"
-#include "modules/tao-module.h"
+//#include "modules/sdi-module.h"
+//#include "modules/tao-module.h"
 
 #include <functional>
 

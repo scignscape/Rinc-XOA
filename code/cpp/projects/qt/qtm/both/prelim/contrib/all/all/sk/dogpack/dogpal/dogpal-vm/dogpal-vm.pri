@@ -34,10 +34,10 @@ HEADERS += \
   $$SRC_DIR/vm-opstatement.h \
   $$SRC_DIR/modules/module-macros.h \
   $$SRC_DIR/modules/module-base.h \
-  $$SRC_DIR/modules/sdi-module.h \
-  $$SRC_DIR/modules/tao-module.h \
-  $$SRC_DIR/modules/asl-module.h \
-  $$SRC_DIR/modules/rcs-module.h \
+  $$SRC_DIR/modules/implementations/sdi-module.h \
+  $$SRC_DIR/modules/implementations/tao-module.h \
+  $$SRC_DIR/modules/implementations/asl-module.h \
+  $$SRC_DIR/modules/implementations/rcs-module.h \
 
 
 SOURCES += \
@@ -46,17 +46,17 @@ SOURCES += \
   $$SRC_DIR/vm-dispatcher.cpp \
   $$SRC_DIR/vm-reader.cpp \
   $$SRC_DIR/vm-opstatement.cpp \
-  $$SRC_DIR/modules/sdi-module.cpp \
-  $$SRC_DIR/modules/tao-module.cpp \
-  $$SRC_DIR/modules/asl-module.cpp \
-  $$SRC_DIR/modules/rcs-module.cpp \
+  $$SRC_DIR/modules/implementations/sdi-module.cpp \
+  $$SRC_DIR/modules/implementations/tao-module.cpp \
+  $$SRC_DIR/modules/implementations/asl-module.cpp \
+  $$SRC_DIR/modules/implementations/rcs-module.cpp \
 
 
 DISTFILES += \
-  $$SRC_DIR/modules/sdi-module.cxx \
-  $$SRC_DIR/modules/tao-module.cxx \
-  $$SRC_DIR/modules/asl-module.cxx \
-  $$SRC_DIR/modules/rcs-module.cxx \
+  $$SRC_DIR/modules/implementations/sdi-module.cxx \
+  $$SRC_DIR/modules/implementations/tao-module.cxx \
+  $$SRC_DIR/modules/implementations/asl-module.cxx \
+  $$SRC_DIR/modules/implementations/rcs-module.cxx \
 
 
 

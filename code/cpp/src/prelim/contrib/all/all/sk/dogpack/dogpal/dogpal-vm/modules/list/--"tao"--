@@ -1,2 +1,6 @@
 
-#include "../tao-module.h"
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/tao-module.cxx"
+#else
+#include "../implementations/tao-module.h"
+#endif
