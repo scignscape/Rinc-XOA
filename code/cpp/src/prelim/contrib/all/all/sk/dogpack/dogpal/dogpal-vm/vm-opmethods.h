@@ -28,12 +28,7 @@ OTNS_(DogPal)
 #define MODULE_LIST(X, ALT) _MACRO_EXPAND_ALT(X, ALT,\
   ASL, asl,  RCS, rcs, SDI, sdi, TAO, tao)
 
-#define MODULE_LIST_PAIRED(X) MODULE_LIST(X, PAIRED)
-#define MODULE_LIST_UC(X) MODULE_LIST(X, ODDS)
-#define MODULE_LIST_LC(X) MODULE_LIST(X, EVENS)
-#define MODULE_LIST_LC_INDEXED(X) MODULE_LIST(X, EVENS_INDEXED)
-#define MODULE_LIST_LC_INCLUDES(X) MODULE_LIST(X, EVENS_INCLUDES)
-
+#include "modules/module-macros.h"
 
 #define MODULE_CLASS_DECLARE(x) class x##_Module;
 MODULE_LIST_UC(MODULE_CLASS_DECLARE)
@@ -49,8 +44,8 @@ public:
 
  VM_OpMethods();
 
-#define MODULE_MEMBER(type, member) ACCESSORS(type##_Module* ,member##_module)
-MODULE_LIST_PAIRED(MODULE_MEMBER)
+#define MODULE_MEMBER_ACCESSORS(type, member) ACCESSORS(type##_Module* ,member##_module)
+MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
 
 // ACCESSORS(ASL_Module* ,asl_module)
 // ACCESSORS(RCS_Module* ,rcs_module)

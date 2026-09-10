@@ -32,6 +32,7 @@ HEADERS += \
   $$SRC_DIR/vm-dispatcher.h \
   $$SRC_DIR/vm-reader.h \
   $$SRC_DIR/vm-opstatement.h \
+  $$SRC_DIR/modules/module-macros.h \
   $$SRC_DIR/modules/module-base.h \
   $$SRC_DIR/modules/sdi-module.h \
   $$SRC_DIR/modules/tao-module.h \

@@ -8,16 +8,14 @@
 
 #include "vm-opmethods.h"
 
-#include "modules/asl-module.h"
-#include "modules/rcs-module.h"
-#include "modules/sdi-module.h"
-#include "modules/tao-module.h"
 
-#define MODULE_LIST_INCLUDE(m) "modules/m##-module.h"
+#define MODULE_INCLUDE(m) <modules/list/--#m-->
 
-//MODULE_LIST_LC_INCLUDES(MODULE_LIST_INCLUDE)
+#include MODULE_LIST_LC_GET1(MODULE_INCLUDE)
+#include MODULE_LIST_LC_GET2(MODULE_INCLUDE)
+#include MODULE_LIST_LC_GET3(MODULE_INCLUDE)
+#include MODULE_LIST_LC_GET4(MODULE_INCLUDE)
 
-//MACRO_EXPAND_EVENS_INCLUDES_8(MODULE_LIST_INCLUDE, ASL, asl,  RCS, rcs, SDI, sdi, TAO, tao)
 
 #include "textio.h"
 

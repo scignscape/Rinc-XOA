@@ -113,19 +113,24 @@
 #define MACRO_EXPAND_ODDS_2(X, a1, a2) X(a1)
 #define MACRO_EXPAND_EVENS_2(X, a1, a2) X(a2)
 #define MACRO_EXPAND_EVENS_INDEXED_2(X, a1, a2) X(1, a2)
-#define MACRO_EXPAND_EVENS_INCLUDES_2(X, a1, a2) #include X(a2)
+#define MACRO_EXPAND_EVENS_GET1_2(X, a1, a2) X(a2)
 
 #define MACRO_EXPAND_PAIRED_4(X, a1, a2, a3, a4) X(a1, a2) X(a3, a4)
 #define MACRO_EXPAND_PAIRED_INDEXED_4(X, a1, a2, a3, a4) X(1, a1, a2) X(2, a3, a4)
 #define MACRO_EXPAND_ODDS_4(X, a1, a2, a3, a4) X(a1) X(a3)
 #define MACRO_EXPAND_EVENS_4(X, a1, a2, a3, a4) X(a2) X(a4)
 #define MACRO_EXPAND_EVENS_INDEXED_4(X, a1, a2, a3, a4) X(1, a2) X(2, a4)
+#define MACRO_EXPAND_EVENS_GET1_4(X, a1, a2, a3, a4) X(a2)
+#define MACRO_EXPAND_EVENS_GET2_4(X, a1, a2, a3, a4) X(a4)
 
 #define MACRO_EXPAND_PAIRED_6(X, a1, a2, a3, a4, a5, a6) X(a1, a2) X(a3, a4) X(a5, a6)
 #define MACRO_EXPAND_PAIRED_INDEXED_6(X, a1, a2, a3, a4, a5, a6) X(1, a1, a2) X(2, a3, a4) X(3, a5, a6)
 #define MACRO_EXPAND_ODDS_6(X, a1, a2, a3, a4, a5, a6) X(a1) X(a3) X(a5)
 #define MACRO_EXPAND_EVENS_6(X, a1, a2, a3, a4, a5, a6) X(a2) X(a4) X(a6)
 #define MACRO_EXPAND_EVENS_INDEXED_6(X, a1, a2, a3, a4, a5, a6) X(1, a2) X(2, a4) X(3, a6)
+#define MACRO_EXPAND_EVENS_GET1_6(X, a1, a2, a3, a4, a5, a6) X(a2)
+#define MACRO_EXPAND_EVENS_GET2_6(X, a1, a2, a3, a4, a5, a6) X(a4)
+#define MACRO_EXPAND_EVENS_GET3_6(X, a1, a2, a3, a4, a5, a6) X(a6)
 
 #define MACRO_EXPAND_PAIRED_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a1, a2) X(a3, a4) X(a5, a6) X(a7, a8)
 #define MACRO_EXPAND_PAIRED_INDEXED_8(X, a1, a2, a3, a4, a5, a6, a7, a8) \
@@ -133,11 +138,21 @@
 #define MACRO_EXPAND_ODDS_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a1) X(a3) X(a5) X(a7)
 #define MACRO_EXPAND_EVENS_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a2) X(a4) X(a6) X(a8)
 #define MACRO_EXPAND_EVENS_INDEXED_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(1, a2) X(2, a4) X(3, a6) X(4, a8)
-#define MACRO_EXPAND_EVENS_INCLUDES_8(X, a1, a2) \
-#include X(a2) \
-#include X(a4) \
-#include X(a6) \
-#include X(a8) \
+#define MACRO_EXPAND_EVENS_GET1_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a2)
+#define MACRO_EXPAND_EVENS_GET2_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a4)
+#define MACRO_EXPAND_EVENS_GET3_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a6)
+#define MACRO_EXPAND_EVENS_GET4_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a8)
+
+//#define MACRO_EXPAND_EVENS_GET_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a2) \
+
+//#define MACRO_EXPAND_EVENS_GET_8_(X, num a1, a2, a3, a4, a5, a6, a7, a8) X(a2) \
+// MACRO_EXPAND_EVENS_GET_8_##num(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a2) \
+
+//#define MACRO_EXPAND_EVENS_GET_8(X, a1, a2) \
+//#include X(a2) \
+//#include X(a4) \
+//#include X(a6) \
+//#include X(a8) \
 
 #define MACRO_EXPAND_PAIRED_10(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10) \
    X(a1, a2) X(a3, a4) X(a5, a6) X(a7, a8) X(a9, a10)
@@ -183,8 +198,23 @@
 #define _MACRO_EXPAND_EVENS_INDEXED(X, ...) \
  _preproc_CONCAT(MACRO_EXPAND_EVENS_INDEXED_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
 
-#define _MACRO_EXPAND_EVENS_INCLUDES(X, ...) \
- _preproc_CONCAT(MACRO_EXPAND_EVENS_INCLUDES_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
+
+#define _MACRO_EXPAND_EVENS_GET1(X, ...) \
+ _preproc_CONCAT(MACRO_EXPAND_EVENS_GET1_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
+
+#define _MACRO_EXPAND_EVENS_GET2(X, ...) \
+ _preproc_CONCAT(MACRO_EXPAND_EVENS_GET2_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
+
+#define _MACRO_EXPAND_EVENS_GET3(X, ...) \
+ _preproc_CONCAT(MACRO_EXPAND_EVENS_GET3_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
+
+#define _MACRO_EXPAND_EVENS_GET4(X, ...) \
+ _preproc_CONCAT(MACRO_EXPAND_EVENS_GET4_, _preproc_NUM_ARGS(__VA_ARGS__))(X, __VA_ARGS__)
+
+
+#define _MACRO_EXPAND_EVENS_GET(X, num, ...) \
+ _preproc_CONCAT(_preproc_CONCAT(MACRO_EXPAND_EVENS_GET_, _preproc_NUM_ARGS(__VA_ARGS__)), num)\
+ (X, __VA_ARGS__)
 
 //#define MACRO_EXPAND_ALT_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(a1, a2) X(a3, a4) X(a5, a6) X(a7, a8)
 
