@@ -21,6 +21,12 @@ RCS_Module::RCS_Module()
 
 }
 
+void RCS_Module::global_baseline_skip(r8 val)
+{
+
+}
+
+
 void RCS_Module::file_name_shortcut(QString sc)
 {
 

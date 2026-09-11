@@ -191,6 +191,16 @@ VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_
  get_method_COMMON
 }
 
+VM_OpMethods::methods_R8x1 VM_OpMethods::get_method_R8x1(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_R8x1> static_map {
+  #define METHODS_R8x1 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_R8x1
+ };
+
+ get_method_COMMON
+}
 
 VM_OpMethods::methods_U2x2 VM_OpMethods::get_method_U2x2(QString instr, _Module_Base*& module)
 {

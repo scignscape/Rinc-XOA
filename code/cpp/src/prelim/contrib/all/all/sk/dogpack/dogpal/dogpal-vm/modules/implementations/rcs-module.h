@@ -27,6 +27,8 @@ public:
 
  RCS_Module();
 
+ void global_baseline_skip(r8 val);
+
  void file_name_shortcut(QString sc);
  void add_manifest_uris(QStringList paths);
  void first_name(QString name);

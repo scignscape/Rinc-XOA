@@ -14,6 +14,8 @@
    {"rcs-add-manifest-uris", (methods_StringList) &RCS_Module::add_manifest_uris},
 #elif METHODS_Empty
    {"rcs-single-author", (methods_x0) &RCS_Module::single_author},
+#elif METHODS_R8x1
+   {"rcs-global-baseline-skip", (methods_R8x1) &RCS_Module::global_baseline_skip},
 #endif
 
 

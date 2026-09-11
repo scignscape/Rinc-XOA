@@ -59,7 +59,7 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  _Module_Base* get_module_from_instruction(QString instr);
 
  enum class Signatures {
-   N_A, x0, String, StringList, U2x2, U4x1, U4x4, N8x1
+   N_A, x0, String, StringList, U2x2, U4x1, U4x4, N8x1, R8x1
  };
 
 // void sdi_new_sentence(u4 id);
@@ -75,6 +75,7 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  typedef void (_Module_Base::*methods_U4x1)(u4 arg);
  typedef void (_Module_Base::*methods_U2x1)(u2 arg);
  typedef void (_Module_Base::*methods_N8x1)(n8 arg);
+ typedef void (_Module_Base::*methods_R8x1)(r8 arg);
  typedef void (_Module_Base::*methods_U2x2)(u2 arg1, u2 arg2);
  typedef void (_Module_Base::*methods_U4x4)(u4 arg1, u4 arg2, u4 arg3, u4 arg4);
 
@@ -82,6 +83,7 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  typedef QPair<methods_String, QString> methods_String_opstatement_type;
  typedef QPair<methods_StringList, QStringList> methods_StringList_opstatement_type;
  typedef QPair<methods_N8x1, n8> methods_N8x1_opstatement_type;
+ typedef QPair<methods_R8x1, r8> methods_R8x1_opstatement_type;
  typedef QPair<methods_U4x1, u4> methods_U4x1_opstatement_type;
  typedef QPair<methods_U4x4, QVector<u4>> methods_U4x4_opstatement_type;
  typedef QPair<methods_U2x2, QVector<u2>> methods_U2x2_opstatement_type;
@@ -94,7 +96,8 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  static constexpr u1 methods_U2x2_StackCode = 5;
  static constexpr u1 methods_U4x1_StackCode = 6;
  static constexpr u1 methods_N8x1_StackCode = 7;
- static constexpr u1 methods_U4x4_StackCode = 8;
+ static constexpr u1 methods_R8x1_StackCode = 8;
+ static constexpr u1 methods_U4x4_StackCode = 9;
 
  methods_x0 get_method_x0(QString inst, _Module_Base*& module);
  methods_String get_method_String(QString inst, _Module_Base*& module);
@@ -102,6 +105,7 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  methods_U2x1 get_method_U2x1(QString inst, _Module_Base*& module);
  methods_U4x1 get_method_U4x1(QString inst, _Module_Base*& module);
  methods_N8x1 get_method_N8x1(QString inst, _Module_Base*& module);
+ methods_R8x1 get_method_R8x1(QString inst, _Module_Base*& module);
  methods_U2x2 get_method_U2x2(QString inst, _Module_Base*& module);
  methods_U4x4 get_method_U4x4(QString inst, _Module_Base*& module);
 
