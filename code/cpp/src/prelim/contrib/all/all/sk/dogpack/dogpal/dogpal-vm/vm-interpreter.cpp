@@ -108,7 +108,12 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
  {
   auto op_pair = (*(QVector<VM_OpMethods::methods_N8x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-//  (methods_.sdi_module()->*op_pair.first)(op_pair.second);
+   break;
+ }
+ case VM_OpMethods::methods_R8x1_StackCode:
+ {
+  auto op_pair = (*(QVector<VM_OpMethods::methods_R8x1_opstatement_type>*)pr.first)[pr.second];
+  std::invoke(op_pair.first, module, op_pair.second);
    break;
  }
  case VM_OpMethods::methods_U2x2_StackCode:
@@ -256,12 +261,20 @@ void VM_Interpreter::parse_x1(const VM_Opstatement& opst)
   encode_which_stack(VM_OpMethods::methods_U4x1_StackCode, module);
   break;
  }
- case VM_Opstatement::Mid_Control_Kinds::U8:
+ case VM_Opstatement::Mid_Control_Kinds::N8:
  {
   n8 arg = opst.param().toULongLong();
   VM_OpMethods::methods_N8x1 fn = methods_.get_method_N8x1(opst.instruction(), module);
   parse_fn(fn, opst, arg);
   encode_which_stack(VM_OpMethods::methods_N8x1_StackCode, module);
+  break;
+ }
+ case VM_Opstatement::Mid_Control_Kinds::R8:
+ {
+  r8 arg = opst.param().toDouble();
+  VM_OpMethods::methods_R8x1 fn = methods_.get_method_R8x1(opst.instruction(), module);
+  parse_fn(fn, opst, arg);
+  encode_which_stack(VM_OpMethods::methods_R8x1_StackCode, module);
   break;
  }
  default:

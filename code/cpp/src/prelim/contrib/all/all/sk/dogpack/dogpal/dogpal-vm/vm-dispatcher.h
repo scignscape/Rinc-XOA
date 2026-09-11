@@ -117,7 +117,7 @@ class VM_Dispatcher
  VECS_ARG(u1, U1)
  VECS_ARG(u2, U2)
  VECS_ARG(u4, U4)
- VECS_ARG(n8, U8)
+ VECS_ARG(n8, N8)
 
  VECS_ARG(s1, S1)
  VECS_ARG(s2, S2)
@@ -258,7 +258,7 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x0::_get_vector
   GET_VECTOR_CASE(U1, c) \
   GET_VECTOR_CASE(U2, c) \
   GET_VECTOR_CASE(U4, c) \
-  GET_VECTOR_CASE(U8, c) \
+  GET_VECTOR_CASE(N8, c) \
   GET_VECTOR_CASE(S1, c) \
   GET_VECTOR_CASE(S2, c) \
   GET_VECTOR_CASE(S4, c) \

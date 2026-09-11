@@ -24,7 +24,7 @@ class VM_Opstatement
 public:
 
  enum class Mid_Control_Kinds {
-     N_A, String, S1, S2, S4, S8, U1, U2, U4, U8, R4, R8, String_List, Cached_String
+     N_A, String, S1, S2, S4, S8, U1, U2, U4, N8, R4, R8, String_List, Cached_String
  };
 
  enum class Control_Coords {

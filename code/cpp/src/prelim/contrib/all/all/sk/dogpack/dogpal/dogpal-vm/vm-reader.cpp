@@ -234,7 +234,7 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
    {"1#", VM_Opstatement::Mid_Control_Kinds::U1},
    {"2#", VM_Opstatement::Mid_Control_Kinds::U2},
    {"4#", VM_Opstatement::Mid_Control_Kinds::U4},
-   {"8#", VM_Opstatement::Mid_Control_Kinds::U8},
+   {"8#", VM_Opstatement::Mid_Control_Kinds::N8},
    {"1-#", VM_Opstatement::Mid_Control_Kinds::S1},
    {"2-#", VM_Opstatement::Mid_Control_Kinds::S2},
    {"4-#", VM_Opstatement::Mid_Control_Kinds::S4},
