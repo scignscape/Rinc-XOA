@@ -1,4 +1,9 @@
 
+.; Generated on Fri Sep 11 00:30:46 2026 ;.
+
+=prog
+
+
 sdi-new-sentence 4# 0 ;.
 sdi-sentence--end-pos 4#/4 0 155 9 22 ;.
 sdi-sentence-end-punctuation $ . ;.
