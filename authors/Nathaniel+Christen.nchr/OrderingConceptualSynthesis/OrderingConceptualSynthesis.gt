@@ -42,7 +42,7 @@ these are quite meaningful:`fnm;
 %/ exs
 -%> \ifnum\presetStretch=2\vspace*{9pt}\else\fi
 (1)  My brother has been married for 10 years, but in many ways he's still a bachelor. !>
-(2)  All of the eligible bachelors in this town are married.
+(2)  All of the eligible bachelors in this town are married.  -%> `upAdj<14pt>;
 /+
 
 Moral of the story: just as, in a fair legal system, it should be assumed that 
@@ -1211,7 +1211,7 @@ The most common structure in such a language would be expressions consisting of 
 symbol and one or more "t/arguments/".  The */interpreter/* 
 that would execute programs written in the language is essentially 
 a state machine, reading a sequence of symbols 
-in turn.  Assume the following basic operations:   => -%> `upAdj<4pt>;
+in turn.  Assume the following basic operations:   => -%> `upAdj<6pt>;
 
 %/ enums
 
@@ -1237,7 +1237,7 @@ program stack.  Once the correct procedure is identified,
 transfer control to that function body (if compiled 
 correctly, the new callee will take its inputs off the 
 stack and push its own return values, which in turn 
-may serve as inputs to later subroutines). 
+may serve as inputs to later subroutines).  -%> `upAdj<9pt>; 
 /+
 
 For sake of discussion, I will call this a "t/push/transfer/" execution 
@@ -1831,9 +1831,9 @@ to sentences about referents that exist in multiple strata:
 
 %/ exs
 (1)  That newspaper [pointing to a table] just moved to 10th street 
-and laid off half its staff.
-(2)  At home you can print out this book from a ;/PDF/ link.
-(3)  The borough of Queens voted heavily for Mamdani.  -%> `vspace<2pt>;  
+and laid off half its staff.  -%> `vspace<1pt>;
+(2)  At home you can print out this book from a ;/PDF/ link.  -%> `upAdj<12pt>;
+(3)  The borough of Queens voted heavily for Mamdani.  -%> `upAdj<12pt>;  
 /+
 
 Also, apparent region violations drive many functional metaphors:

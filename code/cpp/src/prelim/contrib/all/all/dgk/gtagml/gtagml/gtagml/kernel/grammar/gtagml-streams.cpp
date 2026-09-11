@@ -159,7 +159,7 @@ void GTagML_Streams::enter_abstract()
 {
  xml_writer_.writeCharacters("\n\n");
  xml_writer_.writeStartElement("doc-abstract");
- latex_stream_ << "\n\n\\twocolumn[\\begin{docAbstract}\n";
+ latex_stream_ << "\n\n\\twocolumn[\\begin{docAbstract}\n\\:\\+";
 
  tao_enter_element("abstract");
 

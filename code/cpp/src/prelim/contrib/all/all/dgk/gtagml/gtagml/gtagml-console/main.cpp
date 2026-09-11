@@ -79,7 +79,11 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
  // gdoc->save_pregraph(path + ".pre.gtvm");
 
- gdoc->sdi_check(original_path + ".sentences.sdi", dirpath + "/4lr/" + bn + ".sdi.4lr", dirpath + "/4lr/" + bn + ".asl.4lr");
+ gdoc->sdi_check(original_path + ".sentences.sdi",
+   dirpath + "/out/" + bn + ".gt.sdi",
+   dirpath + "/4lr/" + bn + ".sdi.4lr",
+   dirpath + "/4lr/" + bn + ".asl.4lr",
+   dirpath + "/4lr/" + bn + ".psi.4lr");
 }
 
 void _main(QString file, QString folder, QString manfolder)
@@ -110,7 +114,7 @@ void _main(QString file, QString folder, QString manfolder)
 }
 
 
-int main(int argc, char *argv[])
+int main1(int argc, char *argv[])
 {
  QString path = ROOT_FOLDER "/../gt/OrderingConceptualSynthesis/OrderingConceptualSynthesis.gt";
 
@@ -124,11 +128,11 @@ int main(int argc, char *argv[])
  path = qfi.dir().absoluteFilePath(bn); // strip .gt
  QString dirpath = qfi.dir().absolutePath(); // strip .gt
 
- gdoc->sdi_check(original_path + ".sentences.sdi", dirpath + "/4lr/" + bn + ".sdi.4lr", dirpath + "/4lr/" + bn + ".asl.4lr");
+ //?gdoc->sdi_check(original_path + ".sentences.sdi", dirpath + "/4lr/" + bn + ".sdi.4lr", dirpath + "/4lr/" + bn + ".asl.4lr");
 
 }
 
-int main1(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
  QString folder;
  QString file;

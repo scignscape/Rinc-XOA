@@ -58,6 +58,7 @@
 \textcolor{sdi-show}{\sdi!paragraph-end-show}}
 
 
+
 \NewDocumentCommand{\sdi!sentence-between}{}{%
 \ifSdiShow\sdi!sentence-between-icon\fi%
 \sdi!write-sentence-between%
@@ -67,6 +68,12 @@
 \ifSdiShow\sdi!sentence-start-icon\fi%
 \sdi!write-sentence-start%
 \ignorespaces}
+
+%\newcommand{\sdi!sentence-start}{%
+%\ifSdiShow\sdi!sentence-start-icon\fi%
+%\sdi!write-sentence-start%
+%\ignorespaces}
+
 
 \NewDocumentCommand{\sdi!sentence-end}{}{%
 \ifSdiShow\sdi!sentence-end-icon\fi%
@@ -99,7 +106,8 @@
 \LetLtxMacro{\oldmmcolon}{\:}
 
 
-\SdiShowtrue
+%\SdiShowtrue
+\SdiShowfalse
 
 \renewcommand{\>}{\iftabng\oldtbgt\else\relax%
 \ifmmode\oldtbgt\else\sdi!sentence-between\fi\fi}

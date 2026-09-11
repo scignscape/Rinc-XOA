@@ -37,6 +37,7 @@ class Dummy_Class;
 class SDI_Sentence_Reader
 {
  QString sdi_sentences_file_;
+ QString sdi_aux_file_;
 
  QVector<SDI_Sentence> sdi_sentences_;
 
@@ -65,8 +66,9 @@ class SDI_Sentence_Reader
 
 public:
 
- SDI_Sentence_Reader(QString sdi_sentences_file);
+ SDI_Sentence_Reader(QString sdi_sentences_file, QString sdi_aux_file);
 
+ void parse_sdi(QString file);
  void parse_sdi();
 
  void sdi_check(QString gt_contents, QString out_path, QString asl_path);

@@ -18,8 +18,9 @@ USING_KANS(GTagML)
 
 
 
-SDI_Sentence_Reader::SDI_Sentence_Reader(QString sdi_sentences_file)
+SDI_Sentence_Reader::SDI_Sentence_Reader(QString sdi_sentences_file, QString sdi_aux_file)
   :  sdi_sentences_file_(sdi_sentences_file),
+     sdi_aux_file_(sdi_aux_file),
      current_sentence_(nullptr)
 {
 
@@ -217,11 +218,14 @@ void SDI_Sentence_Reader::read_Sentence_field(QString data, QStringList spl, QSt
  }
 }
 
-
-
 void SDI_Sentence_Reader::parse_sdi()
 {
- QString text = KA::TextIO::load_file(sdi_sentences_file_);
+ parse_sdi(sdi_sentences_file_);
+}
+
+void SDI_Sentence_Reader::parse_sdi(QString file)
+{
+ QString text = KA::TextIO::load_file(file);
 
  QStringList lines = text.split("\n");
 
@@ -279,11 +283,8 @@ void SDI_Sentence_Reader::parse_pipe_line(QString line)
 }
 
 
-void SDI_Sentence_Reader::sdi_check(QString gt_contents, QString out_path, QString asl_path)
+void SDI_Sentence_Reader::sdi_check(QString out_path, QString asl_path, QString psi_path)
 {
- qDebug() << "outpath = " << out_path;
- qDebug() << "aslpath = " << asl_path;
-
  parse_sdi();
 
  vm_writer_.finalize_avm();
