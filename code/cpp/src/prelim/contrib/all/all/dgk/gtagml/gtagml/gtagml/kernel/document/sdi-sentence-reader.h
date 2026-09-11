@@ -39,6 +39,8 @@ class SDI_Sentence_Reader
  QString sdi_sentences_file_;
  QString sdi_aux_file_;
 
+ QString aux_prefix_;
+
  QVector<SDI_Sentence> sdi_sentences_;
 
  SDI_Sentence* current_sentence_;
@@ -64,6 +66,9 @@ class SDI_Sentence_Reader
 
  void write_sentence_end();
 
+ static QString check_strip_pt(QString& text);
+ void check_write_dim(QString dim);
+
 public:
 
  SDI_Sentence_Reader(QString sdi_sentences_file, QString sdi_aux_file);
@@ -81,6 +86,8 @@ public:
  void parse_mini_line(QString line);
  void parse_pipe_line(QString line);
  void parse_dot_line(QString line);
+ void parse_plus_line(QString line);
+ void parse_aux_line(QString line);
  void parse_prelim_line(QString line);
  void parse_colon_line(QString field, QString data);
  void parse_numbers_line(QString field, QString data);

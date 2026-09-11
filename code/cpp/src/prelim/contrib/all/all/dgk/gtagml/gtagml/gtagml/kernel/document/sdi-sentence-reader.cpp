@@ -85,6 +85,43 @@ void SDI_Sentence_Reader::write_sentence_end()
 
 }
 
+QString SDI_Sentence_Reader::check_strip_pt(QString& text)
+{
+ QString result;
+ QStringList tests = {"pt"};
+
+ for(QString test : tests)
+ {
+  if(text.endsWith(test))
+  {
+   text.chop(test.size());
+   result = test;
+   break;
+  }
+ }
+ return result;
+}
+
+void SDI_Sentence_Reader::check_write_dim(QString dim)
+{
+ if(!dim.isEmpty())
+   vm_writer_.pvm_acc() << "psi-dim-" << dim << " ;.\n";
+}
+
+void SDI_Sentence_Reader::parse_plus_line(QString line)
+{
+ if(line.startsWith("+file"))
+   return;
+
+ line = line.mid(1);
+ QString pt = check_strip_pt(line);
+ check_write_dim(pt);
+
+ line.replace("  ", " 8% ");
+
+ vm_writer_.pvm_acc() << "psi-" << line << " ;.\n";
+}
+
 void SDI_Sentence_Reader::parse_colon_line(QString field, QString data)
 {
  if(field == "id")
@@ -104,6 +141,22 @@ void SDI_Sentence_Reader::parse_colon_line(QString field, QString data)
 
  read_field(field, data, ".");
 
+}
+
+void SDI_Sentence_Reader::parse_aux_line(QString line)
+{
+ QString pt = check_strip_pt(line);
+ check_write_dim(pt);
+
+ static QMap<QString, QString> static_map {
+  {"-b", "  $  "},
+  {"-x", "  8%  "},
+  {"-y", "  8%  "},
+ };
+
+ line.replace("  ", static_map.value(line.left(2), "  4#  "));
+
+ vm_writer_.pvm_acc() << "psi-aux-" << line << " ;.\n";
 }
 
 
@@ -221,6 +274,11 @@ void SDI_Sentence_Reader::read_Sentence_field(QString data, QStringList spl, QSt
 void SDI_Sentence_Reader::parse_sdi()
 {
  parse_sdi(sdi_sentences_file_);
+
+ aux_prefix_ = "psi";
+
+ parse_sdi(sdi_aux_file_);
+
 }
 
 void SDI_Sentence_Reader::parse_sdi(QString file)
@@ -237,9 +295,21 @@ void SDI_Sentence_Reader::parse_sdi(QString file)
    continue;
   }
 
+  if(line.startsWith("+"))
+  {
+   parse_plus_line(line);
+   continue;
+  }
+
   if(line.startsWith("---"))
   {
    parse_prelim_line(line);
+   continue;
+  }
+
+  if(!aux_prefix_.isEmpty())
+  {
+   parse_aux_line(line);
    continue;
   }
 
@@ -254,6 +324,7 @@ void SDI_Sentence_Reader::parse_sdi(QString file)
    parse_dot_line(line);
    continue;
   }
+
 
   QString* simpptr = nullptr;
   QString simp = line.simplified();
@@ -289,9 +360,11 @@ void SDI_Sentence_Reader::sdi_check(QString out_path, QString asl_path, QString 
 
  vm_writer_.finalize_avm();
  vm_writer_.finalize_svm();
+ vm_writer_.finalize_pvm();
 
  KA::TextIO::save_file(asl_path, vm_writer_.avm());
  KA::TextIO::save_file(out_path, vm_writer_.svm());
+ KA::TextIO::save_file(psi_path, vm_writer_.pvm());
 }
 
 

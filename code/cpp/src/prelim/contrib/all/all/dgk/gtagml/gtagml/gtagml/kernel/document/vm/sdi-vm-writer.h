@@ -36,6 +36,9 @@ class SDI_VM_Writer
  QString svm_;
  QTextStream svm_acc_;
 
+ QString pvm_;
+ QTextStream pvm_acc_;
+
  u4 current_atext_block_id_;
  u4 current_stext_block_id_;
 
@@ -46,6 +49,10 @@ public:
 
  ACCESSORS(QString ,svm)
  ACCESSORS(QString ,avm)
+ ACCESSORS(QString ,pvm)
+
+ ACCESSORS__RGET(QTextStream ,pvm_acc)
+
  ACCESSORS__GET(u4 ,current_atext_block_id)
  ACCESSORS__GET(u4 ,current_stext_block_id)
 
@@ -105,14 +112,24 @@ public:
 
  void write_text_block(QString contents, u1 mask);
 
+ void finalize_vm(QTextStream& qts)
+ {
+  qts << "\n\n=done\n\n";
+ }
+
+ void finalize_pvm()
+ {
+  finalize_vm(pvm_acc_);
+ }
+
  void finalize_svm()
  {
-  svm_acc_ << "\n\n=done\n\n";
+  finalize_vm(svm_acc_);
  }
 
  void finalize_avm()
  {
-  avm_acc_ << "\n\n=done\n\n";
+  finalize_vm(avm_acc_);
  }
 
 };

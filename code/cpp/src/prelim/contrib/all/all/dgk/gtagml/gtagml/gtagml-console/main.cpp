@@ -72,7 +72,7 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
  gdoc->rcs_file_name_shortcut(bn);
  gdoc->rcs_add_manifest_uris({"$.tao.4lr", "$.sdi.4lr",
-   "$.asl.4lr", "$.rcs.4lr"});
+   "$.asl.4lr", "$.rcs.4lr", "$.psi.4lr"});
 
  gdoc->finalize_rcs();
  gdoc->save_rcs(dirpath + "/4lr/" + bn + ".rcs.4lr");
@@ -114,7 +114,7 @@ void _main(QString file, QString folder, QString manfolder)
 }
 
 
-int main1(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
  QString path = ROOT_FOLDER "/../gt/OrderingConceptualSynthesis/OrderingConceptualSynthesis.gt";
 
@@ -128,11 +128,15 @@ int main1(int argc, char *argv[])
  path = qfi.dir().absoluteFilePath(bn); // strip .gt
  QString dirpath = qfi.dir().absolutePath(); // strip .gt
 
- //?gdoc->sdi_check(original_path + ".sentences.sdi", dirpath + "/4lr/" + bn + ".sdi.4lr", dirpath + "/4lr/" + bn + ".asl.4lr");
+ gdoc->sdi_check(original_path + ".sentences.sdi",
+   dirpath + "/out/" + bn + ".gt.sdi",
+   dirpath + "/4lr/" + bn + ".sdi.4lr",
+   dirpath + "/4lr/" + bn + ".asl.4lr",
+   dirpath + "/4lr/" + bn + ".psi.4lr");
 
 }
 
-int main(int argc, char *argv[])
+int main1(int argc, char *argv[])
 {
  QString folder;
  QString file;

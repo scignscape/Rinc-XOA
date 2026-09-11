@@ -11,15 +11,37 @@
 #include <QFile>
 #include <QTextStream>
 
+#include <QDateTime>
+
+
 #include "kans.h"
 
 USING_KANS(GTagML)
 
 
 SDI_VM_Writer::SDI_VM_Writer()
-  :  svm_acc_(&svm_), avm_acc_(&avm_), current_stext_block_id_(0),
+  :  svm_acc_(&svm_), avm_acc_(&avm_), pvm_acc_(&pvm_),
+     current_stext_block_id_(0),
      current_atext_block_id_(0)
 {
+ auto init_stream = [](QTextStream& acc)
+ {
+  acc << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
+              << "=prog\n\n";
+ };
+
+ init_stream(svm_acc_);
+ init_stream(avm_acc_);
+ init_stream(pvm_acc_);
+
+// svm_acc_ << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
+//             << "=prog\n\n";
+
+// avm_acc_ << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
+//             << "=prog\n\n";
+
+// pvm_acc_ << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
+//             << "=prog\n\n";
 }
 
 void SDI_VM_Writer::write_text_block(QString contents, u1 mask)
