@@ -1,0 +1,6 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/psi-module.cxx"
+#else
+#include "../implementations/psi-module.h"
+#endif

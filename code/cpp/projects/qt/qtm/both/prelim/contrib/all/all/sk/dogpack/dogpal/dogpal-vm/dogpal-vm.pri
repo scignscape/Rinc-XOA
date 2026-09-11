@@ -38,6 +38,7 @@ HEADERS += \
   $$SRC_DIR/modules/implementations/tao-module.h \
   $$SRC_DIR/modules/implementations/asl-module.h \
   $$SRC_DIR/modules/implementations/rcs-module.h \
+  $$SRC_DIR/modules/implementations/psi-module.h \
 
 
 SOURCES += \
@@ -50,6 +51,7 @@ SOURCES += \
   $$SRC_DIR/modules/implementations/tao-module.cpp \
   $$SRC_DIR/modules/implementations/asl-module.cpp \
   $$SRC_DIR/modules/implementations/rcs-module.cpp \
+  $$SRC_DIR/modules/implementations/psi-module.cpp \
 
 
 DISTFILES += \
@@ -57,6 +59,7 @@ DISTFILES += \
   $$SRC_DIR/modules/implementations/tao-module.cxx \
   $$SRC_DIR/modules/implementations/asl-module.cxx \
   $$SRC_DIR/modules/implementations/rcs-module.cxx \
+  $$SRC_DIR/modules/implementations/psi-module.cxx \
 
 
 

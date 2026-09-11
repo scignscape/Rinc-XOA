@@ -26,7 +26,7 @@ OTNS_(DogPal)
 //#define MODULE_LIST_LC(X) _MACRO_EXPAND(X, asl, rcs, sdi, tao)
 
 #define MODULE_LIST(X, ALT) _MACRO_EXPAND_ALT(X, ALT,\
-  ASL, asl,  RCS, rcs, SDI, sdi, TAO, tao)
+  ASL, asl,  PSI, psi,  RCS, rcs,  SDI, sdi,  TAO, tao)
 
 #include "modules/module-macros.h"
 

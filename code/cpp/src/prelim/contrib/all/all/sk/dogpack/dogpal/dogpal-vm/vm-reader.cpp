@@ -239,6 +239,8 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
    {"2-#", VM_Opstatement::Mid_Control_Kinds::S2},
    {"4-#", VM_Opstatement::Mid_Control_Kinds::S4},
    {"8-#", VM_Opstatement::Mid_Control_Kinds::S8},
+   {"4%", VM_Opstatement::Mid_Control_Kinds::R4},
+   {"8%", VM_Opstatement::Mid_Control_Kinds::R8},
 
  };
 
@@ -288,7 +290,7 @@ u4 VM_Reader::advance_past_mid_control(VM_Opstatement::Mid_Control_Kinds& mck, V
     {
      cc = VM_Opstatement::Control_Coords::List;
     }
-    else if(control[1] == "#")
+    else if(control[1] == "#" || control[1] == "%")
       cc = VM_Opstatement::Control_Coords::x1;
    }
   }
