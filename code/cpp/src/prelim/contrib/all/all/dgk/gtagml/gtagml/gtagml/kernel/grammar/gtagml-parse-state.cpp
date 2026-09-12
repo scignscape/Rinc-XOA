@@ -34,11 +34,10 @@ GTagML_Parse_State::GTagML_Parse_State(GTagML_Graph& g, GTagML_Document_Info& do
  : Flags(0), markup_position_(g.root_node()), acc_mode_(Acc_Mode::Main_Tile), document_info_(document_info),
    current_parsing_mode_(GTagML_Parsing_Modes::GTagML), //?current_annotation_tile_(nullptr),
    parser_(nullptr), tile_acc_length_adjustment_(0), end_subparagraph_pos_marker_(0),
+   spar_start_pos_marker_(0), sentence_start_pos_marker_(0),
    tile_acc_qts_(&tile_acc_), string_literal_acc_qts_(&string_literal_acc_),
    current_raw_format_("latex"), held_semantic_mark_mode_(0)
-
    ,streams_(this)
-
    ,current_exs_group_number_(0)
    ,current_exs_number_(0)
    ,current_exs_offset_(0)
@@ -407,7 +406,8 @@ void GTagML_Parse_State::primary_acc(QString text)
    flags.await_paragraph_start = false;
    if(flags.use_latex_sdi_all_markers || flags.use_latex_sdi_paragraph_markers)
      if(!flags.suppress_sdi)
-       streams_.latex("\\:");
+       write_latex_start_paragraph_mark();
+       //?streams_.latex("\\:");
 
    ++paragraph_id_;
 
@@ -424,7 +424,15 @@ void GTagML_Parse_State::primary_acc(QString text)
    flags.await_sentence_start = false;
    if(flags.use_latex_sdi_all_markers)
      if(!flags.suppress_sdi)
-       streams_.latex("\\+");
+     {
+      if(sentence_start_pos_marker_ == 0)
+        streams_.latex("\\+");
+      else
+      {
+       streams_.latex_insert(sentence_start_pos_marker_, "\\+");
+       sentence_start_pos_marker_ = 0;
+      }
+     }
 
    ++sentence_id_;
 
@@ -436,6 +444,11 @@ void GTagML_Parse_State::primary_acc(QString text)
  }
 
  streams_.primary(text);
+}
+
+void GTagML_Parse_State::force_spar_start()
+{
+ spar_start_pos_marker_ = streams_.latex_text().size() - 1;
 }
 
 void GTagML_Parse_State::reset_primary()
@@ -1220,6 +1233,18 @@ void GTagML_Parse_State::enter_auto_paragraph_mode()
 {
  set_paragraph_bridge();
  parse_context_.flags.auto_paragraph_mode = true;
+}
+
+void GTagML_Parse_State::write_latex_start_paragraph_mark()
+{
+ if(spar_start_pos_marker_ == 0)
+   streams_.latex_stream() << "\\:";
+ else
+ {
+  streams_.latex_insert(spar_start_pos_marker_ + 1, "\\:");
+  sentence_start_pos_marker_ = spar_start_pos_marker_ + 3;
+  spar_start_pos_marker_ = 0;
+ }
 }
 
 void GTagML_Parse_State::write_latex_end_sentence_mark()

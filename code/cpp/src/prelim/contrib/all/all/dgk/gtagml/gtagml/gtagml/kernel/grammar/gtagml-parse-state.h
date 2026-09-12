@@ -256,8 +256,14 @@ class GTagML_Parse_State
  QString GT_item_;
 
  u4 end_subparagraph_pos_marker_;
+ u4 spar_start_pos_marker_;
+ u4 sentence_start_pos_marker_;
+
+
 
  void write_latex_end_sentence_mark();
+ void write_latex_start_paragraph_mark();
+ void write_latex_start_sentence_mark();
 
 public:
 
@@ -426,6 +432,8 @@ public:
 
  void primary_acc(QString text);
  void reset_primary();
+
+ void force_spar_start();
 
  QString primary_text()
  {

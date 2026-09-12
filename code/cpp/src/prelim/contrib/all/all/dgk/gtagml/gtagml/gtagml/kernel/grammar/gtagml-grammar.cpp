@@ -111,6 +111,10 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
   {
    parse_state.spar_end_here();
   }
+  else if(m == "force-spar-start")
+  {
+   parse_state.force_spar_start();
+  }
  });
 
 // add_rule( gtagml_context, "unsuppress-sdi",
