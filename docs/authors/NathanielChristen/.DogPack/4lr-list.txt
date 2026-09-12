@@ -1,10 +1,13 @@
 
+@ = https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen
 
-Aggregate Sentence Lens:  OrderingConceptualSynthesis.asl.4lr
-PDF Search Infoset:  OrderingConceptualSynthesis.psi.4lr
-RO-Crate Subprofiles:  OrderingConceptualSynthesis.rcs.4lr
-Semantic Document Infoset:  OrderingConceptualSynthesis.sdi.4lr
-TAGML Opcodes:  OrderingConceptualSynthesis.tao.4lr
+@/$ = @/.DogPack/OrderingConceptualSynthesis
+
+Aggregate Sentence Lens:  @/$.asl.4lr
+PDF Search Infoset:  @/$.psi.4lr
+RO-Crate Subprofiles:  @/$.rcs.4lr
+Semantic Document Infoset:  @/$.sdi.4lr
+TAGML Opcodes:  @/$.tao.4lr
 
 
 
