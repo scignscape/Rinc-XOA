@@ -92,6 +92,30 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 //  parse_state.prepare_end_document();
 // });
 
+ add_rule( gtagml_context, "suppress-sdi",
+   " <!%(?<pre>[+-])(?<main>[\\w/]+)%!> "
+   ,[&]
+ {
+  QString pre = p.matched("pre");
+  QString m = p.matched("main");
+  if(pre == "-" && m == "sdi")
+    parse_state.suppress_sdi();
+  else if(pre == "+")
+  {
+   if(m == "sdi")
+     parse_state.unsuppress_sdi();
+   else if(m == "p/sdi")
+     parse_state.unsuppress_sdi_after_paragraph();
+  }
+ });
+
+// add_rule( gtagml_context, "unsuppress-sdi",
+//   " !%\\+sdi%! "
+//   ,[&]
+// {
+//  parse_state.unsuppress_sdi();
+// });
+
  add_rule( gtagml_context, "ell-3-plain",
    " ![.]{3}! "
    ,[&]

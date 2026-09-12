@@ -66,6 +66,8 @@ class GTagML_Parse_State
   bool in_ql:1;
   bool suppress_sentence_switch_marker:1;
   bool postpone_sentence_switch_marker:1;
+  bool suppress_sdi:1;
+  bool unsuppress_sdi_after_paragraph:1;
  _flags
 
  enum class Acc_Mode {
@@ -266,6 +268,22 @@ public:
  ACCESSORS(u4 ,sentence_id)
 
  void init(GTagML_Parser* parser);
+
+ void suppress_sdi()
+ {
+  flags.suppress_sdi = true;
+ }
+
+ void unsuppress_sdi()
+ {
+  flags.suppress_sdi = false;
+ }
+
+ void unsuppress_sdi_after_paragraph()
+ {
+  flags.suppress_sdi = false;
+  flags.unsuppress_sdi_after_paragraph = true;
+ }
 
  QString current_paragraph_type_to_string()
  {

@@ -375,16 +375,18 @@ void GTagML_Parse_State::primary_acc(QString text)
    if(flags.use_latex_sdi_all_markers)
    {
     if(!had_suppress_sentence_switch_marker)
-      streams_.latex(" \\> ");
+      if(!flags.suppress_sdi)
+        streams_.latex(" \\> ");
    }
 
    ++sentence_id_;
 
    if(!had_suppress_sentence_switch_marker)
-     streams_.sentences_sdi_stream() << "\n\n--- Sentence/switch\nid: "
-       << sentence_id_ << "\nr#  "
-       << document_info_.line_and_column_string(parser_->current_position())
-       << "\n";
+     if(!flags.suppress_sdi)
+       streams_.sentences_sdi_stream() << "\n\n--- Sentence/switch\nid: "
+         << sentence_id_ << "\nr#  "
+         << document_info_.line_and_column_string(parser_->current_position())
+         << "\n";
 
    if(text.startsWith(" "))
      text.chop(1);
@@ -398,13 +400,16 @@ void GTagML_Parse_State::primary_acc(QString text)
   {
    flags.await_paragraph_start = false;
    if(flags.use_latex_sdi_all_markers || flags.use_latex_sdi_paragraph_markers)
-     streams_.latex("\\:");
+     if(!flags.suppress_sdi)
+       streams_.latex("\\:");
 
    ++paragraph_id_;
-   streams_.sentences_sdi_stream() << "\n\n--- Paragraph/start\nid: " << paragraph_id_
-     << "\nr#  "
-     << document_info_.line_and_column_string(parser_->current_position())
-     << "\n";
+
+   if(!flags.suppress_sdi)
+     streams_.sentences_sdi_stream() << "\n\n--- Paragraph/start\nid: " << paragraph_id_
+       << "\nr#  "
+       << document_info_.line_and_column_string(parser_->current_position())
+       << "\n";
 
   }
 
@@ -412,12 +417,15 @@ void GTagML_Parse_State::primary_acc(QString text)
   {
    flags.await_sentence_start = false;
    if(flags.use_latex_sdi_all_markers)
-     streams_.latex("\\+");
+     if(!flags.suppress_sdi)
+       streams_.latex("\\+");
 
    ++sentence_id_;
-   streams_.sentences_sdi_stream() << "\n\n--- Sentence/start\nid: " << sentence_id_
-     << "\nr#  "
-     << document_info_.line_and_column_string(parser_->current_position());
+
+   if(!flags.suppress_sdi)
+     streams_.sentences_sdi_stream() << "\n\n--- Sentence/start\nid: " << sentence_id_
+       << "\nr#  "
+       << document_info_.line_and_column_string(parser_->current_position());
   }
  }
 
@@ -655,7 +663,8 @@ void GTagML_Parse_State::force_end_sentence_mark(QString follow)
 {
  streams_.tao_empty_instr("force-end-sentence");
 
- streams_.latex_stream() << "\\<";
+ if(!flags.suppress_sdi)
+   streams_.latex_stream() << "\\<";
 
 // if(follow == ";")
 // {
@@ -747,7 +756,8 @@ void GTagML_Parse_State::end_sentence(QString punctuation,
 {
  flags.just_ended_sentence = true;
 
- streams_.tao_string_instr("end-sentence").tao_end(punctuation);
+//? if(!flags.suppress_sdi)
+   streams_.tao_string_instr("end-sentence").tao_end(punctuation);
 
 
  if(nesting_codes_by_depth_.contains(sentence_nesting_depth_))
@@ -760,36 +770,42 @@ void GTagML_Parse_State::end_sentence(QString punctuation,
 
  reset_primary();
 
- streams_.sentences_sdi_stream() << "\n\n--- Sentence//end";
-
- streams_.sentences_sdi_stream() << "\nid: " << sentence_id_;
-
- streams_.sentences_sdi_stream() << "\nr#  " <<
-   document_info_.line_and_column_string(parser_->current_position());
-
- if(!sentence_gaps_.isEmpty())
+ if(!flags.suppress_sdi)
  {
-  streams_.sentences_sdi_stream() << "\ng. " << sentence_gaps_to_string();
-  sentence_gaps_.clear();
+  streams_.sentences_sdi_stream() << "\n\n--- Sentence//end";
+
+  streams_.sentences_sdi_stream() << "\nid: " << sentence_id_;
+
+  streams_.sentences_sdi_stream() << "\nr#  " <<
+    document_info_.line_and_column_string(parser_->current_position());
+
+  if(!sentence_gaps_.isEmpty())
+  {
+   streams_.sentences_sdi_stream() << "\ng. " << sentence_gaps_to_string();
+   sentence_gaps_.clear();
+  }
+
+  streams_.sentences_sdi_stream() << "\np: " << punctuation;
+
+  u1 nc = sentence_nesting_depth_;
+
+  if(nesting_code != Nesting_Codes::Signal_Default)
+    nc |= nesting_code;
+
+  if(nc != 1)
+    streams_.sentences_sdi_stream() << "\nN: " << nc;
+
+  if(!flags.suppress_sdi)
+  {
+   for(auto pr : supplements)
+   {
+    streams_.sentences_sdi_stream() << "\n" << pr.first << ": "
+      << pr.second;
+   }
+
+   streams_.sentences_sdi_stream() << "\nt. " << sentences_text_to_string() << "\n";
+  }
  }
-
- streams_.sentences_sdi_stream() << "\np: " << punctuation;
-
- u1 nc = sentence_nesting_depth_;
-
- if(nesting_code != Nesting_Codes::Signal_Default)
-   nc |= nesting_code;
-
- if(nc != 1)
-   streams_.sentences_sdi_stream() << "\nN: " << nc;
-
- for(auto pr : supplements)
- {
-  streams_.sentences_sdi_stream() << "\n" << pr.first << ": "
-    << pr.second;
- }
-
- streams_.sentences_sdi_stream() << "\nt. " << sentences_text_to_string() << "\n";
 
  sentences_text_.clear();
 
@@ -1218,17 +1234,20 @@ void GTagML_Parse_State::close_paragraph()
 
  if(flags.just_ended_sentence)
  {
-  if(flags.use_latex_sdi_all_markers)
-    streams_.latex_stream() << "\\<";
-
-  streams_.sentences_sdi_stream() << "\n--- Sentence/end \nid: "
-    << sentence_id_ << "\nr#  "
-    << line_and_column_string() << "\n";
-
-  if(!sentence_gaps_.isEmpty())
+  if(!flags.suppress_sdi)
   {
-   streams_.sentences_sdi_stream() << "g. " << sentence_gaps_to_string() << "\n";
-   sentence_gaps_.clear();
+   if(flags.use_latex_sdi_all_markers)
+     streams_.latex_stream() << "\\<";
+
+   streams_.sentences_sdi_stream() << "\n--- Sentence/end \nid: "
+     << sentence_id_ << "\nr#  "
+     << line_and_column_string() << "\n";
+
+   if(!sentence_gaps_.isEmpty())
+   {
+    streams_.sentences_sdi_stream() << "g. " << sentence_gaps_to_string() << "\n";
+    sentence_gaps_.clear();
+   }
   }
  }
 
@@ -1236,14 +1255,24 @@ void GTagML_Parse_State::close_paragraph()
  {
   if(flags.postpone_sentence_switch_marker)
   {
-   streams_.latex_stream() << "\\<";
+   if(!flags.suppress_sdi)
+     streams_.latex_stream() << "\\<";
    flags.postpone_sentence_switch_marker = false;
   }
-  streams_.latex_stream() << "\\;";
+  if(!flags.suppress_sdi)
+  {
+   if(flags.unsuppress_sdi_after_paragraph)
+     flags.unsuppress_sdi_after_paragraph = false;
+   else
+     streams_.latex_stream() << "\\;";
+  }
  }
 
- streams_.sentences_sdi_stream() << "\n--- Paragraph/end \nid: " << paragraph_id_
-   << "\ny: " << current_paragraph_type_to_string() << "\n";
+ if(!flags.suppress_sdi)
+ {
+  streams_.sentences_sdi_stream() << "\n--- Paragraph/end \nid: " << paragraph_id_
+    << "\ny: " << current_paragraph_type_to_string() << "\n";
+ }
 
  if(current_paragraph_type_ == Paragraph_Types::Abstract)
  {
