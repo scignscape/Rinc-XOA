@@ -33,7 +33,7 @@ USING_KANS(GTagML)
 GTagML_Parse_State::GTagML_Parse_State(GTagML_Graph& g, GTagML_Document_Info& document_info)
  : Flags(0), markup_position_(g.root_node()), acc_mode_(Acc_Mode::Main_Tile), document_info_(document_info),
    current_parsing_mode_(GTagML_Parsing_Modes::GTagML), //?current_annotation_tile_(nullptr),
-   parser_(nullptr), tile_acc_length_adjustment_(0),
+   parser_(nullptr), tile_acc_length_adjustment_(0), end_subparagraph_pos_marker_(0),
    tile_acc_qts_(&tile_acc_), string_literal_acc_qts_(&string_literal_acc_),
    current_raw_format_("latex"), held_semantic_mark_mode_(0)
 
@@ -398,6 +398,12 @@ void GTagML_Parse_State::primary_acc(QString text)
  {
   if(flags.await_paragraph_start)
   {
+   if(flags.active_spar_end_here)
+   {
+    flags.active_spar_end_here = false;
+    flags.suppress_sdi = false;
+   }
+
    flags.await_paragraph_start = false;
    if(flags.use_latex_sdi_all_markers || flags.use_latex_sdi_paragraph_markers)
      if(!flags.suppress_sdi)
@@ -664,7 +670,7 @@ void GTagML_Parse_State::force_end_sentence_mark(QString follow)
  streams_.tao_empty_instr("force-end-sentence");
 
  if(!flags.suppress_sdi)
-   streams_.latex_stream() << "\\<";
+   write_latex_end_sentence_mark();
 
 // if(follow == ";")
 // {
@@ -1216,6 +1222,14 @@ void GTagML_Parse_State::enter_auto_paragraph_mode()
  parse_context_.flags.auto_paragraph_mode = true;
 }
 
+void GTagML_Parse_State::write_latex_end_sentence_mark()
+{
+ if(end_subparagraph_pos_marker_ == 0)
+   streams_.latex_stream() << "\\<";
+ else
+   streams_.latex_insert(end_subparagraph_pos_marker_, "\\<");
+}
+
 void GTagML_Parse_State::close_paragraph()
 {
  if(flags.in_pa_1)
@@ -1237,7 +1251,7 @@ void GTagML_Parse_State::close_paragraph()
   if(!flags.suppress_sdi)
   {
    if(flags.use_latex_sdi_all_markers)
-     streams_.latex_stream() << "\\<";
+     write_latex_end_sentence_mark();
 
    streams_.sentences_sdi_stream() << "\n--- Sentence/end \nid: "
      << sentence_id_ << "\nr#  "
@@ -1256,15 +1270,20 @@ void GTagML_Parse_State::close_paragraph()
   if(flags.postpone_sentence_switch_marker)
   {
    if(!flags.suppress_sdi)
-     streams_.latex_stream() << "\\<";
+     write_latex_end_sentence_mark();
    flags.postpone_sentence_switch_marker = false;
   }
   if(!flags.suppress_sdi)
   {
    if(flags.unsuppress_sdi_after_paragraph)
      flags.unsuppress_sdi_after_paragraph = false;
-   else
+   else if(end_subparagraph_pos_marker_ == 0)
      streams_.latex_stream() << "\\;";
+   else
+   {
+    streams_.latex_insert(end_subparagraph_pos_marker_, "\\;");
+    end_subparagraph_pos_marker_ = 0;
+   }
   }
  }
 
@@ -1293,6 +1312,14 @@ void GTagML_Parse_State::close_paragraph()
 
  flags.just_ended_sentence = false;
 }
+
+void GTagML_Parse_State::spar_end_here()
+{
+ streams_.latex_stream() << "\\<\\;";
+ flags.active_spar_end_here = true;
+ flags.suppress_sdi = true;
+}
+
 
 void GTagML_Parse_State::check_close_paragraph()
 {
@@ -1569,6 +1596,8 @@ void GTagML_Parse_State::leave_subparagraph_with_continue()
 
 void GTagML_Parse_State::single_slash_line_plus()
 {
+ end_subparagraph_pos_marker_ = 0;
+
  single_slash_line();
 
  leave_subparagraph_with_continue();
@@ -1625,6 +1654,7 @@ void GTagML_Parse_State::single_slash_line()
 
  else if(parse_context_.flags.read_bulleted_items)
  {
+  end_subparagraph_pos_marker_ = streams_.latex_text().size() - 1;
   streams_.latex_stream() << "\n\\end{itemz}\n";
   parse_context_.flags.read_bulleted_items = false;
   parse_context_.flags.ignore_blank_lines = false;

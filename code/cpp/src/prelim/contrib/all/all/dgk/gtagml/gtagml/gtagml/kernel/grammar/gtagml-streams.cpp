@@ -57,6 +57,11 @@ void GTagML_Streams::init()
 // xml_writer_.setDevice(&jats_stream_);
 }
 
+void GTagML_Streams::latex_insert(u4 pos, QString content)
+{
+ latex_.insert(pos, content);
+}
+
 void GTagML_Streams::latex(QString text)
 {
  latex_stream_ << text;

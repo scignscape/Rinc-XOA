@@ -77,6 +77,8 @@ class GTagML_Streams
  ACCESSORS__RGET(QXmlStreamWriter ,xml_writer)
  ACCESSORS__RGET(QString ,primary_acc)
 
+ void latex_insert(u4 pos, QString content);
+
  QString latex_text()
  {
   return latex_;

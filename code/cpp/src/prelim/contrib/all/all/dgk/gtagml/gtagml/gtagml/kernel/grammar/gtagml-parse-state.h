@@ -68,6 +68,7 @@ class GTagML_Parse_State
   bool postpone_sentence_switch_marker:1;
   bool suppress_sdi:1;
   bool unsuppress_sdi_after_paragraph:1;
+  bool active_spar_end_here:1;
  _flags
 
  enum class Acc_Mode {
@@ -254,6 +255,10 @@ class GTagML_Parse_State
 
  QString GT_item_;
 
+ u4 end_subparagraph_pos_marker_;
+
+ void write_latex_end_sentence_mark();
+
 public:
 
 
@@ -284,6 +289,8 @@ public:
   flags.suppress_sdi = false;
   flags.unsuppress_sdi_after_paragraph = true;
  }
+
+ void spar_end_here();
 
  QString current_paragraph_type_to_string()
  {

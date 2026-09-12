@@ -93,7 +93,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
 // });
 
  add_rule( gtagml_context, "suppress-sdi",
-   " <!%(?<pre>[+-])(?<main>[\\w/]+)%!> "
+   " <!%(?<pre>[+-]?)(?<main>[\\w/-]+)%!> "
    ,[&]
  {
   QString pre = p.matched("pre");
@@ -106,6 +106,10 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Parse_State&
      parse_state.unsuppress_sdi();
    else if(m == "p/sdi")
      parse_state.unsuppress_sdi_after_paragraph();
+  }
+  else if(m == "spar-end-here")
+  {
+   parse_state.spar_end_here();
   }
  });
 
