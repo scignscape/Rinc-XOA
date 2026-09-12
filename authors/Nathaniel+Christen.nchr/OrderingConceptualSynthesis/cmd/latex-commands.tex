@@ -503,6 +503,9 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 \newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
+\ifnum\value{mpcode} = 21
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else
 \ifnum\value{mpcode} = 35
 \clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
 \else
@@ -529,7 +532,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
 \else%
 \clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
-\fi\fi\fi\fi\fi\fi%
+\fi\fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
 
