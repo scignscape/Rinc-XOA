@@ -14,19 +14,19 @@
    "@type": "Dataset",
    "@hasPart": [
     {
-     "@id": "asl.4lr",
+     "@id": "asl.4lr"
     },
     {
-     "@id": "psi.4lr",
+     "@id": "psi.4lr"
     },
     {
-     "@id": "rcs.4lr",
+     "@id": "rcs.4lr"
     },
     {
-     "@id": "psi.4lr",
+     "@id": "psi.4lr"
     },
     {
-     "@id": "tao.4lr",
+     "@id": "tao.4lr"
     },
     {
      "@id": "sdi.txt",
