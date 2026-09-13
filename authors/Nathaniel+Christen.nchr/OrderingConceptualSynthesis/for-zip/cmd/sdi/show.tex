@@ -1,14 +1,32 @@
 
 
+%\SdiShowtrue
+%\SdiShowfalse
+
+\ifdefined\SdiShowFlag
+   \SdiShowtrue
+\else
+   \SdiShowfalse
+\fi
+
+
 \definecolor{sdi-show}{rgb}{0,0.5,0.7}
+
 
 
 \newCCforEXC\newCCforDASH
 
-\newcommand{\sdi!sentence-between-show}{%
-\negativeHspace*{6pt}\resizebox{6pt}{5pt}{%
+%\newcommand{\sdi!sentence-between-show}{}
+
+\newcommand{\sdi!sentence-between-show}{\negativeHspace*{3pt}%
+\lowerbox(4.5pt){\makebox[0pt][l]{\resizebox{4pt}{5pt}{%
 \ensuremath{\Rightarrow}%
-}\hnull}
+}\hnull}}\hspace*{3pt}}
+
+%\newcommand{\sdi!paragraph-end-show}{\lowerbox(.5pt){%
+%\resizebox{6pt}{5pt}{%
+%\ensuremath{\prec}%
+%}}\negativeHspace*{6pt}}
 
 
 \newcommand{\sdi!sentence-start-show}{\negativeHspace*{4pt}%
@@ -43,23 +61,34 @@
 
 
 \newcommand{\sdi!sentence-between-icon}{%
-\textcolor{sdi-show}{\sdi!sentence-between-show}}
+\textcolor{sdi-show}{\sdi!sentence-between-show}%
+%\sdi!sentence-between-show%
+}
 
 \newcommand{\sdi!sentence-start-icon}{%
-\textcolor{sdi-show}{\sdi!sentence-start-show}}
+\textcolor{sdi-show}{\sdi!sentence-start-show}%
+%\sdi!sentence-start-show%
+}
 
 \newcommand{\sdi!sentence-end-icon}{%
-\textcolor{sdi-show}{\sdi!sentence-end-show}}
+\textcolor{sdi-show}{\sdi!sentence-end-show}%
+%\sdi!sentence-end-show%
+}
 
 \newcommand{\sdi!paragraph-start-icon}{%
-\textcolor{sdi-show}{\sdi!paragraph-start-show}}
+\textcolor{sdi-show}{\sdi!paragraph-start-show}%
+%\sdi!paragraph-start-show%
+}
 
 \newcommand{\sdi!paragraph-end-icon}{%
-\textcolor{sdi-show}{\sdi!paragraph-end-show}}
+\textcolor{sdi-show}{\sdi!paragraph-end-show}%
+%\sdi!paragraph-end-show%
+}
+
 
 
 \NewDocumentCommand{\sdi!sentence-between}{}{%
-\ifSdiShow\sdi!sentence-between-icon\fi%
+\ifSdiShow\sdi!sentence-between-icon\fi
 \sdi!write-sentence-between%
 \ignorespaces}
 
@@ -67,6 +96,12 @@
 \ifSdiShow\sdi!sentence-start-icon\fi%
 \sdi!write-sentence-start%
 \ignorespaces}
+
+%\newcommand{\sdi!sentence-start}{%
+%\ifSdiShow\sdi!sentence-start-icon\fi%
+%\sdi!write-sentence-start%
+%\ignorespaces}
+
 
 \NewDocumentCommand{\sdi!sentence-end}{}{%
 \ifSdiShow\sdi!sentence-end-icon\fi%
@@ -99,7 +134,6 @@
 \LetLtxMacro{\oldmmcolon}{\:}
 
 
-\SdiShowtrue
 
 \renewcommand{\>}{\iftabng\oldtbgt\else\relax%
 \ifmmode\oldtbgt\else\sdi!sentence-between\fi\fi}

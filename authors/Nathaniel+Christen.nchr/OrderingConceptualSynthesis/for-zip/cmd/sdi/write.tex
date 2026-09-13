@@ -89,8 +89,8 @@
 % $global-baseline-skip 
 
 \newcommand{\sdi!write-global-start}{%
-\sdi!write-sdi-start{Global}%
-\write\sdi-file{%
+\immediate\sdi!write-sdi-start{Global}%
+\immediate\write\sdi-file{%
 +file\space\space\jobname.tex^^J%
 +global-baseline-skip\space\space\the\original-baselineskip^^J%
 +global-baseline-stretch\space\space\original-baselinestretch^^J%
@@ -142,7 +142,6 @@
 }}
 
 
-
 \newcommand{\sdi!write-paragraph-end}{%
 \pdfsavepos%
 \sdi!write-sdi-end{Paragraph}%
@@ -161,6 +160,7 @@
 \sdi!write-sdi-between{Sentence}%
 \sdi!write-sentence-start%
 }
+
 
 
 \newcommand{\sdi!write-paragraph-start}{%

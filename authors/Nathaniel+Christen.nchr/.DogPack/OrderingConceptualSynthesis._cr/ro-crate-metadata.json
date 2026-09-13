@@ -1,0 +1,121 @@
+
+{
+ "@context":["https://w3id.org/ro/crate/1.1/context"],
+ "@graph": 
+ [
+  { 
+   "@type": "CreativeWork",
+   "@id": "ro-crate-metadata.json",
+   "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+   "about": {"@id": "./"}
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "@hasPart": [
+    {
+     "@id": "asl.4lr"
+    },
+    {
+     "@id": "psi.4lr"
+    },
+    {
+     "@id": "rcs.4lr"
+    },
+    {
+     "@id": "psi.4lr"
+    },
+    {
+     "@id": "tao.4lr"
+    },
+    {
+     "@id": "sdi.txt"
+    },
+    {
+     "@id": "sdi.pdf"
+    },
+    {
+     "@id": "tex.zip"
+    },
+    {
+     "@id": "gt.txt"
+    },
+    {
+     "@id": "gt"
+    }
+   ]
+  },
+  {
+   "@id": "asl.4lr",
+   "@type": "File",
+   "description": "Qynviper serialization of the main document's sentence information and 'semantic' content",
+   "file-type": "Qynviper VM (GTagML Modules)",
+   "file-path": "../OrderingConceptualSynthesis.asl.4lr"
+  },
+  {
+   "@id": "psi.4lr",
+   "@type": "File",
+   "description": "Qynviper serialization of main document conent for augmented PDF searching",
+   "file-type": "Qynviper VM (GTagML Modules)",
+   "file-path": "../OrderingConceptualSynthesis.psi.4lr"
+  },
+  {
+   "@id": "rcs.4lr",
+   "@type": "File",
+   "description": "Qynviper serialization of data from which to generate RO-Crate metadata",
+   "file-type": "Qynviper VM (GTagML Modules)",
+   "file-path": "../OrderingConceptualSynthesis.rcs.4lr"
+  },
+  {
+   "@id": "sdi.4lr",
+   "@type": "File",
+   "description": "Similar to 'asl.4lr' but provides more detailed (but for some contexts less efficient) text encoding",
+   "file-type": "Qynviper VM (GTagML Modules)",
+   "file-path": "../OrderingConceptualSynthesis.sdi.4lr"
+  },
+  {
+   "@id": "tao.4lr",
+   "@type": "File",
+   "description": "TAGML Opcodes (a Virtual Machine to produce infosets conforming to the Text-As-Graph model)",
+   "file-type": "Qynviper VM (GTagML Modules)",
+   "file-path": "../OrderingConceptualSynthesis.tao.4lr"
+  },
+  {
+   "@id": "sdi.txt",
+   "@type": "File",
+   "description": "Main document's sentence and related data in a relatively readable format (used by .4lr generators)",
+   "file-type": "plain text (with .txt extension to work with gh-pages)",
+   "file-path": "../OrderingConceptualSynthesis.sdi.txt"
+  },
+  {
+   "@id": "sdi.pdf",
+   "@type": "File",
+   "description": "Duplicate of main document's PDF file with extra markings showing sentence/paragraph boundaries",
+   "file-type": "PDF",
+   "file-path": "../OrderingConceptualSynthesis.sdi.pdf"
+  },
+  {
+   "@id": "tex.zip",
+   "@type": "File",
+   "description": "Main document's input LaTeX sources",
+   "file-type": "Zipped Folder",
+   "file-path": "../OrderingConceptualSynthesis.tex.zip"
+  },
+  {
+   "@id": "gt.txt",
+   "@type": "File",
+   "description": "Duplicate of 'gt' with .txt (not .gt) extension to work with gh-pages",
+   "file-type": "plain text",
+   "file-path": "../OrderingConceptualSynthesis.gt.txt"
+  },
+  {
+   "@id": "gt",
+   "@type": "File",
+   "description": "Main document's input sources",
+   "file-type": "GTagML (Generator for TAGML Opcodes)",
+   "file-path": "../OrderingConceptualSynthesis.gt"
+  }
+ ]
+}
+
+

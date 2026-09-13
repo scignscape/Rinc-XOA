@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <author>Nathaniel Christen</author>
+  <description>A list of sample sentences discussed in the paper 
+   <docTitle>
+    Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology
+    for Syntactic Theory
+   </docTitle> (<docHref>https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf</docHref>) 
+  </description>
+  <profileDesc>
+   <langUsage>
+    <language ident="en">English</language>
+   </langUsage>
+  </profileDesc>
+ <teiHeader>
+ <text>
+  <s id="1" page="1" paragraph-id="2">My brother has been married for 10 
+years, but in many ways he's still a bachelor.</s>
+
+  <s id="2" page="1" paragraph-id="2">All of the eligible bachelors in this town are married.</s>
+
+  <s id="3" page="1" paragraph-id="3">Everyone sang along to three songs.</s>
+
+  <s id="4" page="1" paragraph-id="3">All appeals are heard by a panel of three judges.</s>
+
+  <s id="5" page="1" paragraph-id="3">All New Yorkers live in one of five boroughs.</s>
+
+  <s id="6" page="1" paragraph-id="3">All New Yorkers complain about how 
+long it takes to commute to New York City.</s>
+
+  <s id="7" page="1" paragraph-id="3">In Ariel's picture of Beatrice, she looks sick.</s>
+
+  <s id="8" page="1" paragraph-id="3">In Ariel's picture of Beatrice, she 
+snapped the lens just as two cardinals flew by.</s>
+
+  <s id="9" page="1" paragraph-id="3">We operated near the bank.</s>
+
+  <s id="10" page="1" paragraph-id="3">On the mantle was a wooden bat.</s>
+
+  <s id="11" page="2" paragraph-id="7">Every band performed three songs.</s>
+
+  <s id="12" page="2" paragraph-id="7">Everyone sang along to some song or another.</s>
+
+  <s id="13" page="2" paragraph-id="8">This election is slipping away from 
+the Democrats.</s>
+
+  <s id="14" page="2" paragraph-id="8">Student after student came by to 
+complain about the reading assignments.</s>
+
+  <s id="15" page="8" paragraph-id="48">John poured water onto the stove.</s>
+
+  <s id="16" page="8" paragraph-id="48">John spilled water onto the stove.</s>
+
+  <s id="17" page="9" paragraph-id="60">I put Mom's chocolate brownies in 
+this red tin box, take some!</s>
+
+  <s id="18" page="13" paragraph-id="80">I'm heading out to the store.</s>
+
+  <s id="19" page="13" paragraph-id="80">Where are you going?  Out to the store.</s>
+
+  <s id="20" page="13" paragraph-id="80">What are you doing?  Heading out.</s>
+
+  <s id="21" page="13" paragraph-id="85">Last weekend we donated a 
+hundred dollars to the animal shelter.</s>
+
+  <s id="22" page="13" paragraph-id="85">We gave the animal shelter a 
+hundred dollars.</s>
+
+  <s id="23" page="16" paragraph-id="102">That newspaper just moved to 
+10th street and laid off half its staff.</s>
+
+  <s id="24" page="16" paragraph-id="102">At home you can print out this 
+book from a PDF link.</s>
+
+  <s id="25" page="16" paragraph-id="102">The borough of Queens voted 
+heavily for Mamdani.</s>
+
+  <s id="26" page="16" paragraph-id="102">These flowers really want 
+some sunshine.</s>
+
+  <s id="27" page="16" paragraph-id="102">This drought has left the soil parched.</s>
+
+  <s id="28" page="16" paragraph-id="102">Our car stubbornly refused to move.</s>
+
+  <s id="29" page="16" paragraph-id="102">The spell-checker thinks 
+"hooman" isn't a word.</s>
+ </text>
+</TEI>
