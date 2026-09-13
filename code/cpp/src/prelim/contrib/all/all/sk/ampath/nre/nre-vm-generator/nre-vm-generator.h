@@ -39,6 +39,8 @@ public:
 
  NRE_VM_Generator();
 
+ void read_json_file(QString file_path);
+
 
 };
 

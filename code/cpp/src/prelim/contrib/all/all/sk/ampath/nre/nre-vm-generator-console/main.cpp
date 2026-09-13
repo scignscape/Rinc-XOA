@@ -13,19 +13,21 @@
 
 #include "nre-vm/vm-interpreter.h"
 
-#include "otns.h"
+#include "nre-vm-generator/nre-vm-generator.h"
 
+#include "otns.h"
 USING_OTNS(AMPATH_NRE)
 
 
 int main(int argc, char *argv[])
 {
  QString vm_file_path = DEFAULT_VM_FOLDER "/test/t1.4lr";
- VM_Interpreter vin;
- vin.load_file(vm_file_path);
- vin.parse();
 
- vin.run();
+ QString json_file_path = DEFAULT_FORMS_FOLDER "/F08-ITFC_Admission_form.json";
+
+ NRE_VM_Generator nvg;
+
+ nvg.read_json_file(json_file_path);
 
 //    // QString cwd = QDir::currentPath();
 //    // qDebug() << "Current working directory:" << cwd;

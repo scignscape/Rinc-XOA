@@ -32,6 +32,7 @@ INCLUDEPATH += $$PHAON_GRAPH_SRC_GROUP_DIR
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/nre/vm\\\"
+DEFINES += DEFAULT_FORMS_FOLDER=\\\"$$ROOT_DIR/nre/ampathfors\\\"
 
 CONFIG += no_keywords
 
@@ -45,7 +46,7 @@ SOURCES += \
   $$SRC_DIR/main.cpp \
 
 
-LIBS += -L$$TARGETSDIR -lnre-vm
+LIBS += -L$$TARGETSDIR -lnre-vm-generator
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
