@@ -1,0 +1,6 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/nre-module.cxx"
+#else
+#include "../implementations/nre-module.h"
+#endif

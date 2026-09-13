@@ -1,0 +1,70 @@
+
+#           Copyright Nathaniel Christen 2026.
+#  Distributed under the Boost Software License, Version 1.0.
+#     (See accompanying file LICENSE_1_0.txt or copy at
+#           http://www.boost.org/LICENSE_1_0.txt)
+
+
+include(../build-group.pri)
+
+QT -= gui
+
+exists($$ROOT_DIR/../preferred/sysr.pri): include($$ROOT_DIR/../preferred/sysr.pri)
+exists($$ROOT_DIR/../preferred/sysr-c.pri): include($$ROOT_DIR/../preferred/sysr-c.pri)
+exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/compiler.pri)
+
+
+INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
+
+DEFINES += USING_QT_6
+
+CONFIG += debug
+
+CONFIG += no_keywords
+
+CONFIG+=c++2a
+
+DEFINES += USE_OTNS
+DEFINES += USE_KANS
+
+HEADERS += \
+  $$SRC_DIR/vm-interpreter.h \
+  $$SRC_DIR/vm-opmethods.h \
+  $$SRC_DIR/vm-dispatcher.h \
+  $$SRC_DIR/vm-reader.h \
+  $$SRC_DIR/vm-opstatement.h \
+  $$SRC_DIR/modules/module-macros.h \
+  $$SRC_DIR/modules/module-base.h \
+  $$SRC_DIR/modules/implementations/nre-module.h \
+  $$SRC_DIR/modules/implementations/rcs-module.h \
+
+
+SOURCES += \
+  $$SRC_DIR/vm-interpreter.cpp \
+  $$SRC_DIR/vm-opmethods.cpp \
+  $$SRC_DIR/vm-dispatcher.cpp \
+  $$SRC_DIR/vm-reader.cpp \
+  $$SRC_DIR/vm-opstatement.cpp \
+  $$SRC_DIR/modules/implementations/nre-module.cpp \
+  $$SRC_DIR/modules/implementations/rcs-module.cpp \
+
+
+DISTFILES += \
+  $$SRC_DIR/modules/implementations/nre-module.cxx \
+  $$SRC_DIR/modules/implementations/rcs-module.cxx \
+
+
+
+message($$SRC_DIR)
+
+
+
+#LIBS += -L$$TARGETSDIR -lchasm-lib -lchasm-lib-X1 -lchasm-lib-X2 \
+#  -lchasm-lib-33 -lchasm-lib-43
+
+
+
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+

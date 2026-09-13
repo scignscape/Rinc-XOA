@@ -5,7 +5,6 @@
 #           http://www.boost.org/LICENSE_1_0.txt)
 
 
-PROJECT_KERNEL = sk
+PROJECT_SET = ampath
 
-include(../../build-area.pri)
-
+include(../build-kernel.pri)

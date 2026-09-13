@@ -125,13 +125,6 @@ defined(ALT_PROJECT_NAME ,var) {
 }
 
 
-
-#INCLUDEPATH += $$PHR_GRAPH_SRC_GROUP_DIR
-
-QT_REPROZIP_SRC_DIR = $$ROOT_DIR/qt-reprozip
-QT_REPROZIP_BIN_DIR = $$QT_REPROZIP_SRC_DIR/bin
-
-
 include(./build-root-both--groups.pri)
 
 
