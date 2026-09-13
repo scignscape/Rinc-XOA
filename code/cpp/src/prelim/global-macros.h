@@ -204,6 +204,9 @@
 #define MACRO_EXPAND_EVENS_16(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16) \
    X(a2) X(a4) X(a6) X(a8) X(a10) X(a12) x(a14) x(a16)
 
+#define MACRO_EXPAND_COUNT_2(X, a1, a2) X(2)
+#define MACRO_EXPAND_COUNT_4(X, a1, a2, a3, a4) X(4)
+#define MACRO_EXPAND_COUNT_6(X, a1, a2, a3, a4, a5, a6) X(6)
 #define MACRO_EXPAND_COUNT_8(X, a1, a2, a3, a4, a5, a6, a7, a8) X(8)
 #define MACRO_EXPAND_COUNT_10(X, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10) X(10)
 
