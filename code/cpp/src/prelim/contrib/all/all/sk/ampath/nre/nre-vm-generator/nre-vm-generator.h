@@ -23,6 +23,10 @@
 
 #include <QDir>
 
+#include "jsp-form-base.h"
+
+#include "global-types.h"
+
 #include "otns.h"
 
 OTNS_(AMPATH_NRE)
@@ -32,6 +36,8 @@ class NRE_VM_Generator
  enum class Node_Type {
   N_A, Form_Root
  };
+
+ QMap<u1, JSP_Form_Base*> forms_jsp_;
 
  void process_form_node(const QJsonObject& qjo, QString key = {}, Node_Type nt = Node_Type::N_A);
 

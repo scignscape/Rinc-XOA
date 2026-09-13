@@ -14,39 +14,39 @@
 #include <QString>
 #include <QStringList>
 
+#include "jsp-form-base.h"
 
 #include "otns.h"
 
 OTNS_(AMPATH_NRE)
 
 
-class JSP_Admission_Form
+class JSP_Admission_Form : public JSP_Form_Base
 {
-    QString summary_;
-    QString current_field_prefix_;
+ QString current_field_prefix_;
 
-    QString processor_;
-    QString uuid_;
-    QString version_;
+ QString processor_;
+ QString uuid_;
+ QString version_;
 
-    QStringList page_labels_;
-    QVector<QStringList> section_labels_;
+ QStringList page_labels_;
+ QVector<QStringList> section_labels_;
 
-    QSet<QString> known_prefixes_;
+ QSet<QString> known_prefixes_;
 
-    enum class Node_Type {
-        N_A, Form_Root
-    };
+ enum class Node_Type {
+  N_A, Form_Root
+ };
 
-    void reset_field_prefix(QString prefix);
-    void check_field_expand(QString& dispatch);
+ void reset_field_prefix(QString prefix);
+ void check_field_expand(QString& dispatch);
 
-public:
+ public:
 
-    JSP_Admission_Form(QString name, QString index_code, QString summary);
+ JSP_Admission_Form();
 
-    void read_JSON_Object(const QJsonObject& qjo);
-    void parse_question(const QJsonObject& question_qjo);
+ void read_JSON_Object(const QJsonObject& qjo) Q_DECL_OVERRIDE;
+ void parse_question(const QJsonObject& question_qjo);
 };
 
 _OTNS(AMPATH_NRE)

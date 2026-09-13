@@ -14,7 +14,7 @@ USING_OTNS(AMPATH_NRE)
 
 NRE_VM_Generator::NRE_VM_Generator()
 {
-
+ forms_jsp_[8] = new JSP_Admission_Form;
 }
 
 void NRE_VM_Generator::read_json_file(QString file_path)
@@ -68,24 +68,28 @@ void NRE_VM_Generator::process_form_node(const QJsonObject& qjo, QString key, No
   QString c1 = m.captured(1);
   QString c2 = m.captured(2);
   QString c3 = m.captured(3);
-  JSP_Admission_Form form_jsp(c1, c2, c3);
+
+  u1 which_form = c2.toUInt();
+
+  JSP_Form_Base* jfb = forms_jsp_.value(which_form);
+
+  if(!jfb)
+  {
+   qDebug() << "Unexpected missing form parser, with number " << which_form;
+   return;
+  }
+
+  jfb->init(c1, c2, c3);
 
   qDebug() << "c1 = " << c1;
   qDebug() << "c2 = " << c2;
   qDebug() << "c3 = " << c3;
 
-  form_jsp.read_JSON_Object(qjo);
+  jfb->read_JSON_Object(qjo);
 
-  //?form_jsp.write_summary("_summary.txt");
+  QString path = QString(DEFAULT_VM_FOLDER "/%1.4lr").arg(which_form);
 
-  QString test = " test-dis  $  test-arg ;.";
-  QString rs;
-
-
-  //?int r = form_jsp.advance_past_dispatch(test, &rs);
-
-//  qDebug() << "rs = " << rs;
-//  qDebug() << "r = " << r;
-//  qDebug() << "t = " << test;
+  jfb->finalize_4lr();
+  jfb->save_4lr(path);
  }
 }

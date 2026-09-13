@@ -35,11 +35,13 @@ DEFINES += USE_OTNS
 
 HEADERS += \
   $$SRC_DIR/nre-vm-generator.h \
+  $$SRC_DIR/jsp-form-base.h \
   $$SRC_DIR/forms-jsp/jsp-admission-form.h \
 
 
 SOURCES += \
   $$SRC_DIR/nre-vm-generator.cpp \
+  $$SRC_DIR/jsp-form-base.cpp \
   $$SRC_DIR/forms-jsp/jsp-admission-form.cpp \
 
 

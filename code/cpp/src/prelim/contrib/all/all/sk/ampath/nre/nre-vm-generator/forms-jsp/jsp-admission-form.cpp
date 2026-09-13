@@ -18,7 +18,8 @@ USING_OTNS(AMPATH_NRE)
 #include <QFile>
 
 
-JSP_Admission_Form::JSP_Admission_Form(QString name, QString index_code, QString summary)
+JSP_Admission_Form::JSP_Admission_Form()
+  :  JSP_Form_Base()
 {
 
 }
@@ -48,8 +49,8 @@ void JSP_Admission_Form::parse_question(const QJsonObject& question_qjo)
  QString question_concept = question_options_qjo.value("concept").toString();
  QString question_default = question_options_qjo.value("default").toString();
 
- QString r = QString("\n :required ") + (is_required? "t" : "f");
- summary_ += "\n\nnew-question ;.";
+ QString r = QString("\n :required?-") + (is_required? "t" : "f") + " ;.";
+ summary_ += "\n\nnre-new->question ;.";
  summary_ += r;
  summary_ += "\n :id $ " + id + " ;.";
  summary_ += "\n :label $ " + label + " ;.";
@@ -57,27 +58,27 @@ void JSP_Admission_Form::parse_question(const QJsonObject& question_qjo)
  summary_ += "\n :question-concept $ " + question_concept + " ;.";
  summary_ += "\n :rendering $ " + rendering + " ;.";
  summary_ += "\n :default $ " + question_default + " ;.";
- summary_ += "\nfinalize-question ;.\n";
+ summary_ += "\nnre-finalize<-question ;.\n";
 
  QJsonArray answers = question_options_qjo.value("answers").toArray();
 
  for(const QJsonValue& answer_qjv : std::as_const(answers))
  {
-  summary_ += "\n\nnew-answer ;.";
+  summary_ += "\n\nnre-new->answer ;.";
   QJsonObject answer_qjo = answer_qjv.toObject();
 
   QString answer_label = answer_qjo.value("label").toString();
 
   if(answer_label == "Yes")
    summary_ += "\n .affirmative-answer-option ;.";
-  else if(answer_label == "Yes")
+  else if(answer_label == "No")
    summary_ += "\n .negative-answer-option ;.";
   else
    summary_ += "\n .answer-label $ " + answer_label + " ;.";
 
 
   summary_ += "\n .answer-concept $ " + answer_qjo.value("concept").toString() + " ;.";
-  summary_ += "\nfinalize-answer ;.\n";
+  summary_ += "\nnre-finalize<-answer ;.\n";
  }
 }
 
@@ -89,11 +90,11 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
  uuid_ = qjo.value("uuid").toString();
  version_ = qjo.value("version").toString();
 
- summary_ += "\n\nnew-form ;.";
- summary_ += "\n .form-processor " + processor_ + " ;.";
- summary_ += "\n .form-uuid " + uuid_ + " ;.";
- summary_ += "\n .form-version " + version_ + " ;.";
- summary_ += "\nfinalize-form ;.";
+ summary_ += "\n\nnre-new-form ;.";
+ summary_ += "\n nre-form-processor " + processor_ + " ;.";
+ summary_ += "\n nre-form-uuid " + uuid_ + " ;.";
+ summary_ += "\n nre-form-version " + version_ + " ;.";
+ summary_ += "\nnre-finalize-form ;.";
 
  QJsonArray pages = qjo.value("pages").toArray();
 
@@ -107,9 +108,9 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
   section_labels_.push_back({});
   QStringList& current_section_labels = section_labels_.last();
 
-  summary_ += "\n\nnew-page ;.";
+  summary_ += "\n\nnre-new->page ;.";
   summary_ += "\n :label " + page_qjo.value("label").toString() + " ;.";
-  summary_ += "\nfinalize-page ;.\n";
+  summary_ += "\nnre-finalize<-page ;.\n";
 
   QJsonArray sections = page_qjo.value("sections").toArray();
   for(const QJsonValue& section_qjv : std::as_const(sections))
@@ -117,9 +118,9 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
    QJsonObject section_qjo = section_qjv.toObject();
    current_section_labels.push_back(section_qjo.value("label").toString());
 
-   summary_ += "\n\nnew-section ;.";
+   summary_ += "\n\nnre-new->section ;.";
    summary_ += "\n :label " + section_qjo.value("label").toString() + " ;.";
-   summary_ += "\nfinalize-section ;.\n";
+   summary_ += "\nnre-finalize<-section ;.\n";
 
    QJsonArray questions = section_qjo.value("questions").toArray();
    for(const QJsonValue& question_qjv : std::as_const(questions))
