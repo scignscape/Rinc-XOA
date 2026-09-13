@@ -12,7 +12,8 @@
 
 USING_OTNS(AMPATH_NRE)
 
-NRE_VM_Generator::NRE_VM_Generator()
+NRE_VM_Generator::NRE_VM_Generator(QString output_folder_path)
+  :  output_folder_path_(output_folder_path)
 {
  forms_jsp_[8] = new JSP_Admission_Form;
 }
@@ -87,7 +88,7 @@ void NRE_VM_Generator::process_form_node(const QJsonObject& qjo, QString key, No
 
   jfb->read_JSON_Object(qjo);
 
-  QString path = QString(DEFAULT_VM_FOLDER "/%1.4lr").arg(which_form);
+  QString path = "%1/%2.4lr"_qt.arg(output_folder_path_).arg(which_form);
 
   jfb->finalize_4lr();
   jfb->save_4lr(path);

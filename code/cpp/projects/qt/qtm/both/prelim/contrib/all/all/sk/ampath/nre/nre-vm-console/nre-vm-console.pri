@@ -32,6 +32,7 @@ INCLUDEPATH += $$PHAON_GRAPH_SRC_GROUP_DIR
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/nre/vm\\\"
+DEFINES += DEFAULT_FORMS_FOLDER=\\\"$$ROOT_DIR/nre/ampathforms\\\"
 
 
 CONFIG += no_keywords

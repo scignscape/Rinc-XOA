@@ -39,11 +39,13 @@ class NRE_VM_Generator
 
  QMap<u1, JSP_Form_Base*> forms_jsp_;
 
+ QString output_folder_path_;
+
  void process_form_node(const QJsonObject& qjo, QString key = {}, Node_Type nt = Node_Type::N_A);
 
 public:
 
- NRE_VM_Generator();
+ NRE_VM_Generator(QString output_folder_path);
 
  void read_json_file(QString file_path);
 

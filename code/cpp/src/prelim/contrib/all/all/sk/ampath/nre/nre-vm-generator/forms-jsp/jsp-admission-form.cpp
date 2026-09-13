@@ -70,14 +70,14 @@ void JSP_Admission_Form::parse_question(const QJsonObject& question_qjo)
   QString answer_label = answer_qjo.value("label").toString();
 
   if(answer_label == "Yes")
-   summary_ += "\n .affirmative-answer-option ;.";
+    summary_ += "\n :yes ;.";
   else if(answer_label == "No")
-   summary_ += "\n .negative-answer-option ;.";
+    summary_ += "\n :no ;.";
   else
-   summary_ += "\n .answer-label $ " + answer_label + " ;.";
+    summary_ += "\n :label $ " + answer_label + " ;.";
 
 
-  summary_ += "\n .answer-concept $ " + answer_qjo.value("concept").toString() + " ;.";
+  summary_ += "\n :concept $ " + answer_qjo.value("concept").toString() + " ;.";
   summary_ += "\nnre-finalize<-answer ;.\n";
  }
 }
@@ -90,11 +90,11 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
  uuid_ = qjo.value("uuid").toString();
  version_ = qjo.value("version").toString();
 
- summary_ += "\n\nnre-new-form ;.";
- summary_ += "\n nre-form-processor " + processor_ + " ;.";
- summary_ += "\n nre-form-uuid " + uuid_ + " ;.";
- summary_ += "\n nre-form-version " + version_ + " ;.";
- summary_ += "\nnre-finalize-form ;.";
+ summary_ += "\n\nnre-new->form ;.";
+ summary_ += "\n :processor $ " + processor_ + " ;.";
+ summary_ += "\n :uuid $ " + uuid_ + " ;.";
+ summary_ += "\n :version $ " + version_ + " ;.";
+ summary_ += "\nnre-finalize<-form ;.";
 
  QJsonArray pages = qjo.value("pages").toArray();
 
@@ -109,7 +109,7 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
   QStringList& current_section_labels = section_labels_.last();
 
   summary_ += "\n\nnre-new->page ;.";
-  summary_ += "\n :label " + page_qjo.value("label").toString() + " ;.";
+  summary_ += "\n :label $ " + page_qjo.value("label").toString() + " ;.";
   summary_ += "\nnre-finalize<-page ;.\n";
 
   QJsonArray sections = page_qjo.value("sections").toArray();
@@ -119,7 +119,7 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
    current_section_labels.push_back(section_qjo.value("label").toString());
 
    summary_ += "\n\nnre-new->section ;.";
-   summary_ += "\n :label " + section_qjo.value("label").toString() + " ;.";
+   summary_ += "\n :label $ " + section_qjo.value("label").toString() + " ;.";
    summary_ += "\nnre-finalize<-section ;.\n";
 
    QJsonArray questions = section_qjo.value("questions").toArray();
