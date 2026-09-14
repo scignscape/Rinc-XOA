@@ -19,10 +19,9 @@
 
 #include "otns.h"
 
-class NRE_Form_Page;
-
-
 OTNS_(AMPATH_NRE)
+
+class NRE_Form_Page;
 
 class NRE_Form_Section : public NRE_Form_Base
 {
@@ -40,11 +39,7 @@ public:
 
  NRE_Form_Page* current_page();
 
- void cleanup()
- {
-  for(NRE_Form_Page p : pages_)
-    p->cleanup();
- }
+ void cleanup();
 
 };
 

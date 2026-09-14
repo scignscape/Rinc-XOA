@@ -12,6 +12,8 @@
 
 #include <QDebug>
 
+#include "nre-form-question.h"
+
 #include "textio.h"
 
 USING_KANS(TextIO)
@@ -22,6 +24,16 @@ NRE_Form_Page::NRE_Form_Page()
 {
 
 }
+
+void NRE_Form_Page::cleanup()
+{
+ for(NRE_Form_Question* q : questions_)
+ {
+  q->cleanup();
+  delete q;
+ }
+}
+
 
 void NRE_Form_Page::add_question(NRE_Form_Question* q)
 {

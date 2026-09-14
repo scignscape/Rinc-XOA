@@ -19,7 +19,12 @@ USING_KANS(TextIO)
 USING_OTNS(AMPATH_NRE)
 
 NRE_Form_Answer::NRE_Form_Answer()
+  :  answer_type_(Answer_Types::N_A)
 {
 
 }
 
+void NRE_Form_Answer::cleanup()
+{
+
+}

@@ -22,10 +22,23 @@ OTNS_(AMPATH_NRE)
 
 class NRE_Form_Answer : public NRE_Form_Base
 {
+ enum class Answer_Types {
+  N_A, BOOL_yes, BOOL_no, Enum
+
+  };
+
+ Answer_Types answer_type_;
 
 public:
 
  NRE_Form_Answer();
+
+ void cleanup();
+
+ void answer(bool yes_or_no)
+ {
+  answer_type_ = yes_or_no? Answer_Types::BOOL_yes : Answer_Types::BOOL_no;
+ }
 
 // ACCESSORS(QString ,current_class_name)
 

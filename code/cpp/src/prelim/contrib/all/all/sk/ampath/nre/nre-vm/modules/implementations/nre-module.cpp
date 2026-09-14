@@ -54,9 +54,9 @@ NRE_Form_Answer* NRE_Module::current_answer()
 
 void NRE_Module::finalize_header_file()
 {
- header_acc_ << "\n\n}; // end class \n";
- header_acc_ << "\n\n_KANS(AMPATH_Forms)\n\n";
- header_acc_ << "#endif // __H guard";
+ header_acc_top() << "\n\n}; // end class \n";
+ header_acc_top() << "\n\n_KANS(AMPATH_Forms)\n\n";
+ header_acc_top() << "#endif // __H guard";
 
 }
 
@@ -67,19 +67,19 @@ void NRE_Module::finalize_implementation_file()
 
 void NRE_Module::save_header_file(QString file_path)
 {
- save_file(file_path, cpp_header_);
+ save_file(file_path, cpp_header_top());
 }
 
 void NRE_Module::save_implementation_file(QString file_path)
 {
- save_file(file_path, cpp_implementation_);
+ save_file(file_path, cpp_implementation_top());
 }
 
 void NRE_Module::write_class_header_lead()
 {
  QString guard = current_class_name_.toUpper() + "__H";
 
- header_acc_ << R"(
+ header_acc_top() << R"(
 //           Copyright Nathaniel Christen 2026.
 //  Distributed under the Boost Software License, Version 1.0.
 //     (See accompanying file LICENSE_1_0.txt or copy at
@@ -99,7 +99,7 @@ void NRE_Module::write_class_implementation_lead()
 {
  QString inc = current_class_name_.toLower().replace("_", "-");
 
- implementation_acc_ << R"(
+ implementation_acc_top() << R"(
 //           Copyright Nathaniel Christen 2026.
 //  Distributed under the Boost Software License, Version 1.0.
 //     (See accompanying file LICENSE_1_0.txt or copy at
@@ -178,7 +178,7 @@ void NRE_Module::form_version(u2 val)
 
 void NRE_Module::new_form()
 {
- for(NRE_Form_Section s : sections_)
+ for(NRE_Form_Section* s : sections_)
    s->cleanup();
 }
 
@@ -189,7 +189,8 @@ void NRE_Module::finalize_form()
 
 void NRE_Module::new_page()
 {
-
+ NRE_Form_Page* p = new NRE_Form_Page;
+ current_section()->add_page(p);
 }
 
 void NRE_Module::finalize_page()
@@ -199,7 +200,8 @@ void NRE_Module::finalize_page()
 
 void NRE_Module::new_section()
 {
-
+ NRE_Form_Section* s = new NRE_Form_Section;
+ sections_.push_back(s);
 }
 
 void NRE_Module::finalize_section()
@@ -209,7 +211,8 @@ void NRE_Module::finalize_section()
 
 void NRE_Module::new_question()
 {
-
+ NRE_Form_Question* q = new NRE_Form_Question;
+ current_page()->add_question(q);
 }
 
 void NRE_Module::finalize_question()
@@ -224,7 +227,8 @@ void NRE_Module::question_unset_required()
 
 void NRE_Module::new_answer()
 {
-
+ NRE_Form_Answer* a= new NRE_Form_Answer;
+ current_question()->add_answer(a);
 }
 
 void NRE_Module::finalize_answer()
@@ -234,12 +238,12 @@ void NRE_Module::finalize_answer()
 
 void NRE_Module::answer_yes()
 {
-
+ current_answer()->answer(true);
 }
 
 void NRE_Module::answer_no()
 {
-
+ current_answer()->answer(false);
 }
 
 

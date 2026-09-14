@@ -14,9 +14,11 @@
 
 #include "accessors.h"
 
-#include "otns.h"
-
 #include "nre-form-base.h"
+
+//#include "nre-form-answer.h"
+
+#include "otns.h"
 
 OTNS_(AMPATH_NRE)
 
@@ -27,22 +29,23 @@ class NRE_Form_Question : public NRE_Form_Base
 {
  QVector<NRE_Form_Answer*> answers_;
 
+ QString label_;
+
+ u2 required_cardinality_;
 
 public:
 
  NRE_Form_Question();
 
+ ACCESSORS(u2 ,required_cardinality)
+
  void add_answer(NRE_Form_Answer* a);
 
  NRE_Form_Answer* current_answer();
 
- void cleanup()
- {
-  for(NRE_Form_Answer a : answerts_)
-    delete a;
- }
+ void cleanup();
 
-// ACCESSORS(QString ,current_class_name)
+ ACCESSORS(QString ,label)
 
 };
 

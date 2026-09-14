@@ -41,11 +41,7 @@ public:
 
  NRE_Form_Question* current_question();
 
- void cleanup()
- {
-  for(NRE_Form_Question q : questions_)
-    q->cleanup();
- }
+ void cleanup();
 
 };
 
