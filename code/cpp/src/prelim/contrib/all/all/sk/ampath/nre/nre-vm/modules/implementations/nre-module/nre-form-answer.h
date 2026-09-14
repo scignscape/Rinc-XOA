@@ -27,7 +27,7 @@ public:
 
  NRE_Form_Answer();
 
- ACCESSORS(QString ,current_class_name)
+// ACCESSORS(QString ,current_class_name)
 
 };
 

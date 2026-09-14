@@ -25,10 +25,12 @@
 
 OTNS_(AMPATH_NRE)
 
+class NRE_Form_Section;
+
+
 class NRE_Module : public _Module_Base, public NRE_Form_Base
 {
  QString current_class_name_;
-
 
 public:
 

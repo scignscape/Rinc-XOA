@@ -23,3 +23,12 @@ NRE_Form_Page::NRE_Form_Page()
 
 }
 
+void NRE_Form_Page::add_question(NRE_Form_Question* q)
+{
+ questions_.push_back(q);
+}
+
+NRE_Form_Question* NRE_Form_Page::current_question()
+{
+ return questions_.last();
+}

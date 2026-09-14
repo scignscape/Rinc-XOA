@@ -23,3 +23,15 @@ NRE_Form_Question::NRE_Form_Question()
 
 }
 
+void NRE_Form_Question::add_answer(NRE_Form_Answer* a)
+{
+ answers_.push_back(a);
+}
+
+NRE_Form_Answer* NRE_Form_Question::current_answer()
+{
+ return answers_.last();
+}
+
+
+

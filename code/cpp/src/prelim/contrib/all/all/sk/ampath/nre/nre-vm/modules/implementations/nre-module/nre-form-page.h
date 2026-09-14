@@ -14,19 +14,32 @@
 
 #include "accessors.h"
 
+#include "nre-form-base.h"
+
 #include "otns.h"
 
 OTNS_(AMPATH_NRE)
 
+class NRE_Form_Question;
+
+
 class NRE_Form_Page : public NRE_Form_Base
 {
  QString label_;
+
+ QVector<NRE_Form_Question*> questions_;
+
+
 
 public:
 
  NRE_Form_Page();
 
  ACCESSORS(QString ,label)
+
+ void add_question(NRE_Form_Question* q);
+
+ NRE_Form_Question* current_question();
 
 };
 

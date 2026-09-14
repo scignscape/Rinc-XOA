@@ -16,16 +16,27 @@
 
 #include "otns.h"
 
+#include "nre-form-base.h"
+
 OTNS_(AMPATH_NRE)
+
+class NRE_Form_Answer;
+
 
 class NRE_Form_Question : public NRE_Form_Base
 {
+ QVector<NRE_Form_Answer*> answers_;
+
 
 public:
 
  NRE_Form_Question();
 
- ACCESSORS(QString ,current_class_name)
+ void add_answer(NRE_Form_Answer* a);
+
+ NRE_Form_Answer* current_answer();
+
+// ACCESSORS(QString ,current_class_name)
 
 };
 
