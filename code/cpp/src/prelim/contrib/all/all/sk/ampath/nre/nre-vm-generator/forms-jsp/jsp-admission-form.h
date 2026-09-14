@@ -45,6 +45,12 @@ class JSP_Admission_Form : public JSP_Form_Base
 
  JSP_Admission_Form();
 
+
+ QString get_generated_class_name() Q_DECL_OVERRIDE
+ {
+  return "NRE_Admission_Form";
+ }
+
  void read_JSON_Object(const QJsonObject& qjo) Q_DECL_OVERRIDE;
  void parse_question(const QJsonObject& question_qjo);
 };

@@ -132,6 +132,8 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
   }
  }
 
+ summary_ += "\nnre-save-header-file $ " + header_file_path_ + " ;.";
+ summary_ += "\nnre-save-implementation-file $ " + implementation_file_path_ + " ;.";
 
 #ifdef HIDE
  for (auto it = qjo.constBegin(); it != qjo.constEnd(); ++it)

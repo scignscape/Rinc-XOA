@@ -8,7 +8,11 @@
 #ifndef NRE_MODULE__H
 #define NRE_MODULE__H
 
+#include <QTextStream>
+
 #include "global-types.h"
+
+#include "accessors.h"
 
 #include "vm-reader.h"
 #include "vm-opstatement.h"
@@ -21,11 +25,25 @@ OTNS_(AMPATH_NRE)
 
 class NRE_Module : public _Module_Base
 {
+ QString current_class_name_;
 
+ QString cpp_header_;
+ QString cpp_implementation_;
+
+ QTextStream header_acc_;
+ QTextStream implementation_acc_;
 
 public:
 
  NRE_Module();
+
+ ACCESSORS(QString ,current_class_name)
+
+ void write_class_header_lead();
+ void write_class_implementation_lead();
+
+ void save_header_file(QString file_path);
+ void save_implementation_file(QString file_path);
 
  void form_processor(QString text);
  void form_uuid(QString text);

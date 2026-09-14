@@ -12,11 +12,36 @@
 
 #include <QDebug>
 
+#include "textio.h"
+
+USING_KANS(TextIO)
 
 USING_OTNS(AMPATH_NRE)
 
 NRE_Module::NRE_Module()
- :  _Module_Base{"NRE"}
+ :  _Module_Base{"NRE"},
+    header_acc_(&cpp_header_),
+    implementation_acc_(&cpp_implementation_)
+{
+
+}
+
+void NRE_Module::save_header_file(QString file_path)
+{
+ save_file(file_path, cpp_header_);
+}
+
+void NRE_Module::save_implementation_file(QString file_path)
+{
+ save_file(file_path, cpp_implementation_);
+}
+
+void NRE_Module::write_class_header_lead()
+{
+
+}
+
+void NRE_Module::write_class_implementation_lead()
 {
 
 }

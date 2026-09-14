@@ -12,9 +12,12 @@
 
 USING_OTNS(AMPATH_NRE)
 
-NRE_VM_Generator::NRE_VM_Generator(QString output_folder_path)
-  :  output_folder_path_(output_folder_path)
+NRE_VM_Generator::NRE_VM_Generator(QString output_folder_path, QString generated_cpp_folder_path)
+  :  output_folder_path_(output_folder_path), generated_cpp_folder_path_(generated_cpp_folder_path)
 {
+ if(!generated_cpp_folder_path_.endsWith("/"))
+   generated_cpp_folder_path_ += "/";
+
  forms_jsp_[8] = new JSP_Admission_Form;
 }
 
@@ -79,6 +82,11 @@ void NRE_VM_Generator::process_form_node(const QJsonObject& qjo, QString key, No
    qDebug() << "Unexpected missing form parser, with number " << which_form;
    return;
   }
+
+  QString cn = jfb->get_generated_class_name().toLower().replace("_", "-");
+  cn.prepend(generated_cpp_folder_path_);
+  jfb->set_header_file_path(cn + ".h");
+  jfb->set_implementation_file_path(cn + ".cpp");
 
   jfb->init(c1, c2, c3);
 

@@ -7,6 +7,9 @@
 
 
 #if METHODS_String
+   {"nre-save-header-file", (methods_String) &NRE_Module::save_header_file},
+   {"nre-save-implementation-file", (methods_String) &NRE_Module::save_implementation_file},
+   {"nre-set-current-class-name", (methods_String) &NRE_Module::set_current_class_name},
    {"nre-form:processor", (methods_String) &NRE_Module::form_processor},
    {"nre-form:uuid", (methods_String) &NRE_Module::form_uuid},
    {"nre-page:label", (methods_String) &NRE_Module::page_label},
@@ -19,6 +22,8 @@
    {"nre-answer:label", (methods_String) &NRE_Module::answer_label},
    {"nre-answer:concept", (methods_String) &NRE_Module::answer_concept},
 #elif METHODS_Empty
+   {"nre-write-class-header-lead", (methods_x0) &NRE_Module::write_class_header_lead},
+   {"nre-write-class-implementation-lead", (methods_x0) &NRE_Module::write_class_implementation_lead},
    {"nre-new-form", (methods_x0) &NRE_Module::new_form},
    {"nre-finalize-form", (methods_x0) &NRE_Module::finalize_form},
    {"nre-new-page", (methods_x0) &NRE_Module::new_page},

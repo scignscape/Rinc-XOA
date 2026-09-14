@@ -22,10 +22,11 @@ USING_OTNS(AMPATH_NRE)
 int main(int argc, char *argv[])
 {
  QString vm_folder_path = DEFAULT_VM_FOLDER;// "/test/t1.4lr";
+ QString generated_cpp_folder_path = DEFAULT_VM_FOLDER "/gen-cpp";
 
  QString json_file_path = DEFAULT_FORMS_FOLDER "/F08-ITFC_Admission_form.json";
 
- NRE_VM_Generator nvg(vm_folder_path);
+ NRE_VM_Generator nvg(vm_folder_path, generated_cpp_folder_path);
 
  nvg.read_json_file(json_file_path);
 

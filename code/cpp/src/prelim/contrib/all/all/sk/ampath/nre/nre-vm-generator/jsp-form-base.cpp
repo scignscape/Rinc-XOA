@@ -37,6 +37,11 @@ void JSP_Form_Base::init(QString name, QString index_code, QString summary)
 {
  name_ = name;
  index_code_ = index_code;
- summary_ = ".; " + summary + " ;.\n\n=prog\n\n";
+ summary_ = ".; " + summary + " ;.\n\n=prog\n";
+
+ summary_ += "\nnre-set-current-class-name $ " + get_generated_class_name() + " ;.";
+ summary_ += "\nnre-write-class-header-lead ;.";
+ summary_ += "\nnre-write-class-implementation-lead ;.";
+
 }
 
