@@ -156,6 +156,12 @@ void VM_Interpreter::run_proc(QString proc_name)
 template<typename FN_Type, typename... ARGS>
 void VM_Interpreter::parse_fn(FN_Type fn, const VM_Opstatement& opst, ARGS... args)
 {
+ if(fn == 0)
+ {
+  QString message = "Can't match instruction name: %1"_qt.arg(opst.instruction());
+  qDebug() << message;
+  std::terminate();
+ }
 //? auto fns = swap_member_class_t<FN_Type, _Module_Base>(fn);
 
  auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, args...);

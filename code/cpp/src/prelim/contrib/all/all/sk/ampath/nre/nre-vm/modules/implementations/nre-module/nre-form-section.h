@@ -43,7 +43,15 @@ public:
 
  void write_questions();
 
+ u2 question_count()
+ {
+  return questions_.size();
+ }
 
+ NRE_Form_Question* get_question(u2 which)
+ {
+  return questions_.value(which);
+ }
 };
 
 _OTNS(AMPATH_NRE)

@@ -25,7 +25,10 @@ USING_KANS(TextIO)
 USING_OTNS(AMPATH_NRE)
 
 NRE_Module::NRE_Module()
- :  _Module_Base{"NRE"}
+ :  _Module_Base{"NRE"}, current_finalized_page_(nullptr),
+    current_finalized_answer_(nullptr),
+    current_finalized_question_(nullptr),
+    current_finalized_section_(nullptr)
 {
 
 }
@@ -186,6 +189,12 @@ void NRE_Module::write_form()
 {
  for(NRE_Form_Page* p : pages_)
  {
+  NRE_Form_Section* s = p->get_section(0);
+  u2 sc = s->question_count();
+  NRE_Form_Question* q = s->get_question(0);
+
+
+
   header_acc_top() << "\n\n // //  Page: " << p->label();
   header_acc_top() << "\n\n // //  ctor ";
   header_acc_top() << p->cpp_header_part("ctor");
@@ -207,6 +216,10 @@ void NRE_Module::write_form()
 
 void NRE_Module::finalize_current_form()
 {
+ finalize_current_answer();
+ finalize_current_question();
+ finalize_current_section();
+ finalize_current_page();
  write_form();
 }
 
@@ -217,35 +230,56 @@ void NRE_Module::finalize_form()
 
 void NRE_Module::new_page()
 {
+ finalize_current_page();
  NRE_Form_Page* p = new NRE_Form_Page;
  pages_.push_back(p);
 }
 
+void NRE_Module::finalize_current_page()
+{
+ if(current_finalized_page_)
+   current_finalized_page_->write_sections();
+}
+
 void NRE_Module::finalize_page()
 {
- current_page()->write_sections();
+ current_finalized_page_ = current_page();
 }
 
 void NRE_Module::new_section()
 {
+ finalize_current_section();
  NRE_Form_Section* s = new NRE_Form_Section;
  current_page()->add_section(s);
 }
 
 void NRE_Module::finalize_section()
 {
- current_section()->write_questions();
+ current_finalized_section_ = current_section();
+}
+
+void NRE_Module::finalize_current_section()
+{
+ if(current_finalized_section_)
+   current_finalized_section_->write_questions();
 }
 
 void NRE_Module::new_question()
 {
+ finalize_current_question();
  NRE_Form_Question* q = new NRE_Form_Question;
  current_section()->add_question(q);
 }
 
 void NRE_Module::finalize_question()
 {
+ current_finalized_question_ = current_question();
+}
 
+void NRE_Module::finalize_current_question()
+{
+ if(current_finalized_question_)
+   current_finalized_question_->write_answers();
 }
 
 void NRE_Module::question_unset_required()
@@ -255,13 +289,19 @@ void NRE_Module::question_unset_required()
 
 void NRE_Module::new_answer()
 {
- NRE_Form_Answer* a= new NRE_Form_Answer;
+ finalize_current_answer();
+ NRE_Form_Answer* a = new NRE_Form_Answer;
  current_question()->add_answer(a);
 }
 
 void NRE_Module::finalize_answer()
 {
+ current_finalized_answer_ = current_answer();
+}
 
+void NRE_Module::finalize_current_answer()
+{
+ //?
 }
 
 void NRE_Module::answer_yes()

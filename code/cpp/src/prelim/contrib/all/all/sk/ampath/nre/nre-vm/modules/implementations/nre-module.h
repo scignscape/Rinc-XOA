@@ -45,6 +45,17 @@ class NRE_Module : public _Module_Base, public NRE_Form_Base
 
  void write_form();
 
+ NRE_Form_Page* current_finalized_page_;
+ void finalize_current_page();
+
+ NRE_Form_Section* current_finalized_section_;
+ void finalize_current_section();
+
+ NRE_Form_Question* current_finalized_question_;
+ void finalize_current_question();
+
+ NRE_Form_Answer* current_finalized_answer_;
+ void finalize_current_answer();
 
 public:
 

@@ -45,7 +45,15 @@ public:
 
  void write_sections();
 
+ u2 section_count()
+ {
+  return sections_.size();
+ }
 
+ NRE_Form_Section* get_section(u2 which)
+ {
+  return sections_.value(which);
+ }
 };
 
 _OTNS(AMPATH_NRE)

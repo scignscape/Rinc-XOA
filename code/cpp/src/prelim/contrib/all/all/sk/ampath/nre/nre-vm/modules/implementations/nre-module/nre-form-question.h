@@ -83,6 +83,8 @@ public:
 
  void write_rendering(QString text);
 
+ void write_answers();
+
 };
 
 _OTNS(AMPATH_NRE)

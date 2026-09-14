@@ -35,6 +35,11 @@ void NRE_Form_Question::cleanup()
  }
 }
 
+void NRE_Form_Question::write_answers()
+{
+
+}
+
 void NRE_Form_Question::add_answer(NRE_Form_Answer* a)
 {
  answers_.push_back(a);
@@ -78,7 +83,7 @@ void NRE_Form_Question::write_rendering(QString text)
   implementation_acc("ctor") << "\n" << id_ << "_" << " = new QTextArea(this);";
   break;
  case Rendering_Types::Number:
-  header_acc("methods") << "QLineEdit* " << id_ << "_";
+  header_acc("methods") << "\nQLineEdit* " << id_ << "_";
   implementation_acc("ctor") << "\n" << id_ << "_" << " = new QLineEdit(this);";
   implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;

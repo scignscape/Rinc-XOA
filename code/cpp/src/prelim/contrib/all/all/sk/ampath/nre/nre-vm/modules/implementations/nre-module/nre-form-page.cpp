@@ -30,12 +30,20 @@ void NRE_Form_Page::write_sections()
 {
  for(NRE_Form_Section* s : sections_)
  {
+  header_acc("ctor") << "\n\n // // Section: " << s->label();
+  header_acc("ctor") << "\n\n // // ctor ";
   header_acc("ctor") << s->cpp_header_part("ctor");
+  header_acc("init") << "\n\n // // init ";
   header_acc("init") << s->cpp_header_part("init");
+  header_acc("methods") << "\n\n // // methods ";
   header_acc("methods") << s->cpp_header_part("methods");
 
+  implementation_acc("ctor") << "\n\n // // Section: " << s->label();
+  implementation_acc("ctor") << "\n\n // // ctor ";
   implementation_acc("ctor") << s->cpp_implementation_part("ctor");
+  implementation_acc("init") << "\n\n // // init ";
   implementation_acc("init") << s->cpp_implementation_part("init");
+  implementation_acc("methods") << "\n\n // // methods ";
   implementation_acc("methods") << s->cpp_implementation_part("methods");
  }
 }
