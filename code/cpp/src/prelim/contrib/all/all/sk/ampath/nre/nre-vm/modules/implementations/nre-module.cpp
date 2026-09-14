@@ -21,59 +21,130 @@ NRE_Module::NRE_Module()
 
 }
 
-void NRE_Module::global_baseline_skip(r8 val)
+void NRE_Module::form_processor(QString text)
 {
 
 }
 
-void NRE_Module::global_baseline_stretch(r8 val)
+void NRE_Module::form_uuid(QString text)
 {
 
 }
 
-void NRE_Module::dim_pt()
+void NRE_Module::page_label(QString text)
 {
 
 }
 
-void NRE_Module::aux_X(r8 val)
+void NRE_Module::section_label(QString text)
 {
 
 }
 
-void NRE_Module::aux_Y(r8 val)
+void NRE_Module::question_label(QString text)
 {
 
 }
 
-void NRE_Module::aux_B(QString str)
+void NRE_Module::question_type(QString text)
 {
 
 }
 
-void NRE_Module::aux_P(u4 val)
+void NRE_Module::question_concept(QString text)
 {
 
 }
 
-void NRE_Module::aux_H(u4 val)
+void NRE_Module::question_rendering(QString text)
 {
 
 }
 
-void NRE_Module::aux_sh(u4 val)
+void NRE_Module::question_default(QString text)
 {
 
 }
 
-void NRE_Module::aux_sp(u4 val)
+void NRE_Module::answer_label(QString text)
+{
+
+}
+
+void NRE_Module::answer_concept(QString text)
+{
+
+}
+
+void NRE_Module::form_version(u2 val)
+{
+
+}
+
+void NRE_Module::new_form()
+{
+
+}
+
+void NRE_Module::finalize_form()
+{
+
+}
+
+void NRE_Module::new_page()
+{
+
+}
+
+void NRE_Module::finalize_page()
+{
+
+}
+
+void NRE_Module::new_section()
+{
+
+}
+
+void NRE_Module::finalize_section()
+{
+
+}
+
+void NRE_Module::new_question()
+{
+
+}
+
+void NRE_Module::finalize_question()
+{
+
+}
+
+void NRE_Module::question_unset_required()
+{
+
+}
+
+void NRE_Module::new_answer()
+{
+
+}
+
+void NRE_Module::finalize_answer()
+{
+
+}
+
+void NRE_Module::answer_yes()
+{
+
+}
+
+void NRE_Module::answer_no()
 {
 
 }
 
 
-void NRE_Module::aux_id(u4 val)
-{
-
-}
 

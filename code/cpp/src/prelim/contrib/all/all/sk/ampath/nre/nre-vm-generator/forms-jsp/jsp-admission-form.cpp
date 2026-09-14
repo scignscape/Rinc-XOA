@@ -54,8 +54,8 @@ void JSP_Admission_Form::parse_question(const QJsonObject& question_qjo)
  summary_ += r;
  summary_ += "\n :id $ " + id + " ;.";
  summary_ += "\n :label $ " + label + " ;.";
- summary_ += "\n :question-type $ " + question_type + " ;.";
- summary_ += "\n :question-concept $ " + question_concept + " ;.";
+ summary_ += "\n :type $ " + question_type + " ;.";
+ summary_ += "\n :concept $ " + question_concept + " ;.";
  summary_ += "\n :rendering $ " + rendering + " ;.";
  summary_ += "\n :default $ " + question_default + " ;.";
  summary_ += "\nnre-finalize<-question ;.\n";
@@ -93,7 +93,7 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
  summary_ += "\n\nnre-new->form ;.";
  summary_ += "\n :processor $ " + processor_ + " ;.";
  summary_ += "\n :uuid $ " + uuid_ + " ;.";
- summary_ += "\n :version $ " + version_ + " ;.";
+ summary_ += "\n :version 2# " + QString::number(version_.toUShort()) + " ;.";
  summary_ += "\nnre-finalize<-form ;.";
 
  QJsonArray pages = qjo.value("pages").toArray();

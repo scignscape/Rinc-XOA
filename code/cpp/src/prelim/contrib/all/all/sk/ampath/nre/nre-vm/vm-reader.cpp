@@ -33,6 +33,43 @@ void VM_Reader::load_file(QString path)
  file_contents_ = KA::TextIO::load_file(path);
 }
 
+void VM_Reader::check_prefix(QString& instr)
+{
+ int pos = instr.indexOf("<-");
+
+ if(pos != -1)
+ {
+  QString pre = instr.mid(pos + 2);
+  if(pre == current_prefix_)
+    current_prefix_.clear();
+  else
+  {
+   qDebug() << "Unexpected leave prefix: " << pre;
+   qDebug() << "Current prefix: " << current_prefix_;
+  }
+  instr.remove(pos, 1);
+ }
+
+ pos = instr.indexOf(">");
+
+ if(pos != -1)
+ {
+  current_prefix_ = instr.mid(pos + 1);
+  instr.remove(pos, 1);
+
+  pos = instr.indexOf("-");
+  if(pos != -1)
+    current_module_name_ = instr.left(pos);
+ }
+
+ if(instr.startsWith(":"))
+ {
+  instr.prepend(current_module_name_ + "-" + current_prefix_);
+ }
+
+}
+
+
 VM_Opstatement VM_Reader::next_opstatement()
 {
  if(opstatement_index_ == 0)
@@ -69,6 +106,7 @@ VM_Opstatement VM_Reader::next_opstatement()
    return VM_Opstatement(opstatement_index_, instruction, VM_Opstatement::Control_Coords::_CMD);
 
 
+ check_prefix(instruction);
 
  VM_Opstatement::Mid_Control_Kinds mck = VM_Opstatement::Mid_Control_Kinds::N_A;
  VM_Opstatement::Control_Coords cc = VM_Opstatement::Control_Coords::N_A;

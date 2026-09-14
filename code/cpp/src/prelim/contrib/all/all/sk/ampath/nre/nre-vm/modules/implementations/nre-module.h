@@ -27,18 +27,33 @@ public:
 
  NRE_Module();
 
- void global_baseline_skip(r8 val);
- void global_baseline_stretch(r8 val);
+ void form_processor(QString text);
+ void form_uuid(QString text);
+ void page_label(QString text);
+ void section_label(QString text);
+ void question_label(QString text);
+ void question_type(QString text);
+ void question_concept(QString text);
+ void question_rendering(QString text);
+ void question_default(QString text);
+ void answer_label(QString text);
+ void answer_concept(QString text);
 
- void dim_pt();
- void aux_X(r8 val);
- void aux_Y(r8 val);
- void aux_B(QString str);
- void aux_P(u4 val);
- void aux_H(u4 val);
- void aux_sh(u4 val);
- void aux_sp(u4 val);
- void aux_id(u4 val);
+ void form_version(u2 val);
+
+ void new_form();
+ void finalize_form();
+ void new_page();
+ void finalize_page();
+ void new_section();
+ void finalize_section();
+ void new_question();
+ void finalize_question();
+ void question_unset_required();
+ void new_answer();
+ void finalize_answer();
+ void answer_yes();
+ void answer_no();
 
 
 };

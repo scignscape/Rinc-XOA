@@ -31,6 +31,11 @@ class VM_Reader
  u4 opstatement_index_;
 //? u4 cache_index_;
 
+ QString current_prefix_;
+ QString current_module_name_;
+
+ void check_prefix(QString& instr);
+
  VM_Opstatement _EOF();
 
 public:
