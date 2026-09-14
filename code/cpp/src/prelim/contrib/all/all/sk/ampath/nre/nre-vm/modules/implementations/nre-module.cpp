@@ -133,7 +133,7 @@ void NRE_Module::section_label(QString text)
 
 void NRE_Module::question_label(QString text)
 {
- current_question()->set_label(text);
+ current_question()->write_label(text);
 }
 
 void NRE_Module::question_type(QString text)
@@ -143,7 +143,7 @@ void NRE_Module::question_type(QString text)
 
 void NRE_Module::question_concept(QString text)
 {
-
+ current_question()->write_concept(text);
 }
 
 void NRE_Module::question_rendering(QString text)

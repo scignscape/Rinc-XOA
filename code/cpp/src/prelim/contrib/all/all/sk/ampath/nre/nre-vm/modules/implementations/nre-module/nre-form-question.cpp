@@ -23,7 +23,7 @@ USING_OTNS(AMPATH_NRE)
 NRE_Form_Question::NRE_Form_Question()
   :  required_cardinality_(0)
 {
- init_accs({"ctor", "methods"});
+ init_accs({"ctor", "methods", "methods"});
 }
 
 void NRE_Form_Question::cleanup()
@@ -45,6 +45,16 @@ NRE_Form_Answer* NRE_Form_Question::current_answer()
  return answers_.last();
 }
 
+void NRE_Form_Question::write_concept(QString text)
+{
+ implementation_acc("init") << "\nset_concept(\""
+   << id_ << "\", \"" << text << "\");";
+}
 
+void NRE_Form_Question::write_label(QString text)
+{
+ implementation_acc("init") << "\nset_label(\""
+   << id_ << "\", \"" << text << "\");";
+}
 
 

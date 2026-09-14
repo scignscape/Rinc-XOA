@@ -29,7 +29,7 @@ class NRE_Form_Question : public NRE_Form_Base
 {
  QVector<NRE_Form_Answer*> answers_;
 
- QString label_;
+ QString id_;
 
  u2 required_cardinality_;
 
@@ -38,6 +38,7 @@ public:
  NRE_Form_Question();
 
  ACCESSORS(u2 ,required_cardinality)
+ ACCESSORS(QString ,id)
 
  void add_answer(NRE_Form_Answer* a);
 
@@ -45,7 +46,8 @@ public:
 
  void cleanup();
 
- ACCESSORS(QString ,label)
+ void write_concept(QString text);
+ void write_label(QString text);
 
 };
 
