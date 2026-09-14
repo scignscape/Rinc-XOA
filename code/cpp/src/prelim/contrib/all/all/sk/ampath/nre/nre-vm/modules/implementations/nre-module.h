@@ -45,6 +45,9 @@ public:
  void save_header_file(QString file_path);
  void save_implementation_file(QString file_path);
 
+ void finalize_header_file();
+ void finalize_implementation_file();
+
  void form_processor(QString text);
  void form_uuid(QString text);
  void page_label(QString text);

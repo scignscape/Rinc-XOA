@@ -26,6 +26,19 @@ NRE_Module::NRE_Module()
 
 }
 
+void NRE_Module::finalize_header_file()
+{
+ header_acc_ << "\n\n}; // end class \n";
+ header_acc_ << "\n\n_KANS(AMPATH_Forms)\n\n";
+ header_acc_ << "#endif // __H guard";
+
+}
+
+void NRE_Module::finalize_implementation_file()
+{
+
+}
+
 void NRE_Module::save_header_file(QString file_path)
 {
  save_file(file_path, cpp_header_);
@@ -38,12 +51,38 @@ void NRE_Module::save_implementation_file(QString file_path)
 
 void NRE_Module::write_class_header_lead()
 {
+ QString guard = current_class_name_.toUpper() + "__H";
+
+ header_acc_ << R"(
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+                )"
+  << "#ifndef " << guard << "\n#define " << guard << "\n\n"
+
+  << "\n\n#include \"kans.h\n\nKANS_(AMPATH_Forms)\n\n"
+
+  << "class " << guard << "\n{\n";
+
 
 }
 
 void NRE_Module::write_class_implementation_lead()
 {
+ QString inc = current_class_name_.toLower().replace("_", "-");
 
+ implementation_acc_ << R"(
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+                )"
+
+  << "#include \"" << inc << "\"\n\n"
+  << "USING_KANS(AMPATH_Forms)\n\n";
 }
 
 void NRE_Module::form_processor(QString text)

@@ -132,6 +132,9 @@ void JSP_Admission_Form::read_JSON_Object(const QJsonObject& qjo)
   }
  }
 
+ summary_ += "\nnre-finalize-header-file ;.";
+ summary_ += "\nnre-finalize-implementation-file ;.";
+
  summary_ += "\nnre-save-header-file $ " + header_file_path_ + " ;.";
  summary_ += "\nnre-save-implementation-file $ " + implementation_file_path_ + " ;.";
 
