@@ -40,6 +40,8 @@
    {"nre-finalize-answer", (methods_x0) &NRE_Module::finalize_answer},
    {"nre-answer:yes", (methods_x0) &NRE_Module::answer_yes},
    {"nre-answer:no", (methods_x0) &NRE_Module::answer_no},
+   {"nre-finalize-current-form", (methods_x0) &NRE_Module::finalize_current_form},
+
 #elif METHODS_U2x1
    {"nre-form:version", (methods_U2x1) &NRE_Module::form_version},
 #elif METHODS_R8x1

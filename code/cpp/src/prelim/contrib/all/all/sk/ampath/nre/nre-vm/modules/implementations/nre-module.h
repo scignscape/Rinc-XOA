@@ -90,6 +90,8 @@ public:
  void answer_yes();
  void answer_no();
 
+ void finalize_current_form();
+
 
 };
 

@@ -205,10 +205,14 @@ void NRE_Module::write_form()
 
 }
 
+void NRE_Module::finalize_current_form()
+{
+ write_form();
+}
 
 void NRE_Module::finalize_form()
 {
-
+ //write_form();
 }
 
 void NRE_Module::new_page()
