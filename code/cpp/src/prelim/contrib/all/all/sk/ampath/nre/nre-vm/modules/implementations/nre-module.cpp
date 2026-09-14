@@ -60,7 +60,7 @@ void NRE_Module::write_class_header_lead()
 //           http://www.boost.org/LICENSE_1_0.txt)
 
                 )"
-  << "#ifndef " << guard << "\n#define " << guard << "\n\n"
+  << "\n#ifndef " << guard << "\n#define " << guard << "\n\n"
 
   << "\n\n#include \"kans.h\n\nKANS_(AMPATH_Forms)\n\n"
 
@@ -81,7 +81,7 @@ void NRE_Module::write_class_implementation_lead()
 
                 )"
 
-  << "#include \"" << inc << "\"\n\n"
+  << "\n#include \"" << inc << "\"\n\n"
   << "USING_KANS(AMPATH_Forms)\n\n";
 }
 
