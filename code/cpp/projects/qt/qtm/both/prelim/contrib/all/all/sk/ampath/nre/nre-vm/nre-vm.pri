@@ -36,6 +36,10 @@ HEADERS += \
   $$SRC_DIR/modules/module-macros.h \
   $$SRC_DIR/modules/module-base.h \
   $$SRC_DIR/modules/implementations/nre-module.h \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-answer.h \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-page.h \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-question.h \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-section.h \
   $$SRC_DIR/modules/implementations/rcs-module.h \
 
 
@@ -46,6 +50,10 @@ SOURCES += \
   $$SRC_DIR/vm-reader.cpp \
   $$SRC_DIR/vm-opstatement.cpp \
   $$SRC_DIR/modules/implementations/nre-module.cpp \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-answer.cpp \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-page.cpp \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-question.cpp \
+   $$SRC_DIR/modules/implementations/nre-module/nre-form-section.cpp \
   $$SRC_DIR/modules/implementations/rcs-module.cpp \
 
 
