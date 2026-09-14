@@ -43,6 +43,8 @@ class NRE_Module : public _Module_Base, public NRE_Form_Base
  NRE_Form_Question* current_question();
  NRE_Form_Answer* current_answer();
 
+ void write_form();
+
 
 public:
 

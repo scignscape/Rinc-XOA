@@ -33,6 +33,37 @@ class NRE_Form_Question : public NRE_Form_Base
 
  u2 required_cardinality_;
 
+ enum class Question_Types {
+   N_A, Observation, Markdown
+ };
+
+ QString enumerated_question_type(QString ty)
+ {
+  static QMap<QString, QString> static_map {
+   {"obs", "Question_Types::Observation"},
+   {"obs", "Question_Types::Markdown"},
+  };
+
+  return static_map.value(ty, "Question_Types::N_A");
+ }
+
+ enum class Rendering_Types {
+   N_A, Text, TextArea, Number, DateTime, Radio
+ };
+
+ Rendering_Types parse_rendering_type(QString ty)
+ {
+  static QMap<QString, Rendering_Types> static_map {
+   {"text", Rendering_Types::Text},
+   {"textarea", Rendering_Types::TextArea},
+   {"number", Rendering_Types::Number},
+   {"datetime", Rendering_Types::DateTime},
+   {"radio", Rendering_Types::Radio},
+  };
+
+  return static_map.value(ty, Rendering_Types::N_A);
+ }
+
 public:
 
  NRE_Form_Question();
@@ -48,6 +79,9 @@ public:
 
  void write_concept(QString text);
  void write_label(QString text);
+ void write_question_type(QString text);
+
+ void write_rendering(QString text);
 
 };
 

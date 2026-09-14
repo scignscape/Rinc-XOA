@@ -41,6 +41,9 @@ public:
 
  void cleanup();
 
+ void write_pages();
+
+
 };
 
 _OTNS(AMPATH_NRE)

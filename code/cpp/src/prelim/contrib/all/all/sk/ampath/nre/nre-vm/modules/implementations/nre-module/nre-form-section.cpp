@@ -22,8 +22,24 @@ USING_OTNS(AMPATH_NRE)
 
 NRE_Form_Section::NRE_Form_Section()
 {
+ init_accs({"ctor", "init", "methods"});
+}
+
+void NRE_Form_Section::write_pages()
+{
+ for(NRE_Form_Page* p : pages_)
+ {
+  header_acc("ctor") << p->cpp_header_part("ctor");
+  header_acc("init") << p->cpp_header_part("init");
+  header_acc("methods") << p->cpp_header_part("methods");
+
+  implementation_acc("ctor") << p->cpp_implementation_part("ctor");
+  implementation_acc("init") << p->cpp_implementation_part("init");
+  implementation_acc("methods") << p->cpp_implementation_part("methods");
+ }
 
 }
+
 
 void NRE_Form_Section::cleanup()
 {

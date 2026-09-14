@@ -43,6 +43,8 @@ public:
 
  void cleanup();
 
+ void write_questions();
+
 };
 
 _OTNS(AMPATH_NRE)

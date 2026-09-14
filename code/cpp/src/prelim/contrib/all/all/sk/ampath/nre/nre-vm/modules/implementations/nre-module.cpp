@@ -182,6 +182,30 @@ void NRE_Module::new_form()
    s->cleanup();
 }
 
+void NRE_Module::write_form()
+{
+ for(NRE_Form_Section* s : sections_)
+ {
+  header_acc_top() << "\n\n // //  Section: " << s->label();
+  header_acc_top() << "\n\n // //  ctor ";
+  header_acc_top() << s->cpp_header_part("ctor");
+  header_acc_top() << "\n\n // //  init ";
+  header_acc_top() << s->cpp_header_part("init");
+  header_acc_top() << "\n\n // //  methods ";
+  header_acc_top() << s->cpp_header_part("methods");
+
+  implementation_acc_top() << "\n\n // //  Section: " << s->label();
+  implementation_acc_top() << "\n\n // //  ctor ";
+  implementation_acc_top() << s->cpp_implementation_part("ctor");
+  implementation_acc_top() << "\n\n // //  init ";
+  implementation_acc_top() << s->cpp_implementation_part("init");
+  implementation_acc_top() << "\n\n // //  methods ";
+  implementation_acc_top() << s->cpp_implementation_part("methods");
+ }
+
+}
+
+
 void NRE_Module::finalize_form()
 {
 
@@ -195,7 +219,7 @@ void NRE_Module::new_page()
 
 void NRE_Module::finalize_page()
 {
-
+ current_page()->write_questions();
 }
 
 void NRE_Module::new_section()
@@ -206,7 +230,7 @@ void NRE_Module::new_section()
 
 void NRE_Module::finalize_section()
 {
-
+ current_section()->write_pages();
 }
 
 void NRE_Module::new_question()
