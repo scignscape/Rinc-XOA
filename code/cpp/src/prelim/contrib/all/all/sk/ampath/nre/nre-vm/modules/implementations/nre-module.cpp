@@ -8,6 +8,12 @@
 
 #include "nre-module.h"
 
+#include "nre-module/nre-form-answer.h"
+#include "nre-module/nre-form-page.h"
+#include "nre-module/nre-form-question.h"
+#include "nre-module/nre-form-section.h"
+
+
 #include <bit>
 
 #include <QDebug>
@@ -23,6 +29,28 @@ NRE_Module::NRE_Module()
 {
 
 }
+
+NRE_Form_Section* NRE_Module::current_section()
+{
+ return sections_.last();
+}
+
+NRE_Form_Page* NRE_Module::current_page()
+{
+ return current_section()->current_page();
+}
+
+NRE_Form_Question* NRE_Module::current_question()
+{
+ return current_page()->current_question();
+}
+
+NRE_Form_Answer* NRE_Module::current_answer()
+{
+ return current_question()->current_answer();
+}
+
+
 
 void NRE_Module::finalize_header_file()
 {
@@ -95,17 +123,17 @@ void NRE_Module::form_uuid(QString text)
 
 void NRE_Module::page_label(QString text)
 {
-
+ current_page()->set_label(text);
 }
 
 void NRE_Module::section_label(QString text)
 {
-
+ current_section()->set_label(text);
 }
 
 void NRE_Module::question_label(QString text)
 {
-
+ current_question()->set_label(text);
 }
 
 void NRE_Module::question_type(QString text)
@@ -150,7 +178,8 @@ void NRE_Module::form_version(u2 val)
 
 void NRE_Module::new_form()
 {
-
+ for(NRE_Form_Section s : sections_)
+   s->cleanup();
 }
 
 void NRE_Module::finalize_form()

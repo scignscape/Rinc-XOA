@@ -40,6 +40,11 @@ public:
 
  NRE_Form_Page* current_page();
 
+ void cleanup()
+ {
+  for(NRE_Form_Page p : pages_)
+    p->cleanup();
+ }
 
 };
 

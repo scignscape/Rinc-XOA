@@ -36,6 +36,12 @@ public:
 
  NRE_Form_Answer* current_answer();
 
+ void cleanup()
+ {
+  for(NRE_Form_Answer a : answerts_)
+    delete a;
+ }
+
 // ACCESSORS(QString ,current_class_name)
 
 };
