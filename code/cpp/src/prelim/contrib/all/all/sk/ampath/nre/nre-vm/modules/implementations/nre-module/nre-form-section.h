@@ -18,13 +18,13 @@
 
 OTNS_(AMPATH_NRE)
 
-class NRE_Section : public _Module_Base
+class NRE_Section : public NRE_Form_Base
 {
  QString label_;
 
 public:
 
- NRE_Module();
+ NRE_Section();
 
  ACCESSORS(QString ,label)
 

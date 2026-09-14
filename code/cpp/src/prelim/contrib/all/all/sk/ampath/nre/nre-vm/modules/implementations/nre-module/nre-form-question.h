@@ -18,7 +18,7 @@
 
 OTNS_(AMPATH_NRE)
 
-class NRE_Form_Question
+class NRE_Form_Question : public NRE_Form_Base
 {
 
 public:

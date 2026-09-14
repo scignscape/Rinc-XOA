@@ -5,8 +5,8 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef NRE_FORM_PAGE__H
-#define NRE_FORM_PAGE__H
+#ifndef NRE_FORM_BASE__H
+#define NRE_FORM_BASE__H
 
 #include <QTextStream>
 
@@ -18,18 +18,23 @@
 
 OTNS_(AMPATH_NRE)
 
-class NRE_Form_Page : public NRE_Form_Base
+class NRE_Form_Base
 {
- QString label_;
+protected:
+ QString cpp_header_;
+ QString cpp_implementation_;
+
+ QTextStream header_acc_;
+ QTextStream implementation_acc_;
 
 public:
 
- NRE_Form_Page();
+ NRE_Form_Base();
 
- ACCESSORS(QString ,label)
+// ACCESSORS(QString ,current_class_name)
 
 };
 
 _OTNS(AMPATH_NRE)
 
-#endif // NRE_FORM_PAGE__H
+#endif // NRE_FORM_BASE__H

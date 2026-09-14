@@ -19,9 +19,7 @@ USING_KANS(TextIO)
 USING_OTNS(AMPATH_NRE)
 
 NRE_Module::NRE_Module()
- :  _Module_Base{"NRE"},
-    header_acc_(&cpp_header_),
-    implementation_acc_(&cpp_implementation_)
+ :  _Module_Base{"NRE"}
 {
 
 }

@@ -14,11 +14,13 @@
 
 #include "accessors.h"
 
+#include "nre-form-base.h"
+
 #include "otns.h"
 
 OTNS_(AMPATH_NRE)
 
-class NRE_Form_Answer
+class NRE_Form_Answer : public NRE_Form_Base
 {
 
 public:

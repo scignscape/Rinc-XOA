@@ -19,19 +19,16 @@
 
 #include "../module-base.h"
 
+#include "nre-module/nre-form-base.h"
+
 #include "otns.h"
 
 OTNS_(AMPATH_NRE)
 
-class NRE_Module : public _Module_Base
+class NRE_Module : public _Module_Base, public NRE_Form_Base
 {
  QString current_class_name_;
 
- QString cpp_header_;
- QString cpp_implementation_;
-
- QTextStream header_acc_;
- QTextStream implementation_acc_;
 
 public:
 
