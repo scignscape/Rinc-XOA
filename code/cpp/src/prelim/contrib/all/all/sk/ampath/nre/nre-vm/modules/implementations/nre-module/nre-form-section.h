@@ -21,13 +21,13 @@
 
 OTNS_(AMPATH_NRE)
 
-class NRE_Form_Page;
+class NRE_Form_Question;
 
 class NRE_Form_Section : public NRE_Form_Base
 {
  QString label_;
 
- QVector<NRE_Form_Page*> pages_;
+ QVector<NRE_Form_Question*> questions_;
 
 public:
 
@@ -35,13 +35,13 @@ public:
 
  ACCESSORS(QString ,label)
 
- void add_page(NRE_Form_Page* p);
+ void add_question(NRE_Form_Question* q);
 
- NRE_Form_Page* current_page();
+ NRE_Form_Question* current_question();
 
  void cleanup();
 
- void write_pages();
+ void write_questions();
 
 
 };

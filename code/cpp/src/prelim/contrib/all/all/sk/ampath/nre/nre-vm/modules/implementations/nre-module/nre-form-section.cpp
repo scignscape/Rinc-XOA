@@ -12,7 +12,7 @@
 
 #include <QDebug>
 
-#include "nre-form-page.h"
+#include "nre-form-question.h"
 
 #include "textio.h"
 
@@ -25,40 +25,59 @@ NRE_Form_Section::NRE_Form_Section()
  init_accs({"ctor", "init", "methods"});
 }
 
-void NRE_Form_Section::write_pages()
+void NRE_Form_Section::write_questions()
 {
- for(NRE_Form_Page* p : pages_)
+ for(NRE_Form_Question* q : questions_)
  {
-  header_acc("ctor") << p->cpp_header_part("ctor");
-  header_acc("init") << p->cpp_header_part("init");
-  header_acc("methods") << p->cpp_header_part("methods");
+  header_acc("ctor") << q->cpp_header_part("ctor");
+  header_acc("init") << q->cpp_header_part("init");
+  header_acc("methods") << q->cpp_header_part("methods");
 
-  implementation_acc("ctor") << p->cpp_implementation_part("ctor");
-  implementation_acc("init") << p->cpp_implementation_part("init");
-  implementation_acc("methods") << p->cpp_implementation_part("methods");
+  implementation_acc("ctor") << q->cpp_implementation_part("ctor");
+  implementation_acc("init") << q->cpp_implementation_part("init");
+  implementation_acc("methods") << q->cpp_implementation_part("methods");
  }
-
 }
-
 
 void NRE_Form_Section::cleanup()
 {
- for(NRE_Form_Page* p : pages_)
+ for(NRE_Form_Question* q : questions_)
  {
-  p->cleanup();
-  delete p;
+  q->cleanup();
+  delete q;
  }
 }
 
 
-void NRE_Form_Section::add_page(NRE_Form_Page* p)
+void NRE_Form_Section::add_question(NRE_Form_Question* q)
 {
- pages_.push_back(p);
+ questions_.push_back(q);
 }
 
-NRE_Form_Page* NRE_Form_Section::current_page()
+NRE_Form_Question* NRE_Form_Section::current_question()
 {
- return pages_.last();
+ return questions_.last();
 }
+
+
+//void NRE_Form_Section::cleanup()
+//{
+// for(NRE_Form_Page* p : pages_)
+// {
+//  p->cleanup();
+//  delete p;
+// }
+//}
+
+
+//void NRE_Form_Section::add_page(NRE_Form_Page* p)
+//{
+// pages_.push_back(p);
+//}
+
+//NRE_Form_Page* NRE_Form_Section::current_page()
+//{
+// return pages_.last();
+//}
 
 

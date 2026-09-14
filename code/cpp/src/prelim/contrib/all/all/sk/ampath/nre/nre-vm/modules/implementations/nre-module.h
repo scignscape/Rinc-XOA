@@ -35,11 +35,11 @@ class NRE_Module : public _Module_Base, public NRE_Form_Base
 {
  QString current_class_name_;
 
- QVector<NRE_Form_Section*> sections_;
-
- NRE_Form_Section* current_section();
+ QVector<NRE_Form_Page*> pages_;
 
  NRE_Form_Page* current_page();
+
+ NRE_Form_Section* current_section();
  NRE_Form_Question* current_question();
  NRE_Form_Answer* current_answer();
 

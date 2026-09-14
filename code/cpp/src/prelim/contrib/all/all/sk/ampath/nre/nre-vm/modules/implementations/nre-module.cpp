@@ -32,17 +32,17 @@ NRE_Module::NRE_Module()
 
 NRE_Form_Section* NRE_Module::current_section()
 {
- return sections_.last();
+ return current_page()->current_section();
 }
 
 NRE_Form_Page* NRE_Module::current_page()
 {
- return current_section()->current_page();
+ return pages_.last();
 }
 
 NRE_Form_Question* NRE_Module::current_question()
 {
- return current_page()->current_question();
+ return current_section()->current_question();
 }
 
 NRE_Form_Answer* NRE_Module::current_answer()
@@ -138,7 +138,7 @@ void NRE_Module::question_label(QString text)
 
 void NRE_Module::question_type(QString text)
 {
-
+ current_question()->write_question_type(text);
 }
 
 void NRE_Module::question_concept(QString text)
@@ -148,7 +148,7 @@ void NRE_Module::question_concept(QString text)
 
 void NRE_Module::question_rendering(QString text)
 {
-
+ current_question()->write_rendering(text);
 }
 
 void NRE_Module::question_default(QString text)
@@ -158,7 +158,7 @@ void NRE_Module::question_default(QString text)
 
 void NRE_Module::question_id(QString text)
 {
-
+ current_question()->set_id(text);
 }
 
 void NRE_Module::answer_label(QString text)
@@ -178,29 +178,29 @@ void NRE_Module::form_version(u2 val)
 
 void NRE_Module::new_form()
 {
- for(NRE_Form_Section* s : sections_)
-   s->cleanup();
+ for(NRE_Form_Page* p : pages_)
+   p->cleanup();
 }
 
 void NRE_Module::write_form()
 {
- for(NRE_Form_Section* s : sections_)
+ for(NRE_Form_Page* p : pages_)
  {
-  header_acc_top() << "\n\n // //  Section: " << s->label();
+  header_acc_top() << "\n\n // //  Page: " << p->label();
   header_acc_top() << "\n\n // //  ctor ";
-  header_acc_top() << s->cpp_header_part("ctor");
+  header_acc_top() << p->cpp_header_part("ctor");
   header_acc_top() << "\n\n // //  init ";
-  header_acc_top() << s->cpp_header_part("init");
+  header_acc_top() << p->cpp_header_part("init");
   header_acc_top() << "\n\n // //  methods ";
-  header_acc_top() << s->cpp_header_part("methods");
+  header_acc_top() << p->cpp_header_part("methods");
 
-  implementation_acc_top() << "\n\n // //  Section: " << s->label();
+  implementation_acc_top() << "\n\n // //  Page: " << p->label();
   implementation_acc_top() << "\n\n // //  ctor ";
-  implementation_acc_top() << s->cpp_implementation_part("ctor");
+  implementation_acc_top() << p->cpp_implementation_part("ctor");
   implementation_acc_top() << "\n\n // //  init ";
-  implementation_acc_top() << s->cpp_implementation_part("init");
+  implementation_acc_top() << p->cpp_implementation_part("init");
   implementation_acc_top() << "\n\n // //  methods ";
-  implementation_acc_top() << s->cpp_implementation_part("methods");
+  implementation_acc_top() << p->cpp_implementation_part("methods");
  }
 
 }
@@ -214,29 +214,29 @@ void NRE_Module::finalize_form()
 void NRE_Module::new_page()
 {
  NRE_Form_Page* p = new NRE_Form_Page;
- current_section()->add_page(p);
+ pages_.push_back(p);
 }
 
 void NRE_Module::finalize_page()
 {
- current_page()->write_questions();
+ current_page()->write_sections();
 }
 
 void NRE_Module::new_section()
 {
  NRE_Form_Section* s = new NRE_Form_Section;
- sections_.push_back(s);
+ current_page()->add_section(s);
 }
 
 void NRE_Module::finalize_section()
 {
- current_section()->write_pages();
+ current_section()->write_questions();
 }
 
 void NRE_Module::new_question()
 {
  NRE_Form_Question* q = new NRE_Form_Question;
- current_page()->add_question(q);
+ current_section()->add_question(q);
 }
 
 void NRE_Module::finalize_question()
