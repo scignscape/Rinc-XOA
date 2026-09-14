@@ -15,6 +15,7 @@
    {"nre-page:label", (methods_String) &NRE_Module::page_label},
    {"nre-section:label", (methods_String) &NRE_Module::section_label},
    {"nre-question:label", (methods_String) &NRE_Module::question_label},
+   {"nre-question:id", (methods_String) &NRE_Module::question_id},
    {"nre-question:type", (methods_String) &NRE_Module::question_type},
    {"nre-question:concept", (methods_String) &NRE_Module::question_concept},
    {"nre-question:rendering", (methods_String) &NRE_Module::question_rendering},

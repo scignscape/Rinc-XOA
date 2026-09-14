@@ -130,6 +130,11 @@ void NRE_Module::question_default(QString text)
 
 }
 
+void NRE_Module::question_id(QString text)
+{
+
+}
+
 void NRE_Module::answer_label(QString text)
 {
 

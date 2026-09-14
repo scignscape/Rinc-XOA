@@ -53,6 +53,7 @@ public:
  void page_label(QString text);
  void section_label(QString text);
  void question_label(QString text);
+ void question_id(QString text);
  void question_type(QString text);
  void question_concept(QString text);
  void question_rendering(QString text);
