@@ -219,13 +219,21 @@ u4 _advance_past_end(QString& basis, QString* skipped, int ix0 = 0)
  if(ix1 == -1)
    return 0;
 
- int ix01 = ix1 - 1;
+ if(ix0 == ix1)
+ {
+  if(skipped)
+    skipped->clear();
+ }
+ else
+ {
+  int ix01 = ix1 - 1;
 
- while(basis[ix01] == basic_space)
-   --ix01;
+  while(basis[ix01] == basic_space)
+    --ix01;
 
- if(skipped)
-   *skipped = basis.mid(ix0, ix01 - ix0 + 1);
+  if(skipped)
+    *skipped = basis.mid(ix0, ix01 - ix0 + 1);
+ }
 
  int ix2 = ix1 + 2;
 

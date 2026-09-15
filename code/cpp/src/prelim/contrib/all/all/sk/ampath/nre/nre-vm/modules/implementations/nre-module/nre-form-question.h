@@ -48,7 +48,7 @@ class NRE_Form_Question : public NRE_Form_Base
  }
 
  enum class Rendering_Types {
-   N_A, Text, TextArea, Number, DateTime, Radio
+   N_A, Text, TextArea, Number, DateTime, Radio, Markdown
  };
 
  Rendering_Types parse_rendering_type(QString ty)

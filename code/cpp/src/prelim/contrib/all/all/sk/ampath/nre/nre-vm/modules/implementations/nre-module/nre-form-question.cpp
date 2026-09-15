@@ -64,7 +64,7 @@ void NRE_Form_Question::write_label(QString text)
 
 void NRE_Form_Question::write_question_type(QString text)
 {
- implementation_acc("init") << "\nset_label(\""
+ implementation_acc("init") << "\nset_question_type(\""
    << id_ << "\", \"" << enumerated_question_type(text) << "\");";
 }
 
@@ -88,14 +88,16 @@ void NRE_Form_Question::write_rendering(QString text)
   implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::DateTime:
-  header_acc("methods") << "QDateTimeEdit* " << id_ << "_";
+  header_acc("methods") << "\nQDateTimeEdit* " << id_ << "_";
   implementation_acc("ctor") << "\n" << id_ << "_" << " = new QDateTimeEdit(this);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Radio:
-  header_acc("methods") << "QButtonGroup* " << id_ << "_";
+  header_acc("methods") << "\nQButtonGroup* " << id_ << "_";
   implementation_acc("ctor") << "\n" << id_ << "_" << " = new QButtonGroup(this);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
+  break;
+ case Rendering_Types::Markdown:
   break;
  default:
   break;
