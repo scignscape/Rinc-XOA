@@ -35,7 +35,7 @@ class NRE_Module : public _Module_Base, public NRE_Form_Base
 {
  QString current_class_name_;
 
- QVector<NRE_Form_Page*> pages_;
+ QVList<NRE_Form_Page*> pages_;
 
  NRE_Form_Page* current_page();
 

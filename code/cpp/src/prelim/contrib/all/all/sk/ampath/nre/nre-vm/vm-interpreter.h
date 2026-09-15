@@ -27,10 +27,10 @@ class VM_Interpreter
  VM_Reader reader_;
  VM_Dispatcher dispatcher_;
 
- QMap<QString, QVector<QPair<void*, u4>>> ops_by_proc_name_;
- QVector<QPair<void*, u4>>& current_proc_name_ops_;
+ QMap<QString, QVList<QPair<void*, u4>>> ops_by_proc_name_;
+ QVList<QPair<void*, u4>>& current_proc_name_ops_;
 
- QVector<QString> cached_strings_;
+ QVList<QString> cached_strings_;
 
  void encode_which_stack(u1 stack, _Module_Base* module);
  QPair<u1, _Module_Base*> decode_which_stack(u4& number);

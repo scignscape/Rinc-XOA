@@ -27,7 +27,7 @@ class NRE_Form_Answer;
 
 class NRE_Form_Question : public NRE_Form_Base
 {
- QVector<NRE_Form_Answer*> answers_;
+ QVList<NRE_Form_Answer*> answers_;
 
  QString id_;
 
@@ -48,7 +48,8 @@ class NRE_Form_Question : public NRE_Form_Base
  }
 
  enum class Rendering_Types {
-   N_A, Text, TextArea, Number, DateTime, Radio, Markdown
+   N_A, Text, TextArea, Number, DateTime, Date, Radio, Markdown,
+   Select, MultiCheckbox, WorkspaceLauncher
  };
 
  Rendering_Types parse_rendering_type(QString ty)
@@ -58,7 +59,12 @@ class NRE_Form_Question : public NRE_Form_Base
    {"textarea", Rendering_Types::TextArea},
    {"number", Rendering_Types::Number},
    {"datetime", Rendering_Types::DateTime},
+   {"date", Rendering_Types::Date},
    {"radio", Rendering_Types::Radio},
+   {"multiCheckbox", Rendering_Types::MultiCheckbox},
+   {"markdown", Rendering_Types::Markdown},
+   {"select", Rendering_Types::Select},
+   {"workspace-launcher", Rendering_Types::Select},
   };
 
   return static_map.value(ty, Rendering_Types::N_A);

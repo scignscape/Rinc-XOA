@@ -19,7 +19,12 @@ CONFIG += debug
 
 CONFIG+=c++2a
 
-DEFINES += USING_QT_6
+greaterThan(QT_MAJOR_VERSION, 5) {
+ DEFINES += USING_QT_6
+ DEFINES += QVList=QList
+} else {
+ DEFINES += QVList=QVector
+}
 
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR

@@ -16,7 +16,12 @@ exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/co
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 
-DEFINES += USING_QT_6
+greaterThan(QT_MAJOR_VERSION, 5) {
+ DEFINES += USING_QT_6
+ DEFINES += QVList=QList
+} else {
+ DEFINES += QVList=QVector
+}
 
 CONFIG += debug
 

@@ -23,7 +23,7 @@ USING_OTNS(AMPATH_NRE)
 NRE_Form_Question::NRE_Form_Question()
   :  required_cardinality_(0)
 {
- init_accs({"ctor", "init", "methods"});
+ init_accs({"ctor", "init", "methods", "labels"});
 }
 
 void NRE_Form_Question::cleanup()
@@ -58,8 +58,10 @@ void NRE_Form_Question::write_concept(QString text)
 
 void NRE_Form_Question::write_label(QString text)
 {
- implementation_acc("init") << "\nset_label(\""
-   << id_ << "\", \"" << text << "\");";
+ implementation_acc("labels") << "\n L" << id_ << "_" << "->setText(" << text << ");";
+
+// implementation_acc("init") << "\nset_label(\""
+//   << id_ << "\", \"" << text << "\");";
 }
 
 void NRE_Form_Question::write_question_type(QString text)
@@ -70,36 +72,61 @@ void NRE_Form_Question::write_question_type(QString text)
 
 void NRE_Form_Question::write_rendering(QString text)
 {
+ header_acc("methods") << "\n QLabel* L" << id_ << "_;";
+ implementation_acc("ctor") << "\n L" << id_ << "_" << " = new QLabel(this);";
+
  Rendering_Types rt = parse_rendering_type(text);
 
  switch (rt)
  {
  case Rendering_Types::Text:
-  header_acc("methods") << "\nQLineEdit* " << id_ << "_";
-  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QLineEdit(this);";
+  header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(this);";
   break;
  case Rendering_Types::TextArea:
-  header_acc("methods") << "\nQTextArea* " << id_ << "_";
-  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QTextArea(this);";
+  header_acc("methods") << "\n QTextArea* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(this);";
   break;
  case Rendering_Types::Number:
-  header_acc("methods") << "\nQLineEdit* " << id_ << "_";
-  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QLineEdit(this);";
-  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
+  header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::DateTime:
-  header_acc("methods") << "\nQDateTimeEdit* " << id_ << "_";
-  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QDateTimeEdit(this);";
+  header_acc("methods") << "\n QDateTimeEdit* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateTimeEdit(this);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
+ case Rendering_Types::Date:
+  header_acc("methods") << "\n QDateEdit* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(this);";
+  break;
  case Rendering_Types::Radio:
-  header_acc("methods") << "\nQButtonGroup* " << id_ << "_";
-  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QButtonGroup(this);";
+  header_acc("methods") << "\n QButtonGroup* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QButtonGroup(this);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Markdown:
+  header_acc("methods") << "\n QTextArea* " << id_ << "_;";
+  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QTextArea(this);";
   break;
+ case Rendering_Types::Select:
+  header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << "->set_max_selectable(1);";
+  break;
+ case Rendering_Types::MultiCheckbox:
+  header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(this);";
+  break;
+ case Rendering_Types::WorkspaceLauncher:
+  header_acc("methods") << "\n NRE_Workspace_Launcher_Button* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Workspace_Launcher_Button(this);";
+  break;
+
+
  default:
+  qDebug() << "Unrecognized rendering type: " << text;
   break;
  }
 

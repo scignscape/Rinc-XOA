@@ -27,7 +27,7 @@ class NRE_Form_Section : public NRE_Form_Base
 {
  QString label_;
 
- QVector<NRE_Form_Question*> questions_;
+ QVList<NRE_Form_Question*> questions_;
 
 public:
 

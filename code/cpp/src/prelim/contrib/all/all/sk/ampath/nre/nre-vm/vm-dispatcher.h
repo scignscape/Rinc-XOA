@@ -31,7 +31,7 @@ OTNS_(AMPATH_NRE)
 ////  return &name; \
 //// } \
 
-//QVector<void (VM_OpMethods::*)()> instr_x0_;
+//QVList<void (VM_OpMethods::*)()> instr_x0_;
 //// WRAP_GET_VECTOR(N_A, x0, instr_x0_)
 
 //  template<>
@@ -66,7 +66,7 @@ class VM_Dispatcher
 //    return {&name##_, name##_.size()};
 
 
- QVector<void (_Module_Base::*)()> instr_x0_;
+ QVList<void (_Module_Base::*)()> instr_x0_;
  WRAP_GET_VECTOR_X0(N_A, x0, instr_x0)
 
 // template<typename WRONG_Type>
@@ -84,30 +84,30 @@ class VM_Dispatcher
 
 
 
- QVector<QPair<void (_Module_Base::*)(QString), QString>> instr_x1_qstr_;
+ QVList<QPair<void (_Module_Base::*)(QString), QString>> instr_x1_qstr_;
  WRAP_GET_VECTOR(String, x1, instr_x1_qstr)
 
- QVector<QPair<void (_Module_Base::*)(QStringList), QStringList>> instr_x1_qstrl_;
+ QVList<QPair<void (_Module_Base::*)(QStringList), QStringList>> instr_x1_qstrl_;
  WRAP_GET_VECTOR(String, List, instr_x1_qstrl)
 
 #define VEC_1_ARG(type, uctype) \
-  QVector<QPair<void (_Module_Base::*)(type), type>> instr_x1_##type##_; \
+  QVList<QPair<void (_Module_Base::*)(type), type>> instr_x1_##type##_; \
   WRAP_GET_VECTOR(uctype, x1, instr_x1_##type)
 
 #define VEC_2_ARG(type, uctype) \
-  QVector<QPair<void (_Module_Base::*)(type, type), QVector<type>>> instr_x2_##type##_; \
+  QVList<QPair<void (_Module_Base::*)(type, type), QVList<type>>> instr_x2_##type##_; \
   WRAP_GET_VECTOR(uctype, x2, instr_x2_##type)
 
 #define VEC_3_ARG(type, uctype) \
-  QVector<QPair<void (_Module_Base::*)(type, type, type), QVector<type>>> instr_x3_##type##_; \
+  QVList<QPair<void (_Module_Base::*)(type, type, type), QVList<type>>> instr_x3_##type##_; \
   WRAP_GET_VECTOR(uctype, x3, instr_x3_##type)
 
 #define VEC_4_ARG(type, uctype) \
-  QVector<QPair<void (_Module_Base::*)(type, type, type, type), QVector<type>>> instr_x4_##type##_; \
+  QVList<QPair<void (_Module_Base::*)(type, type, type, type), QVList<type>>> instr_x4_##type##_; \
   WRAP_GET_VECTOR(uctype, x4, instr_x4_##type)
 
 #define VEC_LIST_ARG(type, uctype) \
-  QVector<QPair<void (_Module_Base::*)(QVector<type>), QVector<type>>> instr_xx_##type##_; \
+  QVList<QPair<void (_Module_Base::*)(QVList<type>), QVList<type>>> instr_xx_##type##_; \
   WRAP_GET_VECTOR(uctype, List, instr_xx_##type)
 
 #define VECS_ARG(type, uctype) \
@@ -184,7 +184,7 @@ public:
 
   template<typename FN_Type, typename ARG_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-    FN_Type fn, QVector<ARG_Type> args);
+    FN_Type fn, QVList<ARG_Type> args);
  };
 
  struct _get_vector_x3
@@ -197,7 +197,7 @@ public:
 
   template<typename FN_Type, typename ARG_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-    FN_Type fn, QVector<ARG_Type> args);
+    FN_Type fn, QVList<ARG_Type> args);
  };
 
  struct _get_vector_x4
@@ -210,7 +210,7 @@ public:
 
   template<typename FN_Type, typename ARG_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-    FN_Type fn, QVector<ARG_Type> args);
+    FN_Type fn, QVList<ARG_Type> args);
  };
 
  struct _get_vector_List
@@ -223,7 +223,7 @@ public:
 
   template<typename FN_Type, typename ARG_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-    FN_Type fn, QVector<ARG_Type> args);
+    FN_Type fn, QVList<ARG_Type> args);
  };
 
 };
@@ -293,7 +293,7 @@ GET_VECTOR_CASE(String_List, c) \
 
 template<typename FN_Type, typename ARG_Type>
 QPair<void*, u4> VM_Dispatcher::_get_vector_x2::_get_vector
-   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVector<ARG_Type> args)
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVList<ARG_Type> args)
 {
  switch (mck)
  {
@@ -306,7 +306,7 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x2::_get_vector
 template<typename FN_Type, typename ARG_Type>
 //template<>
 QPair<void*, u4> VM_Dispatcher::_get_vector_x3::_get_vector
-   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVector<ARG_Type> args)
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVList<ARG_Type> args)
 {
  switch (mck)
  {
@@ -318,7 +318,7 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x3::_get_vector
 
 template<typename FN_Type, typename ARG_Type>
 QPair<void*, u4> VM_Dispatcher::_get_vector_x4::_get_vector
-   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVector<ARG_Type> args)
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVList<ARG_Type> args)
 {
  switch (mck)
  {
@@ -330,7 +330,7 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x4::_get_vector
 
 template<typename FN_Type, typename ARG_Type>
 QPair<void*, u4> VM_Dispatcher::_get_vector_List::_get_vector
-   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVector<ARG_Type> args)
+   (VM_Opstatement::Mid_Control_Kinds mck, FN_Type fn, QVList<ARG_Type> args)
 {
  switch (mck)
  {

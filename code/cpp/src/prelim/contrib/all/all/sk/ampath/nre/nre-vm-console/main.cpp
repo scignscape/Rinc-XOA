@@ -10,6 +10,7 @@
 #include <QRegularExpression>
 
 #include <QDir>
+#include <QDebug>
 
 #include "nre-vm/vm-interpreter.h"
 
@@ -20,6 +21,8 @@ USING_OTNS(AMPATH_NRE)
 
 int main(int argc, char *argv[])
 {
+ qDebug() << argv[0];
+
  QString vm_file_path = DEFAULT_VM_FOLDER "/8.4lr";
  VM_Interpreter vin;
  vin.load_file(vm_file_path);

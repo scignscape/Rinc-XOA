@@ -136,6 +136,20 @@ void NRE_Module::section_label(QString text)
 
 void NRE_Module::question_label(QString text)
 {
+
+  NRE_Form_Section* s = current_section();
+  NRE_Form_Page* p = current_page();
+
+  NRE_Form_Question* q = s->question_count()? current_question() : nullptr;
+
+//  if(q)
+//    qDebug() << " qid: " << q->id();
+//  if(s)
+//    qDebug() << " slabel: " << s->label();
+//  if(p)
+//    qDebug() << " plabel: " << p->label();
+
+
  current_question()->write_label(text);
 }
 
@@ -161,7 +175,33 @@ void NRE_Module::question_default(QString text)
 
 void NRE_Module::question_id(QString text)
 {
+ {
+  NRE_Form_Section* s = current_section();
+  NRE_Form_Page* p = current_page();
+
+  NRE_Form_Question* q = s->question_count()? current_question() : nullptr;
+
+//  if(q)
+//    qDebug() << "qid: " << q->id();
+//  if(s)
+//    qDebug() << "slabel: " << s->label();
+//  if(p)
+//    qDebug() << "plabel: " << p->label();
+ }
+
  current_question()->set_id(text);
+
+ if(text == "howLongHasTheChildBeenSick")
+ {
+  NRE_Form_Question& q = *current_question();
+  NRE_Form_Section& s = *current_section();
+  NRE_Form_Page& p = *current_page();
+
+//  qDebug() << q.id();
+//  qDebug() << s.label();
+//  qDebug() << p.label();
+
+ }
 }
 
 void NRE_Module::answer_label(QString text)
@@ -196,29 +236,37 @@ void NRE_Module::write_form()
 
 
   header_acc_top() << "\n\n // //  Page: " << p->label();
-  header_acc_top() << "\n\n // //  ctor ";
+  header_acc_top() << " -- ctor ";
   header_acc_top() << p->cpp_header_part("ctor");
-  header_acc_top() << "\n\n // //  init ";
+  header_acc_top() << "\n\n // //  Page: " << p->label();
+  header_acc_top() << " -- init ";
   header_acc_top() << p->cpp_header_part("init");
-  header_acc_top() << "\n\n // //  methods ";
+  header_acc_top() << "\n\n // //  Page: " << p->label();
+  header_acc_top() << " -- methods ";
   header_acc_top() << p->cpp_header_part("methods");
+  header_acc_top() << " -- labels ";
+  header_acc_top() << p->cpp_header_part("labels");
 
   implementation_acc_top() << "\n\n // //  Page: " << p->label();
-  implementation_acc_top() << "\n\n // //  ctor ";
+  implementation_acc_top() << " -- ctor ";
   implementation_acc_top() << p->cpp_implementation_part("ctor");
-  implementation_acc_top() << "\n\n // //  init ";
+  implementation_acc_top() << "\n\n // //  Page: " << p->label();
+  implementation_acc_top() << " -- init ";
   implementation_acc_top() << p->cpp_implementation_part("init");
-  implementation_acc_top() << "\n\n // //  methods ";
+  implementation_acc_top() << "\n\n // //  Page: " << p->label();
+  implementation_acc_top() << " -- methods ";
   implementation_acc_top() << p->cpp_implementation_part("methods");
+  implementation_acc_top() << " -- labels ";
+  implementation_acc_top() << p->cpp_implementation_part("labels");
  }
 
 }
 
 void NRE_Module::finalize_current_form()
 {
- finalize_current_answer();
- finalize_current_question();
- finalize_current_section();
+// finalize_current_answer();
+// finalize_current_question();
+// finalize_current_section();
  finalize_current_page();
  write_form();
 }
@@ -237,6 +285,7 @@ void NRE_Module::new_page()
 
 void NRE_Module::finalize_current_page()
 {
+ finalize_current_section();
  if(current_finalized_page_)
    current_finalized_page_->write_sections();
 }
@@ -260,12 +309,27 @@ void NRE_Module::finalize_section()
 
 void NRE_Module::finalize_current_section()
 {
+ finalize_current_question();
  if(current_finalized_section_)
    current_finalized_section_->write_questions();
 }
 
 void NRE_Module::new_question()
 {
+ {
+  NRE_Form_Section* s = current_section();
+  NRE_Form_Page* p = current_page();
+
+  NRE_Form_Question* q = s->question_count()? current_question() : nullptr;
+
+//  if(q)
+//    qDebug() << "qid: " << q->id();
+//  if(s)
+//    qDebug() << "slabel: " << s->label();
+//  if(p)
+//    qDebug() << "plabel: " << p->label();
+ }
+
  finalize_current_question();
  NRE_Form_Question* q = new NRE_Form_Question;
  current_section()->add_question(q);
@@ -278,6 +342,7 @@ void NRE_Module::finalize_question()
 
 void NRE_Module::finalize_current_question()
 {
+ finalize_current_answer();
  if(current_finalized_question_)
    current_finalized_question_->write_answers();
 }
