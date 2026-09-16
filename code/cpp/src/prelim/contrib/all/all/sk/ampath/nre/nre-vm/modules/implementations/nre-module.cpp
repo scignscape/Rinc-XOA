@@ -236,7 +236,7 @@ void NRE_Module::write_form()
  QMap<QString, QString> implementation_post_;
 
  static QString implementation_pre = R"(
-%1 %2::%3%4()
+%1%2::%3%4()
 {
 )";
 
@@ -244,7 +244,8 @@ void NRE_Module::write_form()
 
  static QString implementation_post = "\n}// ::%1%2\n\n";
  static QString init = "init";
- static QString sp_void = " void";
+ static QString void_sp = "void ";
+ static QString sp_void = " void ";
 
  implementation_pre_["init"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("");
  implementation_post_["init"] = implementation_post.arg(init).arg("");
@@ -263,6 +264,17 @@ void NRE_Module::write_form()
  implementation_post_["concepts"] = implementation_post.arg(init).arg("_concepts");
  header_pre_["concepts"] = header_pre.arg(sp_void).arg(init).arg("_concepts");
 
+ header_pre_["ctor"] += R"(
+
+private:
+ QTabWiget* pages_tab_widget_;
+)";
+
+ header_pre_["ctor"].prepend("\npublic: ");
+
+ implementation_pre_["ctor"] += R"(
+ pages_tab_widget_ = new QTabWiget(this);
+)";
 
  for(QString part : parts)
  {

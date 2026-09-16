@@ -112,7 +112,7 @@ void NRE_Form_Question::write_rendering(QString text)
   break;
  case Rendering_Types::Markdown:
   header_acc("methods") << "\n QTextArea* " << id_ << "_;";
-  implementation_acc("ctor") << "\n" << id_ << "_" << " = new QTextArea(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(this);";
   break;
  case Rendering_Types::Select:
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";

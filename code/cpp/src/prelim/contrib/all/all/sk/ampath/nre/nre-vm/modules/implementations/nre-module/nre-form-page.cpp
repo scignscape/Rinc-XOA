@@ -28,17 +28,19 @@ NRE_Form_Page::NRE_Form_Page()
 void NRE_Form_Page::write_frame(u2 count)
 {
  header_acc("ctor") << "\n QFrame* F_" << count
-  << "; // " << label_ << "\n // // (" << section_count() << " sections)";
+   << "_; // " << label_ << "\n // // (" << section_count() << " sections)";
 
  header_acc("ctor") << "\n QVBoxLayout* F_" << count
-  << "_vbl_;";
+   << "_vbl_ ;";
 
  implementation_acc("ctor") << "\n F_" << count
-  << "= new QFrame;";
+   << " = new QFrame;";
  implementation_acc("ctor") << "\n F_" << count
-  << "_vbl_ = new QVBoxLayout;";
+   << "_vbl_ = new QVBoxLayout;";
  implementation_acc("ctor") << "\n F_" << count
-  << "->setLayout(F_" << count << "_vbl_);";
+   << "->setLayout(F_" << count << "_vbl_);";
+ implementation_acc("ctor") << "\n pages_tab_widget_->addTab(F_" << count
+   << ", \"" << label_ << "\");";
 
 }
 
