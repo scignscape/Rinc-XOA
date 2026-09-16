@@ -244,10 +244,10 @@ void NRE_Module::write_form()
 
  static QString implementation_post = "\n}// ::%1%2\n\n";
  static QString init = "init";
+ static QString sp_void = " void";
  static QString void_sp = "void ";
- static QString sp_void = " void ";
 
- implementation_pre_["init"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("");
+ implementation_pre_["init"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("");
  implementation_post_["init"] = implementation_post.arg(init).arg("");
  header_pre_["init"] = header_pre.arg(sp_void).arg(init).arg("");
 
@@ -256,11 +256,11 @@ void NRE_Module::write_form()
  implementation_post_["ctor"] = implementation_post.arg(current_class_name_).arg("");
  header_pre_["ctor"] = header_pre.arg("").arg(current_class_name_).arg("");
 
- implementation_pre_["labels"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("_labels");
+ implementation_pre_["labels"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("_labels");
  implementation_post_["labels"] = implementation_post.arg(init).arg("_labels");
  header_pre_["labels"] = header_pre.arg(sp_void).arg(init).arg("_labels");
 
- implementation_pre_["concepts"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("_concepts");
+ implementation_pre_["concepts"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("_concepts");
  implementation_post_["concepts"] = implementation_post.arg(init).arg("_concepts");
  header_pre_["concepts"] = header_pre.arg(sp_void).arg(init).arg("_concepts");
 
@@ -390,7 +390,7 @@ void NRE_Module::finalize_current_section()
 {
  finalize_current_question();
  if(current_finalized_section_)
-   current_finalized_section_->write_questions();
+   current_finalized_section_->write_questions(page_count_);
 }
 
 void NRE_Module::new_question()

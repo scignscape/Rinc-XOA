@@ -34,7 +34,7 @@ void NRE_Form_Page::write_frame(u2 count)
    << "_vbl_ ;";
 
  implementation_acc("ctor") << "\n F_" << count
-   << " = new QFrame;";
+   << "_ = new QFrame;";
  implementation_acc("ctor") << "\n F_" << count
    << "_vbl_ = new QVBoxLayout;";
  implementation_acc("ctor") << "\n F_" << count

@@ -25,8 +25,17 @@ NRE_Form_Section::NRE_Form_Section()
  init_accs({"ctor", "init", "methods", "labels", "concepts"});
 }
 
-void NRE_Form_Section::write_questions()
+void NRE_Form_Section::write_questions(u2 page_count)
 {
+ static QString accordion = "\n NRE_Accordion_List* %1_F%2_;";
+ static QString new_accordion = "\n %1_F%2_ = new NRE_Accordion_List(F_%2_);";
+ static QString accordion_name = "%1_F%2_";
+
+ header_acc("ctor") << accordion.arg(label_.replace(" ", "_")).arg(page_count);
+ implementation_acc("ctor") << new_accordion.arg(label_.replace(" ", "_")).arg(page_count);
+
+ QString current_accordion = accordion_name.arg(label_.replace(" ", "_")).arg(page_count);
+
  for(NRE_Form_Question* q : questions_)
  {
   header_acc("ctor") << q->cpp_header_part("ctor");
@@ -35,7 +44,7 @@ void NRE_Form_Section::write_questions()
   header_acc("labels") << q->cpp_header_part("labels");
   header_acc("concepts") << q->cpp_header_part("concepts");
 
-  implementation_acc("ctor") << q->cpp_implementation_part("ctor");
+  implementation_acc("ctor") << q->cpp_implementation_part("ctor").replace("###", current_accordion);
   implementation_acc("init") << q->cpp_implementation_part("init");
   implementation_acc("methods") << q->cpp_implementation_part("methods");
   implementation_acc("labels") << q->cpp_implementation_part("labels");

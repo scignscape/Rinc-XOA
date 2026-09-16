@@ -41,7 +41,7 @@ public:
 
  void cleanup();
 
- void write_questions();
+ void write_questions(u2 page_count);
 
  u2 question_count()
  {

@@ -77,7 +77,7 @@ void NRE_Form_Question::write_question_type(QString text)
 void NRE_Form_Question::write_rendering(QString text)
 {
  header_acc("methods") << "\n QLabel* L_" << id_ << "_;";
- implementation_acc("ctor") << "\n L_" << id_ << "_" << " = new QLabel(this);";
+ implementation_acc("ctor") << "\n L_" << id_ << "_" << " = new QLabel(###);";
 
  Rendering_Types rt = parse_rendering_type(text);
 
@@ -85,47 +85,47 @@ void NRE_Form_Question::write_rendering(QString text)
  {
  case Rendering_Types::Text:
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
   break;
  case Rendering_Types::TextArea:
   header_acc("methods") << "\n QTextArea* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(###);";
   break;
  case Rendering_Types::Number:
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
   implementation_acc("ctor") << "\n " << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::DateTime:
   header_acc("methods") << "\n QDateTimeEdit* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateTimeEdit(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateTimeEdit(###);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Date:
   header_acc("methods") << "\n QDateEdit* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(###);";
   break;
  case Rendering_Types::Radio:
   header_acc("methods") << "\n QButtonGroup* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QButtonGroup(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QButtonGroup(###);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Markdown:
   header_acc("methods") << "\n QTextArea* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(###);";
   break;
  case Rendering_Types::Select:
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(###);";
   implementation_acc("ctor") << "\n " << id_ << "_" << "->set_max_selectable(1);";
   break;
  case Rendering_Types::MultiCheckbox:
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(###);";
   break;
  case Rendering_Types::WorkspaceLauncher:
   header_acc("methods") << "\n NRE_Workspace_Launcher_Button* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Workspace_Launcher_Button(this);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Workspace_Launcher_Button(###);";
   break;
 
 
@@ -134,4 +134,6 @@ void NRE_Form_Question::write_rendering(QString text)
   break;
  }
 
+ implementation_acc("ctor") << "\n ###->add_item(" <<
+   "L_" << id_ << "_,\n   " << id_ << ");";
 }
