@@ -37,6 +37,8 @@ class NRE_Module : public _Module_Base, public NRE_Form_Base
 
  QVList<NRE_Form_Page*> pages_;
 
+ u2 page_count_;
+
  NRE_Form_Page* current_page();
 
  NRE_Form_Section* current_section();

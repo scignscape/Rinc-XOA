@@ -93,7 +93,7 @@ void NRE_Module::write_class_header_lead()
 
   << "\n\n#include \"kans.h\n\nKANS_(AMPATH_Forms)\n\n"
 
-  << "class " << guard << "\n{\n";
+  << "class " << current_class_name_ << "\n{\n";
 
 
 }
@@ -227,40 +227,105 @@ void NRE_Module::new_form()
 
 void NRE_Module::write_form()
 {
- for(NRE_Form_Page* p : pages_)
+ QStringList parts {"ctor", "init", "methods", "labels", "concepts"};
+
+ QMap<QString, QString> header_pre_;
+ QMap<QString, QString> implementation_pre_;
+
+ QMap<QString, QString> header_post_;
+ QMap<QString, QString> implementation_post_;
+
+ static QString implementation_pre = R"(
+%1 %2::%3%4()
+{
+)";
+
+ static QString header_pre = "\n%1 %2%3();";
+
+ static QString implementation_post = "\n}// ::%1%2\n\n";
+ static QString init = "init";
+ static QString sp_void = " void";
+
+ implementation_pre_["init"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("");
+ implementation_post_["init"] = implementation_post.arg(init).arg("");
+ header_pre_["init"] = header_pre.arg(sp_void).arg(init).arg("");
+
+
+ implementation_pre_["ctor"] = implementation_pre.arg("").arg(current_class_name_).arg(current_class_name_).arg("");
+ implementation_post_["ctor"] = implementation_post.arg(current_class_name_).arg("");
+ header_pre_["ctor"] = header_pre.arg("").arg(current_class_name_).arg("");
+
+ implementation_pre_["labels"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("_labels");
+ implementation_post_["labels"] = implementation_post.arg(init).arg("_labels");
+ header_pre_["labels"] = header_pre.arg(sp_void).arg(init).arg("_labels");
+
+ implementation_pre_["concepts"] = implementation_pre.arg("void").arg(current_class_name_).arg(init).arg("_concepts");
+ implementation_post_["concepts"] = implementation_post.arg(init).arg("_concepts");
+ header_pre_["concepts"] = header_pre.arg(sp_void).arg(init).arg("_concepts");
+
+
+ for(QString part : parts)
  {
-  NRE_Form_Section* s = p->get_section(0);
-  u2 sc = s->question_count();
-  NRE_Form_Question* q = s->get_question(0);
+  header_acc_top() << "// //--> " << part;
+  implementation_acc_top() << "// //--> " << part;
 
+  header_acc_top() << header_pre_.value(part);
+  implementation_acc_top() << implementation_pre_.value(part);
 
+  for(NRE_Form_Page* p : pages_)
+  {
+   header_acc_top() << "\n\n // //  Page: " << p->label();
+   header_acc_top() << p->cpp_header_part(part);
 
-  header_acc_top() << "\n\n // //  Page: " << p->label();
-  header_acc_top() << " -- ctor ";
-  header_acc_top() << p->cpp_header_part("ctor");
-  header_acc_top() << "\n\n // //  Page: " << p->label();
-  header_acc_top() << " -- init ";
-  header_acc_top() << p->cpp_header_part("init");
-  header_acc_top() << "\n\n // //  Page: " << p->label();
-  header_acc_top() << " -- methods ";
-  header_acc_top() << p->cpp_header_part("methods");
-  header_acc_top() << " -- labels ";
-  header_acc_top() << p->cpp_header_part("labels");
+   implementation_acc_top() << "\n\n // //  Page: " << p->label();
+   implementation_acc_top() << p->cpp_implementation_part(part);
+  }
 
-  implementation_acc_top() << "\n\n // //  Page: " << p->label();
-  implementation_acc_top() << " -- ctor ";
-  implementation_acc_top() << p->cpp_implementation_part("ctor");
-  implementation_acc_top() << "\n\n // //  Page: " << p->label();
-  implementation_acc_top() << " -- init ";
-  implementation_acc_top() << p->cpp_implementation_part("init");
-  implementation_acc_top() << "\n\n // //  Page: " << p->label();
-  implementation_acc_top() << " -- methods ";
-  implementation_acc_top() << p->cpp_implementation_part("methods");
-  implementation_acc_top() << " -- labels ";
-  implementation_acc_top() << p->cpp_implementation_part("labels");
+  header_acc_top() << header_post_.value(part);
+  implementation_acc_top() << implementation_post_.value(part);
+
+  header_acc_top() << "\n// //<-- " << part << "\n";
+  implementation_acc_top() << "\n// //<-- " << part << "\n";
  }
-
 }
+
+
+//header_acc_top() << "\n\n // //  Page: " << p->label();
+//header_acc_top() << " -- init ";
+//header_acc_top() << p->cpp_header_part("init");
+
+//header_acc_top() << "\n\n // //  Page: " << p->label();
+//header_acc_top() << " -- methods ";
+//header_acc_top() << p->cpp_header_part("methods");
+
+//header_acc_top() << "\n\n // //  Page: " << p->label();
+//header_acc_top() << " -- labels ";
+//header_acc_top() << p->cpp_header_part("labels");
+
+//header_acc_top() << "\n\n // //  Page: " << p->label();
+//header_acc_top() << " -- concepts ";
+//header_acc_top() << p->cpp_header_part("concepts");
+
+//implementation_acc_top() << "\n\n // //  Page: " << p->label();
+//implementation_acc_top() << " -- ctor ";
+//implementation_acc_top() << p->cpp_implementation_part("ctor");
+
+//implementation_acc_top() << "\n\n // //  Page: " << p->label();
+//implementation_acc_top() << " -- init ";
+//implementation_acc_top() << p->cpp_implementation_part("init");
+
+//implementation_acc_top() << "\n\n // //  Page: " << p->label();
+//implementation_acc_top() << " -- methods ";
+//implementation_acc_top() << p->cpp_implementation_part("methods");
+
+//implementation_acc_top() << "\n\n // //  Page: " << p->label();
+//implementation_acc_top() << " -- labels ";
+//implementation_acc_top() << p->cpp_implementation_part("labels");
+
+//implementation_acc_top() << "\n\n // //  Page: " << p->label();
+//implementation_acc_top() << " -- concepts ";
+//implementation_acc_top() << p->cpp_implementation_part("concepts");
+
 
 void NRE_Module::finalize_current_form()
 {
@@ -279,6 +344,7 @@ void NRE_Module::finalize_form()
 void NRE_Module::new_page()
 {
  finalize_current_page();
+ ++page_count_;
  NRE_Form_Page* p = new NRE_Form_Page;
  pages_.push_back(p);
 }
@@ -292,6 +358,7 @@ void NRE_Module::finalize_current_page()
 
 void NRE_Module::finalize_page()
 {
+ current_page()->write_frame(page_count_);
  current_finalized_page_ = current_page();
 }
 

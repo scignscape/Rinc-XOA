@@ -44,6 +44,7 @@ public:
  void cleanup();
 
  void write_sections();
+ void write_frame(u2 count);
 
  u2 section_count()
  {

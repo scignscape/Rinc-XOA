@@ -23,7 +23,7 @@ USING_OTNS(AMPATH_NRE)
 NRE_Form_Question::NRE_Form_Question()
   :  required_cardinality_(0)
 {
- init_accs({"ctor", "init", "methods", "labels"});
+ init_accs({"ctor", "init", "methods", "labels", "concepts"});
 }
 
 void NRE_Form_Question::cleanup()
@@ -52,13 +52,17 @@ NRE_Form_Answer* NRE_Form_Question::current_answer()
 
 void NRE_Form_Question::write_concept(QString text)
 {
- implementation_acc("init") << "\nset_concept(\""
-   << id_ << "\", \"" << text << "\");";
+ implementation_acc("concepts") << "\n L_" << id_ << "_" <<
+   "->setProperty(\"ocl-concept\", QVariant(\"" << text << "\"));";
+
+ //concepts
+// implementation_acc("init") << "\nset_concept(\""
+//   << id_ << "\", \"" << text << "\");";
 }
 
 void NRE_Form_Question::write_label(QString text)
 {
- implementation_acc("labels") << "\n L" << id_ << "_" << "->setText(" << text << ");";
+ implementation_acc("labels") << "\n L_" << id_ << "_" << "->setText(\"" << text << "\");";
 
 // implementation_acc("init") << "\nset_label(\""
 //   << id_ << "\", \"" << text << "\");";
@@ -72,8 +76,8 @@ void NRE_Form_Question::write_question_type(QString text)
 
 void NRE_Form_Question::write_rendering(QString text)
 {
- header_acc("methods") << "\n QLabel* L" << id_ << "_;";
- implementation_acc("ctor") << "\n L" << id_ << "_" << " = new QLabel(this);";
+ header_acc("methods") << "\n QLabel* L_" << id_ << "_;";
+ implementation_acc("ctor") << "\n L_" << id_ << "_" << " = new QLabel(this);";
 
  Rendering_Types rt = parse_rendering_type(text);
 
