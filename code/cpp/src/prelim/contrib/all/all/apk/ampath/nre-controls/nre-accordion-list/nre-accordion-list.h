@@ -1,3 +1,16 @@
+
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+#ifndef NRE_ACCORDION_LIST__H
+#define NRE_ACCORDION_LIST__H
+
+
+// modified from:
+
 /*
     MIT License
 
@@ -21,28 +34,39 @@
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
     IN THE SOFTWARE.
 */
+
+
 #include <QWidget>
 
 class QVBoxLayout;
 
-namespace Qtilities {
+//namespace Qtilities {
 
-class ArrowButton;
-class Accordion : public QWidget {
-    Q_OBJECT
+//?#include "nre-accordion-item.h"
+
+class NRE_Accordion_Item;
+
+class NRE_Accordion_List : public QWidget
+{
+ Q_OBJECT
+
+ QVList<NRE_Accordion_Item*> items_;
 
 public:
-    explicit QAccordion(QWidget *parent = nullptr);
 
-    void setText(const QString &);
-    void setWidget(QWidget *);
+ NRE_Accordion_List(QWidget *parent = nullptr);
+
+ void add_item(QWidget* item);
 
 private:
-    void onExpandWidget(bool);
+ void onExpandWidget(bool);
 
-    QVBoxLayout *layout_;
-    Qtilities::ArrowButton *button_;
-    QWidget *widget_;
+ QVBoxLayout *layout_;
+ Qtilities::ArrowButton *button_;
+ QWidget *widget_;
 };
-} // namespace Qtilities
 
+//} // namespace Qtilities
+
+
+#endif // NRE_ACCORDION_LIST__H

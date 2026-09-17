@@ -1,3 +1,13 @@
+
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+
+// modified from:
+
 /*
     MIT License
 
@@ -21,7 +31,9 @@
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
     IN THE SOFTWARE.
 */
-#include "QAccordion.h"
+
+
+#include "nre-accordion-item.h"
 
 #include <QPainter>
 #include <QStyleOption>
@@ -29,7 +41,10 @@
 
 #include <QToolButton>
 
-namespace Qtilities {
+
+//#include "kans.h"
+//USING_KANS(AMPATH_Forms)
+
 
 class ArrowButton : public QToolButton
 {
@@ -44,7 +59,7 @@ private:
     QSize sizeHint() const override;
 };
 
-#include "accordion.moc"
+//?#include "accordion.moc"
 
 ArrowButton::ArrowButton(QWidget *parent)
     : QToolButton(parent)
@@ -113,9 +128,9 @@ QSize ArrowButton::sizeHint() const
 {
     return minimumSizeHint();
 }
-} // namespace Qtilities
 
-Qtilities::QAccordion::QAccordion(QWidget *parent)
+
+NRE_Accordion_Item::NRE_Accordion_Item(QWidget* parent)
     : QWidget(parent)
     , layout_(new QVBoxLayout(this))
     , button_(new ArrowButton(this))
@@ -127,9 +142,9 @@ Qtilities::QAccordion::QAccordion(QWidget *parent)
     setLayout(layout_);
 }
 
-void Qtilities::QAccordion::setText(const QString &text) { button_->setText(text); }
+void NRE_Accordion_Item::setText(const QString &text) { button_->setText(text); }
 
-void Qtilities::QAccordion::setWidget(QWidget *widget)
+void NRE_Accordion_Item::setWidget(QWidget *widget)
 {
     if (widget_) {
         disconnect(button_, &QAbstractButton::toggled, this, &Accordion::onExpandWidget);
@@ -144,7 +159,7 @@ void Qtilities::QAccordion::setWidget(QWidget *widget)
     widget_ = widget;
 }
 
-void Qtilities::QAccordion::onExpandWidget(bool visible)
+void NRE_Accordion_Item::onExpandWidget(bool visible)
 {
     widget_->setVisible(visible);
 }
