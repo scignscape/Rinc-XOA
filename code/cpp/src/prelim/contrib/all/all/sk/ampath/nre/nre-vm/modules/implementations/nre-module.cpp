@@ -71,19 +71,30 @@ void NRE_Module::finalize_implementation_file()
 void NRE_Module::save_header_file(QString file_path)
 {
  QFileInfo qfi(file_path);
- QString bn = qfi.completeBaseName();
+ QString folder = qfi.absolutePath() + "/" + qfi.completeBaseName();
+
+ QDir().mkpath(folder);
+
+ QString bn = folder + "/" + qfi.completeBaseName();
 
  write_pri_file(bn + ".pri");
  write_pri_console_file(bn + "-console.pri");
  write_pri_file(bn + ".pro");
  write_pri_console_file(bn + "-console.pro");
 
- save_file(file_path, cpp_header_top());
+ save_file(bn + "." + qfi.suffix(), cpp_header_top());
 }
 
 void NRE_Module::save_implementation_file(QString file_path)
 {
- save_file(file_path, cpp_implementation_top());
+ QFileInfo qfi(file_path);
+ QString folder = qfi.absolutePath() + "/" + qfi.completeBaseName();
+
+ QDir().mkpath(folder);
+
+ QString bn = folder + "/" + qfi.completeBaseName();
+
+ save_file(bn + "." + qfi.suffix(), cpp_implementation_top());
 }
 
 void NRE_Module::write_class_header_lead()
@@ -119,20 +130,33 @@ KANS_(AMPATH_Forms)
 
 }
 
-
-void NRE_Module::write_pri_file(QString file_path)
+QString get_pro_top()
 {
- QString class_file = current_class_name_.toLower().replace("_", "-");
-
- static QString contents = R"(
+ return R"(
 
 #           Copyright Nathaniel Christen 2026.
 #  Distributed under the Boost Software License, Version 1.0.
 #     (See accompanying file LICENSE_1_0.txt or copy at
 #           http://www.boost.org/LICENSE_1_0.txt)
 
+PROJECT_NAME = %1
 
-PROJECT_NAME = nre-accordion-list
+include(../build-group.pri)
+
+include(../../../../../../../../../both/$$PROJECT_AREA/contrib/$$PROJECT_CONTRIBUTOR/$$PROJECT_CONTRIBUTION/$$PROJECT_KERNEL/$$PROJECT_SET/$$PROJECT_GROUP/$$PROJECT_NAME/$${PROJECT_NAME}.pri)
+
+)";
+}
+
+QString get_pri_top()
+{
+ return R"(
+
+#           Copyright Nathaniel Christen 2026.
+#  Distributed under the Boost Software License, Version 1.0.
+#     (See accompanying file LICENSE_1_0.txt or copy at
+#           http://www.boost.org/LICENSE_1_0.txt)
+
 
 QT += widgets
 
@@ -160,7 +184,14 @@ INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 CONFIG += no_keywords
 
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
+ )";
+}
 
+void NRE_Module::write_pri_file(QString file_path)
+{
+ QString class_file = current_class_name_.toLower().replace("_", "-");
+
+ static QString contents = get_pri_top() + R"(
 
 HEADERS += \
   $$SRC_DIR/%1.h \
@@ -168,11 +199,6 @@ HEADERS += \
 
 SOURCES += \
   $$SRC_DIR/%1.cpp \
-
-
-message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
-mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
-
 
 )";
 
@@ -184,17 +210,34 @@ void NRE_Module::write_pro_file(QString file_path)
 {
  QString class_file = current_class_name_.toLower().replace("_", "-");
 
+ save_file(file_path, get_pro_top().arg(class_file));
 }
 
 void NRE_Module::write_pri_console_file(QString file_path)
 {
  QString class_file = current_class_name_.toLower().replace("_", "-");
 
+ static QString contents = get_pri_top() + R"(
+
+HEADERS += \
+
+
+SOURCES += \
+  $$SRC_DIR/main.cpp \
+
+LIBS += \
+  -L$$TARGETSDIR -l%1
+
+)";
+
+ save_file(file_path, contents.arg(class_file));
+
 }
 
 void NRE_Module::write_pro_console_file(QString file_path)
 {
  QString class_file = current_class_name_.toLower().replace("_", "-");
+ save_file(file_path, get_pro_top().arg(class_file + "-console"));
 
 }
 
