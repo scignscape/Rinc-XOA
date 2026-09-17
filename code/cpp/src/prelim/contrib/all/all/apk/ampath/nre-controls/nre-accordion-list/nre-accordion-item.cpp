@@ -49,7 +49,7 @@ KANS_(AMPATH_Forms)
 
 class ArrowButton : public QToolButton
 {
- Q_OBJECT
+//? Q_OBJECT
 
 public:
  explicit ArrowButton(QWidget *parent = nullptr);

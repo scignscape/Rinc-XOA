@@ -44,8 +44,9 @@ SOURCES += \
 
 
 
-LIBS += -L$$TARGETSDIR -lnre-admission-form
-
+LIBS += -L$$TARGETSDIR \
+  -lnre-admission-form \
+  -lnre-accordion-list
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

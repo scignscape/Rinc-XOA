@@ -30,19 +30,21 @@ exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/co
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_PROSET_DIR $$SRC_ROOT_DIR
 
 
-message(p $$SRC_PROSET_DIR)
 
 CONFIG += no_keywords
 
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 
-HEADERS += \
-  $$SRC_DIR/nre-admission-form.h \
+#MANUAL_CODE = true
 
-
-SOURCES += \
-  $$SRC_DIR/nre-admission-form.cpp \
+isEmpty(MANUAL_CODE) {
+  HEADERS += $$SRC_DIR/nre-admission-form.h
+  SOURCES += $$SRC_DIR/nre-admission-form.cpp
+} else {
+  HEADERS += $$SRC_DIR/nre-admission-form_manual.h
+  SOURCES += $$SRC_DIR/nre-admission-form_manual.cpp
+}
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

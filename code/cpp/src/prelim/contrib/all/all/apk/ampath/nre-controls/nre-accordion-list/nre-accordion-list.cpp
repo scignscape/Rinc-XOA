@@ -36,12 +36,13 @@
 
 
 #include "nre-accordion-list.h"
+#include "nre-accordion-item.h"
 
 #include <QPainter>
 #include <QStyleOption>
 #include <QVBoxLayout>
 
-#include <QToolButton>
+#include <QPushButton>
 
 #include "kans.h"
 
@@ -52,9 +53,16 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
 {
   main_layout_ = new QVBoxLayout;
   setLayout(main_layout_);
+
+//?
+//  QPushButton* b = new QPushButton("b");
+//  main_layout_->addWidget(b);
 }
 
 void NRE_Accordion_List::add_item(QWidget* item)
 {
- main_layout_->addWidget(item);
+ NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
+ nai->setWidget(item);
+ nai->setText("test");
+ main_layout_->addWidget(nai);
 }
