@@ -116,12 +116,12 @@ void NRE_Form_Question::write_rendering(QString text)
   break;
  case Rendering_Types::Select:
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(###);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Combo_With_Label_Bar(###);";
   implementation_acc("ctor") << "\n " << id_ << "_" << "->set_max_selectable(1);";
   break;
  case Rendering_Types::MultiCheckbox:
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new Combo_With_Label_Bar(###);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Combo_With_Label_Bar(###);";
   break;
  case Rendering_Types::WorkspaceLauncher:
   header_acc("methods") << "\n NRE_Workspace_Launcher_Button* " << id_ << "_;";

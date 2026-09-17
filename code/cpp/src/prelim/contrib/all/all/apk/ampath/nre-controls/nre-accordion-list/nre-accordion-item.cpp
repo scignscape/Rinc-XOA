@@ -42,125 +42,129 @@
 #include <QToolButton>
 
 
-//#include "kans.h"
-//USING_KANS(AMPATH_Forms)
+#include "kans.h"
+USING_KANS(AMPATH_Forms)
 
+KANS_(AMPATH_Forms)
 
 class ArrowButton : public QToolButton
 {
-    Q_OBJECT
+ Q_OBJECT
 
 public:
-    explicit ArrowButton(QWidget *parent = nullptr);
+ explicit ArrowButton(QWidget *parent = nullptr);
 
 private:
-    void paintEvent(QPaintEvent *) override;
-    QSize minimumSizeHint() const override;
-    QSize sizeHint() const override;
+ void paintEvent(QPaintEvent *) override;
+ QSize minimumSizeHint() const override;
+ QSize sizeHint() const override;
 };
 
 //?#include "accordion.moc"
 
 ArrowButton::ArrowButton(QWidget *parent)
-    : QToolButton(parent)
+ : QToolButton(parent)
 {
-    /*
+ /*
         Drawing arrow and borders using paintEvent, strange issues when using css:
         1. set the border color on :pressed or :checked selectors doesn't work
         2. the arrow is painted at the center over the label
         3. using images for arrows with state/color changes is not great
     */
-    setCheckable(true);
-    setStyleSheet("border: none");
-    setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+ setCheckable(true);
+ setStyleSheet("border: none");
+ setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
 }
 
 void ArrowButton::paintEvent(QPaintEvent *event)
 {
-    QToolButton::paintEvent(event);
+ QToolButton::paintEvent(event);
 
-    QPainter painter(this);
-    QStyleOption option;
-    option.initFrom(this);
-    style()->drawPrimitive(QStyle::PE_Widget, &option, &painter, this);
+ QPainter painter(this);
+ QStyleOption option;
+ option.initFrom(this);
+ style()->drawPrimitive(QStyle::PE_Widget, &option, &painter, this);
 
-    painter.setRenderHint(QPainter::Antialiasing);
+ painter.setRenderHint(QPainter::Antialiasing);
 
-    int arrowSize = fontMetrics().height() / 2;
-    QPalette pal = palette();
-    QPolygon arrow;
-    QRect r = rect();
-    QRect arrowRect(r.x() + arrowSize, (r.height() - arrowSize) / 2, arrowSize, arrowSize);
-    QPoint p1 = arrowRect.topLeft(), p2, p3;
+ int arrowSize = fontMetrics().height() / 2;
+ QPalette pal = palette();
+ QPolygon arrow;
+ QRect r = rect();
+ QRect arrowRect(r.x() + arrowSize, (r.height() - arrowSize) / 2, arrowSize, arrowSize);
+ QPoint p1 = arrowRect.topLeft(), p2, p3;
 
-    if (isChecked()) {
-        p2 = arrowRect.topRight();
-        p3 = (arrowRect.bottomLeft() + arrowRect.bottomRight()) / 2;
-    } else {
-        p2 = (arrowRect.topRight() + arrowRect.bottomRight()) / 2;
-        p3 = arrowRect.bottomLeft();
-    }
+ if (isChecked()) {
+  p2 = arrowRect.topRight();
+  p3 = (arrowRect.bottomLeft() + arrowRect.bottomRight()) / 2;
+ } else {
+  p2 = (arrowRect.topRight() + arrowRect.bottomRight()) / 2;
+  p3 = arrowRect.bottomLeft();
+ }
 
-    painter.setPen(pal.color(QPalette::Light));
-    painter.drawLine(r.topLeft(), r.topRight());
-    painter.drawLine(r.topRight(), r.bottomRight());
-    painter.setPen(pal.color(QPalette::Dark));
-    painter.drawLine(r.bottomLeft(), r.bottomRight());
-    painter.drawLine(r.topLeft(), r.bottomLeft());
+ painter.setPen(pal.color(QPalette::Light));
+ painter.drawLine(r.topLeft(), r.topRight());
+ painter.drawLine(r.topRight(), r.bottomRight());
+ painter.setPen(pal.color(QPalette::Dark));
+ painter.drawLine(r.bottomLeft(), r.bottomRight());
+ painter.drawLine(r.topLeft(), r.bottomLeft());
 
-    QColor c = pal.color(pal.currentColorGroup(), QPalette::ButtonText);
-    painter.setBrush(c);
-    painter.setPen(c);
+ QColor c = pal.color(pal.currentColorGroup(), QPalette::ButtonText);
+ painter.setBrush(c);
+ painter.setPen(c);
 
-    arrow.clear();
-    arrow << p1 << p2 << p3;
+ arrow.clear();
+ arrow << p1 << p2 << p3;
 
-    painter.drawPolygon(arrow);
+ painter.drawPolygon(arrow);
 }
 
 QSize ArrowButton::minimumSizeHint() const
 {
-    int arrowSize = fontMetrics().height() / 2;
-    return QSize(fontMetrics().horizontalAdvance(text()) + (arrowSize * 5), arrowSize * 3);
+ int arrowSize = fontMetrics().height() / 2;
+ return QSize(fontMetrics().horizontalAdvance(text()) + (arrowSize * 5), arrowSize * 3);
 }
 
 QSize ArrowButton::sizeHint() const
 {
-    return minimumSizeHint();
+ return minimumSizeHint();
 }
 
+_KANS(AMPATH_Forms)
 
 NRE_Accordion_Item::NRE_Accordion_Item(QWidget* parent)
-    : QWidget(parent)
-    , layout_(new QVBoxLayout(this))
-    , button_(new ArrowButton(this))
-    , widget_(nullptr)
+ : QWidget(parent)
+ , layout_(new QVBoxLayout(this))
+ , button_(new ArrowButton(this))
+ , widget_(nullptr)
 {
-    layout_->setContentsMargins(0, 0, 0, 0);
-    layout_->setSpacing(0);
-    layout_->addWidget(button_);
-    setLayout(layout_);
+ layout_->setContentsMargins(0, 0, 0, 0);
+ layout_->setSpacing(0);
+ layout_->addWidget(button_);
+ setLayout(layout_);
 }
 
 void NRE_Accordion_Item::setText(const QString &text) { button_->setText(text); }
 
-void NRE_Accordion_Item::setWidget(QWidget *widget)
+void NRE_Accordion_Item::setWidget(QWidget* widget)
 {
-    if (widget_) {
-        disconnect(button_, &QAbstractButton::toggled, this, &Accordion::onExpandWidget);
-        layout_->removeWidget(widget_);
-        widget_->deleteLater();
-    }
-    if (widget) {
-        layout_->addWidget(widget);
-        widget->hide();
-        connect(button_, &QAbstractButton::toggled, this, &Accordion::onExpandWidget);
-    }
-    widget_ = widget;
+ if(widget_)
+ {
+  disconnect(button_, &QAbstractButton::toggled, this, &NRE_Accordion_Item::onExpandWidget);
+  layout_->removeWidget(widget_);
+  widget_->deleteLater();
+ }
+ if(widget)
+ {
+  layout_->addWidget(widget);
+  widget->hide();
+  connect(button_, &QAbstractButton::toggled, this, &NRE_Accordion_Item::onExpandWidget);
+ }
+ widget_ = widget;
 }
 
 void NRE_Accordion_Item::onExpandWidget(bool visible)
 {
-    widget_->setVisible(visible);
+ widget_->setVisible(visible);
 }
 

@@ -5,9 +5,6 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef NRE_ACCORDION_ITEM__H
-#define NRE_ACCORDION_ITEM__H
-
 
 // modified from:
 
@@ -35,6 +32,9 @@
     IN THE SOFTWARE.
 */
 
+#ifndef NRE_ACCORDION_ITEM__H
+#define NRE_ACCORDION_ITEM__H
+
 
 #include <QWidget>
 
@@ -42,14 +42,18 @@ class QVBoxLayout;
 
 //namespace Qtilities {
 
+#include "kans.h"
+
+KANS_(AMPATH_Forms)
+
 class ArrowButton;
 
-class MRE_Accordion_Item : public QWidget
+class NRE_Accordion_Item : public QWidget
 {
  Q_OBJECT
 
 public:
- explicit MRE_Accordion_Item(QWidget *parent = nullptr);
+ explicit NRE_Accordion_Item(QWidget *parent = nullptr);
 
  void setText(const QString &);
  void setWidget(QWidget *);
@@ -63,6 +67,8 @@ private:
 };
 
 //} // namespace Qtilities
+
+_KANS(AMPATH_Forms)
 
 
 #endif // NRE_ACCORDION_ITEM__H

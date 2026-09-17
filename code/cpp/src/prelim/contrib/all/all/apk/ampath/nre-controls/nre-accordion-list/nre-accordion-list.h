@@ -5,10 +5,6 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef NRE_ACCORDION_LIST__H
-#define NRE_ACCORDION_LIST__H
-
-
 // modified from:
 
 /*
@@ -36,6 +32,10 @@
 */
 
 
+#ifndef NRE_ACCORDION_LIST__H
+#define NRE_ACCORDION_LIST__H
+
+
 #include <QWidget>
 
 class QVBoxLayout;
@@ -43,6 +43,10 @@ class QVBoxLayout;
 //namespace Qtilities {
 
 //?#include "nre-accordion-item.h"
+
+#include "kans.h"
+
+KANS_(AMPATH_Forms)
 
 class NRE_Accordion_Item;
 
@@ -52,21 +56,20 @@ class NRE_Accordion_List : public QWidget
 
  QVList<NRE_Accordion_Item*> items_;
 
+ QVBoxLayout* main_layout_;
+
 public:
 
  NRE_Accordion_List(QWidget *parent = nullptr);
 
  void add_item(QWidget* item);
 
-private:
- void onExpandWidget(bool);
-
- QVBoxLayout *layout_;
- Qtilities::ArrowButton *button_;
- QWidget *widget_;
 };
 
 //} // namespace Qtilities
+
+
+_KANS(AMPATH_Forms)
 
 
 #endif // NRE_ACCORDION_LIST__H

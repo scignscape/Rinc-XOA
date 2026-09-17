@@ -1,3 +1,13 @@
+
+
+//           Copyright Nathaniel Christen 2026.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+// modified from:
+
 /*
     MIT License
 
@@ -23,6 +33,8 @@
 */
 
 
+
+
 #include "nre-accordion-list.h"
 
 #include <QPainter>
@@ -31,126 +43,18 @@
 
 #include <QToolButton>
 
+#include "kans.h"
 
-//#include "kans.h"
-//USING_KANS(AMPATH_Forms)
+USING_KANS(AMPATH_Forms)
 
-
-class ArrowButton : public QToolButton
+NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
+  :  QWidget(parent)
 {
-    Q_OBJECT
-
-public:
-    explicit ArrowButton(QWidget *parent = nullptr);
-
-private:
-    void paintEvent(QPaintEvent *) override;
-    QSize minimumSizeHint() const override;
-    QSize sizeHint() const override;
-};
-
-//?#include "accordion.moc"
-
-ArrowButton::ArrowButton(QWidget *parent)
-    : QToolButton(parent)
-{
-    /*
-        Drawing arrow and borders using paintEvent, strange issues when using css:
-        1. set the border color on :pressed or :checked selectors doesn't work
-        2. the arrow is painted at the center over the label
-        3. using images for arrows with state/color changes is not great
-    */
-    setCheckable(true);
-    setStyleSheet("border: none");
-    setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+  main_layout_ = new QVBoxLayout;
+  setLayout(main_layout_);
 }
 
-void ArrowButton::paintEvent(QPaintEvent *event)
+void NRE_Accordion_List::add_item(QWidget* item)
 {
-    QToolButton::paintEvent(event);
-
-    QPainter painter(this);
-    QStyleOption option;
-    option.initFrom(this);
-    style()->drawPrimitive(QStyle::PE_Widget, &option, &painter, this);
-
-    painter.setRenderHint(QPainter::Antialiasing);
-
-    int arrowSize = fontMetrics().height() / 2;
-    QPalette pal = palette();
-    QPolygon arrow;
-    QRect r = rect();
-    QRect arrowRect(r.x() + arrowSize, (r.height() - arrowSize) / 2, arrowSize, arrowSize);
-    QPoint p1 = arrowRect.topLeft(), p2, p3;
-
-    if (isChecked()) {
-        p2 = arrowRect.topRight();
-        p3 = (arrowRect.bottomLeft() + arrowRect.bottomRight()) / 2;
-    } else {
-        p2 = (arrowRect.topRight() + arrowRect.bottomRight()) / 2;
-        p3 = arrowRect.bottomLeft();
-    }
-
-    painter.setPen(pal.color(QPalette::Light));
-    painter.drawLine(r.topLeft(), r.topRight());
-    painter.drawLine(r.topRight(), r.bottomRight());
-    painter.setPen(pal.color(QPalette::Dark));
-    painter.drawLine(r.bottomLeft(), r.bottomRight());
-    painter.drawLine(r.topLeft(), r.bottomLeft());
-
-    QColor c = pal.color(pal.currentColorGroup(), QPalette::ButtonText);
-    painter.setBrush(c);
-    painter.setPen(c);
-
-    arrow.clear();
-    arrow << p1 << p2 << p3;
-
-    painter.drawPolygon(arrow);
+ main_layout_->addWidget(item);
 }
-
-QSize ArrowButton::minimumSizeHint() const
-{
-    int arrowSize = fontMetrics().height() / 2;
-    return QSize(fontMetrics().horizontalAdvance(text()) + (arrowSize * 5), arrowSize * 3);
-}
-
-QSize ArrowButton::sizeHint() const
-{
-    return minimumSizeHint();
-}
-
-
-NRE_Accordion_Item::NRE_Accordion_Item(QWidget* parent)
-    : QWidget(parent)
-    , layout_(new QVBoxLayout(this))
-    , button_(new ArrowButton(this))
-    , widget_(nullptr)
-{
-    layout_->setContentsMargins(0, 0, 0, 0);
-    layout_->setSpacing(0);
-    layout_->addWidget(button_);
-    setLayout(layout_);
-}
-
-void NRE_Accordion_Item::setText(const QString &text) { button_->setText(text); }
-
-void NRE_Accordion_Item::setWidget(QWidget *widget)
-{
-    if (widget_) {
-        disconnect(button_, &QAbstractButton::toggled, this, &Accordion::onExpandWidget);
-        layout_->removeWidget(widget_);
-        widget_->deleteLater();
-    }
-    if (widget) {
-        layout_->addWidget(widget);
-        widget->hide();
-        connect(button_, &QAbstractButton::toggled, this, &Accordion::onExpandWidget);
-    }
-    widget_ = widget;
-}
-
-void NRE_Accordion_Item::onExpandWidget(bool visible)
-{
-    widget_->setVisible(visible);
-}
-
