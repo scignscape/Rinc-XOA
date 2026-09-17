@@ -62,7 +62,11 @@ void NRE_Form_Question::write_concept(QString text)
 
 void NRE_Form_Question::write_label(QString text)
 {
- implementation_acc("labels") << "\n L_" << id_ << "_" << "->setText(\"" << text << "\");";
+//? implementation_acc("labels") << "\n L_" << id_ << "_" << "->setText(\"" << text << "\");";
+ implementation_acc("labels") << "\n L_" << id_ << "_" << " = \"" << text << "\";";
+
+// implementation_acc("ctor") << "\n L_" << id_ << "_" << " = \"" << label_ << "\"";
+
 
 // implementation_acc("init") << "\nset_label(\""
 //   << id_ << "\", \"" << text << "\");";
@@ -70,14 +74,15 @@ void NRE_Form_Question::write_label(QString text)
 
 void NRE_Form_Question::write_question_type(QString text)
 {
- implementation_acc("init") << "\nset_question_type(\""
-   << id_ << "\", \"" << enumerated_question_type(text) << "\");";
+// implementation_acc("init") << "\nset_question_type(\""
+//   << id_ << "\", \"" << enumerated_question_type(text) << "\");";
 }
 
 void NRE_Form_Question::write_rendering(QString text)
 {
- header_acc("methods") << "\n QLabel* L_" << id_ << "_;";
- implementation_acc("ctor") << "\n L_" << id_ << "_" << " = new QLabel(###);";
+ header_acc("methods") << "\n QString L_" << id_ << "_;";
+// implementation_acc("ctor") << "\n L_" << id_ << "_" << " = new QLabel(###);";
+// implementation_acc("ctor") << "\n L_" << id_ << "_" << " = \"" << label_ << "\"";
 
  Rendering_Types rt = parse_rendering_type(text);
 

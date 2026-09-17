@@ -59,10 +59,10 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
 //  main_layout_->addWidget(b);
 }
 
-void NRE_Accordion_List::add_item(QWidget* item)
+void NRE_Accordion_List::add_item(QString label, QWidget* item)
 {
  NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
  nai->setWidget(item);
- nai->setText("test");
+ nai->setText(label);
  main_layout_->addWidget(nai);
 }

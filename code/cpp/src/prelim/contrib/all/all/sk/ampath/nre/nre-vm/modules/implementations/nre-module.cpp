@@ -274,6 +274,9 @@ private:
 
  implementation_pre_["ctor"] += R"(
  pages_tab_widget_ = new QTabWiget(this);
+ init_labels();
+ setCentralWidget(pages_tab_widget_);
+ pages_tab_widget_->show();
 )";
 
  for(QString part : parts)

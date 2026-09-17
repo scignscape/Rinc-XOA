@@ -62,7 +62,7 @@ public:
 
  NRE_Accordion_List(QWidget *parent = nullptr);
 
- void add_item(QWidget* item);
+ void add_item(QString label, QWidget* item);
 
 };
 

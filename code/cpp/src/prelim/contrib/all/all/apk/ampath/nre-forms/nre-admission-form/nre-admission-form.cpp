@@ -37,8 +37,8 @@ NRE_Admission_Form::NRE_Admission_Form(QWidget* parent)
  al2_ = new NRE_Accordion_List(this);
 
  QPushButton* cl1 = new QPushButton(al1_);
- cl1->setText("close");
- al1_->add_item(cl1);
+// cl1->setText("close");
+ al1_->add_item("close", cl1);
 
  QVBoxLayout* F_100_vbl_ = new QVBoxLayout;
 
