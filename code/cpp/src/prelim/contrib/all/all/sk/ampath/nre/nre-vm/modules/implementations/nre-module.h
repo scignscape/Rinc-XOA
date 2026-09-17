@@ -65,6 +65,11 @@ public:
 
  ACCESSORS(QString ,current_class_name)
 
+ void write_pri_file(QString file_path);
+ void write_pro_file(QString file_path);
+ void write_pri_console_file(QString file_path);
+ void write_pro_console_file(QString file_path);
+
  void write_class_header_lead();
  void write_class_implementation_lead();
 

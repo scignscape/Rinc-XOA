@@ -70,6 +70,14 @@ void NRE_Module::finalize_implementation_file()
 
 void NRE_Module::save_header_file(QString file_path)
 {
+ QFileInfo qfi(file_path);
+ QString bn = qfi.completeBaseName();
+
+ write_pri_file(bn + ".pri");
+ write_pri_console_file(bn + "-console.pri");
+ write_pri_file(bn + ".pro");
+ write_pri_console_file(bn + "-console.pro");
+
  save_file(file_path, cpp_header_top());
 }
 
@@ -91,12 +99,105 @@ void NRE_Module::write_class_header_lead()
                 )"
   << "\n#ifndef " << guard << "\n#define " << guard << "\n\n"
 
-  << "\n\n#include \"kans.h\n\nKANS_(AMPATH_Forms)\n\n"
+  << R"(
 
-  << "class " << current_class_name_ << "\n{\n";
+#include "kans.h"
 
+KANS_(AMPATH_Forms)
+
+#include <QMainWindow>
+
+#include <QWidget>
+#include <QPushButton>
+#include <QHBoxLayout>
+
+#include <QTabWidget>
+#include <QFrame>
+#include <QScrollArea>
+
+")" << "class " << current_class_name_ << " : public QMainWindow \n{\n";
 
 }
+
+
+void NRE_Module::write_pri_file(QString file_path)
+{
+ QString class_file = current_class_name_.toLower().replace("_", "-");
+
+ static QString contents = R"(
+
+#           Copyright Nathaniel Christen 2026.
+#  Distributed under the Boost Software License, Version 1.0.
+#     (See accompanying file LICENSE_1_0.txt or copy at
+#           http://www.boost.org/LICENSE_1_0.txt)
+
+
+PROJECT_NAME = nre-accordion-list
+
+QT += widgets
+
+include(../build-group.pri)
+
+
+greaterThan(QT_MAJOR_VERSION, 5) {
+ DEFINES += USING_QT_6
+ DEFINES += QVList=QList
+} else {
+ DEFINES += QVList=QVector
+}
+
+DEFINES += USE_KANS
+
+
+exists($$ROOT_DIR/../preferred/sysr.pri): include($$ROOT_DIR/../preferred/sysr.pri)
+exists($$ROOT_DIR/../preferred/sysr-c.pri): include($$ROOT_DIR/../preferred/sysr-c.pri)
+exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/compiler.pri)
+
+
+INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
+
+
+CONFIG += no_keywords
+
+DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
+
+
+HEADERS += \
+  $$SRC_DIR/%1.h \
+
+
+SOURCES += \
+  $$SRC_DIR/%1.cpp \
+
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+
+
+)";
+
+ save_file(file_path, contents.arg(class_file));
+
+}
+
+void NRE_Module::write_pro_file(QString file_path)
+{
+ QString class_file = current_class_name_.toLower().replace("_", "-");
+
+}
+
+void NRE_Module::write_pri_console_file(QString file_path)
+{
+ QString class_file = current_class_name_.toLower().replace("_", "-");
+
+}
+
+void NRE_Module::write_pro_console_file(QString file_path)
+{
+ QString class_file = current_class_name_.toLower().replace("_", "-");
+
+}
+
 
 void NRE_Module::write_class_implementation_lead()
 {
@@ -107,6 +208,8 @@ void NRE_Module::write_class_implementation_lead()
 //  Distributed under the Boost Software License, Version 1.0.
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
+
+#include "nre-controls/nre-accordion-list/nre-accordion-list.h"
 
                 )"
 
