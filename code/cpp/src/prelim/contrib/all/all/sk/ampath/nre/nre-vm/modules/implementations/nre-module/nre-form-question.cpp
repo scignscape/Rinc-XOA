@@ -140,5 +140,5 @@ void NRE_Form_Question::write_rendering(QString text)
  }
 
  implementation_acc("ctor") << "\n ###->add_item(" <<
-   "L_" << id_ << "_,\n   " << id_ << ");";
+   "L_" << id_ << "_,\n   " << id_ << "_);";
 }

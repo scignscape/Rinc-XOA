@@ -125,6 +125,7 @@ KANS_(AMPATH_Forms)
 #include <QTabWidget>
 #include <QFrame>
 #include <QScrollArea>
+#include <QLineEdit>
 
 ")" << "class " << current_class_name_ << " : public QMainWindow \n{\n";
 
