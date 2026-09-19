@@ -112,10 +112,6 @@ void NRE_Module::write_class_header_lead()
 
   << R"(
 
-#include "kans.h"
-
-KANS_(AMPATH_Forms)
-
 #include <QMainWindow>
 
 #include <QWidget>
@@ -125,9 +121,19 @@ KANS_(AMPATH_Forms)
 #include <QTabWidget>
 #include <QFrame>
 #include <QScrollArea>
+#include <QPlainTextEdit>
 #include <QLineEdit>
+#include <QDateEdit>
+#include <QDateTimeEdit>
+#include <QButtonGroup>
 
-")" << "class " << current_class_name_ << " : public QMainWindow \n{\n";
+#include "kans.h"
+
+KANS_(AMPATH_Forms)
+
+class NRE_Combo_With_Label_Bar;
+
+)" << "class " << current_class_name_ << " : public QMainWindow \n{\n";
 
 }
 
@@ -257,7 +263,7 @@ void NRE_Module::write_class_implementation_lead()
 
                 )"
 
-  << "\n#include \"" << inc << "\"\n\n"
+  << "\n#include \"" << inc << ".h\"\n\n"
   << "USING_KANS(AMPATH_Forms)\n\n";
 }
 
@@ -414,13 +420,13 @@ void NRE_Module::write_form()
  header_pre_["ctor"] += R"(
 
 private:
- QTabWiget* pages_tab_widget_;
+ QTabWidget* pages_tab_widget_;
 )";
 
  header_pre_["ctor"].prepend("\npublic: ");
 
  implementation_pre_["ctor"] += R"(
- pages_tab_widget_ = new QTabWiget(this);
+ pages_tab_widget_ = new QTabWidget(this);
  init_labels();
  setCentralWidget(pages_tab_widget_);
  pages_tab_widget_->show();

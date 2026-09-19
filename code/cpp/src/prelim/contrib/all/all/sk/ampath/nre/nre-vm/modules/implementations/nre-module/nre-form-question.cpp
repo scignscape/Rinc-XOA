@@ -52,7 +52,7 @@ NRE_Form_Answer* NRE_Form_Question::current_answer()
 
 void NRE_Form_Question::write_concept(QString text)
 {
- implementation_acc("concepts") << "\n L_" << id_ << "_" <<
+ implementation_acc("concepts") << "\n " << id_ << "_" <<
    "->setProperty(\"ocl-concept\", QVariant(\"" << text << "\"));";
 
  //concepts
@@ -93,8 +93,8 @@ void NRE_Form_Question::write_rendering(QString text)
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
   break;
  case Rendering_Types::TextArea:
-  header_acc("methods") << "\n QTextArea* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(###);";
+  header_acc("methods") << "\n QPlainTextEdit* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QPlainTextEdit(###);";
   break;
  case Rendering_Types::Number:
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
@@ -116,8 +116,8 @@ void NRE_Form_Question::write_rendering(QString text)
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Markdown:
-  header_acc("methods") << "\n QTextArea* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QTextArea(###);";
+  header_acc("methods") << "\n QPlainTextEdit* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QPlainTextEdit(###);";
   break;
  case Rendering_Types::Select:
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";

@@ -19,6 +19,7 @@
 #include <QTabWidget>
 #include <QFrame>
 #include <QScrollArea>
+#include <QLineEdit>
 
 
 #include "kans.h"
@@ -33,14 +34,41 @@ class NRE_Admission_Form : public QMainWindow
 
  QTabWidget* pages_tab_widget_;
 
- QScrollArea* S_100_;
- QScrollArea* S_101_;
+ // //  Page: Admission
+ QScrollArea* S_100_; // Admission
+ QFrame* F_100_; // Admission
+ QVBoxLayout* F_100_vbl_ ;
 
- QFrame* F_100_;
- QFrame* F_101_;
+  // // Section: Admission_data -- ctor
+ NRE_Accordion_List* Admission_data_F100_;
 
- NRE_Accordion_List* al1_;
- NRE_Accordion_List* al2_;
+ QString L_caretakersName_;
+ QLineEdit* caretakersName_;
+
+ // //  Page: Anamnesis at admission
+ QScrollArea* S_101_; // Anamnesis at admission
+ QFrame* F_101_; // Anamnesis at admission
+ QVBoxLayout* F_101_vbl_ ;
+
+  // // Section: History_of_the_illness -- ctor
+ NRE_Accordion_List* History_of_the_illness_F101_;
+
+  // // Section: Feeding_history -- ctor
+ NRE_Accordion_List* Feeding_history_F101_;
+
+  // // Section: Family_history -- ctor
+ NRE_Accordion_List* Family_history_F101_;
+
+// QScrollArea* S_100_;
+// QScrollArea* S_101_;
+
+// QFrame* F_100_;
+// QFrame* F_101_;
+
+// NRE_Accordion_List* al1_;
+// NRE_Accordion_List* al2_;
+
+ void init_labels();
 
 public:
 

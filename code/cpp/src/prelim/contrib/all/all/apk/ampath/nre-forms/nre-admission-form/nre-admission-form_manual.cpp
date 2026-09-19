@@ -26,6 +26,9 @@ NRE_Admission_Form::NRE_Admission_Form(QWidget* parent)
  pages_tab_widget_ = new QTabWidget(this);
 
  setCentralWidget(pages_tab_widget_);
+ pages_tab_widget_->show();
+
+ init_labels();
 
  S_100_ = new QScrollArea(this);
  S_101_ = new QScrollArea(this);
@@ -33,22 +36,25 @@ NRE_Admission_Form::NRE_Admission_Form(QWidget* parent)
  F_100_ = new QFrame(this);
  F_101_ = new QFrame(this);
 
- al1_ = new NRE_Accordion_List(this);
- al2_ = new NRE_Accordion_List(this);
-
- QPushButton* cl1 = new QPushButton(al1_);
- cl1->setText("close");
- al1_->add_item(cl1);
+ Admission_data_F100_ = new NRE_Accordion_List(this);
+ Feeding_history_F101_ = new NRE_Accordion_List(this);
+ Family_history_F101_ = new NRE_Accordion_List(this);
 
  QVBoxLayout* F_100_vbl_ = new QVBoxLayout;
 
  F_100_->setLayout(F_100_vbl_);
  F_101_->setLayout(new QVBoxLayout);
 
- QPushButton* b0 = new QPushButton("b0");
+ F_100_vbl_->addWidget(Admission_data_F100_);
 
- F_100_vbl_->addWidget(b0);
- F_100_vbl_->addWidget(al1_);
+ caretakersName_ = new QLineEdit(Admission_data_F100_);
+ Admission_data_F100_->add_item(L_caretakersName_,
+   caretakersName_);
+
+// QPushButton* b0 = new QPushButton("b0");
+
+// F_100_vbl_->addWidget(b0);
+// F_100_vbl_->addWidget(al1_);
 
 
 // pages_tab_widget_->addTab(S_100_, "100");
@@ -76,5 +82,10 @@ NRE_Admission_Form::NRE_Admission_Form(QWidget* parent)
    pages_tab_widget_->show();
 // bf->show();
 
+}
+
+void NRE_Admission_Form::init_labels()
+{
+ L_caretakersName_ = "Caretaker's Name";
 }
 

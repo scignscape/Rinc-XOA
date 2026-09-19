@@ -41,14 +41,14 @@ void NRE_Form_Page::write_frame(u2 count)
  implementation_acc("ctor") << "\n F_" << count
    << "_vbl_ = new QVBoxLayout;";
  implementation_acc("ctor") << "\n F_" << count
-   << "->setLayout(F_" << count << "_vbl_);";
+   << "_->setLayout(F_" << count << "_vbl_);";
  implementation_acc("ctor") << "\n S_" << count
    << "_ = new QScrollArea;";
  implementation_acc("ctor") << "\n S_" << count
-   << "->setWidget(F_" << count << ");";
+   << "_->setWidget(F_" << count << "_);";
 
  implementation_acc("ctor") << "\n pages_tab_widget_->addTab(S_" << count
-   << ", \"" << label_ << "\");";
+   << "_, \"" << label_ << "\");";
 
 }
 
