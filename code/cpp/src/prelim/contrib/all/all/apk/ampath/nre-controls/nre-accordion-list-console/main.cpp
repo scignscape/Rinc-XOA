@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 // Admission_data_F100_->set_text("Demo Accordion");
 
  QLineEdit* caretakersName_ = new QLineEdit(Admission_data_F100_);
- Admission_data_F100_->add_item("L_caretakersName_",
+ Admission_data_F100_->add_horizontal_item("L_caretakersName_",
    caretakersName_);
 
  Admission_data_F100_->set_text("Admission_data_F100_");

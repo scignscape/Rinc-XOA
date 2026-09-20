@@ -30,6 +30,7 @@ void NRE_Form_Section::write_questions(u2 page_count)
  static QString accordion = "\n NRE_Accordion_List* %1_F%2_;";
  static QString new_accordion = "\n %1_F%2_ = new NRE_Accordion_List(F_%2_);"
    "\n F_%2_vbl_->addWidget(%1_F%2_);"
+   "\n F_%2_vbl_->addSpacing(19);"
    "\n %1_F%2_->set_text(\"%3\");"
    "\n %1_F%2_->set_enclosing_scroll_area(S_%2_);"
    ;

@@ -186,21 +186,25 @@ void NRE_Accordion_List::expand()
  }
 }
 
-void NRE_Accordion_List::add_item(QString label, QWidget* item)
+void NRE_Accordion_List::add_horizontal_item(QString label, QWidget* item)
 {
  NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
  nai->set_widget(item);
  nai->set_text(label);
  main_layout_->addWidget(nai);
 
-// QPushButton* n = new QPushButton(label);
-// main_layout_->addWidget(n);
-// main_layout_->invalidate();
-// main_layout_->activate();
+// main_widget_->updateGeometry();
+// split_layout_->update();
 
- main_widget_->updateGeometry();
- split_layout_->update();
+}
 
+void NRE_Accordion_List::add_vertical_item(QString label, QWidget* item)
+{
+ NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
+ nai->use_vertical_orientation();
+ nai->set_widget(item);
+ nai->set_text(label);
+ main_layout_->addWidget(nai);
 }
 
 void NRE_Accordion_List::set_text(QString label)

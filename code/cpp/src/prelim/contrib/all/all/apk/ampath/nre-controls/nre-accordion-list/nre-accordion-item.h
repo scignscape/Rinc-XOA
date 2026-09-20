@@ -41,7 +41,7 @@
 
 class QGridLayout;
 
-//namespace Qtilities {
+#include "global-types.h"
 
 #include "kans.h"
 
@@ -55,13 +55,20 @@ class NRE_Accordion_Item : public QWidget
  QGridLayout* main_layout_;
  QLabel* label_;
 
+ u1 widget_column_;
+ u1 widget_row_;
+ u1 label_column_span_;
+ u1 label_row_span_;
+
 public:
- explicit NRE_Accordion_Item(QWidget *parent = nullptr);
+
+ NRE_Accordion_Item(QWidget *parent = nullptr);
 
  void set_text(QString label);
  void set_widget(QWidget* w);
 
- void onExpandWidget(bool);
+ void use_vertical_orientation();
+ void use_horizontal_orientation();
 };
 
 //} // namespace Qtilities

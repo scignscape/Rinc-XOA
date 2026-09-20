@@ -49,11 +49,28 @@ USING_KANS(AMPATH_Forms)
 
 
 NRE_Accordion_Item::NRE_Accordion_Item(QWidget* parent)
- : QWidget(parent), label_(nullptr)
+ : QWidget(parent), label_(nullptr),
+   widget_column_(1),
+   widget_row_(0),
+   label_column_span_(1),
+   label_row_span_(1)
 {
  main_layout_ = new QGridLayout;
  setLayout(main_layout_);
 }
+
+void NRE_Accordion_Item::use_vertical_orientation()
+{
+ widget_column_ = 0;
+ widget_row_ = 1;
+}
+
+void NRE_Accordion_Item::use_horizontal_orientation()
+{
+ widget_column_ = 1;
+ widget_row_ = 0;
+}
+
 
 void NRE_Accordion_Item::set_text(QString label)
 {

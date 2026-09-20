@@ -84,51 +84,63 @@ void NRE_Form_Question::write_rendering(QString text)
 // implementation_acc("ctor") << "\n L_" << id_ << "_" << " = new QLabel(###);";
 // implementation_acc("ctor") << "\n L_" << id_ << "_" << " = \"" << label_ << "\"";
 
+ QString v_or_h;
+
  Rendering_Types rt = parse_rendering_type(text);
 
  switch (rt)
  {
  case Rendering_Types::Text:
+  v_or_h = "horizontal";
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
   break;
  case Rendering_Types::TextArea:
+  v_or_h = "vertical";
   header_acc("methods") << "\n QPlainTextEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QPlainTextEdit(###);";
   break;
  case Rendering_Types::Number:
+  v_or_h = "horizontal";
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
   implementation_acc("ctor") << "\n " << id_ << "_" << "->setPlaceholderText(0);";
   break;
  case Rendering_Types::DateTime:
+  v_or_h = "horizontal";
   header_acc("methods") << "\n QDateTimeEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateTimeEdit(###);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Date:
+  v_or_h = "horizontal";
   header_acc("methods") << "\n QDateEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(###);";
   break;
  case Rendering_Types::Radio:
+  v_or_h = "vertical";
   header_acc("methods") << "\n NRE_Radio_Button_Group_Box* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Radio_Button_Group_Box(###);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Markdown:
+  v_or_h = "vertical";
   header_acc("methods") << "\n QPlainTextEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QPlainTextEdit(###);";
   break;
  case Rendering_Types::Select:
+  v_or_h = "vertical";
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Combo_With_Label_Bar(###);";
   implementation_acc("ctor") << "\n " << id_ << "_" << "->set_max_selectable(1);";
   break;
  case Rendering_Types::MultiCheckbox:
+  v_or_h = "vertical";
   header_acc("methods") << "\n NRE_Combo_With_Label_Bar* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Combo_With_Label_Bar(###);";
   break;
  case Rendering_Types::WorkspaceLauncher:
+  v_or_h = "horizontal";
   header_acc("methods") << "\n NRE_Workspace_Launcher_Button* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Workspace_Launcher_Button(###);";
   break;
@@ -139,6 +151,6 @@ void NRE_Form_Question::write_rendering(QString text)
   break;
  }
 
- implementation_acc("ctor") << "\n ###->add_item(" <<
+ implementation_acc("ctor") << "\n ###->add_" << v_or_h << "_item(" <<
    "L_" << id_ << "_,\n   " << id_ << "_);";
 }
