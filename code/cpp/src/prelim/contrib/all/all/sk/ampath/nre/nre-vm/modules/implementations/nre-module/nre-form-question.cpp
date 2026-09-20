@@ -111,8 +111,8 @@ void NRE_Form_Question::write_rendering(QString text)
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(###);";
   break;
  case Rendering_Types::Radio:
-  header_acc("methods") << "\n QButtonGroup* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QButtonGroup(###);";
+  header_acc("methods") << "\n NRE_Radio_Button_Group_Box* " << id_ << "_;";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Radio_Button_Group_Box(###);";
 //?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
   break;
  case Rendering_Types::Markdown:

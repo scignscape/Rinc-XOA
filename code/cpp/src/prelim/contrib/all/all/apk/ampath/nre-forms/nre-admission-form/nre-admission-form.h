@@ -23,13 +23,14 @@
 #include <QLineEdit>
 #include <QDateEdit>
 #include <QDateTimeEdit>
-#include <QButtonGroup>
 
 #include "kans.h"
 
 KANS_(AMPATH_Forms)
 
+class NRE_Accordion_List;
 class NRE_Combo_With_Label_Bar;
+class NRE_Radio_Button_Group_Box;
 
 class NRE_Admission_Form : public QMainWindow
 {
@@ -158,11 +159,11 @@ private:
  QString L_admissionDateAndTime_;
  QDateTimeEdit* admissionDateAndTime_;
  QString L_admissionType_;
- QButtonGroup* admissionType_;
+ NRE_Radio_Button_Group_Box* admissionType_;
  QString L_spontaneousAdmission_;
- QButtonGroup* spontaneousAdmission_;
+ NRE_Radio_Button_Group_Box* spontaneousAdmission_;
  QString L_ifReferredByWhomOrFromWhere_;
- QButtonGroup* ifReferredByWhomOrFromWhere_;
+ NRE_Radio_Button_Group_Box* ifReferredByWhomOrFromWhere_;
  QString L_ifReferredByWhomOrFromWhere_ifOtherSpecify_;
  QLineEdit* ifReferredByWhomOrFromWhere_ifOtherSpecify_;
 
@@ -174,19 +175,19 @@ private:
  QString L_whatAreTheProblemsReportedByTheCaretaker_;
  QPlainTextEdit* whatAreTheProblemsReportedByTheCaretaker_;
  QString L_isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_;
- QButtonGroup* isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_;
+ NRE_Radio_Button_Group_Box* isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_;
  QString L_isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_specifyWho_;
  QLineEdit* isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_specifyWho_;
  QString L_isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_;
- QButtonGroup* isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_;
+ NRE_Radio_Button_Group_Box* isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_;
  QString L_isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_;
  QLineEdit* isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_;
 
   // // Section: Feeding_history -- methods
  QString L_hasTheChildEverBeenBreastfed_;
- QButtonGroup* hasTheChildEverBeenBreastfed_;
+ NRE_Radio_Button_Group_Box* hasTheChildEverBeenBreastfed_;
  QString L_isTheChildCurrentlyBeingBreastfed_;
- QButtonGroup* isTheChildCurrentlyBeingBreastfed_;
+ NRE_Radio_Button_Group_Box* isTheChildCurrentlyBeingBreastfed_;
  QString L_atWhatAgeDidYouIntroduceSolidFood_;
  QLineEdit* atWhatAgeDidYouIntroduceSolidFood_;
  QString L_typeOfMealsBeforeIllness_;
@@ -198,11 +199,11 @@ private:
 
   // // Section: Family_history -- methods
  QString L_whoIsTheHeadOfFamily_;
- QButtonGroup* whoIsTheHeadOfFamily_;
+ NRE_Radio_Button_Group_Box* whoIsTheHeadOfFamily_;
  QString L_whoIsTheHeadOfFamily_ifOtherSpecify_;
  QLineEdit* whoIsTheHeadOfFamily_ifOtherSpecify_;
  QString L_isTheMotherAlive_;
- QButtonGroup* isTheMotherAlive_;
+ NRE_Radio_Button_Group_Box* isTheMotherAlive_;
  QString L_whoIsTakingCareOfTheChild_;
  QLineEdit* whoIsTakingCareOfTheChild_;
  QString L_numberOfBirthsForTheMother_;
@@ -224,9 +225,9 @@ private:
  QString L_capturePatientVitals_;
  NRE_Combo_With_Label_Bar* capturePatientVitals_;
  QString L_whz_;
- QButtonGroup* whz_;
+ NRE_Radio_Button_Group_Box* whz_;
  QString L_oedema_;
- QButtonGroup* oedema_;
+ NRE_Radio_Button_Group_Box* oedema_;
 
  // //  Page: Evaluation
 
@@ -236,17 +237,17 @@ private:
 
   // // Section: Malaria_test -- methods
  QString L_malariaTestResult_;
- QButtonGroup* malariaTestResult_;
+ NRE_Radio_Button_Group_Box* malariaTestResult_;
 
   // // Section: TB_evaluation -- methods
  QString L_tbEvaluation_;
- QButtonGroup* tbEvaluation_;
+ NRE_Radio_Button_Group_Box* tbEvaluation_;
  QString L_firstResultScore_;
- QButtonGroup* firstResultScore_;
+ NRE_Radio_Button_Group_Box* firstResultScore_;
  QString L_firstResultDate_;
  QDateEdit* firstResultDate_;
  QString L_secondResultScore_;
- QButtonGroup* secondResultScore_;
+ NRE_Radio_Button_Group_Box* secondResultScore_;
  QString L_secondResultDate_;
  QDateEdit* secondResultDate_;
 

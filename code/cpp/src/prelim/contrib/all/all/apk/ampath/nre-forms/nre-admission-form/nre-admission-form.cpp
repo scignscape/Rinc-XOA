@@ -6,6 +6,7 @@
 
 #include "nre-controls/nre-accordion-list/nre-accordion-list.h"
 #include "nre-controls/nre-combo/nre-combo-with-label-bar.h"
+#include "nre-controls/nre-button-group-box/nre-radio-button-group-box.h"
 
 
 #include "nre-admission-form.h"
@@ -40,13 +41,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  admissionDateAndTime_ = new QDateTimeEdit(Admission_data_F100_);
  Admission_data_F100_->add_item(L_admissionDateAndTime_,
    admissionDateAndTime_);
- admissionType_ = new QButtonGroup(Admission_data_F100_);
+ admissionType_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  Admission_data_F100_->add_item(L_admissionType_,
    admissionType_);
- spontaneousAdmission_ = new QButtonGroup(Admission_data_F100_);
+ spontaneousAdmission_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  Admission_data_F100_->add_item(L_spontaneousAdmission_,
    spontaneousAdmission_);
- ifReferredByWhomOrFromWhere_ = new QButtonGroup(Admission_data_F100_);
+ ifReferredByWhomOrFromWhere_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  Admission_data_F100_->add_item(L_ifReferredByWhomOrFromWhere_,
    ifReferredByWhomOrFromWhere_);
  ifReferredByWhomOrFromWhere_ifOtherSpecify_ = new QLineEdit(Admission_data_F100_);
@@ -72,13 +73,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  whatAreTheProblemsReportedByTheCaretaker_ = new QPlainTextEdit(History_of_the_illness_F101_);
  History_of_the_illness_F101_->add_item(L_whatAreTheProblemsReportedByTheCaretaker_,
    whatAreTheProblemsReportedByTheCaretaker_);
- isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_ = new QButtonGroup(History_of_the_illness_F101_);
+ isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_ = new NRE_Radio_Button_Group_Box(History_of_the_illness_F101_);
  History_of_the_illness_F101_->add_item(L_isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_,
    isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_);
  isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_specifyWho_ = new QLineEdit(History_of_the_illness_F101_);
  History_of_the_illness_F101_->add_item(L_isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_specifyWho_,
    isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_specifyWho_);
- isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_ = new QButtonGroup(History_of_the_illness_F101_);
+ isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_ = new NRE_Radio_Button_Group_Box(History_of_the_illness_F101_);
  History_of_the_illness_F101_->add_item(L_isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_,
    isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_);
  isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_ = new QLineEdit(History_of_the_illness_F101_);
@@ -89,10 +90,10 @@ NRE_Admission_Form::NRE_Admission_Form()
  Feeding_history_F101_ = new NRE_Accordion_List(F_101_);
  F_101_vbl_->addWidget(Feeding_history_F101_);
 
- hasTheChildEverBeenBreastfed_ = new QButtonGroup(Feeding_history_F101_);
+ hasTheChildEverBeenBreastfed_ = new NRE_Radio_Button_Group_Box(Feeding_history_F101_);
  Feeding_history_F101_->add_item(L_hasTheChildEverBeenBreastfed_,
    hasTheChildEverBeenBreastfed_);
- isTheChildCurrentlyBeingBreastfed_ = new QButtonGroup(Feeding_history_F101_);
+ isTheChildCurrentlyBeingBreastfed_ = new NRE_Radio_Button_Group_Box(Feeding_history_F101_);
  Feeding_history_F101_->add_item(L_isTheChildCurrentlyBeingBreastfed_,
    isTheChildCurrentlyBeingBreastfed_);
  atWhatAgeDidYouIntroduceSolidFood_ = new QLineEdit(Feeding_history_F101_);
@@ -114,13 +115,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  Family_history_F101_ = new NRE_Accordion_List(F_101_);
  F_101_vbl_->addWidget(Family_history_F101_);
 
- whoIsTheHeadOfFamily_ = new QButtonGroup(Family_history_F101_);
+ whoIsTheHeadOfFamily_ = new NRE_Radio_Button_Group_Box(Family_history_F101_);
  Family_history_F101_->add_item(L_whoIsTheHeadOfFamily_,
    whoIsTheHeadOfFamily_);
  whoIsTheHeadOfFamily_ifOtherSpecify_ = new QLineEdit(Family_history_F101_);
  Family_history_F101_->add_item(L_whoIsTheHeadOfFamily_ifOtherSpecify_,
    whoIsTheHeadOfFamily_ifOtherSpecify_);
- isTheMotherAlive_ = new QButtonGroup(Family_history_F101_);
+ isTheMotherAlive_ = new NRE_Radio_Button_Group_Box(Family_history_F101_);
  Family_history_F101_->add_item(L_isTheMotherAlive_,
    isTheMotherAlive_);
  whoIsTakingCareOfTheChild_ = new QLineEdit(Family_history_F101_);
@@ -165,10 +166,10 @@ NRE_Admission_Form::NRE_Admission_Form()
  capturePatientVitals_->set_max_selectable(1);
  Physical_exam_F102_->add_item(L_capturePatientVitals_,
    capturePatientVitals_);
- whz_ = new QButtonGroup(Physical_exam_F102_);
+ whz_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
  Physical_exam_F102_->add_item(L_whz_,
    whz_);
- oedema_ = new QButtonGroup(Physical_exam_F102_);
+ oedema_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
  Physical_exam_F102_->add_item(L_oedema_,
    oedema_);
 
@@ -192,7 +193,7 @@ NRE_Admission_Form::NRE_Admission_Form()
  Malaria_test_F103_ = new NRE_Accordion_List(F_103_);
  F_103_vbl_->addWidget(Malaria_test_F103_);
 
- malariaTestResult_ = new QButtonGroup(Malaria_test_F103_);
+ malariaTestResult_ = new NRE_Radio_Button_Group_Box(Malaria_test_F103_);
  Malaria_test_F103_->add_item(L_malariaTestResult_,
    malariaTestResult_);
 
@@ -200,16 +201,16 @@ NRE_Admission_Form::NRE_Admission_Form()
  TB_evaluation_F103_ = new NRE_Accordion_List(F_103_);
  F_103_vbl_->addWidget(TB_evaluation_F103_);
 
- tbEvaluation_ = new QButtonGroup(TB_evaluation_F103_);
+ tbEvaluation_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
  TB_evaluation_F103_->add_item(L_tbEvaluation_,
    tbEvaluation_);
- firstResultScore_ = new QButtonGroup(TB_evaluation_F103_);
+ firstResultScore_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
  TB_evaluation_F103_->add_item(L_firstResultScore_,
    firstResultScore_);
  firstResultDate_ = new QDateEdit(TB_evaluation_F103_);
  TB_evaluation_F103_->add_item(L_firstResultDate_,
    firstResultDate_);
- secondResultScore_ = new QButtonGroup(TB_evaluation_F103_);
+ secondResultScore_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
  TB_evaluation_F103_->add_item(L_secondResultScore_,
    secondResultScore_);
  secondResultDate_ = new QDateEdit(TB_evaluation_F103_);

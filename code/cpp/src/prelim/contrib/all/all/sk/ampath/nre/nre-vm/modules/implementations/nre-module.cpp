@@ -125,13 +125,14 @@ void NRE_Module::write_class_header_lead()
 #include <QLineEdit>
 #include <QDateEdit>
 #include <QDateTimeEdit>
-#include <QButtonGroup>
 
 #include "kans.h"
 
 KANS_(AMPATH_Forms)
 
+class NRE_Accordion_List;
 class NRE_Combo_With_Label_Bar;
+class NRE_Radio_Button_Group_Box;
 
 )" << "class " << current_class_name_ << " : public QMainWindow \n{\n";
 
@@ -234,7 +235,7 @@ SOURCES += \
 
 LIBS += \
   -L$$TARGETSDIR -l%1 \
-  -lnre-accordion-list -lnre-combo
+  -lnre-accordion-list -lnre-combo -lnre-button-group-box
 
 )";
 
@@ -262,6 +263,7 @@ void NRE_Module::write_class_implementation_lead()
 
 #include "nre-controls/nre-accordion-list/nre-accordion-list.h"
 #include "nre-controls/nre-combo/nre-combo-with-label-bar.h"
+#include "nre-controls/nre-button-group-box/nre-radio-button-group-box.h"
 
                 )"
 

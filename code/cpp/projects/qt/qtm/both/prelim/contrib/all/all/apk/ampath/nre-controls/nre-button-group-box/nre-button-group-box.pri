@@ -5,13 +5,11 @@
 #           http://www.boost.org/LICENSE_1_0.txt)
 
 
-PROJECT_NAME = nre-combo
+PROJECT_NAME = nre-button-group-box
 
 QT += widgets
 
 include(../build-group.pri)
-
-TEMPLATE = app
 
 
 greaterThan(QT_MAJOR_VERSION, 5) {
@@ -31,22 +29,18 @@ exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/co
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 
+
 CONFIG += no_keywords
 
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 
 HEADERS += \
+  $$SRC_DIR/nre-radio-button-group-box.h \
 
 
 SOURCES += \
-  $$SRC_DIR/main.cpp \
-
-
-
-LIBS += -L$$TARGETSDIR \
-  -lnre-admission-form \
-  -lnre-accordion-list -lnre-combo -lnre-button-group-box
+  $$SRC_DIR/nre-radio-button-group-box.cpp \
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
