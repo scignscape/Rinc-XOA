@@ -43,26 +43,188 @@
 #include <QVBoxLayout>
 
 #include <QPushButton>
+#include <QToolButton>
+#include <QLineEdit>
 
 #include "kans.h"
 
 USING_KANS(AMPATH_Forms)
 
-NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
-  :  QWidget(parent)
-{
-  main_layout_ = new QVBoxLayout;
-  setLayout(main_layout_);
 
-//?
-//  QPushButton* b = new QPushButton("b");
-//  main_layout_->addWidget(b);
+KANS_(AMPATH_Forms)
+
+class ArrowButton : public QToolButton
+{
+//? Q_OBJECT
+
+public:
+ explicit ArrowButton(QWidget *parent = nullptr);
+
+private:
+ void paintEvent(QPaintEvent *) override;
+ QSize minimumSizeHint() const override;
+ QSize sizeHint() const override;
+};
+
+//?#include "accordion.moc"
+
+ArrowButton::ArrowButton(QWidget *parent)
+ : QToolButton(parent)
+{
+ /*
+        Drawing arrow and borders using paintEvent, strange issues when using css:
+        1. set the border color on :pressed or :checked selectors doesn't work
+        2. the arrow is painted at the center over the label
+        3. using images for arrows with state/color changes is not great
+    */
+ setCheckable(true);
+ setStyleSheet("border: none");
+ setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+}
+
+void ArrowButton::paintEvent(QPaintEvent *event)
+{
+ QToolButton::paintEvent(event);
+
+ QPainter painter(this);
+ QStyleOption option;
+ option.initFrom(this);
+ style()->drawPrimitive(QStyle::PE_Widget, &option, &painter, this);
+
+ painter.setRenderHint(QPainter::Antialiasing);
+
+ int arrowSize = fontMetrics().height() / 2;
+ QPalette pal = palette();
+ QPolygon arrow;
+ QRect r = rect();
+ QRect arrowRect(r.x() + arrowSize, (r.height() - arrowSize) / 2, arrowSize, arrowSize);
+ QPoint p1 = arrowRect.topLeft(), p2, p3;
+
+ if (isChecked()) {
+  p2 = arrowRect.topRight();
+  p3 = (arrowRect.bottomLeft() + arrowRect.bottomRight()) / 2;
+ } else {
+  p2 = (arrowRect.topRight() + arrowRect.bottomRight()) / 2;
+  p3 = arrowRect.bottomLeft();
+ }
+
+ painter.setPen(pal.color(QPalette::Light));
+ painter.drawLine(r.topLeft(), r.topRight());
+ painter.drawLine(r.topRight(), r.bottomRight());
+ painter.setPen(pal.color(QPalette::Dark));
+ painter.drawLine(r.bottomLeft(), r.bottomRight());
+ painter.drawLine(r.topLeft(), r.bottomLeft());
+
+ QColor c = pal.color(pal.currentColorGroup(), QPalette::ButtonText);
+ painter.setBrush(c);
+ painter.setPen(c);
+
+ arrow.clear();
+ arrow << p1 << p2 << p3;
+
+ painter.drawPolygon(arrow);
+}
+
+QSize ArrowButton::minimumSizeHint() const
+{
+ int arrowSize = fontMetrics().height() / 2;
+ return QSize(fontMetrics().horizontalAdvance(text()) + (arrowSize * 5), arrowSize * 3);
+}
+
+QSize ArrowButton::sizeHint() const
+{
+ return minimumSizeHint();
+}
+
+_KANS(AMPATH_Forms)
+
+NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
+  :  QWidget(parent), main_widget_(nullptr),
+     enclosing_scroll_area_(nullptr), current_height_(0)
+{
+ split_layout_ = new QVBoxLayout(this);
+ setLayout(split_layout_);
+
+ arrow_button_ = new ArrowButton(this);
+ split_layout_->setContentsMargins(0, 0, 0, 0);
+ split_layout_->setSpacing(0);
+
+ split_layout_->addWidget(arrow_button_);
+// split_layout_->addWidget(arrow);
+
+ main_layout_ = new QVBoxLayout;
+
+ main_widget_ = new QWidget;
+ main_widget_->setLayout(main_layout_);
+
+// collapse();
+ set_main_widget();
+}
+
+void NRE_Accordion_List::collapse()
+{
+ current_height_ = height();
+
+ setMaximumHeight(arrow_button_->height());
+
+ main_widget_->setVisible(false);
+ if(enclosing_scroll_area_)
+ {
+  enclosing_scroll_area_->widget()->adjustSize();
+ }
+}
+
+void NRE_Accordion_List::expand()
+{
+ setMaximumHeight(current_height_);
+
+ main_widget_->setVisible(true);
+
+ if(enclosing_scroll_area_)
+ {
+  enclosing_scroll_area_->widget()->adjustSize();
+ }
 }
 
 void NRE_Accordion_List::add_item(QString label, QWidget* item)
 {
  NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
- nai->setWidget(item);
- nai->setText(label);
+ nai->set_widget(item);
+ nai->set_text(label);
  main_layout_->addWidget(nai);
+
+// QPushButton* n = new QPushButton(label);
+// main_layout_->addWidget(n);
+// main_layout_->invalidate();
+// main_layout_->activate();
+
+ main_widget_->updateGeometry();
+ split_layout_->update();
+
 }
+
+void NRE_Accordion_List::set_text(QString label)
+{
+ arrow_button_->setText(label);
+}
+
+void NRE_Accordion_List::set_main_widget()
+{
+ split_layout_->addWidget(main_widget_);
+ main_widget_->updateGeometry();
+ split_layout_->update();
+
+ connect(arrow_button_, &QAbstractButton::toggled,
+   this, &NRE_Accordion_List::onExpandWidget);
+
+}
+
+void NRE_Accordion_List::onExpandWidget(bool visible)
+{
+ if(visible)
+   expand();
+ else
+   collapse();
+}
+
+

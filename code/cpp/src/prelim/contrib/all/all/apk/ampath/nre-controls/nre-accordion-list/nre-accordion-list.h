@@ -37,6 +37,7 @@
 
 
 #include <QWidget>
+#include <QScrollArea>
 
 class QVBoxLayout;
 
@@ -44,11 +45,14 @@ class QVBoxLayout;
 
 //?#include "nre-accordion-item.h"
 
+#include "accessors.h"
+
 #include "kans.h"
 
 KANS_(AMPATH_Forms)
 
 class NRE_Accordion_Item;
+class ArrowButton;
 
 class NRE_Accordion_List : public QWidget
 {
@@ -56,13 +60,35 @@ class NRE_Accordion_List : public QWidget
 
  QVList<NRE_Accordion_Item*> items_;
 
+// QVList<QWidget*> ws_;
+
  QVBoxLayout* main_layout_;
+
+// void onExpandWidget(bool);
+
+ QVBoxLayout* split_layout_;
+ ArrowButton* arrow_button_;
+ QWidget* main_widget_;
+
+ QScrollArea* enclosing_scroll_area_;
+
+ int current_height_;
+
+ void onExpandWidget(bool);
 
 public:
 
  NRE_Accordion_List(QWidget *parent = nullptr);
 
+ ACCESSORS(QScrollArea* ,enclosing_scroll_area)
+
  void add_item(QString label, QWidget* item);
+ void set_text(QString label);
+ void set_main_widget();
+
+
+ void collapse();
+ void expand();
 
 };
 

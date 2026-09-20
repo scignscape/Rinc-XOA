@@ -37,8 +37,9 @@
 
 
 #include <QWidget>
+#include <QLabel>
 
-class QVBoxLayout;
+class QGridLayout;
 
 //namespace Qtilities {
 
@@ -46,24 +47,21 @@ class QVBoxLayout;
 
 KANS_(AMPATH_Forms)
 
-class ArrowButton;
 
 class NRE_Accordion_Item : public QWidget
 {
  Q_OBJECT
 
+ QGridLayout* main_layout_;
+ QLabel* label_;
+
 public:
  explicit NRE_Accordion_Item(QWidget *parent = nullptr);
 
- void setText(const QString &);
- void setWidget(QWidget *);
+ void set_text(QString label);
+ void set_widget(QWidget* w);
 
-private:
  void onExpandWidget(bool);
-
- QVBoxLayout *layout_;
- ArrowButton *button_;
- QWidget *widget_;
 };
 
 //} // namespace Qtilities

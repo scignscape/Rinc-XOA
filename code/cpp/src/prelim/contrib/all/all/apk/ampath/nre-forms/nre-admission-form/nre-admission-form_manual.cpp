@@ -5,7 +5,7 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#include "nre-admission-form.h"
+#include "nre-admission-form_manual.h"
 
 #include <QPainter>
 #include <QStyleOption>
@@ -20,36 +20,54 @@
 USING_KANS(AMPATH_Forms)
 
 
-NRE_Admission_Form::NRE_Admission_Form(QWidget* parent)
- : QMainWindow(parent)
+NRE_Admission_Form::NRE_Admission_Form()//QWidget* parent)
+ //: QMainWindow(parent)
 {
  pages_tab_widget_ = new QTabWidget(this);
-
+ init_labels();
  setCentralWidget(pages_tab_widget_);
  pages_tab_widget_->show();
 
- init_labels();
-
- S_100_ = new QScrollArea(this);
- S_101_ = new QScrollArea(this);
-
- F_100_ = new QFrame(this);
- F_101_ = new QFrame(this);
-
- Admission_data_F100_ = new NRE_Accordion_List(this);
- Feeding_history_F101_ = new NRE_Accordion_List(this);
- Family_history_F101_ = new NRE_Accordion_List(this);
-
- QVBoxLayout* F_100_vbl_ = new QVBoxLayout;
-
+ // //  Page: Admission
+ F_100_ = new QFrame;
+ F_100_vbl_ = new QVBoxLayout;
  F_100_->setLayout(F_100_vbl_);
- F_101_->setLayout(new QVBoxLayout);
+ S_100_ = new QScrollArea(this);
+ S_100_->setWidget(F_100_);
 
+  // // Section: Admission_data -- ctor
+ Admission_data_F100_ = new NRE_Accordion_List(S_100_);
  F_100_vbl_->addWidget(Admission_data_F100_);
 
  caretakersName_ = new QLineEdit(Admission_data_F100_);
  Admission_data_F100_->add_item(L_caretakersName_,
    caretakersName_);
+
+ Admission_data_F100_->set_text("Admission_data_F100_");
+
+ Admission_data_F100_->show();
+
+ F_100_vbl_->update();
+
+
+// S_100_ = new QScrollArea(this);
+ S_101_ = new QScrollArea(this);
+
+// F_100_ = new QFrame(this);
+ F_101_ = new QFrame(this);
+
+// Admission_data_F100_ = new NRE_Accordion_List(this);
+
+//? QVBoxLayout* F_100_vbl_ = new QVBoxLayout;
+
+// F_100_->setLayout(F_100_vbl_);
+ F_101_->setLayout(new QVBoxLayout);
+
+// F_100_vbl_->addWidget(Admission_data_F100_);
+
+// caretakersName_ = new QLineEdit(Admission_data_F100_);
+// Admission_data_F100_->add_item(L_caretakersName_,
+//   caretakersName_);
 
 // QPushButton* b0 = new QPushButton("b0");
 
@@ -72,10 +90,12 @@ NRE_Admission_Form::NRE_Admission_Form(QWidget* parent)
 //  pages_tab_widget_->addTab(S_100_, "100");
 //  pages_tab_widget_->addTab(S_101_, "101");
 
- S_100_->setWidget(F_100_);
+ pages_tab_widget_->addTab(S_100_, "Admission");
+
+// S_100_->setWidget(F_100_);
  S_101_->setWidget(F_101_);
 
-   pages_tab_widget_->addTab(S_100_, "100");
+//   pages_tab_widget_->addTab(S_100_, "100");
    pages_tab_widget_->addTab(S_101_, "101");
 
 

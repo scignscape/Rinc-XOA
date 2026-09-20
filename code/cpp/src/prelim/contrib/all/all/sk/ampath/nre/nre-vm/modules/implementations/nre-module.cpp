@@ -410,7 +410,11 @@ void NRE_Module::write_form()
 
 
  implementation_pre_["ctor"] = implementation_pre.arg("").arg(current_class_name_).arg(current_class_name_).arg("");
+
  implementation_post_["ctor"] = implementation_post.arg(current_class_name_).arg("");
+
+ implementation_post_["ctor"].prepend("\n\n init();\n");
+
  header_pre_["ctor"] = header_pre.arg("").arg(current_class_name_).arg("");
 
  implementation_pre_["labels"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("_labels");

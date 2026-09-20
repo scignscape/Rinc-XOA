@@ -29,8 +29,12 @@ void NRE_Form_Section::write_questions(u2 page_count)
 {
  static QString accordion = "\n NRE_Accordion_List* %1_F%2_;";
  static QString new_accordion = "\n %1_F%2_ = new NRE_Accordion_List(F_%2_);"
-   "\n F_%2_vbl_->addWidget(%1_F%2_);\n";
+   "\n F_%2_vbl_->addWidget(%1_F%2_);"
+   "\n %1_F%2_->set_enclosing_scroll_area(S_%2_);"
+   ;
  static QString accordion_name = "%1_F%2_";
+ static QString collapse_accordion = "\n %1_F%2_->collapse();\n"
+   ;
 
  header_acc("ctor") << accordion.arg(label_.replace(" ", "_")).arg(page_count);
  implementation_acc("ctor") << new_accordion.arg(label_.replace(" ", "_")).arg(page_count);
@@ -51,6 +55,8 @@ void NRE_Form_Section::write_questions(u2 page_count)
   implementation_acc("labels") << q->cpp_implementation_part("labels");
   implementation_acc("concepts") << q->cpp_implementation_part("concepts");
  }
+
+ implementation_acc("ctor") << collapse_accordion.arg(label_.replace(" ", "_")).arg(page_count);
 }
 
 void NRE_Form_Section::cleanup()

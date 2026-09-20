@@ -72,7 +72,7 @@ class NRE_Admission_Form : public QMainWindow
 
 public:
 
- NRE_Admission_Form(QWidget *parent = nullptr);
+ NRE_Admission_Form();//QWidget *parent = nullptr);
 
 };
 
