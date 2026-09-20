@@ -33,6 +33,7 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: Admission_data -- ctor
  Admission_data_F100_ = new NRE_Accordion_List(F_100_);
  F_100_vbl_->addWidget(Admission_data_F100_);
+ Admission_data_F100_->set_text("Admission_data");
  Admission_data_F100_->set_enclosing_scroll_area(S_100_);
  caretakersName_ = new QLineEdit(Admission_data_F100_);
  Admission_data_F100_->add_item(L_caretakersName_,
@@ -52,8 +53,6 @@ NRE_Admission_Form::NRE_Admission_Form()
  ifReferredByWhomOrFromWhere_ifOtherSpecify_ = new QLineEdit(Admission_data_F100_);
  Admission_data_F100_->add_item(L_ifReferredByWhomOrFromWhere_ifOtherSpecify_,
    ifReferredByWhomOrFromWhere_ifOtherSpecify_);
- Admission_data_F100_->collapse();
-
 
  // //  Page: Anamnesis at admission
  F_101_ = new QFrame;
@@ -65,6 +64,7 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: History_of_the_illness -- ctor
  History_of_the_illness_F101_ = new NRE_Accordion_List(F_101_);
  F_101_vbl_->addWidget(History_of_the_illness_F101_);
+ History_of_the_illness_F101_->set_text("History_of_the_illness");
  History_of_the_illness_F101_->set_enclosing_scroll_area(S_101_);
  howLongHasTheChildBeenSick_ = new QLineEdit(History_of_the_illness_F101_);
  howLongHasTheChildBeenSick_->setPlaceholderText(0);
@@ -85,12 +85,11 @@ NRE_Admission_Form::NRE_Admission_Form()
  isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_ = new QLineEdit(History_of_the_illness_F101_);
  History_of_the_illness_F101_->add_item(L_isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_,
    isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_);
- History_of_the_illness_F101_->collapse();
-
 
   // // Section: Feeding_history -- ctor
  Feeding_history_F101_ = new NRE_Accordion_List(F_101_);
  F_101_vbl_->addWidget(Feeding_history_F101_);
+ Feeding_history_F101_->set_text("Feeding_history");
  Feeding_history_F101_->set_enclosing_scroll_area(S_101_);
  hasTheChildEverBeenBreastfed_ = new NRE_Radio_Button_Group_Box(Feeding_history_F101_);
  Feeding_history_F101_->add_item(L_hasTheChildEverBeenBreastfed_,
@@ -112,12 +111,11 @@ NRE_Admission_Form::NRE_Admission_Form()
  numberOfMealsDuringTheLast24Hours_->setPlaceholderText(0);
  Feeding_history_F101_->add_item(L_numberOfMealsDuringTheLast24Hours_,
    numberOfMealsDuringTheLast24Hours_);
- Feeding_history_F101_->collapse();
-
 
   // // Section: Family_history -- ctor
  Family_history_F101_ = new NRE_Accordion_List(F_101_);
  F_101_vbl_->addWidget(Family_history_F101_);
+ Family_history_F101_->set_text("Family_history");
  Family_history_F101_->set_enclosing_scroll_area(S_101_);
  whoIsTheHeadOfFamily_ = new NRE_Radio_Button_Group_Box(Family_history_F101_);
  Family_history_F101_->add_item(L_whoIsTheHeadOfFamily_,
@@ -150,8 +148,6 @@ NRE_Admission_Form::NRE_Admission_Form()
  nbOfPersonsSharingTheFamilyMeal_->setPlaceholderText(0);
  Family_history_F101_->add_item(L_nbOfPersonsSharingTheFamilyMeal_,
    nbOfPersonsSharingTheFamilyMeal_);
- Family_history_F101_->collapse();
-
 
  // //  Page: Physical exam at admission
  F_102_ = new QFrame;
@@ -163,6 +159,7 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: Physical_exam -- ctor
  Physical_exam_F102_ = new NRE_Accordion_List(F_102_);
  F_102_vbl_->addWidget(Physical_exam_F102_);
+ Physical_exam_F102_->set_text("Physical_exam");
  Physical_exam_F102_->set_enclosing_scroll_area(S_102_);
  pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_ = new QPlainTextEdit(Physical_exam_F102_);
  Physical_exam_F102_->add_item(L_pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_,
@@ -177,8 +174,6 @@ NRE_Admission_Form::NRE_Admission_Form()
  oedema_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
  Physical_exam_F102_->add_item(L_oedema_,
    oedema_);
- Physical_exam_F102_->collapse();
-
 
  // //  Page: Evaluation
  F_103_ = new QFrame;
@@ -190,26 +185,25 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: Target -- ctor
  Target_F103_ = new NRE_Accordion_List(F_103_);
  F_103_vbl_->addWidget(Target_F103_);
+ Target_F103_->set_text("Target");
  Target_F103_->set_enclosing_scroll_area(S_103_);
  targetWeightOrMuac_ = new QLineEdit(Target_F103_);
  Target_F103_->add_item(L_targetWeightOrMuac_,
    targetWeightOrMuac_);
- Target_F103_->collapse();
-
 
   // // Section: Malaria_test -- ctor
  Malaria_test_F103_ = new NRE_Accordion_List(F_103_);
  F_103_vbl_->addWidget(Malaria_test_F103_);
+ Malaria_test_F103_->set_text("Malaria_test");
  Malaria_test_F103_->set_enclosing_scroll_area(S_103_);
  malariaTestResult_ = new NRE_Radio_Button_Group_Box(Malaria_test_F103_);
  Malaria_test_F103_->add_item(L_malariaTestResult_,
    malariaTestResult_);
- Malaria_test_F103_->collapse();
-
 
   // // Section: TB_evaluation -- ctor
  TB_evaluation_F103_ = new NRE_Accordion_List(F_103_);
  F_103_vbl_->addWidget(TB_evaluation_F103_);
+ TB_evaluation_F103_->set_text("TB_evaluation");
  TB_evaluation_F103_->set_enclosing_scroll_area(S_103_);
  tbEvaluation_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
  TB_evaluation_F103_->add_item(L_tbEvaluation_,
@@ -226,8 +220,6 @@ NRE_Admission_Form::NRE_Admission_Form()
  secondResultDate_ = new QDateEdit(TB_evaluation_F103_);
  TB_evaluation_F103_->add_item(L_secondResultDate_,
    secondResultDate_);
- TB_evaluation_F103_->collapse();
-
 
  // //  Page: Observations
  F_104_ = new QFrame;
@@ -239,12 +231,11 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: Observations -- ctor
  Observations_F104_ = new NRE_Accordion_List(F_104_);
  F_104_vbl_->addWidget(Observations_F104_);
+ Observations_F104_->set_text("Observations");
  Observations_F104_->set_enclosing_scroll_area(S_104_);
  observations_ = new QPlainTextEdit(Observations_F104_);
  Observations_F104_->add_item(L_observations_,
    observations_);
- Observations_F104_->collapse();
-
 
  // //  Page: Diagnosis
  F_105_ = new QFrame;
@@ -256,6 +247,7 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: Diagnosis -- ctor
  Diagnosis_F105_ = new NRE_Accordion_List(F_105_);
  F_105_vbl_->addWidget(Diagnosis_F105_);
+ Diagnosis_F105_->set_text("Diagnosis");
  Diagnosis_F105_->set_enclosing_scroll_area(S_105_);
  mainDiagnosisAtAdmission_ = new NRE_Combo_With_Label_Bar(Diagnosis_F105_);
  mainDiagnosisAtAdmission_->set_max_selectable(1);
@@ -285,8 +277,6 @@ NRE_Admission_Form::NRE_Admission_Form()
  diagnosisAtAdmissionSecondary3_ifOtherSpecify_ = new QLineEdit(Diagnosis_F105_);
  Diagnosis_F105_->add_item(L_diagnosisAtAdmissionSecondary3_ifOtherSpecify_,
    diagnosisAtAdmissionSecondary3_ifOtherSpecify_);
- Diagnosis_F105_->collapse();
-
 
  // //  Page: Prescription
  F_106_ = new QFrame;
@@ -298,6 +288,7 @@ NRE_Admission_Form::NRE_Admission_Form()
   // // Section: Prescription -- ctor
  Prescription_F106_ = new NRE_Accordion_List(F_106_);
  F_106_vbl_->addWidget(Prescription_F106_);
+ Prescription_F106_->set_text("Prescription");
  Prescription_F106_->set_enclosing_scroll_area(S_106_);
  pleaseStartTheFeedingForm_ = new QPlainTextEdit(Prescription_F106_);
  Prescription_F106_->add_item(L_pleaseStartTheFeedingForm_,
@@ -323,8 +314,6 @@ NRE_Admission_Form::NRE_Admission_Form()
  orderMedications_->set_max_selectable(1);
  Prescription_F106_->add_item(L_orderMedications_,
    orderMedications_);
- Prescription_F106_->collapse();
-
 
  init();
 
@@ -341,44 +330,66 @@ void NRE_Admission_Form::init()
  S_100_->setWidget(F_100_);
 
   // // Section: Admission_data -- init
+ Admission_data_F100_->collapse();
+
 
  // //  Page: Anamnesis at admission
  S_101_->setWidget(F_101_);
 
   // // Section: History_of_the_illness -- init
+ History_of_the_illness_F101_->collapse();
+
 
   // // Section: Feeding_history -- init
+ Feeding_history_F101_->collapse();
+
 
   // // Section: Family_history -- init
+ Family_history_F101_->collapse();
+
 
  // //  Page: Physical exam at admission
  S_102_->setWidget(F_102_);
 
   // // Section: Physical_exam -- init
+ Physical_exam_F102_->collapse();
+
 
  // //  Page: Evaluation
  S_103_->setWidget(F_103_);
 
   // // Section: Target -- init
+ Target_F103_->collapse();
+
 
   // // Section: Malaria_test -- init
+ Malaria_test_F103_->collapse();
+
 
   // // Section: TB_evaluation -- init
+ TB_evaluation_F103_->collapse();
+
 
  // //  Page: Observations
  S_104_->setWidget(F_104_);
 
   // // Section: Observations -- init
+ Observations_F104_->collapse();
+
 
  // //  Page: Diagnosis
  S_105_->setWidget(F_105_);
 
   // // Section: Diagnosis -- init
+ Diagnosis_F105_->collapse();
+
 
  // //  Page: Prescription
  S_106_->setWidget(F_106_);
 
   // // Section: Prescription -- init
+ Prescription_F106_->collapse();
+
 }// ::init
 
 
