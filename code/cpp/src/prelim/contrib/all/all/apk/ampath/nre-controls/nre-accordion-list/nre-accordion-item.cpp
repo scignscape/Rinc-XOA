@@ -77,14 +77,14 @@ void NRE_Accordion_Item::set_text(QString label)
  if(!label_)
  {
   label_ = new QLabel(this);
-  main_layout_->addWidget(label_, 0, 0);
+  main_layout_->addWidget(label_, 0, 0, label_row_span_, label_column_span_);
  }
  label_->setText(label);
 }
 
 void NRE_Accordion_Item::set_widget(QWidget* w)
 {
- main_layout_->addWidget(w, 0, 1);
+ main_layout_->addWidget(w, widget_row_, widget_column_);
  main_layout_->update();
  updateGeometry();
 }

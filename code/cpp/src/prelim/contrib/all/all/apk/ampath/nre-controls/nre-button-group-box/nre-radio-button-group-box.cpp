@@ -20,21 +20,38 @@ USING_KANS(AMPATH_Forms)
 
 
 NRE_Radio_Button_Group_Box::NRE_Radio_Button_Group_Box(QWidget* parent)
- : QGroupBox(parent)
+ : QGroupBox(parent), max_columns_(5), current_row_(0), current_column_(0), current_count_(0)
 {
  main_layout_ = new QGridLayout;
  setLayout(main_layout_);
 
- setTitle("Radio Buttons");
+//? setTitle("Radio Buttons");
 
- setMinimumHeight(300);
+// setMinimumHeight(300);
 
- QRadioButton *radio1 = new QRadioButton(tr("&Radio button 1"));
- QRadioButton *radio2 = new QRadioButton(tr("R&adio button 2"));
- QRadioButton *radio3 = new QRadioButton(tr("Ra&dio button 3"));
+ add_item("Radio button 1");
+ add_item("Radio button 2");
+ add_item("Radio button 3");
 
- main_layout_->addWidget(radio1, 0, 0);
- main_layout_->addWidget(radio2, 1, 0);
- main_layout_->addWidget(radio3, 2, 0);
+}
+
+void NRE_Radio_Button_Group_Box::add_item(QString label)
+{
+ if(current_column_ == max_columns_ - 1)
+ {
+  current_column_ = 0;
+  ++current_row_;
+ }
+ else if(current_count_)
+  ++current_column_;
+
+ ++current_count_;
+
+ QRadioButton* r = new QRadioButton(label, this);
+
+ QString position_info = "%1 %2 %3"_qt.arg(current_count_).arg(current_row_).arg(current_column_);
+ r->setProperty("position-info", QVariant(position_info));
+
+ main_layout_->addWidget(r, current_row_, current_column_);
 }
 

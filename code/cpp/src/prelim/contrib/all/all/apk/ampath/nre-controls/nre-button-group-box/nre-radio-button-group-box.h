@@ -15,7 +15,8 @@
 #include <QGridLayout>
 #include <QGroupBox>
 
-
+#include "accessors.h"
+#include "global-types.h"
 
 #include "kans.h"
 
@@ -30,9 +31,18 @@ class NRE_Radio_Button_Group_Box : public QGroupBox
  QGridLayout* main_layout_;
 //? QButtonGroup* button_group_;
 
+ u1 max_columns_;
+ u1 current_row_;
+ u1 current_column_;
+ u1 current_count_;
+
 public:
 
  NRE_Radio_Button_Group_Box(QWidget *parent = nullptr);
+
+ ACCESSORS(u1 ,max_columns)
+
+ void add_item(QString label);
 
 
 };
