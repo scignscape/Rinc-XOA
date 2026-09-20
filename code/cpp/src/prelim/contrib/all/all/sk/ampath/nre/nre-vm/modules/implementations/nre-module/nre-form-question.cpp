@@ -99,7 +99,7 @@ void NRE_Form_Question::write_rendering(QString text)
  case Rendering_Types::Number:
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
-  implementation_acc("ctor") << "\n " << id_ << "_" << "->setDefaultValue(0);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << "->setPlaceholderText(0);";
   break;
  case Rendering_Types::DateTime:
   header_acc("methods") << "\n QDateTimeEdit* " << id_ << "_;";

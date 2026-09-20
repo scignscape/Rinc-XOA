@@ -5,6 +5,7 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 #include "nre-controls/nre-accordion-list/nre-accordion-list.h"
+#include "nre-controls/nre-combo/nre-combo-with-label-bar.h"
 
 
 #include "nre-admission-form.h"
@@ -65,7 +66,7 @@ NRE_Admission_Form::NRE_Admission_Form()
  F_101_vbl_->addWidget(History_of_the_illness_F101_);
 
  howLongHasTheChildBeenSick_ = new QLineEdit(History_of_the_illness_F101_);
- howLongHasTheChildBeenSick_->setDefaultValue(0);
+ howLongHasTheChildBeenSick_->setPlaceholderText(0);
  History_of_the_illness_F101_->add_item(L_howLongHasTheChildBeenSick_,
    howLongHasTheChildBeenSick_);
  whatAreTheProblemsReportedByTheCaretaker_ = new QPlainTextEdit(History_of_the_illness_F101_);
@@ -101,11 +102,11 @@ NRE_Admission_Form::NRE_Admission_Form()
  Feeding_history_F101_->add_item(L_typeOfMealsBeforeIllness_,
    typeOfMealsBeforeIllness_);
  numberOfMealsPerDayBeforeIllness_ = new QLineEdit(Feeding_history_F101_);
- numberOfMealsPerDayBeforeIllness_->setDefaultValue(0);
+ numberOfMealsPerDayBeforeIllness_->setPlaceholderText(0);
  Feeding_history_F101_->add_item(L_numberOfMealsPerDayBeforeIllness_,
    numberOfMealsPerDayBeforeIllness_);
  numberOfMealsDuringTheLast24Hours_ = new QLineEdit(Feeding_history_F101_);
- numberOfMealsDuringTheLast24Hours_->setDefaultValue(0);
+ numberOfMealsDuringTheLast24Hours_->setPlaceholderText(0);
  Feeding_history_F101_->add_item(L_numberOfMealsDuringTheLast24Hours_,
    numberOfMealsDuringTheLast24Hours_);
 
@@ -126,22 +127,22 @@ NRE_Admission_Form::NRE_Admission_Form()
  Family_history_F101_->add_item(L_whoIsTakingCareOfTheChild_,
    whoIsTakingCareOfTheChild_);
  numberOfBirthsForTheMother_ = new QLineEdit(Family_history_F101_);
- numberOfBirthsForTheMother_->setDefaultValue(0);
+ numberOfBirthsForTheMother_->setPlaceholderText(0);
  Family_history_F101_->add_item(L_numberOfBirthsForTheMother_,
    numberOfBirthsForTheMother_);
  numberOfMothersChildrenAlive_ = new QLineEdit(Family_history_F101_);
- numberOfMothersChildrenAlive_->setDefaultValue(0);
+ numberOfMothersChildrenAlive_->setPlaceholderText(0);
  Family_history_F101_->add_item(L_numberOfMothersChildrenAlive_,
    numberOfMothersChildrenAlive_);
  rankInTheBirthOrder_ = new QLineEdit(Family_history_F101_);
- rankInTheBirthOrder_->setDefaultValue(0);
+ rankInTheBirthOrder_->setPlaceholderText(0);
  Family_history_F101_->add_item(L_rankInTheBirthOrder_,
    rankInTheBirthOrder_);
  theChildIs_ = new NRE_Combo_With_Label_Bar(Family_history_F101_);
  Family_history_F101_->add_item(L_theChildIs_,
    theChildIs_);
  nbOfPersonsSharingTheFamilyMeal_ = new QLineEdit(Family_history_F101_);
- nbOfPersonsSharingTheFamilyMeal_->setDefaultValue(0);
+ nbOfPersonsSharingTheFamilyMeal_->setPlaceholderText(0);
  Family_history_F101_->add_item(L_nbOfPersonsSharingTheFamilyMeal_,
    nbOfPersonsSharingTheFamilyMeal_);
 

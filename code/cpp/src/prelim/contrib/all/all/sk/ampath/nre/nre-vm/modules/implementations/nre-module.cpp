@@ -233,7 +233,8 @@ SOURCES += \
   $$SRC_DIR/main.cpp \
 
 LIBS += \
-  -L$$TARGETSDIR -l%1
+  -L$$TARGETSDIR -l%1 \
+  -lnre-accordion-list -lnre-combo
 
 )";
 
@@ -260,6 +261,7 @@ void NRE_Module::write_class_implementation_lead()
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 #include "nre-controls/nre-accordion-list/nre-accordion-list.h"
+#include "nre-controls/nre-combo/nre-combo-with-label-bar.h"
 
                 )"
 

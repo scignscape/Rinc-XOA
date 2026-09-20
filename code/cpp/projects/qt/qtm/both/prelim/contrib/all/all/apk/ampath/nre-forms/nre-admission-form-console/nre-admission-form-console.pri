@@ -46,7 +46,7 @@ SOURCES += \
 
 LIBS += -L$$TARGETSDIR \
   -lnre-admission-form \
-  -lnre-accordion-list
+  -lnre-accordion-list -lnre-combo
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
