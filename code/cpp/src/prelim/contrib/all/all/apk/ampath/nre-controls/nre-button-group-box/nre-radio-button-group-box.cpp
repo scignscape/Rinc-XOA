@@ -25,18 +25,34 @@ NRE_Radio_Button_Group_Box::NRE_Radio_Button_Group_Box(QWidget* parent)
  main_layout_ = new QGridLayout;
  setLayout(main_layout_);
 
+ add_placeholder("You need to add radio buttons!");
 //? setTitle("Radio Buttons");
 
 // setMinimumHeight(300);
 
- add_item("Radio button 1");
- add_item("Radio button 2");
- add_item("Radio button 3");
+// add_item("Radio button 1");
+// add_item("Radio button 2");
+// add_item("Radio button 3");
 
 }
 
+void NRE_Radio_Button_Group_Box::add_placeholder(QString label)
+{
+ placeholder_ = new QLabel(label);
+ main_layout_->addWidget(placeholder_, 0, 0);
+}
+
+
 void NRE_Radio_Button_Group_Box::add_item(QString label)
 {
+ if(placeholder_)
+ {
+  main_layout_->removeWidget(placeholder_);
+  placeholder_->setVisible(false);
+  placeholder_->deleteLater();
+  placeholder_ = nullptr;
+ }
+
  if(current_column_ == max_columns_ - 1)
  {
   current_column_ = 0;

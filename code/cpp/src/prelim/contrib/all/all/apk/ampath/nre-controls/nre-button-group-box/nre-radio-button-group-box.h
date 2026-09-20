@@ -14,6 +14,7 @@
 #include <QPushButton>
 #include <QGridLayout>
 #include <QGroupBox>
+#include <QLabel>
 
 #include "accessors.h"
 #include "global-types.h"
@@ -36,6 +37,8 @@ class NRE_Radio_Button_Group_Box : public QGroupBox
  u1 current_column_;
  u1 current_count_;
 
+ QLabel* placeholder_;
+
 public:
 
  NRE_Radio_Button_Group_Box(QWidget *parent = nullptr);
@@ -43,6 +46,7 @@ public:
  ACCESSORS(u1 ,max_columns)
 
  void add_item(QString label);
+ void add_placeholder(QString label);
 
 
 };
