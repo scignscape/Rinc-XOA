@@ -21,7 +21,7 @@ USING_KANS(TextIO)
 USING_OTNS(AMPATH_NRE)
 
 NRE_Form_Question::NRE_Form_Question()
-  :  required_cardinality_(0)
+  :  required_cardinality_(0), rendering_type_(Rendering_Types::N_A)
 {
  init_accs({"ctor", "init", "methods", "labels", "concepts"});
 }
@@ -37,7 +37,19 @@ void NRE_Form_Question::cleanup()
 
 void NRE_Form_Question::write_answers()
 {
-
+ switch (rendering_type_)
+ {
+ case Rendering_Types::Radio:
+  {
+   for(NRE_Form_Answer* a : answers_)
+   {
+    implementation_acc("init") << "\n " << id_ << "_" << "->add_item(\""
+      << a->get_label() << "\");";
+   }
+  }
+  break;
+ default: break;
+ }
 }
 
 void NRE_Form_Question::add_answer(NRE_Form_Answer* a)
@@ -86,9 +98,9 @@ void NRE_Form_Question::write_rendering(QString text)
 
  QString v_or_h;
 
- Rendering_Types rt = parse_rendering_type(text);
+ rendering_type_ = parse_rendering_type(text);
 
- switch (rt)
+ switch (rendering_type_)
  {
  case Rendering_Types::Text:
   v_or_h = "horizontal";

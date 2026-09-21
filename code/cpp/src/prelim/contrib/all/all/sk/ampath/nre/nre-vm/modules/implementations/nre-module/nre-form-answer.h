@@ -29,11 +29,18 @@ class NRE_Form_Answer : public NRE_Form_Base
 
  Answer_Types answer_type_;
 
+ QString label_;
+
 public:
 
  NRE_Form_Answer();
 
+ ACCESSORS(QString ,label)
+
  void cleanup();
+
+ QString get_label();
+
 
  void answer(bool yes_or_no)
  {

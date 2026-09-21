@@ -142,6 +142,10 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
   :  QWidget(parent), main_widget_(nullptr),
      enclosing_scroll_area_(nullptr), current_height_(0)
 {
+ setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+
+ //setMinimumWidth(600);
+
  split_layout_ = new QVBoxLayout(this);
  setLayout(split_layout_);
 

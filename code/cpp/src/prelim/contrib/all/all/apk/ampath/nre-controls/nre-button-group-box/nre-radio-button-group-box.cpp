@@ -20,12 +20,17 @@ USING_KANS(AMPATH_Forms)
 
 
 NRE_Radio_Button_Group_Box::NRE_Radio_Button_Group_Box(QWidget* parent)
- : QGroupBox(parent), max_columns_(5), current_row_(0), current_column_(0), current_count_(0)
+ : QGroupBox(parent), max_columns_(5),
+   current_row_(0), current_column_(0), current_count_(0), enclosing_scroll_area_(nullptr)
 {
+ parent_widget_ = parent;
  main_layout_ = new QGridLayout;
  setLayout(main_layout_);
 
  add_placeholder("You need to add radio buttons!");
+
+ setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+
 //? setTitle("Radio Buttons");
 
 // setMinimumHeight(300);
@@ -69,5 +74,36 @@ void NRE_Radio_Button_Group_Box::add_item(QString label)
  r->setProperty("position-info", QVariant(position_info));
 
  main_layout_->addWidget(r, current_row_, current_column_);
+
+ if(current_row_ == 0)
+ {
+  main_layout_->setColumnStretch(current_column_, 0);
+  main_layout_->setColumnStretch(current_column_ + 1, 1);
+
+  setMinimumWidth(current_column_ * 250);
+
+  if(enclosing_scroll_area_)
+  {
+   enclosing_scroll_area_->widget()->setMinimumWidth(current_column_ * 150);
+   enclosing_scroll_area_->setMinimumWidth(current_column_ * 150);
+  }
+
+  if(parent_widget_)
+  {
+   parent_widget_->setMinimumWidth(current_column_ * 150);
+  }
+ }
+
+ main_layout_->invalidate();
+
+ adjustSize();
+
+ if(enclosing_scroll_area_)
+ {
+  enclosing_scroll_area_->adjustSize();
+  enclosing_scroll_area_->widget()->adjustSize();
+ }
+
+
 }
 

@@ -30,6 +30,9 @@ NRE_Admission_Form::NRE_Admission_Form()
  S_100_ = new QScrollArea;
  pages_tab_widget_->addTab(S_100_, "Admission");
 
+ F_100_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+
+
   // // Section: Admission_data -- ctor
  Admission_data_F100_ = new NRE_Accordion_List(F_100_);
  F_100_vbl_->addWidget(Admission_data_F100_);
@@ -45,6 +48,7 @@ NRE_Admission_Form::NRE_Admission_Form()
  admissionType_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  Admission_data_F100_->add_vertical_item(L_admissionType_,
    admissionType_);
+ admissionType_->set_enclosing_scroll_area(S_100_);
  spontaneousAdmission_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  Admission_data_F100_->add_vertical_item(L_spontaneousAdmission_,
    spontaneousAdmission_);
@@ -341,6 +345,18 @@ void NRE_Admission_Form::init()
  S_100_->setWidget(F_100_);
 
   // // Section: Admission_data -- init
+ admissionType_->add_item("Internal movement");
+ admissionType_->add_item("New admission");
+ admissionType_->add_item("Re-admission");
+ admissionType_->add_item("Relapse");
+ spontaneousAdmission_->add_item("Yes");
+ spontaneousAdmission_->add_item("No");
+ ifReferredByWhomOrFromWhere_->add_item("ER");
+ ifReferredByWhomOrFromWhere_->add_item("NGO");
+ ifReferredByWhomOrFromWhere_->add_item("MSF ATFC");
+ ifReferredByWhomOrFromWhere_->add_item("Non-MSF ATFC");
+ ifReferredByWhomOrFromWhere_->add_item("Hospital or Health facility");
+ ifReferredByWhomOrFromWhere_->add_item("Other");
  Admission_data_F100_->collapse();
 
 
@@ -348,14 +364,27 @@ void NRE_Admission_Form::init()
  S_101_->setWidget(F_101_);
 
   // // Section: History_of_the_illness -- init
+ isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_->add_item("Yes");
+ isThereSomeoneInTheFamilyCoughingForMoreThanOneMonth_->add_item("No");
+ isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_->add_item("Yes");
+ isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_->add_item("No");
  History_of_the_illness_F101_->collapse();
 
 
   // // Section: Feeding_history -- init
+ hasTheChildEverBeenBreastfed_->add_item("Yes");
+ hasTheChildEverBeenBreastfed_->add_item("No");
+ isTheChildCurrentlyBeingBreastfed_->add_item("Yes");
+ isTheChildCurrentlyBeingBreastfed_->add_item("No");
  Feeding_history_F101_->collapse();
 
 
   // // Section: Family_history -- init
+ whoIsTheHeadOfFamily_->add_item("Father");
+ whoIsTheHeadOfFamily_->add_item("Mother");
+ whoIsTheHeadOfFamily_->add_item("Other");
+ isTheMotherAlive_->add_item("Yes");
+ isTheMotherAlive_->add_item("No");
  Family_history_F101_->collapse();
 
 
@@ -363,6 +392,13 @@ void NRE_Admission_Form::init()
  S_102_->setWidget(F_102_);
 
   // // Section: Physical_exam -- init
+ whz_->add_item("< -3 Zs");
+ whz_->add_item("[-3 ; -2 Zs[");
+ whz_->add_item(">= -2 Zs");
+ oedema_->add_item("+");
+ oedema_->add_item("++");
+ oedema_->add_item("+++");
+ oedema_->add_item("No");
  Physical_exam_F102_->collapse();
 
 
@@ -374,10 +410,19 @@ void NRE_Admission_Form::init()
 
 
   // // Section: Malaria_test -- init
+ malariaTestResult_->add_item("Positive");
+ malariaTestResult_->add_item("Negative");
+ malariaTestResult_->add_item("Not done");
  Malaria_test_F103_->collapse();
 
 
   // // Section: TB_evaluation -- init
+ tbEvaluation_->add_item("Yes");
+ tbEvaluation_->add_item("No");
+ firstResultScore_->add_item("Positive");
+ firstResultScore_->add_item("Negative");
+ secondResultScore_->add_item("Positive");
+ secondResultScore_->add_item("Negative");
  TB_evaluation_F103_->collapse();
 
 

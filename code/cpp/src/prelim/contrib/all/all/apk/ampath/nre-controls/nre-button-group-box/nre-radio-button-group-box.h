@@ -15,6 +15,7 @@
 #include <QGridLayout>
 #include <QGroupBox>
 #include <QLabel>
+#include <QScrollArea>
 
 #include "accessors.h"
 #include "global-types.h"
@@ -39,11 +40,17 @@ class NRE_Radio_Button_Group_Box : public QGroupBox
 
  QLabel* placeholder_;
 
+ QScrollArea* enclosing_scroll_area_;
+
+ QWidget* parent_widget_;
+
 public:
 
  NRE_Radio_Button_Group_Box(QWidget *parent = nullptr);
 
  ACCESSORS(u1 ,max_columns)
+
+ ACCESSORS(QScrollArea* ,enclosing_scroll_area)
 
  void add_item(QString label);
  void add_placeholder(QString label);

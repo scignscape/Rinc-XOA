@@ -363,7 +363,7 @@ void NRE_Module::question_id(QString text)
 
 void NRE_Module::answer_label(QString text)
 {
-
+ current_answer()->set_label(text);
 }
 
 void NRE_Module::answer_concept(QString text)

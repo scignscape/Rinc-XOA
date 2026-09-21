@@ -70,6 +70,8 @@ class NRE_Form_Question : public NRE_Form_Base
   return static_map.value(ty, Rendering_Types::N_A);
  }
 
+ Rendering_Types rendering_type_;
+
 public:
 
  NRE_Form_Question();

@@ -24,6 +24,19 @@ NRE_Form_Answer::NRE_Form_Answer()
 
 }
 
+QString NRE_Form_Answer::get_label()
+{
+ switch (answer_type_)
+ {
+ case Answer_Types::BOOL_no:
+   return "No";
+ case Answer_Types::BOOL_yes:
+   return "Yes";
+ default:
+   return label_;
+ }
+}
+
 void NRE_Form_Answer::cleanup()
 {
 
