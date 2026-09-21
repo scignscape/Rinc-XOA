@@ -82,11 +82,12 @@ public:
 
  ACCESSORS(QScrollArea* ,enclosing_scroll_area)
 
- void add_vertical_item(QString label, QWidget* item);
+ void add_vertical_item(QString label, QWidget* item, int height = 0);
  void add_horizontal_item(QString label, QWidget* item);
  void set_text(QString label);
  void set_main_widget();
 
+ void do_resize(NRE_Accordion_Item* caller_item);
 
  void collapse();
  void expand();

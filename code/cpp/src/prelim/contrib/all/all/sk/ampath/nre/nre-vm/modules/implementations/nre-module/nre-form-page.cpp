@@ -22,7 +22,7 @@ USING_OTNS(AMPATH_NRE)
 
 NRE_Form_Page::NRE_Form_Page()
 {
- init_accs({"ctor", "init", "methods", "labels", "concepts"});
+ init_accs({"ctor", "init", "methods", "labels", "concepts", "sf"});
 }
 
 void NRE_Form_Page::write_frame(u2 count)
@@ -45,7 +45,7 @@ void NRE_Form_Page::write_frame(u2 count)
  implementation_acc("ctor") << "\n S_" << count
    << "_ = new QScrollArea;";
 
- implementation_acc("init") << "\n S_" << count
+ implementation_acc("sf") << "\n S_" << count
    << "_->setWidget(F_" << count << "_);";
 
  implementation_acc("ctor") << "\n pages_tab_widget_->addTab(S_" << count
@@ -96,6 +96,11 @@ void NRE_Form_Page::write_sections()
   implementation_acc("concepts") << "\n\n  // // Section: " << s->label();
   implementation_acc("concepts") << " -- concepts ";
   implementation_acc("concepts") << s->cpp_implementation_part("concepts");
+
+  implementation_acc("sf") << "\n\n  // // Section: " << s->label();
+  implementation_acc("sf") << " -- sf ";
+  implementation_acc("sf") << s->cpp_implementation_part("sf");
+
  }
 }
 

@@ -43,6 +43,7 @@ class NRE_Radio_Button_Group_Box : public QGroupBox
  QScrollArea* enclosing_scroll_area_;
 
  QWidget* parent_widget_;
+ QWidget* resize_ref_widget_;
 
 public:
 
@@ -51,6 +52,7 @@ public:
  ACCESSORS(u1 ,max_columns)
 
  ACCESSORS(QScrollArea* ,enclosing_scroll_area)
+ ACCESSORS(QWidget* ,resize_ref_widget)
 
  void add_item(QString label);
  void add_placeholder(QString label);

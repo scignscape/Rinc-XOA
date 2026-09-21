@@ -50,6 +50,8 @@ void NRE_Form_Question::write_answers()
   break;
  default: break;
  }
+
+ implementation_acc("init") << add_v_or_h_;
 }
 
 void NRE_Form_Question::add_answer(NRE_Form_Answer* a)
@@ -163,6 +165,6 @@ void NRE_Form_Question::write_rendering(QString text)
   break;
  }
 
- implementation_acc("ctor") << "\n ###->add_" << v_or_h << "_item(" <<
-   "L_" << id_ << "_,\n   " << id_ << "_);";
+ add_v_or_h_ = "\n ###->add_%1_item(L_%2_,\n  %2_);"_qt.arg(v_or_h).arg(id_);
+
 }

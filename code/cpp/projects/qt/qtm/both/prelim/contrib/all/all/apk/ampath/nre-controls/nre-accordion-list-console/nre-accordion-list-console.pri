@@ -45,6 +45,8 @@ SOURCES += \
 
 LIBS += -L$$TARGETSDIR -lnre-accordion-list
 
+LIBS += -L$$TARGETSDIR -lnre-button-group-box
+
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

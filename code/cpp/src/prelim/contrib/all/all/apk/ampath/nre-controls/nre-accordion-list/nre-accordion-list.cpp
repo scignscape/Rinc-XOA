@@ -46,6 +46,8 @@
 #include <QToolButton>
 #include <QLineEdit>
 
+#include "nre-button-group-box/nre-radio-button-group-box.h"
+
 #include "kans.h"
 
 USING_KANS(AMPATH_Forms)
@@ -142,7 +144,7 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
   :  QWidget(parent), main_widget_(nullptr),
      enclosing_scroll_area_(nullptr), current_height_(0)
 {
- setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+ setSizePolicy(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
 
  //setMinimumWidth(600);
 
@@ -165,6 +167,46 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
  set_main_widget();
 }
 
+void NRE_Accordion_List::do_resize(NRE_Accordion_Item* caller_item)
+{
+ adjustSize();
+
+#ifdef HIDE
+ main_layout_->invalidate();
+ split_layout_->invalidate();
+
+ int pos = main_layout_->indexOf(caller_item);
+
+// main_layout_->removeWidget(caller_item);
+// main_layout_->insertWidget(pos, caller_item);
+
+ QFrame* fr = new QFrame(this);
+ fr->setMinimumHeight(14);
+ fr->setFrameShape(QFrame::HLine);
+
+ QWidget* w = main_layout_->itemAt(pos)->widget();
+
+// main_layout_->removeWidget(w);
+
+ main_layout_->insertWidget(pos, fr);
+
+#endif // def HIDE
+// main_layout_->addWidget(w);
+
+
+// main_layout_->addSpacerItem();
+
+// QPushButton* b = new QPushButton("X");
+// main_layout_->insertWidget(pos, b);
+
+// caller_item->updateGeometry();
+// updateGeometry();
+
+// parentWidget()->layout()->invalidate();
+// parentWidget()->adjustSize();
+//  parentWidget()->layout()->addWidget(b);
+}
+
 void NRE_Accordion_List::collapse()
 {
  current_height_ = height();
@@ -174,7 +216,8 @@ void NRE_Accordion_List::collapse()
  main_widget_->setVisible(false);
  if(enclosing_scroll_area_)
  {
-  enclosing_scroll_area_->widget()->adjustSize();
+  if(enclosing_scroll_area_->widget())
+    enclosing_scroll_area_->widget()->adjustSize();
  }
 }
 
@@ -193,6 +236,7 @@ void NRE_Accordion_List::expand()
 void NRE_Accordion_List::add_horizontal_item(QString label, QWidget* item)
 {
  NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
+
  nai->set_widget(item);
  nai->set_text(label);
  main_layout_->addWidget(nai);
@@ -202,13 +246,24 @@ void NRE_Accordion_List::add_horizontal_item(QString label, QWidget* item)
 
 }
 
-void NRE_Accordion_List::add_vertical_item(QString label, QWidget* item)
+void NRE_Accordion_List::add_vertical_item(QString label, QWidget* item, int height)
 {
  NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
  nai->use_vertical_orientation();
  nai->set_widget(item);
  nai->set_text(label);
  main_layout_->addWidget(nai);
+
+ if(height)
+ {
+  nai->setMinimumHeight(height);
+  item->setMinimumHeight(height);
+ }
+
+ NRE_Radio_Button_Group_Box* box = qobject_cast<NRE_Radio_Button_Group_Box*>(item);
+
+ if(box)
+   box->set_resize_ref_widget(nai);
 }
 
 void NRE_Accordion_List::set_text(QString label)

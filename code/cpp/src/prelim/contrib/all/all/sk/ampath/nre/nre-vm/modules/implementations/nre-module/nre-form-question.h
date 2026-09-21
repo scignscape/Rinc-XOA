@@ -72,6 +72,8 @@ class NRE_Form_Question : public NRE_Form_Base
 
  Rendering_Types rendering_type_;
 
+ QString add_v_or_h_;
+
 public:
 
  NRE_Form_Question();

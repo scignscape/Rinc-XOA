@@ -384,7 +384,7 @@ void NRE_Module::new_form()
 
 void NRE_Module::write_form()
 {
- QStringList parts {"ctor", "init", "methods", "labels", "concepts"};
+ QStringList parts {"ctor", "init", "methods", "labels", "concepts", "sf"};
 
  QMap<QString, QString> header_pre_;
  QMap<QString, QString> implementation_pre_;
@@ -413,13 +413,17 @@ void NRE_Module::write_form()
 
  implementation_post_["ctor"] = implementation_post.arg(current_class_name_).arg("");
 
- implementation_post_["ctor"].prepend("\n\n init();\n");
+ implementation_post_["ctor"].prepend("\n\n init();\n init_sf();\n");
 
  header_pre_["ctor"] = header_pre.arg("").arg(current_class_name_).arg("");
 
  implementation_pre_["labels"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("_labels");
  implementation_post_["labels"] = implementation_post.arg(init).arg("_labels");
  header_pre_["labels"] = header_pre.arg(sp_void).arg(init).arg("_labels");
+
+ implementation_pre_["sf"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("_sf");
+ implementation_post_["sf"] = implementation_post.arg(init).arg("_sf");
+ header_pre_["sf"] = header_pre.arg(sp_void).arg(init).arg("_sf");
 
  implementation_pre_["concepts"] = implementation_pre.arg(void_sp).arg(current_class_name_).arg(init).arg("_concepts");
  implementation_post_["concepts"] = implementation_post.arg(init).arg("_concepts");

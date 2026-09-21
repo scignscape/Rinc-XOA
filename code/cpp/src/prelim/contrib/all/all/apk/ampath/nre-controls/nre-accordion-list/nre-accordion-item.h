@@ -47,6 +47,7 @@ class QGridLayout;
 
 KANS_(AMPATH_Forms)
 
+class NRE_Accordion_List;
 
 class NRE_Accordion_Item : public QWidget
 {
@@ -60,15 +61,19 @@ class NRE_Accordion_Item : public QWidget
  u1 label_column_span_;
  u1 label_row_span_;
 
+ NRE_Accordion_List* parent_list_;
+
 public:
 
- NRE_Accordion_Item(QWidget *parent = nullptr);
+ NRE_Accordion_Item(NRE_Accordion_List* parent);
 
  void set_text(QString label);
  void set_widget(QWidget* w);
 
  void use_vertical_orientation();
  void use_horizontal_orientation();
+
+ void resize_height(int h);
 };
 
 //} // namespace Qtilities

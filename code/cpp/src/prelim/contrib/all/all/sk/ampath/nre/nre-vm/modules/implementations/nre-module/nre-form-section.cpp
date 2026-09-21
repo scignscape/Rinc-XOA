@@ -22,18 +22,21 @@ USING_OTNS(AMPATH_NRE)
 
 NRE_Form_Section::NRE_Form_Section()
 {
- init_accs({"ctor", "init", "methods", "labels", "concepts"});
+ init_accs({"ctor", "init", "methods", "labels", "concepts", "sf"});
 }
 
 void NRE_Form_Section::write_questions(u2 page_count)
 {
  static QString accordion = "\n NRE_Accordion_List* %1_F%2_;";
  static QString new_accordion = "\n %1_F%2_ = new NRE_Accordion_List(F_%2_);"
-   "\n F_%2_vbl_->addWidget(%1_F%2_);"
-   "\n F_%2_vbl_->addSpacing(19);"
    "\n %1_F%2_->set_text(\"%3\");"
    "\n %1_F%2_->set_enclosing_scroll_area(S_%2_);"
    ;
+
+ static QString add_accordion = "\n F_%2_vbl_->addWidget(%1_F%2_);"
+   "\n F_%2_vbl_->addSpacing(19);"
+   ;
+
  static QString accordion_name = "%1_F%2_";
  static QString collapse_accordion = "\n %1_F%2_->collapse();\n"
    ;
@@ -53,13 +56,14 @@ void NRE_Form_Section::write_questions(u2 page_count)
   header_acc("concepts") << q->cpp_header_part("concepts");
 
   implementation_acc("ctor") << q->cpp_implementation_part("ctor").replace("###", current_accordion);
-  implementation_acc("init") << q->cpp_implementation_part("init");
+  implementation_acc("init") << q->cpp_implementation_part("init").replace("###", current_accordion);;
   implementation_acc("methods") << q->cpp_implementation_part("methods");
   implementation_acc("labels") << q->cpp_implementation_part("labels");
   implementation_acc("concepts") << q->cpp_implementation_part("concepts");
  }
 
- implementation_acc("init") << collapse_accordion.arg(label_.replace(" ", "_")).arg(page_count);
+ implementation_acc("init") << add_accordion.arg(label_.replace(" ", "_")).arg(page_count);
+ implementation_acc("sf") << collapse_accordion.arg(label_.replace(" ", "_")).arg(page_count);
 }
 
 void NRE_Form_Section::cleanup()

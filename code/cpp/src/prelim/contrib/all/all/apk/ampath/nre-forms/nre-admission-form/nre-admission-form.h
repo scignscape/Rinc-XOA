@@ -373,6 +373,23 @@ private:
 
   // // Section: Prescription -> concepts
 // //<-- concepts
+// //--> sf
+ void init_sf();
+
+ // //  Page: Admission
+
+ // //  Page: Anamnesis at admission
+
+ // //  Page: Physical exam at admission
+
+ // //  Page: Evaluation
+
+ // //  Page: Observations
+
+ // //  Page: Diagnosis
+
+ // //  Page: Prescription
+// //<-- sf
 
 
 }; // end class

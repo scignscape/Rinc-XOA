@@ -34,6 +34,7 @@
 
 
 #include "nre-accordion-item.h"
+#include "nre-accordion-list.h"
 
 #include <QPainter>
 #include <QStyleOption>
@@ -48,13 +49,15 @@ USING_KANS(AMPATH_Forms)
 
 
 
-NRE_Accordion_Item::NRE_Accordion_Item(QWidget* parent)
+NRE_Accordion_Item::NRE_Accordion_Item(NRE_Accordion_List* parent)
  : QWidget(parent), label_(nullptr),
    widget_column_(1),
    widget_row_(0),
    label_column_span_(1),
    label_row_span_(1)
 {
+ parent_list_ = parent;
+
  main_layout_ = new QGridLayout;
  setLayout(main_layout_);
 }
@@ -71,6 +74,18 @@ void NRE_Accordion_Item::use_horizontal_orientation()
  widget_row_ = 0;
 }
 
+void NRE_Accordion_Item::resize_height(int h)
+{
+ setMinimumHeight(h);
+
+ main_layout_->invalidate();
+ main_layout_->activate();
+
+ main_layout_->update();
+ updateGeometry();
+
+ parent_list_->do_resize(this);
+}
 
 void NRE_Accordion_Item::set_text(QString label)
 {
