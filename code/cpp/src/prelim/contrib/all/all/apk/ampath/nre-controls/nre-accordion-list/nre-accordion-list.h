@@ -87,7 +87,7 @@ public:
  void set_text(QString label);
  void set_main_widget();
 
- void do_resize(NRE_Accordion_Item* caller_item);
+// void do_resize(NRE_Accordion_Item* caller_item);
 
  void collapse();
  void expand();

@@ -73,7 +73,7 @@ public:
  void use_vertical_orientation();
  void use_horizontal_orientation();
 
- void resize_height(int h);
+//? void resize_height(int h);
 };
 
 //} // namespace Qtilities

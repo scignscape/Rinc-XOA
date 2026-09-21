@@ -74,18 +74,19 @@ void NRE_Accordion_Item::use_horizontal_orientation()
  widget_row_ = 0;
 }
 
-void NRE_Accordion_Item::resize_height(int h)
-{
- setMinimumHeight(h);
+//void NRE_Accordion_Item::resize_height(int h)
+//{
+//?
+// setMinimumHeight(h);
 
- main_layout_->invalidate();
- main_layout_->activate();
+// main_layout_->invalidate();
+// main_layout_->activate();
 
- main_layout_->update();
- updateGeometry();
+// main_layout_->update();
+// updateGeometry();
 
- parent_list_->do_resize(this);
-}
+// parent_list_->do_resize(this);
+//}
 
 void NRE_Accordion_Item::set_text(QString label)
 {

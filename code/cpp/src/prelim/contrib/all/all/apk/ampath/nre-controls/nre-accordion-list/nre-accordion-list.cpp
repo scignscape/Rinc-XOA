@@ -167,9 +167,9 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
  set_main_widget();
 }
 
-void NRE_Accordion_List::do_resize(NRE_Accordion_Item* caller_item)
-{
- adjustSize();
+//void NRE_Accordion_List::do_resize(NRE_Accordion_Item* caller_item)
+//{
+// adjustSize();
 
 #ifdef HIDE
  main_layout_->invalidate();
@@ -205,7 +205,7 @@ void NRE_Accordion_List::do_resize(NRE_Accordion_Item* caller_item)
 // parentWidget()->layout()->invalidate();
 // parentWidget()->adjustSize();
 //  parentWidget()->layout()->addWidget(b);
-}
+//}
 
 void NRE_Accordion_List::collapse()
 {

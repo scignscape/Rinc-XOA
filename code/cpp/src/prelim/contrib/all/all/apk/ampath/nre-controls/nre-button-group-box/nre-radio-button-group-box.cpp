@@ -58,8 +58,8 @@ void NRE_Radio_Button_Group_Box::add_placeholder(QString label)
 
 void NRE_Radio_Button_Group_Box::add_item(QString label)
 {
- static int default_column_width = 140;
- static int default_row_height = 50;
+// static int default_column_width = 140;
+// static int default_row_height = 50;
 
  if(placeholder_)
  {
@@ -73,7 +73,7 @@ void NRE_Radio_Button_Group_Box::add_item(QString label)
  {
   main_layout_->setRowStretch(1, 1);
 
-  setMinimumHeight(default_row_height);
+  //???setMinimumHeight(default_row_height);
 
 //  if(enclosing_scroll_area_)
 //  {
@@ -92,16 +92,16 @@ void NRE_Radio_Button_Group_Box::add_item(QString label)
 //  if(parent_widget_)
 //    parent_widget_->setMinimumHeight((current_row_ + 2) * default_row_height);
 
-  setMinimumHeight((current_row_ + 1) * default_row_height);
+  //???setMinimumHeight((current_row_ + 1) * default_row_height);
 
-  if(resize_ref_widget_)
-  {
-   NRE_Accordion_Item* nai = qobject_cast<NRE_Accordion_Item*>(resize_ref_widget_);
-   if(nai)
-     nai->resize_height((current_row_ + 2) * default_row_height);
+//  if(resize_ref_widget_)
+//  {
+//   NRE_Accordion_Item* nai = qobject_cast<NRE_Accordion_Item*>(resize_ref_widget_);
+//   if(nai)
+//     nai->resize_height((current_row_ + 2) * default_row_height);
 
-    //parent_widget_->setMinimumHeight((current_row_ + 2) * default_row_height);
-  }
+//    //parent_widget_->setMinimumHeight((current_row_ + 2) * default_row_height);
+//  }
  }
  else if(current_count_)
   ++current_column_;
@@ -120,29 +120,29 @@ void NRE_Radio_Button_Group_Box::add_item(QString label)
   main_layout_->setColumnStretch(current_column_, 0);
   main_layout_->setColumnStretch(current_column_ + 1, 1);
 
-  setMinimumWidth(current_column_ * default_column_width);
+  //???setMinimumWidth(current_column_ * default_column_width);
 
   if(enclosing_scroll_area_)
   {
-   enclosing_scroll_area_->widget()->setMinimumWidth(current_column_ * default_column_width);
-   enclosing_scroll_area_->setMinimumWidth(current_column_ * default_column_width);
+//???   enclosing_scroll_area_->widget()->setMinimumWidth(current_column_ * default_column_width);
+//???   enclosing_scroll_area_->setMinimumWidth(current_column_ * default_column_width);
   }
 
   if(parent_widget_)
   {
-   parent_widget_->setMinimumWidth(current_column_ * default_column_width);
+//???   parent_widget_->setMinimumWidth(current_column_ * default_column_width);
   }
  }
 
- main_layout_->invalidate();
+// main_layout_->invalidate();
 
- adjustSize();
+// adjustSize();
 
- if(enclosing_scroll_area_)
- {
-  enclosing_scroll_area_->adjustSize();
-  enclosing_scroll_area_->widget()->adjustSize();
- }
+// if(enclosing_scroll_area_)
+// {
+//  enclosing_scroll_area_->adjustSize();
+//  enclosing_scroll_area_->widget()->adjustSize();
+// }
 
 
 }
