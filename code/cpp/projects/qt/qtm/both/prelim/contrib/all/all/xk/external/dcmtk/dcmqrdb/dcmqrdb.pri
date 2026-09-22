@@ -45,17 +45,17 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/dcmqrcbf.cc \
-  $$SRC_DIR/dcmqrcbg.cc \
-  $$SRC_DIR/dcmqrcbm.cc \
-  $$SRC_DIR/dcmqrcbs.cc \
-  $$SRC_DIR/dcmqrcnf.cc \
-  $$SRC_DIR/dcmqrdbi.cc \
-  $$SRC_DIR/dcmqrdbs.cc \
-  $$SRC_DIR/dcmqropt.cc \
-  $$SRC_DIR/dcmqrptb.cc \
-  $$SRC_DIR/dcmqrsrv.cc \
-  $$SRC_DIR/dcmqrtis.cc \
+  $$SRC_DIR/libsrc/dcmqrcbf.cc \
+  $$SRC_DIR/libsrc/dcmqrcbg.cc \
+  $$SRC_DIR/libsrc/dcmqrcbm.cc \
+  $$SRC_DIR/libsrc/dcmqrcbs.cc \
+  $$SRC_DIR/libsrc/dcmqrcnf.cc \
+  $$SRC_DIR/libsrc/dcmqrdbi.cc \
+  $$SRC_DIR/libsrc/dcmqrdbs.cc \
+  $$SRC_DIR/libsrc/dcmqropt.cc \
+  $$SRC_DIR/libsrc/dcmqrptb.cc \
+  $$SRC_DIR/libsrc/dcmqrsrv.cc \
+  $$SRC_DIR/libsrc/dcmqrtis.cc \
 
 #LIBS += -L$$TARGETSDIR
 

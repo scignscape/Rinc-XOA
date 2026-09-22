@@ -38,12 +38,12 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/tlsciphr.cc \
-  $$SRC_DIR/tlscond.cc \
-  $$SRC_DIR/tlslayer.cc \
-  $$SRC_DIR/tlsopt.cc \
-  $$SRC_DIR/tlsscu.cc \
-  $$SRC_DIR/tlstrans.cc \
+  $$SRC_DIR/libsrc/tlsciphr.cc \
+  $$SRC_DIR/libsrc/tlscond.cc \
+  $$SRC_DIR/libsrc/tlslayer.cc \
+  $$SRC_DIR/libsrc/tlsopt.cc \
+  $$SRC_DIR/libsrc/tlsscu.cc \
+  $$SRC_DIR/libsrc/tlstrans.cc \
 
 
 

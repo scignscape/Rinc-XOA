@@ -38,11 +38,11 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/dpmmodparametricmapimage.cc \
-  $$SRC_DIR/dpmmodparametricmapseries.cc \
-  $$SRC_DIR/dpmparametricmapbase.cc \
-  $$SRC_DIR/dpmparametricmapiod.cc \
-  $$SRC_DIR/dpmtypes.cc \
+  $$SRC_DIR/libsrc/dpmmodparametricmapimage.cc \
+  $$SRC_DIR/libsrc/dpmmodparametricmapseries.cc \
+  $$SRC_DIR/libsrc/dpmparametricmapbase.cc \
+  $$SRC_DIR/libsrc/dpmparametricmapiod.cc \
+  $$SRC_DIR/libsrc/dpmtypes.cc \
 
 #LIBS += -L$$TARGETSDIR
 

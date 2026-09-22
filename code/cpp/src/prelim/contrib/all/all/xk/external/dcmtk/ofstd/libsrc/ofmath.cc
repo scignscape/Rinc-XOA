@@ -22,7 +22,10 @@
 
 // include configuration specific implementation of basic functionality
 // (this also includes osconfig.h, etc.)
-#include "../../config/math.cc"
+
+//?#include "../../config/math.cc"
+#include "dcm-config/math.cc"
+
 // include the high-level interface definition
 #include "dcmtk/ofstd/ofmath.h"
 

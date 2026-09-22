@@ -19,7 +19,17 @@ defined(QMAKE_CONSOLE_TARGET_DIR, var){
  BUILD_DIR_CODE = $$OUT_PWD
  BUILD_DIR_CODE ~= s!.*/(build|release)-($$PROJECT_NAME)-(.*)-(Debug|Release)!\3
  BUILD_DIR_CODE ~= s!.*/build/(.*)-(Debug|Release)!\1
+
+ message(T=$$PROJECT_NAME   O  $$OUT_PWD)
+
 }
+
+defined(QMAKE_UNIBUILD, var) {
+ message(Using UNIBUILD)
+ BUILD_DIR_CODE = unibuild
+ message(T=$$PROJECT_NAME   BUILD_DIR_CODE  $$BUILD_DIR_CODE)
+}
+
 
 include(../build-root-both.pri)
 

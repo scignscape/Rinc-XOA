@@ -75,28 +75,28 @@ HEADERS += \
   $$SRC_DIR/include/dcmtk/dcmimage/diyp2pxt.h \ 
 
 SOURCES += \
-  $$SRC_DIR/dcmicmph.cc \ 
-  $$SRC_DIR/diargimg.cc \ 
-  $$SRC_DIR/dicmyimg.cc \ 
-  $$SRC_DIR/dicoimg.cc \ 
-  $$SRC_DIR/dicoopx.cc \ 
-  $$SRC_DIR/dicopx.cc \ 
-  $$SRC_DIR/dihsvimg.cc \ 
-  $$SRC_DIR/dilogger.cc \ 
-  $$SRC_DIR/dipalimg.cc \ 
-  $$SRC_DIR/dipipng.cc \ 
-  $$SRC_DIR/dipitiff.cc \ 
-  $$SRC_DIR/diqtctab.cc \ 
-  $$SRC_DIR/diqtfs.cc \ 
-  $$SRC_DIR/diqthash.cc \ 
-  $$SRC_DIR/diqthitl.cc \ 
-  $$SRC_DIR/diqtpbox.cc \ 
-  $$SRC_DIR/diquant.cc \ 
-  $$SRC_DIR/diregist.cc \ 
-  $$SRC_DIR/dirgbimg.cc \ 
-  $$SRC_DIR/diybrimg.cc \ 
-  $$SRC_DIR/diyf2img.cc \ 
-  $$SRC_DIR/diyp2img.cc \ 
+  $$SRC_DIR/libsrc/dcmicmph.cc \ 
+  $$SRC_DIR/libsrc/diargimg.cc \ 
+  $$SRC_DIR/libsrc/dicmyimg.cc \ 
+  $$SRC_DIR/libsrc/dicoimg.cc \ 
+  $$SRC_DIR/libsrc/dicoopx.cc \ 
+  $$SRC_DIR/libsrc/dicopx.cc \ 
+  $$SRC_DIR/libsrc/dihsvimg.cc \ 
+  $$SRC_DIR/libsrc/dilogger.cc \ 
+  $$SRC_DIR/libsrc/dipalimg.cc \ 
+  $$SRC_DIR/libsrc/dipipng.cc \ 
+  $$SRC_DIR/libsrc/dipitiff.cc \ 
+  $$SRC_DIR/libsrc/diqtctab.cc \ 
+  $$SRC_DIR/libsrc/diqtfs.cc \ 
+  $$SRC_DIR/libsrc/diqthash.cc \ 
+  $$SRC_DIR/libsrc/diqthitl.cc \ 
+  $$SRC_DIR/libsrc/diqtpbox.cc \ 
+  $$SRC_DIR/libsrc/diquant.cc \ 
+  $$SRC_DIR/libsrc/diregist.cc \ 
+  $$SRC_DIR/libsrc/dirgbimg.cc \ 
+  $$SRC_DIR/libsrc/diybrimg.cc \ 
+  $$SRC_DIR/libsrc/diyf2img.cc \ 
+  $$SRC_DIR/libsrc/diyp2img.cc \ 
 
 LIBS += -L$$TARGETSDIR -ldcmimgle
 

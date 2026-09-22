@@ -37,10 +37,10 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/segdoc.cc \
-  $$SRC_DIR/segment.cc \
-  $$SRC_DIR/segtypes.cc \
-  $$SRC_DIR/segutils.cc \
+  $$SRC_DIR/libsrc/segdoc.cc \
+  $$SRC_DIR/libsrc/segment.cc \
+  $$SRC_DIR/libsrc/segtypes.cc \
+  $$SRC_DIR/libsrc/segutils.cc \
 
 #LIBS += -L$$TARGETSDIR
 

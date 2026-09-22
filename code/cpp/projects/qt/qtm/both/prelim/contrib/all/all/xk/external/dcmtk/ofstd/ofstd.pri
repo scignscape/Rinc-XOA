@@ -71,7 +71,6 @@ HEADERS += \
   $$SRC_DIR/include/dcmtk/ofstd/ofstdinc.h \
   $$SRC_DIR/include/dcmtk/ofstd/ofstream.h \
   $$SRC_DIR/include/dcmtk/ofstd/ofstring.h \
-  $$SRC_DIR/include/dcmtk/ofstd/ofstrutl.h \
   $$SRC_DIR/include/dcmtk/ofstd/oftempf.h \
   $$SRC_DIR/include/dcmtk/ofstd/oftest.h \
   $$SRC_DIR/include/dcmtk/ofstd/ofthread.h \
@@ -94,32 +93,36 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/ofchrenc.cc \
-  $$SRC_DIR/ofcmdln.cc \
-  $$SRC_DIR/ofconapp.cc \
-  $$SRC_DIR/ofcond.cc \
-  $$SRC_DIR/ofconfig.cc \
-  $$SRC_DIR/ofconsol.cc \
-  $$SRC_DIR/ofcrc32.cc \
-  $$SRC_DIR/ofdate.cc \
-  $$SRC_DIR/ofdatime.cc \
-  $$SRC_DIR/oferror.cc \
-  $$SRC_DIR/offile.cc \
-  $$SRC_DIR/offilsys.cc \
-  $$SRC_DIR/offname.cc \
-  $$SRC_DIR/oflist.cc \
-  $$SRC_DIR/ofmath.cc \
-  $$SRC_DIR/ofrand.cc \
-  $$SRC_DIR/ofsockad.cc \
-  $$SRC_DIR/ofstd.cc \
-  $$SRC_DIR/ofstring.cc \
-  $$SRC_DIR/ofstrutl.cc \
-  $$SRC_DIR/oftempf.cc \
-  $$SRC_DIR/ofthread.cc \
-  $$SRC_DIR/oftime.cc \
-  $$SRC_DIR/oftimer.cc \
-  $$SRC_DIR/ofuuid.cc \
-  $$SRC_DIR/ofxml.cc \
+  $$SRC_DIR/libsrc/ofchrenc.cc \
+  $$SRC_DIR/libsrc/ofcmdln.cc \
+  $$SRC_DIR/libsrc/ofconapp.cc \
+  $$SRC_DIR/libsrc/ofcond.cc \
+  $$SRC_DIR/libsrc/ofconfig.cc \
+  $$SRC_DIR/libsrc/ofconsol.cc \
+  $$SRC_DIR/libsrc/ofcrc32.cc \
+  $$SRC_DIR/libsrc/ofdate.cc \
+  $$SRC_DIR/libsrc/ofdatime.cc \
+  $$SRC_DIR/libsrc/oferror.cc \
+  $$SRC_DIR/libsrc/offile.cc \
+  $$SRC_DIR/libsrc/offilsys.cc \
+  $$SRC_DIR/libsrc/offname.cc \
+  $$SRC_DIR/libsrc/oflist.cc \
+  $$SRC_DIR/libsrc/ofmath.cc \
+  $$SRC_DIR/libsrc/ofrand.cc \
+  $$SRC_DIR/libsrc/ofsockad.cc \
+  $$SRC_DIR/libsrc/ofstd.cc \
+  $$SRC_DIR/libsrc/ofstring.cc \
+  $$SRC_DIR/libsrc/oftempf.cc \
+  $$SRC_DIR/libsrc/ofthread.cc \
+  $$SRC_DIR/libsrc/oftime.cc \
+  $$SRC_DIR/libsrc/oftimer.cc \
+  $$SRC_DIR/libsrc/ofuuid.cc \
+  $$SRC_DIR/libsrc/ofxml.cc \
+
+
+#deprecated?
+#? $$SRC_DIR/include/dcmtk/ofstd/ofstrutl.h \
+#? $$SRC_DIR/libsrc/ofstrutl.cc \
 
 #LIBS += -L$$TARGETSDIR
 

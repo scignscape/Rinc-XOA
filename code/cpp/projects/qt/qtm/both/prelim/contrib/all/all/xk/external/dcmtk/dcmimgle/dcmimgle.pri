@@ -73,32 +73,32 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/dcmimage.cc \ 
-  $$SRC_DIR/dibaslut.cc \ 
-  $$SRC_DIR/diciefn.cc \ 
-  $$SRC_DIR/dicielut.cc \ 
-  $$SRC_DIR/didislut.cc \ 
-  $$SRC_DIR/didispfn.cc \ 
-  $$SRC_DIR/didocu.cc \ 
-  $$SRC_DIR/digsdfn.cc \ 
-  $$SRC_DIR/digsdlut.cc \ 
-  $$SRC_DIR/diimage.cc \ 
-  $$SRC_DIR/diinpx.cc \ 
-  $$SRC_DIR/diluptab.cc \ 
-  $$SRC_DIR/dimo1img.cc \ 
-  $$SRC_DIR/dimo2img.cc \ 
-  $$SRC_DIR/dimoimg.cc \ 
-  $$SRC_DIR/dimoimg3.cc \ 
-  $$SRC_DIR/dimoimg4.cc \ 
-  $$SRC_DIR/dimoimg5.cc \ 
-  $$SRC_DIR/dimomod.cc \ 
-  $$SRC_DIR/dimoopx.cc \ 
-  $$SRC_DIR/dimopx.cc \ 
-  $$SRC_DIR/diovdat.cc \ 
-  $$SRC_DIR/diovlay.cc \ 
-  $$SRC_DIR/diovlimg.cc \ 
-  $$SRC_DIR/diovpln.cc \ 
-  $$SRC_DIR/diutils.cc \ 
+  $$SRC_DIR/libsrc/dcmimage.cc \ 
+  $$SRC_DIR/libsrc/dibaslut.cc \ 
+  $$SRC_DIR/libsrc/diciefn.cc \ 
+  $$SRC_DIR/libsrc/dicielut.cc \ 
+  $$SRC_DIR/libsrc/didislut.cc \ 
+  $$SRC_DIR/libsrc/didispfn.cc \ 
+  $$SRC_DIR/libsrc/didocu.cc \ 
+  $$SRC_DIR/libsrc/digsdfn.cc \ 
+  $$SRC_DIR/libsrc/digsdlut.cc \ 
+  $$SRC_DIR/libsrc/diimage.cc \ 
+  $$SRC_DIR/libsrc/diinpx.cc \ 
+  $$SRC_DIR/libsrc/diluptab.cc \ 
+  $$SRC_DIR/libsrc/dimo1img.cc \ 
+  $$SRC_DIR/libsrc/dimo2img.cc \ 
+  $$SRC_DIR/libsrc/dimoimg.cc \ 
+  $$SRC_DIR/libsrc/dimoimg3.cc \ 
+  $$SRC_DIR/libsrc/dimoimg4.cc \ 
+  $$SRC_DIR/libsrc/dimoimg5.cc \ 
+  $$SRC_DIR/libsrc/dimomod.cc \ 
+  $$SRC_DIR/libsrc/dimoopx.cc \ 
+  $$SRC_DIR/libsrc/dimopx.cc \ 
+  $$SRC_DIR/libsrc/diovdat.cc \ 
+  $$SRC_DIR/libsrc/diovlay.cc \ 
+  $$SRC_DIR/libsrc/diovlimg.cc \ 
+  $$SRC_DIR/libsrc/diovpln.cc \ 
+  $$SRC_DIR/libsrc/diutils.cc \ 
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

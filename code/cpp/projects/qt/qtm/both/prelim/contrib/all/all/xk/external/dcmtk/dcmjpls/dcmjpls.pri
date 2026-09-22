@@ -12,7 +12,7 @@ include($$ROOT_DIR/../preferred/sysr.pri)
 INCLUDEPATH += $$SRC_GROUP_DIR
 
 INCLUDEPATH += $$SRC_DIR/include
-INCLUDEPATH += $$SRC_DIR/libcharls/
+INCLUDEPATH += $$SRC_DIR/libsrc/libcharls/
 
 INCLUDEPATH += $$SRC_GROUP_DIR/ofstd/include
 INCLUDEPATH += $$SRC_GROUP_DIR/dcm-config/include
@@ -37,36 +37,36 @@ HEADERS += \
   $$SRC_DIR/include/dcmtk/dcmjpls/djlsutil.h \
   $$SRC_DIR/include/dcmtk/dcmjpls/djrparam.h \
   $$SRC_DIR/include/dcmtk/dcmjpls/dldefine.h \
-  $$SRC_DIR/djerror.h \
-  $$SRC_DIR/libcharls/clrtrans.h \
-  $$SRC_DIR/libcharls/config.h \
-  $$SRC_DIR/libcharls/context.h \
-  $$SRC_DIR/libcharls/ctxtrmod.h \
-  $$SRC_DIR/libcharls/decodstr.h \
-  $$SRC_DIR/libcharls/deftrait.h \
-  $$SRC_DIR/libcharls/encodstr.h \
-  $$SRC_DIR/libcharls/header.h \
-  $$SRC_DIR/libcharls/intrface.h \
-  $$SRC_DIR/libcharls/lltraits.h \
-  $$SRC_DIR/libcharls/lokuptbl.h \
-  $$SRC_DIR/libcharls/procline.h \
-  $$SRC_DIR/libcharls/pubtypes.h \
-  $$SRC_DIR/libcharls/scan.h \
-  $$SRC_DIR/libcharls/streams.h \
-  $$SRC_DIR/libcharls/util.h \
+  $$SRC_DIR/libsrc/djerror.h \
+  $$SRC_DIR/libsrc/libcharls/clrtrans.h \
+  $$SRC_DIR/libsrc/libcharls/config.h \
+  $$SRC_DIR/libsrc/libcharls/context.h \
+  $$SRC_DIR/libsrc/libcharls/ctxtrmod.h \
+  $$SRC_DIR/libsrc/libcharls/decodstr.h \
+  $$SRC_DIR/libsrc/libcharls/deftrait.h \
+  $$SRC_DIR/libsrc/libcharls/encodstr.h \
+  $$SRC_DIR/libsrc/libcharls/header.h \
+  $$SRC_DIR/libsrc/libcharls/intrface.h \
+  $$SRC_DIR/libsrc/libcharls/lltraits.h \
+  $$SRC_DIR/libsrc/libcharls/lokuptbl.h \
+  $$SRC_DIR/libsrc/libcharls/procline.h \
+  $$SRC_DIR/libsrc/libcharls/pubtypes.h \
+  $$SRC_DIR/libsrc/libcharls/scan.h \
+  $$SRC_DIR/libsrc/libcharls/streams.h \
+  $$SRC_DIR/libsrc/libcharls/util.h \
 
 
 SOURCES += \
-  $$SRC_DIR/djcodecd.cc \
-  $$SRC_DIR/djcodece.cc \
-  $$SRC_DIR/djcparam.cc \
-  $$SRC_DIR/djdecode.cc \
-  $$SRC_DIR/djencode.cc \
-  $$SRC_DIR/djrparam.cc \
-  $$SRC_DIR/djutils.cc \
-  $$SRC_DIR/libcharls/header.cc \
-  $$SRC_DIR/libcharls/intrface.cc \
-  $$SRC_DIR/libcharls/jpegls.cc \
+  $$SRC_DIR/libsrc/djcodecd.cc \
+  $$SRC_DIR/libsrc/djcodece.cc \
+  $$SRC_DIR/libsrc/djcparam.cc \
+  $$SRC_DIR/libsrc/djdecode.cc \
+  $$SRC_DIR/libsrc/djencode.cc \
+  $$SRC_DIR/libsrc/djrparam.cc \
+  $$SRC_DIR/libsrc/djutils.cc \
+  $$SRC_DIR/libsrc/libcharls/header.cc \
+  $$SRC_DIR/libsrc/libcharls/intrface.cc \
+  $$SRC_DIR/libsrc/libcharls/jpegls.cc \
 
 #LIBS += -L$$TARGETSDIR
 

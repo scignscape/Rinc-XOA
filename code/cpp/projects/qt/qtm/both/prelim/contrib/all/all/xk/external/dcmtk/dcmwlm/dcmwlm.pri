@@ -37,10 +37,10 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/wlds.cc \
-  $$SRC_DIR/wldsfs.cc \
-  $$SRC_DIR/wlfsim.cc \
-  $$SRC_DIR/wlmactmg.cc \
+  $$SRC_DIR/libsrc/wlds.cc \
+  $$SRC_DIR/libsrc/wldsfs.cc \
+  $$SRC_DIR/libsrc/wlfsim.cc \
+  $$SRC_DIR/libsrc/wlmactmg.cc \
 
 #LIBS += -L$$TARGETSDIR
 

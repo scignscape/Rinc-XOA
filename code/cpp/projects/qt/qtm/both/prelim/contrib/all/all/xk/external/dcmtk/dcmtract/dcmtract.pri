@@ -39,13 +39,13 @@ HEADERS += \
 
 
 SOURCES += \
-  $$SRC_DIR/trcmeasurement.cc \
-  $$SRC_DIR/trcmodtractresults.cc \
-  $$SRC_DIR/trcstatistic.cc \
-  $$SRC_DIR/trctrack.cc \
-  $$SRC_DIR/trctrackset.cc \
-  $$SRC_DIR/trctractographyresults.cc \
-  $$SRC_DIR/trctypes.cc \
+  $$SRC_DIR/libsrc/trcmeasurement.cc \
+  $$SRC_DIR/libsrc/trcmodtractresults.cc \
+  $$SRC_DIR/libsrc/trcstatistic.cc \
+  $$SRC_DIR/libsrc/trctrack.cc \
+  $$SRC_DIR/libsrc/trctrackset.cc \
+  $$SRC_DIR/libsrc/trctractographyresults.cc \
+  $$SRC_DIR/libsrc/trctypes.cc \
 
 
 #LIBS += -L$$TARGETSDIR
