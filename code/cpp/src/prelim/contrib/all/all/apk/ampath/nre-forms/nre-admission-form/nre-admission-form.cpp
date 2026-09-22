@@ -41,7 +41,7 @@ NRE_Admission_Form::NRE_Admission_Form()
  Admission_data_F100_->set_text("Admission data");
  Admission_data_F100_->set_enclosing_scroll_area(S_100_);
  caretakersName_ = new QLineEdit(Admission_data_F100_);
- admissionDateAndTime_ = new QDateTimeEdit(Admission_data_F100_);
+ admissionDateAndTime_ = new QDateTimeEdit(QDateTime::currentDateTime(), Admission_data_F100_); admissionDateAndTime_->setCalendarPopup(true);
  admissionType_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  spontaneousAdmission_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
  ifReferredByWhomOrFromWhere_ = new NRE_Radio_Button_Group_Box(Admission_data_F100_);
@@ -119,7 +119,7 @@ NRE_Admission_Form::NRE_Admission_Form()
  Physical_exam_F102_->set_text("Physical exam");
  Physical_exam_F102_->set_enclosing_scroll_area(S_102_);
  pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_ = new QPlainTextEdit(Physical_exam_F102_);
- capturePatientVitals_ = new NRE_Workspace_Launcher_Button("Running workspace $name: ...", "Choose configuration ...",
+ capturePatientVitals_ = new NRE_Workspace_Launcher_Button("Running workspace: $name ...", "Choose configuration ...",
  L_capturePatientVitals_ + " (default)", Physical_exam_F102_);
  whz_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
  oedema_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
@@ -154,9 +154,11 @@ NRE_Admission_Form::NRE_Admission_Form()
  TB_evaluation_F103_->set_enclosing_scroll_area(S_103_);
  tbEvaluation_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
  firstResultScore_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
- firstResultDate_ = new QDateEdit(TB_evaluation_F103_);
+ firstResultDate_ = new QDateEdit(QDate::currentDate(), TB_evaluation_F103_);
+ firstResultDate_->setCalendarPopup(true);
  secondResultScore_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
- secondResultDate_ = new QDateEdit(TB_evaluation_F103_);
+ secondResultDate_ = new QDateEdit(QDate::currentDate(), TB_evaluation_F103_);
+ secondResultDate_->setCalendarPopup(true);
 
  // //  Page: Observations
  F_104_ = new QFrame;
@@ -223,13 +225,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  Prescription_F106_->set_enclosing_scroll_area(S_106_);
  pleaseStartTheFeedingForm_ = new QPlainTextEdit(Prescription_F106_);
  pleaseCheckInImmunizations_ = new QPlainTextEdit(Prescription_F106_);
- capturePatientImmunizations_ = new NRE_Workspace_Launcher_Button("Running workspace $name: ...", "Choose configuration ...",
+ capturePatientImmunizations_ = new NRE_Workspace_Launcher_Button("Running workspace: $name ...", "Choose configuration ...",
  L_capturePatientImmunizations_ + " (default)", Prescription_F106_);
  pleaseCheckInMedications_ = new QPlainTextEdit(Prescription_F106_);
- activeMedications_ = new NRE_Workspace_Launcher_Button("Running workspace $name: ...", "Choose configuration ...",
+ activeMedications_ = new NRE_Workspace_Launcher_Button("Running workspace: $name ...", "Choose configuration ...",
  L_activeMedications_ + " (default)", Prescription_F106_);
  prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_ = new QPlainTextEdit(Prescription_F106_);
- orderMedications_ = new NRE_Workspace_Launcher_Button("Running workspace $name: ...", "Choose configuration ...",
+ orderMedications_ = new NRE_Workspace_Launcher_Button("Running workspace: $name ...", "Choose configuration ...",
  L_orderMedications_ + " (default)", Prescription_F106_);
 
  init();

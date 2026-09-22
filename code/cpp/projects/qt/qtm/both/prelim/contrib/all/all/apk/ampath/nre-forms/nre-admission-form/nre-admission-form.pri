@@ -5,7 +5,8 @@
 #           http://www.boost.org/LICENSE_1_0.txt)
 
 
-PROJECT_NAME = nre-accordion-list
+PROJECT_NAME = nre-admission-form
+
 
 QT += widgets
 

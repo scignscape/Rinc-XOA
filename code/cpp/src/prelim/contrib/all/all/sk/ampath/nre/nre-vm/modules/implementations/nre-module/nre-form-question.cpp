@@ -110,11 +110,13 @@ void NRE_Form_Question::write_rendering(QString text)
   v_or_h = "horizontal";
   header_acc("methods") << "\n QLineEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QLineEdit(###);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << "->setPlaceholderText(\"Single line\");";
   break;
  case Rendering_Types::TextArea:
   v_or_h = "vertical";
   header_acc("methods") << "\n QPlainTextEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QPlainTextEdit(###);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << "->setPlaceholderText(\"Multline text\");";
   break;
  case Rendering_Types::Number:
   v_or_h = "horizontal";
@@ -125,13 +127,15 @@ void NRE_Form_Question::write_rendering(QString text)
  case Rendering_Types::DateTime:
   v_or_h = "horizontal";
   header_acc("methods") << "\n QDateTimeEdit* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateTimeEdit(###);";
-//?  implementation_acc("ctor") << "\n" << id_ << "_" << "->setDefaultValue(0);";
+  implementation_acc("ctor") << "\n " << id_ << "_" <<
+    " = new QDateTimeEdit(QDateTime::currentDateTime(), ###);"
+    " " << id_ << "_->setCalendarPopup(true);";
   break;
  case Rendering_Types::Date:
   v_or_h = "horizontal";
   header_acc("methods") << "\n QDateEdit* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(###);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << " = new QDateEdit(QDate::currentDate(), ###);\n"
+    " " << id_ << "_->setCalendarPopup(true);";
   break;
  case Rendering_Types::Radio:
   v_or_h = "vertical";
@@ -143,6 +147,7 @@ void NRE_Form_Question::write_rendering(QString text)
   v_or_h = "vertical";
   header_acc("methods") << "\n QPlainTextEdit* " << id_ << "_;";
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new QPlainTextEdit(###);";
+  implementation_acc("ctor") << "\n " << id_ << "_" << "->setPlaceholderText(\"Markdown or plain text\");";
   break;
  case Rendering_Types::Select:
   v_or_h = "vertical";

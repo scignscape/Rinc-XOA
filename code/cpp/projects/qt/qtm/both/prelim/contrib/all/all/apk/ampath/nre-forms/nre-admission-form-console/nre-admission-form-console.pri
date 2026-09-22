@@ -5,8 +5,6 @@
 #           http://www.boost.org/LICENSE_1_0.txt)
 
 
-PROJECT_NAME = nre-combo
-
 QT += widgets
 
 include(../build-group.pri)

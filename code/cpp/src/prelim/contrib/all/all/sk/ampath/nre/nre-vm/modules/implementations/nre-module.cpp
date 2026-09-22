@@ -79,8 +79,8 @@ void NRE_Module::save_header_file(QString file_path)
 
  write_pri_file(bn + ".pri");
  write_pri_console_file(bn + "-console.pri");
- write_pri_file(bn + ".pro");
- write_pri_console_file(bn + "-console.pro");
+ write_pro_file(bn + ".pro");
+ write_pro_console_file(bn + "-console.pro");
 
  save_file(bn + "." + qfi.suffix(), cpp_header_top());
 }
@@ -150,6 +150,7 @@ QString get_pro_top()
 
 PROJECT_NAME = %1
 
+
 include(../build-group.pri)
 
 include(../../../../../../../../../both/$$PROJECT_AREA/contrib/$$PROJECT_CONTRIBUTOR/$$PROJECT_CONTRIBUTION/$$PROJECT_KERNEL/$$PROJECT_SET/$$PROJECT_GROUP/$$PROJECT_NAME/$${PROJECT_NAME}.pri)
@@ -168,6 +169,9 @@ QString get_pri_top()
 
 
 QT += widgets
+
+
+PROJECT_NAME = %1%2
 
 include(../build-group.pri)
 
@@ -202,16 +206,19 @@ void NRE_Module::write_pri_file(QString file_path)
 
  static QString contents = get_pri_top() + R"(
 
-HEADERS += \
-  $$SRC_DIR/%1.h \
+#MANUAL_CODE = true
 
-
-SOURCES += \
-  $$SRC_DIR/%1.cpp \
+isEmpty(MANUAL_CODE) {
+  HEADERS += $$SRC_DIR/%1.h
+  SOURCES += $$SRC_DIR/%1.cpp
+} else {
+  HEADERS += $$SRC_DIR/%1_manual.h
+  SOURCES += $$SRC_DIR/%1_manual.cpp
+}
 
 )";
 
- save_file(file_path, contents.arg(class_file));
+ save_file(file_path, contents.arg(class_file).arg(""));
 
 }
 
@@ -234,6 +241,7 @@ HEADERS += \
 SOURCES += \
   $$SRC_DIR/main.cpp \
 
+
 LIBS += \
   -L$$TARGETSDIR -l%1 \
   -lnre-accordion-list -lnre-combo \
@@ -241,7 +249,7 @@ LIBS += \
 
 )";
 
- save_file(file_path, contents.arg(class_file));
+ save_file(file_path, contents.arg(class_file).arg("-console"));
 
 }
 
