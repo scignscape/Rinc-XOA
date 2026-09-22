@@ -39,6 +39,8 @@ void NRE_Form_Question::write_answers()
 {
  switch (rendering_type_)
  {
+ case Rendering_Types::Select:
+ case Rendering_Types::MultiCheckbox:
  case Rendering_Types::Radio:
   {
    for(NRE_Form_Answer* a : answers_)

@@ -43,7 +43,11 @@ void NRE_Form_Page::write_frame(u2 count)
  implementation_acc("ctor") << "\n F_" << count
    << "_->setLayout(F_" << count << "_vbl_);";
  implementation_acc("ctor") << "\n S_" << count
-   << "_ = new QScrollArea;";
+   << "_ = new QScrollArea;\n ";
+ implementation_acc("ctor") << "\n S_" << count
+   << "_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);\n ";
+ implementation_acc("ctor") << "\n S_" << count
+   << "_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);\n ";
 
  implementation_acc("sf") << "\n S_" << count
    << "_->setWidget(F_" << count << "_);";
