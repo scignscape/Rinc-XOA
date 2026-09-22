@@ -26,13 +26,18 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Admission
  F_100_ = new QFrame;
  F_100_vbl_ = new QVBoxLayout;
+ F_100_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_100_->setLayout(F_100_vbl_);
  S_100_ = new QScrollArea;
+
+ S_100_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_100_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_100_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_100_, "Admission");
 
   // // Section: Admission_data -- ctor
  Admission_data_F100_ = new NRE_Accordion_List(F_100_);
- Admission_data_F100_->set_text("Admission_data");
+ Admission_data_F100_->set_text("Admission data");
  Admission_data_F100_->set_enclosing_scroll_area(S_100_);
  caretakersName_ = new QLineEdit(Admission_data_F100_);
  admissionDateAndTime_ = new QDateTimeEdit(Admission_data_F100_);
@@ -44,13 +49,18 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Anamnesis at admission
  F_101_ = new QFrame;
  F_101_vbl_ = new QVBoxLayout;
+ F_101_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_101_->setLayout(F_101_vbl_);
  S_101_ = new QScrollArea;
+
+ S_101_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_101_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_101_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_101_, "Anamnesis at admission");
 
   // // Section: History_of_the_illness -- ctor
  History_of_the_illness_F101_ = new NRE_Accordion_List(F_101_);
- History_of_the_illness_F101_->set_text("History_of_the_illness");
+ History_of_the_illness_F101_->set_text("History of the illness");
  History_of_the_illness_F101_->set_enclosing_scroll_area(S_101_);
  howLongHasTheChildBeenSick_ = new QLineEdit(History_of_the_illness_F101_);
  howLongHasTheChildBeenSick_->setPlaceholderText(0);
@@ -62,7 +72,7 @@ NRE_Admission_Form::NRE_Admission_Form()
 
   // // Section: Feeding_history -- ctor
  Feeding_history_F101_ = new NRE_Accordion_List(F_101_);
- Feeding_history_F101_->set_text("Feeding_history");
+ Feeding_history_F101_->set_text("Feeding history");
  Feeding_history_F101_->set_enclosing_scroll_area(S_101_);
  hasTheChildEverBeenBreastfed_ = new NRE_Radio_Button_Group_Box(Feeding_history_F101_);
  isTheChildCurrentlyBeingBreastfed_ = new NRE_Radio_Button_Group_Box(Feeding_history_F101_);
@@ -75,7 +85,7 @@ NRE_Admission_Form::NRE_Admission_Form()
 
   // // Section: Family_history -- ctor
  Family_history_F101_ = new NRE_Accordion_List(F_101_);
- Family_history_F101_->set_text("Family_history");
+ Family_history_F101_->set_text("Family history");
  Family_history_F101_->set_enclosing_scroll_area(S_101_);
  whoIsTheHeadOfFamily_ = new NRE_Radio_Button_Group_Box(Family_history_F101_);
  whoIsTheHeadOfFamily_ifOtherSpecify_ = new QLineEdit(Family_history_F101_);
@@ -94,13 +104,18 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Physical exam at admission
  F_102_ = new QFrame;
  F_102_vbl_ = new QVBoxLayout;
+ F_102_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_102_->setLayout(F_102_vbl_);
  S_102_ = new QScrollArea;
+
+ S_102_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_102_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_102_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_102_, "Physical exam at admission");
 
   // // Section: Physical_exam -- ctor
  Physical_exam_F102_ = new NRE_Accordion_List(F_102_);
- Physical_exam_F102_->set_text("Physical_exam");
+ Physical_exam_F102_->set_text("Physical exam");
  Physical_exam_F102_->set_enclosing_scroll_area(S_102_);
  pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_ = new QPlainTextEdit(Physical_exam_F102_);
  capturePatientVitals_ = new NRE_Combo_With_Label_Bar(Physical_exam_F102_);
@@ -111,8 +126,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Evaluation
  F_103_ = new QFrame;
  F_103_vbl_ = new QVBoxLayout;
+ F_103_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_103_->setLayout(F_103_vbl_);
  S_103_ = new QScrollArea;
+
+ S_103_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_103_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_103_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_103_, "Evaluation");
 
   // // Section: Target -- ctor
@@ -123,13 +143,13 @@ NRE_Admission_Form::NRE_Admission_Form()
 
   // // Section: Malaria_test -- ctor
  Malaria_test_F103_ = new NRE_Accordion_List(F_103_);
- Malaria_test_F103_->set_text("Malaria_test");
+ Malaria_test_F103_->set_text("Malaria test");
  Malaria_test_F103_->set_enclosing_scroll_area(S_103_);
  malariaTestResult_ = new NRE_Radio_Button_Group_Box(Malaria_test_F103_);
 
   // // Section: TB_evaluation -- ctor
  TB_evaluation_F103_ = new NRE_Accordion_List(F_103_);
- TB_evaluation_F103_->set_text("TB_evaluation");
+ TB_evaluation_F103_->set_text("TB evaluation");
  TB_evaluation_F103_->set_enclosing_scroll_area(S_103_);
  tbEvaluation_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
  firstResultScore_ = new NRE_Radio_Button_Group_Box(TB_evaluation_F103_);
@@ -140,8 +160,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Observations
  F_104_ = new QFrame;
  F_104_vbl_ = new QVBoxLayout;
+ F_104_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_104_->setLayout(F_104_vbl_);
  S_104_ = new QScrollArea;
+
+ S_104_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_104_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_104_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_104_, "Observations");
 
   // // Section: Observations -- ctor
@@ -153,8 +178,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Diagnosis
  F_105_ = new QFrame;
  F_105_vbl_ = new QVBoxLayout;
+ F_105_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_105_->setLayout(F_105_vbl_);
  S_105_ = new QScrollArea;
+
+ S_105_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_105_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_105_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_105_, "Diagnosis");
 
   // // Section: Diagnosis -- ctor
@@ -177,8 +207,13 @@ NRE_Admission_Form::NRE_Admission_Form()
  // //  Page: Prescription
  F_106_ = new QFrame;
  F_106_vbl_ = new QVBoxLayout;
+ F_106_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);
  F_106_->setLayout(F_106_vbl_);
  S_106_ = new QScrollArea;
+
+ S_106_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_106_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ S_106_->setWidgetResizable(true);
  pages_tab_widget_->addTab(S_106_, "Prescription");
 
   // // Section: Prescription -- ctor
@@ -235,6 +270,7 @@ void NRE_Admission_Form::init()
   ifReferredByWhomOrFromWhere_);
  Admission_data_F100_->add_horizontal_item(L_ifReferredByWhomOrFromWhere_ifOtherSpecify_,
   ifReferredByWhomOrFromWhere_ifOtherSpecify_);
+ Admission_data_F100_->add_stretch();
  F_100_vbl_->addWidget(Admission_data_F100_);
  F_100_vbl_->addSpacing(19);
 
@@ -257,6 +293,7 @@ void NRE_Admission_Form::init()
   isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_);
  History_of_the_illness_F101_->add_horizontal_item(L_isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_,
   isThereSomeoneTreatedForTbSinceTheBirthOfTheChild_specifyWho_);
+ History_of_the_illness_F101_->add_stretch();
  F_101_vbl_->addWidget(History_of_the_illness_F101_);
  F_101_vbl_->addSpacing(19);
 
@@ -277,6 +314,7 @@ void NRE_Admission_Form::init()
   numberOfMealsPerDayBeforeIllness_);
  Feeding_history_F101_->add_horizontal_item(L_numberOfMealsDuringTheLast24Hours_,
   numberOfMealsDuringTheLast24Hours_);
+ Feeding_history_F101_->add_stretch();
  F_101_vbl_->addWidget(Feeding_history_F101_);
  F_101_vbl_->addSpacing(19);
 
@@ -307,6 +345,7 @@ void NRE_Admission_Form::init()
   theChildIs_);
  Family_history_F101_->add_horizontal_item(L_nbOfPersonsSharingTheFamilyMeal_,
   nbOfPersonsSharingTheFamilyMeal_);
+ Family_history_F101_->add_stretch();
  F_101_vbl_->addWidget(Family_history_F101_);
  F_101_vbl_->addSpacing(19);
 
@@ -328,6 +367,7 @@ void NRE_Admission_Form::init()
  oedema_->add_item("No");
  Physical_exam_F102_->add_vertical_item(L_oedema_,
   oedema_);
+ Physical_exam_F102_->add_stretch();
  F_102_vbl_->addWidget(Physical_exam_F102_);
  F_102_vbl_->addSpacing(19);
 
@@ -336,6 +376,7 @@ void NRE_Admission_Form::init()
   // // Section: Target -- init
  Target_F103_->add_horizontal_item(L_targetWeightOrMuac_,
   targetWeightOrMuac_);
+ Target_F103_->add_stretch();
  F_103_vbl_->addWidget(Target_F103_);
  F_103_vbl_->addSpacing(19);
 
@@ -345,6 +386,7 @@ void NRE_Admission_Form::init()
  malariaTestResult_->add_item("Not done");
  Malaria_test_F103_->add_vertical_item(L_malariaTestResult_,
   malariaTestResult_);
+ Malaria_test_F103_->add_stretch();
  F_103_vbl_->addWidget(Malaria_test_F103_);
  F_103_vbl_->addSpacing(19);
 
@@ -365,6 +407,7 @@ void NRE_Admission_Form::init()
   secondResultScore_);
  TB_evaluation_F103_->add_horizontal_item(L_secondResultDate_,
   secondResultDate_);
+ TB_evaluation_F103_->add_stretch();
  F_103_vbl_->addWidget(TB_evaluation_F103_);
  F_103_vbl_->addSpacing(19);
 
@@ -373,6 +416,7 @@ void NRE_Admission_Form::init()
   // // Section: Observations -- init
  Observations_F104_->add_vertical_item(L_observations_,
   observations_);
+ Observations_F104_->add_stretch();
  F_104_vbl_->addWidget(Observations_F104_);
  F_104_vbl_->addSpacing(19);
 
@@ -915,6 +959,7 @@ void NRE_Admission_Form::init()
   diagnosisAtAdmissionSecondary3_);
  Diagnosis_F105_->add_horizontal_item(L_diagnosisAtAdmissionSecondary3_ifOtherSpecify_,
   diagnosisAtAdmissionSecondary3_ifOtherSpecify_);
+ Diagnosis_F105_->add_stretch();
  F_105_vbl_->addWidget(Diagnosis_F105_);
  F_105_vbl_->addSpacing(19);
 
@@ -935,6 +980,7 @@ void NRE_Admission_Form::init()
   prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_);
  Prescription_F106_->add_vertical_item(L_orderMedications_,
   orderMedications_);
+ Prescription_F106_->add_stretch();
  F_106_vbl_->addWidget(Prescription_F106_);
  F_106_vbl_->addSpacing(19);
 }// ::init

@@ -92,6 +92,8 @@ public:
  void collapse();
  void expand();
 
+ void add_stretch();
+
 };
 
 //} // namespace Qtilities

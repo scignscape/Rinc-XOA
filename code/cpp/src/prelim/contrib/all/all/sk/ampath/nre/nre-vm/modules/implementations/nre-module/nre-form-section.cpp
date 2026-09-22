@@ -33,7 +33,8 @@ void NRE_Form_Section::write_questions(u2 page_count)
    "\n %1_F%2_->set_enclosing_scroll_area(S_%2_);"
    ;
 
- static QString add_accordion = "\n F_%2_vbl_->addWidget(%1_F%2_);"
+ static QString add_accordion = "\n %1_F%2_->add_stretch();"
+   "\n F_%2_vbl_->addWidget(%1_F%2_);"
    "\n F_%2_vbl_->addSpacing(19);"
    ;
 
@@ -41,11 +42,14 @@ void NRE_Form_Section::write_questions(u2 page_count)
  static QString collapse_accordion = "\n %1_F%2_->collapse();\n"
    ;
 
- header_acc("ctor") << accordion.arg(label_.replace(" ", "_")).arg(page_count);
- implementation_acc("ctor") << new_accordion
-   .arg(label_.replace(" ", "_")).arg(page_count).arg(label_);
+ QString label_with_spaces = label_.replace("_", " ");
+ QString label_with_underscores = label_.replace(" ", "_");
 
- QString current_accordion = accordion_name.arg(label_.replace(" ", "_")).arg(page_count);
+ header_acc("ctor") << accordion.arg(label_with_underscores).arg(page_count);
+ implementation_acc("ctor") << new_accordion
+   .arg(label_with_underscores).arg(page_count).arg(label_with_spaces);
+
+ QString current_accordion = accordion_name.arg(label_with_underscores).arg(page_count);
 
  for(NRE_Form_Question* q : questions_)
  {
@@ -62,8 +66,8 @@ void NRE_Form_Section::write_questions(u2 page_count)
   implementation_acc("concepts") << q->cpp_implementation_part("concepts");
  }
 
- implementation_acc("init") << add_accordion.arg(label_.replace(" ", "_")).arg(page_count);
- implementation_acc("sf") << collapse_accordion.arg(label_.replace(" ", "_")).arg(page_count);
+ implementation_acc("init") << add_accordion.arg(label_with_underscores).arg(page_count);
+ implementation_acc("sf") << collapse_accordion.arg(label_with_underscores).arg(page_count);
 }
 
 void NRE_Form_Section::cleanup()

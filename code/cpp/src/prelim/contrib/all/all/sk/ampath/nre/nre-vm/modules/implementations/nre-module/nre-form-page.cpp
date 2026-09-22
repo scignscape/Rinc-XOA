@@ -41,15 +41,17 @@ void NRE_Form_Page::write_frame(u2 count)
  implementation_acc("ctor") << "\n F_" << count
    << "_vbl_ = new QVBoxLayout;";
  implementation_acc("ctor") << "\n F_" << count
+   << "_vbl_->setAlignment(Qt::AlignLeft | Qt::AlignTop);";
+  implementation_acc("ctor") << "\n F_" << count
    << "_->setLayout(F_" << count << "_vbl_);";
  implementation_acc("ctor") << "\n S_" << count
    << "_ = new QScrollArea;\n ";
  implementation_acc("ctor") << "\n S_" << count
-   << "_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);\n ";
+   << "_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);";
  implementation_acc("ctor") << "\n S_" << count
-   << "_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);\n ";
+   << "_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);";
  implementation_acc("ctor") << "\n S_" << count
-   << "_->setWidgetResizable(true);\n ";
+   << "_->setWidgetResizable(true);";
 
  implementation_acc("sf") << "\n S_" << count
    << "_->setWidget(F_" << count << "_);";

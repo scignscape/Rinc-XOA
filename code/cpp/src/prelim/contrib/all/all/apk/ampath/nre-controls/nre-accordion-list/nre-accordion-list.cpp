@@ -158,7 +158,11 @@ NRE_Accordion_List::NRE_Accordion_List(QWidget *parent)
  split_layout_->addWidget(arrow_button_);
 // split_layout_->addWidget(arrow);
 
+ split_layout_->setAlignment(Qt::AlignTop | Qt::AlignLeft);
+
  main_layout_ = new QVBoxLayout;
+
+ main_layout_->setAlignment(Qt::AlignTop | Qt::AlignLeft);
 
  main_widget_ = new QWidget;
  main_widget_->setLayout(main_layout_);
@@ -233,6 +237,14 @@ void NRE_Accordion_List::expand()
  }
 }
 
+
+void NRE_Accordion_List::add_stretch()
+{
+ split_layout_->addStretch(1);
+ main_layout_->addStretch(1);
+}
+
+
 void NRE_Accordion_List::add_horizontal_item(QString label, QWidget* item)
 {
  NRE_Accordion_Item* nai = new NRE_Accordion_Item(this);
@@ -274,8 +286,8 @@ void NRE_Accordion_List::set_text(QString label)
 void NRE_Accordion_List::set_main_widget()
 {
  split_layout_->addWidget(main_widget_);
- main_widget_->updateGeometry();
- split_layout_->update();
+// main_widget_->updateGeometry();
+// split_layout_->update();
 
  connect(arrow_button_, &QAbstractButton::toggled,
    this, &NRE_Accordion_List::onExpandWidget);
