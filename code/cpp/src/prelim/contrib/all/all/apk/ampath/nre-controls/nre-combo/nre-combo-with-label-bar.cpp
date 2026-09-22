@@ -7,6 +7,8 @@
 
 #include "nre-combo-with-label-bar.h"
 
+#include "nre-combo-label-item.h"
+
 #include <QPainter>
 #include <QStyleOption>
 #include <QHBoxLayout>
@@ -58,16 +60,26 @@ void NRE_Combo_With_Label_Bar::add_option(QString identifier, QString label)
  combo_box_->addItem(identifier);
 }
 
-QLabel* NRE_Combo_With_Label_Bar::get_label_by_index(u2 index)
+NRE_Combo_Label_Item* NRE_Combo_With_Label_Bar::get_label_by_index(u2 index)
 {
  auto it = label_map_.find(index);
  if(it == label_map_.end())
  {
-  QLabel* result = new QLabel(options_[index - 1], this);
+  NRE_Combo_Label_Item* result = new NRE_Combo_Label_Item(options_[index - 1], this);
   label_map_[index] = result;
+  connect(result, &NRE_Combo_Label_Item::close_requested, this,
+    &NRE_Combo_With_Label_Bar::handle_close_requested);
   return result;
  }
  return it.value();
+}
+
+void NRE_Combo_With_Label_Bar::handle_close_requested(NRE_Combo_Label_Item* which_item)
+{
+ left_layout_->removeWidget(which_item);
+ which_item->hide();
+ left_layout_->update();
+ combo_box_->setCurrentIndex(0);
 }
 
 void NRE_Combo_With_Label_Bar::handle_index_changed(int ix)
@@ -75,11 +87,12 @@ void NRE_Combo_With_Label_Bar::handle_index_changed(int ix)
  if(ix == 0)
    return;
 
- QLabel* lbl = get_label_by_index(ix);
+ NRE_Combo_Label_Item* cli = get_label_by_index(ix);
 
- if(left_layout_->indexOf(lbl) == -1)
+ if(left_layout_->indexOf(cli) == -1)
  {
-  left_layout_->addWidget(lbl);
+  left_layout_->addWidget(cli);
+  cli->show();
  }
 
 }

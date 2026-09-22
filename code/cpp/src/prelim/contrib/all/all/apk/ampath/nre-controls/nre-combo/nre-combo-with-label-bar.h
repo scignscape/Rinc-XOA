@@ -25,6 +25,7 @@ class QHBoxLayout;
 
 KANS_(AMPATH_Forms)
 
+class NRE_Combo_Label_Item;
 
 class NRE_Combo_With_Label_Bar : public QWidget
 {
@@ -40,9 +41,9 @@ class NRE_Combo_With_Label_Bar : public QWidget
 
  QStringList options_;
 
- QMap<u2, QLabel*> label_map_;
+ QMap<u2, NRE_Combo_Label_Item*> label_map_;
 
- QLabel* get_label_by_index(u2 index);
+ NRE_Combo_Label_Item* get_label_by_index(u2 index);
 
 public:
 
@@ -54,7 +55,9 @@ public:
 
  void add_option(QString identifier, QString label);
 
+public Q_SLOTS:
  void handle_index_changed(int ix);
+ void handle_close_requested(NRE_Combo_Label_Item* which_item);
 
 
 };

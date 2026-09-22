@@ -12,6 +12,8 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QLabel>
+#include <QToolButton>
 
 class QHBoxLayout;
 
@@ -22,14 +24,23 @@ class QHBoxLayout;
 KANS_(AMPATH_Forms)
 
 
-class NRE_Combo_Label_Item : public QPushButton
+class NRE_Combo_Label_Item : public QWidget
 {
  Q_OBJECT
 
 public:
 
- NRE_Combo_Label_Item(QWidget *parent = nullptr);
+ NRE_Combo_Label_Item(QString text, QWidget *parent = nullptr);
 
+ QHBoxLayout* main_layout_;
+ QToolButton* close_button_;
+ QLabel* label_;
+
+Q_SIGNALS:
+ void close_requested(NRE_Combo_Label_Item*);
+
+//private Q_SLOTS:
+// void handle_closed();
 };
 
 //} // namespace Qtilities
@@ -38,3 +49,5 @@ _KANS(AMPATH_Forms)
 
 
 #endif // NRE_COMBO_LABEL_ITEM__H
+
+
