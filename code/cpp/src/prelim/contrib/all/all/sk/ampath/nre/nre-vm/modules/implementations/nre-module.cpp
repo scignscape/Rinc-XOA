@@ -133,6 +133,7 @@ KANS_(AMPATH_Forms)
 class NRE_Accordion_List;
 class NRE_Combo_With_Label_Bar;
 class NRE_Radio_Button_Group_Box;
+class NRE_Workspace_Launcher_Button;
 
 )" << "class " << current_class_name_ << " : public QMainWindow \n{\n";
 
@@ -235,7 +236,8 @@ SOURCES += \
 
 LIBS += \
   -L$$TARGETSDIR -l%1 \
-  -lnre-accordion-list -lnre-combo -lnre-button-group-box
+  -lnre-accordion-list -lnre-combo \
+  -lnre-button-group-box
 
 )";
 
@@ -263,6 +265,7 @@ void NRE_Module::write_class_implementation_lead()
 
 #include "nre-controls/nre-accordion-list/nre-accordion-list.h"
 #include "nre-controls/nre-combo/nre-combo-with-label-bar.h"
+#include "nre-controls/nre-combo/nre-workspace-launcher-button.h"
 #include "nre-controls/nre-button-group-box/nre-radio-button-group-box.h"
 
                 )"

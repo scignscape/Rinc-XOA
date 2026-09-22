@@ -64,7 +64,7 @@ class NRE_Form_Question : public NRE_Form_Base
    {"multiCheckbox", Rendering_Types::MultiCheckbox},
    {"markdown", Rendering_Types::Markdown},
    {"select", Rendering_Types::Select},
-   {"workspace-launcher", Rendering_Types::Select},
+   {"workspace-launcher", Rendering_Types::WorkspaceLauncher},
   };
 
   return static_map.value(ty, Rendering_Types::N_A);

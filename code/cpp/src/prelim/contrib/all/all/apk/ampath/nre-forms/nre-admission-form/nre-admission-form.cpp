@@ -6,6 +6,7 @@
 
 #include "nre-controls/nre-accordion-list/nre-accordion-list.h"
 #include "nre-controls/nre-combo/nre-combo-with-label-bar.h"
+#include "nre-controls/nre-combo/nre-workspace-launcher-button.h"
 #include "nre-controls/nre-button-group-box/nre-radio-button-group-box.h"
 
 
@@ -118,8 +119,7 @@ NRE_Admission_Form::NRE_Admission_Form()
  Physical_exam_F102_->set_text("Physical exam");
  Physical_exam_F102_->set_enclosing_scroll_area(S_102_);
  pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_ = new QPlainTextEdit(Physical_exam_F102_);
- capturePatientVitals_ = new NRE_Combo_With_Label_Bar(Physical_exam_F102_);
- capturePatientVitals_->set_max_selectable(1);
+ capturePatientVitals_ = new NRE_Workspace_Launcher_Button(Physical_exam_F102_);
  whz_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
  oedema_ = new NRE_Radio_Button_Group_Box(Physical_exam_F102_);
 
@@ -222,14 +222,11 @@ NRE_Admission_Form::NRE_Admission_Form()
  Prescription_F106_->set_enclosing_scroll_area(S_106_);
  pleaseStartTheFeedingForm_ = new QPlainTextEdit(Prescription_F106_);
  pleaseCheckInImmunizations_ = new QPlainTextEdit(Prescription_F106_);
- capturePatientImmunizations_ = new NRE_Combo_With_Label_Bar(Prescription_F106_);
- capturePatientImmunizations_->set_max_selectable(1);
+ capturePatientImmunizations_ = new NRE_Workspace_Launcher_Button(Prescription_F106_);
  pleaseCheckInMedications_ = new QPlainTextEdit(Prescription_F106_);
- activeMedications_ = new NRE_Combo_With_Label_Bar(Prescription_F106_);
- activeMedications_->set_max_selectable(1);
+ activeMedications_ = new NRE_Workspace_Launcher_Button(Prescription_F106_);
  prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_ = new QPlainTextEdit(Prescription_F106_);
- orderMedications_ = new NRE_Combo_With_Label_Bar(Prescription_F106_);
- orderMedications_->set_max_selectable(1);
+ orderMedications_ = new NRE_Workspace_Launcher_Button(Prescription_F106_);
 
  init();
  init_sf();
@@ -354,7 +351,7 @@ void NRE_Admission_Form::init()
   // // Section: Physical_exam -- init
  Physical_exam_F102_->add_vertical_item(L_pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_,
   pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_);
- Physical_exam_F102_->add_vertical_item(L_capturePatientVitals_,
+ Physical_exam_F102_->add_horizontal_item(L_capturePatientVitals_,
   capturePatientVitals_);
  whz_->add_item("< -3 Zs");
  whz_->add_item("[-3 ; -2 Zs[");
@@ -970,15 +967,15 @@ void NRE_Admission_Form::init()
   pleaseStartTheFeedingForm_);
  Prescription_F106_->add_vertical_item(L_pleaseCheckInImmunizations_,
   pleaseCheckInImmunizations_);
- Prescription_F106_->add_vertical_item(L_capturePatientImmunizations_,
+ Prescription_F106_->add_horizontal_item(L_capturePatientImmunizations_,
   capturePatientImmunizations_);
  Prescription_F106_->add_vertical_item(L_pleaseCheckInMedications_,
   pleaseCheckInMedications_);
- Prescription_F106_->add_vertical_item(L_activeMedications_,
+ Prescription_F106_->add_horizontal_item(L_activeMedications_,
   activeMedications_);
  Prescription_F106_->add_vertical_item(L_prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_,
   prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_);
- Prescription_F106_->add_vertical_item(L_orderMedications_,
+ Prescription_F106_->add_horizontal_item(L_orderMedications_,
   orderMedications_);
  Prescription_F106_->add_stretch();
  F_106_vbl_->addWidget(Prescription_F106_);

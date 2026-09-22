@@ -31,6 +31,7 @@ KANS_(AMPATH_Forms)
 class NRE_Accordion_List;
 class NRE_Combo_With_Label_Bar;
 class NRE_Radio_Button_Group_Box;
+class NRE_Workspace_Launcher_Button;
 
 class NRE_Admission_Form : public QMainWindow
 {
@@ -223,7 +224,7 @@ private:
  QString L_pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_;
  QPlainTextEdit* pleaseCheckInvitalsBiometricsFortemperaturerRateweightheightAndmuacAndAddTodaysMeasurements_;
  QString L_capturePatientVitals_;
- NRE_Combo_With_Label_Bar* capturePatientVitals_;
+ NRE_Workspace_Launcher_Button* capturePatientVitals_;
  QString L_whz_;
  NRE_Radio_Button_Group_Box* whz_;
  QString L_oedema_;
@@ -285,15 +286,15 @@ private:
  QString L_pleaseCheckInImmunizations_;
  QPlainTextEdit* pleaseCheckInImmunizations_;
  QString L_capturePatientImmunizations_;
- NRE_Combo_With_Label_Bar* capturePatientImmunizations_;
+ NRE_Workspace_Launcher_Button* capturePatientImmunizations_;
  QString L_pleaseCheckInMedications_;
  QPlainTextEdit* pleaseCheckInMedications_;
  QString L_activeMedications_;
- NRE_Combo_With_Label_Bar* activeMedications_;
+ NRE_Workspace_Launcher_Button* activeMedications_;
  QString L_prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_;
  QPlainTextEdit* prescribeNewExamsAndMedicationWithTheOrderBasketIfNecessary_;
  QString L_orderMedications_;
- NRE_Combo_With_Label_Bar* orderMedications_;
+ NRE_Workspace_Launcher_Button* orderMedications_;
 // //<-- methods
 // //--> labels
  void init_labels();
