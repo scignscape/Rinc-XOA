@@ -23,14 +23,18 @@ NRE_Workspace_Launcher_Button::NRE_Workspace_Launcher_Button(QWidget* parent)
  : NRE_Combo_With_Label_Bar(parent)
 {
  set_max_selectable(1);
- //add_item("Run");
+ scroll_area_->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
 }
 
 
-NRE_Workspace_Launcher_Button::NRE_Workspace_Launcher_Button(QString text, QWidget* parent)
+NRE_Workspace_Launcher_Button::NRE_Workspace_Launcher_Button(QString workspace_text, QString text,
+  QString first_item, QWidget* parent)
  : NRE_Combo_With_Label_Bar(text, parent)
 {
+ set_workspace_text(workspace_text);
  set_max_selectable(1);
- //add_item("Run");
+ scroll_area_->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+
+ add_item(first_item);
 }
 

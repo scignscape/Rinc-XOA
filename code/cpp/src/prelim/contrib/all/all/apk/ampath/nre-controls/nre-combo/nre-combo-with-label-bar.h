@@ -35,7 +35,6 @@ class NRE_Combo_With_Label_Bar : public QWidget
  QHBoxLayout* main_layout_;
 
  QComboBox* combo_box_;
- QScrollArea* scroll_area_;
  QFrame* scrolled_frame_;
  QHBoxLayout* left_layout_;
  QHBoxLayout* frame_layout_;
@@ -55,6 +54,9 @@ class NRE_Combo_With_Label_Bar : public QWidget
  void update_max_selectable();
 
  QString auto_top_option_;
+
+protected:
+ QScrollArea* scroll_area_;
 
 public:
 

@@ -156,10 +156,12 @@ void NRE_Form_Question::write_rendering(QString text)
   implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Combo_With_Label_Bar(###);";
   break;
  case Rendering_Types::WorkspaceLauncher:
-  v_or_h = "horizontal";
+  v_or_h = "vertical";
   header_acc("methods") << "\n NRE_Workspace_Launcher_Button* " << id_ << "_;";
-  implementation_acc("ctor") << "\n " << id_ << "_" << " = new NRE_Workspace_Launcher_Button(###);";
-  break;
+  implementation_acc("ctor") << "\n " << id_ << "_" <<
+    " = new NRE_Workspace_Launcher_Button(\"Running workspace: $name ...\", "
+    "\"Choose configuration ...\",\n L_" << id_ << "_ + \" (default)\", ###);";
+  break ;
 
 
  default:

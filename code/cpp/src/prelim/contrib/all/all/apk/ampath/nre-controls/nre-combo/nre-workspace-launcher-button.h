@@ -33,7 +33,8 @@ class NRE_Workspace_Launcher_Button : public NRE_Combo_With_Label_Bar
 public:
 
  NRE_Workspace_Launcher_Button(QWidget *parent = nullptr);
- NRE_Workspace_Launcher_Button(QString text, QWidget *parent = nullptr);
+ NRE_Workspace_Launcher_Button(QString workspace_text, QString text,
+   QString first_item, QWidget *parent = nullptr);
 
 };
 

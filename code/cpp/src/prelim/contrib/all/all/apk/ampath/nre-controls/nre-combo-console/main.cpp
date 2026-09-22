@@ -33,12 +33,8 @@ int main(int argc, char *argv[])
 {
  QApplication qapp(argc, argv);
 
- NRE_Workspace_Launcher_Button* wlb = new NRE_Workspace_Launcher_Button;
-
- wlb->set_workspace_text("Running workspace $name ... ");
-
- wlb->add_item("run");
-
+ NRE_Workspace_Launcher_Button* wlb =
+   new NRE_Workspace_Launcher_Button("Running workspace $name ... ", "Choose", "test");
 
  wlb->show();
 
