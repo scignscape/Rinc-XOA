@@ -43,3 +43,10 @@ NRE_Combo_Label_Item::NRE_Combo_Label_Item(QString text, QWidget* parent)
    &QToolButton::clicked, this, [this](){close_requested(this);});
 
 }
+
+void NRE_Combo_Label_Item::set_workspace_text(QString text)
+{
+ QString lt = label_->text();
+ text.replace("$name", lt);
+ label_->setText(text);
+}

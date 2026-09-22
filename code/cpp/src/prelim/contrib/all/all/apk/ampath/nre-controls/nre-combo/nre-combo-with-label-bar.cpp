@@ -123,6 +123,7 @@ NRE_Combo_Label_Item* NRE_Combo_With_Label_Bar::get_label_by_index(u2 index)
  if(it == label_map_.end())
  {
   NRE_Combo_Label_Item* result = new NRE_Combo_Label_Item(options_[index - 1], this);
+  result->set_workspace_text(workspace_text_);
   label_map_[index] = result;
   connect(result, &NRE_Combo_Label_Item::close_requested, this,
     &NRE_Combo_With_Label_Bar::handle_close_requested);

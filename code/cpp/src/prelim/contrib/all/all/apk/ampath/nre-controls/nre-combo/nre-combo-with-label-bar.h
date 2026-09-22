@@ -48,6 +48,8 @@ class NRE_Combo_With_Label_Bar : public QWidget
 
  QMap<u2, NRE_Combo_Label_Item*> label_map_;
 
+ QString workspace_text_;
+
  NRE_Combo_Label_Item* get_label_by_index(u2 index);
 
  void update_max_selectable();
@@ -60,7 +62,8 @@ public:
 
  NRE_Combo_With_Label_Bar(QString top_option, QWidget *parent = nullptr);
 
- ACCESSORS__SDECLARE(u2, max_selectable)
+ ACCESSORS__SDECLARE(u2 ,max_selectable)
+ ACCESSORS(QString ,workspace_text)
 
  void add_option(QString identifier, QString label);
  void add_item(QString identifier)

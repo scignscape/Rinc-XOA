@@ -17,6 +17,7 @@
 #include <QLineEdit>
 
 #include "nre-combo/nre-combo-with-label-bar.h"
+#include "nre-combo/nre-workspace-launcher-button.h"
 
 #include "kans.h"
 
@@ -29,6 +30,23 @@ USING_KANS(AMPATH_Forms)
 
 
 int main(int argc, char *argv[])
+{
+ QApplication qapp(argc, argv);
+
+ NRE_Workspace_Launcher_Button* wlb = new NRE_Workspace_Launcher_Button;
+
+ wlb->set_workspace_text("Running workspace $name ... ");
+
+ wlb->add_item("run");
+
+
+ wlb->show();
+
+ return qapp.exec();
+}
+
+
+int main1(int argc, char *argv[])
 {
  QApplication qapp(argc, argv);
 

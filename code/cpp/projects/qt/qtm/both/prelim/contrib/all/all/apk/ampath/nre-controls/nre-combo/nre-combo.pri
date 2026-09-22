@@ -38,11 +38,13 @@ DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 HEADERS += \
   $$SRC_DIR/nre-combo-label-item.h \
   $$SRC_DIR/nre-combo-with-label-bar.h \
+  $$SRC_DIR/nre-workspace-launcher-button.h \
 
 
 SOURCES += \
   $$SRC_DIR/nre-combo-label-item.cpp \
   $$SRC_DIR/nre-combo-with-label-bar.cpp \
+  $$SRC_DIR/nre-workspace-launcher-button.cpp \
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

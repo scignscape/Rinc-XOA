@@ -6,8 +6,8 @@
 
 
 
-#ifndef NRE_COMBO_LABEL_ITEM__H
-#define NRE_COMBO_LABEL_ITEM__H
+#ifndef NRE_WORKSPACE_LAUNCHER_BUTTON__H
+#define NRE_WORKSPACE_LAUNCHER_BUTTON__H
 
 
 #include <QWidget>
@@ -15,36 +15,26 @@
 #include <QLabel>
 #include <QToolButton>
 
+#include "nre-combo-with-label-bar.h"
+
 class QHBoxLayout;
 
-#include "accessors.h"
+
 
 #include "kans.h"
 
 KANS_(AMPATH_Forms)
 
 
-class NRE_Combo_Label_Item : public QWidget
+class NRE_Workspace_Launcher_Button : public NRE_Combo_With_Label_Bar
 {
  Q_OBJECT
 
- QString workspace_text_;
-
 public:
 
- NRE_Combo_Label_Item(QString text, QWidget *parent = nullptr);
+ NRE_Workspace_Launcher_Button(QWidget *parent = nullptr);
+ NRE_Workspace_Launcher_Button(QString text, QWidget *parent = nullptr);
 
- ACCESSORS__SDECLARE(QString ,workspace_text)
-
- QHBoxLayout* main_layout_;
- QToolButton* close_button_;
- QLabel* label_;
-
-Q_SIGNALS:
- void close_requested(NRE_Combo_Label_Item*);
-
-//private Q_SLOTS:
-// void handle_closed();
 };
 
 //} // namespace Qtilities
