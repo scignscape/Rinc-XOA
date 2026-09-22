@@ -28,11 +28,11 @@ NRE_Combo_With_Label_Bar::NRE_Combo_With_Label_Bar(QWidget *parent)
 NRE_Combo_With_Label_Bar::NRE_Combo_With_Label_Bar(QString top_option, QWidget* parent)
  : QWidget(parent), max_selectable_(0), selected_count_(0)
 {
- main_layout_ = new QHBoxLayout(this);
+ main_layout_ = new QHBoxLayout;
  main_layout_->setContentsMargins(0, 0, 0, 0);
  main_layout_->setSpacing(0);
 
- frame_layout_ = new QHBoxLayout(scrolled_frame_);
+ frame_layout_ = new QHBoxLayout;
  frame_layout_->setContentsMargins(0, 0, 0, 0);
  frame_layout_->setSpacing(0);
 
@@ -51,9 +51,14 @@ NRE_Combo_With_Label_Bar::NRE_Combo_With_Label_Bar(QString top_option, QWidget* 
  QObject::connect(combo_box_, static_cast<void (QComboBox::*)(int)>(&QComboBox::activated),
    this, &NRE_Combo_With_Label_Bar::handle_index_changed);
 
- frame_layout_->addWidget(combo_box_);
+// frame_layout_->addWidget(combo_box_);
 
-// scroll_area_ = new QScrollArea(this);
+ scroll_area_ = new QScrollArea(this);
+ scroll_area_->setWidgetResizable(true);
+ scroll_area_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+ scroll_area_->setMaximumHeight(50);
+
+
  scrolled_frame_ = new QFrame(this);
 
  left_layout_ = new QHBoxLayout;
@@ -63,20 +68,17 @@ NRE_Combo_With_Label_Bar::NRE_Combo_With_Label_Bar(QString top_option, QWidget* 
  frame_layout_->addLayout(left_layout_);
  frame_layout_->addStretch();
 
-// frame_layout_->addLayout(main_layout_);
+ scrolled_frame_->setLayout(frame_layout_);
 
+// frame_layout_->addLayout(main_layout_);
  scroll_area_->setWidget(scrolled_frame_);
 
- scroll_area_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
- scroll_area_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
 
-// main_layout_->addWidget(scroll_area_);
+ main_layout_->addWidget(combo_box_);
+ main_layout_->addWidget(scroll_area_);
 
- main_layout_->addWidget(scrolled_frame_);
+//? main_layout_->addWidget(scrolled_frame_);
  setLayout(main_layout_);
-
-// scrolled_frame_->show();
-
 
 }
 
@@ -156,6 +158,7 @@ void NRE_Combo_With_Label_Bar::handle_index_changed(int ix)
 
   left_layout_->addWidget(cli);
   cli->show();
+
  }
 
 }

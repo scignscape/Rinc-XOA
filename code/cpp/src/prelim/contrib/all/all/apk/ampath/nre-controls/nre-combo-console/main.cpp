@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
  combo->add_option("Opt 5", "test opt 5");
  combo->add_option("Opt 6", "test opt 6");
 
- combo->set_max_selectable(1);
+ combo->set_max_selectable(4);
  combo->show();
 
  return qapp.exec();
