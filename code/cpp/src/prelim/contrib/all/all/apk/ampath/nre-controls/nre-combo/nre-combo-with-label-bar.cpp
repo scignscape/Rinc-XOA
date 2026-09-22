@@ -86,6 +86,8 @@ void NRE_Combo_With_Label_Bar::update_max_selectable()
 {
  if(max_selectable_ == 1)
  {
+  scroll_area_->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+
   if(auto_top_option_ == ";")
     combo_box_->setItemText(0, "Choose one ...");
   else

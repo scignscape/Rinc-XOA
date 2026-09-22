@@ -48,6 +48,8 @@ void NRE_Form_Page::write_frame(u2 count)
    << "_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);\n ";
  implementation_acc("ctor") << "\n S_" << count
    << "_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);\n ";
+ implementation_acc("ctor") << "\n S_" << count
+   << "_->setWidgetResizable(true);\n ";
 
  implementation_acc("sf") << "\n S_" << count
    << "_->setWidget(F_" << count << "_);";
