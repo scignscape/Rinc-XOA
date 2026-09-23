@@ -7,7 +7,7 @@ that's detailed in this repository's `RedPatch` branch or [skip ahead](#red-patc
 For a description of several projects that employed some of the code published here, 
 including a list of open-access articles and book chapters, scroll down or [skip ahead](#sample-documents-raised).
 
-Many of these components are built around a new Virtual Machine generator called "`Qynviper`"; for details on that, scroll down or [skip ahead](#qynviper).
+Many of these components are built around a new Virtual Machine generator called "Qynviper"; for details on that, scroll down or [skip ahead](#qynviper).
 
 
 ---
@@ -28,19 +28,19 @@ For the current repository and siblings, Executable Open Access (`XOA`) designat
 
 ### Qynviper Modules
 
-A `Qynviper` `VM` -- "query/native interop compiler" -- can be implemented via code published in `RedPatch`.  The idea 
-behind Qynviper is that opcodes delegate to methods in `C++` classes (or potentially those of other languages).  Each such class is called a "module".  By selecting a group of modules, individual `VM` can target capabilities to their use-cases.  For example, a `VM` may be engineered as a compilation target for imperative/procedure scripting languages -- with support for lexical scopes, variables, function calls, and so forth -- but in other use-cases like object deserialization, `VM` blocks are generated from `XML` or `JSON` sources which are declarative rather than imperative.  For instance, a conventional `C++` `SAX` parser responds immediately to `XML` parsing events, thereby conflating `DTD` and handler logic, whereas a `VM` can partition the problem into two almost entirely separate domains (generating `VM` instruction sequences versus implementing opcode handlers).  The `Qynviper` components make heavy use of preprocessor macros, and in general it takes just a few minutes to rig up `C++` classes as modules once the actual opcode methods are implemented.
+A Qynviper VM -- "query/native interop compiler" -- can be implemented via code published in `RedPatch`.  The idea 
+behind Qynviper is that opcodes delegate to methods in `C++` classes (or potentially those of other languages).  Each such class is called a "module".  By selecting a group of modules, individual VMs can target capabilities to their use-cases.  For example, a VM may be engineered as a compilation target for imperative/procedure scripting languages -- with support for lexical scopes, variables, function calls, and so forth -- but in other use-cases like object deserialization, VM blocks are generated from `XML` or `JSON` sources which are declarative rather than imperative.  For instance, a conventional `C++` `SAX` parser responds immediately to `XML` parsing events, thereby conflating `DTD` and handler logic, whereas a VM can partition the problem into two almost entirely separate domains (generating VM instruction sequences versus implementing opcode handlers).  The Qynviper components make heavy use of preprocessor macros, and in general it takes just a few minutes to rig up `C++` classes as modules once the actual opcode methods are implemented.
 
 The `RedPatch` sources (outlined next) are built 
 around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications -- see the sample "Ordering Concepual Synthesis" paper linked below, or 
-[here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as `RO-Crate` and `TAGML` (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from `XML` or `JSON`) but rather `Qynviper` code used at different points in a publishing workflow.
+[here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as `RO-Crate` and `TAGML` (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from `XML` or `JSON`) but rather Qynviper code used at different points in a publishing workflow.
 
-In addition to document preparation, `RedPatch` illustrates other `VM` examples for use-cases such as object deserialization.  For instance, one `Qynviper` module is built around `AMPATH` -- the "Academic Model Providing Access To Healthcare" -- which sponsors Electronic Health Record software used by NGOs such as Doctors Without Borders.  Although eventually rendered as `HTML` (via `ReactJS`) these records are intrinsically defined as `JSON` configuration files, which opens the possibility for generating multiple front-end views.  The `RedPatch` branch shows an example where `AMPATH` forms are translated to `C++` `Qt` classesand compiled as ordinary desktop libraries (or standalone applications).  Such a "native rendering engine" is potentially useful in providing an `EHR` framework which does not depend on `HTTP` servers and client/server networking, and it also shows how `AMPATH` annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of `C++` `GUI` components.  The role of `Qynviper` here is one of generating `C++` code: `AMPATH` configuration files are first parsed into `VM` scripts which are separately executed to create the final `GUI` code.
+In addition to document preparation, `RedPatch` illustrates other VM examples for use-cases such as object deserialization.  For instance, one Qynviper module is built around `AMPATH` -- the "Academic Model Providing Access To Healthcare" -- which sponsors Electronic Health Record software used by NGOs such as Doctors Without Borders.  Although eventually rendered as `HTML` (via `ReactJS`) these records are intrinsically defined as `JSON` configuration files, which opens the possibility for generating multiple front-end views.  The `RedPatch` branch shows an example where `AMPATH` forms are translated to `C++` `Qt` classesand compiled as ordinary desktop libraries (or standalone applications).  Such a "native rendering engine" is potentially useful in providing an `EHR` framework which does not depend on `HTTP` servers and client/server networking, and it also shows how `AMPATH` annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of `C++` `GUI` components.  The role of Qynviper here is one of generating `C++` code: `AMPATH` configuration files are first parsed into VM scripts which are separately executed to create the final `GUI` code.
 
 Another similar example, based on `XML` rather than `JSON`, provides an extension to the widely-used `DCMTK` library for working with `DICOM` (Digital Imaging and Communications in Medicine) series.  This library offers multiple utilities for converting `DICOM` files to other image and data formats (`XML`, `HTML`, `JPEG` and so forth) but currently lacks support for other diagnostic-imaging formats, such as `MI-CDM` (Medical Imaging Common Data Model), 
-part of the `OMOP-CDM` (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map `DSR` (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as `RO-Crate`.  For these use-cases, `RedPatch` provides a `Qynviper` `VM` whose purpose is to parse `dcm2xml` and `dsr2xml` output and dispatch calls to code-generators for formats not currently supported by `DCMTK`.
+part of the `OMOP-CDM` (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map `DSR` (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as `RO-Crate`.  For these use-cases, `RedPatch` provides a Qynviper VM whose purpose is to parse `dcm2xml` and `dsr2xml` output and dispatch calls to code-generators for formats not currently supported by `DCMTK`.
 
-As a mostly self-contained platform, `Qynviper` VMs can readily be embedded in host applications, such as `3DSlicer` (the preeminent research tool for medical imaging and `DICOM` series).
+As a mostly self-contained platform, Qynviper VMs can readily be embedded in host applications, such as `3DSlicer` (the preeminent research tool for medical imaging and `DICOM` series).
 
 ---
 
@@ -270,12 +270,12 @@ code in a sort of Virtual Machine:
 ```
 
 With very few changes (maybe the last line becomes some sort of `call` instruction instead) this might be 
-almost identical to `VM` instructions for an `FFI`-style call intead.
+almost identical to VM instructions for an `FFI`-style call intead.
 
 The point is that a standardized type-metadata format could be used simultaneously both to 
 feed information to Language Servers and to enable Script Hosting (and, by 
 extension, query evaluation).  That's the rationale behind `DogLeash` as a Language Server 
-*and* Script Host (the "leash") and the basis for the `DogLeash` "`Qynviper`" 
+*and* Script Host (the "leash") and the basis for the `DogLeash` "Qynviper" 
 (Query-Native Interop for Executable Research) protocol, implemented via the `DogLeash` 
 `Qynviper-ChasmVM` module.
 
