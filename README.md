@@ -120,7 +120,7 @@ arguments are (at first) encoded in generic containers such as `QVariant` or `QS
 (assuming we are working in a `Qt` environment).  We need to convert these to local 
 variables that get passed on the stack (or alter the stack some other way -- `AngelScript` actually 
 employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
-types ahead of time.  There is a workaround, however -- even without heave introspection and 
+types ahead of time.  There is a workaround, however -- even without heavy introspection and 
 dependencies such as `LLVM` -- which can be illustrated with code adopted from 
 `rpclib` ([github.com/rpclib/rpclib](https://github.com/rpclib/rpclib)):
 
@@ -178,10 +178,10 @@ void call_440(fn_type fn, QStringList args)
 }
 ```
 
-A slew of wrappers in the form call_XXuaX could be produced via code generators, and dispatchers 
+A slew of wrappers in the form call_XXX could be produced via code generators, and dispatchers 
 selected via a string of `switch` statements: one for the arg count, next for the arg1 type 
 (e.g., 1, 2, 4, or 8), next the arg2 type, etc.  Those `switch`es would work off of digits in 
-the signture "code" (like 440) so that registering even a `.so` runtime procedure 
+the signture "code" (like 440) so that registering even an `.so` runtime procedure 
 would take only a single numeric code (which is simpler than how registering works 
 in `ECL` or `AngelScript`).
 
@@ -205,7 +205,9 @@ there are only six, plus `switch` cases for the types involved.
 By "types" here I mean any collection of binary-compatible types: we can cast a function-pointer 
 to a generic signature based on unsigned integers, for example.  The actual procedures 
 might take signed integers instead, or `enum` values, but can be correctly called via 
-that partially-type-erased pointer instead.
+that partially-type-erased pointer instead.  In any case, `RedPatch` has 
+sample code representing dispatch-tables sufficient for most signatures one might 
+need to expose from a library.
 
 **_Language Server Protocol_**
 
@@ -216,7 +218,7 @@ offering hints, information on data types and function signatures, code completi
 suggestion, etc.  For example, `Clangd` is the preeminent Language Server 
 for `C++`.
 
-The `LSP` is flexible, and a variety of different software components 
+The `LSP` model is flexible, and a variety of different software components 
 can be useful Language Servers.  It is not necessary to fully parse 
 source files, as `Clangd` does; depending on the language and the server 
 it may be possible to build more limited views onto source code 
@@ -227,8 +229,7 @@ language.  For example, biomedical source code that recognizes
 Open Concept Lab and similar standard terminologies can serve 
 information about procedures, object, and types map to concept 
 identifiers.  Instead of reading this information from source code 
-directly they could rely on metadata files instead (the 
-`dcm2lsp` utility in `RedPatch` is a concrete example).
+directly they could rely on metadata files instead.
 
 In short, a domain-specific Language Server can be built via 
 metadata files that accompany source code and provide information 
