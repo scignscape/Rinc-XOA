@@ -1,5 +1,3 @@
 
 
-/home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/ar/code/cpp/src/prelim/contrib/all/all/xk/external/dcmtk/dcmqrdb/apps
-/home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/ar/code/cpp/src/prelim/contrib/all/all/xk/external/dcmtk/dcmtls/apps
 /home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/ar/code/cpp/src/prelim/contrib/all/all/xk/external/dcmtk/dcmimgle/apps

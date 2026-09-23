@@ -23,6 +23,7 @@ INCLUDEPATH += $$DCMTKDIR/dcmdata/include
 
 INCLUDEPATH += $$DCMTKDIR/dcmnet/include
 INCLUDEPATH += $$DCMTKDIR/dcmwlm/include
+INCLUDEPATH += $$DCMTKDIR/dcmpstat/include
 
 
 DEFINES += CAON_DEBUG
@@ -38,6 +39,11 @@ HEADERS += \
 SOURCES += \
   $$SRC_DIR/dcmpsmk.cc \
 
+
+
+LIBS += -L$$TARGETSDIR -loflog -lofstd -ldcmdata \
+  -ldcmpstat -ldcmqrdb \
+  -ldcmsign -ldcmnet  -ldcmtls  -ldcmsr -ldcmimgle  -ldcmimage 
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
