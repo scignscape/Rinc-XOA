@@ -276,9 +276,8 @@ almost identical to VM instructions for an `FFI`-style call intead.
 The point is that a standardized type-metadata format could be used simultaneously both to 
 feed information to Language Servers and to enable Script Hosting (and, by 
 extension, query evaluation).  That's the rationale behind `DogLeash` as a Language Server 
-*and* Script Host (the "leash") and the basis for the `DogLeash` "Qynviper" 
-(Query-Native Interop for Executable Research) protocol, implemented via the `DogLeash` 
-`Qynviper-ChasmVM` module.
+*and* Script Host (the "leash") and the basis for the `Qynviper` 
+modules mentioned above.
 
 <a id="sample-documents-raised"></a>
 
