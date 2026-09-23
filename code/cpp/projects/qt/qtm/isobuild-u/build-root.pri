@@ -22,7 +22,6 @@ defined(QMAKE_CONSOLE_TARGET_DIR, var){
 }
 
 defined(QMAKE_UNIBUILD, var) {
- message($$PROJECT_NAME - Using UNIBUILD)
  BUILD_DIR_CODE = unibuild
 }
 

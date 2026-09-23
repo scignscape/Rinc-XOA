@@ -32,7 +32,12 @@ SUBDIRS = \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmtk/dcmtls \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmtk/dcmtract \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmtk/dcmwlm \
-  ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/cda2dcm \
+
+
+# deprecated?
+#   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/cda2dcm \
+
+SUBDIRS += \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcm2json \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcm2pdf \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcm2pnm \
@@ -59,6 +64,7 @@ SUBDIRS = \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmprscp \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmprscu \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmpschk \
+  ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmpsmk \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmpsprt \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmpsrcv \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmpssnd \
@@ -69,7 +75,7 @@ SUBDIRS = \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmrecv \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmscale \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmsend \
-  ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmsign \
+  ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcmsign-app \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dcod2lum \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/dconvlum \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/drtdump \
@@ -90,6 +96,9 @@ SUBDIRS = \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/wlmscpfs \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/xml2dcm \
   ../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/xml2dsr \
+
+
+#../../../../../../../isobuild-u/prelim/contrib/all/all/xk/external/dcmapps/wlcefs \
 
 
 

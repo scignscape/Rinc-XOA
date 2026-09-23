@@ -75,7 +75,6 @@ HEADERS += \
   $$SRC_DIR/include/dcmtk/dcmimage/diyp2pxt.h \ 
 
 SOURCES += \
-  $$SRC_DIR/libsrc/dcmicmph.cc \ 
   $$SRC_DIR/libsrc/diargimg.cc \ 
   $$SRC_DIR/libsrc/dicmyimg.cc \ 
   $$SRC_DIR/libsrc/dicoimg.cc \ 

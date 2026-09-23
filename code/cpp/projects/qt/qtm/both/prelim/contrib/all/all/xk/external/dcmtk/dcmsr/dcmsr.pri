@@ -2,7 +2,7 @@
 #           Copyright Nathaniel Christen 2019.
 #  Distributed under the Boost Software License, Version 1.0.
 #     (See accompanying file LICENSE_1_0.txt or copy at
-#           http://www.boost.org/LICENSE_1_0.txt)
+#           http:/www.boost.org/LICENSE_1_0.txt)
 
 include(../build-group.pri)
 
@@ -112,8 +112,6 @@ HEADERS += \
   $$SRC_DIR/include/dcmtk/dcmsr/dsrmamcc.h \
   $$SRC_DIR/include/dcmtk/dcmsr/dsrnumtn.h \
   $$SRC_DIR/include/dcmtk/dcmsr/dsrnumvl.h \
-  $$SRC_DIR/include/dcmtk/dcmsr/dsrpficc.h \
-  $$SRC_DIR/include/dcmtk/dcmsr/dsrplicc.h \
   $$SRC_DIR/include/dcmtk/dcmsr/dsrpnmtn.h \
   $$SRC_DIR/include/dcmtk/dcmsr/dsrposcn.h \
   $$SRC_DIR/include/dcmtk/dcmsr/dsrprdcc.h \
@@ -193,8 +191,6 @@ SOURCES += \
   $$SRC_DIR/libsrc/dsrmamcc.cc \
   $$SRC_DIR/libsrc/dsrnumtn.cc \
   $$SRC_DIR/libsrc/dsrnumvl.cc \
-  $$SRC_DIR/libsrc/dsrpficc.cc \
-  $$SRC_DIR/libsrc/dsrplicc.cc \
   $$SRC_DIR/libsrc/dsrpnmtn.cc \
   $$SRC_DIR/libsrc/dsrposcn.cc \
   $$SRC_DIR/libsrc/dsrprdcc.cc \
@@ -202,7 +198,6 @@ SOURCES += \
   $$SRC_DIR/libsrc/dsrrefin.cc \
   $$SRC_DIR/libsrc/dsrreftn.cc \
   $$SRC_DIR/libsrc/dsrrrdcc.cc \
-  $$SRC_DIR/libsrc/dsrrsdcc.cc \
   $$SRC_DIR/libsrc/dsrrtpl.cc \
   $$SRC_DIR/libsrc/dsrsaecc.cc \
   $$SRC_DIR/libsrc/dsrsc3gr.cc \
@@ -232,6 +227,50 @@ SOURCES += \
   $$SRC_DIR/libsrc/dsrxmlc.cc \
   $$SRC_DIR/libsrc/dsrxmld.cc \
   $$SRC_DIR/libsrc/dsrxrdcc.cc \
+
+
+SOURCES += \
+  $$SRC_DIR/libcmr/cid11.cc
+  $$SRC_DIR/libcmr/cid29.cc
+  $$SRC_DIR/libcmr/cid29e.cc
+  $$SRC_DIR/libcmr/cid42.cc
+  $$SRC_DIR/libcmr/cid100.cc
+  $$SRC_DIR/libcmr/cid244.cc
+  $$SRC_DIR/libcmr/cid244e.cc
+  $$SRC_DIR/libcmr/cid4020.cc
+  $$SRC_DIR/libcmr/cid4021.cc
+  $$SRC_DIR/libcmr/cid4031.cc
+  $$SRC_DIR/libcmr/cid4031e.cc
+  $$SRC_DIR/libcmr/cid5000.cc
+  $$SRC_DIR/libcmr/cid5001.cc
+  $$SRC_DIR/libcmr/cid6147.cc
+  $$SRC_DIR/libcmr/cid7021.cc
+  $$SRC_DIR/libcmr/cid7181.cc
+  $$SRC_DIR/libcmr/cid7445.cc
+  $$SRC_DIR/libcmr/cid7452.cc
+  $$SRC_DIR/libcmr/cid7453.cc
+  $$SRC_DIR/libcmr/cid7464.cc
+  $$SRC_DIR/libcmr/cid7469.cc
+  $$SRC_DIR/libcmr/cid10013.cc
+  $$SRC_DIR/libcmr/cid10013e.cc
+  $$SRC_DIR/libcmr/cid10033.cc
+  $$SRC_DIR/libcmr/cid10033e.cc
+  $$SRC_DIR/libcmr/CMakeLists.txt
+  $$SRC_DIR/libcmr/init.cc
+  $$SRC_DIR/libcmr/logger.cc
+  $$SRC_DIR/libcmr/Makefile.dep
+  $$SRC_DIR/libcmr/Makefile.in
+  $$SRC_DIR/libcmr/srnumvl.cc
+  $$SRC_DIR/libcmr/tid15def.cc
+  $$SRC_DIR/libcmr/tid300.cc
+  $$SRC_DIR/libcmr/tid1001.cc
+  $$SRC_DIR/libcmr/tid1204.cc
+  $$SRC_DIR/libcmr/tid1411.cc
+  $$SRC_DIR/libcmr/tid1419m.cc
+  $$SRC_DIR/libcmr/tid1500.cc
+  $$SRC_DIR/libcmr/tid1501.cc
+  $$SRC_DIR/libcmr/tid1600.cc
+  $$SRC_DIR/libcmr/tid4019.cc
 
 
 #LIBS += -L$$TARGETSDIR

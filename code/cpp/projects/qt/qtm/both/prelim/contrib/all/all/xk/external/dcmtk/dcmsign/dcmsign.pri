@@ -29,39 +29,32 @@ CONFIG += no_keywords
 
 
 HEADERS += \
-  $$SRC_DIR/include/dcmtk/dcmsign/dcsighlp.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/dcsignat.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sialgo.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/siautopr.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sibrsapr.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sicert.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sicertvf.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sicreapr.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sidefine.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sidsa.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/siecdsa.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/simac.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/simaccon.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/simd5.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sinullpr.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/siprivat.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sipurpos.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/siripemd.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sirsa.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisha1.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisha256.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisha384.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisha512.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisprof.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisrpr.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sisrvpr.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sitsfs.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sitstamp.h \
-  $$SRC_DIR/include/dcmtk/dcmsign/sitypes.h \
+  $$SRC_DIR/include/dcmtk/dcmsign/dcsignat.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sialgo.h
+  $$SRC_DIR/include/dcmtk/dcmsign/siautopr.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sibrsapr.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sicert.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sicertvf.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sicreapr.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sidefine.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sidsa.h
+  $$SRC_DIR/include/dcmtk/dcmsign/simac.h
+  $$SRC_DIR/include/dcmtk/dcmsign/simaccon.h
+  $$SRC_DIR/include/dcmtk/dcmsign/simd5.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sinullpr.h
+  $$SRC_DIR/include/dcmtk/dcmsign/siprivat.h
+  $$SRC_DIR/include/dcmtk/dcmsign/siripemd.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sirsa.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sisha1.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sisha256.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sisha384.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sisha512.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sisprof.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sitstamp.h
+  $$SRC_DIR/include/dcmtk/dcmsign/sitypes.h
 
 
 SOURCES += \
-  $$SRC_DIR/libsrc/dcsighlp.cc \
   $$SRC_DIR/libsrc/dcsignat.cc \
   $$SRC_DIR/libsrc/siautopr.cc \
   $$SRC_DIR/libsrc/sibrsapr.cc \
@@ -69,12 +62,10 @@ SOURCES += \
   $$SRC_DIR/libsrc/sicertvf.cc \
   $$SRC_DIR/libsrc/sicreapr.cc \
   $$SRC_DIR/libsrc/sidsa.cc \
-  $$SRC_DIR/libsrc/siecdsa.cc \
   $$SRC_DIR/libsrc/simaccon.cc \
   $$SRC_DIR/libsrc/simd5.cc \
   $$SRC_DIR/libsrc/sinullpr.cc \
   $$SRC_DIR/libsrc/siprivat.cc \
-  $$SRC_DIR/libsrc/sipurpos.cc \
   $$SRC_DIR/libsrc/siripemd.cc \
   $$SRC_DIR/libsrc/sirsa.cc \
   $$SRC_DIR/libsrc/sisha1.cc \
@@ -82,10 +73,6 @@ SOURCES += \
   $$SRC_DIR/libsrc/sisha384.cc \
   $$SRC_DIR/libsrc/sisha512.cc \
   $$SRC_DIR/libsrc/sisprof.cc \
-  $$SRC_DIR/libsrc/sisrpr.cc \
-  $$SRC_DIR/libsrc/sisrvpr.cc \
-  $$SRC_DIR/libsrc/sitsfs.cc \
-  $$SRC_DIR/libsrc/sitstamp.cc \
   $$SRC_DIR/libsrc/sitypes.cc \
 
 
