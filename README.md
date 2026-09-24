@@ -433,7 +433,7 @@ $\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\co
 data set, which publishes data files identifying reported 
 contamination incidents by geographic coordinates, and 
 has been studied for publications such as the New York City &ldquo;Environmental Justice&rdquo; 
-$\color{black}\textbf{(}\color{#a65450}\mathrm{EJNYC}\color{black}{\textbf{)}$
+$\color{black}\textbf{(}\color{#a65450}\mathrm{EJNYC}\color{black}\textbf{)}$
 report and mapping tool.  My goal was to examine how 
 data sets such as $\color{#a65450}\mathrm{TRI}$, along with environmental-impact 
 data presented by states or private organizations, could be cross-referenced 

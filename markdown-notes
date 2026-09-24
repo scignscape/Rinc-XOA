@@ -9,7 +9,7 @@ acronym text -- mixed caps, parens:
 $\color{black}\textbf{(}\color{#a65450}\mathrm{\large{} ... }\color{black}{\textbf{)}$
 
 acronym text -- all caps, parens: 
-$\color{black}\textbf{(}\color{#a65450}\mathrm{ ... }\color{black}{\textbf{)}$
+$\color{black}\textbf{(}\color{#a65450}\mathrm{ ... }\color{black}\textbf{)}$
 
 
 acronym text -- all caps, parens, plural: 
