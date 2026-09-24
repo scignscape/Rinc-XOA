@@ -82,7 +82,8 @@ $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in h
 ### Community Health Research Platform
 
 
-I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, $\color{#a65450}\mathrm{CSV/XML/JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
+I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, 
+$\color{#a65450}\mathrm{CSV}\color{black}/\color{#a65450}\mathrm{XML}\color{black}/\color{#a65450}\mathrm{JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
 
 Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose &ldquo;research&rdquo; forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
 
@@ -483,15 +484,15 @@ pbulisher's desired metadata format.
 I wrote the text for a book called _Innovative Data Integration and Conceptual 
 Space Modeling for COVID, Cancer, and Cardiac Care_ (Elsevier, 
 2022).  This book included a detailed examination of certain 
-software components — such as the Cancer Phenomics Toolkit $\text{(}\color{#a65450}\mathrm{CapTk}\text{)}$, 
-$\color{#a65450}\mathrm{CORD\text{-}19}$ molecular visualization software, $\color{#a65450}\mathrm{cytolib}$ for flow cytometry, 
+software components &mdash; such as the Cancer Phenomics Toolkit $\text{(}\color{#a65450}\mathrm{CapTk}\text{)}$, 
+$\color{#a65450}\mathrm{IQmol}$ molecular visualization software, $\color{#a65450}\mathrm{cytolib}$ for flow cytometry, 
 $\color{#a65450}\mathrm{medInria}$ and $\color{#a65450}\mathrm{Semantic PACS}$ (Picture Archiving and Communication System), 
-and the Cancer Bioinformatics Grid $\text{(}\color{#a65450}\mathrm{caBig}\text{)}$ Image Annotation Toolkit — 
+and the Cancer Bioinformatics Grid $\text{(}\color{#a65450}\mathrm{caBig}\text{)}$ Image Annotation Toolkit &mdash; 
 bioinformatics file formats (and their deserialization/analytic libaries), 
 and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$'s &ldquo;Digital Model Repository&rdquo; 
 and the $\color{#a65450}\mathrm{CORD\text{-}19}$ archive for Covid research).  $\color{#a65450}\mathrm{CORD\text{-}19}$ (the 
-COVID-19 Open Research Dataset) grew to encompass over 400,000 open-access 
-articles focusing on SARS-COV-2 and related topics (including the original 
+$\color{#a65450}\mathrm{COVID\text{-}19}$ Open Research Dataset) grew to encompass over 400,000 open-access 
+articles focusing on $\color{#a65450}\mathrm{SARS\text{-}COV\text{-}2}$ and related topics (including the original 
 SARS epidemic and Coronavirus biology in general) with freely-available 
 full-text encoding.  The goal of $\color{#a65450}\mathrm{CORD\text{-}19}$ was to help scientists in 
 different areas addressing the pandemic (viral morphology, infectious 
