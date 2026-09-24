@@ -16,7 +16,7 @@ $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scr
 
 In publishing, Diamond $\color{black}\textbf{(}\color{#a65450}\mathrm{DiamondOA}\color{black}\textbf{)}$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textbf{)}$
-) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by "Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
+) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by &ldquo;Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
 
 Meanwhile, Executable Research Objects
 $\color{black}\textbf{(}\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}\textbf{)}$
@@ -25,7 +25,7 @@ are one form of Research Object/data set guided by data transparency and $\color
 For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most $\color{#a65450}\mathrm{FAIR}$-sharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
-or Dryad &mdash; often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless,
+or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge".  Nonetheless,
 $\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles &mdash; both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$) formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
@@ -34,7 +34,7 @@ $\color{#a65450}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/over
 
 $\color{#a65450}\mathrm{Rinc}\text{-}\mathrm{XOA}$ (this repository) has a sibling repo called
 $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
-(Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc}\text{-}\mathrm{XOA}$ project can include any modules relevant to its topic.
+(Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{DogLeash}$ provides several &ldquo;modules&rdquo; for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc}\text{-}\mathrm{XOA}$ project can include any modules relevant to its topic.
 
 ---
 
@@ -42,8 +42,8 @@ $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 
 ### Qynviper Modules
 
-A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ &mdash; "query/native interop compiler" &mdash; can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
-behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a "module".  By selecting a group of modules, individual
+A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ &mdash; &ldquo;query/native interop compiler&rdquo; &mdash; can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
+behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a &ldquo;module".  By selecting a group of modules, individual
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}\textbf{)}$
 can target capabilities to their use-cases.  For example, a
 $\color{#a65450}\mathrm{VM}$ may be engineered as a compilation target for imperative/procedure scripting languages &mdash; with support for lexical scopes, variables, function calls, and so forth &mdash; but in other use-cases &mdash; e.g., object deserialization &mdash; $\color{#a65450}\mathrm{VM}$ blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a
@@ -52,17 +52,17 @@ $\color{#a65450}\mathrm{VM}$ instruction sequences versus implementing opcode ha
 $\color{#a65450}\mathrm{Qynviper}$ components make heavy use of preprocessor macros, and in general it takes just a few minutes to rig up $\color{#a65450}\text{C}\large{}\text{++}$ classes as modules once the actual opcode methods are implemented.
 
 The $\color{#a65450}\mathrm{RedPatch}$ sources (outlined next) are built 
-around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications &mdash; see the sample "Ordering Concepual Synthesis" paper linked below, or 
+around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications &mdash; see the sample &ldquo;Ordering Concepual Synthesis&rdquo; paper linked below, or 
 [here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}\text{)}$ but rather
 $\color{#a65450}\mathrm{Qynviper}$ code used at different points in a publishing workflow.
 
 **_AMPATH Forms_**
 
 In addition to document preparation, $\color{#a65450}\mathrm{RedPatch}$ illustrates other VM examples for use-cases such as object deserialization.  For instance, one
-$\color{#a65450}\mathrm{Qynviper}$ module is built around $\color{#a65450}\mathrm{AMPATH}$ &mdash; the "Academic Model Providing Access To Healthcare" &mdash; which sponsors Electronic Health Record software used by
+$\color{#a65450}\mathrm{Qynviper}$ module is built around $\color{#a65450}\mathrm{AMPATH}$ &mdash; the &ldquo;Academic Model Providing Access To Healthcare&rdquo; &mdash; which sponsors Electronic Health Record software used by
 $\color{#a65450}\mathrm{NGO}\color{black}\textsf{s}$
 such as Doctors Without Borders.  Although eventually rendered as $\color{#a65450}\mathrm{HTML}$ (via $\color{#a65450}\mathrm{ReactJS}\text{)}$ these records are intrinsically defined as $\color{#a65450}\mathrm{JSON}$ configuration files, which opens the possibility for generating alternative front-end viewers.  The $\color{#a65450}\mathrm{RedPatch}$ branch shows an example where $\color{#a65450}\mathrm{AMPATH}$ forms are translated to 
-$\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a "native rendering engine" is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role for
+$\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a &ldquo;native rendering engine&rdquo; is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role for
 $\color{#a65450}\mathrm{Qynviper}$ here is to generate $\color{#a65450}\text{C}\large{}\text{++}$ code: $\color{#a65450}\mathrm{AMPATH}$ configuration files are first parsed into 
 $\color{#a65450}\mathrm{VM}$
 scripts which are separately executed to create the final $\color{#a65450}\mathrm{GUI}$ code.
@@ -70,7 +70,7 @@ scripts which are separately executed to create the final $\color{#a65450}\mathr
 **_DCMTK_**
 
 Another similar example, based on $\color{#a65450}\mathrm{XML}$ rather than $\color{#a65450}\mathrm{JSON}$, provides an extension to the widely-used $\color{#a65450}\mathrm{DCMTK}$ library for working with $\color{#a65450}\mathrm{DICOM}$ (Digital Imaging and Communications in Medicine) series.  This library offers multiple utilities for converting $\color{#a65450}\mathrm{DICOM}$ files to other image and data formats $\text{(}\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{HTML}$, $\color{#a65450}\mathrm{JPEG}$ and so forth) but currently lacks support for other diagnostic-imaging formats, such as $\color{#a65450}\mathrm{MI-CDM}$ (Medical Imaging Common Data Model), 
-part of the $\color{#a65450}\mathrm{OMOP}\text{-}\mathrm{CDM}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#a65450}\mathrm{DSR}$ (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$.  For these use-cases, $\color{#a65450}\mathrm{RedPatch}$ provides a $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ whose purpose is to parse $\color{#a65450}\mathrm{dcm2xml}$ and $\color{#a65450}\mathrm{dsr2xml}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#a65450}\mathrm{DCMTK}$.
+part of the $\color{#a65450}\mathrm{OMOP}\text{-}\mathrm{CDM}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#a65450}\mathrm{DSR}$ (Structured Reporting) observations, annotations, and &ldquo;key&rdquo; images onto common Open Science formats such as $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$.  For these use-cases, $\color{#a65450}\mathrm{RedPatch}$ provides a $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ whose purpose is to parse $\color{#a65450}\mathrm{dcm2xml}$ and $\color{#a65450}\mathrm{dsr2xml}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#a65450}\mathrm{DCMTK}$.
 
 As a mostly self-contained platform, $\color{#a65450}\mathrm{Qynviper}$
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in host applications, such as $\color{#a65450}\mathrm{3DSlicer}$ (the preeminent research tool for medical imaging and $\color{#a65450}\mathrm{DICOM}$ series).
@@ -82,9 +82,9 @@ $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in h
 ### Community Health Research Platform
 
 
-I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object "microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, $\color{#a65450}\mathrm{CSV/XML/JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
+I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, $\color{#a65450}\mathrm{CSV/XML/JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
 
-Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose "research" forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
+Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose &ldquo;research&rdquo; forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
 
 For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
 
@@ -96,15 +96,15 @@ Supporting research in nonprofit contexts presents several distinct paradigms as
 
 Insofar as publications are deployed with the same licences as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
 
-**_The "Diamond" Publishing Model_**
+**_The &ldquo;Diamond&rdquo; Publishing Model_**
 
 In contemporary academic publishing, the basic unit for sharing experience and ideas often is not a single manuscript, but rather a collection of files packaging variegated content-types, including $\color{#a65450}\mathrm{PDF}$ files for viewing documents, but also machine-readable text encoding, computer code, raw data, and statistical/graphics summaries.  These packages typically adhere to collaborative standards such as Research Object Bundles, Executable Research Objects, $\color{#a65450}\mathrm{FAIR}$-sharing, and research-grid specifications for packages deposited on decentralized but searchable community networks.
 
-In the genre of open-access publishing, the "diamond" model implies resources that 
+In the genre of open-access publishing, the &ldquo;diamond&rdquo; model implies resources that 
 are free for both readers and authors.  This paradigm is usually contrasted with a 
-"gold" model where documents are free for readers but require authors to pay 
-Article Processing Charges".  The diamond model is also sometimes contrasted with a "green" 
-model where authors create private copies of articles whose "official" versions are 
+"gold&rdquo; model where documents are free for readers but require authors to pay 
+Article Processing Charges".  The diamond model is also sometimes contrasted with a &ldquo;green&rdquo; 
+model where authors create private copies of articles whose &ldquo;official&rdquo; versions are 
 behind a paywall.
 
 Another important feature of most diamond systems is that authors retain all copyrights 
@@ -128,7 +128,7 @@ and dataset file
 
 ### Compiler Extensions
 
-}$DogLeash}$ Research Objects are assumed to be $\color{#a65450}\text{C}\large{}\text{++}$ code libraries that compile to a single recognized 
+$\color{#a65450}\mathrm{DogLeash}$ Research Objects are assumed to be $\color{#a65450}\text{C}\large{}\text{++}$ code libraries that compile to a single recognized 
 Research Application (other utilities may be created as well, but someone using the data set should 
 launch a single executable to access most or all available information and functionality).  In general, 
 an Executable Research Object will include dataset-specific code for data deserialization, 
@@ -215,7 +215,7 @@ void call_440(fn_type fn, QStringList args)
 A slew of wrappers in the form call_XXX could be produced via code generators, and dispatchers 
 selected via a string of $\color{#a65450}\mathrm{switch}$ statements: one for the arg count, next for the arg1 type 
 (e.g., 1, 2, 4, or 8), next the arg2 type, etc.  Those $\color{#a65450}\mathrm{switch}$es would work off of digits in 
-the signture "code" (like 440) so that registering even an $\color{#a65450}\mathrm{.so}$ runtime procedure 
+the signture &ldquo;code&rdquo; (like 440) so that registering even an $\color{#a65450}\mathrm{.so}$ runtime procedure 
 would take only a single numeric code (which is simpler than how registering works 
 in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}\text{)}$.
 
@@ -236,7 +236,7 @@ not going to get a lot of *repetition*.  Suppose you have exactly three argument
 three different types: each signature is then a permutation of three elements, of which 
 there are only six, plus $\color{#a65450}\mathrm{switch}$ cases for the types involved.
 
-By "types" here I mean any collection of binary-compatible types: we can cast a function-pointer 
+By &ldquo;types&rdquo; here I mean any collection of binary-compatible types: we can cast a function-pointer 
 to a generic signature based on unsigned integers, for example.  The actual procedures 
 might take signed integers instead, or $\color{#a65450}\mathrm{enum}$ values, but can be correctly called via 
 that partially-type-erased pointer instead.  In any case, $\color{#a65450}\mathrm{RedPatch}$ has 
@@ -279,7 +279,7 @@ to use $\color{#a65450}\mathrm{LLVM}$ $\color{#a65450}\mathrm{IRBuilder}$ code, 
 Type *Int32Ty = Type::getInt32Ty(Context);
 std::vector<Type*> ParamTypes = {Int32Ty, Int32Ty};
 FunctionType *FuncType = FunctionType::get(Int32Ty, ParamTypes, false);
-Function *AddFunc = Function::Create(FuncType, Function::ExternalLinkage, "add", OwnerModule.get());
+Function *AddFunc = Function::Create(FuncType, Function::ExternalLinkage, &ldquo;add", OwnerModule.get());
 
 Function::arg_iterator Args = AddFunc->arg_begin();
 Value *ArgA = Args++;
@@ -298,9 +298,9 @@ code in a sort of Virtual Machine:
  add-param-type Int32Ty
  return-type Int32Ty
  reset-arg-cursor
- set-arg-name "a"
- set-arg-name "b"
- set-proc-name "add"
+ set-arg-name &ldquo;a"
+ set-arg-name &ldquo;b"
+ set-proc-name &ldquo;add"
  write-function-signature
 ```
 
@@ -310,7 +310,7 @@ almost identical to VM instructions for an $\color{#a65450}\mathrm{FFI}$-style c
 The point is that a standardized type-metadata format could be used simultaneously both to 
 feed information to Language Servers and to enable Script Hosting (and, by 
 extension, query evaluation).  That's the rationale behind $\color{#a65450}\mathrm{DogLeash}$ as a Language Server 
-*and* Script Host (the "leash") and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
+*and* Script Host (the &ldquo;leash") and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
 modules mentioned above.
 
 ---
@@ -335,8 +335,8 @@ for this manuscript included document-specific
 algorithms to isolate linguistic samples and present 
 them alongside the index as a kind of thematic summary.
 
-- "From 'Naturalizing Phenomenology' to Formalizing 
-Cognitive Linguistics (I-III)"  These three papers were 
+- &ldquo;From 'Naturalizing Phenomenology' to Formalizing 
+Cognitive Linguistics (I-III)&rdquo;  These three papers were 
 developed in connection with supplemental materials 
 for an article in the International Journal of 
 Speech Technology, where I joined as a co-author 
@@ -344,7 +344,7 @@ with researchers from Bar-Ilan University (Israel)
 and Johns Hopkins (US).  The supplemental content 
 was a data set including audio and written 
 samples for linguistic annotation, including some 
-taken as "hypothetical" sentences or fragments 
+taken as &ldquo;hypothetical&rdquo; sentences or fragments 
 created to illustrate linguistic themes or 
 theories.  I wrote three supplemental essays to analyze 
 material present in the data set.  Within those 
@@ -414,7 +414,7 @@ links to $\color{#a65450}\mathrm{PDF}$ documents illustrating some $\color{#a654
 ###  Projects Involving Data and/or Code Packages
 
 1.  CSV and SVG Integration:  This project coincided with the five-year cycle 
-for the Environmental Protection Agency's "Hazard Mitigation" plan.  As part 
+for the Environmental Protection Agency's &ldquo;Hazard Mitigation&rdquo; plan.  As part 
 of this $\color{#a65450}\mathrm{EPA}$ program, states and counties are required to submit documentation 
 for how they identify and address environmental dangers in their 
 communities.  Here, I used $\color{#a65450}\mathrm{DogLeash}$ tools to address both environmental 
@@ -424,10 +424,10 @@ project involved extending a New York City tool called
 }$ZoLa}$ (for Zoning and Land Use), which was created by 
 NYC Planning Labs but openly shared in the hopes that 
 other jurisdictions adopt the same technology.  Other 
-data sourecs came from the $\color{#a65450}\mathrm{EPA}$ "Toxic Release Inventory" $\text{(}\color{#a65450}\mathrm{TRI}\text{)}$ 
+data sourecs came from the $\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\color{#a65450}\mathrm{TRI}\text{)}$ 
 data set, which publishes data files identifying reported 
 contamination incidents by geographic coordinates, and 
-has been studied for publications such as the NYC "Environmental Justice" 
+has been studied for publications such as the NYC &ldquo;Environmental Justice&rdquo; 
 $\text{(}\color{#a65450}\mathrm{EJNYC}\text{)}$ report and mapping tool.  My goal was to examine how 
 data sets such as $\color{#a65450}\mathrm{TRI}$, along with environmental-impact 
 data presented by states or private organizations, could be cross-referenced 
@@ -450,7 +450,7 @@ was a collection of legal documents that had been merged into a
 single file and then annotated to show patterns of 
 behavior.  Applying techniques from ethnomethodology, the annotator 
 designed a controlled vocabuly to insert terms functioning 
-as "handles" into $\color{#a65450}\mathrm{PDF}$ comment boxes.  I then implemented 
+as &ldquo;handles&rdquo; into $\color{#a65450}\mathrm{PDF}$ comment boxes.  I then implemented 
 code which scanned these $\color{#a65450}\mathrm{PDF}$ annotations and identified 
 sub-documents which, according to the annotator, 
 exhibited various patterns of communicative behavior.  I then 
@@ -485,7 +485,7 @@ software components — such as the Cancer Phenomics Toolkit $\text{(}\color{#a6
 }$medInria}$ and $\color{#a65450}\mathrm{Semantic PACS}$ (Picture Archiving and Communication System), 
 and the Cancer Bioinformatics Grid $\text{(}\color{#a65450}\mathrm{caBig}\text{)}$ Image Annotation Toolkit — 
 bioinformatics file formats (and their deserialization/analytic libaries), 
-and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$'s "Digital Model Repository" 
+and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$'s &ldquo;Digital Model Repository&rdquo; 
 and the $\color{#a65450}\mathrm{CORD-19}$ archive for Covid research).  $\color{#a65450}\mathrm{CORD-19}$ (the 
 COVID-19 Open Research Dataset) grew to encompass over 400,000 open-access 
 articles focusing on SARS-COV-2 and related topics (including the original 
@@ -499,7 +499,7 @@ piece together the Covid puzzle.  Unfortunately, much of $\color{#a65450}\mathrm
 implementation depended on $\color{#a65450}\mathrm{PDF}$ text extraction, which 
 yielded errors and limitations I analyzed in the Elsevier book.
 The $\color{#a65450}\mathrm{CORD-19}$ curators (from Allen Institute for AI) were open about these problems and 
-even issued a "call to action" requesting publishers to 
+even issued a &ldquo;call to action&rdquo; requesting publishers to 
 develop and adopt more rigorous text-encoding 
 methods:
 
