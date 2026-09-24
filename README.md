@@ -32,7 +32,7 @@ $\color{#a65450}\mathrm{\large{}DiamondOA}$ funds or similar initiatives.  In s
 $\color{#a65450}\large{}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
 
 $\color{#a65450}\mathrm{\large{}Rinc-XOA}$ (this repository) has a sibling repo called
-$\underline{\color{#3e2a47}{\mathrm{\small{}DogLeasg}$
+$\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{\large{}DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{\large{}Rinc-XOA}$ project can include any modules relevant to its topic.
 
 ---
