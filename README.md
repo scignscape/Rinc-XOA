@@ -26,8 +26,8 @@ For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
 or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless,
-$\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}\text{)}$ and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
-$\color{#a65450}\mathrm{XML}\color{black!70}\textsf{)}$ formats, which requires that the entire package be governed by a
+$\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
+$\color{#a65450}\mathrm{XML})$ formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
 $\color{#a65450}\mathrm{DiamondOA}$ funds or similar initiatives.  In short, the $\color{#a65450}\mathrm{ERO}$ and 
 $\color{#a65450}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
