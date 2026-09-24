@@ -202,7 +202,7 @@ We need a different technique for dynamically loaded libraries, however, because
 can handle many or most functions that might be exposed for a data set.  Typically these 
 fit familiar patterns that can be summarized with a compact code.  For instance, use numbers 
 like 1, 2, 4, 8 for integers of different sizes.  Then a pair of 4-byte arguments with no return 
-could get a code like $\color{#a65450}\mathrm{440}$, and a wrapper constructured for every procedure with that kind of 
+could get a code like 440, and a wrapper constructured for every procedure with that kind of 
 signature (or anything binary compatible to it), rather than one-wrapper-per-function as above:
 
 ```
@@ -432,7 +432,8 @@ $\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\co
 data set, which publishes data files identifying reported 
 contamination incidents by geographic coordinates, and 
 has been studied for publications such as the New York City &ldquo;Environmental Justice&rdquo; 
-$\text{(}\color{#a65450}\mathrm{EJNYC}\text{)}$ report and mapping tool.  My goal was to examine how 
+$\color{black}\textbf{(}\color{#a65450}\mathrm{EJNYC}\color{black}{\textbf{)}$
+report and mapping tool.  My goal was to examine how 
 data sets such as $\color{#a65450}\mathrm{TRI}$, along with environmental-impact 
 data presented by states or private organizations, could be cross-referenced 
 with Zoning and Land Use maps.  Demonstration code included $\color{#a65450}\mathrm{CSV}$ deserializers 
