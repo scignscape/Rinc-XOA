@@ -8,7 +8,7 @@ For a description of several projects that employed some of the code published h
 including a list of open-access articles and book chapters, scroll down or [skip ahead](#sample-documents-raised).
 
 Many of these components are built around a new Virtual Machine generator called 
-$\underline{\color{#3e2a47}{\mathrm{\small Qynviper}$; for details on that, scroll down or [skip ahead](#qynviper).
+$\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
 ---
 
@@ -31,9 +31,9 @@ $\color{#a65450}\mathrm{\large{}DiamondOA}$ licence.  Moreover, aggregating dis
 $\color{#a65450}\mathrm{\large{}DiamondOA}$ funds or similar initiatives.  In short, the $\color{#a65450}\mathrm{ERO}$ and 
 $\color{#a65450}\large{}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
 
-$\color{#a65450}\mathrm{\large{}Rinc-XOA}$ (this repository) has a sibling repo called
+$\color{#a65450}\mathrm{Rinc-XOA}$ (this repository) has a sibling repo called
 $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
-(Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{\large{}DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{\large{}Rinc-XOA}$ project can include any modules relevant to its topic.
+(Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{\large{}DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc-XOA}$ project can include any modules relevant to its topic.
 
 ---
 
