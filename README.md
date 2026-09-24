@@ -300,9 +300,9 @@ code in a sort of Virtual Machine:
  add-param-type Int32Ty
  return-type Int32Ty
  reset-arg-cursor
- set-arg-name &ldquo;a"
- set-arg-name &ldquo;b"
- set-proc-name &ldquo;add"
+ set-arg-name "a"
+ set-arg-name "b"
+ set-proc-name "add"
  write-function-signature
 ```
 
@@ -312,7 +312,7 @@ almost identical to VM instructions for an $\color{#a65450}\mathrm{FFI}$-style c
 The point is that a standardized type-metadata format could be used simultaneously both to 
 feed information to Language Servers and to enable Script Hosting (and, by 
 extension, query evaluation).  That's the rationale behind $\color{#a65450}\mathrm{DogLeash}$ as a Language Server 
-*and* Script Host (the &ldquo;leash") and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
+*and* Script Host (the &ldquo;leash&rdquo;) and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
 modules mentioned above.
 
 ---
@@ -493,7 +493,7 @@ and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$'s &ldquo;Dig
 and the $\color{#a65450}\mathrm{CORD\text{-}19}$ archive for Covid research).  $\color{#a65450}\mathrm{CORD\text{-}19}$ (the 
 $\color{#a65450}\mathrm{COVID\text{-}19}$ Open Research Dataset) grew to encompass over 400,000 open-access 
 articles focusing on $\color{#a65450}\mathrm{SARS\text{-}COV\text{-}2}$ and related topics (including the original 
-SARS epidemic and Coronavirus biology in general) with freely-available 
+$\color{#a65450}\mathrm{SARS}$ epidemic and Coronavirus biology in general) with freely-available 
 full-text encoding.  The goal of $\color{#a65450}\mathrm{CORD\text{-}19}$ was to help scientists in 
 different areas addressing the pandemic (viral morphology, infectious 
 mechanisms, diagnostics, clinical treatment assesment, vaccine development, 
@@ -502,7 +502,8 @@ resources or research that could augment their own work, helping
 piece together the Covid puzzle.  Unfortunately, much of $\color{#a65450}\mathrm{CORD\text{-}19}$'s
 implementation depended on $\color{#a65450}\mathrm{PDF}$ text extraction, which 
 yielded errors and limitations I analyzed in the Elsevier book.
-The $\color{#a65450}\mathrm{CORD\text{-}19}$ curators (from Allen Institute for AI) were open about these problems and 
+The $\color{#a65450}\mathrm{CORD\text{-}19}$ curators (from Allen Institute for 
+$\color{#a65450}\mathrm{AI}$) were open about these problems and 
 even issued a &ldquo;call to action&rdquo; requesting publishers to 
 develop and adopt more rigorous text-encoding 
 methods:
