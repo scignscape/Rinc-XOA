@@ -504,7 +504,12 @@ even issued a &ldquo;call to action&rdquo; requesting publishers to
 develop and adopt more rigorous text-encoding 
 methods:
 
-    >   Though the full text of many scientific papers are available to researchers through $\color{#a65450}\mathrm{CORD-19}$, a number of challenges prevent easy application of $\color{#a65450}\mathrm{NLP}$ and text mining techniques to these papers. First, the primary distribution format of scientific papers — $\color{#a65450}\mathrm{PDF}$ — is not amenable to text processing. The PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information. Significant effort is needed to coerce $\color{#a65450}\mathrm{PDF}$ into a format more amenable to text mining, such as $\color{#a65450}\mathrm{JATS}$ $\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{BioC}$, ... or $\color{#a65450}\mathrm{S2ORC}$ $\color{#a65450}\mathrm{JSON}$ ... [W]e can still benefit from better $\color{#a65450}\mathrm{PDF}$ parsing tools for scientific documents. As a complement, scientific papers should also be made available in a structured format like $\color{#a65450}\mathrm{JSON}$, $\color{#a65450}\mathrm{XML}$, or $\color{#a65450}\mathrm{HTML}$.
+    >   Though the full text of many scientific papers are available to researchers through CORD-19, a number of challenges prevent easy application of NLP and text mining techniques to these papers.
+First, the primary distribution format of scientific papers &mdash; PDF &mdash; 
+is not amenable to text processing. The PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information. Significant effort is needed to 
+coerce PDF into a format more amenable to text mining, such as JATS XML, BioC, ... or 
+S2ORC JSON ... [W]e can still benefit from better PDF parsing 
+tools for scientific documents.  As a complement, scientific papers should also be made available in a structured format like JSON, XML, or HTML.
 
     Hopefully $\color{#a65450}\mathrm{DogLeash}$ can contribute to this initiative. 
 
