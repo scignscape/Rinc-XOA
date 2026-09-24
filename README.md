@@ -153,14 +153,15 @@ The first issue is exposing $\color{#a65450}\text{C}\large{}\text{++}$ procedure
 arguments are (at first) encoded in generic containers such as $\color{#a65450}\mathrm{QVariant}$ or $\color{#a65450}\mathrm{QStringList}$ 
 (assuming we are working in a $\color{#a65450}\mathrm{Qt}$ environment).  We need to convert these to local 
 variables that get passed on the stack (or alter the stack some other way &mdash; $\color{#a65450}\mathrm{AngelScript}$ actually 
-employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
+employs inline assembly code).  This seems like an impasse because we do not know the arguments&rsquo;
 types ahead of time.  There is a workaround, however &mdash; even without heavy introspection and 
 dependencies such as $\color{#a65450}\mathrm{LLVM}$ &mdash; which can be illustrated with code adopted from 
-}$rpclib}$ ([github.com/rpclib/rpclib](https://github.com/rpclib/rpclib)):
+$\color{#a65450}\mathrm{rpclib}$ ([github.com/rpclib/rpclib](https://github.com/rpclib/rpclib)):
 
 
 ```
-typedef std::function<void (QStringList)> ftype; // copy-on-write, so we don't need to pass by & const
+typedef std::function<void (QStringList)> ftype; // copy-on-write, 
+ // so we don't need to pass by & const
 
 struct Dispatcher
 {
