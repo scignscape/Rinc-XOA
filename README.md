@@ -414,7 +414,8 @@ links to $\color{#a65450}\mathrm{PDF}$ documents illustrating some $\color{#a654
 
 ###  Projects Involving Data and/or Code Packages
 
-1.  CSV and SVG Integration:  This project coincided with the five-year cycle 
+1.  $\color{#a65450}\mathrm{CSV}$ and $\color{#a65450}\mathrm{SVG}$ 
+Integration:  This project coincided with the five-year cycle 
 for the Environmental Protection Agency's &ldquo;Hazard Mitigation&rdquo; plan.  As part 
 of this $\color{#a65450}\mathrm{EPA}$ program, states and counties are required to submit documentation 
 for how they identify and address environmental dangers in their 
@@ -422,13 +423,14 @@ communities.  Here, I used $\color{#a65450}\mathrm{DogLeash}$ tools to address b
 data and Zoning/Land Use ordinances so as to explore the connections 
 between environmental health and urban development.  Part of this 
 project involved extending a New York City tool called 
-}$ZoLa}$ (for Zoning and Land Use), which was created by 
+$\color{#a65450}\mathrm{ZoLa}$ (for Zoning and Land Use), which was created by 
 NYC Planning Labs but openly shared in the hopes that 
 other jurisdictions adopt the same technology.  Other 
-data sourecs came from the $\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\color{#a65450}\mathrm{TRI}\text{)}$ 
+data sourecs came from the 
+$\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\color{#a65450}\mathrm{TRI}\text{)}$ 
 data set, which publishes data files identifying reported 
 contamination incidents by geographic coordinates, and 
-has been studied for publications such as the NYC &ldquo;Environmental Justice&rdquo; 
+has been studied for publications such as the New York City &ldquo;Environmental Justice&rdquo; 
 $\text{(}\color{#a65450}\mathrm{EJNYC}\text{)}$ report and mapping tool.  My goal was to examine how 
 data sets such as $\color{#a65450}\mathrm{TRI}$, along with environmental-impact 
 data presented by states or private organizations, could be cross-referenced 
@@ -446,7 +448,7 @@ how they could be corrected in code.
 
 
 2.  Annotated Legal Documents:  This was another project leveraging 
-}$PDF}$-to-}$SVG}$ conversion.  The basic material for this project 
+$\color{#a65450}\mathrm{PDF}$-to-$\color{#a65450}\mathrm{SVG}$ conversion.  The basic material for this project 
 was a collection of legal documents that had been merged into a 
 single file and then annotated to show patterns of 
 behavior.  Applying techniques from ethnomethodology, the annotator 
