@@ -10,7 +10,7 @@ including a list of open-access articles and book chapters, scroll down or [skip
 Many of these components are built around a new Virtual Machine generator called 
 $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
----
+&mdash;-
 
 ### Overview
 
@@ -20,13 +20,13 @@ $\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textb
 
 Meanwhile, Executable Research Objects
 $\color{black}\textbf{(}\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}\textbf{)}$
-are one form of Research Object/data set guided by data transparency and $\color{#a65450}\mathrm{FAIRsharing}$ (Findable, Accessible, Interoperable, Reusable) principles.  Research Objects in general may include multiple forms of digital assets (text, code, raw data files, and perhaps multimedia content) which can present challenges for in-depth usage.  An *Executable* Research Object in particular provides a single Research Application that serves as an entry point or overarching resource streamlining access to the variegated parts of a data publication.  In general, these Research Applications are standalone desktop-style programs which, when launched, will provide visual summaries and windows to manage data set records, as well as viewers for other media types (e.g., $\color{#a65450}\mathrm{PDF}$ documents, images, videos, digital maps, etc.).
+are one form of Research Object/data set guided by data transparency and $\color{#a65450}\mathrm{FAIR}$-sharing (Findable, Accessible, Interoperable, Reusable) principles.  Research Objects in general may include multiple forms of digital assets (text, code, raw data files, and perhaps multimedia content) which can present challenges for in-depth usage.  An *Executable* Research Object in particular provides a single Research Application that serves as an entry point or overarching resource streamlining access to the variegated parts of a data publication.  In general, these Research Applications are standalone desktop-style programs which, when launched, will provide visual summaries and windows to manage data set records, as well as viewers for other media types (e.g., $\color{#a65450}\mathrm{PDF}$ documents, images, videos, digital maps, etc.).
 
 For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
-or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless,
-$\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
+or Dryad &mdash; often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless,
+$\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles &mdash; both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$) formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
 $\color{#a65450}\mathrm{DiamondOA}$ funds or similar initiatives.  In short, the $\color{#a65450}\mathrm{ERO}$ and 
@@ -36,30 +36,30 @@ $\color{#a65450}\mathrm{Rinc-XOA}$ (this repository) has a sibling repo called
 $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc-XOA}$ project can include any modules relevant to its topic.
 
----
+&mdash;-
 
 <a id="qynviper"></a>
 
 ### Qynviper Modules
 
-A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ -- "query/native interop compiler" -- can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
+A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ &mdash; "query/native interop compiler" &mdash; can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
 behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a "module".  By selecting a group of modules, individual
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}\textbf{)}$
 can target capabilities to their use-cases.  For example, a
-$\color{#a65450}\mathrm{VM}$ may be engineered as a compilation target for imperative/procedure scripting languages -- with support for lexical scopes, variables, function calls, and so forth -- but in other use-cases -- e.g., object deserialization -- VM blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a
+$\color{#a65450}\mathrm{VM}$ may be engineered as a compilation target for imperative/procedure scripting languages &mdash; with support for lexical scopes, variables, function calls, and so forth &mdash; but in other use-cases &mdash; e.g., object deserialization &mdash; VM blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a
 $\color{#a65450}\mathrm{VM}$ can partition the problem into two almost entirely separate domains (generating 
 $\color{#a65450}\mathrm{VM}$ instruction sequences versus implementing opcode handlers).  The 
 $\color{#a65450}\mathrm{Qynviper}$ components make heavy use of preprocessor macros, and in general it takes just a few minutes to rig up $\color{#a65450}\text{C}\large{}\text{++}$ classes as modules once the actual opcode methods are implemented.
 
 The $\color{#a65450}\mathrm{RedPatch}$ sources (outlined next) are built 
-around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications -- see the sample "Ordering Concepual Synthesis" paper linked below, or 
+around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications &mdash; see the sample "Ordering Concepual Synthesis" paper linked below, or 
 [here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO-Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}\text{)}$ but rather
 $\color{#a65450}\mathrm{Qynviper}$ code used at different points in a publishing workflow.
 
 **_AMPATH Forms_**
 
 In addition to document preparation, $\color{#a65450}\mathrm{RedPatch}$ illustrates other VM examples for use-cases such as object deserialization.  For instance, one
-$\color{#a65450}\mathrm{Qynviper}$ module is built around $\color{#a65450}\mathrm{AMPATH}$ -- the "Academic Model Providing Access To Healthcare" -- which sponsors Electronic Health Record software used by
+$\color{#a65450}\mathrm{Qynviper}$ module is built around $\color{#a65450}\mathrm{AMPATH}$ &mdash; the "Academic Model Providing Access To Healthcare" &mdash; which sponsors Electronic Health Record software used by
 $\color{#a65450}\mathrm{NGO}\color{black}\textsf{s}$
 such as Doctors Without Borders.  Although eventually rendered as $\color{#a65450}\mathrm{HTML}$ (via $\color{#a65450}\mathrm{ReactJS}\text{)}$ these records are intrinsically defined as $\color{#a65450}\mathrm{JSON}$ configuration files, which opens the possibility for generating alternative front-end viewers.  The $\color{#a65450}\mathrm{RedPatch}$ branch shows an example where $\color{#a65450}\mathrm{AMPATH}$ forms are translated to 
 $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a "native rendering engine" is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role for
@@ -75,7 +75,7 @@ part of the $\color{#a65450}\mathrm{OMOP-CDM}$ (Observational Medical Outcomes P
 As a mostly self-contained platform, $\color{#a65450}\mathrm{Qynviper}$
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in host applications, such as $\color{#a65450}\mathrm{3DSlicer}$ (the preeminent research tool for medical imaging and $\color{#a65450}\mathrm{DICOM}$ series).
 
----
+&mdash;-
 
 <a id="red-patch"></a>
 
@@ -88,7 +88,7 @@ Electronic Health Records and Medical Imaging is therefore a useful domain in wh
 
 For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
 
----
+&mdash;-
 
 ### Publishing for Nonprofits
 
@@ -124,7 +124,7 @@ enhancements that are impossible otherwise.  In particular, it becomes possible
 to implement a rigorous interop and query infrastructure that emcompasses both text manuscripts 
 and dataset file
 
----
+&mdash;-
 
 ### Compiler Extensions
 
@@ -152,10 +152,10 @@ Executable Research Object.  Here is a summary of some features and techniques.
 The first issue is exposing $\color{#a65450}\text{C}\large{}\text{++}$ procedures/methods to the script runtime.  The point here is that 
 arguments are (at first) encoded in generic containers such as $\color{#a65450}\mathrm{QVariant}$ or $\color{#a65450}\mathrm{QStringList}$ 
 (assuming we are working in a $\color{#a65450}\mathrm{Qt}$ environment).  We need to convert these to local 
-variables that get passed on the stack (or alter the stack some other way -- $\color{#a65450}\mathrm{AngelScript}$ actually 
+variables that get passed on the stack (or alter the stack some other way &mdash; $\color{#a65450}\mathrm{AngelScript}$ actually 
 employs inline assembly code).  This seems like an impasse because we do not know the arguments' 
-types ahead of time.  There is a workaround, however -- even without heavy introspection and 
-dependencies such as $\color{#a65450}\mathrm{LLVM}$ -- which can be illustrated with code adopted from 
+types ahead of time.  There is a workaround, however &mdash; even without heavy introspection and 
+dependencies such as $\color{#a65450}\mathrm{LLVM}$ &mdash; which can be illustrated with code adopted from 
 }$rpclib}$ ([github.com/rpclib/rpclib](https://github.com/rpclib/rpclib)):
 
 
@@ -223,7 +223,7 @@ in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}\text{)}
 **_Signature Codes_**
 
 The problem with this technique is that only a relatively limited set of signatures can be 
-supported -- a compilation unit can have only so many $\color{#a65450}\mathrm{switch}$ cases.  $\color{#a65450}\mathrm{DogLeash}$ tries 
+supported &mdash; a compilation unit can have only so many $\color{#a65450}\mathrm{switch}$ cases.  $\color{#a65450}\mathrm{DogLeash}$ tries 
 to extend the range of available procedures by employing a more indirect signature-code 
 mechanism.  Note that the count of signature patterns is affected by the number 
 of distinct types a function takes as parameters.  For instance, if all arguments have 
@@ -313,7 +313,7 @@ extension, query evaluation).  That's the rationale behind $\color{#a65450}\math
 *and* Script Host (the "leash") and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
 modules mentioned above.
 
----
+&mdash;-
 
 <a id="sample-documents-raised"></a>
 
@@ -369,39 +369,39 @@ Externalism and the Interface Theory of Meaning](https://scignscape.github.io/Ri
 for COVID, Cancer, and Cardiac Care_ (Elsevier, 2022).  These are individual chapters' penultimate versions, 
 not identical to the printed book.
 
-  1.  [Chapter 1 -- Introduction](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter1.pdf)
-  2.  [Chapter 2 -- Data Structures Associated with Biomedical Research](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter2.pdf)
-  3.  [Chapter 3 -- Data Mining and Predictive Analytics for Cancer and COVID-19](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter3.pdf)
-  4.  [Chapter 4 -- Modular Design, Image Biomarkers, and Radiomics](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter4.pdf)
-  5.  [Chapter 5 -- Types’ Internal Structure and ‘Nonconstructive’ (‘NC4’) Type Theory](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter5.pdf)
-  6.  [Chapter 6 -- Using Code Models to Instantiate Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter6.pdf)
-  7.  [Chapter 7 -- Multi-Aspect Modules and Image Annotation](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter7.pdf)
-  8.  [Chapter 8 -- Image Annotation as a Multi-Aspect Case-Study](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter8.pdf)
-  9.  [Chapter 9 -- Conceptual Spaces and Scientific Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter9.pdf)
+  1.  [Chapter 1 &mdash; Introduction](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter1.pdf)
+  2.  [Chapter 2 &mdash; Data Structures Associated with Biomedical Research](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter2.pdf)
+  3.  [Chapter 3 &mdash; Data Mining and Predictive Analytics for Cancer and COVID-19](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter3.pdf)
+  4.  [Chapter 4 &mdash; Modular Design, Image Biomarkers, and Radiomics](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter4.pdf)
+  5.  [Chapter 5 &mdash; Types’ Internal Structure and ‘Nonconstructive’ (‘NC4’) Type Theory](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter5.pdf)
+  6.  [Chapter 6 &mdash; Using Code Models to Instantiate Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter6.pdf)
+  7.  [Chapter 7 &mdash; Multi-Aspect Modules and Image Annotation](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter7.pdf)
+  8.  [Chapter 8 &mdash; Image Annotation as a Multi-Aspect Case-Study](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter8.pdf)
+  9.  [Chapter 9 &mdash; Conceptual Spaces and Scientific Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter9.pdf)
 
 - Five chapters from the book _AI, IoT, Big Data and Cloud Computing for Industry 4.0_ 
 (Amy Neustein, Parikshit N. Mahalle, Prachi Joshi, Gitanjali Rahul Shinde, eds., 
 Springer 2024: [https://link.springer.com/book/10.1007/978-3-031-29713-7](https://link.springer.com/book/10.1007/978-3-031-29713-7)).
 
-    1.  [Chapter 20 -- Multi-Component Interoperability and Virtual Machines: Examples from
+    1.  [Chapter 20 &mdash; Multi-Component Interoperability and Virtual Machines: Examples from
 Architecture, Engineering, Cyber-Physical Networks, and Geographic Information Systems](https://scignscape.github.io/Rinc-XOA/documents/iot/ch20.pdf)
 
-    2.  [Chapter 21 -- Virtual Machines and Hypergraph Data/Code Models: Graph-Theoretic
+    2.  [Chapter 21 &mdash; Virtual Machines and Hypergraph Data/Code Models: Graph-Theoretic
 Representations of Lambda-Style Calculi](https://scignscape.github.io/Rinc-XOA/documents/iot/ch21.pdf)
 
-    3.  [Chapter 22 -- GUI Integration and Virtual Machine Constructions for Image Processing:
+    3.  [Chapter 22 &mdash; GUI Integration and Virtual Machine Constructions for Image Processing:
 Phenomenological and Database-Engineering insights into Computer Vision](https://scignscape.github.io/Rinc-XOA/documents/iot/ch22.pdf)
 
-    4.  [Chapter 23 -- The Missing Links Between Computer and Human Languages: Animal Cognition
+    4.  [Chapter 23 &mdash; The Missing Links Between Computer and Human Languages: Animal Cognition
 and Robotics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch23.pdf)
 
-    5.  [Chapter 24 -- GUIs, Robots, and Language: Toward a Neo-Davidsonian Procedural Semantics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch24.pdf)
+    5.  [Chapter 24 &mdash; GUIs, Robots, and Language: Toward a Neo-Davidsonian Procedural Semantics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch24.pdf)
 
 
 - My doctoral dissertation on ["Phenomenological Reductionism"](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf).  This document has fairly basic layout, but I still stand by the content.
 
 
----
+&mdash;-
 
 
 # Other Projects and Documents Using DogLeash
