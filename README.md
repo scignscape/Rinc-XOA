@@ -448,7 +448,7 @@ how they could be corrected in code.
 
 
 2.  Annotated Legal Documents:  This was another project leveraging 
-$\color{#a65450}\mathrm{PDF}$-to-$\color{#a65450}\mathrm{SVG}$ conversion.  The basic material for this project 
+$\color{#a65450}\mathrm{PDF}$ to $\color{#a65450}\mathrm{SVG}$ conversion.  The basic material for this project 
 was a collection of legal documents that had been merged into a 
 single file and then annotated to show patterns of 
 behavior.  Applying techniques from ethnomethodology, the annotator 
@@ -458,7 +458,7 @@ code which scanned these $\color{#a65450}\mathrm{PDF}$ annotations and identifie
 sub-documents which, according to the annotator, 
 exhibited various patterns of communicative behavior.  I then 
 split the larger $\color{#a65450}\mathrm{PDF}$ into multiple subdocuments and mapped 
-that content to hybrid $\color{#a65450}\mathrm{HTML}$/}$SVG}$ pages, together with an 
+that content to hybrid $\color{#a65450}\mathrm{HTML}$/$\color{#a65450}\mathrm{SVG}$ pages, together with an 
 online index that showed annotated classifications for 
 each subdocument, plus page-by-page as well as document-by-document 
 navigation for the linked pages.  The overall package was presented 
