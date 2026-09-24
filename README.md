@@ -476,7 +476,7 @@ preparatory manuscripts shared by the publishers.  By cross-referencing
 the two versions, we were able to identify errors made on the 
 publisher's end by copy editors and also fine-tune the new material.
 Significant effort went into creating and updated index.  Special 
-}$DogLeash}$ tools laid a foundation for custom $\color{#a65450}\mathrm{GUI}\text{s}$ whose goal 
+$\color{#a65450}\mathrm{DogLeash}$ tools laid a foundation for custom $\color{#a65450}\mathrm{GUI}\text{s}$ whose goal 
 was to compare the first- and second-edition manuscripts to 
 ensure that all previous index entries were migrated to the 
 updated book, as well as creating new index material in the 
