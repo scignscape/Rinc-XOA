@@ -213,9 +213,9 @@ void call_440(fn_type fn, QStringList args)
 }
 ```
 
-A slew of wrappers in the form call_XXX could be produced via code generators, and dispatchers 
-selected via a string of $\color{#a65450}\mathrm{switch}$ statements: one for the arg count, next for the arg1 type 
-(e.g., 1, 2, 4, or 8), next the arg2 type, etc.  Those $\color{#a65450}\mathrm{switch}$es would work off of digits in 
+A slew of wrappers in the form `call_XXX` could be produced via code generators, and dispatchers 
+selected via a string of `switch` statements: one for the arg count, next for the arg1 type 
+(e.g., 1, 2, 4, or 8), next the arg2 type, etc.  Those `switch`es would work off of digits in 
 the signture &ldquo;code&rdquo; (like 440) so that registering even an $\color{#a65450}\mathrm{.so}$ runtime procedure 
 would take only a single numeric code (which is simpler than how registering works 
 in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}\text{)}$.
@@ -224,22 +224,22 @@ in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}\text{)}
 **_Signature Codes_**
 
 The problem with this technique is that only a relatively limited set of signatures can be 
-supported &mdash; a compilation unit can have only so many $\color{#a65450}\mathrm{switch}$ cases.  $\color{#a65450}\mathrm{DogLeash}$ tries 
+supported &mdash; a compilation unit can have only so many `switch` cases.  $\color{#a65450}\mathrm{DogLeash}$ tries 
 to extend the range of available procedures by employing a more indirect signature-code 
 mechanism.  Note that the count of signature patterns is affected by the number 
 of distinct types a function takes as parameters.  For instance, if all arguments have 
 the same type, then the only thing that varies is the number of parameters, so there's a 
-maximum of say 10 $\color{#a65450}\mathrm{switch}$ cases $\text{(}\color{#a65450}\mathrm{Qt}$'s meta-object system, for $\color{#a65450}\mathrm{QObject}$ subclasses, 
+maximum of say 10 `switch` cases $\text{(}\color{#a65450}\mathrm{Qt}$'s meta-object system, for $\color{#a65450}\mathrm{QObject}$ subclasses, 
 recognizes up to 10 arguments).  If there are two types, then a variety of argpack-sizes 
 can be covered by bit vectors (on for one type and off for the other).  It's only with three 
 or more types that you get potentially complex dispatch trees, but you're also problably 
 not going to get a lot of *repetition*.  Suppose you have exactly three arguments of 
 three different types: each signature is then a permutation of three elements, of which 
-there are only six, plus $\color{#a65450}\mathrm{switch}$ cases for the types involved.
+there are only six, plus `switch` cases for the types involved.
 
 By &ldquo;types&rdquo; here I mean any collection of binary-compatible types: we can cast a function-pointer 
 to a generic signature based on unsigned integers, for example.  The actual procedures 
-might take signed integers instead, or $\color{#a65450}\mathrm{enum}$ values, but can be correctly called via 
+might take signed integers instead, or `enum` values, but can be correctly called via 
 that partially-type-erased pointer instead.  In any case, $\color{#a65450}\mathrm{RedPatch}$ has 
 sample code representing dispatch-tables sufficient for most signatures one might 
 need to expose from a library.
