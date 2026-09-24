@@ -287,12 +287,14 @@ extension, query evaluation).  That's the rationale behind $\color{#365450}{\mat
 *and* Script Host (the "leash") and the basis for the $\color{#365450}{\mathrm{\large{}Qynviper}}$ 
 modules mentioned above.
 
+---
+
 <a id="sample-documents-raised"></a>
 
 ## Sample Documents
 
 The following are examples of my own publications (not in chronological order) 
-developed with $\color{#365450}{\mathrm{\large{}DogLeash}}$ code in some iteration.
+developed with $\color{#a65450}{\mathrm{\large{}DogLeash}}$ code in some iteration.
 
 - [Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf)  Unpublished, by intent, 
 to serve as a demo for certain document-generation features.
