@@ -8,7 +8,7 @@ For a description of several projects that employed some of the code published h
 including a list of open-access articles and book chapters, scroll down or [skip ahead](#sample-documents-raised).
 
 Many of these components are built around a new Virtual Machine generator called 
-"$\underline{\color{#2a473a}{\mathrm{\small Qynviper}}}$"; for details on that, scroll down or [skip ahead](#qynviper).
+$\underline{\color{#2a473a}{\mathrm{\small Qynviper}}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
 
 ---
