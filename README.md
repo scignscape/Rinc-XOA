@@ -10,7 +10,7 @@ including a list of open-access articles and book chapters, scroll down or [skip
 Many of these components are built around a new Virtual Machine generator called 
 $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
-&mdash;-
+---
 
 ### Overview
 
@@ -36,7 +36,7 @@ $\color{#a65450}\mathrm{Rinc-XOA}$ (this repository) has a sibling repo called
 $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc-XOA}$ project can include any modules relevant to its topic.
 
-&mdash;-
+---
 
 <a id="qynviper"></a>
 
@@ -46,14 +46,14 @@ A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ &mdash; "query
 behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a "module".  By selecting a group of modules, individual
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}\textbf{)}$
 can target capabilities to their use-cases.  For example, a
-$\color{#a65450}\mathrm{VM}$ may be engineered as a compilation target for imperative/procedure scripting languages &mdash; with support for lexical scopes, variables, function calls, and so forth &mdash; but in other use-cases &mdash; e.g., object deserialization &mdash; VM blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a
+$\color{#a65450}\mathrm{VM}$ may be engineered as a compilation target for imperative/procedure scripting languages &mdash; with support for lexical scopes, variables, function calls, and so forth &mdash; but in other use-cases &mdash; e.g., object deserialization &mdash; $\color{#a65450}\mathrm{VM}$ blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a
 $\color{#a65450}\mathrm{VM}$ can partition the problem into two almost entirely separate domains (generating 
 $\color{#a65450}\mathrm{VM}$ instruction sequences versus implementing opcode handlers).  The 
 $\color{#a65450}\mathrm{Qynviper}$ components make heavy use of preprocessor macros, and in general it takes just a few minutes to rig up $\color{#a65450}\text{C}\large{}\text{++}$ classes as modules once the actual opcode methods are implemented.
 
 The $\color{#a65450}\mathrm{RedPatch}$ sources (outlined next) are built 
 around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications &mdash; see the sample "Ordering Concepual Synthesis" paper linked below, or 
-[here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO-Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}\text{)}$ but rather
+[here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO}-{Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}\text{)}$ but rather
 $\color{#a65450}\mathrm{Qynviper}$ code used at different points in a publishing workflow.
 
 **_AMPATH Forms_**
@@ -70,12 +70,12 @@ scripts which are separately executed to create the final $\color{#a65450}\mathr
 **_DCMTK_**
 
 Another similar example, based on $\color{#a65450}\mathrm{XML}$ rather than $\color{#a65450}\mathrm{JSON}$, provides an extension to the widely-used $\color{#a65450}\mathrm{DCMTK}$ library for working with $\color{#a65450}\mathrm{DICOM}$ (Digital Imaging and Communications in Medicine) series.  This library offers multiple utilities for converting $\color{#a65450}\mathrm{DICOM}$ files to other image and data formats $\text{(}\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{HTML}$, $\color{#a65450}\mathrm{JPEG}$ and so forth) but currently lacks support for other diagnostic-imaging formats, such as $\color{#a65450}\mathrm{MI-CDM}$ (Medical Imaging Common Data Model), 
-part of the $\color{#a65450}\mathrm{OMOP-CDM}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#a65450}\mathrm{DSR}$ (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as $\color{#a65450}\mathrm{RO-Crate}$.  For these use-cases, $\color{#a65450}\mathrm{RedPatch}$ provides a $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ whose purpose is to parse $\color{#a65450}\mathrm{dcm2xml}$ and $\color{#a65450}\mathrm{dsr2xml}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#a65450}\mathrm{DCMTK}$.
+part of the $\color{#a65450}\mathrm{OMOP-CDM}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#a65450}\mathrm{DSR}$ (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as $\color{#a65450}\mathrm{RO}-{Crate}$.  For these use-cases, $\color{#a65450}\mathrm{RedPatch}$ provides a $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ whose purpose is to parse $\color{#a65450}\mathrm{dcm2xml}$ and $\color{#a65450}\mathrm{dsr2xml}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#a65450}\mathrm{DCMTK}$.
 
 As a mostly self-contained platform, $\color{#a65450}\mathrm{Qynviper}$
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in host applications, such as $\color{#a65450}\mathrm{3DSlicer}$ (the preeminent research tool for medical imaging and $\color{#a65450}\mathrm{DICOM}$ series).
 
-&mdash;-
+---
 
 <a id="red-patch"></a>
 
@@ -88,7 +88,7 @@ Electronic Health Records and Medical Imaging is therefore a useful domain in wh
 
 For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
 
-&mdash;-
+---
 
 ### Publishing for Nonprofits
 
@@ -124,7 +124,7 @@ enhancements that are impossible otherwise.  In particular, it becomes possible
 to implement a rigorous interop and query infrastructure that emcompasses both text manuscripts 
 and dataset file
 
-&mdash;-
+---
 
 ### Compiler Extensions
 
@@ -313,7 +313,7 @@ extension, query evaluation).  That's the rationale behind $\color{#a65450}\math
 *and* Script Host (the "leash") and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
 modules mentioned above.
 
-&mdash;-
+---
 
 <a id="sample-documents-raised"></a>
 
@@ -401,7 +401,7 @@ and Robotics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch23.pdf)
 - My doctoral dissertation on ["Phenomenological Reductionism"](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf).  This document has fairly basic layout, but I still stand by the content.
 
 
-&mdash;-
+---
 
 
 # Other Projects and Documents Using DogLeash
