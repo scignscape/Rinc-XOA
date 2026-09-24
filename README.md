@@ -15,12 +15,12 @@ $\underline{\color{#3e2a47}{\mathrm{\small Qynviper}}}$; for details on that, sc
 
 ### Overview
 
-In publishing, Diamond $(\color{#365450}{\mathrm{\large{}DiamondOA}})$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
-$(\color{#365450}{\mathrm{\large{}APC}}s$)) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by "Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
+In publishing, Diamond $\textsf{(}\color{#365450}{\mathrm{\large{}DiamondOA}})$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
+$\textsf{(}\color{#365450}{\mathrm{\large{}APC}}s$)) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by "Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
 
-Meanwhile, Executable Research Objects $(\color{#365450}{\mathrm{\large{}ERO}}s$) are one form of Research Object/data set guided by data transparency and $\color{#365450}{\mathrm{\large{}FAIRsharing}}$ (Findable, Accessible, Interoperable, Reusable) principles.  Research Objects in general may include multiple forms of digital assets (text, code, raw data files, and perhaps multimedia content) which can present challenges for in-depth usage.  An *Executable* Research Object in particular provides a single Research Application that serves as an entry point or overarching resource streamlining access to the variegated parts of a data publication.  In general, these Research Applications are standalone desktop-style programs which, when launched, will provide visual summaries and windows to manage data set records, as well as viewers for other media types $(\color{#365450}{\mathrm{\large{}PDF}}$ documents, images, videos, digital maps, etc.).
+Meanwhile, Executable Research Objects $\textsf{(}\color{#365450}{\mathrm{\large{}ERO}}s$) are one form of Research Object/data set guided by data transparency and $\color{#365450}{\mathrm{\large{}FAIRsharing}}$ (Findable, Accessible, Interoperable, Reusable) principles.  Research Objects in general may include multiple forms of digital assets (text, code, raw data files, and perhaps multimedia content) which can present challenges for in-depth usage.  An *Executable* Research Object in particular provides a single Research Application that serves as an entry point or overarching resource streamlining access to the variegated parts of a data publication.  In general, these Research Applications are standalone desktop-style programs which, when launched, will provide visual summaries and windows to manage data set records, as well as viewers for other media types $\textsf{(}\color{#365450}{\mathrm{\large{}PDF}}$ documents, images, videos, digital maps, etc.).
 
-For the current repository and siblings, Executable Open Access $(\color{#365450}{\mathrm{\large{}XOA}})$ designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework $(\color{#365450}{\mathrm{\large{}OSF}})$ or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless, $\color{#365450}{\mathrm{\large{}ERO}}s$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#365450}{\mathrm{\large{}PDF}})$ and machine-readable (e.g., $\color{#365450}{\mathrm{\large{}JATS}}$ $\color{#365450}{\mathrm{\large{}XML}})$ formats, which requires that the entire package be governed by a $\color{#365450}{\mathrm{\large{}DiamondOA}}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by $\color{#365450}{\mathrm{\large{}DiamondOA}}$ funds or similar initiatives.  In short, the $\color{#365450}{\mathrm{\large{}ERO}}$ and $\color{#365450}{\mathrm{\large{}DiamondOA}}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
+For the current repository and siblings, Executable Open Access $\textsf{(}\color{#365450}{\mathrm{\large{}XOA}})$ designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework $\textsf{(}\color{#365450}{\mathrm{\large{}OSF}})$ or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless, $\color{#365450}{\mathrm{\large{}ERO}}s$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#365450}{\mathrm{\large{}PDF}})$ and machine-readable (e.g., $\color{#365450}{\mathrm{\large{}JATS}}$ $\color{#365450}{\mathrm{\large{}XML}})$ formats, which requires that the entire package be governed by a $\color{#365450}{\mathrm{\large{}DiamondOA}}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by $\color{#365450}{\mathrm{\large{}DiamondOA}}$ funds or similar initiatives.  In short, the $\color{#365450}{\mathrm{\large{}ERO}}$ and $\color{#365450}{\mathrm{\large{}DiamondOA}}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
 
 }}$Rinc-XOA}}$ (this repository) has a sibling repo called $\color{#365450}{\mathrm{\large{}DogLeash}}$ (Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#365450}{\mathrm{\large{}DogLeash}}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#365450}{\mathrm{\large{}Rinc-XOA}}$ project can include any modules relevant to its topic.
 
@@ -43,7 +43,7 @@ In addition to document preparation, $\color{#365450}{\mathrm{\large{}RedPatch}}
 
 **_DCMTK_**
 
-Another similar example, based on $\color{#365450}{\mathrm{\large{}XML}}$ rather than $\color{#365450}{\mathrm{\large{}JSON}}$, provides an extension to the widely-used $\color{#365450}{\mathrm{\large{}DCMTK}}$ library for working with $\color{#365450}{\mathrm{\large{}DICOM}}$ (Digital Imaging and Communications in Medicine) series.  This library offers multiple utilities for converting $\color{#365450}{\mathrm{\large{}DICOM}}$ files to other image and data formats $(\color{#365450}{\mathrm{\large{}XML}}$, $\color{#365450}{\mathrm{\large{}HTML}}$, $\color{#365450}{\mathrm{\large{}JPEG}}$ and so forth) but currently lacks support for other diagnostic-imaging formats, such as $\color{#365450}{\mathrm{\large{}MI-CDM}}$ (Medical Imaging Common Data Model), 
+Another similar example, based on $\color{#365450}{\mathrm{\large{}XML}}$ rather than $\color{#365450}{\mathrm{\large{}JSON}}$, provides an extension to the widely-used $\color{#365450}{\mathrm{\large{}DCMTK}}$ library for working with $\color{#365450}{\mathrm{\large{}DICOM}}$ (Digital Imaging and Communications in Medicine) series.  This library offers multiple utilities for converting $\color{#365450}{\mathrm{\large{}DICOM}}$ files to other image and data formats $\textsf{(}\color{#365450}{\mathrm{\large{}XML}}$, $\color{#365450}{\mathrm{\large{}HTML}}$, $\color{#365450}{\mathrm{\large{}JPEG}}$ and so forth) but currently lacks support for other diagnostic-imaging formats, such as $\color{#365450}{\mathrm{\large{}MI-CDM}}$ (Medical Imaging Common Data Model), 
 part of the $\color{#365450}{\mathrm{\large{}OMOP-CDM}}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#365450}{\mathrm{\large{}DSR}}$ (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as $\color{#365450}{\mathrm{\large{}RO-Crate}}$.  For these use-cases, $\color{#365450}{\mathrm{\large{}RedPatch}}$ provides a Qynviper VM whose purpose is to parse $\color{#365450}{\mathrm{\large{}dcm2xml}}$ and $\color{#365450}{\mathrm{\large{}dsr2xml}}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#365450}{\mathrm{\large{}DCMTK}}$.
 
 As a mostly self-contained platform, Qynviper VMs can readily be embedded in host applications, such as $\color{#365450}{\mathrm{\large{}3DSlicer}}$ (the preeminent research tool for medical imaging and $\color{#365450}{\mathrm{\large{}DICOM}}$ series).
@@ -201,7 +201,7 @@ to extend the range of available procedures by employing a more indirect signatu
 mechanism.  Note that the count of signature patterns is affected by the number 
 of distinct types a function takes as parameters.  For instance, if all arguments have 
 the same type, then the only thing that varies is the number of parameters, so there's a 
-maximum of say 10 $\color{#365450}{\mathrm{\large{}switch}}$ cases $(\color{#365450}{\mathrm{\large{}Qt}}$'s meta-object system, for $\color{#365450}{\mathrm{\large{}QObject}}$ subclasses, 
+maximum of say 10 $\color{#365450}{\mathrm{\large{}switch}}$ cases $\textsf{(}\color{#365450}{\mathrm{\large{}Qt}}$'s meta-object system, for $\color{#365450}{\mathrm{\large{}QObject}}$ subclasses, 
 recognizes up to 10 arguments).  If there are two types, then a variety of argpack-sizes 
 can be covered by bit vectors (on for one type and off for the other).  It's only with three 
 or more types that you get potentially complex dispatch trees, but you're also problably 
@@ -218,8 +218,8 @@ need to expose from a library.
 
 **_Language Server Protocol_**
 
-The $\color{#365450}{\mathrm{\large{}Language Server Protocol}}$ $(\color{#365450}{\mathrm{\large{}LSP}})$, developed by Microsoft, is a tool through which 
-code editors and Integrated Development Environments $(\color{#365450}{\mathrm{\large{}IDE}}s$) communicate 
+The $\color{#365450}{\mathrm{\large{}Language Server Protocol}}$ $\textsf{(}\color{#365450}{\mathrm{\large{}LSP}})$, developed by Microsoft, is a tool through which 
+code editors and Integrated Development Environments $\textsf{(}\color{#365450}{\mathrm{\large{}IDE}}s$) communicate 
 with external programs that play the role of code assistants, 
 offering hints, information on data types and function signatures, code completion 
 suggestion, etc.  For example, $\color{#365450}{\mathrm{\large{}Clangd}}$ is the preeminent Language Server 
@@ -395,11 +395,11 @@ project involved extending a New York City tool called
 }}$ZoLa}}$ (for Zoning and Land Use), which was created by 
 NYC Planning Labs but openly shared in the hopes that 
 other jurisdictions adopt the same technology.  Other 
-data sourecs came from the $\color{#365450}{\mathrm{\large{}EPA}}$ "Toxic Release Inventory" $(\color{#365450}{\mathrm{\large{}TRI}})$ 
+data sourecs came from the $\color{#365450}{\mathrm{\large{}EPA}}$ "Toxic Release Inventory" $\textsf{(}\color{#365450}{\mathrm{\large{}TRI}})$ 
 data set, which publishes data files identifying reported 
 contamination incidents by geographic coordinates, and 
 has been studied for publications such as the NYC "Environmental Justice" 
-$(\color{#365450}{\mathrm{\large{}EJNYC}})$ report and mapping tool.  My goal was to examine how 
+$\textsf{(}\color{#365450}{\mathrm{\large{}EJNYC}})$ report and mapping tool.  My goal was to examine how 
 data sets such as $\color{#365450}{\mathrm{\large{}TRI}}$, along with environmental-impact 
 data presented by states or private organizations, could be cross-referenced 
 with Zoning and Land Use maps.  Demonstration code included $\color{#365450}{\mathrm{\large{}CSV}}$ deserializers 
@@ -451,10 +451,10 @@ pbulisher's desired metadata format.
 I wrote the text for a book called _Innovative Data Integration and Conceptual 
 Space Modeling for COVID, Cancer, and Cardiac Care_ (Elsevier, 
 2022).  This book included a detailed examination of certain 
-software components — such as the Cancer Phenomics Toolkit $(\color{#365450}{\mathrm{\large{}CapTk}})$, 
+software components — such as the Cancer Phenomics Toolkit $\textsf{(}\color{#365450}{\mathrm{\large{}CapTk}})$, 
 }}$IQmol}}$ molecular visualization software, $\color{#365450}{\mathrm{\large{}cytolib}}$ for flow cytometry, 
 }}$medInria}}$ and $\color{#365450}{\mathrm{\large{}Semantic PACS}}$ (Picture Archiving and Communication System), 
-and the Cancer Bioinformatics Grid $(\color{#365450}{\mathrm{\large{}caBig}})$ Image Annotation Toolkit — 
+and the Cancer Bioinformatics Grid $\textsf{(}\color{#365450}{\mathrm{\large{}caBig}})$ Image Annotation Toolkit — 
 bioinformatics file formats (and their deserialization/analytic libaries), 
 and collaborative projects (such as $\color{#365450}{\mathrm{\large{}caBig}}$'s "Digital Model Repository" 
 and the $\color{#365450}{\mathrm{\large{}CORD-19}}$ archive for Covid research).  $\color{#365450}{\mathrm{\large{}CORD-19}}$ (the 
