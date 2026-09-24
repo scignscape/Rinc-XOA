@@ -458,7 +458,7 @@ code which scanned these $\color{#a65450}\mathrm{PDF}$ annotations and identifie
 sub-documents which, according to the annotator, 
 exhibited various patterns of communicative behavior.  I then 
 split the larger $\color{#a65450}\mathrm{PDF}$ into multiple subdocuments and mapped 
-that content to hybrid $\color{#a65450}\mathrm{HTML}$/$\color{#a65450}\mathrm{SVG}$ pages, together with an 
+that content to hybrid $\color{#a65450}\mathrm{HTML}\color{black}/\color{#a65450}\mathrm{SVG}$ pages, together with an 
 online index that showed annotated classifications for 
 each subdocument, plus page-by-page as well as document-by-document 
 navigation for the linked pages.  The overall package was presented 
@@ -484,29 +484,29 @@ I wrote the text for a book called _Innovative Data Integration and Conceptual
 Space Modeling for COVID, Cancer, and Cardiac Care_ (Elsevier, 
 2022).  This book included a detailed examination of certain 
 software components — such as the Cancer Phenomics Toolkit $\text{(}\color{#a65450}\mathrm{CapTk}\text{)}$, 
-}$IQmol}$ molecular visualization software, $\color{#a65450}\mathrm{cytolib}$ for flow cytometry, 
-}$medInria}$ and $\color{#a65450}\mathrm{Semantic PACS}$ (Picture Archiving and Communication System), 
+$\color{#a65450}\mathrm{CORD\text{-}19}$ molecular visualization software, $\color{#a65450}\mathrm{cytolib}$ for flow cytometry, 
+$\color{#a65450}\mathrm{medInria}$ and $\color{#a65450}\mathrm{Semantic PACS}$ (Picture Archiving and Communication System), 
 and the Cancer Bioinformatics Grid $\text{(}\color{#a65450}\mathrm{caBig}\text{)}$ Image Annotation Toolkit — 
 bioinformatics file formats (and their deserialization/analytic libaries), 
 and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$'s &ldquo;Digital Model Repository&rdquo; 
-and the $\color{#a65450}\mathrm{CORD-19}$ archive for Covid research).  $\color{#a65450}\mathrm{CORD-19}$ (the 
+and the $\color{#a65450}\mathrm{CORD\text{-}19}$ archive for Covid research).  $\color{#a65450}\mathrm{CORD\text{-}19}$ (the 
 COVID-19 Open Research Dataset) grew to encompass over 400,000 open-access 
 articles focusing on SARS-COV-2 and related topics (including the original 
 SARS epidemic and Coronavirus biology in general) with freely-available 
-full-text encoding.  The goal of $\color{#a65450}\mathrm{CORD-19}$ was to help scientists in 
+full-text encoding.  The goal of $\color{#a65450}\mathrm{CORD\text{-}19}$ was to help scientists in 
 different areas addressing the pandemic (viral morphology, infectious 
 mechanisms, diagnostics, clinical treatment assesment, vaccine development, 
 genomics, variants/mutations, epidemiology, long-term effects) discover 
 resources or research that could augment their own work, helping 
-piece together the Covid puzzle.  Unfortunately, much of $\color{#a65450}\mathrm{CORD-19}$'s
+piece together the Covid puzzle.  Unfortunately, much of $\color{#a65450}\mathrm{CORD\text{-}19}$'s
 implementation depended on $\color{#a65450}\mathrm{PDF}$ text extraction, which 
 yielded errors and limitations I analyzed in the Elsevier book.
-The $\color{#a65450}\mathrm{CORD-19}$ curators (from Allen Institute for AI) were open about these problems and 
+The $\color{#a65450}\mathrm{CORD\text{-}19}$ curators (from Allen Institute for AI) were open about these problems and 
 even issued a &ldquo;call to action&rdquo; requesting publishers to 
 develop and adopt more rigorous text-encoding 
 methods:
 
-    >   Though the full text of many scientific papers are available to researchers through CORD-19, a number of challenges prevent easy application of NLP and text mining techniques to these papers.
+    >   Though the full text of many scientific papers are available to researchers through CORD\text{-}19, a number of challenges prevent easy application of NLP and text mining techniques to these papers.
 First, the primary distribution format of scientific papers &mdash; PDF &mdash; 
 is not amenable to text processing. The PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information. Significant effort is needed to 
 coerce PDF into a format more amenable to text mining, such as JATS XML, BioC, ... or 
