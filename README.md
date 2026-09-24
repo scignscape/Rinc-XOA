@@ -10,17 +10,16 @@ including a list of open-access articles and book chapters, scroll down or [skip
 Many of these components are built around a new Virtual Machine generator called 
 $\underline{\color{#3e2a47}{\mathrm{\small Qynviper}}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
-
 ---
 
 ### Overview
 
-In publishing, Diamond $\text{(}\color{#a65450}{\mathrm{DiamondOA}}\text{)}$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
+In publishing, Diamond $\color{black}{\textbf{(}}\color{#a65450}{\mathrm{\large{}DiamondOA}}\color{black}{\textbf{)}}$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
 $\color{black}{\textbf{(}}\color{#a65450}{\mathrm{APC}}\color{black}{\textsf{s}\textbf{)}}$
 ) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by "Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
 
 Meanwhile, Executable Research Objects
-$\color{black}{\textbf{(}}\color{#a65450}{\mathrm{ERO}}\color{black}{\textsf{)}{\textbf{)}}}$
+$\color{black}{\textbf{(}}\color{#a65450}{\mathrm{ERO}}\color{black}{\textsf{s}{\textbf{)}}}$
 are one form of Research Object/data set guided by data transparency and $\color{#a65450}{\mathrm{FAIRsharing}}$ (Findable, Accessible, Interoperable, Reusable) principles.  Research Objects in general may include multiple forms of digital assets (text, code, raw data files, and perhaps multimedia content) which can present challenges for in-depth usage.  An *Executable* Research Object in particular provides a single Research Application that serves as an entry point or overarching resource streamlining access to the variegated parts of a data publication.  In general, these Research Applications are standalone desktop-style programs which, when launched, will provide visual summaries and windows to manage data set records, as well as viewers for other media types (e.g., $\color{#a65450}{\mathrm{PDF}}$ documents, images, videos, digital maps, etc.).
 
 For the current repository and siblings, Executable Open Access $\text{(}\color{#a65450}{\mathrm{XOA}}\text{)}$ designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
@@ -31,7 +30,7 @@ $\color{#a65450}{\mathrm{\large{}Rinc-XOA}}$ (this repository) has a sibling rep
 
 ---
 
-<a id="red-patch"></a>
+<a id="qynviper"></a>
 
 ### Qynviper Modules
 
