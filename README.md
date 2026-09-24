@@ -26,14 +26,15 @@ For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most FAIRsharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
 or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless,
-$\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}\text{)}$ and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$ $\color{#a65450}\mathrm{XML}\text{)}$ formats, which requires that the entire package be governed by a
+$\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}\text{)}$ and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
+$\color{#a65450}\mathrm{XML}\color{black}\textbf{)}$ formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{\large{}DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
 $\color{#a65450}\mathrm{\large{}DiamondOA}$ funds or similar initiatives.  In short, the $\color{#a65450}\mathrm{ERO}$ and 
 $\color{#a65450}\large{}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
 
 $\color{#a65450}\mathrm{Rinc-XOA}$ (this repository) has a sibling repo called
 $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
-(Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{\large{}DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc-XOA}$ project can include any modules relevant to its topic.
+(Diamond Object Grid - Language Server and Script Host), at [github.com/ScignScape/DogLeash](https://github.com/scignscape/DogLeash/) which holds most of the actual code.  This code base is intended to provide tools and templates for Executable Research Objects.  $\color{#a65450}\mathrm{DogLeash}$ provides several "modules" for specific subject areas and implementation requirements, such as Medical Imaging, Geographic Information Systems, and Compiler Extensions.  A $\color{#a65450}\mathrm{Rinc-XOA}$ project can include any modules relevant to its topic.
 
 ---
 
@@ -66,9 +67,9 @@ As a mostly self-contained platform, Qynviper VMs can readily be embedded in hos
 ### Community Health Research Platform
 
 
-I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object "microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{\large{}DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, $\color{#a65450}\mathrm{CSV}$/}$XML}$/}$JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{\large{}DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
+I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object "microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, $\color{#a65450}\mathrm{CSV}$/}$XML}$/}$JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
 
-Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{\large{}DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose "research" forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
+Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose "research" forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
 
 For more details, navigate to the $\color{#a65450}\mathrm{\large{}RedPatch}$ branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
 
@@ -78,7 +79,7 @@ For more details, navigate to the $\color{#a65450}\mathrm{\large{}RedPatch}$ bra
 
 Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits' employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
 
-Insofar as publications are deployed with the same licences as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{\large{}DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
+Insofar as publications are deployed with the same licences as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
 
 **_The "Diamond" Publishing Model_**
 
@@ -127,7 +128,7 @@ be compiled directly inside Research Object, rather than relying on an external
 interpreter.  Languages such as $\color{#a65450}\mathrm{Lua}$, $\color{#a65450}\mathrm{AngelScript}$, and $\color{#a65450}\mathrm{ECL}$ (Embeddable Common Lisp) are examples 
 of scripting platforms that may be distributed in source-code fashion alongside host applications.
 
-If a more minimal scripting environment is sufficient, $\color{#a65450}\mathrm{\large{}DogLeash}$ allows programmers to build a 
+If a more minimal scripting environment is sufficient, $\color{#a65450}\mathrm{DogLeash}$ allows programmers to build a 
 scripting framework that is tightly integrated with other components in an 
 Executable Research Object.  Here is a summary of some features and techniques.
 
@@ -207,7 +208,7 @@ in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}\text{)}
 **_Signature Codes_**
 
 The problem with this technique is that only a relatively limited set of signatures can be 
-supported -- a compilation unit can have only so many $\color{#a65450}\mathrm{switch}$ cases.  $\color{#a65450}\mathrm{\large{}DogLeash}$ tries 
+supported -- a compilation unit can have only so many $\color{#a65450}\mathrm{switch}$ cases.  $\color{#a65450}\mathrm{DogLeash}$ tries 
 to extend the range of available procedures by employing a more indirect signature-code 
 mechanism.  Note that the count of signature patterns is affected by the number 
 of distinct types a function takes as parameters.  For instance, if all arguments have 
@@ -293,7 +294,7 @@ almost identical to VM instructions for an $\color{#a65450}\mathrm{FFI}$-style c
 
 The point is that a standardized type-metadata format could be used simultaneously both to 
 feed information to Language Servers and to enable Script Hosting (and, by 
-extension, query evaluation).  That's the rationale behind $\color{#a65450}\mathrm{\large{}DogLeash}$ as a Language Server 
+extension, query evaluation).  That's the rationale behind $\color{#a65450}\mathrm{DogLeash}$ as a Language Server 
 *and* Script Host (the "leash") and the basis for the $\color{#a65450}\mathrm{Qynviper}$ 
 modules mentioned above.
 
@@ -304,7 +305,7 @@ modules mentioned above.
 ## Sample Documents
 
 The following are examples of my own publications (not in chronological order) 
-developed with $\color{#a65450}\mathrm{\large{}DogLeash}$ code in some iteration.
+developed with $\color{#a65450}\mathrm{DogLeash}$ code in some iteration.
 
 - [Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf)  Unpublished, by intent, 
 to serve as a demo for certain document-generation features.
@@ -333,7 +334,7 @@ created to illustrate linguistic themes or
 theories.  I wrote three supplemental essays to analyze 
 material present in the data set.  Within those 
 papers, I notated new or previously-discussed 
-linguistic samples, and employed $\color{#a65450}\mathrm{\large{}DogLeash}$ to 
+linguistic samples, and employed $\color{#a65450}\mathrm{DogLeash}$ to 
 pull those examples as structured data available 
 to readers as part of the dataset package; in short, 
 the code demonstrated techniques for compiling 
@@ -393,7 +394,7 @@ and Robotics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch23.pdf)
 Due to privacy or copyright issues, for some of these examples 
 I can only describe projects and their unique coding 
 requirements.  In other cases this list will include 
-links to $\color{#a65450}\mathrm{PDF}$ documents illustrating some $\color{#a65450}\mathrm{\large{}DogLeash}$ features.
+links to $\color{#a65450}\mathrm{PDF}$ documents illustrating some $\color{#a65450}\mathrm{DogLeash}$ features.
 
 ###  Projects Involving Data and/or Code Packages
 
@@ -401,7 +402,7 @@ links to $\color{#a65450}\mathrm{PDF}$ documents illustrating some $\color{#a654
 for the Environmental Protection Agency's "Hazard Mitigation" plan.  As part 
 of this $\color{#a65450}\mathrm{EPA}$ program, states and counties are required to submit documentation 
 for how they identify and address environmental dangers in their 
-communities.  Here, I used $\color{#a65450}\mathrm{\large{}DogLeash}$ tools to address both environmental 
+communities.  Here, I used $\color{#a65450}\mathrm{DogLeash}$ tools to address both environmental 
 data and Zoning/Land Use ordinances so as to explore the connections 
 between environmental health and urban development.  Part of this 
 project involved extending a New York City tool called 
@@ -489,7 +490,7 @@ methods:
 
     >   Though the full text of many scientific papers are available to researchers through $\color{#a65450}\mathrm{CORD-19}$, a number of challenges prevent easy application of $\color{#a65450}\mathrm{NLP}$ and text mining techniques to these papers. First, the primary distribution format of scientific papers — $\color{#a65450}\mathrm{PDF}$ — is not amenable to text processing. The PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information. Significant effort is needed to coerce $\color{#a65450}\mathrm{PDF}$ into a format more amenable to text mining, such as $\color{#a65450}\mathrm{JATS}$ $\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{BioC}$, ... or $\color{#a65450}\mathrm{S2ORC}$ $\color{#a65450}\mathrm{JSON}$ ... [W]e can still benefit from better $\color{#a65450}\mathrm{PDF}$ parsing tools for scientific documents. As a complement, scientific papers should also be made available in a structured format like $\color{#a65450}\mathrm{JSON}$, $\color{#a65450}\mathrm{XML}$, or $\color{#a65450}\mathrm{HTML}$.
 
-    Hopefully $\color{#a65450}\mathrm{\large{}DogLeash}$ can contribute to this initiative. 
+    Hopefully $\color{#a65450}\mathrm{DogLeash}$ can contribute to this initiative. 
 
     Apart from text representations responding to the Allen Institute 
 "call to action", the special code for this book involved 
