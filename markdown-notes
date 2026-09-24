@@ -15,6 +15,9 @@ $\color{black}\textbf{(}\color{#a65450}\mathrm{ ... }\color{black}{\textbf{)}$
 acronym text -- all caps, parens, plural: 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{ ... }\color{black}\textsf{s}\textbf{)}$
 
+acronym text -- all caps, plural: 
+$\color{#a65450}\mathrm{ ... }\color{black}\textsf{s}$
+
 
 special text -- 
 $\underline{\color{#3e2a47}\mathrm{\small{} ... }}$
