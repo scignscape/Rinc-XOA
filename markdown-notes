@@ -1,17 +1,17 @@
 
 acronym text -- mixed caps: 
-$\color{#a65450}{\mathrm{\large{} ... }}$
+$\color{#a65450}\mathrm{\large{} ... }$
 
 acronym text -- all caps: 
-$\color{#a65450}{\mathrm{ ... }}$
+$\color{#a65450}\mathrm{ ... }$
 
 acronym text -- mixed caps, parens: 
-$\color{black}{\textbf{(}}\color{#a65450}{\mathrm{\large{} ... }\color{black}{\textbf{)}}}$
+$\color{black}\textbf{(}\color{#a65450}\mathrm{\large{} ... }\color{black}{\textbf{)}$
 
 acronym text -- all caps, parens: 
-$\color{black}{\textbf{(}}\color{#a65450}{\mathrm{ ... }\color{black}{\textbf{)}}}$
+$\color{black}\textbf{(}\color{#a65450}\mathrm{ ... }\color{black}{\textbf{)}$
 
 
 acronym text -- all caps, parens, plural: 
-$\color{black}{\textbf{(}}\color{#a65450}{\mathrm{ ... }\color{black}{\textsf{s}{\textbf{)}}}$
+$\color{black}\textbf{(}\color{#a65450}\mathrm{ ... }\color{black}\textsf{s}\textbf{)}$
 
