@@ -1,8 +1,8 @@
 
 # Rinc-XOA : Research in nonprofit contexts - Executable Open Access
 
-If you are interested particularly in the $\color{#a65450}\mathrm{\large{}RedPatch}$ Community Health research platform, 
-that's detailed in this repository's $\color{#a65450}\mathrm{\large{}RedPatch}$ branch or [skip ahead](#red-patch).
+If you are interested particularly in the $\color{#a65450}\mathrm{RedPatch}$ Community Health research platform, 
+that's detailed in this repository's $\color{#a65450}\mathrm{RedPatch}$ branch or [skip ahead](#red-patch).
 
 For a description of several projects that employed some of the code published here, 
 including a list of open-access articles and book chapters, scroll down or [skip ahead](#sample-documents-raised).
@@ -27,7 +27,7 @@ $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ desi
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
 or Dryad -- often linked to publications via "Data Availability" or "Supplemental Materials" sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a "dataset processing charge".  Nonetheless,
 $\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles -- both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}\text{)}$ and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
-$\color{#a65450}\mathrm{XML}\color{black}\textbf{)}$ formats, which requires that the entire package be governed by a
+$\color{#a65450}\mathrm{XML}\color{black}\textsf{)}$ formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{\large{}DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
 $\color{#a65450}\mathrm{\large{}DiamondOA}$ funds or similar initiatives.  In short, the $\color{#a65450}\mathrm{ERO}$ and 
 $\color{#a65450}\large{}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
@@ -42,21 +42,21 @@ $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 
 ### Qynviper Modules
 
-A Qynviper VM -- "query/native interop compiler" -- can be implemented via code published in $\color{#a65450}\mathrm{\large{}RedPatch}$.  The idea 
+A Qynviper VM -- "query/native interop compiler" -- can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
 behind Qynviper is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a "module".  By selecting a group of modules, individual VMs can target capabilities to their use-cases.  For example, a VM may be engineered as a compilation target for imperative/procedure scripting languages -- with support for lexical scopes, variables, function calls, and so forth -- but in other use-cases -- e.g., object deserialization -- VM blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a VM can partition the problem into two almost entirely separate domains (generating VM instruction sequences versus implementing opcode handlers).  The Qynviper components make heavy use of preprocessor macros, and in general it takes just a few minutes to rig up $\color{#a65450}\text{C}\large{}\text{++}$ classes as modules once the actual opcode methods are implemented.
 
-The $\color{#a65450}\mathrm{\large{}RedPatch}$ sources (outlined next) are built 
+The $\color{#a65450}\mathrm{RedPatch}$ sources (outlined next) are built 
 around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications -- see the sample "Ordering Concepual Synthesis" paper linked below, or 
 [here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO-Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}\text{)}$ but rather Qynviper code used at different points in a publishing workflow.
 
 **_AMPATH Forms_**
 
-In addition to document preparation, $\color{#a65450}\mathrm{\large{}RedPatch}$ illustrates other VM examples for use-cases such as object deserialization.  For instance, one Qynviper module is built around $\color{#a65450}\mathrm{AMPATH}$ -- the "Academic Model Providing Access To Healthcare" -- which sponsors Electronic Health Record software used by NGOs such as Doctors Without Borders.  Although eventually rendered as $\color{#a65450}\mathrm{HTML}$ (via $\color{#a65450}\mathrm{\large{}ReactJS}\text{)}$ these records are intrinsically defined as $\color{#a65450}\mathrm{JSON}$ configuration files, which opens the possibility for generating alternative front-end viewers.  The $\color{#a65450}\mathrm{\large{}RedPatch}$ branch shows an example where $\color{#a65450}\mathrm{AMPATH}$ forms are translated to $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a "native rendering engine" is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role of Qynviper here is one of generating $\color{#a65450}\text{C}\large{}\text{++}$ code: $\color{#a65450}\mathrm{AMPATH}$ configuration files are first parsed into VM scripts which are separately executed to create the final $\color{#a65450}\mathrm{GUI}$ code.
+In addition to document preparation, $\color{#a65450}\mathrm{RedPatch}$ illustrates other VM examples for use-cases such as object deserialization.  For instance, one Qynviper module is built around $\color{#a65450}\mathrm{AMPATH}$ -- the "Academic Model Providing Access To Healthcare" -- which sponsors Electronic Health Record software used by NGOs such as Doctors Without Borders.  Although eventually rendered as $\color{#a65450}\mathrm{HTML}$ (via $\color{#a65450}\mathrm{\large{}ReactJS}\text{)}$ these records are intrinsically defined as $\color{#a65450}\mathrm{JSON}$ configuration files, which opens the possibility for generating alternative front-end viewers.  The $\color{#a65450}\mathrm{RedPatch}$ branch shows an example where $\color{#a65450}\mathrm{AMPATH}$ forms are translated to $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a "native rendering engine" is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role of Qynviper here is one of generating $\color{#a65450}\text{C}\large{}\text{++}$ code: $\color{#a65450}\mathrm{AMPATH}$ configuration files are first parsed into VM scripts which are separately executed to create the final $\color{#a65450}\mathrm{GUI}$ code.
 
 **_DCMTK_**
 
 Another similar example, based on $\color{#a65450}\mathrm{XML}$ rather than $\color{#a65450}\mathrm{JSON}$, provides an extension to the widely-used $\color{#a65450}\mathrm{DCMTK}$ library for working with $\color{#a65450}\mathrm{DICOM}$ (Digital Imaging and Communications in Medicine) series.  This library offers multiple utilities for converting $\color{#a65450}\mathrm{DICOM}$ files to other image and data formats $\text{(}\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{HTML}$, $\color{#a65450}\mathrm{JPEG}$ and so forth) but currently lacks support for other diagnostic-imaging formats, such as $\color{#a65450}\mathrm{MI-CDM}$ (Medical Imaging Common Data Model), 
-part of the $\color{#a65450}\mathrm{OMOP-CDM}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#a65450}\mathrm{DSR}$ (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as $\color{#a65450}\mathrm{RO-Crate}$.  For these use-cases, $\color{#a65450}\mathrm{\large{}RedPatch}$ provides a Qynviper VM whose purpose is to parse $\color{#a65450}\mathrm{dcm2xml}$ and $\color{#a65450}\mathrm{dsr2xml}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#a65450}\mathrm{DCMTK}$.
+part of the $\color{#a65450}\mathrm{OMOP-CDM}$ (Observational Medical Outcomes Partnership) Common Data Model.  For publishing medical-imaging research (topics such as AI Segmentation and Neuroimaging) it would also be helpful to map $\color{#a65450}\mathrm{DSR}$ (Structured Reporting) observations, annotations, and "key" images onto common Open Science formats such as $\color{#a65450}\mathrm{RO-Crate}$.  For these use-cases, $\color{#a65450}\mathrm{RedPatch}$ provides a Qynviper VM whose purpose is to parse $\color{#a65450}\mathrm{dcm2xml}$ and $\color{#a65450}\mathrm{dsr2xml}$ output and dispatch calls to code-generators for formats not currently supported by $\color{#a65450}\mathrm{DCMTK}$.
 
 As a mostly self-contained platform, Qynviper VMs can readily be embedded in host applications, such as $\color{#a65450}\mathrm{3DSlicer}$ (the preeminent research tool for medical imaging and $\color{#a65450}\mathrm{DICOM}$ series).
 
@@ -71,7 +71,7 @@ I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules int
 
 Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose "research" forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
 
-For more details, navigate to the $\color{#a65450}\mathrm{\large{}RedPatch}$ branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
+For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or click [here](https://github.com/scignscape/Rinc-XOA/tree/RedPatch).
 
 ---
 
@@ -224,7 +224,7 @@ there are only six, plus $\color{#a65450}\mathrm{switch}$ cases for the types in
 By "types" here I mean any collection of binary-compatible types: we can cast a function-pointer 
 to a generic signature based on unsigned integers, for example.  The actual procedures 
 might take signed integers instead, or $\color{#a65450}\mathrm{enum}$ values, but can be correctly called via 
-that partially-type-erased pointer instead.  In any case, $\color{#a65450}\mathrm{\large{}RedPatch}$ has 
+that partially-type-erased pointer instead.  In any case, $\color{#a65450}\mathrm{RedPatch}$ has 
 sample code representing dispatch-tables sufficient for most signatures one might 
 need to expose from a library.
 
