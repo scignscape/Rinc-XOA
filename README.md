@@ -1,7 +1,7 @@
 
-# RedPatch : Research Objects - Diamond Open Access Targeting Community Health
+# RedPatch : Research Objects - Diamond Open Access Targeting Children's and Community Health
 
-$\color{#a65450}\mathrm{RedPatch}$ is a Community Health-oriented research platform with 
+$\underline{\color{#3e2a47}\mathrm{\small{}RedPatch}}$ is a Community Health-oriented research platform with 
 $\color{#a65450}\text{C}\large{}\text{++}$ sublibraries related to Electronic Health Records, Medical Imaging, Geographic Information Systems, and Academic Publishing.
 
 If you are interested in other subject areas instead, please browse to the 
