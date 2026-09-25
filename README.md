@@ -17,7 +17,7 @@ So, $\color{#a65450}\mathrm{RedPatch}$ is the *early stages* of a Research Platf
 
 ## Overview
 
-The underlying technology I have called "$\color{#a65450}\mathrm{DogLeash}$" (Diamond Object Grid - Language Server and Script Host) which develops Executable Research Objects as collections of semi-autonomous modules.  $\color{#a65450}\mathrm{RedPatch}$ is one instantiation of this idea, combining several modules related to Community Health.  These modules are split between the $\color{#a65450}\mathrm{DogLeash}$ repository itself (for more general-purpose code) and this current branch.  More precisely, $\color{#a65450}\mathrm{RedPatch}$ is comprised of six modules, addressing the following subject areas:
+The underlying technology I have called $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$ (Diamond Object Grid - Language Server and Script Host) which develops Executable Research Objects as collections of semi-autonomous modules.  $\color{#a65450}\mathrm{RedPatch}$ is one instantiation of this idea, combining several modules related to Community Health.  These modules are split between the $\color{#a65450}\mathrm{DogLeash}$ repository itself (for more general-purpose code) and this current branch.  More precisely, $\color{#a65450}\mathrm{RedPatch}$ is comprised of six modules, addressing the following subject areas:
 
 
 - Academic Publishing: document preparation and data integration
@@ -26,7 +26,7 @@ The underlying technology I have called "$\color{#a65450}\mathrm{DogLeash}$" (Di
 
 - Medical Imaging, to support researchers studying community-health providers in areas of medicine where imaging is important for diagnosis and treatment, such as Oncology, musculoskeletal interventions, and prenatal care
 
-- Digital Maps to build, export, and visualize GIS data sets addressing community-health concerns such as disease outbreaks, epidemiology, Social Determinants of Health (`SDoH`), and locations of health-care providers (permanent or temporary/emergency)
+- Digital Maps to build, export, and visualize GIS data sets addressing community-health concerns such as disease outbreaks, epidemiology, Social Determinants of Health $\color{black}	extbf{(}\color{#a65450}\mathrm{SDoH}\color{black}	extbf{)}$, and locations of health-care providers (permanent or temporary/emergency)
 
 - Environmental Factors: tools to study public-health implications of pollution, ecological degradation, contaminated water supplies, and similar civil-infrastructure concerns
 
