@@ -10,14 +10,15 @@ including a list of open-access articles and book chapters, scroll down or [skip
 Many of these components are built around a new Virtual Machine generator called 
 $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
-***Very brief personal bio*** &nbsp;&#x2aa2;&nbsp; I (Nathaniel Christen) hold a BA in Computer Science from Bard College (Annandale-on-Hudson, NY) and MA in Linguistics from George Mason University (Fairfax, VA). My doctoral research involved Cognitive Grammar, Phenomenology, and Philosophy of Science (I've even linked the final draft of my dissertation below, though it's presumably been almost 20 years since anyone looked at it).
+***Very brief personal bio*** &nbsp;&#x2aa2;&nbsp; I (Nathaniel Christen) hold a BA in Computer Science from Bard College (Annandale-on-Hudson, NY) and MA in Linguistics from George Mason University (Fairfax, VA). My doctoral research involved Cognitive Grammar, Phenomenology, and Philosophy of Science (I&rsquo;ve even linked the final draft of my dissertation below, though it's presumably been almost 20 years since anyone looked at it).
 
 ---
 
 ### Overview
 
 In publishing, Diamond $\color{black}\textbf{(}\color{#a65450}\mathrm{DiamondOA}\color{black}\textbf{)}$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
-$\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textbf{)}$) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by &ldquo;Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
+$\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textbf{)}$) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by &ldquo;Diamond Open Access Funds&rdquo;, 
+which are more prevalent in the European Union than the United State.
 
 Meanwhile, Executable Research Objects
 $\color{black}\textbf{(}\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}\textbf{)}$
@@ -26,7 +27,7 @@ are one form of Research Object/data set guided by data transparency and $\color
 For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most $\color{#a65450}\mathrm{FAIR}$-sharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
-or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles&rsquo landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge".  Nonetheless,
+or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles&rsquo landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge&rdquo;.  Nonetheless,
 $\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles &mdash; both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$) formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
@@ -45,7 +46,7 @@ $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 ### Qynviper Modules
 
 A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ &mdash; &ldquo;query/native interop compiler&rdquo; &mdash; can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
-behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a &ldquo;module".  By selecting a group of modules, individual
+behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a &ldquo;module&rdquo;.  By selecting a group of modules, individual
 $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}\textbf{)}$
 can target capabilities to their use-cases.  For example, a
 $\color{#a65450}\mathrm{VM}$ may be engineered as a compilation target for imperative/procedure scripting languages &mdash; with support for lexical scopes, variables, function calls, and so forth &mdash; but in other use-cases &mdash; e.g., object deserialization &mdash; $\color{#a65450}\mathrm{VM}$ blocks are generated from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$ sources which are declarative rather than imperative.  A conventional $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{SAX}$ parser responds immediately to $\color{#a65450}\mathrm{XML}$ parsing events, thereby conflating $\color{#a65450}\mathrm{DTD}$ and handler logic, whereas a
@@ -84,7 +85,7 @@ $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in h
 ### Community Health Research Platform
 
 
-I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents".  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, 
+I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into <span style='color:red!10!blue;background:#ede8ff'>RedPatch}$ (Research Objects - Diamond Open Access Targeting Children's and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents&rdquo;.  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, 
 $\color{#a65450}\mathrm{CSV}\color{black}/\color{#a65450}\mathrm{XML}\color{black}/\color{#a65450}\mathrm{JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
 
 Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose &ldquo;research&rdquo; forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
@@ -105,8 +106,8 @@ In contemporary academic publishing, the basic unit for sharing experience and i
 
 In the genre of open-access publishing, the &ldquo;diamond&rdquo; model implies resources that 
 are free for both readers and authors.  This paradigm is usually contrasted with a 
-"gold&rdquo; model where documents are free for readers but require authors to pay 
-Article Processing Charges".  The diamond model is also sometimes contrasted with a &ldquo;green&rdquo; 
+&ldquo;gold&rdquo; model where documents are free for readers but require authors to pay 
+processing charges.  The diamond model is also sometimes contrasted with a &ldquo;green&rdquo; 
 model where authors create private copies of articles whose &ldquo;official&rdquo; versions are 
 behind a paywall.
 
@@ -529,7 +530,7 @@ tools for scientific documents.  As a complement, scientific papers should also 
     Hopefully $\color{#a65450}\mathrm{DogLeash}$ can contribute to this initiative. 
 
     Apart from text representations responding to the Allen Institute 
-"call to action", the special code for this book involved 
+&ldquo;call to action&rdquo;, the special code for this book involved 
 compiling and, in some cases, extending bioinformatics 
 or scientific software applicable to biomedical 
 research.  One of the book's themes was how to implement data-integration 
