@@ -43,7 +43,7 @@ $\underline{\color{#3e2a47}\mathrm{\small{}DogLeash}}$
 
 <a id="qynviper"></a>
 
-## Qynviper Modules
+### Qynviper Modules
 
 A $\color{#a65450}\mathrm{Qynviper}$ $\color{#a65450}\mathrm{VM}$ &mdash; &ldquo;query/native interop compiler&rdquo; &mdash; can be implemented via code published in $\color{#a65450}\mathrm{RedPatch}$.  The idea 
 behind $\color{#a65450}\mathrm{Qynviper}$ is that opcodes delegate to methods in $\color{#a65450}\text{C}\large{}\text{++}$ classes (or potentially those of other languages).  Each such class is called a &ldquo;module&rdquo;.  By selecting a group of modules, individual
@@ -82,7 +82,7 @@ $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in h
 
 <a id="red-patch"></a>
 
-## Community Health Research Platform
+### Community Health Research Platform
 
 
 I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into 
@@ -96,7 +96,7 @@ For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or c
 
 ---
 
-## Publishing for Nonprofits
+### Publishing for Nonprofits
 
 Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits&rsquo; employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
 
