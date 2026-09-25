@@ -56,7 +56,7 @@ $\color{#a65450}\mathrm{Qynviper}$ components make heavy use of preprocessor mac
 
 The $\color{#a65450}\mathrm{RedPatch}$ sources (outlined next) are built 
 around several VMs created in this manner, partly for demonstration purposes.  This includes document processors for publications &mdash; see the sample &ldquo;Ordering Concepual Synthesis&rdquo; paper linked below, or 
-[here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}\text{)}$ but rather
+[here](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf).  The paper provides links to five other representations targeting different text-encoding specifications, such as $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ and $\color{#a65450}\mathrm{TAGML}$ (Text-As-Graph Markup Language).  Here, these are not markup formats directly (though when needed convertable to/from $\color{#a65450}\mathrm{XML}$ or $\color{#a65450}\mathrm{JSON}$) but rather
 $\color{#a65450}\mathrm{Qynviper}$ code used at different points in a publishing workflow.
 
 **_AMPATH Forms_**
@@ -197,7 +197,7 @@ void wrap(Dispatcher& disp, QString name, F fn)
 
 The point here is that we know how to wrap the exposed function at compile time because we get the argument 
 count and types from `_func_traits<>` and `tuple_size<>`.  Every procedure thereby gets a conventient 
-wrapper all of which have the same type (here using $\color{#a65450}\mathrm{QStringList}\text{)}$.  There's a little more work 
+wrapper all of which have the same type (here using $\color{#a65450}\mathrm{QStringList}$).  There's a little more work 
 to do, particularly to handle return values (plus maybe exceptions and pointer-to-members), but this is the basic idea.
 
 We need a different technique for dynamically loaded libraries, however, because in that case we 
@@ -222,7 +222,7 @@ selected via a string of `switch` statements: one for the arg count, next for th
 (e.g., 1, 2, 4, or 8), next the arg2 type, etc.  Those `switch`es would work off of digits in 
 the signture &ldquo;code&rdquo; (like 440) so that registering even an $\color{#a65450}\mathrm{.so}$ runtime procedure 
 would take only a single numeric code (which is simpler than how registering works 
-in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}\text{)}$.
+in $\color{#a65450}\mathrm{ECL}$ or $\color{#a65450}\mathrm{AngelScript}$).
 
 
 **_Signature Codes_**
@@ -250,7 +250,7 @@ need to expose from a library.
 
 **_Language Server Protocol_**
 
-The $\color{#a65450}\mathrm{Language Server Protocol}$ $\text{(}\color{#a65450}\mathrm{LSP}\text{)}$, developed by Microsoft, is a tool through which 
+The $\color{#a65450}\mathrm{Language Server Protocol}$ $\text{(}\color{#a65450}\mathrm{LSP}\color{black}\text{)}$, developed by Microsoft, is a tool through which 
 code editors and Integrated Development Environments $\text{(}\color{#a65450}\mathrm{IDE}\text{s}$) communicate 
 with external programs that play the role of code assistants, 
 offering hints, information on data types and function signatures, code completion 
@@ -439,7 +439,7 @@ $\color{#a65450}\mathrm{ZoLa}$ (for Zoning and Land Use), which was created by
 NYC Planning Labs but openly shared in the hopes that 
 other jurisdictions adopt the same technology.  Other 
 data sourecs came from the 
-$\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\color{#a65450}\mathrm{TRI}\text{)}$ 
+$\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic Release Inventory&rdquo; $\text{(}\color{#a65450}\mathrm{TRI}$) 
 data set, which publishes data files identifying reported 
 contamination incidents by geographic coordinates, and 
 has been studied for publications such as the New York City &ldquo;Environmental Justice&rdquo; 
@@ -499,9 +499,9 @@ Space Modeling for COVID, Cancer, and Cardiac Care_ (Elsevier,
 software components &mdash; such as the Cancer Phenomics Toolkit $\text{(}\color{#a65450}\mathrm{CapTk}\text{)}$, 
 $\color{#a65450}\mathrm{IQmol}$ molecular visualization software, $\color{#a65450}\mathrm{cytolib}$ for flow cytometry, 
 $\color{#a65450}\mathrm{medInria}$ and $\color{#a65450}\mathrm{Semantic PACS}$ (Picture Archiving and Communication System), 
-and the Cancer Bioinformatics Grid $\text{(}\color{#a65450}\mathrm{caBig}\text{)}$ Image Annotation Toolkit &mdash; 
+and the Cancer Bioinformatics Grid $\text{(}\color{#a65450}\mathrm{caBig}$) Image Annotation Toolkit &mdash; 
 bioinformatics file formats (and their deserialization/analytic libaries), 
-and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$'s &ldquo;Digital Model Repository&rdquo; 
+and collaborative projects (such as $\color{#a65450}\mathrm{caBig}$&rsquo;s &ldquo;Digital Model Repository&rdquo; 
 and the $\color{#a65450}\mathrm{CORD\text{-}19}$ archive for Covid research).  $\color{#a65450}\mathrm{CORD\text{-}19}$ (the 
 $\color{#a65450}\mathrm{COVID\text{-}19}$ Open Research Dataset) grew to encompass over 400,000 open-access 
 articles focusing on $\color{#a65450}\mathrm{SARS\text{-}COV\text{-}2}$ and related topics (including the original 
