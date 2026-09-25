@@ -330,6 +330,9 @@ to serve as a demo for certain document-generation features.
 
 - [Merging Full-Text Query with Research Data Sets: A perspective from compiler theory](https://scignscape.github.io/Rinc-XOA/documents/A-perspective-from-compiler-theory.pdf)  Presented at NISO/JATS 2026.
 
+ &nbsp; &nbsp; &#x2192; Slide deck: 
+[Nathaniel_Christen_JATS-Con-2026-slides](https://scignscape.github.io/Rinc-XOA/documents/Nathaniel_Christen_JATS-Con-2026-slides.pdf)
+
 - [Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology
 for Syntactic Theory](https://scignscape.github.io/Rinc-XOA/documents/Ordering-Conceptual-Synthesis.pdf)  A paper about linguistics and the philosophy of science, which uses 
 programming languages as case-studies for some 
