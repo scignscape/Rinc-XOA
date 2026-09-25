@@ -359,13 +359,13 @@ the code demonstrated techniques for compiling
 linguistic data sets from example 
 sentences/fragments listed for analysis in linguistics papers.
 
-    1.  [From &lsquoNaturalizing Phenomenology&rsquo to Formalizing Cognitive Linguistics (I):
+    1.  [From &lsquo;Naturalizing Phenomenology&rsquo; to Formalizing Cognitive Linguistics (I):
 Cognitive Transform Grammar](https://scignscape.github.io/Rinc-XOA/documents/ijst/ctg.pdf)
 
-    2.  [From &lsquoNaturalizing Phenomenology&rsquo to Formalizing Cognitive Linguistics (II):
+    2.  [From &lsquo;Naturalizing Phenomenology&rsquo; to Formalizing Cognitive Linguistics (II):
 Grounding and Center/Peripheral Relations](https://scignscape.github.io/Rinc-XOA/documents/ijst/icg.pdf)
 
-    3.  [From &lsquoNaturalizing Phenomenology&rsquo to Formalizing Cognitive Linguistics (III):
+    3.  [From &lsquo;Naturalizing Phenomenology&rsquo; to Formalizing Cognitive Linguistics (III):
 Externalism and the Interface Theory of Meaning](https://scignscape.github.io/Rinc-XOA/documents/ijst/itm.pdf)
 
 - The chapters of the book _Innovative Data Integration and Conceptual Space Modeling 
@@ -401,7 +401,7 @@ and Robotics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch23.pdf)
     5.  [Chapter 24 &ndash; GUIs, Robots, and Language: Toward a Neo-Davidsonian Procedural Semantics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch24.pdf)
 
 
-- My doctoral dissertation on ["Phenomenological Reductionism"](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf).  This document has fairly basic layout, but I still stand by the content.
+- My doctoral dissertation on "[Phenomenological Reductionism](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf)".  This document has fairly basic layout, but I still stand by the content.
 
 
 ---
