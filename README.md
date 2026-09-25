@@ -338,13 +338,13 @@ for this manuscript included document-specific
 algorithms to isolate linguistic samples and present 
 them alongside the index as a kind of thematic summary.
 
-- &ldquo;From &lsquoNaturalizing Phenomenology&rsquo to Formalizing 
+- &ldquo;From &lsquo;Naturalizing Phenomenology&rsquo; to Formalizing 
 Cognitive Linguistics (I-III)&rdquo;  These three papers were 
 developed in connection with supplemental materials 
 for an article in the International Journal of 
 Speech Technology, where I joined as a co-author 
 with researchers from Bar-Ilan University (Israel) 
-and Johns Hopkins (US).  The supplemental content 
+and Johns Hopkins ($\color{#a65450}\mathrm{US}$).  The supplemental content 
 was a data set including audio and written 
 samples for linguistic annotation, including some 
 taken as &ldquo;hypothetical&rdquo; sentences or fragments 
