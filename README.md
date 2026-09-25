@@ -327,7 +327,7 @@ modules mentioned above.
 The following are examples of my own publications (not in chronological order) 
 developed with $\color{#a65450}\mathrm{DogLeash}$ code in some iteration.
 
-(&#x22b9; Orcid: [0000-0002-0988-7352](https://orcid.org/0000-0002-0988-7352))
+&#x2985;&#x22b9; Orcid: [0000-0002-0988-7352](https://orcid.org/0000-0002-0988-7352)&#x2986;
 
 - [Merging Full-Text Query with Research Data Sets: A perspective from compiler theory](https://scignscape.github.io/Rinc-XOA/documents/A-perspective-from-compiler-theory.pdf)  Presented at NISO/JATS 2026.
 
