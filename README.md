@@ -14,7 +14,7 @@ $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scr
 
 ---
 
-### Overview
+## Overview
 
 In publishing, Diamond $\color{black}\textbf{(}\color{#a65450}\mathrm{DiamondOA}\color{black}\textbf{)}$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textbf{)}$) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by &ldquo;Diamond Open Access Funds&rdquo;, 
