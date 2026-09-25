@@ -26,8 +26,8 @@ are one form of Research Object/data set guided by data transparency and $\color
 
 For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most $\color{#a65450}\mathrm{FAIR}$-sharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
-$\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
-or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles&rsquo landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge&rdquo;.  Nonetheless,
+$\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$, Zenodo, 
+or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles&rsquo; landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge&rdquo;.  Nonetheless,
 $\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles &mdash; both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$) formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
@@ -96,7 +96,7 @@ For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or c
 
 ### Publishing for Nonprofits
 
-Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits&rsquo employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
+Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits&rsquo; employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
 
 Insofar as publications are deployed with the same licences as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
 
@@ -273,7 +273,7 @@ directly they could rely on metadata files instead.
 In short, a domain-specific Language Server can be built via 
 metadata files that accompany source code and provide information 
 in a variety of contexts, including code-introspection and dynamic 
-dispatch.  Continuing the above $\color{#a65450}\mathrm{RPC}$ example, functions&rsquo 
+dispatch.  Continuing the above $\color{#a65450}\mathrm{RPC}$ example, functions&rsquo; 
 names and signature codes are the kind of information that could be 
 exposed via metadata files.
 
