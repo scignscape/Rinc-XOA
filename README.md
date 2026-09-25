@@ -25,7 +25,7 @@ are one form of Research Object/data set guided by data transparency and $\color
 For the current repository and siblings, Executable Open Access
 $\color{black}\textbf{(}\color{#a65450}\mathrm{XOA}\color{black}\textbf{)}$ designates a synthesis of these two paradigms.  Most $\color{#a65450}\mathrm{FAIR}$-sharing projects, to be sure, are Open Access by default because they are hosted on free services such as Open Science Framework 
 $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$
-or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles' landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge".  Nonetheless,
+or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles&rsquo landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge".  Nonetheless,
 $\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles &mdash; both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$) formats, which requires that the entire package be governed by a
 $\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
@@ -94,7 +94,7 @@ For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or c
 
 ### Publishing for Nonprofits
 
-Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits' employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
+Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits&rsquo employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
 
 Insofar as publications are deployed with the same licences as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
 
@@ -271,7 +271,7 @@ directly they could rely on metadata files instead.
 In short, a domain-specific Language Server can be built via 
 metadata files that accompany source code and provide information 
 in a variety of contexts, including code-introspection and dynamic 
-dispatch.  Continuing the above $\color{#a65450}\mathrm{RPC}$ example, functions' 
+dispatch.  Continuing the above $\color{#a65450}\mathrm{RPC}$ example, functions&rsquo 
 names and signature codes are the kind of information that could be 
 exposed via metadata files.
 
@@ -325,23 +325,20 @@ modules mentioned above.
 The following are examples of my own publications (not in chronological order) 
 developed with $\color{#a65450}\mathrm{DogLeash}$ code in some iteration.
 
-- [Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf)  Unpublished, by intent, 
-to serve as a demo for certain document-generation features.
-
 - [Merging Full-Text Query with Research Data Sets: A perspective from compiler theory](https://scignscape.github.io/Rinc-XOA/documents/A-perspective-from-compiler-theory.pdf)  Presented at NISO/JATS 2026.
 
  &nbsp; &nbsp; &#x2192; Slide deck: 
 [Nathaniel_Christen_JATS-Con-2026-slides](https://scignscape.github.io/Rinc-XOA/documents/Nathaniel_Christen_JATS-Con-2026-slides.pdf)
 
-- [Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology
-for Syntactic Theory](https://scignscape.github.io/Rinc-XOA/documents/Ordering-Conceptual-Synthesis.pdf)  A paper about linguistics and the philosophy of science, which uses 
+- [Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory](https://scignscape.github.io/Rinc-XOA/authors/NathanielChristen/OrderingConceptualSynthesis.pdf)
+A paper about linguistics and the philosophy of science, which uses 
 programming languages as case-studies for some 
 linguistic topics.  The Executable Research Object code 
 for this manuscript included document-specific 
 algorithms to isolate linguistic samples and present 
 them alongside the index as a kind of thematic summary.
 
-- &ldquo;From 'Naturalizing Phenomenology' to Formalizing 
+- &ldquo;From &lsquoNaturalizing Phenomenology&rsquo to Formalizing 
 Cognitive Linguistics (I-III)&rdquo;  These three papers were 
 developed in connection with supplemental materials 
 for an article in the International Journal of 
@@ -362,46 +359,46 @@ the code demonstrated techniques for compiling
 linguistic data sets from example 
 sentences/fragments listed for analysis in linguistics papers.
 
-    1.  [From 'Naturalizing Phenomenology' to Formalizing Cognitive Linguistics (I):
+    1.  [From &lsquoNaturalizing Phenomenology&rsquo to Formalizing Cognitive Linguistics (I):
 Cognitive Transform Grammar](https://scignscape.github.io/Rinc-XOA/documents/ijst/ctg.pdf)
 
-    2.  [From 'Naturalizing Phenomenology' to Formalizing Cognitive Linguistics (II):
+    2.  [From &lsquoNaturalizing Phenomenology&rsquo to Formalizing Cognitive Linguistics (II):
 Grounding and Center/Peripheral Relations](https://scignscape.github.io/Rinc-XOA/documents/ijst/icg.pdf)
 
-    3.  [From 'Naturalizing Phenomenology' to Formalizing Cognitive Linguistics (III):
+    3.  [From &lsquoNaturalizing Phenomenology&rsquo to Formalizing Cognitive Linguistics (III):
 Externalism and the Interface Theory of Meaning](https://scignscape.github.io/Rinc-XOA/documents/ijst/itm.pdf)
 
 - The chapters of the book _Innovative Data Integration and Conceptual Space Modeling 
-for COVID, Cancer, and Cardiac Care_ (Elsevier, 2022).  These are individual chapters' penultimate versions, 
+for COVID, Cancer, and Cardiac Care_ (Elsevier, 2022).  These are individual chapters&rsquo penultimate versions, 
 not identical to the printed book.
 
-  1.  [Chapter 1 &mdash; Introduction](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter1.pdf)
-  2.  [Chapter 2 &mdash; Data Structures Associated with Biomedical Research](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter2.pdf)
-  3.  [Chapter 3 &mdash; Data Mining and Predictive Analytics for Cancer and COVID-19](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter3.pdf)
-  4.  [Chapter 4 &mdash; Modular Design, Image Biomarkers, and Radiomics](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter4.pdf)
-  5.  [Chapter 5 &mdash; Types’ Internal Structure and ‘Nonconstructive’ (‘NC4’) Type Theory](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter5.pdf)
-  6.  [Chapter 6 &mdash; Using Code Models to Instantiate Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter6.pdf)
-  7.  [Chapter 7 &mdash; Multi-Aspect Modules and Image Annotation](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter7.pdf)
-  8.  [Chapter 8 &mdash; Image Annotation as a Multi-Aspect Case-Study](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter8.pdf)
-  9.  [Chapter 9 &mdash; Conceptual Spaces and Scientific Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter9.pdf)
+  1.  [Chapter 1 &ndash; Introduction](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter1.pdf)
+  2.  [Chapter 2 &ndash; Data Structures Associated with Biomedical Research](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter2.pdf)
+  3.  [Chapter 3 &ndash; Data Mining and Predictive Analytics for Cancer and COVID-19](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter3.pdf)
+  4.  [Chapter 4 &ndash; Modular Design, Image Biomarkers, and Radiomics](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter4.pdf)
+  5.  [Chapter 5 &ndash; Types’ Internal Structure and ‘Nonconstructive’ (‘NC4’) Type Theory](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter5.pdf)
+  6.  [Chapter 6 &ndash; Using Code Models to Instantiate Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter6.pdf)
+  7.  [Chapter 7 &ndash; Multi-Aspect Modules and Image Annotation](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter7.pdf)
+  8.  [Chapter 8 &ndash; Image Annotation as a Multi-Aspect Case-Study](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter8.pdf)
+  9.  [Chapter 9 &ndash; Conceptual Spaces and Scientific Data Models](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter9.pdf)
 
 - Five chapters from the book _AI, IoT, Big Data and Cloud Computing for Industry 4.0_ 
 (Amy Neustein, Parikshit N. Mahalle, Prachi Joshi, Gitanjali Rahul Shinde, eds., 
 Springer 2024: [https://link.springer.com/book/10.1007/978-3-031-29713-7](https://link.springer.com/book/10.1007/978-3-031-29713-7)).
 
-    1.  [Chapter 20 &mdash; Multi-Component Interoperability and Virtual Machines: Examples from
+    1.  [Chapter 20 &ndash; Multi-Component Interoperability and Virtual Machines: Examples from
 Architecture, Engineering, Cyber-Physical Networks, and Geographic Information Systems](https://scignscape.github.io/Rinc-XOA/documents/iot/ch20.pdf)
 
-    2.  [Chapter 21 &mdash; Virtual Machines and Hypergraph Data/Code Models: Graph-Theoretic
+    2.  [Chapter 21 &ndash; Virtual Machines and Hypergraph Data/Code Models: Graph-Theoretic
 Representations of Lambda-Style Calculi](https://scignscape.github.io/Rinc-XOA/documents/iot/ch21.pdf)
 
-    3.  [Chapter 22 &mdash; GUI Integration and Virtual Machine Constructions for Image Processing:
+    3.  [Chapter 22 &ndash; GUI Integration and Virtual Machine Constructions for Image Processing:
 Phenomenological and Database-Engineering insights into Computer Vision](https://scignscape.github.io/Rinc-XOA/documents/iot/ch22.pdf)
 
-    4.  [Chapter 23 &mdash; The Missing Links Between Computer and Human Languages: Animal Cognition
+    4.  [Chapter 23 &ndash; The Missing Links Between Computer and Human Languages: Animal Cognition
 and Robotics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch23.pdf)
 
-    5.  [Chapter 24 &mdash; GUIs, Robots, and Language: Toward a Neo-Davidsonian Procedural Semantics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch24.pdf)
+    5.  [Chapter 24 &ndash; GUIs, Robots, and Language: Toward a Neo-Davidsonian Procedural Semantics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch24.pdf)
 
 
 - My doctoral dissertation on ["Phenomenological Reductionism"](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf).  This document has fairly basic layout, but I still stand by the content.
