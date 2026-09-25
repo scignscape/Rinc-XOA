@@ -10,6 +10,8 @@ including a list of open-access articles and book chapters, scroll down or [skip
 Many of these components are built around a new Virtual Machine generator called 
 $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
+*_Very brief personal bio_* I (Nathaniel Christen) hold a BA in Computer Science from Bard College (Annandale-on-Hudson, NY) and MA in Linguistics from George Mason University (Fairfax, VA). My doctoral research involved Cognitive Grammar, Phenomenology, and Philosophy of Science (I've even linked the final draft of my dissertation below, though it's presumably been almost 20 years since anyone looked at it).
+
 ---
 
 ### Overview
