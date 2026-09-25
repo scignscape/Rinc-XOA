@@ -401,7 +401,7 @@ and Robotics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch23.pdf)
     5.  [Chapter 24 &ndash; GUIs, Robots, and Language: Toward a Neo-Davidsonian Procedural Semantics](https://scignscape.github.io/Rinc-XOA/documents/iot/ch24.pdf)
 
 
-- My doctoral dissertation on "[Phenomenological Reductionism](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf)".  This document has fairly basic layout, but I still stand by the content.
+- My doctoral dissertation on &ldquo;[Phenomenological Reductionism](https://scignscape.github.io/Rinc-XOA/documents/nc/dissertation.pdf)&rdquo;.  This document has fairly basic layout, but I still stand by the content.
 
 
 ---
