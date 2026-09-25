@@ -130,7 +130,7 @@ and dataset file
 
 ---
 
-### Compiler Extensions
+## Compiler Extensions
 
 $\color{#a65450}\mathrm{DogLeash}$ Research Objects are assumed to be $\color{#a65450}\text{C}\large{}\text{++}$ code libraries that compile to a single recognized 
 Research Application (other utilities may be created as well, but someone using the data set should 
