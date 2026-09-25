@@ -87,7 +87,7 @@ $\color{#a65450}\mathrm{VM}\color{black}\textsf{s}$ can readily be embedded in h
 
 I have grouped most of the $\color{#a65450}\mathrm{\large DogLeash}$ modules into 
 $\underline{\color{#3e2a47}\mathrm{\small{}RedPatch}}$
-(Researcher&rsquo; Diamond Open Access Platform Targeting Children&rsquo;s and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents&rdquo;.  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, 
+(Researchers&rsquo; Diamond Open Access Platform Targeting Children&rsquo;s and Community Health) which has its own branch in the current repository.  This code base leverages similarities between Electronic Health Records and Executable Research Object &ldquo;microcomponents&rdquo;.  More specifically, at least for $\color{#a65450}\mathrm{DogLeash}$ an Executable Research Object is composed of multiple microcomponents which, in general, each provide one application window and present the user with information and/or graphics from a particular data profile, multimedia resource, or record source (data base, data set, 
 $\color{#a65450}\mathrm{CSV}\color{black}/\color{#a65450}\mathrm{XML}\color{black}/\color{#a65450}\mathrm{JSON}$ file, etc.).  A good example of microcomponents would be displays showing a specific type of $\color{#a65450}\mathrm{EHR}$ form, or a single medical image alongside provenance, diagnostic, and annotation metadata.  In $\color{#a65450}\mathrm{DogLeash}$, for each microcomponent there is typically a single $\color{#a65450}\text{C}\large{}\text{++}$ class encapsulating the totality of information provided by one instance of the component, plus metadata about valid ranges/values for form fields and annotations on fields/enumerations in terms of standard vocabularies, such as Open Concept Lab.
 
 Electronic Health Records and Medical Imaging is therefore a useful domain in which to implement concrete $\color{#a65450}\mathrm{DogLeash}$ components.  This does not mean that Executable Research Objects should mimic on-site $\color{#a65450}\mathrm{EHR}$ forms used by health-care providers for their day-to-day operations; but special-purpose &ldquo;research&rdquo; forms may be developed that have similar presentation and terminological standards, and such forms in turn for the basis of open-access data sets.
@@ -430,7 +430,7 @@ links to $\color{#a65450}\mathrm{PDF}$ documents illustrating some $\color{#a654
 
 1.  $\color{#a65450}\mathrm{CSV}$ and $\color{#a65450}\mathrm{SVG}$ 
 Integration:  This project coincided with the five-year cycle 
-for the Environmental Protection Agency's &ldquo;Hazard Mitigation&rdquo; plan.  As part 
+for the Environmental Protection Agency&rsquo;s &ldquo;Hazard Mitigation&rdquo; plan.  As part 
 of this $\color{#a65450}\mathrm{EPA}$ program, states and counties are required to submit documentation 
 for how they identify and address environmental dangers in their 
 communities.  Here, I used $\color{#a65450}\mathrm{DogLeash}$ tools to address both environmental 
