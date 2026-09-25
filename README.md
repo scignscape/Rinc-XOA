@@ -30,7 +30,7 @@ $\color{black}\textbf{(}\color{#a65450}\mathrm{OSF}\color{black}\textbf{)}$, Zen
 or Dryad &mdash; often linked to publications via &ldquo;Data Availability&rdquo; or &ldquo;Supplemental Materials&rdquo; sections on articles&rsquo; landing pages (which also have abstracts, bibliographies, and so forth).  There is no such thing as a &ldquo;dataset processing charge&rdquo;.  Nonetheless,
 $\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}$ are most productive when they include complete version of associated research articles &mdash; both in human-readable (e.g., $\color{#a65450}\mathrm{PDF}$) and machine-readable (e.g., $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$) formats, which requires that the entire package be governed by a
-$\color{#a65450}\mathrm{DiamondOA}$ licence.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
+$\color{#a65450}\mathrm{DiamondOA}$ license.  Moreover, aggregating disparate dataset materials into an overarching Research Application requires additional programming that could potentially be supported by
 $\color{#a65450}\mathrm{DiamondOA}$ funds or similar initiatives.  In short, the $\color{#a65450}\mathrm{ERO}$ and 
 $\color{#a65450}\mathrm{DiamondOA}$ paradigms are sufficiently interrelated/overlapping that each may help promote the other.
 
@@ -65,7 +65,7 @@ In addition to document preparation, $\color{#a65450}\mathrm{RedPatch}$ illustra
 $\color{#a65450}\mathrm{Qynviper}$ module is built around $\color{#a65450}\mathrm{AMPATH}$ &mdash; the &ldquo;Academic Model Providing Access To Healthcare&rdquo; &mdash; which sponsors Electronic Health Record software used by
 $\color{#a65450}\mathrm{NGO}\color{black}\textsf{s}$
 such as Doctors Without Borders and Partners in Health.  Although eventually rendered as $\color{#a65450}\mathrm{HTML}$ (via $\color{#a65450}\mathrm{ReactJS}$) these records are intrinsically defined as $\color{#a65450}\mathrm{JSON}$ configuration files, which opens the possibility for generating alternative front-end viewers.  The $\color{#a65450}\mathrm{RedPatch}$ branch shows an example where $\color{#a65450}\mathrm{AMPATH}$ forms are translated to 
-$\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a &ldquo;native rendering engine&rdquo; is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role for
+$\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{Qt}$ classes and compiled as ordinary desktop libraries (or standalone applications).  Such a &ldquo;native rendering engine&rdquo; is potentially useful in providing an $\color{#a65450}\mathrm{EHR}$ framework which does not depend on $\color{#a65450}\mathrm{HTTP}$ servers and client/server networking, and it also shows how $\color{#a65450}\mathrm{AMPATH}$ annotations (with sources such as Open Concept Lab, International Classification of Diseases, and other biomedical controlled vocabularies) can augment the searchability and interoperability of $\color{#a65450}\text{C}\large{}\text{++}$ $\color{#a65450}\mathrm{GUI}$ components.  The role for
 $\color{#a65450}\mathrm{Qynviper}$ here is to generate $\color{#a65450}\text{C}\large{}\text{++}$ code: $\color{#a65450}\mathrm{AMPATH}$ configuration files are first parsed into 
 $\color{#a65450}\mathrm{VM}$
 scripts which are separately executed to create the final $\color{#a65450}\mathrm{GUI}$ code.
@@ -100,7 +100,7 @@ For more details, navigate to the $\color{#a65450}\mathrm{RedPatch}$ branch or c
 
 Supporting research in nonprofit contexts presents several distinct paradigms as compared with publishing workflows in traditional academic environments.  For one thing, authors are not necessarily affiliated with universities; they might instead be nonprofits&rsquo; employees, volunteers, or independent researchers.  Outlets might not be conventional peer-reviewed journals or book series.  Some nonprofits act as their own miniature publishing houses; in other cases researchers may use platforms such as $\color{#a65450}\mathrm{github}$, Open Science Framework, or Dryad.  A single document publication (e.g., the $\color{#a65450}\mathrm{PDF}$ of a research article) in this case may be just one file in a Research Object also containing source code and raw data files.
 
-Insofar as publications are deployed with the same licences as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
+Insofar as publications are deployed with the same licenses as code and data, they can be rigorously cross-referenced with sibling assets to an extent that is not feasible when documents are paywalled while data sets are not.  This use case is not well-supported by existing document-prep languages like $\color{#a65450}\mathrm{LaTeX}$ or $\color{#a65450}\mathrm{JATS}$, so $\color{#a65450}\mathrm{DogLeash}$ provides its own input markup language, machine-readable text encoding, $\color{#a65450}\mathrm{PDF}$ annotation system, and custom $\color{#a65450}\mathrm{PDF}$ viewers (all of which may embedded direcly in Executable Research Objects as $\color{#a65450}\text{C}\large{}\text{++}$ source files).  In this context, for example, articles are displayed via $\color{#a65450}\mathrm{PDF}$ files that may be viewed within $\color{#a65450}\mathrm{PDF}$ renderers built as part of the Research Object (i.e., Research Application) itself.
 
 **_The &ldquo;Diamond&rdquo; Publishing Model_**
 
@@ -207,7 +207,7 @@ We need a different technique for dynamically loaded libraries, however, because
 can handle many or most functions that might be exposed for a data set.  Typically these 
 fit familiar patterns that can be summarized with a compact code.  For instance, use numbers 
 like 1, 2, 4, 8 for integers of different sizes.  Then a pair of 4-byte arguments with no return 
-could get a code like 440, and a wrapper constructured for every procedure with that kind of 
+could get a code like 440, and a wrapper constructed for every procedure with that kind of 
 signature (or anything binary compatible to it), rather than one-wrapper-per-function as above:
 
 ```
@@ -238,7 +238,7 @@ the same type, then the only thing that varies is the number of parameters, so t
 maximum of say 10 `switch` cases $\text{(}\color{#a65450}\mathrm{Qt}$'s meta-object system, for $\color{#a65450}\mathrm{QObject}$ subclasses, 
 recognizes up to 10 arguments).  If there are two types, then a variety of argpack-sizes 
 can be covered by bit vectors (on for one type and off for the other).  It's only with three 
-or more types that you get potentially complex dispatch trees, but you're also problably 
+or more types that you get potentially complex dispatch trees, but you're also probably 
 not going to get a lot of *repetition*.  Suppose you have exactly three arguments of 
 three different types: each signature is then a permutation of three elements, of which 
 there are only six, plus `switch` cases for the types involved.
@@ -312,7 +312,7 @@ code in a sort of Virtual Machine:
 ```
 
 With very few changes (maybe the last line becomes some sort of $\color{#a65450}\mathrm{call}$ instruction instead) this might be 
-almost identical to VM instructions for an $\color{#a65450}\mathrm{FFI}$-style call intead.
+almost identical to $\color{#a65450}\mathrm{VM}$ instructions for an $\color{#a65450}\mathrm{FFI}$-style call intead.
 
 The point is that a standardized type-metadata format could be used simultaneously both to 
 feed information to Language Servers and to enable Script Hosting (and, by 
@@ -437,7 +437,7 @@ communities.  Here, I used $\color{#a65450}\mathrm{DogLeash}$ tools to address b
 data and Zoning/Land Use ordinances so as to explore the connections 
 between environmental health and urban development.  Part of this 
 project involved extending a New York City tool called 
-$\color{#a65450}\mathrm{ZoLa}$ (for Zoning and Land Use), which was created by 
+$\color{#a65450}\mathrm{ZoLa}$ (Zoning and Land Use), which was created by 
 NYC Planning Labs but openly shared in the hopes that 
 other jurisdictions adopt the same technology.  Other 
 data sourecs came from the 
@@ -456,7 +456,7 @@ as well as native-compiled $\color{#a65450}\mathrm{GUI}$ components based on $\c
 for $\color{#a65450}\mathrm{GIS}$ displays.
 
     During this work I identified a series of errors with the $\color{#a65450}\mathrm{TRI}$ encoding and 
-documentation, so another layor of components implemented for this project 
+documentation, so another layer of components implemented for this project 
 involved mapping $\color{#a65450}\mathrm{TRI}$-related $\color{#a65450}\mathrm{PDF}$ files to $\color{#a65450}\mathrm{SVG}$, so that I could 
 superimpose annotations identifying the $\color{#a65450}\mathrm{TRI}$ problems and 
 how they could be corrected in code. 
@@ -467,7 +467,7 @@ $\color{#a65450}\mathrm{PDF}$ to $\color{#a65450}\mathrm{SVG}$ conversion.  The 
 was a collection of legal documents that had been merged into a 
 single file and then annotated to show patterns of 
 behavior.  Applying techniques from ethnomethodology, the annotator 
-designed a controlled vocabuly to insert terms functioning 
+designed a controlled vocabulary to insert terms functioning 
 as &ldquo;handles&rdquo; into $\color{#a65450}\mathrm{PDF}$ comment boxes.  I then implemented 
 code which scanned these $\color{#a65450}\mathrm{PDF}$ annotations and identified 
 sub-documents which, according to the annotator, 
@@ -492,7 +492,7 @@ $\color{#a65450}\mathrm{DogLeash}$ tools laid a foundation for custom $\color{#a
 was to compare the first- and second-edition manuscripts to 
 ensure that all previous index entries were migrated to the 
 updated book, as well as creating new index material in the 
-pbulisher's desired metadata format.
+publisher's desired metadata format.
 
 4.  Examining Biomedical Software:  During the Covid pandemic, 
 I wrote the text for a book called _Innovative Data Integration and Conceptual 
@@ -510,7 +510,7 @@ articles focusing on $\color{#a65450}\mathrm{SARS\text{-}COV\text{-}2}$ and rela
 $\color{#a65450}\mathrm{SARS}$ epidemic and Coronavirus biology in general) with freely-available 
 full-text encoding.  The goal of $\color{#a65450}\mathrm{CORD\text{-}19}$ was to help scientists in 
 different areas addressing the pandemic (viral morphology, infectious 
-mechanisms, diagnostics, clinical treatment assesment, vaccine development, 
+mechanisms, diagnostics, clinical treatment assessment, vaccine development, 
 genomics, variants/mutations, epidemiology, long-term effects) discover 
 resources or research that could augment their own work, helping 
 piece together the Covid puzzle.  Unfortunately, much of $\color{#a65450}\mathrm{CORD\text{-}19}$'s
