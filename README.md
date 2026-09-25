@@ -325,6 +325,8 @@ modules mentioned above.
 The following are examples of my own publications (not in chronological order) 
 developed with $\color{#a65450}\mathrm{DogLeash}$ code in some iteration.
 
+&nbsp; &nbsp; &#x2606; Orcid: (0000-0002-0988-7352)[https://orcid.org/0000-0002-0988-7352]
+
 - [Merging Full-Text Query with Research Data Sets: A perspective from compiler theory](https://scignscape.github.io/Rinc-XOA/documents/A-perspective-from-compiler-theory.pdf)  Presented at NISO/JATS 2026.
 
  &nbsp; &nbsp; &#x2192; Slide deck: 
@@ -374,7 +376,8 @@ on Open Science Framework: [osf.io/gd37f](https://osf.io/gd37f/overview)
 
 
 - The chapters of the book _Innovative Data Integration and Conceptual Space Modeling 
-for COVID, Cancer, and Cardiac Care_ (Elsevier, 2022).  These are individual chapters&rsquo penultimate versions, 
+for COVID, Cancer, and Cardiac Care_ (Elsevier, 2022).  These are individual 
+chapters&rsquo; penultimate versions, 
 not identical to the printed book.
 
   1.  [Chapter 1 &ndash; Introduction](https://scignscape.github.io/Rinc-XOA/documents/data-integration/Chapter1.pdf)
