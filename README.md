@@ -10,15 +10,14 @@ including a list of open-access articles and book chapters, scroll down or [skip
 Many of these components are built around a new Virtual Machine generator called 
 $\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$; for details on that, scroll down or [skip ahead](#qynviper).
 
-***Very brief personal bio*** &nbsp;&x2aa2;&nbsp; I (Nathaniel Christen) hold a BA in Computer Science from Bard College (Annandale-on-Hudson, NY) and MA in Linguistics from George Mason University (Fairfax, VA). My doctoral research involved Cognitive Grammar, Phenomenology, and Philosophy of Science (I've even linked the final draft of my dissertation below, though it's presumably been almost 20 years since anyone looked at it).
+***Very brief personal bio*** &nbsp;&#x2aa2;&nbsp; I (Nathaniel Christen) hold a BA in Computer Science from Bard College (Annandale-on-Hudson, NY) and MA in Linguistics from George Mason University (Fairfax, VA). My doctoral research involved Cognitive Grammar, Phenomenology, and Philosophy of Science (I've even linked the final draft of my dissertation below, though it's presumably been almost 20 years since anyone looked at it).
 
 ---
 
 ### Overview
 
 In publishing, Diamond $\color{black}\textbf{(}\color{#a65450}\mathrm{DiamondOA}\color{black}\textbf{)}$ is the most complete Open Access model, with no fees either for authors (i.e., Article Processing Charges 
-$\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textbf{)}$
-) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by &ldquo;Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
+$\color{black}\textbf{(}\color{#a65450}\mathrm{APC}\color{black}\textsf{s}\textbf{)}$) or readers (i.e., article paywalls).  The work needed to prepare manuscripts for publication is either performed on a volunteer basis or supported by &ldquo;Diamond Open Access Funds", which are more prevalent in the European Union than the United State.
 
 Meanwhile, Executable Research Objects
 $\color{black}\textbf{(}\color{#a65450}\mathrm{ERO}\color{black}\textsf{s}\textbf{)}$
