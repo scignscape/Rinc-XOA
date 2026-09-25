@@ -368,6 +368,11 @@ Grounding and Center/Peripheral Relations](https://scignscape.github.io/Rinc-XOA
     3.  [From &lsquo;Naturalizing Phenomenology&rsquo; to Formalizing Cognitive Linguistics (III):
 Externalism and the Interface Theory of Meaning](https://scignscape.github.io/Rinc-XOA/documents/ijst/itm.pdf)
 
+ &nbsp; &nbsp; &#x2606; Data Set and $\color{#a65450}\mathrm{PDF}\color{black}\textsf{s}$
+on Open Science Framework: [osf.io/gd37f](https://osf.io/gd37f/overview)
+
+
+
 - The chapters of the book _Innovative Data Integration and Conceptual Space Modeling 
 for COVID, Cancer, and Cardiac Care_ (Elsevier, 2022).  These are individual chapters&rsquo penultimate versions, 
 not identical to the printed book.
