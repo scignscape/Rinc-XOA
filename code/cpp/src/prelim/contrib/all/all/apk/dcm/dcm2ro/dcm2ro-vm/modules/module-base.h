@@ -5,19 +5,21 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
+#ifndef MODULE_BASE__H
+#define MODULE_BASE__H
 
-#include <QApplication>
+#include <QString>
 
-#include <QFile>
+#include "otns.h"
 
+OTNS_(AMPATH_NRE)
 
-#include <QRegularExpression>
-
-#include <QDir>
-
-
-int main(int argc, char *argv[])
+struct _Module_Base
 {
-    return 0;
-}
+ QString module_name;
+};
 
+
+_OTNS(AMPATH_NRE)
+
+#endif // MODULE_BASE__H

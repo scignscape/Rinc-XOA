@@ -7,16 +7,9 @@
 
 PROJECT_NAME = dcm2ro-vm
 
-QT += widgets
-
 include(../build-group.pri)
 
-greaterThan(QT_MAJOR_VERSION, 5) {
- DEFINES += USING_QT_6
-}
-
-TEMPLATE = app
-
+QT -= gui
 
 exists($$ROOT_DIR/../preferred/sysr.pri): include($$ROOT_DIR/../preferred/sysr.pri)
 exists($$ROOT_DIR/../preferred/sysr-c.pri): include($$ROOT_DIR/../preferred/sysr-c.pri)
@@ -25,28 +18,50 @@ exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/co
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 
+greaterThan(QT_MAJOR_VERSION, 5) {
+ DEFINES += USING_QT_6
+ DEFINES += QVList=QList
+} else {
+ DEFINES += QVList=QVector
+}
+
+CONFIG += debug
 
 CONFIG += no_keywords
 
-DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
-
-DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
-
-DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/nre/vm\\\"
-
-CONFIG += no_keywords
+CONFIG+=c++2a
 
 DEFINES += USE_OTNS
-
+DEFINES += USE_KANS
 
 HEADERS += \
-
+  $$SRC_DIR/vm-interpreter.h \
+  $$SRC_DIR/vm-opmethods.h \
+  $$SRC_DIR/vm-dispatcher.h \
+  $$SRC_DIR/vm-reader.h \
+  $$SRC_DIR/vm-opstatement.h \
+  $$SRC_DIR/modules/module-macros.h \
+  $$SRC_DIR/modules/module-base.h \
+  $$SRC_DIR/modules/implementations/asa-module.h \
+  $$SRC_DIR/modules/implementations/kim-module.h \
+  $$SRC_DIR/modules/implementations/tia-module.h \
 
 
 SOURCES += \
-  $$SRC_DIR/main.cpp \
+  $$SRC_DIR/vm-interpreter.cpp \
+  $$SRC_DIR/vm-opmethods.cpp \
+  $$SRC_DIR/vm-dispatcher.cpp \
+  $$SRC_DIR/vm-reader.cpp \
+  $$SRC_DIR/vm-opstatement.cpp \
+  $$SRC_DIR/modules/implementations/asa-module.cpp \
+  $$SRC_DIR/modules/implementations/kim-module.cpp \
+  $$SRC_DIR/modules/implementations/tia-module.cpp \
 
 
+DISTFILES += \
+  $$SRC_DIR/modules/implementations/asa-module.cxx \
+  $$SRC_DIR/modules/implementations/kim-module.cxx \
+  $$SRC_DIR/modules/implementations/tia-module.cxx \
 
 
 

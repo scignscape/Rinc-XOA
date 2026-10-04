@@ -1,0 +1,6 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/kim-module.cxx"
+#else
+#include "../implementations/kim-module.h"
+#endif

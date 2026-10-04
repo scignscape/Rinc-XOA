@@ -1,0 +1,8 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/tia-module.cxx"
+#else
+#include "../implementations/tia-module.h"
+#endif
+
+

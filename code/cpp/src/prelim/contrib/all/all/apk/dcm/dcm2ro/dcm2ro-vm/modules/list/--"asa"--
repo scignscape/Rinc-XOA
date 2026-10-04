@@ -1,0 +1,8 @@
+
+#ifdef MODULES_UNDER_DECLARATION
+#include "../implementations/asa-module.cxx"
+#else
+#include "../implementations/asa-module.h"
+#endif
+
+
