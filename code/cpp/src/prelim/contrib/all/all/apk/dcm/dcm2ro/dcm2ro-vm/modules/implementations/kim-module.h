@@ -5,10 +5,14 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef RCS_MODULE__H
-#define RCS_MODULE__H
+#ifndef KIM_MODULE__H
+#define KIM_MODULE__H
+
+#include <QTextStream>
 
 #include "global-types.h"
+
+#include "accessors.h"
 
 #include "vm-reader.h"
 #include "vm-opstatement.h"
@@ -17,27 +21,33 @@
 
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
-class RCS_Module : public _Module_Base
+
+
+class KIM_Module : public _Module_Base
 {
-
 
 public:
 
- RCS_Module();
+ KIM_Module();
 
- void global_baseline_skip(r8 val);
+ void series_date_time(QString date_time);
+ void series_modality(QString modality);
+ void series_description(QString description);
+ void series_protocol_name(QString name);
+ void series_uid(QString uid);
 
- void file_name_shortcut(QString sc);
- void add_manifest_uris(QStringList paths);
- void first_name(QString name);
- void last_name(QString name);
- void single_author();
+//{"kim-series:date-time", (methods_String) &KIM_Module::series_date_time},
+//{"kim-series:modality", (methods_String) &KIM_Module::series_modality},
+//{"kim-series:description", (methods_String) &KIM_Module::series_description},
+//{"kim-series:protocol-name", (methods_String) &KIM_Module::series_protocol_name},
+//{"kim-series:uid", (methods_String) &KIM_Module::series_uid},
+
 
 
 };
 
 _OTNS(AMPATH_NRE)
 
-#endif // RCS_MODULE__H
+#endif // KIM_MODULE__H

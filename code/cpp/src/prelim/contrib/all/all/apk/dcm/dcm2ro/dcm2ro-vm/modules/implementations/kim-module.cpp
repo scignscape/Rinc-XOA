@@ -6,50 +6,49 @@
 
 
 
-#include "rcs-module.h"
+#include "kim-module.h"
+
 
 #include <bit>
 
 #include <QDebug>
 
+#include "textio.h"
 
-USING_OTNS(AMPATH_NRE)
+USING_KANS(TextIO)
 
-RCS_Module::RCS_Module()
- :  _Module_Base{"RCS"}
+USING_OTNS(DCM2RO)
+
+KIM_Module::KIM_Module()
+ :  _Module_Base{"KIM"}
 {
 
 }
 
-void RCS_Module::global_baseline_skip(r8 val)
+void KIM_Module::series_date_time(QString date_time)
 {
 
 }
 
-
-void RCS_Module::file_name_shortcut(QString sc)
+void KIM_Module::series_modality(QString modality)
 {
 
 }
 
-void RCS_Module::add_manifest_uris(QStringList paths)
+void KIM_Module::series_description(QString description)
 {
 
 }
 
-void RCS_Module::first_name(QString name)
+void KIM_Module::series_protocol_name(QString name)
 {
 
 }
 
-void RCS_Module::last_name(QString name)
+void KIM_Module::series_uid(QString uid)
 {
 
 }
 
-void RCS_Module::single_author()
-{
-
-}
 
 

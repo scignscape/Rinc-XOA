@@ -17,16 +17,34 @@
 
 USING_KANS(TextIO)
 
-USING_OTNS(AMPATH_NRE)
+USING_OTNS(DCM2RO)
 
-NRE_Module::NRE_Module()
- :  _Module_Base{"NRE"}, current_finalized_page_(nullptr),
-    current_finalized_answer_(nullptr),
-    current_finalized_question_(nullptr),
-    current_finalized_section_(nullptr)
+ASA_Module::ASA_Module()
+ :  _Module_Base{"ASA"}
 {
 
 }
 
+void ASA_Module::load_html_template(QString file_path)
+{
+
+}
+
+void ASA_Module::load_svg_template(QString file_path)
+{
+
+}
+
+
+void ASA_Module::save_html_file(QString mode)
+{
+
+}
+
+
+void ASA_Module::save_svg_file(QString details)
+{
+
+}
 
 

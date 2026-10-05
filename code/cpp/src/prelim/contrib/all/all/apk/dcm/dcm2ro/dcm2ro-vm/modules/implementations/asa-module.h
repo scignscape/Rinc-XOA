@@ -23,10 +23,6 @@
 
 OTNS_(DCM2RO)
 
-class ASA_Form_Section;
-class ASA_Form_Page;
-class ASA_Form_Question;
-class ASA_Form_Answer;
 
 
 class ASA_Module : public _Module_Base
@@ -36,9 +32,13 @@ public:
 
  ASA_Module();
 
+ void load_html_template(QString file_path);
+ void load_svg_template(QString file_path);
+ void save_html_file(QString mode);
+ void save_svg_file(QString details);
 
 };
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // ASA_MODULE__H

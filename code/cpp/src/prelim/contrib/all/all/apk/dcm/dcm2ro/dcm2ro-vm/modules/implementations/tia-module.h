@@ -5,8 +5,8 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef NRE_MODULE__H
-#define NRE_MODULE__H
+#ifndef TIA_MODULE__H
+#define TIA_MODULE__H
 
 #include <QTextStream>
 
@@ -19,100 +19,141 @@
 
 #include "../module-base.h"
 
-#include "nre-module/nre-form-base.h"
-
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
-class NRE_Form_Section;
-class NRE_Form_Page;
-class NRE_Form_Question;
-class NRE_Form_Answer;
+class TIA_Compound_Graphic;
+class TIA_Fill_Pattern;
+class TIA_Graphic_Layer;
+class TIA_Graphic_Fill_Style;
 
 
-class NRE_Module : public _Module_Base, public NRE_Form_Base
+class TIA_Module : public _Module_Base
 {
- QString current_class_name_;
-
- QVList<NRE_Form_Page*> pages_;
-
- u2 page_count_;
-
- NRE_Form_Page* current_page();
-
- NRE_Form_Section* current_section();
- NRE_Form_Question* current_question();
- NRE_Form_Answer* current_answer();
-
- void write_form();
-
- NRE_Form_Page* current_finalized_page_;
- void finalize_current_page();
-
- NRE_Form_Section* current_finalized_section_;
- void finalize_current_section();
-
- NRE_Form_Question* current_finalized_question_;
- void finalize_current_question();
-
- NRE_Form_Answer* current_finalized_answer_;
- void finalize_current_answer();
 
 public:
 
- NRE_Module();
+ TIA_Module();
 
- ACCESSORS(QString ,current_class_name)
+ void load_tikz_template(QString file_path);
+ void save_tikz_file(QString file_path);
+ void fill_pattern_mode(QString mode);
+ void compound_graphic_tick_details(QString details);
+ void compound_graphic_units(QString units);
+ void compound_graphic_type(QString type);
+ void spatial_rotation(QString rotation);
+ void graphic_layer_strid(QString id);
+ void graphic_layer_description(QString description);
 
- void write_pri_file(QString file_path);
- void write_pro_file(QString file_path);
- void write_pri_console_file(QString file_path);
- void write_pro_console_file(QString file_path);
+ void point_group();
+ void point_graphic();
+ void polyline_graphic();
+ void interpolated_graphic();
+ void circle_graphic();
+ void ellipse_graphic();
+ void graphic_filled_yes();
+ void graphic_filled_no();
+ void graphic_fill_style_pattern_on_color();
+ void graphic_fill_style_pattern_off_color();
+ void compound_graphic_rotation_point();
+ void graphic_layer_recommended_cielab();
+ void graphic_layer_recommended_grayscale(u2 intensity);
+ void size_d1(u4 length);
+ void size_wh(u4 width, u4 height);
+ void point_xy(u4 x, u4 y);
+ void fill_pattern_mask(u4 v1, u4 v2, u4 v3, u4 v4);
 
- void write_class_header_lead();
- void write_class_implementation_lead();
+ void compound_graphic_gap_length(r4 length);
+ void compound_graphic_diameter_of_visibility(r4 diameter);
 
- void save_header_file(QString file_path);
- void save_implementation_file(QString file_path);
+//{"tia-compound-graphic:gap-length", (methods_R4x1) &TIA_Module::compound_graphic_gap_length},
+//{"tia-compound-graphic:diameter-of-visibility", (methods_R4x1) &TIA_Module::compound_graphic_diameter_of_visibility},
 
- void finalize_header_file();
- void finalize_implementation_file();
 
- void form_processor(QString text);
- void form_uuid(QString text);
- void page_label(QString text);
- void section_label(QString text);
- void question_label(QString text);
- void question_id(QString text);
- void question_type(QString text);
- void question_concept(QString text);
- void question_rendering(QString text);
- void question_default(QString text);
- void answer_label(QString text);
- void answer_concept(QString text);
+ void fill_pattern_on_off_opacity(r4 on, r4 off);
 
- void form_version(u2 val);
+ void compound_graphic_group_id(n8 id);
 
- void new_form();
- void finalize_form();
- void new_page();
- void finalize_page();
- void new_section();
- void finalize_section();
- void new_question();
- void finalize_question();
- void question_unset_required();
- void new_answer();
- void finalize_answer();
- void answer_yes();
- void answer_no();
+ void color_cielab(r4 l, r4 a, r4 b);
 
- void finalize_current_form();
+//{"tia-fill-pattern:on-off-opacity", (methods_U4x2) &TIA_Module::fill_pattern_on_off_opacity},
+
+//#elif METHODS_N8x1
+//{"tia-compound-graphic:group-id", (methods_String) &TIA_Module::compound_graphic_group_id},
+
+
+//#elif METHODS_R8x3
+//{"tia-color-cielab", (methods_R4x3) &TIA_Module::color_cielab},
+
+
+#elif METHODS_Empty
+{"tia-point-group", (methods_x0) &TIA_Module::point_group},
+{"tia-point-graphic", (methods_x0) &TIA_Module::point_graphic},
+{"tia-polyline-graphic", (methods_x0) &TIA_Module::polyline_graphic},
+{"tia-interpolated-graphic", (methods_x0) &TIA_Module::interpolated_graphic},
+{"tia-circle-graphic", (methods_x0) &TIA_Module::circle_graphic},
+{"tia-ellipse-graphic", (methods_x0) &TIA_Module::ellipse_graphic},
+{"tia-graphic-filled:yes", (methods_x0) &TIA_Module::graphic_filled_yes},
+{"tia-graphic-filled:no", (methods_x0) &TIA_Module::graphic_filled_no},
+{"tia-graphic-fill-style:pattern-on-color", (methods_x0) &TIA_Module::graphic_fill_style_pattern_on_color},
+{"tia-graphic-fill-style:pattern-off-color", (methods_x0) &TIA_Module::graphic_fill_style_pattern_off_color},
+{"tia-compound-graphic:rotation-point", (methods_x0) &TIA_Module::compound_graphic_rotation_point},
+{"tia-graphic-layer:recommended-cielab", (methods_x0) &TIA_Module::graphic_layer_recommended_cielab},
+
+
+  //{"tia-fill-pattern:mode", (methods_String) &TIA_Module::fill_pattern_mode},
+  //{"tia-compound-graphic:tick-details", (methods_String) &TIA_Module::compound_graphic_tick_details},
+  // {"tia-compound-graphic:units", (methods_String) &TIA_Module::compound_graphic_units},
+  //{"tia-compound-graphic:type", (methods_String) &TIA_Module::compound_graphic_type},
+  // //  H0, H90, H180, H270, N0, N90, N180, N270 -- H = horizontal flip
+  //{"tia-spatial-rotation", (methods_String) &TIA_Module::spatial_rotation},
+  //{"tia-graphic-layer:strid", (methods_String) &TIA_Module::graphic_layer_strid},
+  //{"tia-graphic-layer:description", (methods_String) &TIA_Module::graphic_layer_description},
+
+#elif METHODS_Empty
+{"tia-point-group", (methods_x0) &TIA_Module::point_group},
+{"tia-point-graphic", (methods_x0) &TIA_Module::point_graphic},
+{"tia-polyline-graphic", (methods_x0) &TIA_Module::polyline_graphic},
+{"tia-interpolated-graphic", (methods_x0) &TIA_Module::interpolated_graphic},
+{"tia-circle-graphic", (methods_x0) &TIA_Module::circle_graphic},
+{"tia-ellipse-graphic", (methods_x0) &TIA_Module::ellipse_graphic},
+{"tia-graphic-filled:yes", (methods_x0) &TIA_Module::graphic_filled_yes},
+{"tia-graphic-filled:no", (methods_x0) &TIA_Module::graphic_filled_no},
+{"tia-graphic-fill-style:pattern-on-color", (methods_x0) &TIA_Module::graphic_fill_style_pattern_on_color},
+{"tia-graphic-fill-style:pattern-off-color", (methods_x0) &TIA_Module::graphic_fill_style_pattern_off_color},
+{"tia-compound-graphic:rotation-point", (methods_x0) &TIA_Module::compound_graphic_rotation_point},
+{"tia-graphic-layer:recommended-cielab", (methods_x0) &TIA_Module::graphic_layer_recommended_cielab},
+
+#elif METHODS_U2x1
+{"tia-graphic-layer:recommended-grayscale", (methods_U2x1) &TIA_Module::graphic_layer_recommended_grayscale},
+
+#elif METHODS_U4x1
+{"tia-size-d1", (methods_U4x1) &TIA_Module::size_d1},
+{"tia-fill-pattern:mask", (methods_R4x1) &TIA_Module::fill_pattern_mask},
+
+#elif METHODS_U4x2
+{"tia-point-xy", (methods_U4x2) &TIA_Module::point_xy},
+{"tia-size-wh", (methods_U4x2) &TIA_Module::size_wh},
+
+#elif METHODS_R4x1
+{"tia-compound-graphic:gap-length", (methods_R4x1) &TIA_Module::compound_graphic_gap_length},
+{"tia-compound-graphic:diameter-of-visibility", (methods_R4x1) &TIA_Module::compound_graphic_diameter_of_visibility},
+
+#elif METHODS_R4x2
+{"tia-fill-pattern:on-off-opacity", (methods_U4x2) &TIA_Module::fill_pattern_on_off_opacity},
+
+#elif METHODS_N8x1
+{"tia-compound-graphic:group-id", (methods_String) &TIA_Module::compound_graphic_group_id},
+
+
+#elif METHODS_R8x3
+{"tia-color-cielab", (methods_R4x3) &TIA_Module::color_cielab},
+
 
 
 };
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
-#endif // NRE_MODULE__H
+#endif // TIA_MODULE__H
