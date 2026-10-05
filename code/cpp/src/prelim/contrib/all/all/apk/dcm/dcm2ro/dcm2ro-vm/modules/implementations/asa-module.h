@@ -34,8 +34,8 @@ public:
 
  void load_html_template(QString file_path);
  void load_svg_template(QString file_path);
- void save_html_file(QString mode);
- void save_svg_file(QString details);
+ void save_html_file(QString file_path);
+ void save_svg_file(QString file_path);
 
 };
 

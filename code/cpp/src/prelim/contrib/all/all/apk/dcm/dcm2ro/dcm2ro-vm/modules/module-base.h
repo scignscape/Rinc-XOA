@@ -12,7 +12,7 @@
 
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
 struct _Module_Base
 {
@@ -20,6 +20,6 @@ struct _Module_Base
 };
 
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // MODULE_BASE__H

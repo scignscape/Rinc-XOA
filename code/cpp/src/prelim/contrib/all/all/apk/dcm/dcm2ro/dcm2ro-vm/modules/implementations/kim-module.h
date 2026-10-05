@@ -48,6 +48,6 @@ public:
 
 };
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // KIM_MODULE__H

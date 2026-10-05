@@ -19,7 +19,7 @@
 
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
 //template<VM_Opstatement::Mid_Control_Kinds MCK, VM_Opstatement::Control_Coords cc>
 //void* get_vector();
@@ -378,6 +378,6 @@ QPair<void*, u4> VM_Dispatcher::get_vector(VM_Opstatement::Mid_Control_Kinds mck
 }
 
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // VM_INTERPRETER__H

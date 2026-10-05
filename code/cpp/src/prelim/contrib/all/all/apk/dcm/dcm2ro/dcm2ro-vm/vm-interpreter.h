@@ -16,7 +16,7 @@
 
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
 class _Module_Base;
 
@@ -64,6 +64,6 @@ public:
 
 };
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // VM_INTERPRETER__H

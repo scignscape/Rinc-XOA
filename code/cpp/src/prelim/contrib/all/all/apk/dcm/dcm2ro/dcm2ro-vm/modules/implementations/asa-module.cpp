@@ -36,13 +36,13 @@ void ASA_Module::load_svg_template(QString file_path)
 }
 
 
-void ASA_Module::save_html_file(QString mode)
+void ASA_Module::save_html_file(QString file_path)
 {
 
 }
 
 
-void ASA_Module::save_svg_file(QString details)
+void ASA_Module::save_svg_file(QString file_path)
 {
 
 }

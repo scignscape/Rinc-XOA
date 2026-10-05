@@ -22,11 +22,11 @@
 
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
 
 #define MODULE_LIST(X, ALT) _MACRO_EXPAND_ALT(X, ALT,\
-  NRE, nre,  RCS, rcs  )
+  ASA, asa,  KIM, kim,  TIA, tia  )
 
 #include "modules/module-macros.h"
 
@@ -116,6 +116,6 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
 
 };
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // VM_OPMETHODS__H

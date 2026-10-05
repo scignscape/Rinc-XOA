@@ -12,7 +12,7 @@
 
 USING_KANS(TextIO)
 
-USING_OTNS(AMPATH_NRE)
+USING_OTNS(DCM2RO)
 
 VM_Reader::VM_Reader()
  : current_pos_(0), opstatement_index_(0)//?, cache_index_(0)

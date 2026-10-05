@@ -19,7 +19,7 @@
 
 USING_KANS(TextIO)
 
-USING_OTNS(AMPATH_NRE)
+USING_OTNS(DCM2RO)
 
 VM_Interpreter::VM_Interpreter()
  :  current_proc_name_ops_(ops_by_proc_name_["<main>"])

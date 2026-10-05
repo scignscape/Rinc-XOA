@@ -15,7 +15,7 @@
 
 #include "otns.h"
 
-OTNS_(AMPATH_NRE)
+OTNS_(DCM2RO)
 
 
 class VM_Reader
@@ -63,6 +63,6 @@ public:
 
 };
 
-_OTNS(AMPATH_NRE)
+_OTNS(DCM2RO)
 
 #endif // VM_INTERPRETER__H

@@ -9,7 +9,7 @@
 #include "vm-opstatement.h"
 
 
-USING_OTNS(AMPATH_NRE)
+USING_OTNS(DCM2RO)
 
 VM_Opstatement::VM_Opstatement(u4 id, QString instruction)
   :  id_(id), instruction_(instruction),

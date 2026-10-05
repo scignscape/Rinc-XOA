@@ -87,7 +87,7 @@ public:
 //{"tia-color-cielab", (methods_R4x3) &TIA_Module::color_cielab},
 
 
-#elif METHODS_Empty
+#if METHODS_Empty
 {"tia-point-group", (methods_x0) &TIA_Module::point_group},
 {"tia-point-graphic", (methods_x0) &TIA_Module::point_graphic},
 {"tia-polyline-graphic", (methods_x0) &TIA_Module::polyline_graphic},
@@ -150,9 +150,11 @@ public:
 #elif METHODS_R8x3
 {"tia-color-cielab", (methods_R4x3) &TIA_Module::color_cielab},
 
+#endif
 
 
 };
+
 
 _OTNS(DCM2RO)
 

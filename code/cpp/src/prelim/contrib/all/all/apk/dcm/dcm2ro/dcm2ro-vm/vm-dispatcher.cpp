@@ -14,7 +14,7 @@
 
 USING_KANS(TextIO)
 
-USING_OTNS(AMPATH_NRE)
+USING_OTNS(DCM2RO)
 
 VM_Dispatcher::VM_Dispatcher()
 {
