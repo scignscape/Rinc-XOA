@@ -12,7 +12,6 @@
 
 #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
 
-#ifdef HIDE
 
 
 #include "textio.h"
@@ -227,4 +226,3 @@ VM_OpMethods::methods_U4x4 VM_OpMethods::get_method_U4x4(QString instr, _Module_
 #undef MODULES_UNDER_DECLARATION
 
 
-#endif

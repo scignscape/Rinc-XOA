@@ -11,9 +11,14 @@ QT += widgets
 
 include(../build-group.pri)
 
+
 greaterThan(QT_MAJOR_VERSION, 5) {
  DEFINES += USING_QT_6
+ DEFINES += QVList=QList
+} else {
+ DEFINES += QVList=QVector
 }
+
 
 TEMPLATE = app
 
@@ -47,7 +52,7 @@ SOURCES += \
   $$SRC_DIR/main.cpp \
 
 
-
+LIBS += -L$$TARGETSDIR -ldcm2ro-vm
 
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

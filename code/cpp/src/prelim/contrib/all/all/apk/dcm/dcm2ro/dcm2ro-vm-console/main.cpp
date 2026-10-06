@@ -16,7 +16,7 @@
 
 #include "otns.h"
 
-USING_OTNS(AMPATH_NRE)
+USING_OTNS(DCM2RO)
 
 
 int main(int argc, char *argv[])

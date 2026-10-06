@@ -56,7 +56,7 @@
    {"tia-fill-pattern:mask", (methods_U4x2) &TIA_Module::fill_pattern_mask},
 
 #elif METHODS_N8x1
-   {"tia-compound-graphic:group-id", (methods_String) &TIA_Module::compound_graphic_group_id},
+   {"tia-compound-graphic:group-id", (methods_N8x1) &TIA_Module::compound_graphic_group_id},
 
 
 #elif METHODS_R8x3
