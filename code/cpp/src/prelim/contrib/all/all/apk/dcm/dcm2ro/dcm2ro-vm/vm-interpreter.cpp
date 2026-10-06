@@ -41,8 +41,12 @@ void VM_Interpreter::parse()
 
   switch(opst.control_coords())
   {
+  case VM_Opstatement::Control_Coords::N_A:
+   qDebug() << "Unexpected Opstatement";
+   goto break_outer;
   case VM_Opstatement::Control_Coords::_EOF:
-   break;
+   qDebug() << "EOF reached";
+   goto break_outer;
   case VM_Opstatement::Control_Coords::_CMD:
    if(opst.instruction() == "=done")
      goto break_outer;

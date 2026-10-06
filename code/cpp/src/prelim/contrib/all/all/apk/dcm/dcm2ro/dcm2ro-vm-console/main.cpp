@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 
  vin.run();
 
-    return 0;
+ return 0;
 }
 

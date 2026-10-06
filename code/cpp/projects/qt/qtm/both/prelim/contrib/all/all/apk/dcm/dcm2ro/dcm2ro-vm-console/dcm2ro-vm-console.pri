@@ -37,7 +37,7 @@ DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
-DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/nre/vm\\\"
+DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/vm\\\"
 
 CONFIG += no_keywords
 
