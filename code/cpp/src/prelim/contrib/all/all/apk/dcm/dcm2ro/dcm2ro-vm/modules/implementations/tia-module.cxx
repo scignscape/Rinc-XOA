@@ -59,7 +59,7 @@
    {"tia-compound-graphic:group-id", (methods_N8x1) &TIA_Module::compound_graphic_group_id},
 
 
-#elif METHODS_R8x3
+#elif METHODS_R4x3
    {"tia-color-cielab", (methods_R4x3) &TIA_Module::color_cielab},
 
 #endif
