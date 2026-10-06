@@ -146,6 +146,24 @@ class VM_Dispatcher
    }
 
 
+   template<typename ...WRONG_Types>
+   inline QPair<void*, r4> test_getVector_R4_x1(WRONG_Types... args)
+   {
+    auto first = std::get<0>(std::forward_as_tuple(std::forward<WRONG_Types>(args)...));
+    auto second = std::get<1>(std::forward_as_tuple(std::forward<WRONG_Types>(args)...));
+
+//?    decltype(instr_x1_u4_)::value_type* vt = first;
+
+    return {nullptr, 0};
+   }
+   inline QPair<void*, r4> test_getVector_R4_x1(decltype(instr_x1_r4_)::value_type::first_type vt,
+                                                decltype(instr_x1_r4_)::value_type::second_type arg)
+   {
+//?    instr_x1_u4_.push_back({vt, arg});
+    return {&instr_x1_r4_, instr_x1_r4_.size() - 1};
+   }
+
+
 public:
 
  VM_Dispatcher();
@@ -275,6 +293,10 @@ QPair<void*, u4> VM_Dispatcher::_get_vector_x1::_get_vector
  {
  GET_VECTOR_CASE(String, x1)
  GET_VECTOR_CASES(x1)
+
+//? GET_VECTOR_CASE(R4, x1)
+//      case VM_Opstatement::Mid_Control_Kinds::R4:
+//        return _this->test_getVector_R4_x1(fn, args);
 
 // GET_VECTOR_CASE(U4, x1)
 //   case VM_Opstatement::Mid_Control_Kinds::U4:
