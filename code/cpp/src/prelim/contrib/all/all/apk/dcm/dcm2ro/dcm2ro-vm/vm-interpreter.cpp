@@ -149,6 +149,13 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
     op_pair.second[0], op_pair.second[1]);
    break;
  }
+ case VM_OpMethods::methods_R4x2_StackCode:
+ {
+  auto op_pair = (*(QVList<VM_OpMethods::methods_R4x2_opstatement_type>*)pr.first)[pr.second];
+  std::invoke(op_pair.first, module,
+    op_pair.second[0], op_pair.second[1]);
+   break;
+ }
  case VM_OpMethods::methods_x0_StackCode:
  {
   auto op = (*(QVList<VM_OpMethods::methods_x0_opstatement_type>*)pr.first)[pr.second];
@@ -236,6 +243,16 @@ void VM_Interpreter::parse_x0(const VM_Opstatement& opst)
  encode_which_stack(VM_OpMethods::methods_x0_StackCode, module);
 }
 
+
+r8 QString_to_r8(const QString& basis)
+{
+ return basis.toDouble();
+}
+
+r4 QString_to_r4(const QString& basis)
+{
+ return basis.toFloat();
+}
 
 u4 QString_to_u4(const QString& basis)
 {
@@ -341,6 +358,19 @@ void VM_Interpreter::parse_x2(const VM_Opstatement& opst)
   VM_OpMethods::methods_U4x2 fn = methods_.get_method_U4x2(opst.instruction(), module);
   parse_fn(fn, opst, args);
   encode_which_stack(VM_OpMethods::methods_U4x2_StackCode, module);
+
+  //   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
+  break;
+ }
+ case VM_Opstatement::Mid_Control_Kinds::R4:
+ {
+  QStringList qsl = opst.param().simplified().split(" ");
+  QVList<r4> args(2);
+  std::transform(qsl.begin(), qsl.end(), args.begin(), &QString_to_r4);
+
+  VM_OpMethods::methods_R4x2 fn = methods_.get_method_R4x2(opst.instruction(), module);
+  parse_fn(fn, opst, args);
+  encode_which_stack(VM_OpMethods::methods_R4x2_StackCode, module);
 
   //   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
   break;
