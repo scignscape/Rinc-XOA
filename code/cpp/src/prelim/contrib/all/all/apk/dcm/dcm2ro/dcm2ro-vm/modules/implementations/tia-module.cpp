@@ -187,5 +187,10 @@ void TIA_Module::color_cielab(r4 l, r4 a, r4 b)
 
 }
 
+void TIA_Module::color_pcs(u2 l, u2 a, u2 b)
+{
+
+}
+
 
 

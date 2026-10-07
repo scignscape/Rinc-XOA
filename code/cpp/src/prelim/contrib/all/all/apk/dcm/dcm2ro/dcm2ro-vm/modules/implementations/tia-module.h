@@ -76,6 +76,7 @@ public:
  void compound_graphic_group_id(n8 id);
 
  void color_cielab(r4 l, r4 a, r4 b);
+ void color_pcs(u2 l, u2 a, u2 b);
 
 //{"tia-fill-pattern:on-off-opacity", (methods_U4x2) &TIA_Module::fill_pattern_on_off_opacity},
 

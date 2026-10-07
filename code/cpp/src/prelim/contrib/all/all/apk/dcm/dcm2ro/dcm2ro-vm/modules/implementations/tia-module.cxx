@@ -52,12 +52,11 @@
 #elif METHODS_R4x2
    {"tia-fill-pattern:on-off-opacity", (methods_R4x2) &TIA_Module::fill_pattern_on_off_opacity},
 
-#elif METHODS_N4x4
-   {"tia-fill-pattern:mask", (methods_U4x2) &TIA_Module::fill_pattern_mask},
-
 #elif METHODS_N8x1
    {"tia-compound-graphic:group-id", (methods_N8x1) &TIA_Module::compound_graphic_group_id},
 
+#elif METHODS_U2x3
+   {"tia-color-pcs", (methods_U2x3) &TIA_Module::color_pcs},
 
 #elif METHODS_R4x3
    {"tia-color-cielab", (methods_R4x3) &TIA_Module::color_cielab},

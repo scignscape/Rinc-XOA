@@ -134,6 +134,14 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
    break;
  }
+ case VM_OpMethods::methods_U2x3_StackCode:
+ {
+  auto op_pair = (*(QVList<VM_OpMethods::methods_U2x3_opstatement_type>*)pr.first)[pr.second];
+  std::invoke(op_pair.first, module,
+    op_pair.second[0], op_pair.second[1], op_pair.second[2]);
+//  (methods_.sdi_module()->*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
+   break;
+ }
  case VM_OpMethods::methods_U4x4_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_U4x4_opstatement_type>*)pr.first)[pr.second];
