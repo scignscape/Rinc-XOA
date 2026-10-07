@@ -45,6 +45,10 @@ HEADERS += \
   $$SRC_DIR/modules/implementations/asa-module.h \
   $$SRC_DIR/modules/implementations/kim-module.h \
   $$SRC_DIR/modules/implementations/tia-module.h \
+  $$SRC_DIR/modules/implementations/tia-module/tia-compound-graphic.h \
+  $$SRC_DIR/modules/implementations/tia-module/tia-fill-pattern.h \
+  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-fill-style.h \
+  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-layer.h \
 
 
 SOURCES += \
@@ -56,6 +60,11 @@ SOURCES += \
   $$SRC_DIR/modules/implementations/asa-module.cpp \
   $$SRC_DIR/modules/implementations/kim-module.cpp \
   $$SRC_DIR/modules/implementations/tia-module.cpp \
+  $$SRC_DIR/modules/implementations/tia-module/tia-compound-graphic.cpp \
+  $$SRC_DIR/modules/implementations/tia-module/tia-fill-pattern.cpp \
+  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-fill-style.cpp \
+  $$SRC_DIR/modules/implementations/tia-module/tia-graphic-layer.cpp \
+
 
 
 DISTFILES += \

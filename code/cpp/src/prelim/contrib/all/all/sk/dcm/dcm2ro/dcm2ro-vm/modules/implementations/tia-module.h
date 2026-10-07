@@ -36,6 +36,20 @@ public:
 
  TIA_Module();
 
+ void new_compound_graphic();
+ void finalize_compound_graphic();
+
+
+ void new_fill_pattern();
+ void finalize_fill_pattern();
+
+ void new_graphic_layer();
+ void finalize_graphic_layer();
+
+ void new_graphic_fill_style();
+ void finalize_graphic_fill_style();
+
+
  void load_tikz_template(QString file_path);
  void save_tikz_file(QString file_path);
  void fill_pattern_mode(QString mode);

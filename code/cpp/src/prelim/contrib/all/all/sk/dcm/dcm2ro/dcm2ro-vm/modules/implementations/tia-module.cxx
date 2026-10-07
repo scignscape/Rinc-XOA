@@ -19,6 +19,19 @@
    {"tia-graphic-layer:description", (methods_String) &TIA_Module::graphic_layer_description},
 
 #elif METHODS_Empty
+
+   {"tia-new-compound-graphic", (methods_x0) &NRE_Module::new_compound_graphic},
+   {"tia-finalize-compound-graphic", (methods_x0) &NRE_Module::finalize_compound_graphic},
+
+   {"tia-new-fill-pattern", (methods_x0) &NRE_Module::new_fill_pattern},
+   {"tia-finalize-fill-pattern", (methods_x0) &NRE_Module::finalize_fill_pattern},
+
+   {"tia-new-graphic-layer", (methods_x0) &NRE_Module::new_graphic_layer},
+   {"tia-finalize-graphic-layer", (methods_x0) &NRE_Module::finalize_graphic_layer},
+
+   {"tia-new-graphic-fill-style", (methods_x0) &NRE_Module::new_graphic_fill_style},
+   {"tia-finalize-graphic-fill-style", (methods_x0) &NRE_Module::finalize_graphic_fill_style},
+
    {"tia-point-group", (methods_x0) &TIA_Module::point_group},
    {"tia-point-graphic", (methods_x0) &TIA_Module::point_graphic},
    {"tia-polyline-graphic", (methods_x0) &TIA_Module::polyline_graphic},

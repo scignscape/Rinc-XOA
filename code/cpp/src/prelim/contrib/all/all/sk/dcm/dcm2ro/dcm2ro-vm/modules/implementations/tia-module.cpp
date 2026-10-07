@@ -8,6 +8,10 @@
 
 #include "tia-module.h"
 
+#include "tia-module/tia-compound-graphic.h"
+#include "tia-module/tia-fill-pattern.h"
+#include "tia-module/tia-graphic-fill-style.h"
+#include "tia-module/tia-graphic-layer.h"
 
 #include <bit>
 
@@ -25,6 +29,45 @@ TIA_Module::TIA_Module()
 
 }
 
+void TIA_Module::new_fill_pattern()
+{
+ TIA_Fill_Pattern* tfp = new TIA_Fill_Pattern;
+}
+
+void TIA_Module::finalize_fill_pattern()
+{
+
+}
+
+void TIA_Module::new_graphic_layer()
+{
+ TIA_Graphic_Layer* tgl = new TIA_Graphic_Layer;
+}
+
+void TIA_Module::finalize_graphic_layer()
+{
+
+}
+
+void TIA_Module::new_graphic_fill_style()
+{
+ TIA_Graphic_Fill_Style* tgfs = new TIA_Graphic_Fill_Style;
+}
+
+void TIA_Module::finalize_graphic_fill_style()
+{
+
+}
+
+void TIA_Module::new_compound_graphic()
+{
+ TIA_Compound_Graphic* tgc = new TIA_Compound_Graphic;
+}
+
+void TIA_Module::finalize_compound_graphic()
+{
+
+}
 
 
 void TIA_Module::load_tikz_template(QString file_path)
