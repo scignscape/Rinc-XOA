@@ -18,13 +18,13 @@
 
 OTNS_(DCM2RO)
 
-class Tia_Compound_Graphic
+class TIA_Compound_Graphic
 {
  QString uid_;
 
 public:
 
- Tia_Compound_Graphic();
+ TIA_Compound_Graphic();
 
  ACCESSORS(QString ,uid)
 

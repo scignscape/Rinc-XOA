@@ -19,7 +19,7 @@ USING_KANS(TextIO)
 
 USING_OTNS(DCM2RO)
 
-Tia_Graphic_Fill_Style::Tia_Graphic_Fill_Style()
+TIA_Graphic_Fill_Style::TIA_Graphic_Fill_Style()
 {
 
 }

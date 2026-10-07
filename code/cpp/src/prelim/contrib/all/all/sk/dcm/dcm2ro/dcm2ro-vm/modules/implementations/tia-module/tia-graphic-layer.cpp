@@ -19,7 +19,7 @@ USING_KANS(TextIO)
 
 USING_OTNS(DCM2RO)
 
-Tia_Graphic_Layer::Tia_Graphic_Layer()
+TIA_Graphic_Layer::TIA_Graphic_Layer()
 {
 
 }

@@ -23,10 +23,10 @@
 
 OTNS_(DCM2RO)
 
-class TIA_Compound_Graphic;
-class TIA_Fill_Pattern;
-class TIA_Graphic_Layer;
-class TIA_Graphic_Fill_Style;
+//class TIA_Compound_Graphic;
+//class TIA_Fill_Pattern;
+//class TIA_Graphic_Layer;
+//class TIA_Graphic_Fill_Style;
 
 
 class TIA_Module : public _Module_Base

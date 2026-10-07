@@ -9,7 +9,6 @@
 #include "tia-module.h"
 
 #include "tia-module/tia-compound-graphic.h"
-#include "tia-module/tia-fill-pattern.h"
 #include "tia-module/tia-graphic-fill-style.h"
 #include "tia-module/tia-graphic-layer.h"
 
@@ -28,6 +27,8 @@ TIA_Module::TIA_Module()
 {
 
 }
+
+#include "tia-module/tia-fill-pattern.h"
 
 void TIA_Module::new_fill_pattern()
 {

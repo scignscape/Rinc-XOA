@@ -16,15 +16,16 @@
 
 #include "otns.h"
 
+
 OTNS_(DCM2RO)
 
-class Tia_Fill_Pattern
+class TIA_Fill_Pattern
 {
  QString uid_;
 
 public:
 
- Tia_Fill_Pattern();
+ TIA_Fill_Pattern();
 
  ACCESSORS(QString ,uid)
 
