@@ -178,6 +178,51 @@ VM_OpMethods::methods_U2x1 VM_OpMethods::get_method_U2x1(QString instr, _Module_
  get_method_COMMON
 }
 
+VM_OpMethods::methods_U1x1 VM_OpMethods::get_method_U1x1(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_U1x1> static_map {
+  #define METHODS_U1x1 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U1x1
+ };
+
+ get_method_COMMON
+}
+
+VM_OpMethods::methods_U1x2 VM_OpMethods::get_method_U1x2(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_U1x2> static_map {
+  #define METHODS_U1x2 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U1x2
+ };
+
+ get_method_COMMON
+}
+
+VM_OpMethods::methods_U1x3 VM_OpMethods::get_method_U1x3(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_U1x3> static_map {
+  #define METHODS_U1x3 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U1x3
+ };
+
+ get_method_COMMON
+}
+
+VM_OpMethods::methods_U1x4 VM_OpMethods::get_method_U1x4(QString instr, _Module_Base*& module)
+{
+ QMap<QString, methods_U1x4> static_map {
+  #define METHODS_U1x4 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U1x4
+ };
+
+ get_method_COMMON
+}
+
+
 VM_OpMethods::methods_N8x1 VM_OpMethods::get_method_N8x1(QString instr, _Module_Base*& module)
 {
  QMap<QString, methods_N8x1> static_map {
@@ -210,6 +255,7 @@ VM_OpMethods::methods_R8x1 VM_OpMethods::get_method_R8x1(QString instr, _Module_
 
  get_method_COMMON
 }
+
 
 VM_OpMethods::methods_U2x2 VM_OpMethods::get_method_U2x2(QString instr, _Module_Base*& module)
 {

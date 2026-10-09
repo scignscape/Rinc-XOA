@@ -10,6 +10,8 @@
 
 #include <QTextStream>
 
+#include <QVector>
+
 #include "global-types.h"
 
 #include "accessors.h"
@@ -28,17 +30,32 @@ OTNS_(DCM2RO)
 //class TIA_Graphic_Layer;
 //class TIA_Graphic_Fill_Style;
 
+class TIA_Graphic_Element;
 
 class TIA_Module : public _Module_Base
 {
+ QString base_file_path_;
+
+ QStringList element_characteritics_keys_;
+
+ QVector<QPair<u4, u4>> points_xy_;
+
+ TIA_Graphic_Element* current_graphic_element_;
 
 public:
 
  TIA_Module();
 
+ void load_base_file(QString path);
+ void graphic_element_interpretation(QString ei);
+ void graphic_element_characteristic(QString ec);
+ void graphic_element_value_u1(u1 ev);
+
+ void new_graphic_element();
+ void finalize_graphic_element();
+
  void new_compound_graphic();
  void finalize_compound_graphic();
-
 
  void new_fill_pattern();
  void finalize_fill_pattern();

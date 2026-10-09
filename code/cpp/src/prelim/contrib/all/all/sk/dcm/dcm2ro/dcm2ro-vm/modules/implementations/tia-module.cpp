@@ -11,6 +11,8 @@
 #include "tia-module/tia-compound-graphic.h"
 #include "tia-module/tia-graphic-fill-style.h"
 #include "tia-module/tia-graphic-layer.h"
+#include "tia-module/tia-fill-pattern.h"
+#include "tia-module/tia-graphic-element.h"
 
 #include <bit>
 
@@ -23,12 +25,54 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 TIA_Module::TIA_Module()
- :  _Module_Base{"TIA"}
+ :  _Module_Base{"TIA"}, current_graphic_element_(nullptr)
 {
 
 }
 
-#include "tia-module/tia-fill-pattern.h"
+
+void TIA_Module::load_base_file(QString path)
+{
+ base_file_path_ = path;
+}
+
+void TIA_Module::graphic_element_interpretation(QString ei)
+{
+ current_graphic_element_->set_interpretation(ei.split("|"));
+}
+
+void TIA_Module::graphic_element_characteristic(QString ec)
+{
+ element_characteritics_keys_.push_back(ec);
+}
+
+
+void TIA_Module::graphic_element_value_u1(u1 ev)
+{
+ current_graphic_element_->characteristic_values(element_characteritics_keys_, QVariant(ev));
+ element_characteritics_keys_.clear();
+}
+
+
+void TIA_Module::new_graphic_element()
+{
+ current_graphic_element_ = new TIA_Graphic_Element;
+}
+
+void TIA_Module::finalize_graphic_element()
+{
+
+}
+
+
+void TIA_Module::point_xy(u4 x, u4 y)
+{
+ points_xy_.push_back({x, y});
+}
+
+
+
+
 
 void TIA_Module::new_fill_pattern()
 {
@@ -192,10 +236,6 @@ void TIA_Module::size_wh(u4 width, u4 height)
 
 }
 
-void TIA_Module::point_xy(u4 x, u4 y)
-{
-
-}
 
 void TIA_Module::fill_pattern_mask(u4 v1, u4 v2, u4 v3, u4 v4)
 {
