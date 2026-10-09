@@ -47,10 +47,21 @@ void TIA_Module::graphic_element_characteristic(QString ec)
 }
 
 
+template<typename Type_for_QVariant>
+void TIA_Module::_graphic_element_value(Type_for_QVariant v)
+{
+ current_graphic_element_->characteristic_values(element_characteritics_keys_, QVariant(v));
+ element_characteritics_keys_.clear();
+}
+
 void TIA_Module::graphic_element_value_u1(u1 ev)
 {
- current_graphic_element_->characteristic_values(element_characteritics_keys_, QVariant(ev));
- element_characteritics_keys_.clear();
+ _graphic_element_value(ev);
+}
+
+void TIA_Module::graphic_element_value_str(QString ev)
+{
+ _graphic_element_value(ev);
 }
 
 

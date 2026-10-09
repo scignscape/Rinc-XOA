@@ -12,6 +12,8 @@
    {"tia-graphic-element:interpretation", (methods_String) &TIA_Module::graphic_element_interpretation},
    {"tia-graphic-element:characteristic", (methods_String) &TIA_Module::graphic_element_characteristic},
 
+   {"tia-graphic-element:value-str", (methods_String) &TIA_Module::graphic_element_value_str},
+
    {"tia-load-tikz-template", (methods_String) &TIA_Module::load_tikz_template},
    {"tia-save-tikz-file", (methods_String) &TIA_Module::save_tikz_file},
    {"tia-fill-pattern:mode", (methods_String) &TIA_Module::fill_pattern_mode},
