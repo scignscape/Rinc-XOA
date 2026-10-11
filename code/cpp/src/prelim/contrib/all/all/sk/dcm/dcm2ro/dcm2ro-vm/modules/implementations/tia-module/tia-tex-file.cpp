@@ -20,7 +20,7 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 TIA_Tex_File::TIA_Tex_File()
-  :  width_(0)
+  :  width_(0), height_(0)
 {
 
 }

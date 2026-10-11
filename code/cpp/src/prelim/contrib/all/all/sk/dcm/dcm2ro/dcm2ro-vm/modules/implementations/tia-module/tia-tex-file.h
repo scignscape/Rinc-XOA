@@ -21,15 +21,17 @@ OTNS_(DCM2RO)
 
 class TIA_Tex_File
 {
- QString file_path_;
+ QString image_name_;
  u2 width_;
+ u2 height_;
 
 public:
 
  TIA_Tex_File();
 
- ACCESSORS(QString ,file_path)
+ ACCESSORS(QString ,image_name)
  ACCESSORS(u2 ,width)
+ ACCESSORS(u2 ,height)
 
 
 };

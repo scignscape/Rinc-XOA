@@ -13,6 +13,7 @@
 #include "tia-module/tia-graphic-layer.h"
 #include "tia-module/tia-fill-pattern.h"
 #include "tia-module/tia-graphic-element.h"
+#include "tia-module/tia-graphic-primitive.h"
 
 #include "tia-module/tia-tex-file.h"
 
@@ -28,7 +29,7 @@ USING_OTNS(DCM2RO)
 
 TIA_Module::TIA_Module()
  :  _Module_Base{"TIA"}, current_graphic_element_(nullptr),
-    current_tex_file_(nullptr)
+    current_tex_file_(nullptr), current_graphic_primitive_(nullptr)
 {
 
 }
@@ -37,6 +38,28 @@ TIA_Module::TIA_Module()
 void TIA_Module::load_base_file(QString path)
 {
  base_file_path_ = path;
+}
+
+void TIA_Module::tex_file_image_name(QString name)
+{
+ current_tex_file_->set_image_name(name);
+}
+
+void TIA_Module::check_current_graphic_primitive()
+{
+ if(current_graphic_primitive_)
+ {
+  graphic_primitives_.push_back(current_graphic_primitive_);
+  current_graphic_primitive_->set_rank(graphic_primitives_.size());
+ }
+}
+
+void TIA_Module::graphic_primitive(QString kind)
+{
+ check_current_graphic_primitive();
+ current_graphic_primitive_ = new TIA_Graphic_Primitive(kind);
+ current_graphic_primitive_->set_points_xy(points_xy_);
+ points_xy_.clear();
 }
 
 void TIA_Module::graphic_element_interpretation(QString ei)
@@ -93,17 +116,39 @@ void TIA_Module::tex_file_width(u2 width)
  current_tex_file_->set_width(width);
 }
 
+void TIA_Module::tex_file_height(u2 height)
+{
+ current_tex_file_->set_height(height);
+}
+
+
 void TIA_Module::point_xy(u4 x, u4 y)
 {
  points_xy_.push_back({x, y});
 }
 
 
+
 void TIA_Module::weave_tikz_contents()
 {
+ check_current_graphic_primitive();
+
  tikz_output_ = tikz_template_contents_;
 
  tikz_output_.replace("%image-width%", QString::number(current_tex_file_->width()));
+ tikz_output_.replace("%image-height%", QString::number(current_tex_file_->height()));
+ tikz_output_.replace("%image-name%", current_tex_file_->image_name());
+
+ for(TIA_Graphic_Primitive* tgp : graphic_primitives_)
+ {
+  u2 r = tgp->rank();
+
+  for(auto pr : tgp->points_xy())
+  {
+   QString pattern = "\\coordinate (em%1-%2) at (%3, %4);"_qt.arg(1);
+  }
+ }
+
 }
 
 

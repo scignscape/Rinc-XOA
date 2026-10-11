@@ -9,8 +9,14 @@
 #if METHODS_String
 
    {"tia-load-base-file", (methods_String) &TIA_Module::load_base_file},
+   {"tia-tex-file:image-name", (methods_String) &TIA_Module::tex_file_image_name},
+
    {"tia-graphic-element:interpretation", (methods_String) &TIA_Module::graphic_element_interpretation},
    {"tia-graphic-element:characteristic", (methods_String) &TIA_Module::graphic_element_characteristic},
+
+   {"tia-graphic-primitive", (methods_String) &TIA_Module::graphic_primitive},
+
+
 
    {"tia-graphic-element:value-str", (methods_String) &TIA_Module::graphic_element_value_str},
 
@@ -66,6 +72,7 @@
 #elif METHODS_U2x1
    {"tia-graphic-layer:recommended-grayscale", (methods_U2x1) &TIA_Module::graphic_layer_recommended_grayscale},
    {"tia-tex-file:width", (methods_U2x1) &TIA_Module::tex_file_width},
+   {"tia-tex-file:height", (methods_U2x1) &TIA_Module::tex_file_height},
 
 #elif METHODS_U4x1
    {"tia-size-d1", (methods_U4x1) &TIA_Module::size_d1},

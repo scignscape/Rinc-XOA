@@ -32,10 +32,12 @@ OTNS_(DCM2RO)
 
 class TIA_Graphic_Element;
 class TIA_Tex_File;
+class TIA_Graphic_Primitive;
 
 class TIA_Module : public _Module_Base
 {
  QString base_file_path_;
+// QString base_file_image_name_;
 
  QStringList element_characteritics_keys_;
 
@@ -43,6 +45,13 @@ class TIA_Module : public _Module_Base
 
  TIA_Graphic_Element* current_graphic_element_;
  TIA_Tex_File* current_tex_file_;
+
+ QVector<TIA_Graphic_Element*> graphic_elements_;
+
+ QVector<TIA_Graphic_Primitive*> graphic_primitives_;
+ TIA_Graphic_Primitive* current_graphic_primitive_;
+
+ void check_current_graphic_primitive();
 
  template<typename Type_for_QVariant>
  void _graphic_element_value(Type_for_QVariant v);
@@ -55,8 +64,10 @@ public:
  TIA_Module();
 
  void load_base_file(QString path);
+ void tex_file_image_name(QString name);
 
  void weave_tikz_contents();
+ void graphic_primitive(QString kind);
 
 
  void graphic_element_interpretation(QString ei);
@@ -68,6 +79,7 @@ public:
  void finalize_tex_file();
 
  void tex_file_width(u2 width);
+ void tex_file_height(u2 height);
 
  void new_graphic_element();
  void finalize_graphic_element();
