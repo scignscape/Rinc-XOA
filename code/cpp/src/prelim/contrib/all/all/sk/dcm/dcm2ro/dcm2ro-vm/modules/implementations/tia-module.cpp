@@ -14,6 +14,8 @@
 #include "tia-module/tia-fill-pattern.h"
 #include "tia-module/tia-graphic-element.h"
 
+#include "tia-module/tia-tex-file.h"
+
 #include <bit>
 
 #include <QDebug>
@@ -25,7 +27,8 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 TIA_Module::TIA_Module()
- :  _Module_Base{"TIA"}, current_graphic_element_(nullptr)
+ :  _Module_Base{"TIA"}, current_graphic_element_(nullptr),
+    current_tex_file_(nullptr)
 {
 
 }
@@ -75,10 +78,43 @@ void TIA_Module::finalize_graphic_element()
 
 }
 
+void TIA_Module::new_tex_file()
+{
+ current_tex_file_ = new TIA_Tex_File;
+}
+
+void TIA_Module::finalize_tex_file()
+{
+
+}
+
+void TIA_Module::tex_file_width(u2 width)
+{
+ current_tex_file_->set_width(width);
+}
 
 void TIA_Module::point_xy(u4 x, u4 y)
 {
  points_xy_.push_back({x, y});
+}
+
+
+void TIA_Module::weave_tikz_contents()
+{
+ tikz_output_ = tikz_template_contents_;
+
+ tikz_output_.replace("%image-width%", QString::number(current_tex_file_->width()));
+}
+
+
+void TIA_Module::load_tikz_template(QString file_path)
+{
+ tikz_template_contents_ = load_file(file_path);
+}
+
+void TIA_Module::save_tikz_file(QString file_path)
+{
+
 }
 
 
@@ -126,15 +162,6 @@ void TIA_Module::finalize_compound_graphic()
 }
 
 
-void TIA_Module::load_tikz_template(QString file_path)
-{
-
-}
-
-void TIA_Module::save_tikz_file(QString file_path)
-{
-
-}
 
 void TIA_Module::fill_pattern_mode(QString mode)
 {

@@ -41,6 +41,9 @@
 #include "dcmtk/dcmimage/diregist.h"     /* include to support color images */
 #include "dcmtk/ofstd/ofstd.h"           /* for OFStandard */
 
+
+#define WITH_LIBPNG
+
 #ifdef BUILD_DCM2PNM_AS_DCMJ2PNM
 #include "dcmtk/dcmjpeg/djdecode.h"      /* for dcmjpeg decoders */
 #include "dcmtk/dcmjpeg/dipijpeg.h"      /* for dcmimage JPEG plugin */
@@ -205,6 +208,7 @@ int main(int argc, char *argv[])
     for (i = 0; i < 16; i++)
         opt_Overlay[i] = 2;                               /* default: display all overlays if present */
 
+#ifdef HIDE
     prepareCmdLineArgs(argc, argv, OFFIS_CONSOLE_APPLICATION);
     cmd.setOptionColumns(LONGCOL, SHORTCOL);
 
@@ -909,8 +913,13 @@ int main(int argc, char *argv[])
     DJLSDecoderRegistration::registerCodecs();
 #endif
 
+#endif //hide
     DcmFileFormat *dfile = new DcmFileFormat();
-    OFCondition cond = dfile->loadFile(opt_ifname, opt_transferSyntax, EGL_withoutGL, DCM_MaxReadLength, opt_readMode);
+
+    OFString filename = "/home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/dev/dcm2ro/t.dcm";
+
+//?    OFCondition cond = dfile->loadFile(opt_ifname, opt_transferSyntax, EGL_withoutGL, DCM_MaxReadLength, opt_readMode);
+    OFCondition cond = dfile->loadFile(filename, opt_transferSyntax, EGL_withoutGL, DCM_MaxReadLength, opt_readMode);
 
     if (cond.bad())
     {
@@ -1149,6 +1158,8 @@ int main(int argc, char *argv[])
             }
         }
 
+        opt_windowType = 3;
+
         /* process VOI parameters */
         switch (opt_windowType)
         {
@@ -1377,6 +1388,10 @@ int main(int argc, char *argv[])
         OFString ofname;
         unsigned int fcount = OFstatic_cast(unsigned int, ((opt_frameCount > 0) && (opt_frameCount <= di->getFrameCount())) ? opt_frameCount : di->getFrameCount());
         const char *ofext = NULL;
+
+        //?
+        opt_fileType = EFT_PNG;
+
         /* determine default file extension */
         switch (opt_fileType)
         {
@@ -1409,6 +1424,8 @@ int main(int argc, char *argv[])
 
         for (unsigned int frame = 0; frame < fcount; frame++)
         {
+         opt_ofname = "/home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/dev/dcm2ro/t.png";
+
             if (opt_ofname)
             {
                 /* output to file */

@@ -28,6 +28,9 @@ DEFINES += RELAE_LABEL_NODES
 CONFIG += no_keywords
 
 
+DEFINES += WITH_LIBPNG
+
+
 HEADERS += \
   $$SRC_DIR/include/dcmtk/dcmimage/dcmicmph.h \ 
   $$SRC_DIR/include/dcmtk/dcmimage/diargimg.h \ 

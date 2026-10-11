@@ -27,6 +27,9 @@
 
 #elif METHODS_Empty
 
+   {"tia-new-tex-file", (methods_x0) &TIA_Module::new_tex_file},
+   {"tia-finalize-tex-file", (methods_x0) &TIA_Module::finalize_tex_file},
+
    {"tia-new-graphic-element", (methods_x0) &TIA_Module::new_graphic_element},
    {"tia-finalize-graphic-element", (methods_x0) &TIA_Module::finalize_graphic_element},
 
@@ -41,6 +44,8 @@
 
    {"tia-new-graphic-fill-style", (methods_x0) &TIA_Module::new_graphic_fill_style},
    {"tia-finalize-graphic-fill-style", (methods_x0) &TIA_Module::finalize_graphic_fill_style},
+
+   {"tia-weave-tikz-contents", (methods_x0) &TIA_Module::weave_tikz_contents},
 
    {"tia-point-group", (methods_x0) &TIA_Module::point_group},
    {"tia-point-graphic", (methods_x0) &TIA_Module::point_graphic},
@@ -60,6 +65,7 @@
 
 #elif METHODS_U2x1
    {"tia-graphic-layer:recommended-grayscale", (methods_U2x1) &TIA_Module::graphic_layer_recommended_grayscale},
+   {"tia-tex-file:width", (methods_U2x1) &TIA_Module::tex_file_width},
 
 #elif METHODS_U4x1
    {"tia-size-d1", (methods_U4x1) &TIA_Module::size_d1},

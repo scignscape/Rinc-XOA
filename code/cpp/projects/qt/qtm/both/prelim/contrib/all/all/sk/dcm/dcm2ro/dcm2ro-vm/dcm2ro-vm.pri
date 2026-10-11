@@ -50,6 +50,7 @@ HEADERS += \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-fill-style.h \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-layer.h \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-element.h \
+  $$SRC_DIR/modules/implementations/tia-module/tia-tex-file.h \
 
 
 SOURCES += \
@@ -66,6 +67,7 @@ SOURCES += \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-fill-style.cpp \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-layer.cpp \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-element.cpp \
+  $$SRC_DIR/modules/implementations/tia-module/tia-tex-file.cpp \
 
 
 

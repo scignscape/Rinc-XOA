@@ -31,6 +31,7 @@ OTNS_(DCM2RO)
 //class TIA_Graphic_Fill_Style;
 
 class TIA_Graphic_Element;
+class TIA_Tex_File;
 
 class TIA_Module : public _Module_Base
 {
@@ -41,19 +42,32 @@ class TIA_Module : public _Module_Base
  QVector<QPair<u4, u4>> points_xy_;
 
  TIA_Graphic_Element* current_graphic_element_;
+ TIA_Tex_File* current_tex_file_;
 
  template<typename Type_for_QVariant>
  void _graphic_element_value(Type_for_QVariant v);
+
+ QString tikz_template_contents_;
+ QString tikz_output_;
 
 public:
 
  TIA_Module();
 
  void load_base_file(QString path);
+
+ void weave_tikz_contents();
+
+
  void graphic_element_interpretation(QString ei);
  void graphic_element_characteristic(QString ec);
  void graphic_element_value_u1(u1 ev);
  void graphic_element_value_str(QString ev);
+
+ void new_tex_file();
+ void finalize_tex_file();
+
+ void tex_file_width(u2 width);
 
  void new_graphic_element();
  void finalize_graphic_element();
