@@ -135,20 +135,34 @@ void TIA_Module::weave_tikz_contents()
 
  tikz_output_ = tikz_template_contents_;
 
- tikz_output_.replace("%image-width%", QString::number(current_tex_file_->width()));
- tikz_output_.replace("%image-height%", QString::number(current_tex_file_->height()));
+ tikz_output_.replace("%image-width%", "%1pt"_qt.arg(current_tex_file_->width()));
+ tikz_output_.replace("%image-height%", "%1pt"_qt.arg(current_tex_file_->height()));
  tikz_output_.replace("%image-name%", current_tex_file_->image_name());
+
+ QStringList coordinates;
+ QStringList counts;
+ QMap<QString, QStringList> primitives;
 
  for(TIA_Graphic_Primitive* tgp : graphic_primitives_)
  {
   u2 r = tgp->rank();
 
+  primitives[tgp->kind()].append("\\em%1{%2}"_qt.arg(tgp->kind()).arg(r));
+
+  counts.append("\\@namedef{em%1-count}{%2}"_qt.arg(r).arg(tgp->points_xy().size()));
+
+  u2 i = 0;
   for(auto pr : tgp->points_xy())
   {
-   QString pattern = "\\coordinate (em%1-%2) at (%3, %4);"_qt.arg(1);
+   ++i;
+   static QString pattern = "\\coordinate (em%1-%2) at (%3, %4);";
+   coordinates.append(pattern.arg(r).arg(i).arg(pr.first).arg(pr.second));
   }
  }
 
+ tikz_output_.replace("%edge-map-coordinates%", coordinates.join("\n"));
+ tikz_output_.replace("%edge-map-counts%", counts.join("\n"));
+ tikz_output_.replace("%em-polygons%", primitives["polygon"].join("\n"));
 }
 
 
@@ -159,7 +173,7 @@ void TIA_Module::load_tikz_template(QString file_path)
 
 void TIA_Module::save_tikz_file(QString file_path)
 {
-
+ save_file(file_path, tikz_output_);
 }
 
 
