@@ -97,6 +97,9 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
 
  typedef void (_Module_Base::*methods_R8x1)(r8 arg);
 
+ typedef void (_Module_Base::*methods_U2xL)(QVList<u2> args);
+
+
  typedef methods_x0 methods_x0_opstatement_type;
  typedef QPair<methods_String, QString> methods_String_opstatement_type;
  typedef QPair<methods_StringList, QStringList> methods_StringList_opstatement_type;
@@ -122,6 +125,8 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  typedef QPair<methods_U4x2, QVList<u4>> methods_U4x2_opstatement_type;
  typedef QPair<methods_U4x3, QVList<u4>> methods_U4x3_opstatement_type;
  typedef QPair<methods_U4x4, QVList<u4>> methods_U4x4_opstatement_type;
+
+ typedef QPair<methods_U2xL, QVList<u2>> methods_U2xL_opstatement_type;
 
  static constexpr u1 methods_x0_StackCode = 1;
  static constexpr u1 methods_String_StackCode = 2;
@@ -151,6 +156,8 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
 
  static constexpr u1 methods_R8x1_StackCode = 21;
 
+ static constexpr u1 methods_U2xL_StackCode = 22;
+
  methods_x0 get_method_x0(QString inst, _Module_Base*& module);
  methods_String get_method_String(QString inst, _Module_Base*& module);
  methods_StringList get_method_StringList(QString inst, _Module_Base*& module);
@@ -177,6 +184,9 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
  methods_R4x2 get_method_R4x2(QString inst, _Module_Base*& module);
  methods_R4x3 get_method_R4x3(QString inst, _Module_Base*& module);
  methods_R4x4 get_method_R4x4(QString inst, _Module_Base*& module);
+
+ methods_U2xL get_method_U2xL(QString inst, _Module_Base*& module);
+
 
 // void ((VM_OpMethods::*get_method_x0)())(QString inst);
 // void ((VM_OpMethods::*get_method_String)(QString))(QString inst);

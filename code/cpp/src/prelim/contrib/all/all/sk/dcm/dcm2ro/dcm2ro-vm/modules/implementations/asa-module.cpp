@@ -25,18 +25,29 @@ ASA_Module::ASA_Module()
 
 }
 
-void ASA_Module::load_html_template(QString file_path)
+void ASA_Module::path_group_id_string_auto(QString id)
 {
 
 }
 
-void ASA_Module::load_svg_template(QString file_path)
+void ASA_Module::path_group_id(QVList<u2> paths)
+{
+
+}
+
+void ASA_Module::path_id(u2 path)
 {
 
 }
 
 
-void ASA_Module::save_html_file(QString file_path)
+void ASA_Module::path_id_string_auto(QString id)
+{
+
+}
+
+
+void ASA_Module::load_svg_file(QString file_path)
 {
 
 }
@@ -46,5 +57,7 @@ void ASA_Module::save_svg_file(QString file_path)
 {
 
 }
+
+
 
 

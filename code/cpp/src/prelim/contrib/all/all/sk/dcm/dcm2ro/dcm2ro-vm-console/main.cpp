@@ -23,12 +23,19 @@ int main(int argc, char *argv[])
 {
  qDebug() << argv[0];
 
- QString vm_file_path = DEFAULT_VM_FOLDER "/test.4lr";
- VM_Interpreter vin;
- vin.load_file(vm_file_path);
- vin.parse();
+// QString vm_file_path = DEFAULT_VM_FOLDER "/main-process.4lr";
+// VM_Interpreter vin;
+// vin.load_file(vm_file_path);
+// vin.parse();
+// vin.run();
 
- vin.run();
+ QString vm_file_path1 = DEFAULT_VM_FOLDER "/post-process.4lr";
+ VM_Interpreter vin1;
+ vin1.load_file(vm_file_path1);
+ vin1.parse();
+ vin1.run();
+
+
 
  return 0;
 }

@@ -268,6 +268,18 @@ VM_OpMethods::methods_U2x2 VM_OpMethods::get_method_U2x2(QString instr, _Module_
  get_method_COMMON
 }
 
+VM_OpMethods::methods_U2xL VM_OpMethods::get_method_U2xL(QString instr, _Module_Base*& module)
+{
+ static QMap<QString, methods_U2xL> static_map {
+  #define METHODS_U2xL 1
+  #include MODULE_LIST_COUNT(MODULE_LIST_COUNT_INCLUDE)
+  #undef METHODS_U2xL
+ };
+
+ get_method_COMMON
+}
+
+
 
 VM_OpMethods::methods_U4x2 VM_OpMethods::get_method_U4x2(QString instr, _Module_Base*& module)
 {

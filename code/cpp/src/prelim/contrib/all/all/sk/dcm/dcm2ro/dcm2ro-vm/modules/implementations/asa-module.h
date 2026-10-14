@@ -32,10 +32,14 @@ public:
 
  ASA_Module();
 
- void load_html_template(QString file_path);
- void load_svg_template(QString file_path);
- void save_html_file(QString file_path);
+ void load_svg_file(QString file_path);
  void save_svg_file(QString file_path);
+
+ void path_group_id_string_auto(QString id);
+ void path_id_string_auto(QString id);
+
+ void path_group_id(QVList<u2> paths);
+ void path_id(u2 path);
 
 };
 

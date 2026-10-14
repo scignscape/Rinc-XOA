@@ -6,13 +6,32 @@
 
 
 
+
+//asa-path-id 2# 1 ;.
+//asa-path-id-string-auto $ em-node ;.
+
+//asa-path-group-id 2## 2 3 ;.
+//asa-path-group-id-string-auto $ em-node ;.
+
+
+
+//asa-save-svg-file $ /home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/dev/dcm2ro/tikz/ia.svg ;.
+
+
 #if METHODS_String
-   {"asa-load-html-template", (methods_String) &ASA_Module::load_html_template},
-   {"asa-load-svg-template", (methods_String) &ASA_Module::load_svg_template},
+   {"asa-load-svg-file", (methods_String) &ASA_Module::load_svg_file},
    {"asa-save-svg-file", (methods_String) &ASA_Module::save_svg_file},
-   {"asa-save-html-file", (methods_String) &ASA_Module::save_html_file},
+   {"asa-path-id-string-auto", (methods_String) &ASA_Module::path_id_string_auto},
+   {"asa-path-group-id-string-auto", (methods_String) &ASA_Module::path_group_id_string_auto},
 
 #elif METHODS_Empty
+
+#elif METHODS_U2x1
+  {"asa-path-id", (methods_U2x1) &ASA_Module::path_id},
+
+#elif METHODS_U2xL
+  {"asa-path-group-id", (methods_U2xL) &ASA_Module::path_group_id},
+
 
 #elif METHODS_U4x1
 
