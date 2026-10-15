@@ -68,9 +68,23 @@ void ASA_Module::save_svg_file(QString file_path)
  save_file(file_path, the_svg_.toString());
 }
 
+// //  google!
+QDomElement findElementByTagAndId(const QDomDocument &doc, const QString &tagName, const QString &id)
+{
+ QDomNodeList list = doc.elementsByTagName(tagName);
+ for (int i = 0; i < list.size(); ++i)
+ {
+  QDomElement el = list.at(i).toElement();
+  if (el.attribute("id") == id)
+    return el;
+ }
+ return QDomElement();
+}
+
 void ASA_Module::prepare_svg_file()
 {
- QDomNodeList paths = the_svg_.elementsByTagName("path");
+ QDomElement s1e = findElementByTagAndId(the_svg_, "g", "surface1");
+ QDomNodeList paths = s1e.elementsByTagName("path");
 
  for(auto const& [path, id] : path_ids_.MAP_KV())
  {
