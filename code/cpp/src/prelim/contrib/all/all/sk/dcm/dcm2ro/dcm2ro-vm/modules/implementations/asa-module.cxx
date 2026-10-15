@@ -25,12 +25,13 @@
    {"asa-path-group-id-string-auto", (methods_String) &ASA_Module::path_group_id_string_auto},
 
 #elif METHODS_Empty
+   {"asa-prepare-svg-file", (methods_U2x1) &ASA_Module::prepare_svg_file},
 
 #elif METHODS_U2x1
-  {"asa-path-id", (methods_U2x1) &ASA_Module::path_id},
+   {"asa-path-id", (methods_U2x1) &ASA_Module::path_id},
 
 #elif METHODS_U2xL
-  {"asa-path-group-id", (methods_U2xL) &ASA_Module::path_group_id},
+   {"asa-path-group-id", (methods_U2xL) &ASA_Module::path_group_id},
 
 
 #elif METHODS_U4x1

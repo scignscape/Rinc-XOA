@@ -87,51 +87,57 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_String_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_StringList_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_StringList_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_U1x1_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_U1x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_U2x1_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_U2x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-   break;
+  break;
+ }
+ case VM_OpMethods::methods_U2xL_StackCode:
+ {
+  auto op_pair = (*(QVList<VM_OpMethods::methods_U2xL_opstatement_type>*)pr.first)[pr.second];
+  std::invoke(op_pair.first, module, op_pair.second);
+  break;
  }
  case VM_OpMethods::methods_U4x1_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_U4x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_N8x1_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_N8x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_R4x1_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_R4x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_R8x1_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_R8x1_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module, op_pair.second);
-   break;
+  break;
  }
  case VM_OpMethods::methods_U2x2_StackCode:
  {
@@ -139,7 +145,7 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
   std::invoke(op_pair.first, module,
     op_pair.second[0], op_pair.second[1]);
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
-   break;
+  break;
  }
  case VM_OpMethods::methods_U2x3_StackCode:
  {
@@ -147,7 +153,7 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
   std::invoke(op_pair.first, module,
     op_pair.second[0], op_pair.second[1], op_pair.second[2]);
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
-   break;
+  break;
  }
  case VM_OpMethods::methods_U4x4_StackCode:
  {
@@ -155,35 +161,35 @@ void VM_Interpreter::run_op_pair(QPair<void*, u4> pr)
   std::invoke(op_pair.first, module,
     op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
 //  (methods_.sdi_module()->*op_pair.first)(op_pair.second[0], op_pair.second[1], op_pair.second[2], op_pair.second[3]);
-   break;
+  break;
  }
  case VM_OpMethods::methods_U4x2_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_U4x2_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module,
     op_pair.second[0], op_pair.second[1]);
-   break;
+  break;
  }
  case VM_OpMethods::methods_R4x2_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_R4x2_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module,
     op_pair.second[0], op_pair.second[1]);
-   break;
+  break;
  }
  case VM_OpMethods::methods_R4x3_StackCode:
  {
   auto op_pair = (*(QVList<VM_OpMethods::methods_R4x3_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op_pair.first, module,
     op_pair.second[0], op_pair.second[1], op_pair.second[2]);
-   break;
+  break;
  }
  case VM_OpMethods::methods_x0_StackCode:
  {
   auto op = (*(QVList<VM_OpMethods::methods_x0_opstatement_type>*)pr.first)[pr.second];
   std::invoke(op, module);
 //  (methods_.sdi_module()->*op_pair)();
-   break;
+  break;
  }
  default: break;
  }
@@ -543,6 +549,21 @@ void VM_Interpreter::parse_List(const VM_Opstatement& opst)
   //   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
   break;
  }
+
+ case VM_Opstatement::Mid_Control_Kinds::U2:
+ {
+  QStringList qsl = opst.param().simplified().split(" ");
+  QVList<u2> args(qsl.size());
+  std::transform(qsl.begin(), qsl.end(), args.begin(), &QString_to_u2);
+
+  VM_OpMethods::methods_U2xL fn = methods_.get_method_U2xL(opst.instruction(), module);
+  parse_fn(fn, opst, args);
+  encode_which_stack(VM_OpMethods::methods_U2xL_StackCode, module);
+
+  //   auto pr = dispatcher_.get_vector(opst.mid_control_kind(), opst.control_coords(), fn, opst.param());
+  break;
+ }
+
  default:
   break;
  }

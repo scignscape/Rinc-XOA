@@ -19,7 +19,13 @@
 
 #include "../module-base.h"
 
+#include "global-types.h"
+
 #include "otns.h"
+
+
+#include <QDomDocument>
+#include <QDomElement>
 
 OTNS_(DCM2RO)
 
@@ -27,6 +33,12 @@ OTNS_(DCM2RO)
 
 class ASA_Module : public _Module_Base
 {
+ QMap<u2, QString> path_ids_;
+ QMap<QVList<u2>, QString> path_group_ids_;
+
+ QVList<u2> current_paths_;
+
+ QDomDocument the_svg_;
 
 public:
 
@@ -40,6 +52,9 @@ public:
 
  void path_group_id(QVList<u2> paths);
  void path_id(u2 path);
+
+ void prepare_svg_file();
+
 
 };
 

@@ -11,6 +11,8 @@ include(../build-group.pri)
 
 QT -= gui
 
+QT += xml
+
 exists($$ROOT_DIR/../preferred/sysr.pri): include($$ROOT_DIR/../preferred/sysr.pri)
 exists($$ROOT_DIR/../preferred/sysr-c.pri): include($$ROOT_DIR/../preferred/sysr-c.pri)
 exists($$ROOT_DIR/../preferred/compiler.pri): include($$ROOT_DIR/../preferred/compiler.pri)
@@ -21,8 +23,10 @@ INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_ROOT_DIR
 greaterThan(QT_MAJOR_VERSION, 5) {
  DEFINES += USING_QT_6
  DEFINES += QVList=QList
+ DEFINES += MAP_KV=asKeyValueRange
 } else {
  DEFINES += QVList=QVector
+ DEFINES += MAP_KV=toStdMap
 }
 
 CONFIG += debug
