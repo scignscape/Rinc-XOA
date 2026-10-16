@@ -142,8 +142,8 @@ void ASA_Module::prepare_svg_file()
  QDomNodeList paths = s1e.elementsByTagName("path");
  QDomNodeList gs = s1e.elementsByTagName("g");
 
- u2 label_counts;
- u2 region_counts;
+ u2 label_counts = 0;
+ u2 region_counts = 0;
 
  u2 first_region_index = 0;
  u2 first_label_index = 0;
@@ -207,7 +207,8 @@ void ASA_Module::prepare_svg_file()
    }
 
    u2 path = group.first();
-   paths.item(path - 1).parentNode().insertBefore(ginner, paths.item(path - 1));
+   gel_el.appendChild(ginner);
+//?   paths.item(path - 1).parentNode().insertBefore(ginner, paths.item(path - 1));
    for(u2 i = 0;; path = group[i])
    {
     ginner.appendChild(paths.item(path - 1));
