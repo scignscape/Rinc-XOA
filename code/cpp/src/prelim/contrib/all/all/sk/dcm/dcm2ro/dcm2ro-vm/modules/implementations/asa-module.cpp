@@ -161,6 +161,9 @@ void ASA_Module::prepare_svg_file()
    ++region_counts;
    if(region_counts == 1)
    {
+    paths.item(path - 1).parentNode().insertBefore(gel_el, paths.item(path - 1));
+    gel_el.appendChild(paths.item(path - 1));
+
     first_region_index = toggle_ids_.size();
     toggle_ids_.push_back({id, "Region"});
    }
@@ -204,8 +207,7 @@ void ASA_Module::prepare_svg_file()
    }
 
    u2 path = group.first();
-   paths.item(path - 1).parentNode().insertBefore(gel_el, paths.item(path - 1));
-   gel_el.appendChild(ginner);
+   paths.item(path - 1).parentNode().insertBefore(ginner, paths.item(path - 1));
    for(u2 i = 0;; path = group[i])
    {
     ginner.appendChild(paths.item(path - 1));
