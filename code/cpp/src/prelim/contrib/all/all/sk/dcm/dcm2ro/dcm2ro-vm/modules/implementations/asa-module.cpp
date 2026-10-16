@@ -119,22 +119,38 @@ void ASA_Module::prepare_svg_file()
    if(++i == group.size())
      break;
   }
+ }
 
-  for(u2 i = 0; i < gs.length(); ++i)
+ for(u2 i = 0; i < gs.length(); ++i)
+ {
+  QDomNode n = gs.item(i);
+  QString xlh;
+  QDomNodeList uses = n.toElement().elementsByTagName("use");
+
+  for(u2 j = 0; j < uses.length(); ++j)
   {
-   QDomNode n = gs.item(i);
-   QString xlh = n.toElement().attribute("xlink:href", "?").mid(1);
+   QDomElement use = uses.item(j).toElement();
+
+   QString x = use.attribute("x");
+   QString y = use.attribute("y");
+
+
+   xlh = use.attribute("xlink:href"); //.mid(1);
    if(xlh.isEmpty())
      continue;
-   if(glyphs_as_children.contains(xlh))
-   {
-    glyphs_as_children[xlh].appendChild(n);
-   }
-
-
+   xlh = xlh.mid(1);
+   break;
+  }
+  if(xlh.isEmpty())
+    continue;
+  if(glyphs_as_children.contains(xlh))
+  {
+   glyphs_as_children[xlh].appendChild(n);
   }
 
+
  }
+
 
 }
 

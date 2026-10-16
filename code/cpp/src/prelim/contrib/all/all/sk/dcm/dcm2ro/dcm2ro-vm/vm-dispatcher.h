@@ -87,7 +87,7 @@ class VM_Dispatcher
  QVList<QPair<void (_Module_Base::*)(QString), QString>> instr_x1_qstr_;
  WRAP_GET_VECTOR(String, x1, instr_x1_qstr)
 
- QVList<QPair<void (_Module_Base::*)(QStringList), QStringList>> instr_x1_qstrl_;
+ QVList<QPair<void (_Module_Base::*)(QVList<QString>), QVList<QString>>> instr_x1_qstrl_;
  WRAP_GET_VECTOR(String, List, instr_x1_qstrl)
 
 #define VEC_1_ARG(type, uctype) \
