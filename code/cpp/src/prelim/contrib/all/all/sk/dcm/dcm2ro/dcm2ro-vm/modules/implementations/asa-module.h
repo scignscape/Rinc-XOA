@@ -40,6 +40,9 @@ class ASA_Module : public _Module_Base
 
  QDomDocument the_svg_;
 
+ QString html_template_;
+ QString html_text_;
+
 public:
 
  ASA_Module();
@@ -56,6 +59,10 @@ public:
  void path_group_glyphs(QVList<QString> glyphs);
 
  void prepare_svg_file();
+
+ void load_html_template(QString file_path);
+ void prepare_html_file();
+ void save_html_file(QString file_path);
 
 
 };

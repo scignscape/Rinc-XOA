@@ -68,6 +68,24 @@ void ASA_Module::load_svg_file(QString file_path)
  return;
 }
 
+void ASA_Module::load_html_template(QString file_path)
+{
+ html_template_ = load_file(file_path);
+}
+
+void ASA_Module::prepare_html_file()
+{
+ html_text_ = html_template_;
+
+ QString event_listeners;
+ QString check_boxes;
+
+}
+
+void ASA_Module::save_html_file(QString file_path)
+{
+ save_file(file_path, html_template_);
+}
 
 void ASA_Module::save_svg_file(QString file_path)
 {
