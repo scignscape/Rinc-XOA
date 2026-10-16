@@ -87,15 +87,22 @@ void ASA_Module::prepare_html_file()
  html_text_ = html_template_;
 
  QString event_listeners = "// //  Auto Generated \n";
- QString check_boxes = "\n\n<!-- Auto Generated -->\n";
+ QString check_boxes = R"(
 
- for(auto const& [id, region_or_label] : toggle_ids_)
+<!-- Auto Generated -->
+<p>Graphic #1: data ...
+<br>
+ )";
+
+ for(auto const& [id, element_kind] : toggle_ids_)
  {
   event_listeners += "\nset_event_listener('toggle-%1','%1');"_qt.arg(id);
 
   check_boxes += "\n<label><input type='checkbox' id='toggle-%1' "
-    "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(region_or_label);
+    "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(element_kind);
  }
+
+ check_boxes += "\n</p>";
 
  html_text_.replace("%EVENT_LISTENERS%", event_listeners);
  html_text_.replace("%CHECK_BOXES%", check_boxes);
@@ -154,6 +161,8 @@ void ASA_Module::prepare_svg_file()
  {
   QDomElement gel_el = the_svg_.createElement("g");
   gel_el.setAttribute("id", gel->svg_id());
+  toggle_ids_.push_back({gel->svg_id(), "Graphic"});
+
 
   for(auto const& [path, id] : gel->path_ids().MAP_KV())
   {
