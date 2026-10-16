@@ -237,7 +237,17 @@ public:
 
   template<typename FN_Type, typename ARG_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
-    FN_Type fn, ARG_Type args) { return {nullptr, 0}; }
+    FN_Type fn, ARG_Type args)
+  {
+   return {nullptr, 0};
+  }
+
+  template<typename FN_Type, typename ARG_Type>
+  QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,
+    FN_Type fn, QVList<QString> args)
+  {
+   return {nullptr, 0};
+  }
 
   template<typename FN_Type, typename ARG_Type>
   QPair<void*, u4> _get_vector(VM_Opstatement::Mid_Control_Kinds mck,

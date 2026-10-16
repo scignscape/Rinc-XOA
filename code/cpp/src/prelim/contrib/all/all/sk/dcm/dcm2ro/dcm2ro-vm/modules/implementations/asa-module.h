@@ -34,7 +34,7 @@ OTNS_(DCM2RO)
 class ASA_Module : public _Module_Base
 {
  QMap<u2, QString> path_ids_;
- QMap<QVList<u2>, QString> path_group_ids_;
+ QMap<QVList<u2>, QVList<QString>> path_group_ids_and_glyphs_;
 
  QVList<u2> current_paths_;
 
@@ -52,6 +52,8 @@ public:
 
  void path_group_id(QVList<u2> paths);
  void path_id(u2 path);
+
+ void path_group_glyphs(QVList<QString> glyphs);
 
  void prepare_svg_file();
 

@@ -27,6 +27,7 @@ greaterThan(QT_MAJOR_VERSION, 5) {
 } else {
  DEFINES += QVList=QVector
  DEFINES += MAP_KV=toStdMap
+ DEFINES += QT5_TO_VECTOR
 }
 
 CONFIG += debug

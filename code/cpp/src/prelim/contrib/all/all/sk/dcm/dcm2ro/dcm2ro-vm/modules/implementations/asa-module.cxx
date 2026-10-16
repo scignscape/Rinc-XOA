@@ -24,6 +24,9 @@
    {"asa-path-id-string-auto", (methods_String) &ASA_Module::path_id_string_auto},
    {"asa-path-group-id-string-auto", (methods_String) &ASA_Module::path_group_id_string_auto},
 
+#elif METHODS_StringList
+   {"asa-path-group-glyphs", (methods_StringList) &ASA_Module::path_group_glyphs},
+
 #elif METHODS_Empty
    {"asa-prepare-svg-file", (methods_x0) &ASA_Module::prepare_svg_file},
 

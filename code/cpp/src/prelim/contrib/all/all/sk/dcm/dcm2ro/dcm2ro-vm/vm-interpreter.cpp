@@ -540,7 +540,11 @@ void VM_Interpreter::parse_List(const VM_Opstatement& opst)
  {
  case VM_Opstatement::Mid_Control_Kinds::String_List:
  {
-  QStringList args = opst.param().simplified().split(" ");
+  QVList<QString> args = opst.param().simplified().split(" ")
+#ifdef QT5_TO_VECTOR
+    .toVector()
+#endif
+  ;
 
   VM_OpMethods::methods_StringList fn = methods_.get_method_StringList(opst.instruction(), module);
   parse_fn(fn, opst, args);

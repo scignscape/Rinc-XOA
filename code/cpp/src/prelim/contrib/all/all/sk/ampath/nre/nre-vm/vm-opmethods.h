@@ -71,7 +71,7 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
 
  typedef void (_Module_Base::*methods_x0)();
  typedef void (_Module_Base::*methods_String)(QString);
- typedef void (_Module_Base::*methods_StringList)(QStringList);
+ typedef void (_Module_Base::*methods_StringList)(QVList<QString>);
  typedef void (_Module_Base::*methods_U4x1)(u4 arg);
  typedef void (_Module_Base::*methods_U2x1)(u2 arg);
  typedef void (_Module_Base::*methods_N8x1)(n8 arg);
@@ -81,7 +81,7 @@ MODULE_LIST_PAIRED(MODULE_MEMBER_ACCESSORS)
 
  typedef methods_x0 methods_x0_opstatement_type;
  typedef QPair<methods_String, QString> methods_String_opstatement_type;
- typedef QPair<methods_StringList, QStringList> methods_StringList_opstatement_type;
+ typedef QPair<methods_StringList, QVList<QString>> methods_StringList_opstatement_type;
  typedef QPair<methods_N8x1, n8> methods_N8x1_opstatement_type;
  typedef QPair<methods_R8x1, r8> methods_R8x1_opstatement_type;
  typedef QPair<methods_U4x1, u4> methods_U4x1_opstatement_type;
