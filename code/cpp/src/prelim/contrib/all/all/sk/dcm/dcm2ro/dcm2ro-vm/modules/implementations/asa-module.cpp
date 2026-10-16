@@ -19,14 +19,15 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 ASA_Module::ASA_Module()
- :  _Module_Base{"ASA"}
+ :  _Module_Base{"ASA"}, em_path_counts_(0), em_group_counts_(0)
 {
 
 }
 
 void ASA_Module::path_group_id_string_auto(QString id)
 {
- path_group_ids_and_glyphs_[current_paths_].push_front(id);
+ ++em_group_counts_;
+ path_group_ids_and_glyphs_[current_paths_].push_front("%1-%2"_qt.arg(id).arg(em_group_counts_));
  current_paths_.clear();
 }
 
@@ -48,7 +49,8 @@ void ASA_Module::path_id(u2 path)
 
 void ASA_Module::path_id_string_auto(QString id)
 {
- path_ids_[current_paths_.takeFirst()] = id;
+ ++em_path_counts_;
+ path_ids_[current_paths_.takeFirst()] = "%1-%2"_qt.arg(id).arg(em_path_counts_);
 }
 
 
@@ -77,14 +79,25 @@ void ASA_Module::prepare_html_file()
 {
  html_text_ = html_template_;
 
- QString event_listeners;
- QString check_boxes;
+ QString event_listeners = "\n\n<!-- Auto Generated -->\n";
+ QString check_boxes = "\n\n<!-- Auto Generated -->\n";
 
+ for(auto const& [id, region_or_label] : toggle_ids_)
+ {
+  event_listeners += "\nset_event_listener('toggle-%1','%1');"_qt.arg(id);
+
+  check_boxes += "\n<label><input type='checkbox=' id='toggle-toggle-%1' "
+    "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(region_or_label);
+ }
+
+ html_text_.replace("%EVENT_LISTENERS%", event_listeners);
+ html_text_.replace("%CHECK_BOXES%", check_boxes);
+ html_text_.replace("%SVG%", the_svg_.toString());
 }
 
 void ASA_Module::save_html_file(QString file_path)
 {
- save_file(file_path, html_template_);
+ save_file(file_path, html_text_);
 }
 
 void ASA_Module::save_svg_file(QString file_path)
@@ -111,9 +124,30 @@ void ASA_Module::prepare_svg_file()
  QDomNodeList paths = s1e.elementsByTagName("path");
  QDomNodeList gs = s1e.elementsByTagName("g");
 
+ u2 label_counts;
+ u2 region_counts;
+
+ u2 first_region_index = 0;
+ u2 first_label_index = 0;
+
  for(auto const& [path, id] : path_ids_.MAP_KV())
  {
   paths.item(path - 1).toElement().setAttribute("id", id);
+  ++region_counts;
+  if(region_counts == 1)
+  {
+   first_region_index = toggle_ids_.size();
+   toggle_ids_.push_back({id, "Region"});
+  }
+  else if(region_counts == 2)
+  {
+   toggle_ids_.push_back({id, "Regions"});
+   toggle_ids_[first_region_index].second = toggle_ids_[first_region_index].second + "s";
+  }
+  else
+  {
+   toggle_ids_.push_back({id, "Regions"});
+  }
  }
 
  tsl::ordered_map<QString, QDomNode> glyphs_as_children;
@@ -129,6 +163,23 @@ void ASA_Module::prepare_svg_file()
   }
 
   gnode.toElement().setAttribute("id", id);
+
+  ++label_counts;
+  if(label_counts == 1)
+  {
+   first_region_index = toggle_ids_.size();
+   toggle_ids_.push_back({id, "Label"});
+  }
+  else if(label_counts == 2)
+  {
+   toggle_ids_.push_back({id, "Labels"});
+   toggle_ids_[first_label_index].second = toggle_ids_[first_label_index].second + "s";
+  }
+  else
+  {
+   toggle_ids_.push_back({id, "Labels"});
+  }
+
   u2 path = group.first();
   paths.item(path - 1).parentNode().insertBefore(gnode, paths.item(path - 1));
   for(u2 i = 0;; path = group[i])
@@ -148,11 +199,6 @@ void ASA_Module::prepare_svg_file()
   for(u2 j = 0; j < uses.length(); ++j)
   {
    QDomElement use = uses.item(j).toElement();
-
-   QString x = use.attribute("x");
-   QString y = use.attribute("y");
-
-
    xlh = use.attribute("xlink:href"); //.mid(1);
    if(xlh.isEmpty())
      continue;

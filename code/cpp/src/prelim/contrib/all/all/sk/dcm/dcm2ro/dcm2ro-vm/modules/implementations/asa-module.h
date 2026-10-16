@@ -43,6 +43,11 @@ class ASA_Module : public _Module_Base
  QString html_template_;
  QString html_text_;
 
+ u2 em_path_counts_;
+ u2 em_group_counts_;
+
+ QList<QPair<QString, QString>> toggle_ids_;
+
 public:
 
  ASA_Module();
