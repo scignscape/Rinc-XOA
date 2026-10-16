@@ -24,6 +24,8 @@
    {"asa-path-id-string-auto", (methods_String) &ASA_Module::path_id_string_auto},
    {"asa-path-group-id-string-auto", (methods_String) &ASA_Module::path_group_id_string_auto},
 
+   {"asa-gel-id-string-auto", (methods_String) &ASA_Module::gel_id_string_auto},
+
    {"asa-load-html-template", (methods_String) &ASA_Module::load_html_template},
    {"asa-save-html-file", (methods_String) &ASA_Module::save_html_file},
 
@@ -33,6 +35,9 @@
 #elif METHODS_Empty
    {"asa-prepare-svg-file", (methods_x0) &ASA_Module::prepare_svg_file},
    {"asa-prepare-html-file", (methods_x0) &ASA_Module::prepare_html_file},
+
+   {"asa-new-graphic-element", (methods_x0) &ASA_Module::new_graphic_element},
+   {"asa-finalize-graphic-element", (methods_x0) &ASA_Module::finalize_graphic_element},
 
 #elif METHODS_U2x1
    {"asa-path-id", (methods_U2x1) &ASA_Module::path_id},

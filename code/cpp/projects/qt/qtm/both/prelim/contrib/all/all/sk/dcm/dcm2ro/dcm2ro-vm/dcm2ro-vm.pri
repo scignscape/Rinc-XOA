@@ -57,6 +57,7 @@ HEADERS += \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-element.h \
   $$SRC_DIR/modules/implementations/tia-module/tia-tex-file.h \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-primitive.h \
+  $$SRC_DIR/modules/implementations/asa-module/asa-graphic-element.h \
 
 
 SOURCES += \
@@ -75,6 +76,7 @@ SOURCES += \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-element.cpp \
   $$SRC_DIR/modules/implementations/tia-module/tia-tex-file.cpp \
   $$SRC_DIR/modules/implementations/tia-module/tia-graphic-primitive.cpp \
+  $$SRC_DIR/modules/implementations/asa-module/asa-graphic-element.cpp \
 
 
 

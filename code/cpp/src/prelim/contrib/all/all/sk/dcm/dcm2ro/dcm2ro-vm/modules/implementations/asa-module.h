@@ -30,13 +30,12 @@
 OTNS_(DCM2RO)
 
 
+class ASA_Graphic_Element;
 
 class ASA_Module : public _Module_Base
 {
- QMap<u2, QString> path_ids_;
- QMap<QVList<u2>, QVList<QString>> path_group_ids_and_glyphs_;
-
  QVList<u2> current_paths_;
+
 
  QDomDocument the_svg_;
 
@@ -45,8 +44,13 @@ class ASA_Module : public _Module_Base
 
  u2 em_path_counts_;
  u2 em_group_counts_;
+ u2 gel_counts_;
 
  QList<QPair<QString, QString>> toggle_ids_;
+
+ ASA_Graphic_Element* current_graphic_element_;
+
+ QVector<ASA_Graphic_Element*> graphic_elements_;
 
 public:
 
@@ -57,6 +61,7 @@ public:
 
  void path_group_id_string_auto(QString id);
  void path_id_string_auto(QString id);
+ void gel_id_string_auto(QString id);
 
  void path_group_id(QVList<u2> paths);
  void path_id(u2 path);
@@ -69,6 +74,8 @@ public:
  void prepare_html_file();
  void save_html_file(QString file_path);
 
+ void new_graphic_element();
+ void finalize_graphic_element();
 
 };
 

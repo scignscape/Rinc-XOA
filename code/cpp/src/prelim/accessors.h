@@ -32,6 +32,18 @@ ACCESSORS__GET(type, name)
  type name() const { return name##_; }
 #endif
 
+
+#ifndef ACCESSORS__GETR_2
+#define ACCESSORS__GETR_2(type, name) \
+ type& name() { return name##_; }
+#endif
+
+#ifndef ACCESSORS__GETR_3
+#define ACCESSORS__GETR_3(ty1, ty2, name) \
+ ACCESSORS__GETR_2(MACRO_PASTE(ty1, ty2), name)
+#endif
+
+
 #ifndef ACCESSORS__IMPL_GET
 #define ACCESSORS__IMPL_GET(type, name) \
  type name() const { return impl_.name(); }
@@ -329,6 +341,10 @@ ACCESSORS_2(MACRO_PASTE(arg1, arg2) ,arg3)
 
 #ifndef ACCESSORS__SET
 #define ACCESSORS__SET(...) _preproc_CONCAT(ACCESSORS__SET_, _preproc_NUM_ARGS(__VA_ARGS__))(__VA_ARGS__)
+#endif
+
+#ifndef ACCESSORS__GETR
+#define ACCESSORS__GETR(...) _preproc_CONCAT(ACCESSORS__GETR_, _preproc_NUM_ARGS(__VA_ARGS__))(__VA_ARGS__)
 #endif
 
 

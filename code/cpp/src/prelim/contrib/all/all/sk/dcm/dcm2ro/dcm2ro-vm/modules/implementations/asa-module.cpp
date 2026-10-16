@@ -8,6 +8,8 @@
 
 #include "asa-module.h"
 
+#include "asa-module/asa-graphic-element.h"
+
 #include "tsl/ordered_map.h"
 
 #include <QDebug>
@@ -19,7 +21,7 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 ASA_Module::ASA_Module()
- :  _Module_Base{"ASA"}, em_path_counts_(0), em_group_counts_(0)
+ :  _Module_Base{"ASA"}, em_path_counts_(0), em_group_counts_(0), gel_counts_(0)
 {
 
 }
@@ -27,13 +29,13 @@ ASA_Module::ASA_Module()
 void ASA_Module::path_group_id_string_auto(QString id)
 {
  ++em_group_counts_;
- path_group_ids_and_glyphs_[current_paths_].push_front("%1-%2"_qt.arg(id).arg(em_group_counts_));
+ current_graphic_element_->path_group_ids_and_glyphs()[current_paths_].push_front("%1-%2"_qt.arg(id).arg(em_group_counts_));
  current_paths_.clear();
 }
 
 void ASA_Module::path_group_glyphs(QVList<QString> glyphs)
 {
- path_group_ids_and_glyphs_[current_paths_] = glyphs;
+ current_graphic_element_->path_group_ids_and_glyphs()[current_paths_] = glyphs;
 }
 
 void ASA_Module::path_group_id(QVList<u2> paths)
@@ -50,9 +52,14 @@ void ASA_Module::path_id(u2 path)
 void ASA_Module::path_id_string_auto(QString id)
 {
  ++em_path_counts_;
- path_ids_[current_paths_.takeFirst()] = "%1-%2"_qt.arg(id).arg(em_path_counts_);
+ current_graphic_element_->path_ids()[current_paths_.takeFirst()] = "%1-%2"_qt.arg(id).arg(em_path_counts_);
 }
 
+void ASA_Module::gel_id_string_auto(QString id)
+{
+ ++gel_counts_;
+ current_graphic_element_->set_svg_id("%1-%2"_qt.arg(id).arg(gel_counts_));
+}
 
 void ASA_Module::load_svg_file(QString file_path)
 {
@@ -95,6 +102,17 @@ void ASA_Module::prepare_html_file()
  html_text_.replace("%SVG%", the_svg_.toString());
 }
 
+void ASA_Module::new_graphic_element()
+{
+ current_graphic_element_ = new ASA_Graphic_Element;
+}
+
+void ASA_Module::finalize_graphic_element()
+{
+ graphic_elements_.push_back(current_graphic_element_);
+ current_graphic_element_ = nullptr;
+}
+
 void ASA_Module::save_html_file(QString file_path)
 {
  save_file(file_path, html_text_);
@@ -130,65 +148,74 @@ void ASA_Module::prepare_svg_file()
  u2 first_region_index = 0;
  u2 first_label_index = 0;
 
- for(auto const& [path, id] : path_ids_.MAP_KV())
- {
-  paths.item(path - 1).toElement().setAttribute("id", id);
-  ++region_counts;
-  if(region_counts == 1)
-  {
-   first_region_index = toggle_ids_.size();
-   toggle_ids_.push_back({id, "Region"});
-  }
-  else if(region_counts == 2)
-  {
-   toggle_ids_.push_back({id, "Regions"});
-   toggle_ids_[first_region_index].second = toggle_ids_[first_region_index].second + "s";
-  }
-  else
-  {
-   toggle_ids_.push_back({id, "Regions"});
-  }
- }
-
  tsl::ordered_map<QString, QDomNode> glyphs_as_children;
 
- for(auto& [group, glyphs] : path_group_ids_and_glyphs_.MAP_KV())
+ for(ASA_Graphic_Element* gel : graphic_elements_)
  {
-  QString id = glyphs.takeFirst();
-  QDomElement gnode = the_svg_.createElement("g");
+  QDomElement gel_el = the_svg_.createElement("g");
+  gel_el.setAttribute("id", gel->svg_id());
 
-  for(QString glyph_id: glyphs)
+  for(auto const& [path, id] : gel->path_ids().MAP_KV())
   {
-   glyphs_as_children[glyph_id] = gnode;
-  }
-
-  gnode.toElement().setAttribute("id", id);
-
-  ++label_counts;
-  if(label_counts == 1)
-  {
-   first_region_index = toggle_ids_.size();
-   toggle_ids_.push_back({id, "Label"});
-  }
-  else if(label_counts == 2)
-  {
-   toggle_ids_.push_back({id, "Labels"});
-   toggle_ids_[first_label_index].second = toggle_ids_[first_label_index].second + "s";
-  }
-  else
-  {
-   toggle_ids_.push_back({id, "Labels"});
+   paths.item(path - 1).toElement().setAttribute("id", id);
+   ++region_counts;
+   if(region_counts == 1)
+   {
+    first_region_index = toggle_ids_.size();
+    toggle_ids_.push_back({id, "Region"});
+   }
+   else if(region_counts == 2)
+   {
+    toggle_ids_.push_back({id, "Regions"});
+    toggle_ids_[first_region_index].second = toggle_ids_[first_region_index].second + "s";
+   }
+   else
+   {
+    toggle_ids_.push_back({id, "Regions"});
+   }
   }
 
-  u2 path = group.first();
-  paths.item(path - 1).parentNode().insertBefore(gnode, paths.item(path - 1));
-  for(u2 i = 0;; path = group[i])
+  for(auto& [group, glyphs] : gel->path_group_ids_and_glyphs().MAP_KV())
   {
-   gnode.appendChild(paths.item(path - 1));
-   if(++i == group.size())
-     break;
+   QString id = glyphs.takeFirst();
+   QDomElement ginner = the_svg_.createElement("g");
+
+   for(QString glyph_id: glyphs)
+   {
+    glyphs_as_children[glyph_id] = ginner;
+   }
+
+   ginner.setAttribute("id", id);
+
+   ++label_counts;
+   if(label_counts == 1)
+   {
+    first_region_index = toggle_ids_.size();
+    toggle_ids_.push_back({id, "Label"});
+   }
+   else if(label_counts == 2)
+   {
+    toggle_ids_.push_back({id, "Labels"});
+    toggle_ids_[first_label_index].second = toggle_ids_[first_label_index].second + "s";
+   }
+   else
+   {
+    toggle_ids_.push_back({id, "Labels"});
+   }
+
+   u2 path = group.first();
+   paths.item(path - 1).parentNode().insertBefore(gel_el, paths.item(path - 1));
+   gel_el.appendChild(ginner);
+   for(u2 i = 0;; path = group[i])
+   {
+    ginner.appendChild(paths.item(path - 1));
+    if(++i == group.size())
+      break;
+   }
   }
+
  }
+
 
  for(u2 i = 0; i < gs.length(); ++i)
  {
