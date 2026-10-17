@@ -11,14 +11,9 @@
    {"tia-load-base-file", (methods_String) &TIA_Module::load_base_file},
    {"tia-tex-file:image-name", (methods_String) &TIA_Module::tex_file_image_name},
 
-   {"tia-graphic-element:interpretation", (methods_String) &TIA_Module::graphic_element_interpretation},
-   {"tia-graphic-element:characteristic", (methods_String) &TIA_Module::graphic_element_characteristic},
 
    {"tia-graphic-primitive", (methods_String) &TIA_Module::graphic_primitive},
 
-
-
-   {"tia-graphic-element:value-str", (methods_String) &TIA_Module::graphic_element_value_str},
 
    {"tia-load-tikz-template", (methods_String) &TIA_Module::load_tikz_template},
    {"tia-save-tikz-file", (methods_String) &TIA_Module::save_tikz_file},
@@ -36,8 +31,8 @@
    {"tia-new-tex-file", (methods_x0) &TIA_Module::new_tex_file},
    {"tia-finalize-tex-file", (methods_x0) &TIA_Module::finalize_tex_file},
 
-   {"tia-new-graphic-element", (methods_x0) &TIA_Module::new_graphic_element},
-   {"tia-finalize-graphic-element", (methods_x0) &TIA_Module::finalize_graphic_element},
+//   {"tia-new-graphic-element", (methods_x0) &TIA_Module::new_graphic_element},
+//   {"tia-finalize-graphic-element", (methods_x0) &TIA_Module::finalize_graphic_element},
 
    {"tia-new-compound-graphic", (methods_x0) &TIA_Module::new_compound_graphic},
    {"tia-finalize-compound-graphic", (methods_x0) &TIA_Module::finalize_compound_graphic},
@@ -67,7 +62,6 @@
    {"tia-graphic-layer:recommended-cielab", (methods_x0) &TIA_Module::graphic_layer_recommended_cielab},
 
 #elif METHODS_U1x1
-   {"tia-graphic-element:value-u1", (methods_U1x1) &TIA_Module::graphic_element_value_u1},
 
 #elif METHODS_U2x1
    {"tia-graphic-layer:recommended-grayscale", (methods_U2x1) &TIA_Module::graphic_layer_recommended_grayscale},

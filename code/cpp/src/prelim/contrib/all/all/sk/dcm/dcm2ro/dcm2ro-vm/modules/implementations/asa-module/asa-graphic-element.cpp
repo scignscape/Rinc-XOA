@@ -18,6 +18,7 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 ASA_Graphic_Element::ASA_Graphic_Element()
+  :  index_in_document_(0)
 {
 
 }

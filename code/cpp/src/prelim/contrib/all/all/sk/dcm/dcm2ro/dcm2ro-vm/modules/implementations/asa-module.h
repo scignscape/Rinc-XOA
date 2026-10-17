@@ -46,11 +46,17 @@ class ASA_Module : public _Module_Base
  u2 em_group_counts_;
  u2 gel_counts_;
 
- QList<QPair<QString, QString>> toggle_ids_;
-
  ASA_Graphic_Element* current_graphic_element_;
 
  QVector<ASA_Graphic_Element*> graphic_elements_;
+
+ template<typename Type_for_QVariant>
+ void _graphic_element_value(Type_for_QVariant v);
+
+ QStringList element_characteritics_keys_;
+
+// QVariant& add_characteristic(QString key);
+// void characteristic_values(QStringList keys, QVariant value);
 
 public:
 
@@ -76,6 +82,12 @@ public:
 
  void new_graphic_element();
  void finalize_graphic_element();
+
+
+ void graphic_element_interpretation(QString ei);
+ void graphic_element_characteristic(QString ec);
+ void graphic_element_value_u1(u1 ev);
+ void graphic_element_value_str(QString ev);
 
 };
 

@@ -29,6 +29,11 @@
    {"asa-load-html-template", (methods_String) &ASA_Module::load_html_template},
    {"asa-save-html-file", (methods_String) &ASA_Module::save_html_file},
 
+   {"asa-graphic-element:interpretation", (methods_String) &ASA_Module::graphic_element_interpretation},
+   {"asa-graphic-element:characteristic", (methods_String) &ASA_Module::graphic_element_characteristic},
+   {"asa-graphic-element:value-str", (methods_String) &ASA_Module::graphic_element_value_str},
+
+
 #elif METHODS_StringList
    {"asa-path-group-glyphs", (methods_StringList) &ASA_Module::path_group_glyphs},
 
@@ -38,6 +43,9 @@
 
    {"asa-new-graphic-element", (methods_x0) &ASA_Module::new_graphic_element},
    {"asa-finalize-graphic-element", (methods_x0) &ASA_Module::finalize_graphic_element},
+
+#elif METHODS_U1x1
+   {"asa-graphic-element:value-u1", (methods_U1x1) &ASA_Module::graphic_element_value_u1},
 
 #elif METHODS_U2x1
    {"asa-path-id", (methods_U2x1) &ASA_Module::path_id},

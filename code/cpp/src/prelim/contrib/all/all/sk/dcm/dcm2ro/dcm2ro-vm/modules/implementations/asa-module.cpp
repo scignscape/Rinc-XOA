@@ -26,6 +26,34 @@ ASA_Module::ASA_Module()
 
 }
 
+void ASA_Module::graphic_element_interpretation(QString ei)
+{
+ current_graphic_element_->set_interpretation(ei.split("|"));
+}
+
+void ASA_Module::graphic_element_characteristic(QString ec)
+{
+ element_characteritics_keys_.push_back(ec);
+}
+
+
+template<typename Type_for_QVariant>
+void ASA_Module::_graphic_element_value(Type_for_QVariant v)
+{
+ current_graphic_element_->characteristic_values(element_characteritics_keys_, QVariant(v));
+ element_characteritics_keys_.clear();
+}
+
+void ASA_Module::graphic_element_value_u1(u1 ev)
+{
+ _graphic_element_value(ev);
+}
+
+void ASA_Module::graphic_element_value_str(QString ev)
+{
+ _graphic_element_value(ev);
+}
+
 void ASA_Module::path_group_id_string_auto(QString id)
 {
  ++em_group_counts_;
@@ -86,27 +114,77 @@ void ASA_Module::prepare_html_file()
 {
  html_text_ = html_template_;
 
- QString event_listeners = "// //  Auto Generated \n";
- QString check_boxes = R"(
+// :characteristic $ internalStructure ;.
+// :value-str $ soft-tissue ;.
+// :characteristic $ calcification ;.
+// :value-u1 1# 6 ;.
+// :characteristic $ sphericity ;.
+// :value-u1 1# 5 ;.
+// :characteristic $ margin ;.
+// :value-u1 1# 5 ;.
+// :characteristic $ lobulation ;.
+// :value-u1 1# 5 ;.
+// :characteristic $ spiculation ;.
+// :value-u1 1# 5 ;.
+// :characteristic $ texture ;.
+// :value-u1 1# 5 ;.
+// :characteristic $ malignancy ;.
+// :value-u1 1# 5 ;.
 
-<!-- Auto Generated -->
-<p>Graphic #1: data ...
+ QString event_listeners = "// //  Auto Generated \n";
+ QString check_boxes = "<!-- Auto Generated -->";
+ QString graphic_data = R"(
+
+<!-- Graphic $1 data -->
+<p>Graphic #%1:
+<dl>
+<dt>Internal Structure</dt>
+<dd>%2</dd>
+<dt>Calcification</dt>
+<dd>%3</dd>
+<dt>Sphericity</dt>
+<dd>%4</dd>
+<dt>Margin</dt>
+<dd>%5</dd>
+<dt>Lobulation</dt>
+<dd>%6</dd>
+<dt>Spiculation</dt>
+<dd>%7</dd>
+<dt>Texture</dt>
+<dd>%8</dd>
+<dt>Malignancy</dt>
+<dd>%9</dd>
+</dl>
 <br>
  )";
 
- for(auto const& [id, element_kind] : toggle_ids_)
+ for(ASA_Graphic_Element* gel : graphic_elements_)
  {
-  event_listeners += "\nset_event_listener('toggle-%1','%1');"_qt.arg(id);
+  check_boxes += graphic_data.arg(gel->index_in_document()) // // 1
+    .arg(gel->get_characteristic("internalStructure").toString()) // // 2
+    .arg(gel->get_characteristic("calcification").toString()) // // 3
+    .arg(gel->get_characteristic("sphericity").toString()) // // 4
+    .arg(gel->get_characteristic("margin").toString()) // // 5
+    .arg(gel->get_characteristic("lobulation").toString()) // // 6
+    .arg(gel->get_characteristic("spiculation").toString()) // // 7
+    .arg(gel->get_characteristic("texture").toString()) // // 8
+    .arg(gel->get_characteristic("malignancy").toString()) // // 9
+  ;
 
-  check_boxes += "\n<label><input type='checkbox' id='toggle-%1' "
-    "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(element_kind);
+  for(auto const& [id, element_kind] : gel->toggle_ids())
+  {
+   event_listeners += "\nset_event_listener('toggle-%1','%1');"_qt.arg(id);
+
+   check_boxes += "\n<label><input type='checkbox' id='toggle-%1' "
+     "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(element_kind);
+  }
+
+  check_boxes += "\n</p>";
+
+  html_text_.replace("%EVENT_LISTENERS%", event_listeners);
+  html_text_.replace("%CHECK_BOXES%", check_boxes);
+  html_text_.replace("%SVG%", the_svg_.toString());
  }
-
- check_boxes += "\n</p>";
-
- html_text_.replace("%EVENT_LISTENERS%", event_listeners);
- html_text_.replace("%CHECK_BOXES%", check_boxes);
- html_text_.replace("%SVG%", the_svg_.toString());
 }
 
 void ASA_Module::new_graphic_element()
@@ -117,6 +195,7 @@ void ASA_Module::new_graphic_element()
 void ASA_Module::finalize_graphic_element()
 {
  graphic_elements_.push_back(current_graphic_element_);
+ current_graphic_element_->set_index_in_document(graphic_elements_.size());
  current_graphic_element_ = nullptr;
 }
 
@@ -149,19 +228,19 @@ void ASA_Module::prepare_svg_file()
  QDomNodeList paths = s1e.elementsByTagName("path");
  QDomNodeList gs = s1e.elementsByTagName("g");
 
- u2 label_counts = 0;
- u2 region_counts = 0;
-
- u2 first_region_index = 0;
- u2 first_label_index = 0;
-
  tsl::ordered_map<QString, QDomNode> glyphs_as_children;
 
  for(ASA_Graphic_Element* gel : graphic_elements_)
  {
+  u2 label_counts = 0;
+  u2 region_counts = 0;
+
+  u2 first_region_index = 0;
+  u2 first_label_index = 0;
+
   QDomElement gel_el = the_svg_.createElement("g");
   gel_el.setAttribute("id", gel->svg_id());
-  toggle_ids_.push_back({gel->svg_id(), "Graphic"});
+  gel->toggle_ids().push_back({gel->svg_id(), "Graphic"});
 
 
   for(auto const& [path, id] : gel->path_ids().MAP_KV())
@@ -173,17 +252,17 @@ void ASA_Module::prepare_svg_file()
     paths.item(path - 1).parentNode().insertBefore(gel_el, paths.item(path - 1));
     gel_el.appendChild(paths.item(path - 1));
 
-    first_region_index = toggle_ids_.size();
-    toggle_ids_.push_back({id, "Region"});
+    first_region_index = gel->toggle_ids().size();
+    gel->toggle_ids().push_back({id, "Region"});
    }
    else if(region_counts == 2)
    {
-    toggle_ids_.push_back({id, "Regions"});
-    toggle_ids_[first_region_index].second = toggle_ids_[first_region_index].second + "s";
+    gel->toggle_ids().push_back({id, "Regions"});
+    gel->toggle_ids()[first_region_index].second = gel->toggle_ids()[first_region_index].second + "s";
    }
    else
    {
-    toggle_ids_.push_back({id, "Regions"});
+    gel->toggle_ids().push_back({id, "Regions"});
    }
   }
 
@@ -202,17 +281,17 @@ void ASA_Module::prepare_svg_file()
    ++label_counts;
    if(label_counts == 1)
    {
-    first_region_index = toggle_ids_.size();
-    toggle_ids_.push_back({id, "Label"});
+    first_label_index = gel->toggle_ids().size();
+    gel->toggle_ids().push_back({id, "Label"});
    }
    else if(label_counts == 2)
    {
-    toggle_ids_.push_back({id, "Labels"});
-    toggle_ids_[first_label_index].second = toggle_ids_[first_label_index].second + "s";
+    gel->toggle_ids().push_back({id, "Labels"});
+    gel->toggle_ids()[first_label_index].second = gel->toggle_ids()[first_label_index].second + "s";
    }
    else
    {
-    toggle_ids_.push_back({id, "Labels"});
+    gel->toggle_ids().push_back({id, "Labels"});
    }
 
    u2 path = group.first();

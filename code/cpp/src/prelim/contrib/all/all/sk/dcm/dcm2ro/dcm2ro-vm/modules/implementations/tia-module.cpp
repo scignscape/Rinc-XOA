@@ -28,7 +28,7 @@ USING_KANS(TextIO)
 USING_OTNS(DCM2RO)
 
 TIA_Module::TIA_Module()
- :  _Module_Base{"TIA"}, current_graphic_element_(nullptr),
+ :  _Module_Base{"TIA"},
     current_tex_file_(nullptr), current_graphic_primitive_(nullptr)
 {
 
@@ -62,44 +62,16 @@ void TIA_Module::graphic_primitive(QString kind)
  points_xy_.clear();
 }
 
-void TIA_Module::graphic_element_interpretation(QString ei)
-{
- current_graphic_element_->set_interpretation(ei.split("|"));
-}
 
-void TIA_Module::graphic_element_characteristic(QString ec)
-{
- element_characteritics_keys_.push_back(ec);
-}
+//void TIA_Module::new_graphic_element()
+//{
+// current_graphic_element_ = new TIA_Graphic_Element;
+//}
 
+//void TIA_Module::finalize_graphic_element()
+//{
 
-template<typename Type_for_QVariant>
-void TIA_Module::_graphic_element_value(Type_for_QVariant v)
-{
- current_graphic_element_->characteristic_values(element_characteritics_keys_, QVariant(v));
- element_characteritics_keys_.clear();
-}
-
-void TIA_Module::graphic_element_value_u1(u1 ev)
-{
- _graphic_element_value(ev);
-}
-
-void TIA_Module::graphic_element_value_str(QString ev)
-{
- _graphic_element_value(ev);
-}
-
-
-void TIA_Module::new_graphic_element()
-{
- current_graphic_element_ = new TIA_Graphic_Element;
-}
-
-void TIA_Module::finalize_graphic_element()
-{
-
-}
+//}
 
 void TIA_Module::new_tex_file()
 {

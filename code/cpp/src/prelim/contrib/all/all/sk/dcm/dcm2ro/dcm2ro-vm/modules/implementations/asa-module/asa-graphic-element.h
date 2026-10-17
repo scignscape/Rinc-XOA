@@ -11,6 +11,7 @@
 #include <QTextStream>
 
 #include <QMap>
+#include <QVariant>
 
 #include "global-types.h"
 
@@ -22,6 +23,8 @@ OTNS_(DCM2RO)
 
 class ASA_Graphic_Element
 {
+ u2 index_in_document_;
+
  QMap<QString, QVariant> characteristics_;
 
  QStringList interpretation_;
@@ -31,23 +34,28 @@ class ASA_Graphic_Element
  QMap<u2, QString> path_ids_;
  QMap<QVList<u2>, QVList<QString>> path_group_ids_and_glyphs_;
 
+ QList<QPair<QString, QString>> toggle_ids_;
 
 public:
 
  ASA_Graphic_Element();
 
  ACCESSORS(QStringList ,interpretation)
+ ACCESSORS(u2 ,index_in_document)
 
  ACCESSORS(QString ,svg_id)
 
  ACCESSORS__GETR(QMap<u2, QString> ,path_ids)
  ACCESSORS__GETR(QMap<QVList<u2>, QVList<QString>> ,path_group_ids_and_glyphs)
-
+ ACCESSORS__GETR(QList<QPair<QString, QString>> ,toggle_ids)
 
  QVariant& add_characteristic(QString key);
-
  void characteristic_values(QStringList keys, QVariant value);
 
+ QVariant get_characteristic(QString key)
+ {
+  return characteristics_.value(key);
+ }
 
 };
 
