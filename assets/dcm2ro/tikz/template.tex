@@ -1,0 +1,55 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\newcommand*\circled[4]{\tikz[baseline=(char.base)]{
+    \node[shape=circle, text=#2, fill=#3, draw=#4,
+     text opacity=1, fill opacity=1, draw opacity=1,  
+     inner sep=2pt, minimum size=0pt] (char) {#1};}}
+
+\makeatletter
+\newcommand{\empolygon@impl}[2]{%
+ \draw[red, thick, fill=red!20, fill opacity=0] (em#1-1) 
+    \foreach \i in {2,...,#2} { -- (em#1-\i) } -- cycle;
+
+ \node (em#1-node) at (em#1-1) [anchor=north west, %xshift=-5pt, yshift=-5pt, 
+  draw=yellow, draw opacity=.4, fill=yellow, fill opacity=.1] {\circled{#1}{black}{white}{yellow}};
+}
+
+\newcommand{\empolygon}[1]{%
+\empolygon@impl{#1}{\@nameuse{em#1-count}}
+}
+\makeatother
+
+
+\begin{document}
+\begin{tikzpicture}[x=1pt, y=-1pt] 
+
+\node[anchor=south west, inner sep=0, outer sep=0] (image) at (0,0) 
+   {\includegraphics[width=%image-width%]{%image-name%}};
+
+
+\begin{scope}[xscale=1,yscale=1,xshift=0,yshift=%image-height%]
+
+ % pattern is  \coordinate (em#-#) at (x, y);
+
+%edge-map-coordinates%
+
+\end{scope}
+
+\makeatletter
+ % pattern is  \@namedef{em#-count}{#}
+
+%edge-map-counts%
+\makeatother
+
+
+
+ % pattern is  \empolygon{#}
+%em-polygons%
+
+
+\end{tikzpicture}
+\end{document}
+
+

@@ -133,9 +133,9 @@ void ASA_Module::prepare_html_file()
 
  QString event_listeners = "// //  Auto Generated \n";
  QString check_boxes = "<!-- Auto Generated -->";
- QString graphic_data = R"(
+ static QString graphic_data = R"(
 
-<!-- Graphic $1 data -->
+<!-- Graphic %1 data -->
 <p>Graphic #%1:
 <dl>
 <dt>Internal Structure</dt>
@@ -155,21 +155,25 @@ void ASA_Module::prepare_html_file()
 <dt>Malignancy</dt>
 <dd>%9</dd>
 </dl>
-<br>
  )";
+
+ static QVariant missing = QVariant("?");
+
 
  for(ASA_Graphic_Element* gel : graphic_elements_)
  {
   check_boxes += graphic_data.arg(gel->index_in_document()) // // 1
-    .arg(gel->get_characteristic("internalStructure").toString()) // // 2
-    .arg(gel->get_characteristic("calcification").toString()) // // 3
-    .arg(gel->get_characteristic("sphericity").toString()) // // 4
-    .arg(gel->get_characteristic("margin").toString()) // // 5
-    .arg(gel->get_characteristic("lobulation").toString()) // // 6
-    .arg(gel->get_characteristic("spiculation").toString()) // // 7
-    .arg(gel->get_characteristic("texture").toString()) // // 8
-    .arg(gel->get_characteristic("malignancy").toString()) // // 9
+    .arg(gel->get_characteristic("internalStructure", missing).toString()) // // 2
+    .arg(gel->get_characteristic("calcification", missing).toString()) // // 3
+    .arg(gel->get_characteristic("sphericity", missing).toString()) // // 4
+    .arg(gel->get_characteristic("margin", missing).toString()) // // 5
+    .arg(gel->get_characteristic("lobulation", missing).toString()) // // 6
+    .arg(gel->get_characteristic("spiculation", missing).toString()) // // 7
+    .arg(gel->get_characteristic("texture", missing).toString()) // // 8
+    .arg(gel->get_characteristic("malignancy", missing).toString()) // // 9
   ;
+
+  check_boxes += "<div style='margin-bottom:10pt;border-bottom:ridge cyan 3pt'>";
 
   for(auto const& [id, element_kind] : gel->toggle_ids())
   {
@@ -179,12 +183,13 @@ void ASA_Module::prepare_html_file()
      "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(element_kind);
   }
 
-  check_boxes += "\n</p>";
-
-  html_text_.replace("%EVENT_LISTENERS%", event_listeners);
-  html_text_.replace("%CHECK_BOXES%", check_boxes);
-  html_text_.replace("%SVG%", the_svg_.toString());
+  check_boxes += "\n</div></p>";
  }
+
+ html_text_.replace("%EVENT_LISTENERS%", event_listeners);
+ html_text_.replace("%CHECK_BOXES%", check_boxes);
+ html_text_.replace("%SVG%", the_svg_.toString());
+
 }
 
 void ASA_Module::new_graphic_element()

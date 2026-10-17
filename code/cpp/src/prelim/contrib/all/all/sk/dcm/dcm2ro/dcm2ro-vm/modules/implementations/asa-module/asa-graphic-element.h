@@ -52,9 +52,9 @@ public:
  QVariant& add_characteristic(QString key);
  void characteristic_values(QStringList keys, QVariant value);
 
- QVariant get_characteristic(QString key)
+ QVariant get_characteristic(QString key, QVariant missing)
  {
-  return characteristics_.value(key);
+  return characteristics_.value(key, missing);
  }
 
 };

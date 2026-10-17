@@ -1,0 +1,73 @@
+.; Test as many opmethods as possible ;.
+
+=prog
+
+tia-load-base-file $ /home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/dev/dcm2ro/f6575e67-db88-411a-bb3e-dc639cbaa350.png ;.
+
+tia-load-tikz-template $ /home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/dev/dcm2ro/tikz/template.tex ;.
+
+tia-new->tex-file ;.
+ :image-name $ i.png ;.
+ :width 2# 512 ;.
+ :height 2# 512 ;.
+tia-finalize<-tex-file ;.
+
+
+tia-point-xy 4#/2 171 376 ;.
+tia-point-xy 4#/2 172 375 ;.
+tia-point-xy 4#/2 173 374 ;.
+tia-point-xy 4#/2 173 373 ;.
+tia-point-xy 4#/2 174 372 ;.
+tia-point-xy 4#/2 174 371 ;.
+tia-point-xy 4#/2 174 370 ;.
+tia-point-xy 4#/2 174 369 ;.
+tia-point-xy 4#/2 173 368 ;.
+tia-point-xy 4#/2 173 367 ;.
+tia-point-xy 4#/2 172 366 ;.
+tia-point-xy 4#/2 172 365 ;.
+tia-point-xy 4#/2 172 364 ;.
+tia-point-xy 4#/2 172 363 ;.
+tia-point-xy 4#/2 172 362 ;.
+tia-point-xy 4#/2 172 361 ;.
+tia-point-xy 4#/2 171 360 ;.
+tia-point-xy 4#/2 170 359 ;.
+tia-point-xy 4#/2 169 359 ;.
+tia-point-xy 4#/2 168 360 ;.
+tia-point-xy 4#/2 167 361 ;.
+tia-point-xy 4#/2 166 362 ;.
+tia-point-xy 4#/2 166 363 ;.
+tia-point-xy 4#/2 166 364 ;.
+tia-point-xy 4#/2 165 365 ;.
+tia-point-xy 4#/2 165 366 ;.
+tia-point-xy 4#/2 164 367 ;.
+tia-point-xy 4#/2 164 368 ;.
+tia-point-xy 4#/2 163 369 ;.
+tia-point-xy 4#/2 164 370 ;.
+tia-point-xy 4#/2 164 371 ;.
+tia-point-xy 4#/2 165 372 ;.
+tia-point-xy 4#/2 166 373 ;.
+tia-point-xy 4#/2 167 374 ;.
+tia-point-xy 4#/2 168 374 ;.
+tia-point-xy 4#/2 169 375 ;.
+tia-point-xy 4#/2 170 376 ;.
+tia-point-xy 4#/2 171 376 ;.
+
+tia-graphic-primitive $ polygon ;.
+
+
+tia-point-xy 4#/2 50 50 ;.
+tia-point-xy 4#/2 50 150 ;.
+tia-point-xy 4#/2 150 150 ;.
+tia-point-xy 4#/2 150 50 ;.
+
+tia-graphic-primitive $ polygon ;.
+
+
+tia-weave-tikz-contents ;.
+
+tia-save-tikz-file $ /home/nlevisrael/gits/pnp-dev/rinc-xoa/RedPatch/dev/dcm2ro/tikz/gen.tex ;.
+
+
+
+=done
+
