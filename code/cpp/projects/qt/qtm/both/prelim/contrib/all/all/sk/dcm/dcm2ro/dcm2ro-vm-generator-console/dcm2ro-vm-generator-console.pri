@@ -32,7 +32,8 @@ DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
-DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/nre/vm\\\"
+DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/gen\\\"
+DEFINES += DEFAULT_XML_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/xml\\\"
 
 CONFIG += no_keywords
 

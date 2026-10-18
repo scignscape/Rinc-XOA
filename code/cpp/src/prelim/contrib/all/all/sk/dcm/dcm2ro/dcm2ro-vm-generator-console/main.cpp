@@ -15,9 +15,13 @@
 
 #include <QDir>
 
+#include "dcm2ro-vm-generator/dcm2ro-vm-writer.h"
+
 
 int main(int argc, char *argv[])
 {
+ QString mvm_path = DEFAULT_VM_FOLDER "/main_process.4lr";
+ QString pvm_path = DEFAULT_VM_FOLDER "/main_process.4lr";
     return 0;
 }
 
