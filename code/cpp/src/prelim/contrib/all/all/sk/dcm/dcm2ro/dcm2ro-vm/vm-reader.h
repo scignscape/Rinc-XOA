@@ -42,6 +42,9 @@ public:
 
  VM_Reader();
 
+ void reset();
+
+
  u4 advance_past_cached_string(QString& basis, u4 start_pos, QString* result);
 
  u4 advance_past_instruction(QString* skipped = nullptr);

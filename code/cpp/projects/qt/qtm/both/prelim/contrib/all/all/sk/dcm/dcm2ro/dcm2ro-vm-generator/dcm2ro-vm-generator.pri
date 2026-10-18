@@ -13,9 +13,13 @@ include(../build-group.pri)
 
 greaterThan(QT_MAJOR_VERSION, 5) {
  DEFINES += USING_QT_6
+ DEFINES += QVList=QList
+ DEFINES += MAP_KV=asKeyValueRange
+} else {
+ DEFINES += QVList=QVector
+ DEFINES += MAP_KV=toStdMap
+ DEFINES += QT5_TO_VECTOR
 }
-
-TEMPLATE = app
 
 
 exists($$ROOT_DIR/../preferred/sysr.pri): include($$ROOT_DIR/../preferred/sysr.pri)
@@ -40,11 +44,15 @@ DEFINES += USE_OTNS
 
 
 HEADERS += \
+  $$SRC_DIR/dcm2ro-vm-writer.h \
 
 
 
 SOURCES += \
-  $$SRC_DIR/main.cpp \
+  $$SRC_DIR/dcm2ro-vm-writer.cpp \
+
+
+#  $$SRC_DIR/main.cpp \
 
 
 

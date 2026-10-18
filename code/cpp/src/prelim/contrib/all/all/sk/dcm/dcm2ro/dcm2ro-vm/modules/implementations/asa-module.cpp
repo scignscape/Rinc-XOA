@@ -136,23 +136,23 @@ void ASA_Module::prepare_html_file()
  static QString graphic_data = R"(
 
 <!-- Graphic %1 data -->
-<p>Graphic #%1:
+<p><details><summary>Graphic #%1:</summary>
 <dl>
-<dt>Internal Structure</dt>
+<dt><span>Internal Structure</span></dt>
 <dd>%2</dd>
-<dt>Calcification</dt>
+<dt><span>Calcification</span></dt>
 <dd>%3</dd>
-<dt>Sphericity</dt>
+<dt><span>Sphericity</span></dt>
 <dd>%4</dd>
-<dt>Margin</dt>
+<dt><span>Margin</span></dt>
 <dd>%5</dd>
-<dt>Lobulation</dt>
+<dt><span>Lobulation</span></dt>
 <dd>%6</dd>
-<dt>Spiculation</dt>
+<dt><span>Spiculation</span></dt>
 <dd>%7</dd>
-<dt>Texture</dt>
+<dt><span>Texture</span></dt>
 <dd>%8</dd>
-<dt>Malignancy</dt>
+<dt><span>Malignancy</span></dt>
 <dd>%9</dd>
 </dl>
  )";
@@ -183,7 +183,7 @@ void ASA_Module::prepare_html_file()
      "checked='true'><span>Hide</span> %2</label>"_qt.arg(id).arg(element_kind);
   }
 
-  check_boxes += "\n</div></p>";
+  check_boxes += "\n</div></details></p>";
  }
 
  html_text_.replace("%EVENT_LISTENERS%", event_listeners);

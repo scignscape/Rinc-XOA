@@ -20,6 +20,17 @@ VM_Reader::VM_Reader()
 
 }
 
+void VM_Reader::reset()
+{
+ current_pos_ = 0;
+ opstatement_index_ = 0;
+
+ file_path_.clear();
+ file_contents_.clear();
+ current_prefix_.clear();
+ current_module_name_.clear();
+}
+
 VM_Opstatement VM_Reader::_EOF()
 {
  VM_Opstatement result = VM_Opstatement(0, "<error>");

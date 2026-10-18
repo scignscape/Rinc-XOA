@@ -53,6 +53,14 @@ public:
 
  VM_Interpreter();
 
+ void reset()
+ {
+  ops_by_proc_name_.clear();
+  cached_strings_.clear();
+  reader_.reset();
+  current_proc_name_ops_ = ops_by_proc_name_["<main>"];
+ }
+
  void load_file(QString path);
  void parse();
  void run_proc(QString proc_name);
