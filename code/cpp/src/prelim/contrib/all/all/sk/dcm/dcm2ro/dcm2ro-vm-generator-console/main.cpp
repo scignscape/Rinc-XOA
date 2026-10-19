@@ -26,7 +26,8 @@ int main(int argc, char *argv[])
  QString mvm_path = DEFAULT_VM_FOLDER "/main_process.4lr";
  QString pvm_path = DEFAULT_VM_FOLDER "/post_process.4lr";
 
- QString xml_path = DEFAULT_XML_FOLDER "/f6575e67-db88-411a-bb3e-dc639cbaa350.xml";
+// QString xml_path = DEFAULT_XML_FOLDER "/f6575e67-db88-411a-bb3e-dc639cbaa350.xml";
+ QString xml_path = DEFAULT_XML_FOLDER "/159.xml";
 
  vmw.scan_xml(xml_path);
 

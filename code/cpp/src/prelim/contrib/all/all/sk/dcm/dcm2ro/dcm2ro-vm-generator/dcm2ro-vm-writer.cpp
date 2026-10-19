@@ -67,6 +67,11 @@ void VM_Writer::scan_xml(QString xml_path)
 
  QXmlStreamReader reader(&xml_file);
 
+ if(reader.hasError())
+ {
+  qDebug() << "XML Stream Reader error: " << reader.errorString();
+ }
+
  QVector<QPair<u2, u2>> xys;
 
  static QStringList possible_characteristics {
@@ -83,8 +88,14 @@ void VM_Writer::scan_xml(QString xml_path)
 
  QString current_characteristic;
 
- while (!reader.atEnd() && !reader.hasError())
+ while (!reader.hasError())
  {
+  if(reader.atEnd())
+  {
+   qDebug() << "XML Stream Reader concludes";
+   break;
+  }
+
   QXmlStreamReader::TokenType token_type = reader.readNext();
 
   if(token_type == QXmlStreamReader::StartElement)
