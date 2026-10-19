@@ -48,6 +48,7 @@ SOURCES += \
   $$SRC_DIR/main.cpp \
 
 
+LIBS += -L$$TARGETSDIR  -ldcm2ro-vm-generator
 
 
 

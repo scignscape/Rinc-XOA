@@ -7,7 +7,7 @@
 
 PROJECT_NAME = dcm2ro-vm-generator
 
-QT += widgets
+QT += widgets xml
 
 include(../build-group.pri)
 
@@ -50,6 +50,7 @@ HEADERS += \
 
 SOURCES += \
   $$SRC_DIR/dcm2ro-vm-writer.cpp \
+
 
 
 #  $$SRC_DIR/main.cpp \

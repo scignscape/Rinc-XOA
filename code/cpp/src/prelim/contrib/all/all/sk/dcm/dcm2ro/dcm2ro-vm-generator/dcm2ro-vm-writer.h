@@ -32,6 +32,52 @@ class VM_Writer
  QString post_process_vm_;
  QTextStream pvm_acc_;
 
+ QMap<QString, u1> current_characteristics_map_;
+
+ void check_characteristics_map();
+ void write_coord_pairs(const QVector<QPair<u2, u2>>& xys);
+
+ u1 current_mask_;
+
+ VM_Writer& mvm_opstatement(QString contents)
+ {
+  mvm_acc_ << "\n" << contents;
+  current_mask_ = 1;
+ }
+
+ VM_Writer& pvm_opstatement(QString contents)
+ {
+  pvm_acc_ << "\n" << contents;
+  current_mask_ = 2;
+ }
+
+ VM_Writer& mid(QString contents)
+ {
+  if(current_mask_ == 1)
+    mvm_acc_ << " " << contents;
+  else if(current_mask_ == 2)
+    pvm_acc_ << " " << contents;
+ }
+
+ VM_Writer& end()
+ {
+  if(current_mask_ == 1)
+    mvm_acc_ << " ;.";
+  else if(current_mask_ == 2)
+    pvm_acc_ << " ;.";
+
+  current_mask_ = 0;
+ }
+
+ template<typename ARGS_Type>
+ VM_Writer& args(QPair<ARGS_Type, ARGS_Type> pr)
+ {
+  if(current_mask_ == 1)
+    mvm_acc_ << " %1 %2"_qt.arg(pr.first).arg(pr.second);
+  else if(current_mask_ == 2)
+    pvm_acc_ << " %1 %2"_qt.arg(pr.first).arg(pr.second);
+ }
+
 
 public:
 
@@ -39,6 +85,8 @@ public:
 
  ACCESSORS(QString ,main_process_vm)
  ACCESSORS(QString ,post_process_vm)
+
+ void scan_xml(QString xml_path);
 
 // ACCESSORS__RGET(QTextStream ,pvm_acc)
 
@@ -51,6 +99,9 @@ public:
  VM_Writer& mraw_line(QString contents);
  VM_Writer& praw_line(QString contents);
  VM_Writer& braw_line(QString contents);
+
+
+
 
  void opstatement(QString contents, u1 mask);
  void opstatement(QString instruction, QString mid_control, QString parameter, u1 mask);

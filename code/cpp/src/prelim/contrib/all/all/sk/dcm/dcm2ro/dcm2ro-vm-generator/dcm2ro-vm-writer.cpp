@@ -13,6 +13,8 @@
 
 #include <QDateTime>
 
+#include <QXmlStreamReader>
+
 
 #include "otns.h"
 
@@ -20,7 +22,7 @@ USING_OTNS(DCM2RO)
 
 
 VM_Writer::VM_Writer()
-  :  mvm_acc_(&main_process_vm_), pvm_acc_(&post_process_vm_)
+  :  mvm_acc_(&main_process_vm_), pvm_acc_(&post_process_vm_), current_mask_(0)
 {
  auto init_stream = [](QTextStream& acc)
  {
@@ -30,6 +32,107 @@ VM_Writer::VM_Writer()
 
  init_stream(mvm_acc_);
  init_stream(pvm_acc_);
+}
+
+void VM_Writer::write_coord_pairs(const QVector<QPair<u2, u2>>& xys)
+{
+ for(auto pr : xys)
+ {
+  mvm_opstatement("tia-point-xy").mid("4#/2").args(pr).end();
+ }
+}
+
+void VM_Writer::check_characteristics_map()
+{
+ // //  here I use a simple filter, just for demo
+
+ current_characteristics_map_["internalStructure"] += 10;
+
+ u1 minimum = std::min_element(current_characteristics_map_.begin(),
+   current_characteristics_map_.end(),
+         [](int a, int b) { return a < b; }).value();
+
+ if(minimum < 5)
+   current_characteristics_map_.clear();
+ else
+   current_characteristics_map_["internalStructure"] -= 10;
+}
+
+void VM_Writer::scan_xml(QString xml_path)
+{
+ QFile xml_file(xml_path);
+
+ if (!xml_file.open(QIODevice::ReadOnly | QIODevice::Text))
+   return;
+
+ QXmlStreamReader reader(&xml_file);
+
+ QVector<QPair<u2, u2>> xys;
+
+ static QStringList possible_characteristics {
+   "subtlety",
+   "internalStructure",
+   "calcification",
+   "sphericity",
+   "margin",
+   "lobulation",
+   "spiculation",
+   "texture",
+   "malignancy"
+ };
+
+ QString current_characteristic;
+
+ while (!reader.atEnd() && !reader.hasError())
+ {
+  QXmlStreamReader::TokenType token_type = reader.readNext();
+
+  if(token_type == QXmlStreamReader::StartElement)
+  {
+   if(possible_characteristics.contains(reader.name()))
+     current_characteristic = reader.name().toString();
+   continue;
+
+   if(reader.name().endsWith("Coord"))
+   {
+    if(current_characteristic.isEmpty())
+      continue;
+
+    if(reader.name().startsWith("x"))
+      xys.push_back({reader.text().toShort(), 0});
+    else if(reader.name().startsWith("y"))
+      xys.last().second = reader.text().toShort();
+   }
+
+  }
+
+  if(current_characteristic.isEmpty())
+    continue;
+
+  if(token_type == QXmlStreamReader::Characters)
+  {
+   u1 val = reader.text().toShort();
+   current_characteristics_map_[current_characteristic] = val;
+   continue;
+  }
+
+  if(token_type == QXmlStreamReader::EndElement)
+  {
+   if(reader.name() == "characteristics")
+   {
+    check_characteristics_map();
+    continue;
+   }
+   if(reader.name() == "roi")
+   {
+    if(current_characteristics_map_.isEmpty())
+      continue;
+
+    write_coord_pairs(xys);
+   }
+  }
+
+ }
 }
 
 
@@ -82,7 +185,7 @@ void VM_Writer::write_end_control(u1 mask)
 void VM_Writer::opstatement(QString contents, u1 mask)
 {
  if(mask & 1)
-   mvm_acc_ << "tao-" << contents << " ;.\n";
+   mvm_acc_ << "tia-" << contents << " ;.\n";
  if(mask & 2)
    pvm_acc_ << "asa-" << contents << " ;.\n";
 }
@@ -91,7 +194,7 @@ void VM_Writer::opstatement(QString contents, u1 mask)
 void VM_Writer::opstatement_to_mid(QString instruction, QString mid_control, u1 mask)
 {
  if(mask & 1)
-   mvm_acc_ << "tao-" << instruction << " " << mid_control;
+   mvm_acc_ << "tia-" << instruction << " " << mid_control;
  if(mask & 2)
    pvm_acc_ << "asa-" << instruction << " " << mid_control;
 }
@@ -100,7 +203,7 @@ void VM_Writer::opstatement_to_mid(QString instruction, QString mid_control, u1 
 void VM_Writer::opstatement(QString instruction, QString mid_control, QString parameter, u1 mask)
 {
  if(mask & 1)
-   mvm_acc_ << "tao-" << instruction << " " << mid_control
+   mvm_acc_ << "tia-" << instruction << " " << mid_control
      << " " << parameter << " ;.\n";
  if(mask & 2)
    pvm_acc_ << "asa-" << instruction << " " << mid_control
