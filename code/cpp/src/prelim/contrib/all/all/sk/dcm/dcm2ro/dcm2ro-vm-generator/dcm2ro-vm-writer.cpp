@@ -52,6 +52,8 @@ void VM_Writer::check_characteristics_map()
    current_characteristics_map_.end(),
          [](int a, int b) { return a < b; }).value();
 
+ qDebug() << "min = " << minimum;
+
  if(minimum < 5)
    current_characteristics_map_.clear();
  else
@@ -87,6 +89,7 @@ void VM_Writer::scan_xml(QString xml_path)
  };
 
  QString current_characteristic;
+ QString held_characteristic;
 
  while (!reader.hasError())
  {
@@ -106,7 +109,7 @@ void VM_Writer::scan_xml(QString xml_path)
 
    if(reader.name().endsWith("Coord"))
    {
-    if(current_characteristic.isEmpty())
+    if(held_characteristic.isEmpty())
       continue;
 
     if(reader.name().startsWith("x"))
@@ -117,13 +120,17 @@ void VM_Writer::scan_xml(QString xml_path)
 
   }
 
-  if(current_characteristic.isEmpty())
+  if(held_characteristic.isEmpty() && current_characteristic.isEmpty())
     continue;
 
   if(token_type == QXmlStreamReader::Characters)
   {
+   if(current_characteristic.isEmpty())
+     continue;
    u1 val = reader.text().toShort();
    current_characteristics_map_[current_characteristic] = val;
+   held_characteristic = current_characteristic;
+   current_characteristic.clear();
    continue;
   }
 
@@ -132,6 +139,7 @@ void VM_Writer::scan_xml(QString xml_path)
    if(reader.name() == "characteristics")
    {
     check_characteristics_map();
+    held_characteristic.clear();
     continue;
    }
    if(reader.name() == "roi")
