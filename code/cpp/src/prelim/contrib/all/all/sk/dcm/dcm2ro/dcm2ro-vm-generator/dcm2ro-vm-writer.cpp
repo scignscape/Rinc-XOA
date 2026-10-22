@@ -15,6 +15,10 @@
 
 #include <QXmlStreamReader>
 
+#include "textio.h"
+
+USING_KANS(TextIO)
+
 
 #include "otns.h"
 
@@ -47,17 +51,19 @@ void VM_Writer::check_characteristics_map()
  // //  here I use a simple filter, just for demo
 
  current_characteristics_map_["internalStructure"] += 10;
+ current_characteristics_map_["subtlety"] += 10;
 
  u1 minimum = std::min_element(current_characteristics_map_.begin(),
    current_characteristics_map_.end(),
          [](int a, int b) { return a < b; }).value();
 
- qDebug() << "min = " << minimum;
-
  if(minimum < 5)
    current_characteristics_map_.clear();
  else
-   current_characteristics_map_["internalStructure"] -= 10;
+ {
+  current_characteristics_map_["internalStructure"] -= 10;
+  current_characteristics_map_["subtlety"] -= 10;
+ }
 }
 
 void VM_Writer::scan_xml(QString xml_path)
@@ -89,7 +95,9 @@ void VM_Writer::scan_xml(QString xml_path)
  };
 
  QString current_characteristic;
- QString held_characteristic;
+ //QString held_tag_name;
+
+ XML_Parse_Stage parse_stage = XML_Parse_Stage::Generic;
 
  while (!reader.hasError())
  {
@@ -104,32 +112,59 @@ void VM_Writer::scan_xml(QString xml_path)
   if(token_type == QXmlStreamReader::StartElement)
   {
    if(possible_characteristics.contains(reader.name()))
-     current_characteristic = reader.name().toString();
-   continue;
+   {
+    current_characteristic = reader.name().toString();
+    parse_stage = XML_Parse_Stage::Reading_Characteristics;
+    continue;
+   }
+
+   if(parse_stage == XML_Parse_Stage::Generic)
+     continue;
+
+   if(reader.name() == "roi")
+   {
+    parse_stage = XML_Parse_Stage::In_ROI;
+    continue;
+   }
 
    if(reader.name().endsWith("Coord"))
    {
-    if(held_characteristic.isEmpty())
-      continue;
-
     if(reader.name().startsWith("x"))
-      xys.push_back({reader.text().toShort(), 0});
+      parse_stage = XML_Parse_Stage::In_ROI_x;
     else if(reader.name().startsWith("y"))
-      xys.last().second = reader.text().toShort();
+      parse_stage = XML_Parse_Stage::In_ROI_y;
+    continue;
    }
 
   }
 
-  if(held_characteristic.isEmpty() && current_characteristic.isEmpty())
+  if(parse_stage == XML_Parse_Stage::Generic)
     continue;
+
+//  if(held_tag_name.isEmpty() && current_characteristic.isEmpty())
+//    continue;
 
   if(token_type == QXmlStreamReader::Characters)
   {
+   if(parse_stage == XML_Parse_Stage::In_ROI_x)
+   {
+    xys.push_back({reader.text().toUShort(), 0});
+    parse_stage = XML_Parse_Stage::In_ROI;
+    continue;
+   }
+   if(parse_stage == XML_Parse_Stage::In_ROI_y)
+   {
+    xys.last().second = reader.text().toUShort();
+    parse_stage = XML_Parse_Stage::In_ROI;
+    continue;
+   }
+
    if(current_characteristic.isEmpty())
      continue;
+
    u1 val = reader.text().toShort();
    current_characteristics_map_[current_characteristic] = val;
-   held_characteristic = current_characteristic;
+   //held_tag_name = current_characteristic;
    current_characteristic.clear();
    continue;
   }
@@ -139,19 +174,34 @@ void VM_Writer::scan_xml(QString xml_path)
    if(reader.name() == "characteristics")
    {
     check_characteristics_map();
-    held_characteristic.clear();
+    if(current_characteristics_map_.isEmpty())
+      parse_stage = XML_Parse_Stage::Generic;
+    else
+      parse_stage = XML_Parse_Stage::Characteristics_Map_Checked_Positive;
+//    held_tag_name.clear();
     continue;
    }
    if(reader.name() == "roi")
    {
-    if(current_characteristics_map_.isEmpty())
-      continue;
-
-    write_coord_pairs(xys);
+    if(parse_stage == XML_Parse_Stage::In_ROI)
+    {
+     write_coord_pairs(xys);
+     parse_stage = XML_Parse_Stage::Generic;
+    }
    }
   }
 
  }
+}
+
+void VM_Writer::save_mvm(QString file_path)
+{
+ save_file(file_path, main_process_vm_);
+}
+
+void VM_Writer::save_pvm(QString file_path)
+{
+ save_file(file_path, post_process_vm_);
 }
 
 

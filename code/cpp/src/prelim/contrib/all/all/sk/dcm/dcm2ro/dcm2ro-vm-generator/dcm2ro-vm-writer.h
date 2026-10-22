@@ -43,12 +43,14 @@ class VM_Writer
  {
   mvm_acc_ << "\n" << contents;
   current_mask_ = 1;
+  return *this;
  }
 
  VM_Writer& pvm_opstatement(QString contents)
  {
   pvm_acc_ << "\n" << contents;
   current_mask_ = 2;
+  return *this;
  }
 
  VM_Writer& mid(QString contents)
@@ -57,6 +59,7 @@ class VM_Writer
     mvm_acc_ << " " << contents;
   else if(current_mask_ == 2)
     pvm_acc_ << " " << contents;
+  return *this;
  }
 
  VM_Writer& end()
@@ -67,6 +70,7 @@ class VM_Writer
     pvm_acc_ << " ;.";
 
   current_mask_ = 0;
+  return *this;
  }
 
  template<typename ARGS_Type>
@@ -76,8 +80,13 @@ class VM_Writer
     mvm_acc_ << " %1 %2"_qt.arg(pr.first).arg(pr.second);
   else if(current_mask_ == 2)
     pvm_acc_ << " %1 %2"_qt.arg(pr.first).arg(pr.second);
+  return *this;
  }
 
+ enum class XML_Parse_Stage {
+   Generic, Reading_Characteristics, Characteristics_Map_Checked_Positive,
+   In_ROI, In_ROI_x, In_ROI_y
+ };
 
 public:
 
@@ -101,6 +110,8 @@ public:
  VM_Writer& braw_line(QString contents);
 
 
+ void save_mvm(QString file_path);
+ void save_pvm(QString file_path);
 
 
  void opstatement(QString contents, u1 mask);
