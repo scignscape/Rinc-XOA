@@ -1,0 +1,388 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\usetikzlibrary{intersections}
+
+\usetikzlibrary{decorations.markings}
+
+\usetikzlibrary{shadings} 
+
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=1.18}
+%\usepgfplotslibrary{fillbetween} % Required library
+
+
+\usetikzlibrary{decorations.pathmorphing}
+
+\usetikzlibrary{calc}
+
+\usetikzlibrary{fadings}
+
+\makeatletter
+\tikzset{
+  use path for main/.code={%
+    \tikz@addmode{%
+      \expandafter\pgfsyssoftpath@setcurrentpath\csname tikz@intersect@path@name@#1\endcsname
+    }%
+  },
+  use path for actions/.code={%
+    \expandafter\def\expandafter\tikz@preactions\expandafter{\tikz@preactions\expandafter\let\expandafter\tikz@actions@path\csname tikz@intersect@path@name@#1\endcsname}%
+  },
+  use path/.style={%
+    use path for main=#1,
+    use path for actions=#1,
+  }
+}
+\makeatother
+
+
+% Define the precise pixel mapping factor for 96 DPI
+% (72.27 points per inch / 96 pixels per inch)
+\newcommand{\px}{0.75281pt}
+
+
+\newcommand*\circled[4]{\tikz[baseline=(char.base)]{
+    \node[shape=circle, text=#2, fill=#3, draw=#4,
+     text opacity=1, fill opacity=1, draw opacity=1,  
+     inner sep=2pt, minimum size=0pt] (char) {#1};}}
+
+\makeatletter
+\newcommand{\empolygon@impl}[2]{%
+ \draw[red, thick, fill=red!20, fill opacity=0] (em#1-1) 
+    \foreach \i in {2,...,#2} { -- (em#1-\i) } -- cycle;
+
+ \node (em#1-node) at (em#1-1) [anchor=north west, %xshift=-5pt, yshift=-5pt, 
+  draw=yellow, draw opacity=.4, fill=yellow, fill opacity=.1] {\circled{#1}{black}{white}{yellow}};
+}
+
+\newcommand{\empolygon}[1]{%
+\empolygon@impl{#1}{\@nameuse{em#1-count}}
+}
+\makeatother
+
+
+\tikzset{
+ legalpaper/.pic={
+   \coordinate (c1) at (0, 0);
+   \coordinate (c2) at (30, 0);
+   \foreach \i in {1,2,...,27} {
+     \draw[blue!30, ultra thin] ($(c1)+(0,-\i*\px)$) -- ($(c2)+(0,-\i*\px)$);
+  }
+ }
+}
+
+
+\tikzset{
+ legalpaperimg/.pic={
+   \node at (0,0) [anchor=north west] {\includegraphics[width=30pt]{p.png}};
+   \coordinate (c1) at (9, 3);
+   \coordinate (c2) at (36, 3);
+   \foreach \i in {1,2,...,27} {
+     \draw[blue!30, ultra thin] ($(c1)+(0,-\i*2*\px)$) -- ($(c2)+(0,-\i*2*\px)$);
+  }
+ }
+}
+
+
+%bottom color=blue, top color=red!40!black, 
+
+\tikzset{
+ starsix/.pic={
+
+\coordinate (Up1i) at (270:9);
+\coordinate (Up2i) at (30:9);
+\coordinate (Up3i) at (150:9);
+
+\coordinate (Down1i) at (90:9);
+\coordinate (Down2i) at (210:9);
+\coordinate (Down3i) at (330:9);
+
+   \path[name path=pointUpi]
+    (Up1i) to [bend left=-5] (Up2i) to [bend left=-5] (Up3i) to [bend left=-5] cycle;
+
+   \path[name path=pointDowni]
+    (Down1i)  to [bend left=-5] (Down2i) to [bend left=-5] (Down3i) to [bend left=-5] cycle;
+
+  
+\coordinate (Up1) at (270:12);
+\coordinate (Up2) at (30:12);
+\coordinate (Up3) at (150:12);
+
+\coordinate (Down1) at (90:12);
+\coordinate (Down2) at (210:12);
+\coordinate (Down3) at (330:12);
+
+
+
+   \path[name path=pointUpi]
+    (Up1i) to [bend left=-5] (Up2i) to [bend left=-5] (Up3i) to [bend left=-5] cycle;
+
+   \path[name path=pointDown]
+    (Down1i)  to [bend left=-5] (Down2i) to [bend left=-5] (Down3i) to [bend left=-5] cycle;
+
+   \path[name intersections={of=pointUpi and pointDowni, by={i1, i2, i3, i4, i5, i6}}];
+
+
+   \path[name path=pointUp]
+    (Up1) to [bend left=-5] (Up2) to [bend left=-5] (Up3) to [bend left=-5] cycle;
+
+   \path[name path=pointDown]
+    (Down1)  to [bend left=-5] (Down2) to [bend left=-5] (Down3) to [bend left=-5] cycle;
+
+   \path[name intersections={of=pointUp and pointDown, by=intA}];
+
+
+
+
+%  \draw[red, ultra thick] (intersection-1) -- (intersection-2);
+%  \draw[blue, ultra thick] (intersection-2) -- (intersection-4);
+%  \draw[black, ultra thick] (intersection-4) -- (intersection-3);
+%  \draw[yellow, ultra thick] (intersection-3) -- (intersection-5);
+%  \draw[purple, ultra thick] (intersection-5) -- (intersection-6);
+
+
+\fill[bottom color=blue!90, top color=brown!40!black, draw=none, line width=1pt, even odd rule] 
+   (Up3) % to [bend left=-5] (Up2) 
+    to [bend left=5] (intersection-3) 
+    to [bend left=5] (Down1)
+    to [bend left=5] (intersection-4)
+    to [bend left=5] (Up2)
+    to [bend left=5] (intersection-2) 
+    to [bend left=5] (Down3)
+    to [bend left=5] (intersection-1)
+    to [bend left=5] (Up1)
+    to [bend left=5] (intersection-6)
+    to [bend left=5] (Down2)
+    to [bend left=5] (intersection-5)
+    to [bend left=5] cycle
+    
+   (Up3i) % to [bend left=-5] (Up2) 
+    to [bend left=5] (i3) 
+    to [bend left=5] (Down1i)
+    to [bend left=5] (i4)
+    to [bend left=5] (Up2i)
+    to [bend left=5] (i2) 
+    to [bend left=5] (Down3i)
+    to [bend left=5] (i1)
+    to [bend left=5] (Up1i)
+    to [bend left=5] (i6)
+    to [bend left=5] (Down2i)
+    to [bend left=5] (i5)
+    to [bend left=5] cycle
+    
+   
+ ;
+
+ %cycle;
+
+%\draw[line width=1pt] 
+%   (Up1) to [bend left=-5] (Up2) to [bend left=-5] (Up3) to [bend left=-5] cycle;
+
+%  \fill[white, use path=pointUpi];
+%  \fill[white, use path=pointDowni];
+
+
+%  \draw[green] 
+
+%   \path[fill=white, line width=1pt] %, decorate, decoration={random steps, segment length=2mm, amplitude=0.5mm}] 
+%    (90:9)  to [bend left=-5] (210:9) to [bend left=-5] (330:9) to [bend left=-5] cycle;
+%   \path[fill=white, line width=1pt]
+%    (270:9) to [bend left=-5] (30:9) to [bend left=-5] (150:9) to [bend left=-5] cycle;
+
+
+ }
+}
+
+
+\tikzset{
+ starsixSA/.pic={
+  
+   \path[bottom color=blue, top color=black, line width=1pt]
+    (270:12) to [bend left=-5] (30:12) to [bend left=-5] (150:12) to [bend left=-5] cycle;
+
+   \path[fill=white, line width=1pt]
+    (270:9) to [bend left=-5] (30:9) to [bend left=-5] (150:9) to [bend left=-5] cycle;
+
+   \path[bottom color=blue, top color=black, line width=1pt]
+    (90:12)  to [bend left=-5] (210:12) to [bend left=-5] (330:12) to [bend left=-5] cycle;
+
+   \path[fill=white, line width=1pt] %, decorate, decoration={random steps, segment length=2mm, amplitude=0.5mm}] 
+    (90:9)  to [bend left=-5] (210:9) to [bend left=-5] (330:9) to [bend left=-5] cycle;
+
+ }
+}
+
+
+\tikzset{
+  % This style forces the path picture content to match the node's dimensions
+  expand to shape/.style={
+    path picture={
+      \fill[#1] (path picture bounding box.south west) 
+      rectangle (path picture bounding box.north east);
+    }
+  }
+}
+
+
+\tikzset{test/.style={
+    postaction={
+        decorate,
+        decoration={
+            markings,
+            mark=at position \pgfdecoratedpathlength-0.5pt with {},
+            mark=between positions 0 and \pgfdecoratedpathlength-8pt step 0.5pt with {
+                \pgfmathsetmacro\myval{multiply(divide(
+                    \pgfkeysvalueof{/pgf/decoration/mark info/distance from start}, \pgfdecoratedpathlength),100)};
+                \pgfsetfillcolor{blue!\myval!red};
+                \pgfpathcircle{\pgfpointorigin}{#1};
+                \pgfusepath{fill};}
+}}}}
+
+
+  % Define the reusable curve path macro
+\newcommand{\hourglassbox}{(0,0) .. controls (24,10) .. (48,0)
+  -- (48, 30) .. controls (24,20) .. (0, 30) -- cycle
+}
+
+\newcommand{\curvebox}{(0,0) .. controls (10,20) and (20,-10) .. (40,10)
+  -- (40, 110) .. controls (20,90) and (10,120)  .. (0, 100) -- cycle
+}
+
+\newcommand{\taperbox}{(0,0) -- (40,4)
+  -- (40, 26) -- (0,30) -- cycle
+}
+
+\newcommand{\outbox}{(0,0) .. controls (24,-5) and (40,-4) .. (48,0)
+  -- (48, 30) .. controls (40,32) and (24,34) .. (0, 30) -- cycle
+}
+
+
+\newcommand{\taperboxX}{(0,0) -- (40,10)
+  -- (40, 20) -- (0,30) -- cycle
+}
+
+
+\begin{document}
+\begin{tikzpicture}[x=\px, y=-\px, every node/.style={transform shape}]% x=1pt, y=-1pt] 
+
+\fill[lightgray] (0,0) rectangle (500,650);
+
+
+\useasboundingbox (0,0) rectangle (500,650);
+
+\node  at (-4,-4) [anchor=north west] 
+ {\includegraphics{ss5.png}};
+
+
+
+\node  at (10,70) [anchor=north west] 
+ {\includegraphics[width=91pt, height=210pt]{ss.png}};
+
+
+\node  at (320,140) [anchor=north west] 
+ {\includegraphics[height=110pt]{ss3.png}};
+
+
+
+\begin{scope}[xshift=40]
+
+\begin{scope}[xshift=140, yshift=-140, xscale=5, yscale=5]
+
+ \pic [xslant=0.2, yslant=0.1, rotate=-10] 
+   at (0, 0) {starsix};
+
+\end{scope}
+
+
+\begin{scope}[xshift=139, yshift=-117]
+
+\begin{scope}[rotate=14]
+\draw [ draw=brown!30,
+  path picture={{
+    \node at (path picture bounding box.center) [scale=0.9, rotate=-87, expand to shape=orange!30] {
+      \tikz \pic {legalpaperimg};
+    };
+  }}
+]    \outbox{};
+
+\end{scope}
+
+\end{scope}
+
+
+
+\begin{scope}[xshift=91, yshift=-175]
+
+\begin{scope}[rotate=45]
+\draw [draw=brown!30,
+  path picture={{
+    \node at (path picture bounding box.center) [rotate=90, expand to shape=orange!30] {
+      \tikz \pic {legalpaperimg};
+    };
+  }}
+]    \hourglassbox{};
+
+\end{scope}
+
+\end{scope}
+
+
+
+  \pic [yscale=.4, xscale=.8, rotate=80] at (120,201) {legalpaperimg};
+  \pic [yscale=.4, xscale=.8, rotate=80] at (120,191) {legalpaperimg};
+  \pic [yscale=.4, xscale=.8, rotate=80] at (120,181) {legalpaperimg};
+
+
+\begin{scope}[xshift=160, yshift=-200]
+
+\begin{scope}[rotate=135]
+\draw [draw=brown!30,
+  path picture={{
+    \node at (path picture bounding box.center) [rotate=-90, expand to shape=orange!30] {
+      \tikz \pic {legalpaperimg};
+    };
+  }}
+]    \taperbox{};
+
+\end{scope}
+
+\end{scope}
+
+
+
+
+
+\begin{scope}[xshift=135, yshift=-125]
+
+\begin{scope}[rotate=-40]
+\draw [draw=brown!30,
+  yscale=.3, xscale=.9,
+  path picture={{
+    \node at (path picture bounding box.center) [yscale=2.3, expand to shape=orange!30] {
+      \tikz \pic {legalpaperimg};
+    };
+  }}
+]    \curvebox{};
+
+\end{scope}
+
+\end{scope}
+
+
+\end{scope}
+
+
+
+%  \pic[rotate=45] at (160,240) {legalpaperimg};
+
+
+
+% \path[test=2pt] (0,0) -- (420,420);
+
+
+
+\end{tikzpicture}
+\end{document}
+
+
