@@ -7,6 +7,7 @@
 
 #include "dcm2ro-vm-writer.h"
 
+#include "dcm2ro-vm-script-data.h"
 
 #include <QFile>
 #include <QTextStream>
@@ -28,14 +29,12 @@ USING_OTNS(DCM2RO)
 VM_Writer::VM_Writer()
   :  mvm_acc_(&main_process_vm_), pvm_acc_(&post_process_vm_), current_mask_(0)
 {
- auto init_stream = [](QTextStream& acc)
+ init_stream_ = [](QTextStream& acc)
  {
   acc << "\n.; Generated on " << QDateTime::currentDateTime().toString() << " ;.\n\n"
               << "=prog\n\n";
  };
 
- init_stream(mvm_acc_);
- init_stream(pvm_acc_);
 }
 
 void VM_Writer::write_coord_pairs(const QVector<QPair<u2, u2>>& xys)
@@ -127,6 +126,11 @@ void VM_Writer::scan_xml(QString xml_path)
     continue;
    }
 
+   if(reader.name() == "imageSOP_UID")
+   {
+    parse_stage = XML_Parse_Stage::In_ROI_imageSOP_UID;
+   }
+
    if(reader.name().endsWith("Coord"))
    {
     if(reader.name().startsWith("x"))
@@ -146,6 +150,12 @@ void VM_Writer::scan_xml(QString xml_path)
 
   if(token_type == QXmlStreamReader::Characters)
   {
+   if(parse_stage == XML_Parse_Stage::In_ROI_imageSOP_UID)
+   {
+    current_sop_instance_uid_ = reader.text().toString();
+    parse_stage = XML_Parse_Stage::In_ROI;
+    continue;
+   }
    if(parse_stage == XML_Parse_Stage::In_ROI_x)
    {
     xys.push_back({reader.text().toUShort(), 0});
@@ -185,13 +195,33 @@ void VM_Writer::scan_xml(QString xml_path)
    {
     if(parse_stage == XML_Parse_Stage::In_ROI)
     {
-     write_coord_pairs(xys);
+     VM_Script_Data* vsd = new VM_Script_Data;
+     vsd->set_sop_instance_uid(current_sop_instance_uid_);
+     vsd->set_characteristics_map(current_characteristics_map_);
+     vsd->set_coord_pairs(xys);
+     script_data_by_instance_sop_uid_.insert({current_sop_instance_uid_, vsd});
+     xys.clear();
+     //write_coord_pairs(xys);
      parse_stage = XML_Parse_Stage::Generic;
     }
    }
   }
 
  }
+}
+
+void VM_Writer::finalize_mvm(QString file_path)
+{
+// init_stream(pvm_acc_);
+
+ for(auto pr : script_data_by_instance_sop_uid_.values_container())
+ {
+  VM_Script_Data* vsd = pr.second;
+  init_stream_(mvm_acc_);
+  write_coord_pairs(vsd->coord_pairs());
+  finalize_vm(mvm_acc_);
+ }
+
 }
 
 void VM_Writer::save_mvm(QString file_path)

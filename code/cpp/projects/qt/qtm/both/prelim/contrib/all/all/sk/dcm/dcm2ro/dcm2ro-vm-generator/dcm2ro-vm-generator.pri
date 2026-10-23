@@ -45,11 +45,13 @@ DEFINES += USE_OTNS
 
 HEADERS += \
   $$SRC_DIR/dcm2ro-vm-writer.h \
+  $$SRC_DIR/dcm2ro-vm-script-data.h \
 
 
 
 SOURCES += \
   $$SRC_DIR/dcm2ro-vm-writer.cpp \
+  $$SRC_DIR/dcm2ro-vm-script-data.cpp \
 
 
 

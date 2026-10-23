@@ -19,10 +19,14 @@
 #include <QStringList>
 #include <QTextStream>
 
+#include "tsl/ordered_map.h"
+
 #include "otns.h"
 
 OTNS_(DCM2RO)
 
+
+class VM_Script_Data;
 
 class VM_Writer
 {
@@ -36,6 +40,11 @@ class VM_Writer
 
  void check_characteristics_map();
  void write_coord_pairs(const QVector<QPair<u2, u2>>& xys);
+
+ QString current_sop_instance_uid_;
+
+ tsl::ordered_map<QString, VM_Script_Data*> script_data_by_instance_sop_uid_;
+
 
  u1 current_mask_;
 
@@ -85,8 +94,10 @@ class VM_Writer
 
  enum class XML_Parse_Stage {
    Generic, Reading_Characteristics, Characteristics_Map_Checked_Positive,
-   In_ROI, In_ROI_x, In_ROI_y
+   In_ROI, In_ROI_x, In_ROI_y, In_ROI_imageSOP_UID
  };
+
+ std::function<void(QTextStream&)> init_stream_;
 
 public:
 
@@ -148,12 +159,9 @@ public:
   qts << "\n\n=done\n\n";
  }
 
- void finalize_mvm()
- {
-  finalize_vm(mvm_acc_);
- }
+ void finalize_mvm(QString file_path);
 
- void finalize_pvm()
+ void finalize_pvm(QString file_path)
  {
   finalize_vm(pvm_acc_);
  }

@@ -23,19 +23,19 @@ int main(int argc, char *argv[])
 {
  VM_Writer vmw;
 
- QString mvm_path = DEFAULT_VM_FOLDER "/_main_process.4lr";
- QString pvm_path = DEFAULT_VM_FOLDER "/_post_process.4lr";
+ QString mvm_path = DEFAULT_VM_FOLDER "/main_process-%1.4lr";
+ QString pvm_path = DEFAULT_VM_FOLDER "/post_process-%1.4lr";
 
 // QString xml_path = DEFAULT_XML_FOLDER "/f6575e67-db88-411a-bb3e-dc639cbaa350.xml";
  QString xml_path = DEFAULT_XML_FOLDER "/159.xml";
 
  vmw.scan_xml(xml_path);
 
- vmw.finalize_mvm();
- vmw.finalize_pvm();
+ vmw.finalize_mvm(mvm_path);
+ vmw.finalize_pvm(pvm_path);
 
- vmw.save_mvm(mvm_path);
- vmw.save_pvm(pvm_path);
+// vmw.save_mvm(mvm_path);
+// vmw.save_pvm(pvm_path);
 
  return 0;
 }
