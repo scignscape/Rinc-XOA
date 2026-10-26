@@ -34,6 +34,9 @@ DEFINES += ROOT_FOLDER=\\\"$$ROOT_DIR\\\"
 
 DEFINES += DEFAULT_VM_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/gen\\\"
 DEFINES += DEFAULT_XML_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/xml\\\"
+DEFINES += DEFAULT_IMAGE_XML_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/xml/images\\\"
+DEFINES += DEFAULT_TEMPLATES_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/templates\\\"
+DEFINES += DEFAULT_IMAGES_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/images\\\"
 
 CONFIG += no_keywords
 

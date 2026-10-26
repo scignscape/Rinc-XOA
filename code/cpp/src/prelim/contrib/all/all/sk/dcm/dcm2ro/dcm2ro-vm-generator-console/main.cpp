@@ -23,15 +23,17 @@ int main(int argc, char *argv[])
 {
  VM_Writer vmw;
 
- QString mvm_path = DEFAULT_VM_FOLDER "/main_process-%1.4lr";
- QString pvm_path = DEFAULT_VM_FOLDER "/post_process-%1.4lr";
+ QString mvm_path = DEFAULT_VM_FOLDER "/main-process_%1.4lr";
+ QString pvm_path = DEFAULT_VM_FOLDER "/post-process_%1.4lr";
 
 // QString xml_path = DEFAULT_XML_FOLDER "/f6575e67-db88-411a-bb3e-dc639cbaa350.xml";
  QString xml_path = DEFAULT_XML_FOLDER "/159.xml";
 
+ vmw.use_tikz_template(DEFAULT_TEMPLATES_FOLDER "/tikz.tex");
+
  vmw.scan_xml(xml_path);
 
- vmw.finalize_mvm(mvm_path);
+ vmw.finalize_mvm(mvm_path, DEFAULT_IMAGE_XML_FOLDER, DEFAULT_IMAGES_FOLDER);
  vmw.finalize_pvm(pvm_path);
 
 // vmw.save_mvm(mvm_path);

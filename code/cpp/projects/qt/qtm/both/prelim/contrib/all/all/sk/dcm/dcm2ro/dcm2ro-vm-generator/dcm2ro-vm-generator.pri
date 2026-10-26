@@ -54,8 +54,8 @@ SOURCES += \
   $$SRC_DIR/dcm2ro-vm-script-data.cpp \
 
 
-
-#  $$SRC_DIR/main.cpp \
+SOURCES += \
+  $$SRC_DIR/mimic-grep.cpp \
 
 
 

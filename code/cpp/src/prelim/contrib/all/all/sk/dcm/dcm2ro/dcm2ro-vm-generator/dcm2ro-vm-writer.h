@@ -45,6 +45,8 @@ class VM_Writer
 
  tsl::ordered_map<QString, VM_Script_Data*> script_data_by_instance_sop_uid_;
 
+ QString tikz_template_;
+ QString shell_template_;
 
  u1 current_mask_;
 
@@ -71,12 +73,13 @@ class VM_Writer
   return *this;
  }
 
- VM_Writer& end()
+ VM_Writer& end(u1 nl_count = 0)
  {
+  QString nl(nl_count, '\n');
   if(current_mask_ == 1)
-    mvm_acc_ << " ;.";
+    mvm_acc_ << " ;." << nl;
   else if(current_mask_ == 2)
-    pvm_acc_ << " ;.";
+    pvm_acc_ << " ;." << nl;
 
   current_mask_ = 0;
   return *this;
@@ -89,6 +92,16 @@ class VM_Writer
     mvm_acc_ << " %1 %2"_qt.arg(pr.first).arg(pr.second);
   else if(current_mask_ == 2)
     pvm_acc_ << " %1 %2"_qt.arg(pr.first).arg(pr.second);
+  return *this;
+ }
+
+ template<typename ARG_Type>
+ VM_Writer& arg(ARG_Type a)
+ {
+  if(current_mask_ == 1)
+    mvm_acc_ << " %1"_qt.arg(a);
+  else if(current_mask_ == 2)
+    pvm_acc_ << " %1"_qt.arg(a);
   return *this;
  }
 
@@ -105,6 +118,11 @@ public:
 
  ACCESSORS(QString ,main_process_vm)
  ACCESSORS(QString ,post_process_vm)
+
+ void use_tikz_template(QString file_path)
+ {
+  tikz_template_ = file_path;
+ }
 
  void scan_xml(QString xml_path);
 
@@ -129,6 +147,8 @@ public:
  void opstatement(QString instruction, QString mid_control, QString parameter, u1 mask);
  void opstatement(QString instruction, QString parameter, u1 mask);
  void write_end_control(u1 mask);
+
+
 
 
 //? QTextStream&
@@ -159,7 +179,7 @@ public:
   qts << "\n\n=done\n\n";
  }
 
- void finalize_mvm(QString file_path);
+ void finalize_mvm(QString file_path, QString image_xml_folder, QString images_folder);
 
  void finalize_pvm(QString file_path)
  {

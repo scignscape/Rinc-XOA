@@ -210,16 +210,52 @@ void VM_Writer::scan_xml(QString xml_path)
  }
 }
 
-void VM_Writer::finalize_mvm(QString file_path)
+extern QVector<QString> qtGrepSearch(QString, QString);
+
+void VM_Writer::finalize_mvm(QString file_path, QString image_xml_folder, QString images_folder)
 {
 // init_stream(pvm_acc_);
 
+ u2 count = 0;
  for(auto pr : script_data_by_instance_sop_uid_.values_container())
  {
+  ++count;
   VM_Script_Data* vsd = pr.second;
   init_stream_(mvm_acc_);
+
+  QVector<QString> grep_files = qtGrepSearch(image_xml_folder, vsd->sop_instance_uid());
+
+  if(grep_files.isEmpty())
+  {
+   qDebug() << "Can't find image file from SOP Instance UID";
+  }
+  else
+  {
+   QString image_file = grep_files.first();
+   QFileInfo qfi(image_file);
+   QString bn = qfi.baseName();
+
+   mvm_opstatement("tia-load-base-file").mid("$").arg(images_folder + "/" + bn + ".png").end(1);
+
+  }
+
+  if(grep_files.size() > 1)
+  {
+   qDebug() << "Unexpected repeat of SOP Instance UID";
+  }
+
+  mvm_opstatement("tia-load-tikz-template").mid("$").arg(file_path.arg(count)).end(1);
+
+  mvm_opstatement("tia-new->tex-file").end();
+  mvm_opstatement(" :image-name").mid("$").arg("i-%1.png"_qt.arg(count)).end();
+  mvm_opstatement(" :sop-instance-uid").mid("$").arg(vsd->sop_instance_uid()).end();
+  mvm_opstatement(" :width").mid("2#").arg(512).end();
+  mvm_opstatement(" :height").mid("2#").arg(512).end();
+  mvm_opstatement("tia-finalize<-tex-file").end(2);
+
   write_coord_pairs(vsd->coord_pairs());
   finalize_vm(mvm_acc_);
+  save_mvm(file_path.arg(count));
  }
 
 }
