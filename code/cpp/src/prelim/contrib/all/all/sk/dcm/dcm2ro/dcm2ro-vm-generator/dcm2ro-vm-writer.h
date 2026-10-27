@@ -144,6 +144,13 @@ public:
  VM_Writer& praw_line(QString contents);
  VM_Writer& braw_line(QString contents);
 
+ VM_Writer& praw_comment_line(QString contents, s1 prior_blank_line_count = 0, u1 prior_space_count = 0);
+ VM_Writer& line(QString contents, u1 mask);
+
+ VM_Writer& line(QString contents)
+ {
+  return line(contents, current_mask_);
+ }
 
  void save_mvm(QString file_path);
  void save_pvm(QString file_path);

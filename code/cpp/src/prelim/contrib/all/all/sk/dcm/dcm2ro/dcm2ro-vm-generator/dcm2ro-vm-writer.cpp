@@ -210,6 +210,28 @@ void VM_Writer::scan_xml(QString xml_path)
  }
 }
 
+VM_Writer& VM_Writer::praw_comment_line(QString contents, s1 prior_blank_line_count, u1 prior_space_count)
+{
+ QString nl(prior_blank_line_count + 1, '\n');
+ QString sp(prior_space_count, ' ');
+
+ pvm_acc_ << nl << sp << ".; ";
+ current_mask_ = 2;
+ return line(contents);
+
+}
+
+VM_Writer& VM_Writer::line(QString contents, u1 mask)
+{
+ if(mask & 1)
+   mvm_acc_ << contents << "\n";
+ if(mask & 2)
+   pvm_acc_ << contents << "\n";
+
+ return *this;
+}
+
+
 void VM_Writer::finalize_pvm(QString file_path, QString tikz_folder, QString tikz_html_folder)
 {
  u2 count = 0;
@@ -222,12 +244,12 @@ void VM_Writer::finalize_pvm(QString file_path, QString tikz_folder, QString tik
   post_process_vm_.clear();
   init_stream_(pvm_acc_);
 
-  mvm_opstatement("asa-load-svg-file").mid("$")
+  pvm_opstatement("asa-load-svg-file").mid("$")
     .arg(tikz_folder + "/from-svg-%1.svg"_qt.arg(count)).end(1);
 
-  mvm_opstatement("asa-new->graphic-element").end();
+  pvm_opstatement("asa-new->graphic-element").end();
     // //  in this context all characteristics elements have unblindedReadNodule as parent
-  mvm_opstatement(" :interpretation").mid("$").arg("nodule|unblinded-read").end();
+  pvm_opstatement(" :interpretation").mid("$").arg("nodule|unblinded-read").end();
 
   QMap<QString, u1> characteristics = vsd->characteristics_map();
 
@@ -236,34 +258,41 @@ void VM_Writer::finalize_pvm(QString file_path, QString tikz_folder, QString tik
   static QStringList internal_structure_options {"?", "soft-tissue", "fluid", "fat", "air" };
   QString internal_structure = internal_structure_options.value(_internal_structure);
 
-  mvm_opstatement(" :characteristic").mid("$").arg("internalStructure").end();
-  mvm_opstatement(" :value-str").mid("$").arg(internal_structure).end();
+  praw_comment_line("1 = Soft Tissue" ,1 ,1)
+  .line(" 2 = Fluid")
+  .line(" 3 = Fat")
+  .line(" 4 = Air")
+  .end();
+
+  pvm_opstatement(" :characteristic").mid("$").arg("internalStructure").end();
+  pvm_opstatement(" :value-str").mid("$").arg(internal_structure).end(1);
 
   QMapIterator<QString, u1> it(characteristics);
   while(it.hasNext())
   {
    it.next();
-   mvm_opstatement(" :characteristic").mid("$").arg(it.key()).end();
-   mvm_opstatement(" :value-str").mid("1#").arg(it.value()).end();
+   pvm_opstatement(" :characteristic").mid("$").arg(it.key()).end();
+   pvm_opstatement(" :value-str").mid("1#").arg(it.value()).end(!it.hasNext());
   }
 
-  mvm_opstatement("asa-path-id").mid("2#").arg(++path_ids).end();
-  mvm_opstatement("asa-path-id-string-auto").mid("$").arg("em-path").end();
-  mvm_opstatement("asa-group-id").mid("2##")
+
+  pvm_opstatement("asa-path-id").mid("2#").arg(++path_ids).end();
+  pvm_opstatement("asa-path-id-string-auto").mid("$").arg("em-path").end();
+  pvm_opstatement("asa-group-id").mid("2##")
     .arg("%1 %2"_qt.arg(++path_ids).arg(++path_ids)).end();
-  mvm_opstatement("asa-path-group-glyphs").mid("$$").arg("glyph0-1").end();
-  mvm_opstatement("asa-path-group-id-string-auto").mid("$").arg("em-group").end();
-  mvm_opstatement("asa-gel-id-string-auto").mid("$").arg("gel").end();
-  mvm_opstatement("asa-finalize<-graphic-element").end(1);
-  mvm_opstatement("asa-prepare-svg-file").end();
-  mvm_opstatement("asa-save-svg-file").mid("$")
+  pvm_opstatement("asa-path-group-glyphs").mid("$$").arg("glyph0-1").end();
+  pvm_opstatement("asa-path-group-id-string-auto").mid("$").arg("em-group").end();
+  pvm_opstatement("asa-gel-id-string-auto").mid("$").arg("gel").end(1);
+  pvm_opstatement("asa-finalize<-graphic-element").end(1);
+  pvm_opstatement("asa-prepare-svg-file").end();
+  pvm_opstatement("asa-save-svg-file").mid("$")
     .arg(tikz_html_folder + "/ia-%1.svg"_qt.arg(count)).end();
 
-  mvm_opstatement("asa-prepare-html-file").end();
+  pvm_opstatement("asa-prepare-html-file").end();
 
-  mvm_opstatement("asa-load-html-template").mid("$").arg(tikz_svg_html_template_).end(1);
+  pvm_opstatement("asa-load-html-template").mid("$").arg(tikz_svg_html_template_).end(1);
 
-  mvm_opstatement("asa-save-html-file").mid("$")
+  pvm_opstatement("asa-save-html-file").mid("$")
     .arg(tikz_html_folder + "/ia-%1.html"_qt.arg(count)).end();
 
 
