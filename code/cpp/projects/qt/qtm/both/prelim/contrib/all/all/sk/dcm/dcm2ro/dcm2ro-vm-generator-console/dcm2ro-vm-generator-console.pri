@@ -37,6 +37,9 @@ DEFINES += DEFAULT_XML_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/xml\\\"
 DEFINES += DEFAULT_IMAGE_XML_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/xml/images\\\"
 DEFINES += DEFAULT_TEMPLATES_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/templates\\\"
 DEFINES += DEFAULT_IMAGES_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/images\\\"
+DEFINES += DEFAULT_TIKZ_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/gen/tikz\\\"
+DEFINES += DEFAULT_TIKZ_HTML_FOLDER=\\\"$$ROOT_DIR/../dev/dcm2ro/gen/tikz/html\\\"
+
 
 CONFIG += no_keywords
 

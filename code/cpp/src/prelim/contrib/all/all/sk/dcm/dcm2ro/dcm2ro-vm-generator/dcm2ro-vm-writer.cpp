@@ -210,6 +210,69 @@ void VM_Writer::scan_xml(QString xml_path)
  }
 }
 
+void VM_Writer::finalize_pvm(QString file_path, QString tikz_folder, QString tikz_html_folder)
+{
+ u2 count = 0;
+ u2 path_ids = 0;
+ for(auto pr : script_data_by_instance_sop_uid_.values_container())
+ {
+  ++count;
+  VM_Script_Data* vsd = pr.second;
+
+  post_process_vm_.clear();
+  init_stream_(pvm_acc_);
+
+  mvm_opstatement("asa-load-svg-file").mid("$")
+    .arg(tikz_folder + "/from-svg-%1.svg"_qt.arg(count)).end(1);
+
+  mvm_opstatement("asa-new->graphic-element").end();
+    // //  in this context all characteristics elements have unblindedReadNodule as parent
+  mvm_opstatement(" :interpretation").mid("$").arg("nodule|unblinded-read").end();
+
+  QMap<QString, u1> characteristics = vsd->characteristics_map();
+
+  u1 _internal_structure = characteristics.take("internalStructure");
+
+  static QStringList internal_structure_options {"?", "soft-tissue", "fluid", "fat", "air" };
+  QString internal_structure = internal_structure_options.value(_internal_structure);
+
+  mvm_opstatement(" :characteristic").mid("$").arg("internalStructure").end();
+  mvm_opstatement(" :value-str").mid("$").arg(internal_structure).end();
+
+  QMapIterator<QString, u1> it(characteristics);
+  while(it.hasNext())
+  {
+   it.next();
+   mvm_opstatement(" :characteristic").mid("$").arg(it.key()).end();
+   mvm_opstatement(" :value-str").mid("1#").arg(it.value()).end();
+  }
+
+  mvm_opstatement("asa-path-id").mid("2#").arg(++path_ids).end();
+  mvm_opstatement("asa-path-id-string-auto").mid("$").arg("em-path").end();
+  mvm_opstatement("asa-group-id").mid("2##")
+    .arg("%1 %2"_qt.arg(++path_ids).arg(++path_ids)).end();
+  mvm_opstatement("asa-path-group-glyphs").mid("$$").arg("glyph0-1").end();
+  mvm_opstatement("asa-path-group-id-string-auto").mid("$").arg("em-group").end();
+  mvm_opstatement("asa-gel-id-string-auto").mid("$").arg("gel").end();
+  mvm_opstatement("asa-finalize<-graphic-element").end(1);
+  mvm_opstatement("asa-prepare-svg-file").end();
+  mvm_opstatement("asa-save-svg-file").mid("$")
+    .arg(tikz_html_folder + "/ia-%1.svg"_qt.arg(count)).end();
+
+  mvm_opstatement("asa-prepare-html-file").end();
+
+  mvm_opstatement("asa-load-html-template").mid("$").arg(tikz_svg_html_template_).end(1);
+
+  mvm_opstatement("asa-save-html-file").mid("$")
+    .arg(tikz_html_folder + "/ia-%1.html"_qt.arg(count)).end();
+
+
+  finalize_vm(pvm_acc_);
+  save_pvm(file_path.arg(count));
+ }
+}
+
+
 extern QVector<QString> qtGrepSearch(QString, QString);
 
 void VM_Writer::finalize_mvm(QString file_path, QString image_xml_folder, QString images_folder)
@@ -221,6 +284,8 @@ void VM_Writer::finalize_mvm(QString file_path, QString image_xml_folder, QStrin
  {
   ++count;
   VM_Script_Data* vsd = pr.second;
+
+  main_process_vm_.clear();
   init_stream_(mvm_acc_);
 
   QVector<QString> grep_files = qtGrepSearch(image_xml_folder, vsd->sop_instance_uid());
@@ -244,7 +309,7 @@ void VM_Writer::finalize_mvm(QString file_path, QString image_xml_folder, QStrin
    qDebug() << "Unexpected repeat of SOP Instance UID";
   }
 
-  mvm_opstatement("tia-load-tikz-template").mid("$").arg(file_path.arg(count)).end(1);
+  mvm_opstatement("tia-load-tikz-template").mid("$").arg(tikz_template_).end(1);
 
   mvm_opstatement("tia-new->tex-file").end();
   mvm_opstatement(" :image-name").mid("$").arg("i-%1.png"_qt.arg(count)).end();

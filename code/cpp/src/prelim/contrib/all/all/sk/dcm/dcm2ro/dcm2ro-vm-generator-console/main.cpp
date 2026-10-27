@@ -30,11 +30,12 @@ int main(int argc, char *argv[])
  QString xml_path = DEFAULT_XML_FOLDER "/159.xml";
 
  vmw.use_tikz_template(DEFAULT_TEMPLATES_FOLDER "/tikz.tex");
+ vmw.use_tikz_svg_html_template(DEFAULT_TEMPLATES_FOLDER "/tikz-svg.html");
 
  vmw.scan_xml(xml_path);
 
  vmw.finalize_mvm(mvm_path, DEFAULT_IMAGE_XML_FOLDER, DEFAULT_IMAGES_FOLDER);
- vmw.finalize_pvm(pvm_path);
+ vmw.finalize_pvm(pvm_path, DEFAULT_TIKZ_FOLDER, DEFAULT_TIKZ_HTML_FOLDER);
 
 // vmw.save_mvm(mvm_path);
 // vmw.save_pvm(pvm_path);

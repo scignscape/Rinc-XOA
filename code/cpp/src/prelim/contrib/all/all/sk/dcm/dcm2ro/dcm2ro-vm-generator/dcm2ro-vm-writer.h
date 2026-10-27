@@ -46,6 +46,7 @@ class VM_Writer
  tsl::ordered_map<QString, VM_Script_Data*> script_data_by_instance_sop_uid_;
 
  QString tikz_template_;
+ QString tikz_svg_html_template_;
  QString shell_template_;
 
  u1 current_mask_;
@@ -124,6 +125,11 @@ public:
   tikz_template_ = file_path;
  }
 
+ void use_tikz_svg_html_template(QString file_path)
+ {
+  tikz_svg_html_template_ = file_path;
+ }
+
  void scan_xml(QString xml_path);
 
 // ACCESSORS__RGET(QTextStream ,pvm_acc)
@@ -181,10 +187,7 @@ public:
 
  void finalize_mvm(QString file_path, QString image_xml_folder, QString images_folder);
 
- void finalize_pvm(QString file_path)
- {
-  finalize_vm(pvm_acc_);
- }
+ void finalize_pvm(QString file_path, QString tikz_folder, QString tikz_html_folder);
 
 };
 
