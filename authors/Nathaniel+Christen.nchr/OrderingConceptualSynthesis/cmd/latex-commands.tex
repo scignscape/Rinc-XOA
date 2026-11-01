@@ -1268,6 +1268,20 @@ breaklines=true
 \href{#1}{\usebox{\hrefbox}}}
 
 
+
+\NewDocumentEnvironment{lboxurl}{d()}{%
+
+\begin{lrbox}{\hrefbox}
+\begin{minipage}{1\columnwidth}\setstretch{.9}}
+{\end{minipage}
+\end{lrbox}
+
+\ifnum\presetStretch=2\vspace{-1pt}\else\vspace{-6pt}\fi%
+\href{#1}{\usebox{\hrefbox}}}
+
+
+
+
 %\NewDocumentEnvironment{boxurln}{d()}{%
 %\begin{lrbox}{\hrefbox}}
 %{\end{lrbox}\href{#1}{\raisebox{2pt}{\usebox{\hrefbox}}}}
