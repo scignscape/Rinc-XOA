@@ -1,0 +1,29 @@
+
+.; List of OSPL references; the supplemental 
+   bibliography is on last page of document ;.
+
+=prog
+
+osp-new->supplemental-bibliography-reference ;.
+ :internal-refid $ AsherPustejovsky ;.
+ :biblio-ref-item 1# 2 ;.
+ :url $ https://www.cs.brandeis.edu/~jamesp/classes/cs216-2009/readings2009/TCLforGL.pdf ;.
+ :endorsement $ Another Nicholas Asher/James Pustejovsky collaboration, two of the leading 
+researchers in type-theoretic semantics ;.
+osp-finalize<-supplemental-bibliography-reference ;.
+
+
+osp-new->supplemental-bibliography-reference ;.
+ :internal-refid $ EranAsoulin ;.
+ :biblio-ref-item 1# 3 ;.
+ :url $ https://philarchive.org/archive/ASOLAS ;.
+ :endorsement $ Another Nicholas Asher/James Pustejovsky collaboration, two of the leading 
+researchers in type-theoretic semantics ;.
+osp-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+=done
+
