@@ -1,0 +1,550 @@
+.; Test channel constructions ;.
+
+=prog
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ AsherPustejovsky ;.
+ :biblio-ref-item 1# 2 ;.
+ :url $ https://www.cs.brandeis.edu/~jamesp/classes/cs216-2009/readings2009/TCLforGL.pdf ;.
+ :endorsement $ Another Nicholas Asher/James Pustejovsky collaboration, two of the leading 
+researchers in type-theoretic semantics ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ EranAsoulin ;.
+ :biblio-ref-item 1# 3 ;.
+ :url $ https://philarchive.org/archive/ASOLAS ;.
+ :endorsement $ Metascientific examination of semantics theories in conjunction with internalist and externalist philosophies of mind ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ AndrewRBailey ;.
+ :biblio-ref-item 1# 4 ;.
+ :url $ https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9d1b98fdd965df69f9c9adbbb6b20206e66f8661 ;.
+ :endorsement $ Doctoral dissertation presenting a metascientific analysis of qualia ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ JiriBenovsky ;.
+ :biblio-ref-item 1# 6 ;.
+ :url $ https://www.newdualism.org/papers-Jul2020/Benovsky-PI2016.pdf ;.
+ :endorsement $ Exceptionally analytic treatment of dual-aspect monism as a paradigm in Philosophy of Mind ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Bolt ;.
+ :biblio-ref-item 1# 7 ;.
+ :url $ https://arxiv.org/pdf/1703.08314.pdf ;.
+ :endorsement $ Outlines a research project that combines a Category-Theoretic model of syntax with Conceptual Space semantics in the sense of Peter G\"ardenfors ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ IovkaBoneva ;.
+ :biblio-ref-item 1# 8 ;.
+ :url $ https://arxiv.org/pdf/2503.24299 ;.
+ :endorsement $ Formal statement of an inheritance model for 
+Shape Expressions in the RDF context ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ JoanBresnan ;.
+ :biblio-ref-item 1# 9 ;.
+ :url $ https://web.stanford.edu/~bresnan/bresnan-typology2007.pdf ;.
+ :endorsement $ The cited pages discuss the methodological validity 
+of subject assessments (linguistics) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ HarryBunt ;.
+ :biblio-ref-item 1# 11 ;.
+ :url $ https://aclanthology.org/W19-0403.pdf ;.
+ :endorsement $ A theory of quantification in the context 
+of neo-Davidsonian event semantics ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ DavidJChalmers ;.
+ :biblio-ref-item 1# 12 ;.
+ :url $ https://personal.lse.ac.uk/ROBERT49/teaching/ph103/pdf/chalmers1995.pdf ;.
+ :endorsement $ 20-page article outlining a position Chalmers has elsewhere 
+elaborated via full-length books ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ChatzikyriakidisLuo ;.
+ :biblio-ref-item 1# 13 ;.
+ :url $ http://www.aclweb.org/anthology/W15-2304 ;.
+ :endorsement $ Basic theory of copredication within type-theoretic 
+semantics but with a detailed mathematical formalization 
+(even via Coq) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ LucasChampollion ;.
+ :biblio-ref-item 1# 14 ;.
+ :url $ https://archive.nyu.edu/bitstream/2451/34277/2/Champollion%202015i.pdf ;.
+ :endorsement $ NYU linguist who has some of the most detailed 
+formal treatments of event semantics in the literature ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ GallagherZahavi ;.
+ :biblio-ref-item 1# 15 ;.
+ :url $ http://www.ummoss.org/gallZahavi12.pdf ;.
+ :endorsement $ Two of the preeminent analytic phenomenologists 
+with a review of Husserl's theory of time consciousness overall, 
+but also a useful treatment of protention and retention ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ->Galunetal ;.
+ :biblio-ref-item 1# 16 ;.
+ :url $ https://www.weizmann.ac.il/math/meirav/sites/math.meirav/files/uploads/meirav_texturesegmentation_iccv03.pdf ;.
+ :endorsement $ Mathematically describes a novel texture-segmentation 
+algorithm leveraging filter responses ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Gavvesetal ;.
+ :biblio-ref-item 1# 17 ;.
+ :url $ https://basurafernando.github.io/papers/IJCV-FG.pdf ;.
+ :endorsement $ Shape-oriented object classification (image analysis) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ GerdesKahane ;.
+ :biblio-ref-item 1# 18 ;.
+ :url $ https://kahane.fr/wp-content/uploads/2017/06/dependency-depling2011.pdf ;.
+ :endorsement $ Models the dependency/constituency contrast via hypergraphs ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ DavitGigilashvili ;.
+ :biblio-ref-item 1# 19 ;.
+ :url $ https://jbthomas.org/Conferences/2019aCIC.pdf ;.
+ :endorsement $ Psychophysical investigation of textural glossiness ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ AnirudhGoyal ;.
+ :biblio-ref-item 1# 20 ;.
+ :url $ https://arxiv.org/pdf/2006.16225 ;.
+ :endorsement $ Addresses the distinction between procedural and declarative knowledge ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ChristopherGutland ;.
+ :biblio-ref-item 1# 22 ;.
+ :url $ https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.00896/full ;.
+ :endorsement $ Clarifies how Husserl's phenomenological methods might be considered introspective ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ HarveySmithson ;.
+ :biblio-ref-item 1# 23 ;.
+ :url $ https://www.nature.com/articles/s41598-021-95416-6.pdf ;.
+ :endorsement $ Image statistics in the context of metallicity ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ HanneJacobs ;.
+ :biblio-ref-item 1# 24 ;.
+ :url $ https://philarchive.org/rec/JACHOE ;.
+ :endorsement $ Phenomenological treatment of epistemic agency (.docx format) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Kahane ;.
+ :biblio-ref-item 1# 25 ;.
+ :url $ https://aclanthology.org/W19-7711.pdf ;.
+ :endorsement $ Catenae and projections in the context of tree-form dependency grammar ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ JKim ;.
+ :biblio-ref-item 1# 26 ;.
+ :url $ http://www.sfu.ca/~jillmc/Kim1992.pdf ;.
+ :endorsement $ Highly influential philosopher of mind here addresses 
+metascientific implications of \q{Multiple Realization} theories ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ kow ;.
+ :biblio-ref-item 1# 27 ;.
+ :url $ https://www.researchgate.net/profile/Hubert-Kowalewski-2/publication/369661923_Structural_empiricist_Cognitive_Grammar/links/6426f44c66f8522c38e924e3/Structural-empiricist-Cognitive-Grammar.pdf ;.
+ :endorsement $ Metascientific analysis of Cognitive Grammar in 
+terms of \q{Structural Empiricism} ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ KrahenbuhlKoltun ;.
+ :biblio-ref-item 1# 28 ;.
+ :url $ http://vladlen.info/papers/gop.pdf ;.
+ :endorsement $ Generating object proposals via supersegment \q{seeds} ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ YusukeKubota ;.
+ :biblio-ref-item 1# 29 ;.
+ :url $ https://zenodo.org/record/5599876/files/259-M%C3%BCllerEtAl-2021-29.pdf ;.
+ :endorsement $ Compares Categorial Grammar with Head-Driven Phrase Structure Grammar ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ LangackerIntro ;.
+ :biblio-ref-item 1# 30 ;.
+ :url $ https://ole.uff.br/wp-content/uploads/sites/336/2018/09/cognitive_grammar_a_basic_introduction_langacker.pdf ;.
+ :endorsement $ Definitive text where Ronald Langacker 
+introduces Cognitive Grammar in a single volume ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ->LiefkeHartmann ;.
+ :biblio-ref-item 1# 31 ;.
+ :url $ https://philarchive.org/archive/HARMRC-2 ;.
+ :endorsement $ Employs the syntax/semantics distinction in linguistics 
+to examine inter-theory reduction in the philosophy of science ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ZhaohuiLuo ;.
+ :biblio-ref-item 1# 32 ;.
+ :url $ https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/download/2580/2328/2811 ;.
+ :endorsement $ A leading proponent of type-theoretic semantics here 
+addresses issues related to subtypes and type coercions  ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ KamranMajid ;.
+ :biblio-ref-item 1# 33 ;.
+ :url $ https://arxiv.org/pdf/2507.00023 ;.
+ :endorsement $ Unusual pursuit of links between philosophy of science and quantum computing ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Mallickelal ;.
+ :biblio-ref-item 1# 34 ;.
+ :url $ https://vision.ucsd.edu/sites/default/files/publications/pdfs/Beyond%20Lambert%20-%20Reconstructing%20Specular%20Surfaces%20Using%20Color.pdf ;.
+ :endorsement $ Using multiple view angles to model/factor out 
+surface reflection patterns ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ RyanMcVeigh ;.
+ :biblio-ref-item 1# 36 ;.
+ :url $ https://api.pageplace.de/preview/DT0400.9781003801290_A47026914/preview-9781003801290_A47026914.pdf ;.
+ :endorsement $ Introduction to a volume on Cognitive Sociology that 
+focuses on founders of the discipline rather than more explicitly 
+cognitively-oriented later writers ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ MeryRetore ;.
+ :biblio-ref-item 1# 37 ;.
+ :url $ https://arxiv.org/pdf/1312.3168 ;.
+ :endorsement $ Representative treatment of type-theoretic semantics 
+in terms of (in effect, what philosophers sometimes call) \q{Regional Ontologies} ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ MirjaliliHardeberg ;.
+ :biblio-ref-item 1# 38 ;.
+ :url $ https://www.mdpi.com/2313-433X/8/9/248 ;.
+ :endorsement $ Psychophysical study of complexity as a feature of image 
+texture, in terms of visual perception ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ShinyaNishida ;.
+ :biblio-ref-item 1# 39 ;.
+ :url $ https://sites.cc.gatech.edu/aimosaic/faculty/nersessian/clic-site/papers/Model-BasedReasoning.pdf ;.
+ :endorsement $ Interesting examination of metascientific issues involving 
+modeling and simulations from the perspective of cognition 
+(viz., science as a cognitive phenomenon or process) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ TimothyOsborne ;.
+ :biblio-ref-item 1# 43 ;.
+ :url $ https://www.coli.uni-saarland.de/tania/CMGD/Beyond%20the%20constitient.pdf ;.
+ :endorsement $ Argues for \q{chains} as a higher scale than constituents 
+in the context of Dependency Grammar ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ MarekPokropski ;.
+ :biblio-ref-item 1# 44 ;.
+ :url $ https://philarchive.org/archive/POKPAF ;.
+ :endorsement $ Argues for a functionalist reading of Husserl, 
+but critiques prior such readings ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ RobertDRupert ;.
+ :biblio-ref-item 1# 47 ;.
+ :url $ https://philarchive.org/archive/RUPFMC ;.
+ :endorsement $ Addresses the interconnected issues of functionalism 
+in Philosophy of Mind, causality, and the metaphysical status of mental entities ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Sethetal ;.
+ :biblio-ref-item 1# 50 ;.
+ :url $ https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2011.00395/full ;.
+ :endorsement $ An example of Anil Seth and colleagues' exploration of 
+neurophysical correlates for consciousness and phenomenology ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ChungChiehShan ;.
+ :biblio-ref-item 1# 51 ;.
+ :url $ https://arxiv.org/pdf/cs/0205026 ;.
+ :endorsement $ Applies the computer-scientific notion of monads (indirectly 
+the Category-Theoretic version as well) to the semantics of natural language ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Schorlemmeretal ;.
+ :biblio-ref-item 1# 52 ;.
+ :url $ https://ceur-ws.org/Vol-1767/c3gi2016_paper6.pdf ;.
+ :endorsement $ Points include an \q{amalgam} model of 
+concepts that offers a potential alternative to Conceptual Space theory ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ ->Smithies ;.
+ :biblio-ref-item 1# 54 ;.
+ :url $ https://philpapers.org/archive/SMIAIR.pdf ;.
+ :endorsement $ Examines the role of attention in consciousness ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ PeterRSutton ;.
+ :biblio-ref-item 1# 55 ;.
+ :url $ https://www.annualreviews.org/docserver/fulltext/linguistics/10/1/annurev-linguistics-031422-113929.pdf ;.
+ :endorsement $ Examines different forms of extensions to 
+type-theoretic semantics ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ JohnSymons ;.
+ :biblio-ref-item 1# 56 ;.
+ :url $ http://www.johnsymons.net/wp-content/uploads/2012/05/Computational-Models-of-Emergent-Properties.pdf ;.
+ :endorsement $ Analyzes how computational models can help 
+us understand emergent properties (as a metascientific principle, in effect) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ SchottenForkel ;.
+ :biblio-ref-item 1# 58 ;.
+ :url $ https://pure.mpg.de/rest/items/item_3575259_1/component/file_3575260/content ;.
+ :endorsement $ Cognitive neurobiology as an example of emergent properties ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ TodorovicAhuja ;.
+ :biblio-ref-item 1# 59 ;.
+ :url $ https://web.engr.oregonstate.edu/~sinisa/research/publications/iccv09_texture.pdf ;.
+ :endorsement $ Proposes new methods for \q{texel} segmentation 
+(texels are texture elements roughly analogous to superpixels 
+in terms of scale/size) ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ TakeshiUejima ;.
+ :biblio-ref-item 1# 60 ;.
+ :url $ https://www.frontiersin.org/articles/10.3389/fncom.2020.541581/pdf ;.
+ :endorsement $ Combines work on visual salience, texture, and conscious attention ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ VakarelovAgent ;.
+ :biblio-ref-item 1# 62 ;.
+ :url $ https://philarchive.org/archive/VAKTCAv1 ;.
+ :endorsement $ One of Orlin Vakarelov's papers touching on his 
+important \q{interface theory} of meaning ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ FranciscoVarela ;.
+ :biblio-ref-item 1# 63 ;.
+ :url $ https://www.achrafkassioui.com/library/Francisco%20Varela%20-%20Neurophenomenology,%20A%20Methodological%20Remedy%20for%20the%20Hard%20Problem.pdf ;.
+ :endorsement $ Attempts to reconcile phenomenology with modern 
+neurology and cognitive science ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ WendtFaul ;.
+ :biblio-ref-item 1# 64 ;.
+ :url $ https://journals.sagepub.com/doi/pdf/10.1177/2041669519866843 ;.
+ :endorsement $ Analyzes visual perception of glossy textures in the 
+context of variations in glossiness on local scales ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ Wolfetal ;.
+ :biblio-ref-item 1# 66 ;.
+ :url $ https://www.cse.lehigh.edu/~huang/texturepatch.pdf ;.
+ :endorsement $ New algorithm for identifying texture edges/boundaries ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ WybraniecSkardowska ;.
+ :biblio-ref-item 1# 67 ;.
+ :url $ https://www.achrafkassioui.com/library/Francisco%20Varela%20-%20Neurophenomenology,%20A%20Methodological%20Remedy%20for%20the%20Hard%20Problem.pdf ;.
+ :endorsement $ Useful treatment of Categorial Grammar which 
+(for instance) references early Husserl ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+lls-new->supplemental-bibliography-reference ;.
+ :internal-refid $ JanaZujovic ;.
+ :biblio-ref-item 1# 70 ;.
+ :url $ https://users.eecs.northwestern.edu/~pappas/papers/zujovic_tip13.pdf ;.
+ :endorsement $ Develops new metrics for texture similarity, 
+with applications to image similarity ;.
+lls-finalize<-supplemental-bibliography-reference ;.
+
+
+
+
+lls-get-vm-script-folder ;.
+
+lls-write-latex ;.
+
+=done
+
