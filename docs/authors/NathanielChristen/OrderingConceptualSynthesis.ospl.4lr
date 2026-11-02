@@ -20,14 +20,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ AndrewRBailey ;.
  :biblio-ref-item 1# 4 ;.
  :url $ https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9d1b98fdd965df69f9c9adbbb6b20206e66f8661 ;.
  :endorsement $ Doctoral dissertation presenting a metascientific analysis of qualia ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -38,16 +36,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ Bolt ;.
  :biblio-ref-item 1# 7 ;.
  :url $ https://arxiv.org/pdf/1703.08314.pdf ;.
  :endorsement $ Outlines a research project that combines a Category-Theoretic model of syntax with Conceptual Space semantics in the sense of Peter G\"ardenfors ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -59,8 +53,6 @@ Shape Expressions in the RDF context ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ JoanBresnan ;.
  :biblio-ref-item 1# 9 ;.
@@ -68,8 +60,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ The cited pages discuss the methodological validity 
 of subject assessments (linguistics) ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -81,8 +71,6 @@ of neo-Davidsonian event semantics ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ DavidJChalmers ;.
  :biblio-ref-item 1# 12 ;.
@@ -90,9 +78,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ 20-page article outlining a position Chalmers has elsewhere 
 elaborated via full-length books ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -105,9 +90,6 @@ semantics but with a detailed mathematical formalization
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ LucasChampollion ;.
  :biblio-ref-item 1# 14 ;.
@@ -115,9 +97,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ NYU linguist who has some of the most detailed 
 formal treatments of event semantics in the literature ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -130,9 +109,6 @@ but also a useful treatment of protention and retention ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ ->Galunetal ;.
  :biblio-ref-item 1# 16 ;.
@@ -140,9 +116,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Mathematically describes a novel texture-segmentation 
 algorithm leveraging filter responses ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -153,18 +126,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ GerdesKahane ;.
  :biblio-ref-item 1# 18 ;.
  :url $ https://kahane.fr/wp-content/uploads/2017/06/dependency-depling2011.pdf ;.
  :endorsement $ Models the dependency/constituency contrast via hypergraphs ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -175,18 +142,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ AnirudhGoyal ;.
  :biblio-ref-item 1# 20 ;.
  :url $ https://arxiv.org/pdf/2006.16225 ;.
  :endorsement $ Addresses the distinction between procedural and declarative knowledge ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -197,18 +158,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ HarveySmithson ;.
  :biblio-ref-item 1# 23 ;.
  :url $ https://www.nature.com/articles/s41598-021-95416-6.pdf ;.
  :endorsement $ Image statistics in the context of metallicity ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -219,14 +174,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ Kahane ;.
  :biblio-ref-item 1# 25 ;.
  :url $ https://aclanthology.org/W19-7711.pdf ;.
  :endorsement $ Catenae and projections in the context of tree-form dependency grammar ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -238,7 +191,6 @@ metascientific implications of \q{Multiple Realization} theories ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ kow ;.
  :biblio-ref-item 1# 27 ;.
@@ -246,7 +198,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Metascientific analysis of Cognitive Grammar in 
 terms of \q{Structural Empiricism} ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -257,15 +208,12 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ YusukeKubota ;.
  :biblio-ref-item 1# 29 ;.
  :url $ https://zenodo.org/record/5599876/files/259-M%C3%BCllerEtAl-2021-29.pdf ;.
  :endorsement $ Compares Categorial Grammar with Head-Driven Phrase Structure Grammar ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -277,7 +225,6 @@ introduces Cognitive Grammar in a single volume ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ ->LiefkeHartmann ;.
  :biblio-ref-item 1# 31 ;.
@@ -285,7 +232,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Employs the syntax/semantics distinction in linguistics 
 to examine inter-theory reduction in the philosophy of science ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -297,14 +243,12 @@ addresses issues related to subtypes and type coercions  ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ KamranMajid ;.
  :biblio-ref-item 1# 33 ;.
  :url $ https://arxiv.org/pdf/2507.00023 ;.
  :endorsement $ Unusual pursuit of links between philosophy of science and quantum computing ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -314,7 +258,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Using multiple view angles to model/factor out 
 surface reflection patterns ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -327,7 +270,6 @@ cognitively-oriented later writers ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ MeryRetore ;.
  :biblio-ref-item 1# 37 ;.
@@ -337,7 +279,6 @@ in terms of (in effect, what philosophers sometimes call) \q{Regional Ontologies
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ MirjaliliHardeberg ;.
  :biblio-ref-item 1# 38 ;.
@@ -345,7 +286,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Psychophysical study of complexity as a feature of image 
 texture, in terms of visual perception ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -358,7 +298,6 @@ modeling and simulations from the perspective of cognition
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ TimothyOsborne ;.
  :biblio-ref-item 1# 43 ;.
@@ -366,7 +305,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Argues for \q{chains} as a higher scale than constituents 
 in the context of Dependency Grammar ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -378,7 +316,6 @@ but critiques prior such readings ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ RobertDRupert ;.
  :biblio-ref-item 1# 47 ;.
@@ -386,7 +323,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Addresses the interconnected issues of functionalism 
 in Philosophy of Mind, causality, and the metaphysical status of mental entities ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -398,8 +334,6 @@ neurophysical correlates for consciousness and phenomenology ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ ChungChiehShan ;.
  :biblio-ref-item 1# 51 ;.
@@ -407,8 +341,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Applies the computer-scientific notion of monads (indirectly 
 the Category-Theoretic version as well) to the semantics of natural language ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -420,16 +352,12 @@ concepts that offers a potential alternative to Conceptual Space theory ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ ->Smithies ;.
  :biblio-ref-item 1# 54 ;.
  :url $ https://philpapers.org/archive/SMIAIR.pdf ;.
  :endorsement $ Examines the role of attention in consciousness ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -441,8 +369,6 @@ type-theoretic semantics ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ JohnSymons ;.
  :biblio-ref-item 1# 56 ;.
@@ -452,15 +378,12 @@ us understand emergent properties (as a metascientific principle, in effect) ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ SchottenForkel ;.
  :biblio-ref-item 1# 58 ;.
  :url $ https://pure.mpg.de/rest/items/item_3575259_1/component/file_3575260/content ;.
  :endorsement $ Cognitive neurobiology as an example of emergent properties ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -473,14 +396,12 @@ in terms of scale/size) ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ TakeshiUejima ;.
  :biblio-ref-item 1# 60 ;.
  :url $ https://www.frontiersin.org/articles/10.3389/fncom.2020.541581/pdf ;.
  :endorsement $ Combines work on visual salience, texture, and conscious attention ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -492,7 +413,6 @@ important \q{interface theory} of meaning ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ FranciscoVarela ;.
  :biblio-ref-item 1# 63 ;.
@@ -502,7 +422,6 @@ neurology and cognitive science ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ WendtFaul ;.
  :biblio-ref-item 1# 64 ;.
@@ -510,7 +429,6 @@ osp-new->supplemental-bibliography-reference ;.
  :endorsement $ Analyzes visual perception of glossy textures in the 
 context of variations in glossiness on local scales ;.
 osp-finalize<-supplemental-bibliography-reference ;.
-
 
 
 osp-new->supplemental-bibliography-reference ;.
@@ -530,7 +448,6 @@ osp-new->supplemental-bibliography-reference ;.
 osp-finalize<-supplemental-bibliography-reference ;.
 
 
-
 osp-new->supplemental-bibliography-reference ;.
  :internal-refid $ JanaZujovic ;.
  :biblio-ref-item 1# 70 ;.
@@ -541,10 +458,14 @@ osp-finalize<-supplemental-bibliography-reference ;.
 
 
 
+ .; The list is finished, so we just need to write the code out as LaTeX 
+    
+    Put it in the same folder as the VM Script ;.
 
 osp-get-vm-script-folder ;.
 
 osp-write-latex ;.
+
 
 =done
 
