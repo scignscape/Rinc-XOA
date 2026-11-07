@@ -85,7 +85,7 @@ capabilities like
 publication may benefit from semantic tags that accelerate searching for specific 
 technical language and discussions
 
-* Highlighting &ndash;  The &ldquo;$\color{#a65450}\mathrm{Semantic Reader}$&rdquo; 
+* Highlighting &ndash;  The &ldquo; $\color{#a65450}\mathrm{Semantic Reader}$ &rdquo; 
 from $\color{#a65450}\mathrm{Semantic Scholar}$/Allen Institute for 
 $\color{#a65450}\mathrm{AI}$ has a 
 Goal/Method/Result &ldquo;skimming&rdquo; feature that overlays colored highlights 
