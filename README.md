@@ -1,5 +1,42 @@
 
-# Rinc-XOA : Research in nonprofit contexts - Executable Open Access
+# SenPac : Subprofile Engineering for Publication-Anchored Code Libraries
+
+For this repository, &ldquo;Publication-Anchored Code Libraries&rdquo; is a 
+generic phrase referring to various resource models synthesizing aspects 
+of traditional academic publishing and code/data repositories 
+as represented by github, Open Science, data sets hosts, etc.  Such hybrid 
+resources may have more specific forms such as Executable Research Objects/Articles, 
+Research Compendium/Artifact, Reproducible Package, Open Science Capsule, &ldquo;Whole 
+&rdquo;, among others.   But the overarching $\color{#a65450}\mathrm{SenPac}$ model 
+assumes two key details:
+
+1. There is a main publication file that &ldquo;anchors&rdquo; a code and/or data 
+library/repository.  The anchor's role is more substantial than just documenting 
+or summarizing the libary; it should be a primary source for describing research 
+methods, findings, and theoretical assumptions.  The publication may or 
+may not also be submitted to a peer-reviewed journal, book series, 
+or similar venue, but 
+it should _a)_ be included directly in the code libary as a preprint 
+or via an Open Access license; and _b)_ have formatting, 
+annotations, and metadata consistent with academic papers, such as a persistent 
+Document Object Identifier and encoding suitable for ingestion by 
+scholarship indexers (CORE, BASE, Semantic Scholar, and so forth).
+ 
+2. The surrounding code library is an intrinsic part of the publications' 
+content and originality; it is not just Supplemental Materials 
+or raw files satisfying Data Availability requirements.  Code libraries 
+offer alternative routes for findability/discoverability 
+than relying solely on peer review or academic indexing.  Embedding 
+manuscripts in code repositories is therefore one technique for 
+researchers to disseminate their work while remaining independent 
+from mainstream/commercial scientific institutions.  On the other 
+hand, sustaining that independence should not lessen the 
+quality of publications themselves (even just in those aspects 
+specific to being a computational artifact, like 
+queryability and code interop). 
+
+Authors who publish via code libraries can exercise greater control over presentation and content -- though they might simultaneously pursue traditional scholarly venues.
+ 
 
 If you are interested particularly in the $\color{#a65450}\mathrm{RedPatch}$ Community Health research platform, 
 that's detailed in this repository's $\color{#a65450}\mathrm{RedPatch}$ branch or [skip ahead](#red-patch).
