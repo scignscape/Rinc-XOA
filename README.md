@@ -103,6 +103,26 @@ relevance to search terms and concept vectors.
 
 ## &ldquo;Subprofile Engineering&rdquo;
 
+Most representation formats have an extension mechanism.  For 
+example, $\color{#a65450}\mathrm{JATS}$ has Compatibility Meta Model, 
+$\color{#a65450}\mathrm{RO-Crate}$ has 
+Profiles, and $\color{#a65450}\mathrm{NIEM}$ has 
+$\color{#a65450}\mathrm{IEPD}$s.  $\color{#a65450}\mathrm{SenPac}$ 
+envisions that Anchoring Publications and archives will often 
+combine multiple extensions/profiles into project-specific 
+syntheses (hence _sub_ profiles).  The synthesis could 
+be driven by one (or both) of two factors:
+
+* The project is interdisciplinary, or in general combines vocabularies 
+representing two different semantic domains, perhaps within 
+the same technology &mdash; two $\color{#a65450}\mathrm{RO-Crate}$ profiles, 
+two $\color{#a65450}\mathrm{XML}$ tag suites, etc.
+
+* The project recognizes vocabulary elements sourcing from different 
+technologies that rarely interoperate, such as scientific 
+data repositories and Electronic Health Records.
+
+
 
 
 
