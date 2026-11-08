@@ -47,7 +47,7 @@ generic phrase referring to various resource models synthesizing aspects
 of traditional academic publishing and code/data repositories 
 as represented by github, Open Science, data sets hosts, etc.  Such hybrid 
 resources may have more specific forms 
-(such as &ldquo;Executable Research Objects&rdquo; and other mentioned 
+(such as &ldquo;Executable Research Objects&rdquo; and others mentioned 
 above).  But the 
 overarching $\color{#a65450}\mathrm{SenPac}$ model 
 assumes two key details:
@@ -87,11 +87,11 @@ from a software-development point of view.
 
 The phrase &ldquo;Publications and code as co-Equal&rdquo; 
 ($\color{#a65450}\mathrm{PacEq}$) captures the paradigm 
-embraced by $\color{#a65450}\mathrm{OS4OA}$ and $\color{#a65450}\mathrm{SenPag}$.
+embraced by $\color{#a65450}\mathrm{OS4OA}$ and $\color{#a65450}\mathrm{SenPac}$.
 And also the difficulty: existing technology rarely balances 
 $\color{#a65450}\mathrm{OS}$ and $\color{#a65450}\mathrm{OA}$ on equal 
 terms.  There is therefore a structural bias against 
-$&ldquo;\color{#a65450}\mathrm{OS&OA}\color{black}&rdquo;$ 
+$\color{#a65450}\mathrm{OS&OA}\color{black}$ 
 resources which may not be evident 
 
 ---
