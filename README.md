@@ -6,8 +6,9 @@ generic phrase referring to various resource models synthesizing aspects
 of traditional academic publishing and code/data repositories 
 as represented by github, Open Science, data sets hosts, etc.  Such hybrid 
 resources may have more specific forms such as Executable Research Objects/Articles, 
-Research Compendium/Artifact, Reproducible Package, Open Science Capsule, &ldquo;Whole 
-&rdquo;, among others.   But the overarching $\color{#a65450}\mathrm{SenPac}$ model 
+Research Compendium/Artifact, Reproducible Package, Open Science Capsule, 
+&ldquo;Whole Tale&rdquo;, among others.  
+But the overarching $\color{#a65450}\mathrm{SenPac}$ model 
 assumes two key details:
 
 1. There is a main publication file that &ldquo;anchors&rdquo; a code and/or data 
@@ -20,7 +21,8 @@ it should _a)_ be included directly in the code libary as a preprint
 or via an Open Access license; and _b)_ have formatting, 
 annotations, and metadata consistent with academic papers, such as a persistent 
 Document Object Identifier and encoding suitable for ingestion by 
-scholarship indexers (CORE, BASE, Semantic Scholar, and so forth).
+scholarship indexers ($\color{#a65450}\mathrm{CORE}$, 
+$\color{#a65450}\mathrm{BASE}$, Semantic Scholar, and so forth).
  
 2. The surrounding code library is an intrinsic part of the publications' 
 content and originality; it is not just Supplemental Materials 
@@ -107,7 +109,7 @@ Most representation formats have an extension mechanism.  For
 example, $\color{#a65450}\mathrm{JATS}$ has Compatibility Meta Model, 
 $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ has 
 Profiles, and $\color{#a65450}\mathrm{NIEM}$ has 
-$\color{#a65450}\mathrm{IEPD}$s.  $\color{#a65450}\mathrm{SenPac}$ 
+$\color{#a65450}\mathrm{IEPD}\color{black}s$.  $\color{#a65450}\mathrm{SenPac}$ 
 envisions that Anchoring Publications and archives will often 
 combine multiple extensions/profiles into project-specific 
 syntheses (hence _sub_ profiles).  The synthesis could 
@@ -174,7 +176,7 @@ data such as the $\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic
 Release Inventory&rdquo;; Cheminformatics about 
 individual substances, such as $\color{#a65450}\mathrm{PDB}$ 
 (Protein Data Bank) files; and anonymized 
-$\color{#a65450}\mathrm{EHR}$/$\color{#a65450}\mathrm{EMR}$ 
+$\color{#a65450}\mathrm{EHR}\color{black}/\color{#a65450}\mathrm{EMR}$ 
 records
 
 * Neuroimaging has been used to study substance-abuse 
@@ -182,7 +184,7 @@ disorders, combining image data/annotations with
 case histories, patient narratives, and sociodemographic info
 
 * Analysis of foster care and child-welfare outcomes may draw 
-from disparate $\color{#a65450}\mathrm{IEPD}$s, or aggregate 
+from disparate $\color{#a65450}\mathrm{IEPD}\color{black}s$, or aggregate 
 reporting standards, such as 
 National Electronic Interstate Compact Enterprise 
 ($\color{#a65450}\mathrm{NEICE}$), 
