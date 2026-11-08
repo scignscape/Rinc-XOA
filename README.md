@@ -199,7 +199,7 @@ or $\color{#a65450}\mathrm{OCL}$
 (Open Concept Lab) are specifications intended for 
 storing and communicating 
 $\color{#a65450}\mathrm{EHR}{\small{/}}\color{#a65450}\mathrm{EMR}$ 
-records and similar clinical data.  Similarly, $\color{#a65450}\mathrm{NIEM}$ 
+records and similar clinical data.  Likewise, $\color{#a65450}\mathrm{NIEM}$ 
 is an important standard for legal and governmental data, and 
 $\color{#a65450}\mathrm{IFC}$ systematizes information for 
 architectural, engineering, and construction 
@@ -239,7 +239,7 @@ disorders, combining image data/annotations with
 case histories, patient narratives, and sociodemographic info
 
 * Analysis of foster care and child-welfare outcomes may draw 
-from disparate $\color{#a65450}\mathrm{IEPD}\color{black}s$, or aggregate 
+from disparate $\color{#a65450}\mathrm{IEPD}\color{black}\textnormal{s}$, or aggregate 
 reporting standards, such as 
 National Electronic Interstate Compact Enterprise 
 ($\color{#a65450}\mathrm{NEICE}$), 
