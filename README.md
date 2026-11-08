@@ -298,13 +298,11 @@ work most effectively
 
 4. Making documents interactive  &mdash; whereas $\color{#a65450}\mathrm{PDF}$ 
 in particular has historically been a static format, new ideas such as 
-Semantic Reader's (a $\color{#a65450}\mathrm{PDF}$ viewer from 
-Semantic Scholar/Allen Institute for $\color{#a65450}\mathrm{AI}$) 
-Goal/Method/Result &ldquo;skimming&rdquo; feature, with 
-colored highlight overlays (mentioned above); and clickable glossaries or 
-back-of-book indexes (even for short works like journal articles),
-as well as dynamic graphics similar to Computational Notebook 
-cells, are all possibilities for a more dynamic/interactive 
+Semantic Reader's Goal/Method/Result &ldquo;skimming&rdquo; feature with 
+colored highlight overlays (mentioned above) &mdash; or clickable glossaries 
+or back-of-book indexes (even for short works like journal articles) 
+ &mdash; or dynamic graphics similar to Computational Notebook 
+cells  &mdash;  are all possibilities for a more dynamic/interactive 
 reading experience.
 
 Moreover, (4) considers only _intra_ document interactive features. 
