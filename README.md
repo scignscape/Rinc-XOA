@@ -1,14 +1,54 @@
 
 # SenPac : Subprofile Engineering for Publication-Anchored Code Libraries
 
+This branch is intended to serve as an introduction to the proposed 
+$\color{#a65450}\mathrm{OS4OA}$ (Open Source for Open Access) working group 
+at $\color{#a65450}\mathrm{Force11}$ 
+(which is &ldquo;A global community dedicated to improving scholarly 
+communication, research practices, and knowledge sharing&rdquo;: 
+<https://force11.org/>).  Here is the core language from that proposal:
+
+>One mission for the proposed WG is to present and evaluate OS components that can make OA authors more productive.  Other initiatives already focus on how FOSS supports OA via infrastructure and tooling.  But this WG also addresses the question one step further: how can tools for publication development, view, indexing, and search engines be modified to counter biases against "OS&OA" (Open Source and Open Access)?  How to model the contribution and originality of OS&OA projects whose merit is incompletely captured via each paradigm in isolation (plus peer review, 
+impact factor, and other metrics)?  How to amplify the visibility of OS&OA-principled research?
+>
+>The WG will examine platforms that can generically be called "Publication-Ancored" code libraries: Executable Research Objects/Articles, 
+Research Compendium/Artifact, Reproducible Package, Open Science Capsule, "Whole Tales", StoryMaps, Computational Canvas.  The key detail is a kind of co-equal relationship between an Anchoring Publication and a Code Library (Pac/Eq: Publications and Code as Co-Equal).  The publication itself is a fully-developed unit of scholarly research (not just an overview or documentation); and the code library is intrinsic to the research contribution (not just supplemental materials or raw files satisfying Data Availability requirements).  Conventional tooling is not able to properly address both sides of this co-equal relationship (note that existing indexing algorithms target text or code but not both).
+>
+>When publications and code are &ldquo;co-equal&rdquo; then ignoring a research paper's 
+role as a scholarly product diminishes assessment of the library, but failure to 
+properly index and model the library hinders the Findability of the publication.
+
+
+Note that _code_ &ldquo;indexing&rdquo; here need not be as granular as in
+technical contexts such as the Language Server Protocol (e.g., need 
+not entail a full $\color{#a65450}\mathrm{AST}$ parse).  For 
+example, any tooling consuming a code index can focus on details 
+specifically relevant to those reading the publication, such as: 
+how do I run an analysis or simulation or otherwise reproduce a reported 
+finding?  Or: can I see in code where a term, formula, scalar unit, algorithm, etc. is modeled or implemented?  Such info might come from inline code annotations or separate files, like with External $\color{#a65450}\mathrm{XML}$ Documentation.
+
+Simultaneously, _text_ &ldquo;indexing&rdquo; under $\color{#a65450}\mathrm{Pac/Eq}$ 
+is distinct from word-vector-optimized indexes for Academic Search Engines, 
+although better use of code-library metadata could certainly improve 
+engines' accuracy and false-positive/false-negative 
+percentages.  Components relevant to $\color{#a65450}\mathrm{SenPac}$ can 
+leverage text indexes in multiple ways, including pre-publication document 
+prep, text/code/data reuse, Text Mining, and $\color{#a65450}\mathrm{FAIRsharing}$ 
+(Findable, Accessible, Interoperable, Reusable) in general.
+
+---
+
+## Overview
+
+
 For this repository, &ldquo;Publication-Anchored Code Libraries&rdquo; is a 
 generic phrase referring to various resource models synthesizing aspects 
 of traditional academic publishing and code/data repositories 
 as represented by github, Open Science, data sets hosts, etc.  Such hybrid 
-resources may have more specific forms such as Executable Research Objects/Articles, 
-Research Compendium/Artifact, Reproducible Package, Open Science Capsule, 
-&ldquo;Whole Tale&rdquo;, among others.  
-But the overarching $\color{#a65450}\mathrm{SenPac}$ model 
+resources may have more specific forms 
+(such as &ldquo;Executable Research Objects&rdquo; and other mentioned 
+above).  But the 
+overarching $\color{#a65450}\mathrm{SenPac}$ model 
 assumes two key details:
 
 1. There is a main publication file that &ldquo;anchors&rdquo; a code and/or data 
@@ -43,6 +83,15 @@ of programming techniques than employed by commercial
 publishers.  The digital infrastructure engineered even by 
 the most prestigious houses is distressingly limited 
 from a software-development point of view. 
+
+The phrase &ldquo;Publications and code as co-Equal&rdquo; 
+($\color{#a65450}\mathrm{PacEq}$) captures the paradigm 
+embraced by $\color{#a65450}\mathrm{OS4OA}$ and $\color{#a65450}\mathrm{SenPag}$.
+And also the difficulty: existing technology rarely balances 
+$\color{#a65450}\mathrm{OS}$ and $\color{#a65450}\mathrm{OA}$ on equal 
+terms.  There is therefore a structural bias against 
+$&ldquo;\color{#a65450}\mathrm{OS&OA}\color{black}&rdquo;$ 
+resources which may not be evident 
 
 ---
 
@@ -274,15 +323,19 @@ and/or dependency graphs), semantic frames,
 &ldquo;theta grid&rdquo; structures and thematic relations, 
 morphosyntactic decomposition, and other technical details 
 that readers might find helpful to visualize through 
-moving, demonstrative illustrations 
+moving, demonstrative illustrations. 
 
 * Documents might embed links to audio, visual, digital maps, 
 $\color{#a65450}\mathrm{3D}$ scenes, and other 
-multimedia content; with proper tooling these 
+multimedia content.  With proper tooling these 
 supplemental materials may be cross-referenced 
 with one another (for instance, geotagging 
 video frames) and back to the relevant 
 sentences/paragraphs in the Anchor Publication.
+
+**_Indexing text, code, and data_**
+
+
 
 
  
