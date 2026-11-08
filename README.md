@@ -91,7 +91,7 @@ embraced by $\color{#a65450}\mathrm{OS4OA}$ and $\color{#a65450}\mathrm{SenPac}$
 And also the difficulty: existing technology rarely balances 
 $\color{#a65450}\mathrm{OS}$ and $\color{#a65450}\mathrm{OA}$ on equal 
 terms.  There is therefore a structural bias against 
-$\color{#a65450}\mathrm{OS}&amp;\mathrm{OA}$ 
+$\color{#a65450}\mathrm{OS}\mathrm{OA}$ 
 resources which may not be evident 
 
 ---
