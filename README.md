@@ -28,7 +28,7 @@ how do I run an analysis or simulation or otherwise reproduce a reported
 finding?  Or: can I see in code where a term, formula, scalar unit, algorithm, etc. is modeled or implemented?  Such info might come from inline code annotations or separate files, like with External $\color{#a65450}\mathrm{XML}$ Documentation.
 
 Simultaneously, _text_ &ldquo;indexing&rdquo; under the 
-$\color{#a65450}\mathrm{Pac}/\mathrm{Eq}$ idea 
+$\color{#a65450}\mathrm{Pac{\small{/}}\mathrm{Eq}$ idea 
 is distinct from word-vector-optimized indexes for Academic Search Engines, 
 although better use of code-library metadata could certainly improve 
 engines' accuracy and false-positive/false-negative 
