@@ -198,7 +198,7 @@ $\color{#a65450}\mathrm{DICOM SR}$
 or $\color{#a65450}\mathrm{OCL}$ 
 (Open Concept Lab) are specifications intended for 
 storing and communicating 
-$\color{#a65450}{\small{\}}mathrm{EHR}{/\color{#a65450}\mathrm{EMR}$ 
+$\color{#a65450}{\small{/}}mathrm{EHR}{/\color{#a65450}\mathrm{EMR}$ 
 records and similar clinical data.  Similarly, $\color{#a65450}\mathrm{NIEM}$ 
 is an important standard for legal and governmental data, and 
 $\color{#a65450}\mathrm{IFC}$ systematizes information for 
