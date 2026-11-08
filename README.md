@@ -16,7 +16,9 @@ Research Compendium/Artifact, Reproducible Package, Open Science Capsule, "Whol
 >
 >When publications and code are &ldquo;co-equal&rdquo; then ignoring a research paper's 
 role as a scholarly product diminishes assessment of the library, but failure to 
-properly index and model the library hinders the Findability of the publication.
+properly index and model the library hinders the Findability of the publication. 
+Modeling text/data/code in aggregate expands the Relevance/Reusability 
+&ldquo;surface area&rdquo; of the overall research package.
 
 
 Note that _code_ &ldquo;indexing&rdquo; here need not be as granular as in
@@ -305,7 +307,7 @@ or back-of-book indexes (even for short works like journal articles)
 cells  &mdash;  are all possibilities for a more dynamic/interactive 
 reading experience.
 
-Moreover, (4) considers only _intra_ document interactive features. 
+Moreover, (4) considers only _intra_-document interactive features. 
 Pairing publications with code and data introduces 
 entirely new forms of interop via multi-modal cross-references.
 
@@ -327,7 +329,7 @@ and/or dependency graphs), semantic frames,
 &ldquo;theta grid&rdquo; structures and thematic relations, 
 morphosyntactic decomposition, and other technical details 
 that readers might find helpful to visualize through 
-moving, demonstrative illustrations. 
+animated/demonstrative illustrations. 
 
 * Documents might embed links to audio, visual, digital maps, 
 $\color{#a65450}\mathrm{3D}$ scenes, and other 
