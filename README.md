@@ -35,8 +35,8 @@ quality of publications themselves (even just in those aspects
 specific to being a computational artifact, like 
 queryability and code interop).
 
-Actually, the technological quality of publications can readily 
-be _improved_ by authors who can bring a wider repertoire 
+Actually, the technological quality of publications can 
+be _improved_ by authors who bring a wider repertoire 
 of programming techniques than employed by commercial 
 publishers.  The digital infrastructure engineered even by 
 the most prestigious houses is distressingly limited 
@@ -77,7 +77,7 @@ capabilities like
 
 * Cross-referencing &ndash; jump from data visualization to achors in a $\color{#a65450}\mathrm{PDF}$ or vice-versa
 
-* Running code &ndash; launch code-library procedures from the  &ndash;   viewer
+* Running code &ndash; launch code-library procedures from the $\color{#a65450}\mathrm{PDF}$ viewer
 
 * Document prep &ndash; prior to publication, segments of a manuscript that specifically present technical concepts, methods, or data stand out in importance for double-checking content, proofreading, fixing errors, or custom typesetting conventions
 
@@ -105,7 +105,7 @@ relevance to search terms and concept vectors.
 
 Most representation formats have an extension mechanism.  For 
 example, $\color{#a65450}\mathrm{JATS}$ has Compatibility Meta Model, 
-$\color{#a65450}\mathrm{RO-Crate}$ has 
+$\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ has 
 Profiles, and $\color{#a65450}\mathrm{NIEM}$ has 
 $\color{#a65450}\mathrm{IEPD}$s.  $\color{#a65450}\mathrm{SenPac}$ 
 envisions that Anchoring Publications and archives will often 
@@ -113,15 +113,182 @@ combine multiple extensions/profiles into project-specific
 syntheses (hence _sub_ profiles).  The synthesis could 
 be driven by one (or both) of two factors:
 
-* The project is interdisciplinary, or in general combines vocabularies 
+1. The project is interdisciplinary, or in general combines vocabularies 
 representing two different semantic domains, perhaps within 
-the same technology &mdash; two $\color{#a65450}\mathrm{RO-Crate}$ profiles, 
+the same technology &mdash; two $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ profiles, 
 two $\color{#a65450}\mathrm{XML}$ tag suites, etc.
 
-* The project recognizes vocabulary elements sourcing from different 
+2. The project recognizes vocabulary elements sourcing from different 
 technologies that rarely interoperate, such as scientific 
-data repositories and Electronic Health Records.
+data repositories and Electronic Health Records/Electronic Medical Records.
 
+With respect to (2), only a fraction of established standards 
+were explicitly formulated for academic publishing.  The key 
+modern example is $\color{#a65450}\mathrm{JATS}$, but 
+$\color{#a65450}\mathrm{JATS}$ itself is only tangentially 
+a semantic tagging/annotation language.  For hosting 
+scientific data, $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$, 
+$\color{#a65450}\mathrm{NetCDF}$ and 
+$\color{#a65450}\mathrm{HDF5}$ are common examples.
+
+But many 
+data-representation formats are designed for pragmatic institutional 
+use rather than academic research.  In medicine, for instance, 
+$\color{#a65450}\mathrm{FHIR}$ Fast Healthcare Interoperability Resources, 
+$\color{#a65450}\mathrm{OMOP CDM}$ 
+(Observational Medical Outcomes Partnership &mdash; Common Data Model), 
+$\color{#a65450}\mathrm{DICOM SR}$ 
+(Digital Imaging and Communications in Medicine &mdash; Structured Reporting), 
+or $\color{#a65450}\mathrm{OCL}$ 
+(Open Concept Lab) are specifications intended for 
+storing and communicating $\color{#a65450}\mathrm{EHR}$/$\color{#a65450}\mathrm{EMR}$ 
+records and similar clinical data.  Similarly, $\color{#a65450}\mathrm{NIEM}$ 
+is an important standard for legal and governmental data, and 
+$\color{#a65450}\mathrm{IFC}$ systematizes information for 
+architectural, engineering, and construction 
+contexts.  Similarly, $\color{#a65450}\mathrm{GIS}$ (Geographic Information System) 
+&ldquo;attribute layers&rdquo; are important for civil 
+engineering, government (e.g., Zoning and Land Use ordinances), 
+and any domain whose information includes 
+entities that could be mapped to latitude/longitude coordinates.
+
+In general, data for scholarly research may be acquired within 
+scientific institutions themselves &mdash; as with controlled 
+experiments  &mdash; but there are also many governmental/external 
+information sources which have distinct models and 
+protocols.  An author who intends to republish portions of 
+publicly available data sets from outside academia 
+usually needs to bridge structural gaps between 
+academic and non-academic representations.
+
+Since there are literally billions of potential subject-area combinations 
+for interdisciplinary research, a comprehensive 
+&ldquo;Controlled Vocabulary&rdquo; might have to be 
+customized for each research project.  As examples 
+(including ones cited on this repository's 
+$\underline{\color{#3e2a47}\mathrm{\small{}RedPatch}}$ branch) &mdash; 
+
+* Correlating carcinogens and cancer rates involves 
+$\color{#a65450}\mathrm{GIS}$-coded environment 
+data such as the $\color{#a65450}\mathrm{EPA}$ &ldquo;Toxic 
+Release Inventory&rdquo;; Cheminformatics about 
+individual substances, such as $\color{#a65450}\mathrm{PDB}$ 
+(Protein Data Bank) files; and anonymized 
+$\color{#a65450}\mathrm{EHR}$/$\color{#a65450}\mathrm{EMR}$ 
+records
+
+* Neuroimaging has been used to study substance-abuse 
+disorders, combining image data/annotations with 
+case histories, patient narratives, and sociodemographic info
+
+* Analysis of foster care and child-welfare outcomes may draw 
+from disparate $\color{#a65450}\mathrm{IEPD}$s, or aggregate 
+reporting standards, such as 
+National Electronic Interstate Compact Enterprise 
+($\color{#a65450}\mathrm{NEICE}$), 
+National Youth in Transition Database 
+($\color{#a65450}\mathrm{NYTD}$), and 
+Adoption and Foster Care Analysis and Reporting 
+System ($\color{#a65450}\mathrm{NYTD}$), plus 
+legal and medical documents
+
+* Social Determinants of Health ($\color{#a65450}\mathrm{SDoH}$) 
+research synthesizes medical, economic, and sociodemographic 
+data in formats like $\color{#a65450}\mathrm{PRAPARE}$ 
+(Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences)
+and the $\color{#a65450}\mathrm{FHIR}$ &ldquo;Gravity&rdquo; project
+
+&mdash; which are all community-health related.  The 
+same point can be made vis-a-vis any interdisciplinary 
+science or science/humanities collaboration.
+
+
+**_Implementing Subprofiles_**
+
+Informally these kinds of &ldquo;semantic&rdquo; syntheses may be 
+embodied in lists of concepts, but computationally 
+speaking the process by which informal terminologies become 
+codified as reusable nomenclatures depends on 
+specific protocol choices (plus the actual data format 
+used &mdash; e.g., $\color{#a65450}\mathrm{XML}$ 
+vs. $\color{#a65450}\mathrm{JSON}$ vs. 
+custom grammars).  It is therefore appropriate 
+to talk about subprofile _engineering_: developing 
+project-specific machine-readable vocabularies is 
+a nontrivial process.
+
+There are, however, multiple practical benefits such as 
+
+1. Pre-publication document prep: annotations can help 
+authors, editors, proofreaders, indexers, typesetters, and 
+compositors find specific manuscript locations &mdash; often, 
+those governed by special vocabularies are also 
+sites in a publication requiring extra editing, 
+double-checking, special font/symbol handling, multiple 
+citations, and so forth.
+
+2. Tools helpful to those curating relatively small document 
+collections or bibliographic databases, such as Open-Access journals, 
+research collaborations, or independent scholars &mdash; 
+semantic tags/annotations/metadata that are too granular 
+for large-scale search engines may be 
+fine for less heavily optimized indexes 
+
+3. Document reuse  &mdash; if a publication becomes 
+source material for a future manuscript, tags/annotations 
+may help the new author utilize the prior 
+work most effectively
+
+4. Making documents interactive  &mdash; whereas $\color{#a65450}\mathrm{PDF}$ 
+in particular has historically been a static format, new ideas such as 
+Semantic Reader's (a $\color{#a65450}\mathrm{PDF}$ viewer from 
+Semantic Scholar/Allen Institute for $\color{#a65450}\mathrm{AI}$) 
+Goal/Method/Result &ldqup;skimming&rdqup; feature, with 
+colored highlight overlays, and clickable glossaries or 
+back-of-book indexes (even for short works like journal articles),
+as well as dynamic graphics similar to Computational Notebook 
+cells, are all possibilities for a more dynamic/interactive 
+reading experience.
+
+Moreover, (4) considered only _intra_ document interactive features. 
+Pairing publications with code and data introduces 
+entirely new forms of interop via multi-modal cross-references.
+
+**_Interop between document viewers and other code-library components_**
+
+Here are just a few examples: 
+
+* Consider $\color{#a65450}\mathrm{XYZ}$ to latitude/longitude 
+conversion ($\color{#a65450}\mathrm{XYZ}$ is x/y/zoom, a geospatial coordinate system).  We could ask: where's the first sentence in the publication where $\color{#a65450}\mathrm{XYZ}$ is defined?  We could also ask: find the procedure in the code library that takes $\color{#a65450}\mathrm{XYZ}$ input and generates an equivalent lat/lon pair.
+
+* Consider region-of-interest feature-vector profiles for medical imaging.  We could ask: list the distinct Texture Segmentation methods reviewed in the publication (a list of sentences, citations, references, etc.).  We could also ask: list the methods and classes in the code library that implement Texture Segmentation algorithms. 
+
+* Consider a linguistics paper that includes a list of sample sentences 
+(a common technique is to use real or hypothetical sentences to 
+demonstrate specific semantic, syntactic, or pragmatic claims). 
+The analysis could be enhanced with dynamic graphics 
+illustrating parsing (with phrase structure 
+and/or dependency graphs), semantic frames, 
+&ldquo;theta grid&rdquo; structures and thematic relations, 
+morphosyntactic decomposition, and other technical details 
+that readers might find helpful to visualize through 
+moving, demonstrative illustrations 
+
+* Documents might embed links to audio, visual, digital maps, 
+$\color{#a65450}\mathrm{3D}$ scenes, and other 
+multimedia content; with proper tooling these 
+supplemental materials may be cross-referenced 
+with one another (for instance, geotagging 
+video frames) and back to the relevant 
+sentences/paragraphs in the Anchor Publication.
+
+
+ 
+
+
+
+
+ 
 
 
 
