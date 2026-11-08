@@ -92,7 +92,11 @@ And also the difficulty: existing technology rarely balances
 $\color{#a65450}\mathrm{OS}$ and $\color{#a65450}\mathrm{OA}$ on equal 
 terms.  There is therefore a structural bias against 
 $\color{#a65450}\mathrm{OS}\\&\mathrm{OA}$ 
-resources which may not be evident 
+resources which may be unintentional, and may not be evident 
+from a purely technical perspective.  But certainly Academic Search Engines 
+do not leverage the techniques by which users find relevant 
+code libraries even when those libraries contain academic publications 
+(and vice-versa). 
 
 ---
 
@@ -159,7 +163,7 @@ Most representation formats have an extension mechanism.  For
 example, $\color{#a65450}\mathrm{JATS}$ has Compatibility Meta Model, 
 $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$ has 
 Profiles, and $\color{#a65450}\mathrm{NIEM}$ has 
-$\color{#a65450}\mathrm{IEPD}\color{black}s$.  $\color{#a65450}\mathrm{SenPac}$ 
+$\color{#a65450}\mathrm{IEPD}\color{black}\textnormal{s}$.  $\color{#a65450}\mathrm{SenPac}$ 
 envisions that Anchoring Publications and archives will often 
 combine multiple extensions/profiles into project-specific 
 syntheses (hence _sub_ profiles).  The synthesis could 
