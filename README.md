@@ -181,7 +181,7 @@ data repositories and Electronic Health Records/Electronic Medical Records.
 With respect to (2), only a fraction of established standards 
 were explicitly formulated for academic publishing.  The key 
 modern example is $\color{#a65450}\mathrm{JATS}$, but 
-$\color{#a65450}\mathrm{JATS}$ itself is only tangentially 
+$\color{#a65450}\mathrm{JATS}$ is only tangentially 
 a semantic tagging/annotation language.  For hosting 
 scientific data, $\color{#a65450}\mathrm{RO}\text{-}\mathrm{Crate}$, 
 $\color{#a65450}\mathrm{NetCDF}$ and 
@@ -197,7 +197,8 @@ $\color{#a65450}\mathrm{DICOM SR}$
 (Digital Imaging and Communications in Medicine &mdash; Structured Reporting), 
 or $\color{#a65450}\mathrm{OCL}$ 
 (Open Concept Lab) are specifications intended for 
-storing and communicating $\color{#a65450}\mathrm{EHR}$/$\color{#a65450}\mathrm{EMR}$ 
+storing and communicating 
+$\color{#a65450}{\small{\}}mathrm{EHR}{/\color{#a65450}\mathrm{EMR}$ 
 records and similar clinical data.  Similarly, $\color{#a65450}\mathrm{NIEM}$ 
 is an important standard for legal and governmental data, and 
 $\color{#a65450}\mathrm{IFC}$ systematizes information for 
