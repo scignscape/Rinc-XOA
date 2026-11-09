@@ -380,8 +380,8 @@ chain is reasonable in the abstract).
 This is the kind of negotiation between concepts and terminology 
 that is an essential role for Academic Search Engines, 
 and indexing/query evaluation algorithms should be optimized 
-to identify patterns like `Social Market` being 
-closer than `Worker Experience` to a conceptual 
+to identify patterns like &ldquo;Social Market&rdquo; being 
+closer than &ldquo;Worker Experience&rdquo; to a conceptual 
 attractor around left-leaning economic theory.  It's also 
 a good example of how indexing fails.  The semantic 
 weight of `Social Market Economy` or 
@@ -391,7 +391,7 @@ as phrasal noun-lexemes that should be indexed
 as such (which means, for instance, that there is no 
 match when broken by punctuation).  Their salience as a 
 unit is witnessed by their appearance in titles and section 
-headings, not just regular text, but should be 
+headings, not just regular text, but should be nevertheless 
 reinforced by authors' explicit tagging.
 
 The problem 
