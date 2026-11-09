@@ -369,13 +369,13 @@ For instance, suppose I wanted to examine
 Worker Experience (in my hypothetical sense) 
 in relation to Techno-Keynesianism or 
 Modern Monetary Theory.  A proper search query 
-wouldn't be &ldquo;Techno-Keynesianism Worker Experience&rdquo; 
-or &ldquo;Modern Monetary Theory Worker Experience&rdquo;; 
-it would be &ldquo;Techno-Keynesianism Social Market&rdquo; 
-or &ldquo;Modern Monetary Theory Social Market&rdquo;.  Of course, 
+wouldn't be &ldquo;Techno-Keynesianism and Worker Experience&rdquo; 
+or &ldquo;Modern Monetary Theory and Worker Experience&rdquo;; 
+it would be &ldquo;Techno-Keynesianism and Social Market Ecnomy&rdquo; 
+or &ldquo;Modern Monetary Theory and Social Market Ecnomy&rdquo;.  Of course, 
 that's hardly self-evident (and the $\color{#a65450}\mathrm{UX}$ 
 $\to$ $\color{#a65450}\mathrm{DX}$ $\to$ $\color{#a65450}\mathrm{WX}$ 
-is reasonable in the abstract).
+chain is reasonable in the abstract).
 
 This is the kind of negotiation between concepts and terminology 
 that is an essential role for Academic Search Engines, 
