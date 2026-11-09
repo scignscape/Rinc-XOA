@@ -371,8 +371,8 @@ in relation to Techno-Keynesianism or
 Modern Monetary Theory.  A proper search query 
 wouldn't be &ldquo;Techno-Keynesianism and Worker Experience&rdquo; 
 or &ldquo;Modern Monetary Theory and Worker Experience&rdquo;; 
-it would be &ldquo;Techno-Keynesianism and Social Market Ecnomy&rdquo; 
-or &ldquo;Modern Monetary Theory and Social Market Ecnomy&rdquo;.  Of course, 
+it would be &ldquo;Techno-Keynesianism and Social Market Economy&rdquo; 
+or &ldquo;Modern Monetary Theory and Social Market Economy&rdquo;.  Of course, 
 that's hardly self-evident (and the $\color{#a65450}\mathrm{UX}$ 
 $\to$ $\color{#a65450}\mathrm{DX}$ $\to$ $\color{#a65450}\mathrm{WX}$ 
 chain is reasonable in the abstract).
@@ -410,12 +410,21 @@ more left-wing while &ldquo;Producerism&rdquo; skews right;
 totalitarian.  Nor is it self-evident that the most 
 radical flank of academic economics would call 
 itself &ldquo;Modern Monetary Theory&rdquo; and 
-find its spiritual home in Kansas City. 
+find its spiritual home in Kansas City.
 
+Authors can thereby map out concept/terminology 
+conventions by trial and error, such as repeated 
+phrase queries: `Techno-Keynesianism and Science Funding`; 
+`Techno-Keynesianism and Universal Basic Income`;
+`Research Labs as Non-Commercial Entrepreneurship`, 
+until within the results something starts to feel like (in academic dialects) 
+a lexical unit more than an ad-hoc phrase (an impression then 
+hopefully confirmed by appending `filetype:pdf`).
+ 
 Some of these trends might be get baked in to 
-search repositories $\color{#a65450}\mathrm{SVM}$ 
+search repositories, $\color{#a65450}\mathrm{SVM}$ 
 (Support Vector Machine) and $\color{#a65450}\mathrm{PCA}$ 
-(Principle Component Analysis) style but we as authors 
+(Principle Component Analysis) style, but we as authors 
 can hardly count on that.  So, let us tag.
 
 
