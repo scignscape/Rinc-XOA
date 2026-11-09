@@ -407,7 +407,7 @@ can be very subtle: &ldquo;Producer-Centered&rdquo; is apparently
 more left-wing while &ldquo;Producerism&rdquo; skews right; 
 &ldquo;Social Market Economy&rdquo; is liberal while 
 &ldquo;Socialist Market Economy&rdquo; skews 
-totalitarian.  Nor is it self-evident that the most 
+totalitarian (shout out to Joshua Wong).  Nor is it self-evident that the most 
 radical flank of academic economics would call 
 itself &ldquo;Modern Monetary Theory&rdquo; and 
 find its spiritual home in Kansas City.
@@ -439,8 +439,40 @@ can hardly count on that.  So, let us tag.
 ## Implementations 
 
 
+In the context of the proposed $\color{#a65450}\mathrm{OS4OA}$ 
+Working Group, I recommend discussions to be organized 
+around existing technologies such as $\color{#a65450}\mathrm{PDF}$ 
+viewers, indexers and search engines, document markup 
+languages, query $\color{#a65450}\mathrm{API}\color{black}\textnormal{s}$ 
+and so forth.  With respect to the current 
+$\underline{\color{#3e2a47}\mathrm{\small{}Rinc-XOA}}$ I have 
+no code specifically for $\color{#a65450}\mathrm{SerPac}$ 
+at the moment, except for noting that 
+$\underline{\color{#3e2a47}\mathrm{\small{}GTagML}}$ provides a potential 
+input language.
 
+More generally, most of the components envisaged in 
+this repository are organized around 
+$\underline{\color{#3e2a47}\mathrm{\small{}Qynviper}}$ modules. 
+For reasons discussed in other branches, I believe 
+$\color{#a65450}\mathrm{Qynviper}$ is a good serialization 
+format in lieu of (and generated from, or generator of) 
+$\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{JSON}$ 
+and so forth.  The $\underline{\color{#3e2a47}\mathrm{\small{}OTQR}}$
+runtime classes are potential Virtual Machines for a 
+text-oriented Query Evaluator similarly consistent with the 
+$\color{#a65450}\mathrm{SenPac}$ goals.
 
+$\color{#a65450}\mathrm{OTQR}$ is still under development, 
+and any current code is not on a separate branch 
+but under $\color{#a65450}\mathrm{GTagML}$.  If anyone 
+is curious about a more well-developed 
+(albeit still prototype-stage) application, the best 
+current examples are $\color{#a65450}\mathrm{EHR}$ and 
+diagnostic-imaging related within the 
+$\color{#a65450}\mathrm{RedPatch}$ branch 
+(viz., <https://github.com/ScignScape/Rinc-XOA/tree/RedPatch>). 
+ 
 
 
 
