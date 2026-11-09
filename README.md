@@ -20,7 +20,6 @@ properly index and model the library hinders the Findability of the publication.
 Modeling text/data/code in aggregate expands the Relevance/Reusability 
 &ldquo;surface area&rdquo; of the overall research package.
 
-
 Note that _code_ &ldquo;indexing&rdquo; here need not be as granular as in
 technical contexts such as the Language Server Protocol (e.g., need 
 not entail a full $\color{#a65450}\mathrm{AST}$ parse).  For 
@@ -341,10 +340,85 @@ sentences/paragraphs in the Anchor Publication.
 
 **_Indexing text, code, and data_**
 
+Terminology evolves to fill a conceptual niche.  For 
+example, $\color{#a65450}\mathrm{UX}$ (User Experience) 
+bequethed $\color{#a65450}\mathrm{DX}$ (Developer Experience) 
+and then, apparently, $\color{#a65450}\mathrm{WX}$ 
+(Worker Experience).  Supposedly, 
+though, &ldquo;Worker Experience&rdquo; angles 
+away from the connotations of its two predecessors. 
+The conceptual niche here is that quality of 
+life is determined not only by salary earned 
+from work but by the positive experience 
+of meaningful and rewarding labor.  This 
+idea should factor into worker's-rights 
+initiatives such as raising the minimum wage.
+
+As far as I can tell this idea is more 
+commonly captured by terms such as &ldquo;Social Market Economy&rdquo; 
+&mdash; prioritizing workers' quality of life without 
+seeking to unnecessarily restrict the autonomy of 
+private enterprise.  Someone who knows more 
+about computers than economics (like the guy writing 
+this Readme) might guess that &ldquo;Worker Experience&rdquo; 
+(by analogy to $\color{#a65450}\mathrm{UX}$ and 
+$\color{#a65450}\mathrm{DX}$) is a good 
+synopsis of this idea.  But that intuition would 
+be unhelpful for preparing an actual research paper. 
+For instance, suppose I wanted to examine 
+Worker Experience (in my hypothetical sense) 
+in relation to Techno-Keynesianism or 
+Modern Monetary Theory.  A proper search query 
+wouldn't be &ldquo;Techno-Keynesianism Worker Experience&rdquo; 
+or &ldquo;Modern Monetary Theory Worker Experience&rdquo;; 
+it would be &ldquo;Techno-Keynesianism Social Market&rdquo; 
+or &ldquo;Modern Monetary Theory Social Market&rdquo;.  Of course, 
+that's hardly self-evident (and the $\color{#a65450}\mathrm{UX}$ 
+$\to$ $\color{#a65450}\mathrm{DX}$ $\to$ $\color{#a65450}\mathrm{WX}$ 
+is reasonable in the abstract).
+
+This is the kind of negotiation between concepts and terminology 
+that is an essential role for Academic Search Engines, 
+and indexing/query evaluation algorithms should be optimized 
+to identify patterns like &ldquo;Social Market&rdquo; being 
+closer than &ldquo;Worker Experience&rdquo; to a conceptual 
+attractor around left-leaning economic theory.  It's also 
+a good example of how indexing fails.  The semantic 
+weight of &ldquo;Social Market Economy&rdquo; or 
+&ldquo;Modern Monetary Theory&rdquo; is borne by these 
+compounds becoming entrenched by repeated use, functioning 
+as phrasal noun-lexemes that should be indexed 
+as such (which means, for instance, that there is no 
+match when broken by punctuation).  Their salience as a 
+unit is witnessed by their appearance in titles and section 
+headings, not just regular text, but should be 
+reinforced by authors' explicit tagging.  The problem 
+is (what perhaps I may call) &ldquo;false-positive intuition&rdquo;, 
+or speculation that a construction might be entrenched 
+when in fact it is not (such as &ldquo;Worker Experience&rdquo;, 
+at least as I imagined it).  The point is that someone 
+doing research often has to learn the terminology, so 
+they may not know that &ldquo;Social Market Economy&rdquo; 
+is the term of art and &ldquo;Nonprofit Capitalism&rdquo; 
+or &ldquo;Producer-Centered&rdquo; is less so.  Terminology 
+can be very subtle: &ldquo;Producer-Centered&rdquo; is apparently 
+more left-wing while &ldquo;Producerism&rdquo; is right; 
+&ldquo;Social Market Economy&rdquo; is liberal while 
+&ldquo;Socialist Market Economy&rdquo; skews more 
+totalitarian.  Nor is it self-evident that the most 
+radical flank of academic economics would call 
+itself &ldquo;Modern Monetary Theory&rdquo; and 
+find its spiritual home in Kansas City. 
+
+Some of these trends might be get baked in to 
+search repositories $\color{#a65450}\mathrm{SVM}$ 
+(Support Vector Machine) and $\color{#a65450}\mathrm{PCA}$ 
+(Principle Component Analysis) style but we as authors 
+can hardly count on that.  So, let us tag.
 
 
 
- 
+
 
 
 
