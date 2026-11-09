@@ -101,7 +101,7 @@ code libraries even when those libraries contain academic publications
 
 ---
 
-## Manuscript Representation
+### Manuscript Representation
 
 $\color{#a65450}\mathrm{SenPac}$ assumes that the Anchoring Publication 
 is provided via machine-readable representations as well as 
@@ -158,7 +158,7 @@ relevance to search terms and concept vectors.
 
 ---
 
-## &ldquo;Subprofile Engineering&rdquo;
+### &ldquo;Subprofile Engineering&rdquo;
 
 Most representation formats have an extension mechanism.  For 
 example, $\color{#a65450}\mathrm{JATS}$ has Compatibility Meta Model, 
@@ -427,6 +427,10 @@ search repositories, $\color{#a65450}\mathrm{SVM}$
 (Principle Component Analysis) style, but we as authors 
 can hardly count on that.  So, let us tag.
 
+
+--- 
+
+## Implementations 
 
 
 
