@@ -368,11 +368,11 @@ be unhelpful for preparing an actual research paper.
 For instance, suppose I wanted to examine 
 Worker Experience (in my hypothetical sense) 
 in relation to Techno-Keynesianism or 
-Modern Monetary Theory.  A proper search query 
-wouldn't be &ldquo;Techno-Keynesianism and Worker Experience&rdquo; 
-or &ldquo;Modern Monetary Theory and Worker Experience&rdquo;; 
-it would be &ldquo;Techno-Keynesianism and Social Market Economy&rdquo; 
-or &ldquo;Modern Monetary Theory and Social Market Economy&rdquo;.  Of course, 
+Modern Monetary Theory or Universal Basic Income.  A proper search query 
+wouldn't be `Techno-Keynesianism and Worker Experience` 
+or `Modern Monetary Theory and Worker Experience`; 
+it would be `Techno-Keynesianism and Social Market Economy` 
+or `Modern Monetary Theory and Social Market Economy`.  Of course, 
 that's hardly self-evident (and the $\color{#a65450}\mathrm{UX}$ 
 $\to$ $\color{#a65450}\mathrm{DX}$ $\to$ $\color{#a65450}\mathrm{WX}$ 
 chain is reasonable in the abstract).
@@ -380,12 +380,12 @@ chain is reasonable in the abstract).
 This is the kind of negotiation between concepts and terminology 
 that is an essential role for Academic Search Engines, 
 and indexing/query evaluation algorithms should be optimized 
-to identify patterns like &ldquo;Social Market&rdquo; being 
-closer than &ldquo;Worker Experience&rdquo; to a conceptual 
+to identify patterns like `Social Market` being 
+closer than `Worker Experience` to a conceptual 
 attractor around left-leaning economic theory.  It's also 
 a good example of how indexing fails.  The semantic 
-weight of &ldquo;Social Market Economy&rdquo; or 
-&ldquo;Modern Monetary Theory&rdquo; is borne by these 
+weight of `Social Market Economy` or 
+`Modern Monetary Theory` or `Universal Basic Income` is borne by these 
 compounds becoming entrenched by repeated use, functioning 
 as phrasal noun-lexemes that should be indexed 
 as such (which means, for instance, that there is no 
