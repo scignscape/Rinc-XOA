@@ -392,7 +392,9 @@ as such (which means, for instance, that there is no
 match when broken by punctuation).  Their salience as a 
 unit is witnessed by their appearance in titles and section 
 headings, not just regular text, but should be 
-reinforced by authors' explicit tagging.  The problem 
+reinforced by authors' explicit tagging.
+
+The problem 
 is (what perhaps I may call) &ldquo;false-positive intuition&rdquo;, 
 or speculation that a construction might be entrenched 
 when in fact it is not (such as &ldquo;Worker Experience&rdquo;, 
@@ -402,9 +404,9 @@ they may not know that &ldquo;Social Market Economy&rdquo;
 is the term of art and &ldquo;Nonprofit Capitalism&rdquo; 
 or &ldquo;Producer-Centered&rdquo; is less so.  Terminology 
 can be very subtle: &ldquo;Producer-Centered&rdquo; is apparently 
-more left-wing while &ldquo;Producerism&rdquo; is right; 
+more left-wing while &ldquo;Producerism&rdquo; skews right; 
 &ldquo;Social Market Economy&rdquo; is liberal while 
-&ldquo;Socialist Market Economy&rdquo; skews more 
+&ldquo;Socialist Market Economy&rdquo; skews 
 totalitarian.  Nor is it self-evident that the most 
 radical flank of academic economics would call 
 itself &ldquo;Modern Monetary Theory&rdquo; and 
