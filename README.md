@@ -445,8 +445,8 @@ around existing technologies such as $\color{#a65450}\mathrm{PDF}$
 viewers, indexers and search engines, document markup 
 languages, query $\color{#a65450}\mathrm{API}\color{black}\textnormal{s}$ 
 and so forth.  With respect to the current 
-$\underline{\color{#3e2a47}\mathrm{\small{}Rinc-XOA}}$ I have 
-no code specifically for $\color{#a65450}\mathrm{SerPac}$ 
+$\underline{\color{#3e2a47}\mathrm{\small{}Rinc-XOA}}$ repository I have 
+no code specifically for $\color{#a65450}\mathrm{SenPac}$ 
 at the moment, except for noting that 
 $\underline{\color{#3e2a47}\mathrm{\small{}GTagML}}$ provides a potential 
 input language.
