@@ -412,16 +412,22 @@ radical flank of academic economics would call
 itself &ldquo;Modern Monetary Theory&rdquo; and 
 find its spiritual home in Kansas City.
 
-Authors can thereby map out concept/terminology 
+Authors must thereby map out concept/terminology 
 conventions by trial and error, such as repeated 
 phrase queries: `Techno-Keynesianism and Science Funding`; 
 `Techno-Keynesianism and Universal Basic Income`;
 `Research Labs as Non-Commercial Entrepreneurship`, 
 until within the results something starts to feel like (in academic dialects) 
 a lexical unit more than an ad-hoc phrase (an impression then 
-hopefully confirmed by appending `filetype:pdf`).
+hopefully confirmed by appending `filetype:pdf`).  The other 
+route is reading a phrase in your sources, but researchers 
+arguably rely on reading materials less now than in the 
+past (i.e., scholars engage more in hands-on learning 
+like writing computer code and/or non-academic ventures 
+like trying to get laid). 
  
-Some of these trends might be get baked in to 
+With respect to semantic similarity vectors, some of the 
+entrenchment trends might be get baked in to 
 search repositories, $\color{#a65450}\mathrm{SVM}$ 
 (Support Vector Machine) and $\color{#a65450}\mathrm{PCA}$ 
 (Principle Component Analysis) style, but we as authors 
