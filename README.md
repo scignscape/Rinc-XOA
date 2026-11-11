@@ -230,8 +230,10 @@ elements such as `<named-content>` or `<styled-content>`.
 primary sources in $\color{#a65450}\mathrm{XML}$ directly, 
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
-converts to $\color{#a65450}\mathrm{XML}$ and 
-<img src=".github/assets/latex-light.svg" height="15" style="vertical-align: -2px;" alt="LaTeX">
+converts to $\color{#a65450}\mathrm{XML}$ 
+and <img src=".github/assets/latex-light.svg#gh-light-mode-only" 
+height="14" alt="LaTeX"><img 
+src=".github/assets/latex-dark.svg#gh-dark-mode-only" height="14" alt="LaTeX"> 
 and is more reliable 
 when both formats are desired than mapping 
 $\Latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
