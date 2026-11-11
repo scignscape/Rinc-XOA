@@ -20,7 +20,7 @@ document-viewer features such as glossaries, Goal/Method/Result
 highlights, and interactive cross-references with code libraries 
 and data sets.
 >
-> Paw/Prints implicitly assumes that the canonical units of 
+> Paw:Prints implicitly assumes that the canonical units of 
 research dissemination are not single publication files but integrated 
 text/data/code resources.  In some cases the non-textual content 
 may simply be document-prep artifacts, such as $\color{#a65450}\mathrm{JATS}$ 
@@ -28,24 +28,21 @@ $\color{#a65450}\mathrm{XML}$, but these are still useful assets
 for transparency and reuse.  In other cases, data and/or code is 
 intrinsic to the scholarly contribution (not merely &ldquo;Supplemental Materials&rdquo; 
 or raw data files deposited to satisfy Data Availability requirements), 
-and code details should be factored in for &ldquo;Ecosystem Relevance&rdquo; 
+and code details should be factored in for &ldquo;Ecosystem Relevance&rdquo;,
 separate and apart from the project's thematic axes.  Even 
 in the latter scenario, however, we should assume that 
 information spaces and code libraries are &ldquo;Publication-Anchored&rdquo;: 
 the project is centered around a book/article as a fully-developed unit of 
 scholarly research (not just an API Reference, code overview, or documentation).
 >
-One mission for the proposed WG is to present and evaluate OS components that can make OA authors more productive.  Other initiatives already focus on how FOSS supports OA via infrastructure and tooling.  But this WG also addresses the question one step further: how can tools for publication development, view, indexing, and search engines be modified to counter biases against "OS&OA" (Open Source and Open Access)?  How to model the contribution and originality of OS&OA projects whose merit is incompletely captured via each paradigm in isolation (plus peer review, 
-impact factor, and other metrics)?  How to amplify the visibility of OS&OA-principled research?
->
->The WG will examine platforms that can generically be called "Publication-Ancored" code libraries: Executable Research Objects/Articles, 
-Research Compendium/Artifact, Reproducible Package, Open Science Capsule, "Whole Tales", StoryMaps, Computational Canvas.  The key detail is a kind of co-equal relationship between an Anchoring Publication and a Code Library (Pac/Eq: Publications and Code as Co-Equal).  The publication itself is a fully-developed unit of scholarly research (not just an overview or documentation); and the code library is intrinsic to the research contribution (not just supplemental materials or raw files satisfying Data Availability requirements).  Conventional tooling is not able to properly address both sides of this co-equal relationship (note that existing indexing algorithms target text or code but not both).
->
->When publications and code are &ldquo;co-equal&rdquo; then ignoring a research paper's 
+>Open Science in general represents a synthesis of 
+Open Source and Open Access ($\color{#a65450}\mathrm{OS&OA}$), but manuscript-prep 
+tooling is more siloed: components usually work with text _or_ code but not both. 
+This deficit can be remedied via personalization.  When publications and code are &ldquo;co-equal&rdquo; then ignoring a research paper's 
 role as a scholarly product diminishes assessment of the library, but failure to 
-properly index and model the library hinders the Findability of the publication. 
-Modeling text/data/code in aggregate expands the Relevance/Reusability 
-&ldquo;surface area&rdquo; of the overall research package.
+properly index and model the library hinders the Discoverability of the publication. 
+Modeling text/data/code in aggregate expands the Relevance and Findable/Reusable 
+&ldquo;surface area&rdquo; of the overall package.
 
 Note that _code_ &ldquo;indexing&rdquo; here need not be as granular as in
 technical contexts such as the Language Server Protocol (e.g., need 
