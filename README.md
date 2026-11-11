@@ -27,13 +27,14 @@ may simply be document-prep artifacts, such as $\color{#a65450}\mathrm{JATS}$
 $\color{#a65450}\mathrm{XML}$, but these are still useful assets 
 for transparency and reuse.  In other cases, data and/or code is 
 intrinsic to the scholarly contribution (not merely &ldquo;Supplemental Materials&rdquo; 
-or raw data files deposited to satisfy Data Availability requirements), 
-and code details should be factored in for &ldquo;Ecosystem Relevance&rdquo;,
+or raw data files deposited to satisfy Data Availability requirements) 
+&mdash; and code details should be factored in for &ldquo;Ecosystem Relevance&rdquo;,
 separate and apart from the project's thematic axes.  Even 
 in the latter scenario, however, we should assume that 
 information spaces and code libraries are &ldquo;Publication-Anchored&rdquo;: 
 the project is centered around a book/article as a fully-developed unit of 
-scholarly research (not just an API Reference, code overview, or documentation).
+scholarly research (not just an API Reference, code overview, or 
+class/function documentation).
 >
 >Open Science in general represents a synthesis of 
 Open Source and Open Access ($\color{#a65450}\mathrm{OS\\&OA}$), but manuscript-prep 
@@ -43,6 +44,20 @@ role as a scholarly product diminishes assessment of the library, but failure to
 properly index and model the library hinders the Discoverability of the publication. 
 Modeling text/data/code in aggregate expands the Relevance and Findable/Reusable 
 &ldquo;surface area&rdquo; of the overall package.
+>
+>The term &ldquo;Ecosystem Relevance&rdquo; within software engineering/code indexing 
+embodies how the relevance of one code library for another is determined 
+by local reusability rather than conceptual alignment: _interoperability_ is more 
+important than _similarity_.  A scientific project should therefore try to 
+optimize relevance scores by annotations clarifying how specific code 
+elements may be reused.  More generally, however, metrics of &ldquo;Ecosystem Relevance&rdquo; 
+(in lieu of Semantic Vectors) should be curated within text representation 
+as well.  Academic theories are _ecosystems_ as well as _topics_: the 
+relevance for one publication on another lies less with source reputation or 
+peer review than with compatibility between one argument's theoretical 
+machinery and another.  This factor &mdash; important to the humanities 
+as well as formal sciences &mdash; often seems overlooked by 
+conventional peer review and academic indexing. 
 
 Note that _code_ &ldquo;indexing&rdquo; here need not be as granular as in
 technical contexts such as the Language Server Protocol (e.g., need 
