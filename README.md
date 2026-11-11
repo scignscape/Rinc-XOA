@@ -231,11 +231,7 @@ primary sources in $\color{#a65450}\mathrm{XML}$ directly,
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
 converts to $\color{#a65450}\mathrm{XML}$ and 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/latex-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset=".github/assets/latex-light.svg">
-  <img src=".github/assets/latex-light.svg" height="15" style="vertical-align: -2px;" alt="LaTeX">
-</picture>
+<img src=".github/assets/latex-light.svg" height="15" style="vertical-align: -2px;" alt="LaTeX">
 and is more reliable 
 when both formats are desired than mapping 
 $\Latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
