@@ -231,13 +231,13 @@ primary sources in $\color{#a65450}\mathrm{XML}$ directly,
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
 converts to $\color{#a65450}\mathrm{XML}$ and 
-$\latex$ and is more reliable 
+$\Latex$ and is more reliable 
 when both formats are desired than mapping 
-$\latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
+$\Latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
 However, scientific writers will usually prefer 
 technically extennded forms of Markdown such as 
 $\color{#a65450}\mathrm{Quarto}$ (`.qmd`) or 
-$\color{#a65450}\mathrm{Typst}$.  It is certianly 
+$\color{#a65450}\mathrm{Typst}$.  It is certainly 
 possible to modify open-source Markdown parsers 
 to incorporate syntactic elements uniquely engineered 
 for the author's matrix of subdisciplines.
@@ -260,7 +260,7 @@ incorporate the type associations, shape constraints,
 and deserialization protocols inherit in the raw data.
 
 4. Document Viewers (e.g., $\color{#a65450}\mathrm{PDF}$): 
-When a research package is desseminated via a code library, 
+When a research package is disseminated via a code library, 
 it is a relatively straightforward step to include 
 the source files for a customized $\color{#a65450}\mathrm{PDF}$ 
 viewer that can be provisioned custom functionality 
@@ -271,11 +271,48 @@ code libraries, and subdiscipline-matrix vocabularies.
 **_Reuse, Indexing, GUI_** (the &ldquo;Prints&ldquo;)
 
 With respect to the above breakdown of how components may be 
-author-personalized, 
+author-personalized, the use cases appear to 
+sort into three general categories.
+
+* _Reuse_ &ndash; Author's $\color{#a65450}\mathrm{OS\\&OA}$ 
+packages are not just isolated $\color{#a65450}\mathrm{PDF}$ 
+files, but integrated code and metadata packages.  At a 
+minimum this entails potential quotation and citation of 
+text content, but reuse also extends to code and data.  A framework 
+such as $\color{#a65450}\mathrm{Paw:Prints}$ should make 
+reuse easy in these various facets; for example, 
+a manuscript package can be a self-contained $\color{#a65450}\mathrm{Git}$ 
+repository both for document-prep pre-submission or 
+for future reuse post-publication (with the caveat that authors 
+should feel confident in distributing a Publication-Anchored 
+Code Library _as_ the publishing process itself).
+
+* _Indexing_ &ndash; Perhaps in the future Academic Search Engines 
+will better model &ldquo;Ecosystem Relevance&rdquo; both in the 
+programming and the metatheoretic sense.  Until then, 
+personalized indexing may not imply that leading engines 
+will ingest project-specific tags or annotations.  Nonetheless, 
+projects should certainly build &ldquo;local&rdquo; 
+indexes for internal use (and re-use).
+
+* _GUI_ &ndash; Generic document (e.g., $\color{#a65450}\mathrm{PDF}$) 
+viewers typically will not read custom tags (even if they 
+could be translated to entities like $\color{#a65450}\mathrm{PDF}$ 
+comment boxes), and authors have no control over interactive 
+features like Semantic Reader's Goal/Method/Result 
+highlights.  But the technology driving those kinds of 
+&ldquo;skimming&rdquo; capabilities can also be implemented 
+in ways that rely on author input, including via comment 
+boxes and other intra-document annotations (although 
+&ldquo;sidecar&rdquo; tags with page-coordinate pointers 
+are also possible).  Viewers may also be personalized 
+for non-textual assets such as data sets, audio, video, 
+or $\color{#a65450}\mathrm{3D}$ graphics.
+
 
 ---
 
-### &ldquo;Subprofile Engineering&rdquo;
+### The Idea of &ldquo;Subprofile Engineering&rdquo;
 
 Most representation formats have an extension mechanism.  For 
 example, $\color{#a65450}\mathrm{JATS}$ has Compatibility Meta Model, 
@@ -548,7 +585,9 @@ entrenchment trends might be get baked in to
 search repositories, $\color{#a65450}\mathrm{SVM}$ 
 (Support Vector Machine) and $\color{#a65450}\mathrm{PCA}$ 
 (Principle Component Analysis) style, but we as authors 
-can hardly count on that.  So, let us tag.
+can hardly count on that.
+
+Long story short, wrangling terminology is an important part of research, and one must always be on alert for connotations and context.  For instance, in linguistics, &ldquo;Valency Frame&rdquo; implies syntax and &ldquo;Thematic Relations&rdquo; implies semantics.  &ldquo;Theta Grid&rdquo; seems to straddle the two, but only with respect to core verb-arguments.  I like &ldquo;Thematic Grid&rdquo; as a kind of compromise between all three, but I think that terminology is much less common (but not so uncommon as to be completely absent from the literature).  On the other hand, a reasonable extension like &ldquo;Subjectivized Thematic Grid&rdquo; is unheard-of.  That cuts both ways, because _1)_ someone could imply a vast Langacker-Tesniere synthesis with just three words, but _2)_ the author can't be sure that even expert readers will realize what they're doing.  These are the sort of terminological matrices that call for annotations, maybe even back-of-paper glossaries.
 
 
 --- 
