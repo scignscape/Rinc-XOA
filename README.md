@@ -52,7 +52,9 @@ important than _similarity_.  A scientific project should therefore try to
 optimize relevance scores by annotations clarifying how specific code 
 elements may be reused.  More generally, however, metrics of &ldquo;Ecosystem Relevance&rdquo; 
 (in lieu of Semantic Vectors) should be curated within text representation 
-as well.  Academic theories are _ecosystems_ as well as _topics_: the 
+as well &mdash; which can be done in a lightweight manner by tagging 
+the dialogic role of citations, quotes, special terms, etc.  Academic 
+theories are _ecosystems_ as well as _topics_: the 
 relevance for one publication on another lies less with source reputation or 
 impact factor than with compatibility between one argument's theoretical 
 machinery and its peer's.  This factor &mdash; important to the humanities 
