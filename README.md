@@ -231,16 +231,47 @@ primary sources in $\color{#a65450}\mathrm{XML}$ directly,
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
 converts to $\color{#a65450}\mathrm{XML}$ and 
-$\LaTeX$ and is more reliable 
+$\latex$ and is more reliable 
 when both formats are desired than mapping 
-$\LaTeX$ to $\color{#a65450}\mathrm{XML}$ directly. 
+$\latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
 However, scientific writers will usually prefer 
-technical extensions to Markdown such as 
-$\color{#a65450}\mathrm{Quarto}$ (`.qmd`) or $\color{#a65450}\mathrm{Typst}$.
+technically extennded forms of Markdown such as 
+$\color{#a65450}\mathrm{Quarto}$ (`.qmd`) or 
+$\color{#a65450}\mathrm{Typst}$.  It is certianly 
+possible to modify open-source Markdown parsers 
+to incorporate syntactic elements uniquely engineered 
+for the author's matrix of subdisciplines.
 
+3. Raw Data File Encoding: When a Research Object package 
+includes a structured data set, it is often the case 
+that the unique data profile is only partially 
+covered by canonical representation formats.  Almost 
+any information can be encoded as $\color{#a65450}\mathrm{XML}$, 
+for example, but there may not be preexisting 
+$\color{#a65450}\mathrm{XML}$ schemas or Document Type 
+Definitions suitable for the author's 
+work.  $\color{#a65450}\mathrm{FAIR}$ principles 
+(Findable, Accessible, Interoperable, Reusable)
+stipulate that data files should not only be 
+published as raw $\color{#a65450}\mathrm{JSON}$, 
+$\color{#a65450}\mathrm{XML}$, or $\color{#a65450}\mathrm{CSV}$ 
+but that supporting code should be provided to 
+incorporate the type associations, shape constraints, 
+and deserialization protocols inherit in the raw data.
+
+4. Document Viewers (e.g., $\color{#a65450}\mathrm{PDF}$): 
+When a research package is desseminated via a code library, 
+it is a relatively straightforward step to include 
+the source files for a customized $\color{#a65450}\mathrm{PDF}$ 
+viewer that can be provisioned custom functionality 
+for interoperating with the Research Objects' data sets, 
+code libraries, and subdiscipline-matrix vocabularies.
 
 
 **_Reuse, Indexing, GUI_** (the &ldquo;Prints&ldquo;)
+
+With respect to the above breakdown of how components may be 
+author-personalized, 
 
 ---
 
