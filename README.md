@@ -9,18 +9,18 @@ communication, research practices, and knowledge sharing&rdquo;:
 <https://force11.org/>).  Here is the core language from that proposal:
 
 >It is in the interest of the scholarly community for manuscript-preparation 
-tools to be personalizable for each author and project.  Insofat as 
+tools to be personalizable for each author and project.  Insofar as 
 originality is intrinsically valued, we can assume that any 
-publishable research contribution will hace certain theoretical, 
+meritous research contribution will have certain theoretical, 
 methodological, conceptual, or terminological variation from 
 relevant disciplines' norms.  Such originality should be reflected 
-in computational artifacts like semantic annotation vocabularies, 
-machine-readable indexes, text/data/code interop, and 
+in computational artifacts like semantic annotation vocabularies; 
+machine-readable indexes; text/data/code interop; and 
 document-viewer features such as glossaries, Goal/Method/Result 
 highlights, and interactive cross-references with code libraries 
 and data sets.
 >
-> The Paw:Prints project implicitly assumes that the canonical units of 
+> Paw/Prints implicitly assumes that the canonical units of 
 research dissemination are not single publication files but integrated 
 text/data/code resources.  In some cases the non-textual content 
 may simply be document-prep artifacts, such as $\color{#a65450}\mathrm{JATS}$ 
