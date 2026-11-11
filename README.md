@@ -8,7 +8,34 @@ at $\color{#a65450}\mathrm{Force11}$
 communication, research practices, and knowledge sharing&rdquo;: 
 <https://force11.org/>).  Here is the core language from that proposal:
 
->One mission for the proposed WG is to present and evaluate OS components that can make OA authors more productive.  Other initiatives already focus on how FOSS supports OA via infrastructure and tooling.  But this WG also addresses the question one step further: how can tools for publication development, view, indexing, and search engines be modified to counter biases against "OS&OA" (Open Source and Open Access)?  How to model the contribution and originality of OS&OA projects whose merit is incompletely captured via each paradigm in isolation (plus peer review, 
+>It is in the interest of the scholarly community for manuscript-preparation 
+tools to be personalizable for each author and project.  Insofat as 
+originality is intrinsically valued, we can assume that any 
+publishable research contribution will hace certain theoretical, 
+methodological, conceptual, or terminological variation from 
+relevant disciplines' norms.  Such originality should be reflected 
+in computational artifacts like semantic annotation vocabularies, 
+machine-readable indexes, text/data/code interop, and 
+document-viewer features such as glossaries, Goal/Method/Result 
+highlights, and interactive cross-references with code libraries 
+and data sets.
+>
+> The Paw:Prints project implicitly assumes that the canonical units of 
+research dissemination are not single publication files but integrated 
+text/data/code resources.  In some cases the non-textual content 
+may simply be document-prep artifacts, such as $\color{#a65450}\mathrm{JATS}$ 
+$\color{#a65450}\mathrm{XML}$, but these are still useful assets 
+for transparency and reuse.  In other cases, data and/or code is 
+intrinsic to the scholarly contribution (not merely &ldquo;Supplemental Materials&rdquo; 
+or raw data files deposited to satisfy Data Availability requirements), 
+and code details should be factored in for &ldquo;Ecosystem Relevance&rdquo; 
+separate and apart from the project's thematic axes.  Even 
+in the latter scenario, however, we should assume that 
+information spaces and code libraries are &ldquo;Publication-Anchored&rdquo;: 
+the project is centered around a book/article as a fully-developed unit of 
+scholarly research (not just an API Reference, code overview, or documentation).
+>
+One mission for the proposed WG is to present and evaluate OS components that can make OA authors more productive.  Other initiatives already focus on how FOSS supports OA via infrastructure and tooling.  But this WG also addresses the question one step further: how can tools for publication development, view, indexing, and search engines be modified to counter biases against "OS&OA" (Open Source and Open Access)?  How to model the contribution and originality of OS&OA projects whose merit is incompletely captured via each paradigm in isolation (plus peer review, 
 impact factor, and other metrics)?  How to amplify the visibility of OS&OA-principled research?
 >
 >The WG will examine platforms that can generically be called "Publication-Ancored" code libraries: Executable Research Objects/Articles, 
