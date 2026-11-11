@@ -1,8 +1,8 @@
 
-# Paw:Prints -- Personalized Author Workflows: Publication Reuse, Indexing, and GUI Tools
+# Paw/Prints -- Personalized Author Workflows: Publication Reuse, Indexing, and GUI Tools
 
 This branch is intended to serve as an introduction to the proposed 
-&ldquo;Open Science: Paw/Prints&rdquo; working group 
+&ldquo;Open Science &mdash; Paw:Prints&rdquo; working group 
 at $\color{#a65450}\mathrm{Force11}$ 
 (which is &ldquo;A global community dedicated to improving scholarly 
 communication, research practices, and knowledge sharing&rdquo;: 
