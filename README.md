@@ -231,7 +231,7 @@ primary sources in $\color{#a65450}\mathrm{XML}$ directly,
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
 converts to $\color{#a65450}\mathrm{XML}$ 
-and $\color{#cf222e}\text{LaTeX}$ and is more reliable 
+and <p style="display:inline;"><img src=".github/assets/latex-light.svg#gh-light-mode-only" height="13" alt="LaTeX" style="vertical-align: middle;"><img src=".github/assets/latex-dark.svg#gh-dark-mode-only" height="13" alt="LaTeX" style="vertical-align: middle;"></p> and is more reliable 
 when both formats are desired than mapping 
 $\Latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
 However, scientific writers will usually prefer 
