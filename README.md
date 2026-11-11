@@ -56,7 +56,7 @@ as well &mdash; which can be done in a lightweight manner by tagging
 the dialogic/discursive/disputative/deliberational role of 
 citations, quotes, special terms, etc. (for example, sentences providing 
 the first definition of a keyword, or first 
-presentation of a specific claim can be annotated and 
+presentation of a specific claim, can be annotated and 
 serve as locator role qualifiers).  Academic 
 theories are _ecosystems_ as well as _topics_: the 
 relevance for one publication on another lies less with source reputation or 
@@ -74,14 +74,14 @@ how do I run an analysis or simulation or otherwise reproduce a reported
 finding?  Or: can I see in code where a term, formula, scalar unit, algorithm, etc. is modeled or implemented?  Such info might come from inline code annotations or separate files, like with External $\color{#a65450}\mathrm{XML}$ Documentation.
 
 Simultaneously, _text_ &ldquo;indexing&rdquo; under the 
-$\color{#a65450}\mathrm{Pac{\small{/}}Eq}$ idea 
+&ldquo;Ecosystem Relevance&rdquo; idea 
 is distinct from word-vector-optimized indexes for Academic Search Engines, 
 although better use of code-library metadata could certainly improve 
 engines' accuracy and false-positive/false-negative 
-percentages.  Components relevant to $\color{#a65450}\mathrm{SenPac}$ can 
+percentages.  Components relevant to $\color{#a65450}\mathrm{Paw:Prints}$ can 
 leverage text indexes in multiple ways, including pre-publication document 
-prep, text/code/data reuse, Text Mining, and $\color{#a65450}\mathrm{FAIRsharing}$ 
-(Findable, Accessible, Interoperable, Reusable) in general.
+prep, text/code/data reuse, Text Mining, and enhancing $\color{#a65450}\mathrm{FAIRsharing}$ 
+(Findable, Accessible, Interoperable, Reusable) overall.
 
 ---
 
@@ -95,8 +95,8 @@ as represented by github, Open Science, data sets hosts, etc.  Such hybrid
 resources may have more specific forms 
 (such as &ldquo;Executable Research Objects&rdquo; and others mentioned 
 above).  But the 
-overarching $\color{#a65450}\mathrm{SenPac}$ model 
-assumes two key details:
+overarching $\color{#a65450}\mathrm{Paw:Prints}$ model 
+assumes three key details:
 
 1. There is a main publication file that &ldquo;anchors&rdquo; a code and/or data 
 library/repository.  The anchor's role is more substantial than just documenting 
@@ -111,9 +111,16 @@ Document Object Identifier and encoding suitable for ingestion by
 scholarship indexers ($\color{#a65450}\mathrm{CORE}$, 
 $\color{#a65450}\mathrm{BASE}$, Semantic Scholar, and so forth).
  
-2. The surrounding code library is an intrinsic part of the publications' 
-content and originality; it is not just Supplemental Materials 
-or raw files satisfying Data Availability requirements.  Code libraries 
+2. Trating each publication as a multi-asset package promotes reuse.  When 
+a future author intends to leverage an earlier publication as source 
+material, access to structured repersentation such as 
+$\color{#a65450}\mathrm{JATS}$ $\color{#a65450}\mathrm{XML}$ 
+facilitates searching within and quoting from the predecessor.
+
+3. For &ldquo;Research Objects&rdquo; the surrounding code 
+library is an intrinsic part of the publications' 
+contribution and originality; it is not just &ldquo;Supplemental&rdquo;.  
+Code libraries 
 offer alternative routes for findability/discoverability 
 than relying solely on peer review or academic indexing.  Embedding 
 manuscripts in code repositories is therefore one technique for 
