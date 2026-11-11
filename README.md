@@ -155,7 +155,7 @@ code libraries even when those libraries contain academic publications
 
 ### Manuscript Representation
 
-$\color{#a65450}\mathrm{SenPac}$ assumes that the Anchoring Publication 
+$\color{#a65450}\mathrm{Paw:Prints}$ assumes that the Anchoring Publication 
 is provided via machine-readable representations as well as 
 human-readable (canonically $\color{#a65450}\mathrm{PDF}$) 
 formats.  For discussion, assume that this representation is 
@@ -207,6 +207,40 @@ annotations could likewise read associated code libraries for
 potential inclusion in search results and quantification of a project's 
 relevance to search terms and concept vectors.
 
+**_Personalized Author Workflows_** (the &ldquo;Paw&ldquo;)
+
+Although authors' tools will vary (if they didn't, they 
+wouldn't be personalized) certain components are 
+among the more obvious candidates for customization.  These 
+are tools that are endemic to commercial publishers, but 
+not typically under the control of individual 
+authors once they submit their manuscipts.  In 
+the context of preprints and &ldquo;Publication-Anchored 
+Code Libraries&rdquo;, however, authors have greater 
+control over their documents' encoding and 
+presentation.  For example:
+
+1. $\color{#a65450}\mathrm{JATS}$ $\color{#a65450}\mathrm{XML}$: 
+authors can employ any tag-vocabulary that matches their 
+unique research domain.  Simple conversion tools can 
+map custom annotations to baseline $\color{#a65450}\mathrm{JATS}$ 
+elements such as `<named-content>` or `<styled-content>`.
+
+2. Markdown Dialect: Since few people want to compose 
+primary sources in $\color{#a65450}\mathrm{XML}$ directly, 
+Markdown is emerging as a preferred language 
+for initial document encoding.  Markdown seamlessly 
+converts to $\color{#a65450}\mathrm{XML}$ and 
+$\LaTeX$ and is more reliable 
+when both formats are desired than mapping 
+$\LaTeX$ to $\color{#a65450}\mathrm{XML}$ directly. 
+However, scientific writers will usually prefer 
+technical extensions to Markdown such as 
+$\color{#a65450}\mathrm{Quarto}$ (`.qmd`) or $\color{#a65450}\mathrm{Typst}$.
+
+
+
+**_Reuse, Indexing, GUI_** (the &ldquo;Prints&ldquo;)
 
 ---
 
