@@ -53,7 +53,11 @@ optimize relevance scores by annotations clarifying how specific code
 elements may be reused.  More generally, however, metrics of &ldquo;Ecosystem Relevance&rdquo; 
 (in lieu of Semantic Vectors) should be curated within text representation 
 as well &mdash; which can be done in a lightweight manner by tagging 
-the dialogic/disputative/deliberational role of citations, quotes, special terms, etc.  Academic 
+the dialogic/discursive/disputative/deliberational role of 
+citations, quotes, special terms, etc. (for example, sentences providing 
+the first definition of a keyword, or first 
+presentation of a specific claim can be annotated and 
+serve as locator role qualifiers).  Academic 
 theories are _ecosystems_ as well as _topics_: the 
 relevance for one publication on another lies less with source reputation or 
 impact factor than with compatibility between one argument's theoretical 
