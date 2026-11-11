@@ -231,11 +231,10 @@ primary sources in $\color{#a65450}\mathrm{XML}$ directly,
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
 converts to $\color{#a65450}\mathrm{XML}$ and 
-<span style="font-family: serif;">L<span style="font-size: 0.75em; vertical-align: 0.25em; margin-left: -0.25em; margin-right: -0.1em;">a</span>T<span style="font-size: 3em; vertical-align: -0.25em; margin-left: -0.15em; margin-right: -0.05em;">e</span>X</span>
-and is more reliable 
+<code style="color: #24292f; background-color: #f6f8fa; padding: 0.2em 0.4em;">LaTeX</code>
+$\Latex$ and is more reliable 
 when both formats are desired than mapping 
-<span style="font-family: serif;">L<span style="font-size: 0.75em; vertical-align: 0.25em; margin-left: -0.25em; margin-right: -0.1em;">a</span>T<span style="font-size: 1em; vertical-align: -0.25em; margin-left: -0.15em; margin-right: -0.05em;">e</span>X</span> 
-to $\color{#a65450}\mathrm{XML}$ directly. 
+$\Latex$ to $\color{#a65450}\mathrm{XML}$ directly. 
 However, scientific writers will usually prefer 
 technically extennded forms of Markdown such as 
 $\color{#a65450}\mathrm{Quarto}$ (`.qmd`) or 
