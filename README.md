@@ -36,7 +36,7 @@ the project is centered around a book/article as a fully-developed unit of
 scholarly research (not just an API Reference, code overview, or documentation).
 >
 >Open Science in general represents a synthesis of 
-Open Source and Open Access ($\color{#a65450}\mathrm{OS&OA}$), but manuscript-prep 
+Open Source and Open Access ($\color{#a65450}\mathrm{OS\\&OA}$), but manuscript-prep 
 tooling is more siloed: components usually work with text _or_ code but not both. 
 This deficit can be remedied via personalization.  When publications and code are &ldquo;co-equal&rdquo; then ignoring a research paper's 
 role as a scholarly product diminishes assessment of the library, but failure to 
