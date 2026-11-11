@@ -231,7 +231,7 @@ primary sources in $\color{#a65450}\mathrm{XML}$ directly,
 Markdown is emerging as a preferred language 
 for initial document encoding.  Markdown seamlessly 
 converts to $\color{#a65450}\mathrm{XML}$ and 
-<span style="font-family: serif;">L<span style="font-size: 0.75em; vertical-align: 0.25em; margin-left: -0.25em; margin-right: -0.1em;">a</span>T<span style="font-size: 1em; vertical-align: -0.25em; margin-left: -0.15em; margin-right: -0.05em;">e</span>X</span>
+<span style="font-family: serif;">L<span style="font-size: 0.75em; vertical-align: 0.25em; margin-left: -0.25em; margin-right: -0.1em;">a</span>T<span style="font-size: 3em; vertical-align: -0.25em; margin-left: -0.15em; margin-right: -0.05em;">e</span>X</span>
 and is more reliable 
 when both formats are desired than mapping 
 <span style="font-family: serif;">L<span style="font-size: 0.75em; vertical-align: 0.25em; margin-left: -0.25em; margin-right: -0.1em;">a</span>T<span style="font-size: 1em; vertical-align: -0.25em; margin-left: -0.15em; margin-right: -0.05em;">e</span>X</span> 
