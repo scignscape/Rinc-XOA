@@ -54,10 +54,10 @@ elements may be reused.  More generally, however, metrics of &ldquo;Ecosystem Re
 (in lieu of Semantic Vectors) should be curated within text representation 
 as well.  Academic theories are _ecosystems_ as well as _topics_: the 
 relevance for one publication on another lies less with source reputation or 
-peer review than with compatibility between one argument's theoretical 
-machinery and another.  This factor &mdash; important to the humanities 
+impact factor than with compatibility between one argument's theoretical 
+machinery and its peer's.  This factor &mdash; important to the humanities 
 as well as formal sciences &mdash; often seems overlooked by 
-conventional peer review and academic indexing. 
+conventional peer review and indexing strategies. 
 
 Note that _code_ &ldquo;indexing&rdquo; here need not be as granular as in
 technical contexts such as the Language Server Protocol (e.g., need 
