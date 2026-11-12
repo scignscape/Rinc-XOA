@@ -1,4 +1,6 @@
 
+$$\gdef\XML{$\color{#a65450}\mathrm{XML}$}$$
+
 # Paw/Prints -- Personalized Author Workflows: Publication Reuse, Indexing, and GUI Tools
 
 This branch is intended to serve as an introduction to the proposed 
@@ -24,7 +26,7 @@ and data sets.
 research dissemination are not single publication files but integrated 
 text/data/code resources.  In some cases the non-textual content 
 may simply be document-prep artifacts, such as $\color{#a65450}\mathrm{JATS}$ 
-$\color{#a65450}\mathrm{XML}$, but these are still useful assets 
+$\XML$, but these are still useful assets 
 for transparency and reuse.  In other cases, data and/or code is 
 intrinsic to the scholarly contribution (not merely &ldquo;Supplemental Materials&rdquo; 
 or raw data files deposited to satisfy Data Availability requirements) 
