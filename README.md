@@ -649,6 +649,36 @@ $\color{#a65450}\mathrm{RedPatch}$ branch
 (viz., <https://github.com/ScignScape/Rinc-XOA/tree/RedPatch>). 
  
 
+**_&ldquo;Relae&rdquo; Parsers_**
+
+Here I will present a bit of background on 
+$\color{#a65450}\mathrm{GTagML}$.  More precisely, 
+I will address implementation details 
+that are relevant to personalized Markdown dialects 
+in general, even if they only demand small 
+changes to the baseline.
+
+$\color{#a65450}\mathrm{GTagML}$ is built around a 
+&ldquo;regular-expression, left-anchored, 
+external state&rdquo;, or &ldquo;Relae&rdquo; 
+parser (note: this is not a &ldquo;term of art&rdquo;). This 
+means that grammar rules are defined by 
+a Regular Expression combined with a anonymous 
+callback, in the $\color{#a65450}\mathrm{GTagML}$ written 
+in $\color{#a65450}\mathrm{C++}$.  There are 
+two kinds of External State objects which can 
+result in specific rules being activated or 
+not; deactivated rules are skipped over.  Each 
+rule is &ldquo;left-anchored&rdquo; in that 
+a match will fail unless it succeeds at precisely 
+the current parse position, without &ldquo;skipping over&rdquo; 
+any characters.  Rules are ordered by priority and the 
+first successful rule matches; no lower-priority matches 
+are checked.  This is cosistent with the theoretical 
+notion of left-anchored grammars but with a pure $\color{#a65450}\mathrm{C++}$ 
+implementation (no separate generator steps as with 
+Lex/Yacc) that makes it easy to extend and customize.
+
 
 
  
