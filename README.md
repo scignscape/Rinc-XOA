@@ -1,5 +1,4 @@
 
-$$\gdef\XML{$\color{#a65450}\mathrm{XML}$}$$
 
 # Paw/Prints -- Personalized Author Workflows: Publication Reuse, Indexing, and GUI Tools
 
@@ -26,7 +25,7 @@ and data sets.
 research dissemination are not single publication files but integrated 
 text/data/code resources.  In some cases the non-textual content 
 may simply be document-prep artifacts, such as $\color{#a65450}\mathrm{JATS}$ 
-$\XML$, but these are still useful assets 
+$\color{#a65450}\mathrm{XML}$, but these are still useful assets 
 for transparency and reuse.  In other cases, data and/or code is 
 intrinsic to the scholarly contribution (not merely &ldquo;Supplemental Materials&rdquo; 
 or raw data files deposited to satisfy Data Availability requirements) 
@@ -597,17 +596,35 @@ Long story short, wrangling terminology is an important part of research, and on
 ## Implementations 
 
 
-In the context of the proposed $\color{#a65450}\mathrm{OS4OA}$ 
+In the context of the proposed $\color{#a65450}\mathrm{Paw:Prints}$ 
 Working Group, I recommend discussions to be organized 
 around existing technologies such as $\color{#a65450}\mathrm{PDF}$ 
 viewers, indexers and search engines, document markup 
 languages, query $\color{#a65450}\mathrm{API}\color{black}\textnormal{s}$ 
-and so forth.  With respect to the current 
-$\underline{\color{#3e2a47}\mathrm{\small{}Rinc-XOA}}$ repository I have 
-no code specifically for $\color{#a65450}\mathrm{SenPac}$ 
-at the moment, except for noting that 
-$\underline{\color{#3e2a47}\mathrm{\small{}GTagML}}$ provides a potential 
-input language.
+and so forth.  Although I would encourage any author to 
+explore highly personalized formats, it is reasable to 
+assume that most authors will prefer to vary existing 
+tools only as much as needed for their specific 
+goals.  In that sense, basing workflows on 
+mature solutions such as $\color{#a65450}\mathrm{JATS}$ 
+and $\color{#a65450}\mathrm{Quarto}$ is a reasonable 
+first step.
+
+With that said, with respect to the current 
+$\underline{\color{#3e2a47}\mathrm{\small{}Rinc-XOA}}$ repository the 
+existing code does implement a complex language 
+&mdash; $\underline{\color{#3e2a47}\mathrm{\small{}GTagML}}$ &mdash; 
+that is essentially a Markdown dialect and has been used 
+for real-world academic books and articles.  I would 
+not consider $\color{#a65450}\mathrm{GTagML}$ overall 
+suitable for production work, but it would be 
+possible to strip away many of the non-standard 
+Markdown extensions while still permitting 
+individual authors to include their own personalized 
+syntax.  This might be a reasonable 
+approach in cases where extending more well-known 
+dialects, like $\color{#a65450}\mathrm{.qmd}$, 
+proves difficult.
 
 More generally, most of the components envisaged in 
 this repository are organized around 
@@ -619,7 +636,7 @@ $\color{#a65450}\mathrm{XML}$, $\color{#a65450}\mathrm{JSON}$
 and so forth.  The $\underline{\color{#3e2a47}\mathrm{\small{}OTQR}}$
 runtime classes are potential Virtual Machines for a 
 text-oriented Query Evaluator similarly consistent with the 
-$\color{#a65450}\mathrm{SenPac}$ goals.
+$\color{#a65450}\mathrm{Paw:Prints}$ goals.
 
 $\color{#a65450}\mathrm{OTQR}$ is still under development, 
 and any current code is not on a separate branch 
