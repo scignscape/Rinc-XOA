@@ -1,15 +1,13 @@
 
 # QPDF/SR : Development code for a Markdown&#10132;JATS&#10132;PDF/SR workflow
 
-Note: $\color{#a65450}\mathrm{PDF/SR}$ stands for 
+See this repository's $\color{#a65450}\mathrm{Paw/Prints}$ branch for more information about the 
+goals for this specific workflow.  Note: $\color{#a65450}\mathrm{PDF/SR}$ stands for 
 $\color{#a65450}\mathrm{PDF}$ Semantic Reflection.
 
-See this repository's $\color{#a65450}\mathrm{Paw/Prints}$ branch for more information about the 
-goals for this specific workflow.
 
-Currently this branch holds a 
-$\color{#a65450}\mathrm{LICENSE\\_1\\_0.txt}$ viewer based on 
-qpdfview (<https://github.com/bendikro/qpdfview>).  Currently there 
+Currently this branch holds a $\color{#a65450}\mathrm{Qt}$ $\color{#a65450}\mathrm{PDF}$ viewer 
+based on qpdfview (<https://github.com/bendikro/qpdfview>).  For the moment there 
 are only minor changes to the qpdfview code.  The $\color{#a65450}\mathrm{COPYING}$ 
 file serves as qpdfview's license file.  $\color{#a65450}\mathrm{LICENSE\\_1\\_0.txt}$ 
 governs any new code here.  Documents distributed for demo purposes are assumed 
