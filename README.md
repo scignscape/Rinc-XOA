@@ -52,7 +52,7 @@ but I intend to use it as a sandbox for looking at
 2. Embedding &ldquo;sidecar&rdquo; annotation via 
 $\color{#a65450}\mathrm{AF}$ keys
 
-3. Representing $\color{#a65450}\mathrm{CiTO}$ (Citation Ontology) 
+3. Representing $\color{#a65450}\mathrm{CiTO}$ (Citation Typing Ontology) 
 &ldquo;Citation Intent&rdquo; markup
 
 4. Representing author &ldquo;endorsements&rdquo; of Open Source/Open Access 
@@ -69,6 +69,14 @@ cited resources
 8. Examining information about data sets and/or deserialized data records
 
 9. Supporting extensible Markdown dialects with custom parsers
+
+--- 
+
+References for the two included research notes are 
+
+* <https://zenodo.org/records/24165091>
+
+* <https://zenodo.org/records/24194873>
 
 
 
