@@ -8,10 +8,10 @@ See this repository's $\color{#a65450}\mathrm{Paw/Prints}$ branch for more infor
 goals for this specific workflow.
 
 Currently this branch holds a 
-$\color{#a65450}\mathrm{LICENSE_1_0.txt}$ viewer based (almost entirely) on 
+$\color{#a65450}\mathrm{LICENSE\\_1\\_0.txt}$ viewer based (almost entirely) on 
 qpdfview (<https://github.com/bendikro/qpdfview>).  There 
 are only minor changes to the qpdfview code.  The $\color{#a65450}\mathrm{COPYING}$ 
-file serves as qpdfview's license file.  $\color{#a65450}\mathrm{LICENSE\_1\_0.txt}$ 
+file serves as qpdfview's license file.  $\color{#a65450}\mathrm{LICENSE\\_1\\_0.txt}$ 
 governs any new code here.  Documents distributed for demo purposes are assumed 
 to be free for fair use under the copyright of their author/creator.
 
