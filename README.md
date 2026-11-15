@@ -33,7 +33,7 @@ be necessary for all environments.  Note that Poppler itself has additional
 font-related dependencies.
 
 While not strictly necessary, this project assumes that the viewer is compiled 
-and launched from the Qt Creator $\color{#a65450}\mathrm{IDE}$
+and launched from the $\color{#a65450}\mathrm{Qt}$ Creator $\color{#a65450}\mathrm{IDE}$.
 
 The current code does not have any capabilities beyond qpdfview itself, 
 but I intend to use it as a sandbox for looking at 
@@ -51,7 +51,7 @@ $\color{#a65450}\mathrm{AF}$ keys
 cited resources
 
 5. Representing Goal/Method/Result annotations similar to 
-&ldquo;Skimming Highlights&rquo; in Semantic Reader 
+&ldquo;Skimming Highlights&rdquo; in Semantic Reader 
 (<https://www.semanticscholar.org/product/semantic-reader>)
 
 6. Dynamically calling code, to emulate Computational Notebooks
