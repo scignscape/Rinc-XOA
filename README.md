@@ -1,5 +1,5 @@
 
-# QPDF/SR : Development code for a Markdown-\>JATS-\>PDF/SR workflow
+# QPDF/SR : Development code for a Markdown&rarr;JATS&rarr;PDF/SR workflow
 
 Note: $\color{#a65450}\mathrm{PDF/SR}$ stands for 
 $\color{#a65450}\mathrm{PDF}$ Semantic Reflection.
