@@ -18,7 +18,6 @@ It is recommended that users clone this code as a single branch:
 mkdir QPDF-SR
 cd QPDF-SR
 git clone -b QPDF/SR --single-branch https://github.com/scignscape/Rinc-XOA.git ar
-
 ```
 or replace `ar` with some other name for the top-level folder.
 
