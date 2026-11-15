@@ -24,8 +24,8 @@ The key dependencies are:
 
 * $\color{#a65450}\mathrm{Qt}$
 
-* A sufficiently up-to-date $\color{#a65450}\mathrm{C++}$ compiler 
- (tested here with $\color{#a65450}\mathrm{C++}$)
+* A sufficiently up-to-date C++ compiler 
+ (tested here with g++14)
 
 * Poppler.  The project file assumes that Poppler is built from source and installed 
 to a sibling folder of this branch's top-level folder, but that may not 
