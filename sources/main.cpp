@@ -465,7 +465,18 @@ void prepareSignalHandler()
 
 } // anonymous
 
+
+#include "extensions/cube-9-grid.h"
+
 int main(int argc, char** argv)
+{
+ QApplication app(argc, argv);
+ Cube_9_Grid_Window* c9gw = new Cube_9_Grid_Window;
+ c9gw->show();
+ return app.exec();
+}
+
+int main1(int argc, char** argv)
 {
     qRegisterMetaType< QList< QRectF > >("QList<QRectF>");
     qRegisterMetaType< Rotation >("Rotation");

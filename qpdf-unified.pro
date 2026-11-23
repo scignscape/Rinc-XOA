@@ -58,6 +58,15 @@ DEFINES += APPLICATION_VERSION=\\\"$${APPLICATION_VERSION}\\\"
     DEFINES += WITH_DBUS
 }
 
+HEADERS += \
+  extensions/cube-9-grid.h \
+
+
+SOURCES += \
+  extensions/cube-9-grid.cpp \
+
+
+
 # Merged Headers: Application + PDF Plugin
 HEADERS += \
     sources/application.h \
