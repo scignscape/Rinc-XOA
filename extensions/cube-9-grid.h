@@ -10,19 +10,42 @@
 #include <QHBoxLayout>
 
 #include <QLineEdit>
+#include <QTextEdit>
 #include <QPushButton>
 
-struct Cube_Cell {
+#include "global-types.h"
+#include "accessors.h"
 
+
+struct Cube_Cell {
  QGraphicsRectItem* graphics_item_;
 
  QPoint tl_;
- int grid_row_;
- int grid_col_;
- int rank_;
- int value_;
+ u4 grid_row_;
+ u4 grid_col_;
+ u4 rank_;
+ u4 value_;
  QString text_;
+};
 
+class NDCS_Run
+{
+ u4 n_;
+ u4 d_;
+ u4 c_;
+ u4 s_;
+ u4 min_;
+ u4 max_;
+
+ QVector<u4> steps_;
+
+public:
+
+ ACCESSORS(u4 ,min)
+ ACCESSORS(u4 ,max)
+ ACCESSORS__RGET(QVector<u4> ,steps)
+
+ NDCS_Run(u4 n, u4 d, u4 c, u4 s): n_(n), d_(d), c_(c), s_(s), min_(n), max_(n) {}
 
 };
 
@@ -39,6 +62,10 @@ class Cube_9_Grid_Window : public QMainWindow
 
  QPushButton* go_button_;
 
+ QTextEdit* qte_summary_;
+ QString summary_text_;
+
+
  QWidget* central_widget_;
 
  QGraphicsScene* scene_;
@@ -46,10 +73,12 @@ class Cube_9_Grid_Window : public QMainWindow
 
  QVector<Cube_Cell> cells_;
 
- int cell_width_;
+ u4 cell_width_;
 
  QColor odd_color_;
  QColor even_color_;
+
+ NDCS_Run* current_ndcs_run_;
 
  void complete_cells();
  void reposition_cells();
@@ -65,6 +94,7 @@ class Cube_9_Grid_Window : public QMainWindow
  static void center_text(Cube_Cell& cc, QGraphicsSimpleTextItem* sti);
 
  void recalculate();
+ void reset_summary();
 
 public:
  Cube_9_Grid_Window(QWidget* parent = nullptr);

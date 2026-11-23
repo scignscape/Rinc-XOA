@@ -12,7 +12,8 @@
 #include "cube-9-grid.h"
 
 
-Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent), cell_width_(0)
+Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
+  cell_width_(0), current_ndcs_run_(nullptr)
 {
  even_color_ = QColor(120, 180, 240);
  odd_color_ = QColor(180, 240, 120);
@@ -71,7 +72,7 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent), c
 
  cells_.resize(54);
 
- for(int i = 0; i < 54; ++i)
+ for(u4 i = 0; i < 54; ++i)
  {
   Cube_Cell& cc = cells_[i];
   cc.rank_ = i;
@@ -114,14 +115,16 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent), c
 
 void Cube_9_Grid_Window::recalculate()
 {
- int n = qle_n_->text().toInt();
- int d = qle_d_->text().toInt();
- int c = qle_c_->text().toInt();
- int s = qle_s_->text().toInt();
+ u4 n = qle_n_->text().toInt();
+ u4 d = qle_d_->text().toInt();
+ u4 c = qle_c_->text().toInt();
+ u4 s = qle_s_->text().toInt();
 
- int current = n;
+ current_ndcs_run_ = new NDCS_Run(n, d, c, s);
 
- int count = 0;
+ u4 current = n;
+
+ u4 count = 0;
 
  while(current > 1)
  {
@@ -136,6 +139,7 @@ void Cube_9_Grid_Window::recalculate()
    cell_to_even_color(cells_[count % 54]);
    current /= d;
   }
+  current_ndcs_run_->steps().push_back(current);
   ++count;
  }
  cell_to_odd_color(cells_[count % 54]);
@@ -181,6 +185,11 @@ void Cube_9_Grid_Window::show_cells()
   sti->setText(cc.text_);
   center_text(cc, sti);
  }
+}
+
+void Cube_9_Grid_Window::reset_summary()
+{
+
 }
 
 void Cube_9_Grid_Window::cell_to_even_color(Cube_Cell& cc)
