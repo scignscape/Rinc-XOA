@@ -58,9 +58,11 @@ DEFINES += APPLICATION_VERSION=\\\"$${APPLICATION_VERSION}\\\"
     DEFINES += WITH_DBUS
 }
 
+
+INCLUDEPATH += extensions/utils
+
 HEADERS += \
   extensions/cube-9-grid.h \
-
 
 SOURCES += \
   extensions/cube-9-grid.cpp \

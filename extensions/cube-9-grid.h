@@ -16,6 +16,8 @@
 #include "global-types.h"
 #include "accessors.h"
 
+#include "tsl/ordered_map.h"
+
 
 struct Cube_Cell {
  QGraphicsRectItem* graphics_item_;
@@ -41,13 +43,44 @@ class NDCS_Run
 
 public:
 
+ ACCESSORS(u4 ,n)
+ ACCESSORS(u4 ,d)
+ ACCESSORS(u4 ,c)
+ ACCESSORS(u4 ,s)
+
  ACCESSORS(u4 ,min)
  ACCESSORS(u4 ,max)
  ACCESSORS__RGET(QVector<u4> ,steps)
 
  NDCS_Run(u4 n, u4 d, u4 c, u4 s): n_(n), d_(d), c_(c), s_(s), min_(n), max_(n) {}
 
+ u2 get_steps_count()
+ {
+  return steps_.size();
+ }
+
+ r4 get_average()
+ {
+  if(steps_.isEmpty())
+    return 0.;
+  r8 sum = std::accumulate(steps_.begin(), steps_.end(), 0.);
+  return sum / steps_.size();
+ }
+
+ QString get_type_string()
+ {
+  if(min_ == 0)
+    return "Unknown";
+  if(min_ < n_)
+    return "Converges to %1"_qt.arg(min_);
+  return "Diverges";
+ }
+
 };
+
+//typedef QPair<QString, QString> QStringPair;
+//typedef QVector<QStringPair> QStringPairVector;
+
 
 class Cube_9_Grid_Window : public QMainWindow
 {
@@ -63,7 +96,8 @@ class Cube_9_Grid_Window : public QMainWindow
  QPushButton* go_button_;
 
  QTextEdit* qte_summary_;
- QString summary_text_;
+
+ tsl::ordered_map<QString, QString> summary_text_;
 
 
  QWidget* central_widget_;

@@ -11,6 +11,8 @@
 
 #include "cube-9-grid.h"
 
+static const QString ENDL = QStringLiteral("\n");
+static const QString PIPE = QStringLiteral("|");
 
 Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
   cell_width_(0), current_ndcs_run_(nullptr)
@@ -52,7 +54,7 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
 
  connect(go_button_, &QPushButton::clicked, [this]()
  {
-  recalculate(); show_cells();
+  recalculate(); show_cells(); reset_summary();
  });
 
  far_bottom_layout_->addStretch();
@@ -61,6 +63,10 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
 
  main_layout_->addLayout(bottom_layout_);
  main_layout_->addLayout(far_bottom_layout_);
+
+ qte_summary_ = new QTextEdit(this);
+ qte_summary_->setPlaceholderText("Run summary ...");
+ main_layout_->addWidget(qte_summary_);
 
  central_widget_ = new QWidget(this);
 
@@ -189,7 +195,33 @@ void Cube_9_Grid_Window::show_cells()
 
 void Cube_9_Grid_Window::reset_summary()
 {
+ summary_text_["Range"] = "[%1 to %2]"_qt.arg(current_ndcs_run_->min()).arg(current_ndcs_run_->max());
+ summary_text_["Average"] = QString::number(current_ndcs_run_->get_average());
+ summary_text_["Steps"] = QString::number(current_ndcs_run_->get_steps_count());
+ summary_text_["Run"] = "N=%1, D=%2, C=%3, S=%4]"_qt
+   .arg(current_ndcs_run_->n()).arg(current_ndcs_run_->d())
+   .arg(current_ndcs_run_->c()).arg(current_ndcs_run_->s());
 
+ summary_text_["Type"] = current_ndcs_run_->get_type_string();
+
+ QString text;
+ QTextStream qts(&text);
+
+ auto write = [&qts, this](QString key) -> QTextStream&
+ {
+  qts << key << ": " << summary_text_[key];
+  return qts;
+ };
+
+ write("Run") << ENDL;
+ write("Steps") << PIPE;
+ write("Type") << ENDL;
+ write("Range") << PIPE;
+ write("Avg") << ENDL;
+
+ qte_summary_->setText(text);
+
+ //qte_summary_->setT
 }
 
 void Cube_9_Grid_Window::cell_to_even_color(Cube_Cell& cc)
