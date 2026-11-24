@@ -39,6 +39,9 @@ class NDCS_Run
  u4 min_;
  u4 max_;
 
+ u2 stopping_time_;
+ u2 coefficient_stopping_time_;
+
  QVector<u4> steps_;
 
 public:
@@ -48,15 +51,26 @@ public:
  ACCESSORS(u4 ,c)
  ACCESSORS(u4 ,s)
 
+ ACCESSORS(u2 ,stopping_time)
+ ACCESSORS(u2 ,coefficient_stopping_time)
+
+
  ACCESSORS(u4 ,min)
  ACCESSORS(u4 ,max)
  ACCESSORS__RGET(QVector<u4> ,steps)
 
- NDCS_Run(u4 n, u4 d, u4 c, u4 s): n_(n), d_(d), c_(c), s_(s), min_(n), max_(n) {}
+ NDCS_Run(u4 n, u4 d, u4 c, u4 s): n_(n), d_(d), c_(c), s_(s),
+   min_(n), max_(n), stopping_time_(0), coefficient_stopping_time_(0) {}
+
+ void reset_range()
+ {
+  min_ = *std::min_element(steps_.constBegin(), steps_.constEnd());
+  max_ = *std::max_element(steps_.constBegin(), steps_.constEnd());
+ }
 
  u2 get_steps_count()
  {
-  return steps_.size();
+  return steps_.size() - 1;
  }
 
  r4 get_average()

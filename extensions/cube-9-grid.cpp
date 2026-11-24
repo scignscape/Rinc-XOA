@@ -9,6 +9,8 @@
 
 #include <QDebug>
 
+#include <QtMath>
+
 #include "cube-9-grid.h"
 
 static const QString ENDL = QStringLiteral("\n");
@@ -32,7 +34,7 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
 
  main_layout_->addWidget(view_);
 
- qle_n_ = new QLineEdit("10", this);
+ qle_n_ = new QLineEdit("19", this);
  qle_d_ = new QLineEdit("2", this);
  qle_c_ = new QLineEdit("3", this);
  qle_s_ = new QLineEdit("1", this);
@@ -130,7 +132,15 @@ void Cube_9_Grid_Window::recalculate()
 
  u4 current = n;
 
+ current_ndcs_run_->steps().push_back(current);
+
  u4 count = 0;
+
+ u4 odd_count = 0;
+ u4 even_count = 0;
+
+ // ln(2) / ln(3) ≈ 0.6309297535714574
+ static constexpr r8 ln2_over_ln3 = 0.6309297535714574371;
 
  while(current > 1)
  {
@@ -139,17 +149,43 @@ void Cube_9_Grid_Window::recalculate()
   {
    cell_to_odd_color(cells_[count % 54]);
    current = current * c + s;
+   ++odd_count;
   }
   else
   {
    cell_to_even_color(cells_[count % 54]);
    current /= d;
+   ++even_count;
+
+   if(current_ndcs_run_->coefficient_stopping_time() == 0)
+   {
+ //   r8 div = ((r8) (qPow(c, odd_count))) / qPow(d, even_count);
+
+   r8 product = even_count * ln2_over_ln3;
+   if(odd_count < product)
+      current_ndcs_run_->set_coefficient_stopping_time(even_count);
+   }
+
   }
   current_ndcs_run_->steps().push_back(current);
+
+  if(current < n && current_ndcs_run_->stopping_time() == 0)
+    current_ndcs_run_->set_stopping_time(count + 1);
+
   ++count;
+
  }
- cell_to_odd_color(cells_[count % 54]);
- cells_[count % 54].value_ = current;
+
+ current_ndcs_run_->reset_range();
+
+ count %= 54;
+ cell_to_odd_color(cells_[count]);
+ cells_[count].value_ = current;
+
+
+ while(++count < 54)
+   cells_[count].value_ = 0;
+
 
 }
 
@@ -196,13 +232,15 @@ void Cube_9_Grid_Window::show_cells()
 void Cube_9_Grid_Window::reset_summary()
 {
  summary_text_["Range"] = "[%1 to %2]"_qt.arg(current_ndcs_run_->min()).arg(current_ndcs_run_->max());
- summary_text_["Average"] = QString::number(current_ndcs_run_->get_average());
+ summary_text_["Avg"] = QString::number(current_ndcs_run_->get_average());
  summary_text_["Steps"] = QString::number(current_ndcs_run_->get_steps_count());
  summary_text_["Run"] = "N=%1, D=%2, C=%3, S=%4]"_qt
    .arg(current_ndcs_run_->n()).arg(current_ndcs_run_->d())
    .arg(current_ndcs_run_->c()).arg(current_ndcs_run_->s());
 
  summary_text_["Type"] = current_ndcs_run_->get_type_string();
+ summary_text_["Stopping Time"] = QString::number(current_ndcs_run_->stopping_time());
+ summary_text_["Coefficient Stopping Time"] = QString::number(current_ndcs_run_->coefficient_stopping_time());
 
  QString text;
  QTextStream qts(&text);
@@ -218,6 +256,8 @@ void Cube_9_Grid_Window::reset_summary()
  write("Type") << ENDL;
  write("Range") << PIPE;
  write("Avg") << ENDL;
+ write("Stopping Time") << ENDL;
+ write("Coefficient Stopping Time") << ENDL;
 
  qte_summary_->setText(text);
 
