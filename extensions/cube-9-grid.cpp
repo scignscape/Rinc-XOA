@@ -19,8 +19,11 @@ static const QString PIPE = QStringLiteral("|");
 Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
   cell_width_(0), current_ndcs_run_(nullptr)
 {
- even_color_ = QColor(120, 180, 240);
- odd_color_ = QColor(180, 240, 120);
+ even_color_ = QColor(52, 211, 153);
+ odd_color_ = QColor(251, 146, 60);
+ border_color_ = QColor(71, 36, 42);
+ empty_border_color_ = QColor(64, 128, 143);
+
 
  scene_ = new QGraphicsScene(this);
  scene_->setSceneRect(0, 0, 800, 600);
@@ -34,20 +37,28 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
 
  main_layout_->addWidget(view_);
 
- qle_n_ = new QLineEdit("19", this);
- qle_d_ = new QLineEdit("2", this);
- qle_c_ = new QLineEdit("3", this);
- qle_s_ = new QLineEdit("1", this);
+ qsb_n_ = new QSpinBox(this);
+ qsb_n_->setRange(2, 99);
+ qsb_n_->setValue(19);
+ qsb_d_ = new QSpinBox(this);
+ qsb_d_->setRange(2, 99);
+ qsb_d_->setValue(2);
+ qsb_c_ = new QSpinBox(this);
+ qsb_c_->setRange(2, 99);
+ qsb_c_->setValue(3);
+ qsb_s_ = new QSpinBox(this);
+ qsb_s_->setRange(1, 99);
+ qsb_s_->setValue(1);
 
- qle_n_->setFixedWidth(120);
- qle_d_->setFixedWidth(120);
- qle_c_->setFixedWidth(120);
- qle_s_->setFixedWidth(120);
+ qsb_n_->setFixedWidth(120);
+ qsb_d_->setFixedWidth(120);
+ qsb_c_->setFixedWidth(120);
+ qsb_s_->setFixedWidth(120);
 
- bottom_layout_->addWidget(qle_n_, 1);
- bottom_layout_->addWidget(qle_d_, 1);
- bottom_layout_->addWidget(qle_c_, 1);
- bottom_layout_->addWidget(qle_s_, 1);
+ bottom_layout_->addWidget(qsb_n_, 1);
+ bottom_layout_->addWidget(qsb_d_, 1);
+ bottom_layout_->addWidget(qsb_c_, 1);
+ bottom_layout_->addWidget(qsb_s_, 1);
 
  bottom_layout_->setSpacing(10);
 
@@ -64,7 +75,47 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
  far_bottom_layout_->addStretch();
 
  main_layout_->addLayout(bottom_layout_);
+
+ color_selector_layout_ = new QHBoxLayout;
+
+ even_color_selector_ = new ColorSelector(this);
+ even_color_selector_->setColor(even_color_);
+ odd_color_selector_ = new ColorSelector(this);
+ odd_color_selector_->setColor(odd_color_);
+ even_color_selector_->setMaximumWidth(30);
+ odd_color_selector_->setMaximumWidth(30);
+
+ even_color_selector_->setUpdateMode(color_widgets::ColorSelector::Confirm);
+ odd_color_selector_->setUpdateMode(color_widgets::ColorSelector::Confirm);
+
+ connect(even_color_selector_, &color_widgets::ColorSelector::colorChanged, this,
+   [this](const QColor& color) { even_color_ = color; });
+
+ connect(odd_color_selector_, &color_widgets::ColorSelector::colorChanged, this,
+   [this](const QColor& color) { odd_color_ = color; });
+
+ qlb_even_select_ = new QLabel("Even (descending) color:", this);
+ qlb_odd_select_ = new QLabel("Odd (ascending) color:", this);
+
+ qlb_even_select_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
+ qlb_odd_select_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
+
+ color_selector_layout_->setContentsMargins(0, 0, 0, 0);
+
+ color_selector_layout_->addWidget(qlb_even_select_);
+ color_selector_layout_->addWidget(even_color_selector_);
+ color_selector_layout_->addSpacing(20);
+ color_selector_layout_->addWidget(qlb_odd_select_);
+ color_selector_layout_->addWidget(odd_color_selector_);
+ color_selector_layout_->addSpacing(50);
+
+ qlb_color_select_explanation_ = new QLabel("(Click on the color swatch to edit)", this);
+ color_selector_layout_->addWidget(qlb_color_select_explanation_);
+
+
+ main_layout_->addLayout(color_selector_layout_);
  main_layout_->addLayout(far_bottom_layout_);
+
 
  qte_summary_ = new QTextEdit(this);
  qte_summary_->setPlaceholderText("Run summary ...");
@@ -123,10 +174,10 @@ Cube_9_Grid_Window::Cube_9_Grid_Window(QWidget* parent) : QMainWindow(parent),
 
 void Cube_9_Grid_Window::recalculate()
 {
- u4 n = qle_n_->text().toInt();
- u4 d = qle_d_->text().toInt();
- u4 c = qle_c_->text().toInt();
- u4 s = qle_s_->text().toInt();
+ u4 n = qsb_n_->text().toInt();
+ u4 d = qsb_d_->text().toInt();
+ u4 c = qsb_c_->text().toInt();
+ u4 s = qsb_s_->text().toInt();
 
  current_ndcs_run_ = new NDCS_Run(n, d, c, s);
 
@@ -202,7 +253,7 @@ void Cube_9_Grid_Window::reposition_cells()
   else
   {
    cc.graphics_item_ = new QGraphicsRectItem(cc.tl_.x(), cc.tl_.y(), cell_width_, cell_width_);
-   cc.graphics_item_->setPen(QColor(30, 144, 255));
+   cc.graphics_item_->setPen(border_color_);
    scene_->addItem(cc.graphics_item_);
   }
  }
@@ -213,7 +264,10 @@ void Cube_9_Grid_Window::show_cells()
  for(Cube_Cell& cc : cells_)
  {
   if(cc.value_)
-    cc.text_ = QString::number(cc.value_);
+  {
+   cc.graphics_item_->setPen(border_color_);
+   cc.text_ = QString::number(cc.value_);
+  }
   else
   {
    cc.text_.clear();
@@ -234,7 +288,7 @@ void Cube_9_Grid_Window::reset_summary()
  summary_text_["Range"] = "[%1 to %2]"_qt.arg(current_ndcs_run_->min()).arg(current_ndcs_run_->max());
  summary_text_["Avg"] = QString::number(current_ndcs_run_->get_average());
  summary_text_["Steps"] = QString::number(current_ndcs_run_->get_steps_count());
- summary_text_["Run"] = "N=%1, D=%2, C=%3, S=%4]"_qt
+ summary_text_["Run"] = "N=%1, D=%2, C=%3, S=%4"_qt
    .arg(current_ndcs_run_->n()).arg(current_ndcs_run_->d())
    .arg(current_ndcs_run_->c()).arg(current_ndcs_run_->s());
 
@@ -277,6 +331,7 @@ void Cube_9_Grid_Window::cell_to_odd_color(Cube_Cell& cc)
 void Cube_9_Grid_Window::cell_to_no_background(Cube_Cell& cc)
 {
  cc.graphics_item_->setBrush(Qt::NoBrush);
+ cc.graphics_item_->setPen(empty_border_color_);
 }
 
 

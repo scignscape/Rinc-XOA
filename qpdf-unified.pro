@@ -59,14 +59,44 @@ DEFINES += APPLICATION_VERSION=\\\"$${APPLICATION_VERSION}\\\"
 }
 
 
-INCLUDEPATH += extensions/utils
+INCLUDEPATH += extensions/utils \
+  extensions/QtColorWidgets \
+  extensions
+
 
 HEADERS += \
   extensions/cube-9-grid.h \
+  extensions/QtColorWidgets/color_wheel.hpp \
+  extensions/QtColorWidgets/color_utils.hpp \
+  extensions/QtColorWidgets/color_selector.hpp \
+  extensions/QtColorWidgets/color_preview.hpp \
+  extensions/QtColorWidgets/color_dialog.hpp \
+  extensions/QtColorWidgets/color_line_edit.hpp \
+  extensions/QtColorWidgets/gradient_slider.hpp \
+  extensions/QtColorWidgets/hue_slider.hpp \
+  extensions/QtColorWidgets/src/color_names.hpp \
+
 
 SOURCES += \
   extensions/cube-9-grid.cpp \
+  extensions/QtColorWidgets/src/color_wheel.cpp \
+  extensions/QtColorWidgets/src/color_utils.cpp \
+  extensions/QtColorWidgets/src/color_selector.cpp \
+  extensions/QtColorWidgets/src/color_preview.cpp \
+  extensions/QtColorWidgets/src/color_dialog.cpp \
+  extensions/QtColorWidgets/src/color_line_edit.cpp \
+  extensions/QtColorWidgets/src/gradient_slider.cpp \
+  extensions/QtColorWidgets/src/hue_slider.cpp \
+  extensions/QtColorWidgets/src/color_names.cpp \
 
+
+FORMS += \
+  extensions/QtColorWidgets/src/color_dialog.ui \
+  extensions/QtColorWidgets/src/color_palette_widget.ui
+
+
+RESOURCES += \
+  extensions/QtColorWidgets/resources/color_widgets.qrc \
 
 
 # Merged Headers: Application + PDF Plugin
@@ -140,7 +170,7 @@ SOURCES += \
 RESOURCES += \
     icons.qrc \
     help.qrc \
-    translations.qrc
+    translations.qrc \
 
 # Poppler Dependencies (from pdf-plugin.pro)
 !without_pkgconfig {

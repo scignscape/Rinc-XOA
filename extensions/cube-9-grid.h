@@ -9,14 +9,21 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 
+#include <QLabel>
 #include <QLineEdit>
 #include <QTextEdit>
 #include <QPushButton>
+#include <QSpinBox>
 
 #include "global-types.h"
 #include "accessors.h"
 
 #include "tsl/ordered_map.h"
+
+#include "color_selector.hpp"
+
+using namespace  color_widgets;
+
 
 
 struct Cube_Cell {
@@ -101,11 +108,19 @@ class Cube_9_Grid_Window : public QMainWindow
  QVBoxLayout* main_layout_;
  QHBoxLayout* bottom_layout_;
  QHBoxLayout* far_bottom_layout_;
+ QHBoxLayout* color_selector_layout_;
 
- QLineEdit* qle_d_;
- QLineEdit* qle_c_;
- QLineEdit* qle_s_;
- QLineEdit* qle_n_;
+ ColorSelector* even_color_selector_;
+ ColorSelector* odd_color_selector_;
+
+ QLabel* qlb_even_select_;
+ QLabel* qlb_odd_select_;
+ QLabel* qlb_color_select_explanation_;
+
+ QSpinBox* qsb_d_;
+ QSpinBox* qsb_c_;
+ QSpinBox* qsb_s_;
+ QSpinBox* qsb_n_;
 
  QPushButton* go_button_;
 
@@ -125,6 +140,8 @@ class Cube_9_Grid_Window : public QMainWindow
 
  QColor odd_color_;
  QColor even_color_;
+ QColor border_color_;
+ QColor empty_border_color_;
 
  NDCS_Run* current_ndcs_run_;
 
@@ -135,8 +152,7 @@ class Cube_9_Grid_Window : public QMainWindow
 
  void cell_to_even_color(Cube_Cell& cc);
  void cell_to_odd_color(Cube_Cell& cc);
-
- static void cell_to_no_background(Cube_Cell& cc);
+ void cell_to_no_background(Cube_Cell& cc);
 
  static void center_text(Cube_Cell& cc);
  static void center_text(Cube_Cell& cc, QGraphicsSimpleTextItem* sti);
