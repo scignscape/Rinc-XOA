@@ -59,6 +59,10 @@ DEFINES += APPLICATION_VERSION=\\\"$${APPLICATION_VERSION}\\\"
 }
 
 
+## extensions
+
+QT += 3dcore 3drender 3dinput 3dextras
+
 INCLUDEPATH += extensions/utils \
   extensions/QtColorWidgets \
   extensions
@@ -66,6 +70,7 @@ INCLUDEPATH += extensions/utils \
 
 HEADERS += \
   extensions/cube-9-grid.h \
+  extensions/cube-universe-3d.h \
   extensions/QtColorWidgets/color_wheel.hpp \
   extensions/QtColorWidgets/color_utils.hpp \
   extensions/QtColorWidgets/color_selector.hpp \
@@ -74,10 +79,11 @@ HEADERS += \
   extensions/QtColorWidgets/color_line_edit.hpp \
   extensions/QtColorWidgets/gradient_slider.hpp \
   extensions/QtColorWidgets/hue_slider.hpp \
-  extensions/QtColorWidgets/src/color_names.hpp \
+  extensions/QtColorWidgets/color_names.hpp \
 
 
 SOURCES += \
+  extensions/cube-universe-3d.cpp \
   extensions/cube-9-grid.cpp \
   extensions/QtColorWidgets/src/color_wheel.cpp \
   extensions/QtColorWidgets/src/color_utils.cpp \

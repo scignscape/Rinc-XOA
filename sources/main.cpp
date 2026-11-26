@@ -467,14 +467,24 @@ void prepareSignalHandler()
 
 
 #include "extensions/cube-9-grid.h"
+#include "extensions/cube-universe-3d.h"
 
 int main(int argc, char** argv)
+{
+ QApplication app(argc, argv);
+ HoverRotateWindow* hrw = new HoverRotateWindow;
+ hrw->show();
+ return app.exec();
+}
+
+int main2(int argc, char** argv)
 {
  QApplication app(argc, argv);
  Cube_9_Grid_Window* c9gw = new Cube_9_Grid_Window;
  c9gw->show();
  return app.exec();
 }
+
 
 int main1(int argc, char** argv)
 {
