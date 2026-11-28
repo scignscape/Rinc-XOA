@@ -37,7 +37,7 @@ class HoverRotateWindow : public Qt3DExtras::Qt3DWindow
   val &= 3; //  just to be sure
 
   if(color_codes_count_ % 8) // 1 - 7
-    color_codes_.last() |= (val << (color_codes_count_ % 8));
+    color_codes_.last() |= (val << ((color_codes_count_ % 8) << 1));
   else  //if(color_codes_count_) // 8, 16 ...
     color_codes_.push_back(val);
 

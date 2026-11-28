@@ -33,11 +33,14 @@ HoverRotateWindow::HoverRotateWindow()//Qt3DCore::QTransform* targetTransform)
  lightTransform->setTranslation(QVector3D(15.0f, 20.0f, 15.0f));
  lightEntity->addComponent(lightTransform);
 
- add_color_code(0); add_color_code(1); add_color_code(2); add_color_code(3);
+ add_color_code(0);
+ add_color_code(1);
+ add_color_code(2);
+ add_color_code(3);
 
  // Build 3x3x3 cube lattice centered at origin
  Qt3DCore::QEntity* latticeRoot = create_cube_universe_lattice(rootEntity, {2, 3, 1},
-    color_codes_, {converges_color_, diverges_color_, cycles_color_, default_231_color_} //3, 2.5f, 1.0f
+    color_codes_, {default_231_color_, converges_color_, diverges_color_, cycles_color_} //3, 2.5f, 1.0f
     );
  Qt3DCore::QTransform* latticeTransform = new Qt3DCore::QTransform(latticeRoot);
  latticeRoot->addComponent(latticeTransform);
@@ -173,7 +176,17 @@ static Qt3DCore::QEntity* create_cube_universe_lattice(Qt3DCore::QEntity *rootEn
   {
    for (int z = 0; z < gridSize_z; ++z)
    {
-    int color_code = color_codes.isEmpty()? 0 : (color_codes.last() & mask);
+    if(color_codes.size())
+    {
+     int t1 = (count % 8) << 1;
+     int t2 = color_codes.last() & mask;
+     int t3 = t2 >> t1;
+
+     qDebug() << "t3 = " << t3;
+    }
+
+
+    int color_code = color_codes.isEmpty()? 0 : ( (color_codes.last() & mask) >> ((count % 8) << 1) );
     ++count;
 
     if(count % 8) // not starting a new int
