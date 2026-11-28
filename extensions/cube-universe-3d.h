@@ -100,7 +100,7 @@ protected:
 
 
 static Qt3DCore::QEntity* create_cube_universe_lattice(Qt3DCore::QEntity *rootEntity,
-  QVector<int> color_codes, QVector<QColor> colors,
+  QVector<int> starts, QVector<int> color_codes, QVector<QColor> colors,
   int gridSize_x = 3, int gridSize_y = 3, int gridSize_z = 3, float spacing = 2.5f, float cubeSize = 1.0f);
 
 

@@ -36,7 +36,7 @@ HoverRotateWindow::HoverRotateWindow()//Qt3DCore::QTransform* targetTransform)
  add_color_code(0); add_color_code(1); add_color_code(2); add_color_code(3);
 
  // Build 3x3x3 cube lattice centered at origin
- Qt3DCore::QEntity* latticeRoot = create_cube_universe_lattice(rootEntity,
+ Qt3DCore::QEntity* latticeRoot = create_cube_universe_lattice(rootEntity, {2, 3, 1},
     color_codes_, {converges_color_, diverges_color_, cycles_color_, default_231_color_} //3, 2.5f, 1.0f
     );
  Qt3DCore::QTransform* latticeTransform = new Qt3DCore::QTransform(latticeRoot);
@@ -68,10 +68,91 @@ HoverRotateWindow::HoverRotateWindow()//Qt3DCore::QTransform* targetTransform)
 }
 
 
+#include <Qt3DRender/QPaintedTextureImage>
+#include <QPainter>
+#include <QFont>
+
+class TransparentTextTexture : public Qt3DRender::QPaintedTextureImage {
+public:
+    TransparentTextTexture(const QString &text, const QColor &textColor = Qt::white, Qt3DCore::QNode *parent = nullptr)
+        : Qt3DRender::QPaintedTextureImage(parent), m_text(text), m_textColor(textColor) {
+        setSize(QSize(256, 256));
+        update();
+    }
+
+    void paint(QPainter *painter) override {
+        painter->fillRect(0, 0, width(), height(), Qt::transparent);
+        painter->setRenderHint(QPainter::Antialiasing);
+        painter->setRenderHint(QPainter::TextAntialiasing);
+        painter->setPen(m_textColor);
+        painter->setFont(QFont("Arial", 48, QFont::Bold));
+        painter->drawText(QRect(0, 0, width(), height()), Qt::AlignCenter, m_text);
+    }
+
+private:
+    QString m_text;
+    QColor m_textColor;
+};
+
+#include <Qt3DCore/QEntity>
+#include <Qt3DCore/QTransform>
+#include <Qt3DExtras/QPlaneMesh>
+#include <Qt3DExtras/QTextureMaterial>
+#include <Qt3DRender/QTexture>
+
+void addLabelsToCube(Qt3DCore::QEntity *existingCubeEntity, const QString &text, float cubeSize = 1.0f, const QColor &textColor = Qt::white) {
+    // Offset slightly beyond half the cube size to prevent z-fighting
+    const float offset = (cubeSize * 0.5f) + 0.002f;
+
+    struct FaceTransform {
+        QVector3D pos;
+        QQuaternion rot;
+    };
+
+    const QList<FaceTransform> faces = {
+        { { 0.0f,    0.0f,  offset}, QQuaternion::fromEulerAngles( 90.0f,   0.0f, 0.0f) }, // Front (+Z)
+        { { 0.0f,    0.0f, -offset}, QQuaternion::fromEulerAngles(-90.0f, 180.0f, 0.0f) }, // Back (-Z)
+        { { offset,  0.0f,    0.0f}, QQuaternion::fromEulerAngles(  0.0f,   0.0f,-90.0f) }, // Right (+X)
+        { {-offset,  0.0f,    0.0f}, QQuaternion::fromEulerAngles(  0.0f,   0.0f, 90.0f) }, // Left (-X)
+        { { 0.0f,  offset,    0.0f}, QQuaternion::fromEulerAngles(  0.0f,   0.0f,  0.0f) }, // Top (+Y)
+        { { 0.0f, -offset,    0.0f}, QQuaternion::fromEulerAngles(180.0f,   0.0f,  0.0f) }  // Bottom (-Y)
+    };
+
+    // Create ONE texture/material and share it across all 6 faces of this cube to save memory
+    auto *texture = new Qt3DRender::QTexture2D(existingCubeEntity);
+    texture->addTextureImage(new TransparentTextTexture(text, textColor, texture));
+
+    auto *material = new Qt3DExtras::QTextureMaterial(existingCubeEntity);
+    material->setTexture(texture);
+    material->setAlphaBlendingEnabled(true);
+
+    auto *planeMesh = new Qt3DExtras::QPlaneMesh(existingCubeEntity);
+    planeMesh->setWidth(cubeSize);
+    planeMesh->setHeight(cubeSize);
+
+    for (const auto &face : faces) {
+        auto *labelEntity = new Qt3DCore::QEntity(existingCubeEntity);
+
+        auto *transform = new Qt3DCore::QTransform(labelEntity);
+        transform->setTranslation(face.pos);
+        transform->setRotation(face.rot);
+
+        labelEntity->addComponent(planeMesh);
+        labelEntity->addComponent(transform);
+        labelEntity->addComponent(material);
+    }
+}
+
+
+
 static Qt3DCore::QEntity* create_cube_universe_lattice(Qt3DCore::QEntity *rootEntity,
-  QVector<int> color_codes, QVector<QColor> colors, int gridSize_x, int gridSize_y, int gridSize_z,
+  QVector<int> starts, QVector<int> color_codes, QVector<QColor> colors, int gridSize_x, int gridSize_y, int gridSize_z,
   float spacing, float cubeSize)
 {
+ int x_start = starts.value(0, 2);
+ int y_start = starts.value(1, 3);
+ int z_start = starts.value(2, 1);
+
  Qt3DCore::QEntity* latticeRoot = new Qt3DCore::QEntity(rootEntity);
 
  // Share one mesh across all cubes for better performance
@@ -124,6 +205,13 @@ static Qt3DCore::QEntity* create_cube_universe_lattice(Qt3DCore::QEntity *rootEn
                                z * spacing - z_offset
                                ));
     cubeEntity->addComponent(transform);
+
+    QString label = QString("%1, %2, %3\n%4, %5, %6\n(%7)")
+      .arg(x + x_start).arg(y + y_start).arg(z + z_start)
+      .arg(x).arg(y).arg(z).arg(count);
+
+    addLabelsToCube(cubeEntity, label, 1.0f, Qt::black);
+
    }
   }
  }
